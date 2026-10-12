@@ -2,7 +2,7 @@
   "date": "2026-10-12",
   "policy": "Local originals retained; GitHub receives directory placeholders for datasets, weights, caches, archives and credential-bearing files.",
   "summary": {
-    "included_files": 3443,
+    "included_files": 3444,
     "included_MiB": 1024.48,
     "placeholder_files": 3531,
     "omitted_MiB": 4801.39,
@@ -17700,7 +17700,7 @@
     },
     {
       "path": ".obsidian/workspace.json",
-      "size_bytes": 9136
+      "size_bytes": 9079
     },
     {
       "path": "AGENTS.md",
@@ -27439,6 +27439,10 @@
       "size_bytes": 165
     },
     {
+      "path": "README.md",
+      "size_bytes": 1511
+    },
+    {
       "path": "reports/analysis/2026-09-10-l1-complete-search/answer_groups.json",
       "size_bytes": 4278
     },
@@ -30960,7 +30964,7 @@
     },
     {
       "path": "scripts/prepare_github_snapshot.py",
-      "size_bytes": 8242
+      "size_bytes": 8349
     },
     {
       "path": "scripts/prepare_long_kubric_subset.py",
