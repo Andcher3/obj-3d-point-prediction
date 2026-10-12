@@ -2,6 +2,8 @@
 
 日期：2026-10-12
 
+当前仓库已按用户要求更名并公开：https://github.com/Andcher3/obj-3d-point-prediction 。以下保留首次以私有仓库上传的记录；后续变更见 [仓库改名并公开](2026-10-12-public-obj-3d-point-prediction-repository.md)。
+
 ## 已完成
 
 - 创建私有仓库：https://github.com/Andcher3/post_graduate_project ，默认分支为 `main`。
