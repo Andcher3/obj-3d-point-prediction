@@ -6,12 +6,14 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter, defaultdict
+from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 import re
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
+UPLOAD_DATE = datetime.now(timezone(timedelta(hours=8))).date().isoformat()
 MANIFEST = ROOT / "github_upload_manifest.json"
 PLACEHOLDER = "GITHUB_PLACEHOLDERS.md"
 BINARY_DATA = {".npz", ".npy", ".pt", ".pth", ".ckpt", ".safetensors", ".bin", ".onnx", ".h5", ".hdf5", ".pkl", ".pickle", ".tfrecord", ".parquet"}
@@ -99,7 +101,7 @@ def main() -> None:
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     if not args.write:
         return
-    manifest = {"date": "2026-10-12", "policy": "Local originals retained; GitHub receives directory placeholders for datasets, weights, caches, archives and credential-bearing files.", "summary": summary, "omitted_files": omitted, "included_files": included}
+    manifest = {"date": UPLOAD_DATE, "policy": "Local originals retained; GitHub receives directory placeholders for datasets, weights, caches, archives and credential-bearing files.", "summary": summary, "omitted_files": omitted, "included_files": included}
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     lines = ["# Local originals are preserved; see github_upload_manifest.json", "/nul", "/con", "/prn", "/aux", "# Exact paths below correspond to placeholder entries."]
     for row in omitted:
@@ -121,7 +123,7 @@ def main() -> None:
         output = ROOT / parent / PLACEHOLDER
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text("# 本地文件占位说明\n\n原文件保留在本地，未上传至 GitHub。此文件不包含数据或权重。\n\n详细清单见仓库根目录 `github_upload_manifest.json`。\n\n| 原路径（相对仓库根目录） | 字节数 | 原因 |\n|---|---:|---|\n" + "".join(f'| `{r["path"]}` | {r["size_bytes"]} | {r["reason"]} |\n' for r in rows), encoding="utf-8")
-    (ROOT / "GITHUB_UPLOAD.md").write_text("# GitHub 上传说明\n\n日期：2026-10-12。仓库设为私有。\n\n代码、研究文档、配置、汇报材料与适量实验可视化按原目录上传。数据集、数组、模型权重、下载压缩包、缓存及过大的文件通过各目录的 `GITHUB_PLACEHOLDERS.md` 表示；包含疑似凭据的文件也只上传占位说明。原文件保留在本地。\n\n完整原路径、大小与原因记录于 `github_upload_manifest.json`，占位说明不能用于恢复文件内容。运行相关实验时，需要按项目记录另行取得数据和权重。\n\n活动研究范围以 `AGENTS.md`、`research_roadmap.md` 及最新研究记录为准。`archive/imu/` 仅为历史归档，本次上传没有执行其中的程序。\n\n可用 `python scripts/prepare_github_snapshot.py` 重新检查目录；`--write` 更新占位文件及排除清单。\n", encoding="utf-8")
+    (ROOT / "GITHUB_UPLOAD.md").write_text(f"# GitHub 上传说明\n\n日期：{UPLOAD_DATE}。仓库设为私有。\n\n代码、研究文档、配置、汇报材料与适量实验可视化按原目录上传。数据集、数组、模型权重、下载压缩包、缓存及达到 10 MiB 的文件通过各目录的 `GITHUB_PLACEHOLDERS.md` 表示；包含疑似凭据的文件也只上传占位说明。原文件保留在本地。\n\n完整原路径、大小与原因记录于 `github_upload_manifest.json`，占位说明不能用于恢复文件内容。运行相关实验时，需要按项目记录另行取得数据和权重。\n\n活动研究范围以 `AGENTS.md`、`research_roadmap.md` 及最新研究记录为准。`archive/imu/` 仅为历史归档，本次上传没有执行其中的程序。\n\n可用 `python scripts/prepare_github_snapshot.py` 重新检查目录；`--write` 更新占位文件及排除清单。\n", encoding="utf-8")
     print(json.dumps({"placeholder_directories": len(grouped), "manifest": str(MANIFEST)}, ensure_ascii=False))
 
 

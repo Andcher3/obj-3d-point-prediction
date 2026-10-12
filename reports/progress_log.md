@@ -6,6 +6,8 @@ ACTIVE_RESEARCH_SCOPE=VIDEO_MOTION_FORECASTING
 
 ## 进展索引
 
+- 2026-10-12 [项目上传到 GitHub 私有仓库](progress/2026-10-12-github-private-workspace-upload.md)：创建 Andcher3/post_graduate_project 并推送 main；代码、文档及适量图片视频上传，3,531 个数据/权重/缓存等原文件使用 218 个目录占位说明代替，本地原文件保留。新增上传清单和排除规则；无训练、推理或历史 IMU 命令执行。
+
 - 2026-10-11 [同物体点共享用于未来三维预测的针对性查新](progress/2026-10-11-object-point-sharing-novelty-search.md)：完成关键词与引用链核查；HRN、DPI-Net、VGPL、AdaptiGraph及HOPNet存在明确思想先例，区分状态/动作条件与视频任务差异。二维生成、已见帧跟踪及一般全场景注意力单列相关工作；本项目待定具体结构未判重复。记录原文位置及访问限制，无实验、远端或方法变更。
 
 - 2026-10-11 [物体内共享运动的相关与重合分类修正](progress/2026-10-11-object-sharing-overlap-classification.md)：按用户确认的未来三维、物体内点共享范围复核；TrajLoom、跟踪及一般点注意力归为相关工作，不能据此宣布完整 idea 已实现。VGPL 原文存在物体归属图交互及共享运动的思想级先例；具体方案查新仍未完成。保留原报告并添加更正，无实验或方法更改。

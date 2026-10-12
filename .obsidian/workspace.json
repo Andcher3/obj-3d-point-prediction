@@ -190,6 +190,7 @@
   },
   "active": "0e15f7684cc85dfe",
   "lastOpenFiles": [
+    "reports/progress/2026-10-12-github-private-workspace-upload.md",
     "reports/progress/2026-10-08-reference-point-constraint-literature.md",
     "reports/progress/2026-10-08-object-anchor-relation-hypothesis.md",
     "reports/progress/2026-10-08-teacher-local-error-source-audit.md",
@@ -234,7 +235,6 @@
     "reports/progress/2026-09-18-token-memory-modality-balancing-and-cascade-training.md",
     "teacher 是否真的能严格遵守时间边界.md",
     "reports/progress/2026-09-18-current-method-academic-audit-and-fast-tests.md",
-    "reports/progress/2026-09-16-modeseq-text-transfer-clarification.md",
-    "reports/progress/2026-09-16-two-stage-feasibility-tests.md"
+    "reports/progress/2026-09-16-modeseq-text-transfer-clarification.md"
   ]
 }
