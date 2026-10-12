@@ -1,0 +1,25 @@
+{
+  "prompt_order": [
+    "mouse",
+    "black_cup",
+    "laptop",
+    "keep_holding"
+  ],
+  "future_shape": [
+    8,
+    30,
+    3
+  ],
+  "max_abs_temporal_change_m": {
+    "mouse": 0.0,
+    "black_cup": 0.0,
+    "laptop": 0.0,
+    "keep_holding": 0.0
+  },
+  "max_abs_difference_from_mouse_m": {
+    "mouse": 0.0,
+    "black_cup": 0.0,
+    "laptop": 0.0,
+    "keep_holding": 0.0
+  }
+}

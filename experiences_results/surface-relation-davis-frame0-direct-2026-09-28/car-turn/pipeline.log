@@ -1,0 +1,8 @@
+[2026-09-28T10:16:06Z] START car-turn frame0_queries
+[2026-09-28T10:16:06Z] END car-turn frame0_queries rc=0
+[2026-09-28T10:16:06Z] START car-turn observed7_query
+[2026-09-28T10:18:45Z] END car-turn observed7_query rc=0
+[2026-09-28T10:18:45Z] START car-turn teacher22+motionforesight
+[2026-09-28T10:21:56Z] END car-turn teacher22 rc=0 motionforesight rc=0
+[2026-09-28T10:21:56Z] START car-turn quality_audit
+[2026-09-28T10:21:57Z] END car-turn quality_audit rc=0

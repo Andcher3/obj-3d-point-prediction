@@ -1,0 +1,48 @@
+{
+  "sequence": "scene_d78_0318_3rd",
+  "future_labels_used_for_candidate_selection": false,
+  "candidate_count": 5,
+  "candidate_count_registration_p90_le_10_percent": 1,
+  "candidates": [
+    {
+      "mask_id": 146,
+      "area_fraction_t0": 0.004241898148148148,
+      "t0_candidate_track_count": 546,
+      "observed_median_displacement_px": 72.6285671110943,
+      "held_out_p90_bbox_fraction": 0.13321905061036854,
+      "held_out_above_10_percent_count": 18
+    },
+    {
+      "mask_id": 145,
+      "area_fraction_t0": 0.016751543209876544,
+      "t0_candidate_track_count": 528,
+      "observed_median_displacement_px": 72.76331493273241,
+      "held_out_p90_bbox_fraction": 0.4995591971810036,
+      "held_out_above_10_percent_count": 28
+    },
+    {
+      "mask_id": 139,
+      "area_fraction_t0": 0.053508873456790125,
+      "t0_candidate_track_count": 378,
+      "observed_median_displacement_px": 31.82113714230372,
+      "held_out_p90_bbox_fraction": 0.3550939306926279,
+      "held_out_above_10_percent_count": 27
+    },
+    {
+      "mask_id": 123,
+      "area_fraction_t0": 0.07049768518518519,
+      "t0_candidate_track_count": 79,
+      "observed_median_displacement_px": 80.56981655717439,
+      "held_out_p90_bbox_fraction": 0.042836898297805875,
+      "held_out_above_10_percent_count": 1
+    },
+    {
+      "mask_id": 142,
+      "area_fraction_t0": 0.006107253086419753,
+      "t0_candidate_track_count": 52,
+      "observed_median_displacement_px": 72.89311263421408,
+      "held_out_p90_bbox_fraction": 0.3207803826794984,
+      "held_out_above_10_percent_count": 29
+    }
+  ]
+}

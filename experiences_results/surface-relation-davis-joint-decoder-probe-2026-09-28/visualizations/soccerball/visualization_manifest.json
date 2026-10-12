@@ -1,0 +1,126 @@
+{
+  "status": "COMPLETE",
+  "quality_gate_status": "FAIL",
+  "video_id": "soccerball",
+  "trajectory_source": {
+    "teacher": "existing full22_query_tracks.npz; offline full-video TrackCraft3R query-only",
+    "observed": "existing observed7_trackcraft_dense.npz sampled using query_frame0_mapping.json",
+    "no_model_rerun": true
+  },
+  "time": {
+    "source_frame_indices": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "observed_source_frame_indices": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "t0_source_frame_index": 20,
+    "t0_dense_frame_index": 6,
+    "time_basis": "consecutive DAVIS source frame index",
+    "preview_encode_fps_playback_only": 8.0,
+    "source_capture_fps_used": null
+  },
+  "query": {
+    "count": 48,
+    "stable_ids": "0..47",
+    "mapping_file": "query_frame0_mapping.json"
+  },
+  "source_resolution": [
+    480,
+    854
+  ],
+  "teacher_video": {
+    "file": "teacher_full22_trackcraft_query_overlay.mp4",
+    "frame_count": 22,
+    "rendered_valid_points_per_frame": [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "resolution_hw": [
+      480,
+      854
+    ],
+    "encode_fps": 8.0
+  },
+  "observed_video": {
+    "file": "observed7_trackcraft_query_overlay.mp4",
+    "frame_count": 7,
+    "rendered_valid_points_per_frame": [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "resolution_hw": [
+      480,
+      854
+    ],
+    "encode_fps": 8.0
+  },
+  "t0_comparison": {
+    "file": "t0_teacher_observed_query_comparison.png",
+    "resolution_hw": [
+      480,
+      854
+    ],
+    "teacher_rendered_count": 48,
+    "observed_rendered_count": 48
+  },
+  "quality_audit_file": "quality_audit.json",
+  "trajectory_projection_status": "COMPLETE",
+  "sha256": {
+    "teacher_full22_trackcraft_query_overlay.mp4": "01ad712a2ba2638565a3639dac0da9dab96577e5154e80f54504175790fbf7b0",
+    "observed7_trackcraft_query_overlay.mp4": "c25a2eb90ad97e24bd7044fab9a4da89dd49d28aa26e2f51ed1cd670ab2b422b",
+    "t0_teacher_observed_query_comparison.png": "267945c436fa0b2d2fd7fa2e0e6f030828e61d9a5ad2b4caa94fa29301b23892"
+  }
+}

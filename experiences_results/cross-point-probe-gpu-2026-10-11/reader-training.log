@@ -1,0 +1,35 @@
+/root/autodl-tmp/uniquery4r-visual-review/venv/lib/python3.10/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+RIDGE_VALIDATION self_shared_no_neighbors 0.0001 7.445050339628193
+RIDGE_VALIDATION self_shared_no_neighbors 0.001 6.496147208707318
+RIDGE_VALIDATION self_shared_no_neighbors 0.01 5.378867761512489
+RIDGE_VALIDATION self_shared_no_neighbors 0.1 4.583040816411415
+RIDGE_VALIDATION self_shared_no_neighbors 1 3.932932110229276
+RIDGE_VALIDATION self_shared_no_neighbors 10 3.6883121853887095
+RIDGE_VALIDATION self_shared_no_neighbors 100 3.607520982648972
+MLP_VALIDATION self_shared_no_neighbors 0 0 3.857773578304278
+MLP_VALIDATION self_shared_no_neighbors 0 10 6.357163795857728
+MLP_COMPLETE self_shared_no_neighbors 0 selected_epoch -1
+MLP_VALIDATION self_shared_no_neighbors 1 0 3.9695061604068775
+MLP_VALIDATION self_shared_no_neighbors 1 10 6.175171039898643
+MLP_COMPLETE self_shared_no_neighbors 1 selected_epoch -1
+MLP_VALIDATION self_shared_no_neighbors 2 0 3.928777036064863
+MLP_VALIDATION self_shared_no_neighbors 2 10 5.885668980365363
+MLP_COMPLETE self_shared_no_neighbors 2 selected_epoch -1
+RIDGE_VALIDATION self_shared_true_neighbors 0.0001 7.335741123858668
+RIDGE_VALIDATION self_shared_true_neighbors 0.001 6.3382881552750145
+RIDGE_VALIDATION self_shared_true_neighbors 0.01 5.376336154508103
+RIDGE_VALIDATION self_shared_true_neighbors 0.1 4.666923902050852
+RIDGE_VALIDATION self_shared_true_neighbors 1 4.033051052720124
+RIDGE_VALIDATION self_shared_true_neighbors 10 3.6532309765668707
+RIDGE_VALIDATION self_shared_true_neighbors 100 3.5626705585984184
+MLP_VALIDATION self_shared_true_neighbors 0 0 3.7858859410963817
+MLP_VALIDATION self_shared_true_neighbors 0 10 6.091580632490632
+MLP_COMPLETE self_shared_true_neighbors 0 selected_epoch -1
+MLP_VALIDATION self_shared_true_neighbors 1 0 3.836130238284273
+MLP_VALIDATION self_shared_true_neighbors 1 10 6.628943785271905
+MLP_COMPLETE self_shared_true_neighbors 1 selected_epoch -1
+MLP_VALIDATION self_shared_true_neighbors 2 0 3.799447022339783
+MLP_VALIDATION self_shared_true_neighbors 2 10 5.824294580955278
+MLP_COMPLETE self_shared_true_neighbors 2 selected_epoch -1
+PROBE_TRAINING_COMPLETE

@@ -1,0 +1,36 @@
+[2026-09-28T10:16:06Z] START car-turn frame0_queries
+[2026-09-28T10:16:06Z] END car-turn frame0_queries rc=0
+[2026-09-28T10:16:06Z] START car-turn observed7_query
+[2026-09-28T10:18:45Z] END car-turn observed7_query rc=0
+[2026-09-28T10:18:45Z] START car-turn teacher22+motionforesight
+[2026-09-28T10:21:56Z] END car-turn teacher22 rc=0 motionforesight rc=0
+[2026-09-28T10:21:56Z] START car-turn quality_audit
+[2026-09-28T10:21:57Z] END car-turn quality_audit rc=0
+[2026-09-28T10:21:57Z] START drift-turn frame0_queries
+[2026-09-28T10:21:57Z] END drift-turn frame0_queries rc=0
+[2026-09-28T10:21:57Z] START drift-turn observed7_query
+[2026-09-28T10:24:40Z] END drift-turn observed7_query rc=0
+[2026-09-28T10:24:40Z] START drift-turn teacher22+motionforesight
+[2026-09-28T10:27:53Z] END drift-turn teacher22 rc=0 motionforesight rc=0
+[2026-09-28T10:27:53Z] START drift-turn quality_audit
+[2026-09-28T10:27:53Z] END drift-turn quality_audit rc=0
+[2026-09-28T10:27:53Z] START boat frame0_queries
+[2026-09-28T10:27:53Z] END boat frame0_queries rc=0
+[2026-09-28T10:27:53Z] START boat observed7_query
+[2026-09-28T10:30:35Z] END boat observed7_query rc=0
+[2026-09-28T10:30:35Z] START boat teacher22+motionforesight
+[2026-09-28T10:33:54Z] END boat teacher22 rc=0 motionforesight rc=0
+[2026-09-28T10:33:54Z] START boat quality_audit
+[2026-09-28T10:33:54Z] END boat quality_audit rc=0
+[2026-09-28T10:33:54Z] START soccerball frame0_queries
+[2026-09-28T10:33:55Z] END soccerball frame0_queries rc=0
+[2026-09-28T10:33:55Z] START soccerball observed7_query
+[2026-09-28T10:36:32Z] END soccerball observed7_query rc=0
+[2026-09-28T10:36:32Z] START soccerball teacher22+motionforesight
+[2026-09-28T10:39:36Z] END soccerball teacher22 rc=0 motionforesight rc=0
+[2026-09-28T10:39:36Z] START soccerball quality_audit
+[2026-09-28T10:39:36Z] END soccerball quality_audit rc=0
+{
+  "status": "QUALITY_FAIL_NO_TRAINING",
+  "passed_video_ids": []
+}

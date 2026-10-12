@@ -1,0 +1,19 @@
+{
+  "decision": "accept",
+  "severity": "minor",
+  "reviewed_by": "parent",
+  "failed_checks": [
+    "horizontal intermediate pairs 1, 2, 5, 6, and 7 produced opposite or ambiguous blind votes",
+    "vertical intermediate pair 4 produced opposite blind votes",
+    "continuity metrics flagged local differences at 157.5->180 and 337.5->000"
+  ],
+  "evidence": [
+    "090 screen-right and 270 screen-left passed the blind hard gate unanimously",
+    "000 up and 180 down passed the blind hard gate unanimously after targeted repair",
+    "labeled normal-size review shows one continuous right-half arc followed by one continuous left-half arc",
+    "all 16 cells preserve the two lenses, head crack, body identity, baseline, and attachments",
+    "deterministic v2 atlas validation and chroma validation pass with no errors or warnings",
+    "continuity report found no alpha holes"
+  ],
+  "notes": "Accepted under the hatch-pet intermediate-direction warning policy; no cardinal ambiguity or deterministic structural failure remains."
+}

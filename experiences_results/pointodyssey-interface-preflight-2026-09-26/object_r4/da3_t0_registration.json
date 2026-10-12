@@ -1,0 +1,39 @@
+{
+  "video_id": "r4_new_f",
+  "target_mask_ids": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "query_count": 48,
+  "future_gt_valid_min": 48,
+  "future_visible_min": 30,
+  "da3_direct_t0": {
+    "t0_bbox_diagonal_in_model_units": 0.7986115385913118,
+    "fit_scale_gt_to_model": 0.18641401950662811,
+    "in_sample_residual_median_bbox_fraction": 0.1254939517475645,
+    "in_sample_residual_p90_bbox_fraction": 0.3211567223366946,
+    "held_out_residual_median_bbox_fraction": 0.13609770340527821,
+    "held_out_residual_p90_bbox_fraction": 0.3411418847562942,
+    "held_out_residual_max_bbox_fraction": 0.8660620444888906,
+    "held_out_residual_above_10_percent_count": 34
+  },
+  "gt_used_as_model_input": false,
+  "registration_gate_pass": false
+}

@@ -1,0 +1,174 @@
+{
+  "video_id": "soccerball",
+  "preview_mp4_fps_used": false,
+  "time_basis": "consecutive DAVIS source frame indices; capture fps unavailable",
+  "common_t0_geometry_source": "route A DA3 source-frame-20 point geometry",
+  "common_t0_registration_normalized_3d_bbox": {
+    "p50": 0.13942633341595345,
+    "p90": 0.3063460272673785,
+    "mean": 0.16702100083135352,
+    "max": 0.5328103963535368
+  },
+  "common_t0_registration_fraction_below_10pct": 0.3958333333333333,
+  "registration_folds": [
+    {
+      "fold": 0,
+      "held_error_m": {
+        "p50": 0.07048837161113089,
+        "p90": 0.14653595167011702,
+        "mean": 0.07585434212195229,
+        "max": 0.17037912562235782
+      }
+    },
+    {
+      "fold": 1,
+      "held_error_m": {
+        "p50": 0.05970910587450933,
+        "p90": 0.12973955755089456,
+        "mean": 0.07580286674807578,
+        "max": 0.16609322121771722
+      }
+    },
+    {
+      "fold": 2,
+      "held_error_m": {
+        "p50": 0.0934082541697093,
+        "p90": 0.17922651649160304,
+        "mean": 0.10382681264424372,
+        "max": 0.291112857416562
+      }
+    },
+    {
+      "fold": 3,
+      "held_error_m": {
+        "p50": 0.09883099390305444,
+        "p90": 0.2182399001435905,
+        "mean": 0.10953859165806629,
+        "max": 0.2248032717158478
+      }
+    }
+  ],
+  "route": "A_t0_first",
+  "status": "FAIL",
+  "training_approved": false,
+  "gates": {
+    "future_frames_not_supplied_to_model": true,
+    "common_t0_registration_p90_le_10pct": false,
+    "common_t0_registration_90pct_below_10pct": false,
+    "common_t0_registration_max_le_20pct": false,
+    "finite_p0_h": true,
+    "direct_t0_query_order": true,
+    "t0_anchor_p90_le_5pct": true,
+    "t0_anchor_max_le_10pct": true,
+    "valid_queries_at_least_44": true,
+    "valid_graph_connected": false,
+    "finite_teacher": true
+  },
+  "valid_query_count": 48,
+  "t0_anchor_px": {
+    "p50": 0.803846109003322,
+    "p90": 1.057794741344803,
+    "mean": 0.6775448195948633,
+    "max": 1.1785091710106375
+  },
+  "t0_anchor_normalized_bbox": {
+    "p50": 0.015331531653575611,
+    "p90": 0.020175022778951657,
+    "mean": 0.012922622541787903,
+    "max": 0.02247737527992945
+  },
+  "graph": {
+    "edge_count": 85,
+    "component_count": 3,
+    "component_sizes": [
+      24,
+      15,
+      9
+    ],
+    "bridge_edges": [],
+    "connected": false
+  },
+  "future_mask_hits": [
+    {
+      "source_frame_index": 21,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 22,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 23,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 24,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 25,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 26,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 27,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 28,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 29,
+      "hit_count": 0,
+      "fraction": 0.0
+    }
+  ],
+  "teacher_input_frames": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "teacher_future_frames": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ]
+}

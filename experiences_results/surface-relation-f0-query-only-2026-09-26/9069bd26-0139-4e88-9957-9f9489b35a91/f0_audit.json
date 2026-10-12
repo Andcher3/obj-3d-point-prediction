@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "protocol": "F0 query-only TrackCraft3R 7+15 pilot",
+  "video_id": "9069bd26-0139-4e88-9957-9f9489b35a91",
+  "input_path": "/root/autodl-tmp/projects/motionforesight/outputs/e3_22/9069bd26-0139-4e88-9957-9f9489b35a91/full22_user_res392.npz",
+  "output_path": "/root/autodl-tmp/projects/motionforesight/outputs/query_only_protocol_2026-09-26/9069bd26-0139-4e88-9957-9f9489b35a91/full22_res392_48.npz",
+  "process_res": 392,
+  "model_resolution_hw": [
+    240,
+    416
+  ],
+  "input_frame_count": 22,
+  "track_shape": [
+    22,
+    48,
+    3
+  ],
+  "finite_fraction": 1.0,
+  "oob_count": 0,
+  "observed_frame_count": 7,
+  "future_frame_count": 15,
+  "future_frames_supplied_to_model": false,
+  "input_meta_protocol": "22-frame 7+15",
+  "t0_to_first_future_mean_m": 0.003863933263346553,
+  "t0_to_first_future_p90_m": 0.007135626394301653,
+  "future_step_mean_range_m": [
+    0.002929817186668515,
+    0.005999397486448288
+  ],
+  "future_step_p90_range_m": [
+    0.004617980215698481,
+    0.013161209411919117
+  ],
+  "query_uv_original_range": [
+    [
+      102.9189224243164,
+      147.0
+    ],
+    [
+      299.6756896972656,
+      279.75
+    ]
+  ],
+  "query_uv_model_range": [
+    [
+      109.22007751464844,
+      120.0
+    ],
+    [
+      318.023193359375,
+      228.36734008789062
+    ]
+  ]
+}

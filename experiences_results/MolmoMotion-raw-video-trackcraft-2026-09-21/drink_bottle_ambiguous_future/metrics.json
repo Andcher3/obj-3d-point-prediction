@@ -1,0 +1,171 @@
+{
+  "sample_id": "drink_bottle_ambiguous_future",
+  "source_video": "/root/autodl-tmp/projects/molmo-raw-test/test_video.mp4",
+  "source_fps": 30.0,
+  "raw_frame_indices": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44
+  ],
+  "history_raw_frames": [
+    0,
+    4,
+    8
+  ],
+  "offline_pseudo_gt_raw_frames": [
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44
+  ],
+  "valid_query_count": 8,
+  "pseudo_gt_motion": {
+    "mean_path_length_m": 0.15738242864608765,
+    "centroid_final_delta_m": [
+      0.14310084283351898,
+      -0.008330579847097397,
+      -0.010050356388092041
+    ],
+    "finite_fraction": 1.0
+  },
+  "records": [
+    {
+      "sample_id": "drink_bottle_ambiguous_future",
+      "prompt": "mouse",
+      "prompt_text": "Move the drink bottle to the right and place it next to the computer mouse.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 132.44602645281702,
+      "sequence_score": -41.90909194946289,
+      "input_ids_sha256": "e1e18874718606161c592e2d7355ca7f94aee060e61f8da0930c9c1092a3c403",
+      "future_array_sha256": "7ab5b06c88ec5d353b76e544bf46aefef35106168e04ff40e417dc5dec4752cd",
+      "future_text_sha256": "10812836c32989ef636316e77cba17686beb3d8a9b089ad03da163afe86711c9",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.0710919201374054,
+      "pseudo_gt_fde_m": 0.1442076563835144,
+      "mean_path_length_m": 0.0006253295578062534,
+      "centroid_final_delta_m": [
+        -9.606033563613892e-05,
+        -0.0001268349587917328,
+        0.0001385211944580078
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "drink_bottle_ambiguous_future",
+      "prompt": "black_cup",
+      "prompt_text": "Move the drink bottle to the right and place it next to the black water cup.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 137.16723469784483,
+      "sequence_score": -41.0383186340332,
+      "input_ids_sha256": "d5a779dd6e3ec56c23371fb71f3c024ebdb67853c8e42d8ccd3ff628f6f5f03e",
+      "future_array_sha256": "7ab5b06c88ec5d353b76e544bf46aefef35106168e04ff40e417dc5dec4752cd",
+      "future_text_sha256": "10812836c32989ef636316e77cba17686beb3d8a9b089ad03da163afe86711c9",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.0710919201374054,
+      "pseudo_gt_fde_m": 0.1442076563835144,
+      "mean_path_length_m": 0.0006253295578062534,
+      "centroid_final_delta_m": [
+        -9.606033563613892e-05,
+        -0.0001268349587917328,
+        0.0001385211944580078
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "drink_bottle_ambiguous_future",
+      "prompt": "laptop",
+      "prompt_text": "Move the drink bottle toward the laptop and place it next to the laptop computer.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 132.52727272175252,
+      "sequence_score": -42.7861328125,
+      "input_ids_sha256": "4d96f5d658b0ef383d52573cdcfa87363ca9899abf8191f21a34e0dbece45cd9",
+      "future_array_sha256": "7ab5b06c88ec5d353b76e544bf46aefef35106168e04ff40e417dc5dec4752cd",
+      "future_text_sha256": "10812836c32989ef636316e77cba17686beb3d8a9b089ad03da163afe86711c9",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.0710919201374054,
+      "pseudo_gt_fde_m": 0.1442076563835144,
+      "mean_path_length_m": 0.0006253295578062534,
+      "centroid_final_delta_m": [
+        -9.606033563613892e-05,
+        -0.0001268349587917328,
+        0.0001385211944580078
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "drink_bottle_ambiguous_future",
+      "prompt": "keep_holding",
+      "prompt_text": "Keep holding the drink bottle and do not put it down.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 129.15191011177376,
+      "sequence_score": -45.04683303833008,
+      "input_ids_sha256": "75253b28b844017aadacc32c7600cf413fe030a016cccde45c9e665e976a5cf8",
+      "future_array_sha256": "7ab5b06c88ec5d353b76e544bf46aefef35106168e04ff40e417dc5dec4752cd",
+      "future_text_sha256": "10812836c32989ef636316e77cba17686beb3d8a9b089ad03da163afe86711c9",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.0710919201374054,
+      "pseudo_gt_fde_m": 0.1442076563835144,
+      "mean_path_length_m": 0.0006253295578062534,
+      "centroid_final_delta_m": [
+        -9.606033563613892e-05,
+        -0.0001268349587917328,
+        0.0001385211944580078
+      ],
+      "finite_fraction": 1.0
+    }
+  ],
+  "pairwise": {
+    "mouse__greedy__vs__black_cup__greedy": {
+      "ade_m": 0.0,
+      "fde_m": 0.0,
+      "direction_cosine": NaN
+    },
+    "mouse__greedy__vs__laptop__greedy": {
+      "ade_m": 0.0,
+      "fde_m": 0.0,
+      "direction_cosine": NaN
+    },
+    "mouse__greedy__vs__keep_holding__greedy": {
+      "ade_m": 0.0,
+      "fde_m": 0.0,
+      "direction_cosine": NaN
+    },
+    "black_cup__greedy__vs__laptop__greedy": {
+      "ade_m": 0.0,
+      "fde_m": 0.0,
+      "direction_cosine": NaN
+    },
+    "black_cup__greedy__vs__keep_holding__greedy": {
+      "ade_m": 0.0,
+      "fde_m": 0.0,
+      "direction_cosine": NaN
+    },
+    "laptop__greedy__vs__keep_holding__greedy": {
+      "ade_m": 0.0,
+      "fde_m": 0.0,
+      "direction_cosine": NaN
+    }
+  }
+}

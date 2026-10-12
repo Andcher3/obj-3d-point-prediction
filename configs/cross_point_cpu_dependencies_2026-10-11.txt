@@ -1,0 +1,34 @@
+# Inference imports only. Keep the existing Torch/CUDA and NumPy installations.
+# DA3 is installed from MotionForesight's pinned gitlink with --no-deps.
+torch==2.8.0
+torchvision==0.23.0
+numpy==1.26.4
+transformers==4.51.3
+peft==0.15.2
+huggingface_hub<1
+accelerate
+omegaconf
+safetensors
+sentencepiece
+protobuf
+imageio
+imageio-ffmpeg
+ftfy
+pynvml
+modelscope
+viser
+scipy
+pandas
+matplotlib
+trimesh
+evo
+e3nn
+moviepy==1.0.3
+plyfile
+pycolmap
+loguru
+timm
+addict
+jaxtyping
+beartype
+pillow_heif

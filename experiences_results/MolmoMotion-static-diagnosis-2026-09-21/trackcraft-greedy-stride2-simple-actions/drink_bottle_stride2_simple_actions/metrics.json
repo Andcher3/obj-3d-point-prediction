@@ -1,0 +1,133 @@
+{
+  "sample_id": "drink_bottle_stride2_simple_actions",
+  "source_video": "/root/autodl-tmp/projects/molmo-raw-test/test_video.mp4",
+  "source_fps": 30.0,
+  "raw_frame_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22
+  ],
+  "history_raw_frames": [
+    0,
+    2,
+    4
+  ],
+  "offline_pseudo_gt_raw_frames": [
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22
+  ],
+  "valid_query_count": 8,
+  "pseudo_gt_motion": {
+    "mean_path_length_m": 0.06033698469400406,
+    "centroid_final_delta_m": [
+      0.02708572894334793,
+      -0.011427648365497589,
+      -0.004455447196960449
+    ],
+    "finite_fraction": 1.0
+  },
+  "records": [
+    {
+      "sample_id": "drink_bottle_stride2_simple_actions",
+      "prompt": "pickup",
+      "prompt_text": "Pick up the drink bottle.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 111.62269043410197,
+      "sequence_score": -37.45317840576172,
+      "input_ids_sha256": "f6dce3eeb9c2c7bf94eaa7e6a1cfa8137de1ea43c3014d3e3554eb47c253fb47",
+      "future_array_sha256": "8f95f6365fabb13adc88fa3f1e0a715ae6c3fe6cfca816ec1046bdef71878310",
+      "future_text_sha256": "e77fc790c2819f236287c14f881d12e53a1b37ba25e49aa99430e8895cf3596f",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.013497020117938519,
+      "pseudo_gt_fde_m": 0.030341435223817825,
+      "mean_path_length_m": 0.00042017907253466547,
+      "centroid_final_delta_m": [
+        -3.573298454284668e-05,
+        0.00011963397264480591,
+        2.562999725341797e-05
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "drink_bottle_stride2_simple_actions",
+      "prompt": "carry_right",
+      "prompt_text": "Carry the drink bottle to the right.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 114.9919173498638,
+      "sequence_score": -30.96866798400879,
+      "input_ids_sha256": "97329cab13d7bf6845a7d22c886987554367d9be5ea585730e68a59c5d6ce7ce",
+      "future_array_sha256": "8f95f6365fabb13adc88fa3f1e0a715ae6c3fe6cfca816ec1046bdef71878310",
+      "future_text_sha256": "e77fc790c2819f236287c14f881d12e53a1b37ba25e49aa99430e8895cf3596f",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.013497020117938519,
+      "pseudo_gt_fde_m": 0.030341435223817825,
+      "mean_path_length_m": 0.00042017907253466547,
+      "centroid_final_delta_m": [
+        -3.573298454284668e-05,
+        0.00011963397264480591,
+        2.562999725341797e-05
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "drink_bottle_stride2_simple_actions",
+      "prompt": "set_down",
+      "prompt_text": "Set the drink bottle down.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 117.8789176940918,
+      "sequence_score": -37.93253707885742,
+      "input_ids_sha256": "4427109e061c13ee29712a9f3795d8ecb243ed99ff4e7027703fb46082a7ee63",
+      "future_array_sha256": "8f95f6365fabb13adc88fa3f1e0a715ae6c3fe6cfca816ec1046bdef71878310",
+      "future_text_sha256": "e77fc790c2819f236287c14f881d12e53a1b37ba25e49aa99430e8895cf3596f",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.013497020117938519,
+      "pseudo_gt_fde_m": 0.030341435223817825,
+      "mean_path_length_m": 0.00042017907253466547,
+      "centroid_final_delta_m": [
+        -3.573298454284668e-05,
+        0.00011963397264480591,
+        2.562999725341797e-05
+      ],
+      "finite_fraction": 1.0
+    }
+  ],
+  "pairwise": {
+    "pickup__greedy__vs__carry_right__greedy": {
+      "ade_m": 0.0,
+      "fde_m": 0.0,
+      "direction_cosine": NaN
+    },
+    "pickup__greedy__vs__set_down__greedy": {
+      "ade_m": 0.0,
+      "fde_m": 0.0,
+      "direction_cosine": NaN
+    },
+    "carry_right__greedy__vs__set_down__greedy": {
+      "ade_m": 0.0,
+      "fde_m": 0.0,
+      "direction_cosine": NaN
+    }
+  }
+}

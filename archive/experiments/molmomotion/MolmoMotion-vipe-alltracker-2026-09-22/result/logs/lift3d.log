@@ -1,0 +1,9 @@
+2026-09-22 19:15:18,137 - __main__ - INFO - Converting ViPE results from /root/autodl-tmp/projects/molmo-vipe-test/output/vipe_results (test_video_stride2_15fps) to COLMAP format at /root/autodl-tmp/projects/molmo-vipe-test/output/tracks_3d/molmomotion
+2026-09-22 19:15:18,163 - __main__ - INFO - Loaded track data for test_video_stride2_15fps_f0: 25 frames, 8 points.
+2026-09-22 19:15:18,180 - __main__ - INFO - Processed frame 0: 8 3D track points
+2026-09-22 19:15:18,713 - __main__ - INFO - Processed frame 10: 8 3D track points
+2026-09-22 19:15:19,310 - __main__ - INFO - Processed frame 20: 8 3D track points
+2026-09-22 19:15:19,591 - __main__ - INFO - Saved 3D tracks to /root/autodl-tmp/projects/molmo-vipe-test/output/tracks_3d/molmomotion/test_video_stride2_15fps_f0_3d_tracks.npz
+2026-09-22 19:15:19,592 - __main__ - INFO - points_3d shape: (8, 25, 3), visibility shape: (8, 25, 1)
+2026-09-22 19:15:19,593 - __main__ - INFO - COLMAP conversion completed successfully!
+2026-09-22 19:15:19,593 - __main__ - INFO - Output directory: /root/autodl-tmp/projects/molmo-vipe-test/output/tracks_3d/molmomotion

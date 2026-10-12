@@ -1,0 +1,41 @@
+Verification Status: VERIFIED
+
+CHANGED_BRANCH_FIELD=protocol-aligned multi-video text-conditioning retest / history-future boundary, 15-fps frame alignment, stochastic decoding, and offline TrackCraft pseudo-GT comparison
+ORIGINAL_SHA256=087db2299708752b916242b85538b7bde5b13567ea3a074a514be5397e7e65e1
+MODIFIED_SHA256=1775c99ff6476fe3b8601d3256ec03e7ac108e52c94b4e4a53ce67045b43e33b
+
+FOUR_ARTIFACTS:
+MODIFIED_FILE=/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/run_tracker3d_molmo_retest.py
+DIFF_FILE=/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/DIFF_FILE.patch
+VERIFICATION=/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/VERIFICATION.txt
+ROLLBACK=/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/ROLLBACK.sh
+
+BASELINE:
+COMMAND=source /root/miniconda3/etc/profile.d/conda.sh; conda activate /root/autodl-tmp/conda_envs/molmo-motion; python /root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/baseline/run_tracker3d_molmo_probe.py --help
+INPUT=original single-video script, help path only
+LITERAL_OUTPUT=usage: run_tracker3d_molmo_probe.py [-h] --model MODEL --repo REPO --camera-npz CAMERA_NPZ --dense-npz DENSE_NPZ --query-json QUERY_JSON --output-dir OUTPUT_DIR
+EXIT_STATUS=0
+
+MODIFIED:
+COMMAND=source /root/miniconda3/etc/profile.d/conda.sh; conda activate /root/autodl-tmp/conda_envs/molmo-motion; export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1; cd /root/autodl-tmp/projects/MolmoMotion-tracker3d-retest; python run_tracker3d_molmo_retest.py --model /root/autodl-tmp/models/MolmoMotion-4B-H3-F30 --repo /root/autodl-tmp/projects/molmo-motion --spec-json retest_spec.json --output-dir results/retest-v1 --future-horizon 30 --stochastic-samples 1 --temperature 0.8 --top-p 0.95 --top-k 50
+INPUT=two Ego4D clips; sewing raw frames [171,173,175] plus offline pseudo-GT [177..193 step 2]; watering raw frames [131,133,135] plus offline pseudo-GT [137..153 step 2]; three captions per clip; 8 target points; Molmo sees history frames only
+LITERAL_OUTPUT=MODIFIED_EXIT=0; 2 videos; 12 predictions; 12/12 parsed; all finite; 3/3 greedy captions produced distinct trajectory hashes for each video; all 6 stochastic draws differed from their greedy result; validation 11/11 PASS; method_result=TEXT_SENSITIVE_BUT_NOT_RELIABLY_ACCURATE
+EXIT_STATUS=0
+
+RERUN:
+COMMAND=source /root/miniconda3/etc/profile.d/conda.sh; conda activate /root/autodl-tmp/conda_envs/molmo-motion; export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1; cd /root/autodl-tmp/projects/MolmoMotion-tracker3d-retest; python run_tracker3d_molmo_retest.py --model /root/autodl-tmp/models/MolmoMotion-4B-H3-F30 --repo /root/autodl-tmp/projects/molmo-motion --spec-json retest_spec.json --output-dir results/retest-rerun-greedy --future-horizon 30 --stochastic-samples 0 --temperature 0.8 --top-p 0.95 --top-k 50
+INPUT=same two clips and all six captions, deterministic greedy subset
+LITERAL_OUTPUT=RERUN_EXIT=0; GREEDY_KEYS 6 6; GREEDY_EXACT_MATCH True; 6/6 array/text/input hashes matched
+EXIT_STATUS=0
+
+ROLLBACK:
+COMMAND=cd /root/autodl-tmp/projects/MolmoMotion-tracker3d-retest; cp run_tracker3d_molmo_retest.py rollback-test/candidate.py; ./ROLLBACK.sh rollback-test/candidate.py
+INPUT=separate copy rollback-test/candidate.py
+LITERAL_OUTPUT=087db2299708752b916242b85538b7bde5b13567ea3a074a514be5397e7e65e1  rollback-test/candidate.py; ROLLBACK_HASH_MATCH=True
+EXIT_STATUS=0
+RESTORED_BEHAVIOR_STATUS=rollback copy restored to the original single-video script hash; MODIFIED_FILE remains changed and executable
+
+OBSERVED_RESEARCH_RESULT:
+- Sewing pseudo-GT path=0.212285 m; pickup greedy path=0.059270 m; static greedy path=0.002159 m. Text changes motion magnitude, while static is numerically closer to the 9-frame pseudo-GT than pickup (FDE 0.138885 m vs 0.151755 m).
+- Watering pseudo-GT path=0.083980 m; carry greedy path=1.200757 m and FDE=0.266792 m. All three greedy prompt directions remain highly similar (pairwise direction cosine 0.9731 to 0.9984), while their magnitudes differ.
+- The corrected test establishes deterministic text sensitivity and sampling diversity, but does not establish reliable instruction following, accurate trajectory forecasting, probability calibration, or official ViPE+AllTracker input-distribution performance.

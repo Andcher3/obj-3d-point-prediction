@@ -1,0 +1,173 @@
+{
+  "video_id": "drift-turn",
+  "preview_mp4_fps_used": false,
+  "time_basis": "consecutive DAVIS source frame indices; capture fps unavailable",
+  "common_t0_geometry_source": "route A DA3 source-frame-20 point geometry",
+  "common_t0_registration_normalized_3d_bbox": {
+    "p50": 0.2190357276283702,
+    "p90": 0.34518554827119935,
+    "mean": 0.21163324488901183,
+    "max": 0.40828036426907743
+  },
+  "common_t0_registration_fraction_below_10pct": 0.1875,
+  "registration_folds": [
+    {
+      "fold": 0,
+      "held_error_m": {
+        "p50": 0.07020452900694582,
+        "p90": 0.09691890765123017,
+        "mean": 0.0659965850644515,
+        "max": 0.10424004194093067
+      }
+    },
+    {
+      "fold": 1,
+      "held_error_m": {
+        "p50": 0.05615471399607566,
+        "p90": 0.09321334512598599,
+        "mean": 0.05853396707433708,
+        "max": 0.09564449323317512
+      }
+    },
+    {
+      "fold": 2,
+      "held_error_m": {
+        "p50": 0.07160431953111533,
+        "p90": 0.1068112690731606,
+        "mean": 0.06440929069441005,
+        "max": 0.11387944542793438
+      }
+    },
+    {
+      "fold": 3,
+      "held_error_m": {
+        "p50": 0.044895016399659114,
+        "p90": 0.0734477146299074,
+        "mean": 0.04717904674623094,
+        "max": 0.10747704641566144
+      }
+    }
+  ],
+  "route": "B_full_context_matched",
+  "status": "FAIL",
+  "training_approved": false,
+  "gates": {
+    "future_frames_not_supplied_to_model": true,
+    "common_t0_registration_p90_le_10pct": false,
+    "common_t0_registration_90pct_below_10pct": false,
+    "common_t0_registration_max_le_20pct": false,
+    "finite_p0_h": true,
+    "hungarian_one_to_one_48": true,
+    "identity_match_p90_le_5pct": false,
+    "identity_match_max_le_10pct": false,
+    "valid_queries_at_least_44": true,
+    "valid_graph_connected": true,
+    "finite_teacher": true
+  },
+  "valid_query_count": 48,
+  "identity_match_px": {
+    "p50": 76.20502376562828,
+    "p90": 124.97435512162009,
+    "mean": 77.94269564734817,
+    "max": 140.8238157338899
+  },
+  "identity_match_normalized_bbox": {
+    "p50": 0.6475282437908458,
+    "p90": 1.061930312359492,
+    "mean": 0.6622935645827585,
+    "max": 1.1966061235876264
+  },
+  "graph": {
+    "edge_count": 90,
+    "component_count": 1,
+    "component_sizes": [
+      48
+    ],
+    "bridge_edges": [],
+    "connected": true
+  },
+  "future_mask_hits": [
+    {
+      "source_frame_index": 21,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 22,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 23,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 24,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 25,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 26,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 27,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 28,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 29,
+      "hit_count": 0,
+      "fraction": 0.0
+    }
+  ],
+  "teacher_input_frames": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "teacher_future_frames": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "edge_target": "(X_F(t)-X_F(t0)) edge change plus common route-A t0 edge"
+}

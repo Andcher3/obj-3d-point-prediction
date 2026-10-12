@@ -1,0 +1,31 @@
+{
+  "video_id": "4d053322-1eef-4a69-8201-932c7b82fb03",
+  "scope": "single-context relation-target quality audit; no Relation Head training",
+  "valid_query_count": 48,
+  "anchor_valid_query_count": 48,
+  "anchor_error_norm_2d": {
+    "p50": 0.002240323845873594,
+    "p90": 0.004351941890840754,
+    "max": 0.007955014488440297,
+    "count_over_5pct": 0,
+    "count_over_10pct": 0
+  },
+  "bbox_xyxy": [
+    295.0,
+    161.0,
+    474.0,
+    286.0
+  ],
+  "bbox_diag_2d": 218.32544515012444,
+  "graph": {
+    "edge_count": 86,
+    "connected": true,
+    "component_count": 1
+  },
+  "future_pairwise_distance_drift": {
+    "p50": 0.029335392772955264,
+    "p90": 0.11920781231949078,
+    "max": 0.7082245487147881
+  },
+  "gate": "PASS"
+}

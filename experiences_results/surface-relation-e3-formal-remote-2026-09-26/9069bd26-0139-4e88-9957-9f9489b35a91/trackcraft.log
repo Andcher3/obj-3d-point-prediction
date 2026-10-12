@@ -1,0 +1,17 @@
+/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+  using 7 frames at stride=1 (indices [0, 1, ..., 6])
+Loaded 7 frames from /tmp/tmpf9hucsib.npz, subsampled to 7 (stride=1)
+  LoRA injected: rank=1024, targets=q,k,v,o,ffn.0,ffn.2
+  patch_embedding expanded: 16->32 channels
+  DiT head expanded to 2x output (xyz | vis)
+  release dit: loaded 1425 tensors
+  release vae: loaded 194 tensors
+  release vae_vis: loaded 194 tensors
+  release vae_pj: loaded 194 tensors
+  release text_encoder: loaded 242 tensors
+WanSceneFlowPredictor loaded from /root/trackcraft-assets/checkpoints/trackcraft3r/model.safetensors
+saved /root/autodl-tmp/projects/motionforesight/outputs/e3_formal/9069bd26-0139-4e88-9957-9f9489b35a91/observed7_trackcraft_dense.npz
+  track_map: shape=(7, 480, 832, 3) dtype=float32
+  recon_map: shape=(7, 480, 832, 3) dtype=float32
+  rgb: shape=(7, 480, 832, 3) dtype=uint8

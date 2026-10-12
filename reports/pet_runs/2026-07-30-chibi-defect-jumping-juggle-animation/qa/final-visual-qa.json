@@ -1,0 +1,7 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "The finalized jumping-juggle row satisfies the requested frame, motion, identity, readability, and validation requirements.",
+  "jumping_row": "Five coherent one-robot frames show exactly one blue ice orb and two yellow electric orbs each; ice advances lower-left to upper-left to top-center to upper-right to lower-right, low hands sequence left to right to middle to left to right, all balls move, and the wrap remains plausible with stable baseline, scale, cape, palette, limbs, and framing.",
+  "review_warnings": [],
+  "repair_rows": []
+}

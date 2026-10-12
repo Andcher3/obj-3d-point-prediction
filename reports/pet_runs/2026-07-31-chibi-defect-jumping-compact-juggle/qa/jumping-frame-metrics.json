@@ -1,0 +1,60 @@
+{
+  "frame_count": 5,
+  "atlas_unused_columns": [
+    5,
+    6,
+    7
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "bbox": [
+        17,
+        5,
+        175,
+        203
+      ],
+      "nontransparent_pixels": 18229
+    },
+    {
+      "index": 1,
+      "bbox": [
+        20,
+        5,
+        171,
+        203
+      ],
+      "nontransparent_pixels": 19147
+    },
+    {
+      "index": 2,
+      "bbox": [
+        20,
+        5,
+        172,
+        203
+      ],
+      "nontransparent_pixels": 18645
+    },
+    {
+      "index": 3,
+      "bbox": [
+        21,
+        5,
+        171,
+        203
+      ],
+      "nontransparent_pixels": 18973
+    },
+    {
+      "index": 4,
+      "bbox": [
+        18,
+        5,
+        173,
+        203
+      ],
+      "nontransparent_pixels": 18396
+    }
+  ]
+}

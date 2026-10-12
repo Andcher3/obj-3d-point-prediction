@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "frames_root": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-31-chibi-defect-jumping-compact-juggle\\frames",
+  "states": [
+    "jumping"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-31-chibi-defect-jumping-compact-juggle\\frames\\jumping\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18229,
+          "bbox": [
+            17,
+            5,
+            175,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 305
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-31-chibi-defect-jumping-compact-juggle\\frames\\jumping\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19147,
+          "bbox": [
+            20,
+            5,
+            171,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 281
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-31-chibi-defect-jumping-compact-juggle\\frames\\jumping\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18645,
+          "bbox": [
+            20,
+            5,
+            172,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 330
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-31-chibi-defect-jumping-compact-juggle\\frames\\jumping\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18973,
+          "bbox": [
+            21,
+            5,
+            171,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 312
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-31-chibi-defect-jumping-compact-juggle\\frames\\jumping\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18396,
+          "bbox": [
+            18,
+            5,
+            173,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 285
+        }
+      ]
+    }
+  ]
+}

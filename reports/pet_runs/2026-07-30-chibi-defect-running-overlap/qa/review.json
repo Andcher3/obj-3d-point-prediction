@@ -1,0 +1,112 @@
+{
+  "ok": true,
+  "frames_root": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-running-overlap\\frames",
+  "states": [
+    "running"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "running",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-running-overlap\\frames\\running\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18066,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 133
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-running-overlap\\frames\\running\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17904,
+          "bbox": [
+            36,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 108
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-running-overlap\\frames\\running\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17910,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 106
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-running-overlap\\frames\\running\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17605,
+          "bbox": [
+            38,
+            5,
+            153,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 116
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-running-overlap\\frames\\running\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17512,
+          "bbox": [
+            36,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 124
+        },
+        {
+          "index": 5,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-running-overlap\\frames\\running\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17381,
+          "bbox": [
+            35,
+            5,
+            156,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 116
+        }
+      ]
+    }
+  ]
+}

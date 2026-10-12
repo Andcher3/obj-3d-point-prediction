@@ -1,0 +1,53 @@
+FlowForesight 方法幻灯片——ImageGen 最终提示词
+
+共同视觉规范
+- 用途：16:9 组会学术幻灯片整页图片。
+- 风格参考：项目现有组会幻灯片；白色背景、顶部粗黑中文标题、标题下细深蓝横线、深海军蓝分区标题、蓝/青绿/橙色区分信息流。
+- 字体观感：Microsoft YaHei / 微软雅黑风格，中文清楚，标题醒目，正文不使用小字。
+- 视觉形式：平面、严谨、论文方法图风格；清晰箭头和轨迹，不做UI仪表盘，不堆叠卡片，不添加页码、校徽、水印或无关装饰。
+- 全部内容位于16:9安全区，左右边距一致，禁止裁切、文字重叠和标题换行。
+
+第1页
+Use case: scientific-educational
+Asset type: full-page academic presentation slide image
+Primary request: 生成一页解释“同一观察对应多个未来”的方法动机幻灯片。
+Title text (verbatim): “同一段观察，可能对应多种未来”
+Composition: 左侧约35%显示“观察：前 7 帧”的横向视频胶片，连续画面均为同一只手端着透明杯子的稳定观察状态；中部显示杯子当前状态及少量三维查询点；右侧从同一状态分叉。上方较窄分支属于“MotionForesight”，只显示一条蓝色未来三维轨迹并标注“单一未来”；下方主分支属于“FlowForesight”，显示蓝、青绿、橙三组空间轨迹并标注“多个候选未来”。三组轨迹表达不同方向、速度和终点，不写喝水、放下、滑落等事件名称。
+Exact visible text only: “同一段观察，可能对应多种未来”, “观察：前 7 帧”, “MotionForesight”, “单一未来”, “FlowForesight”, “多个候选未来”.
+Constraints: 标题一行；文字逐字准确；轨迹起点一致；不要额外文字；不要将三条候选路径画成概率柱状图。
+
+第2页
+Use case: scientific-educational
+Asset type: full-page academic presentation slide image
+Primary request: 生成一页从左到右展示 FlowForesight 输入输出接口的幻灯片。
+Title text (verbatim): “任务接口保持一致，输出扩展为 K 个未来”
+Composition: 主流程从左到右。左侧为“输入：前 7 帧单目视频”的7帧胶片；其后依次是“SAM 目标掩码”和覆盖目标杯子的“64 个查询点”；中间放置清楚的“FlowForesight”方法模块；右侧用六个颜色协调的小型三维轨迹簇表示“输出：K=6 组候选轨迹”，并在下方写“每组：64 × 15 × 3”和“最后观察帧相机坐标系”。底部用单独的细虚线训练通道表示“完整视频 → 未来 15 帧伪标签（仅训练）”，该通道只指向训练监督，不进入推理主流程。底部醒目小结写“推理阶段只使用观察帧”。
+Exact visible text only: “任务接口保持一致，输出扩展为 K 个未来”, “输入：前 7 帧单目视频”, “SAM 目标掩码”, “64 个查询点”, “FlowForesight”, “输出：K=6 组候选轨迹”, “每组：64 × 15 × 3”, “最后观察帧相机坐标系”, “完整视频 → 未来 15 帧伪标签（仅训练）”, “推理阶段只使用观察帧”.
+Constraints: 训练虚线不得与推理主路径混淆；不要添加其他模块；所有文字清晰准确。
+
+第3页
+Use case: scientific-educational
+Asset type: full-page academic presentation slide image
+Primary request: 生成一页解释 FlowForesight 两类观察条件来源的方法图。
+Title text (verbatim): “观察期提供两类条件”
+Composition: 左侧为同一组“前 7 帧观察视频”。从这里分成上下两条清晰支路。上方蓝色支路先显示“SAM：掩码与查询点”，再进入“观察期跟踪与点特征编码”，输出“目标点历史条件 C_point”，下方列出“3D位置 · 位移 · 局部特征 · 可见性”。下方青绿色支路从“RGB · 深度/点图 · 相机信息”进入“视觉—几何编码器”，输出“场景条件 C_scene”。两条支路在右侧共同进入橙色的“条件 Flow Matching 轨迹生成器”。底部用红色细线提示“未来 15 帧不进入条件编码器”。
+Exact visible text only: “观察期提供两类条件”, “前 7 帧观察视频”, “SAM：掩码与查询点”, “观察期跟踪与点特征编码”, “目标点历史条件 C_point”, “3D位置 · 位移 · 局部特征 · 可见性”, “RGB · 深度/点图 · 相机信息”, “视觉—几何编码器”, “场景条件 C_scene”, “条件 Flow Matching 轨迹生成器”, “未来 15 帧不进入条件编码器”.
+Constraints: SAM只在上方目标点支路；两类条件必须并列且都指向生成器；不要画未来帧进入任何条件支路。
+
+第4页
+Use case: scientific-educational
+Asset type: full-page academic presentation slide image
+Primary request: 生成一页解释条件 Flow Matching 训练过程的学术方法图。
+Title text (verbatim): “训练：学习从噪声到真实未来轨迹的速度场”
+Composition: 上方明确分为两条来源。左上是“条件：仅前 7 帧”，输出“C_point + C_scene”；右上是“监督：完整视频离线伪标签”，输出“D_gt”。中央画一条连续平滑的轨迹运输带，从左侧蓝紫色噪声云“Z ~ N(0,I)”经过中间状态“D_s”到右侧结构化三维轨迹“D_gt”。运输带下方清楚显示两条公式：“D_s=(1-s)Z+sD_gt”和“u*=D_gt-Z”。中央模型框写“v_theta(D_s, s | C_point, C_scene) ≈ u*”。底部左侧写“每条样本提供条件分布的一次观测”；底部右侧用橙红色强调“未来帧只生成 D_gt，不进入条件分支”。
+Exact visible text only: “训练：学习从噪声到真实未来轨迹的速度场”, “条件：仅前 7 帧”, “C_point + C_scene”, “监督：完整视频离线伪标签”, “D_gt”, “Z ~ N(0,I)”, “D_s”, “D_s=(1-s)Z+sD_gt”, “u*=D_gt-Z”, “v_theta(D_s, s | C_point, C_scene) ≈ u*”, “每条样本提供条件分布的一次观测”, “未来帧只生成 D_gt，不进入条件分支”.
+Constraints: 公式逐字符准确；D_gt可以重复作为节点名；条件分支与监督分支必须视觉上分开；不要画未来帧进入 C_point 或 C_scene。
+
+第5页
+Use case: scientific-educational
+Asset type: full-page academic presentation slide image
+Primary request: 生成一页展示 FlowForesight 推理和当前能力边界的幻灯片。
+Title text (verbatim): “推理：同一条件，多次采样得到多组候选”
+Composition: 左侧为“前 7 帧观察视频”，进入“C_point + C_scene（只计算一次）”。中间垂直排列六个不同的噪声种子“Z1, Z2, Z3, Z4, Z5, Z6”，共同进入一个共享的“FlowForesight”生成模块。右侧产生六组颜色不同但起点一致的三维点轨迹，标题为“6 组候选轨迹”，下方标注“输出：6 × 64 × 15 × 3”。页面底部使用两个简洁横向区域：左边“当前可以评价”下列“Best-of-6 · 代表轨迹误差 · 多样性”；右边“当前还不提供”下列“语义标签 · 事件概率 · 保证样本互异”。最底部主结论写“基于观察期视觉—几何条件的多候选三维点轨迹生成”。
+Exact visible text only: “推理：同一条件，多次采样得到多组候选”, “前 7 帧观察视频”, “C_point + C_scene（只计算一次）”, “Z1”, “Z2”, “Z3”, “Z4”, “Z5”, “Z6”, “FlowForesight”, “6 组候选轨迹”, “输出：6 × 64 × 15 × 3”, “当前可以评价”, “Best-of-6 · 代表轨迹误差 · 多样性”, “当前还不提供”, “语义标签 · 事件概率 · 保证样本互异”, “基于观察期视觉—几何条件的多候选三维点轨迹生成”.
+Constraints: 六个噪声都连接同一个生成模块；右侧必须是六组候选，不画成分类概率；不要添加“喝水”等语义事件标签。

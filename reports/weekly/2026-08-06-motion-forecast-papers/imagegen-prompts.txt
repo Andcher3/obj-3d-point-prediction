@@ -1,0 +1,36 @@
+GLOBAL STYLE FOR ALL SLIDES
+Use case: scientific-educational / productivity-visual
+Asset type: full-page academic presentation slide image, 16:9 landscape
+Audience: beginners with no background in point tracking, 3D geometry, diffusion, or flow matching
+Style: established Chinese academic group-meeting deck; bright white background; bold black title in Microsoft YaHei style; thin navy horizontal rule below the title; restrained navy, cobalt blue, teal and orange accents; clean vector-like scientific figures; balanced information density; flat composition rather than dashboard UI; no page number; no watermark; no institutional logo; no decorative clip art.
+Typography: Chinese and English in Microsoft YaHei-like sans serif, large and readable. No tiny text. Render all quoted text verbatim. Do not expose speaker notes, timing, design instructions, or prompt language.
+
+PAGE 01
+Minimal cover slide. Text: "MotionForesight"; "Re-purposing Video Models for Future 3D Scene-Flow Prediction"; "Homanga Bharadhwaj · Yash Jangir"; "arXiv:2607.16192v1 · 17 July 2026"; "从短视频前缀预测物体未来三维点轨迹". Hero visual: a short observed filmstrip of a hand manipulating an everyday object transitions into a clean 3D colored point cloud with future trajectory curves. Keep the cover spacious and formal.
+
+PAGE 02
+Title: "为什么预测三维点轨迹？". One continuous comparison composition. Left: future RGB video frames with pixel texture and a red note "未来视频：计算昂贵". Middle: one rigid cube pose with axes and note "单一位姿：只适合刚体". Right, visually dominant: a cup/drawer-like object represented by colored 3D surface points with coherent trajectories and note "三维点轨迹：直接描述物体怎样运动". Along the bottom show four small scientific examples labeled "平移", "旋转", "关节运动", "局部形变". No generic icons.
+
+PAGE 03
+Title: "普通视频怎样变成训练监督？". Two-lane scientific data-flow diagram. Upper normal lane: "观测前缀：7帧" -> "RGB + Pointmap" -> "SAM 目标掩码与查询点" -> "预测模型只看前7帧". Lower dashed lane titled "训练期离线处理": "完整22帧视频" -> "掩码传播 + 深度/相机估计" -> "TrackCraft3R 完整三维跟踪" -> "截取未来15帧伪标签". Add a coordinate note "统一到第7帧相机坐标". Prominent callout: "未来帧只用于制作伪标签；预测模型从不读取未来帧". Use actual filmstrip, pointmap, mask, point tracks.
+
+PAGE 04
+Title: "把完整视频跟踪器改成只看过去的预测器". Clear left-to-right architecture diagram with two aligned streams. Context stream: observed slots contain "真实 RGB + Pointmap"; future slots contain "可学习 Mask Latents". Query stream: "Frame-0 Query 重复到全部时刻". Both enter a large block "Frozen Wan2.1 Video DiT + TrackCraft3R" with temporal RoPE along the time axis. Small orange trainable attachments labeled "LoRA", "I/O Projections", "Prediction Head". Output: colored "Future 3D Tracks" for 15 future steps. Legend: navy snowflake "冻结"; orange outline "训练". No semantic, language, VLM, event, or multi-future branch.
+
+PAGE 05
+Title: "结果：三维运动可以直接预测，但当前只有一个未来". Left: clean result table with columns "测试集", "ADE↓ / cm", "FDE↓ / cm", "PWT@5cm↑" and rows "SSv2 未见视频 | 4.47 | 6.23 | 76%" and "独立手机视频 | 9.31 | 14.88 | 54%". Center: compact loss illustration showing valid tracked points, invalid points crossed out, and weights "未来 = 1.0", "观测重建 = 0.25". Right/bottom: three evidence-based limitations labeled "确定性：只输出1条未来", "伪标签会继承分割/深度/跟踪误差", "跨场景与大相机运动更困难". Include one small visual of predicted 3D point tracks over a manipulated object.
+
+PAGE 06
+Minimal cover slide. Text: "Generative Point Tracking and Forecasting"; "Xuanchen Lu · Ang Cao · Chao Feng · Andrew Owens"; "CVPR 2026"; "用一个生成模型统一二维点跟踪与未来预测". Hero visual: a continuous video timeline; colored query points are tracked through visible frames, then multiple plausible dotted 2D paths continue into gray unobserved frames. Formal computer-vision conference aesthetic.
+
+PAGE 07
+Title: "同一个问题：查询点在每个时刻位于哪里？". One long timeline. Start with "Query Points Q" on first frame. In the blue observed interval, show video frames and label "有图像条件 → Tracking". In the orange unobserved interval, show blank future slots with several possible point paths and label "无图像条件 → Forecasting". Below, show compact formulation "p(P, V | I_C, Q)" with definitions "P：二维坐标", "V：可见性", "I_C：已观测视频". Add a small contrast visual: one averaged regression path versus several generated paths, with text "坐标回归容易平均化" and "生成模型表达多种未来".
+
+PAGE 08
+Title: "Point-DiT 同时建模点、时间和图像". Scientific architecture pipeline. Video frames -> "DINOv3-S 多层特征" -> local visual features sampled at query locations. In parallel, a frame-by-point grid of "Noisy Trajectory Tokens". Then a large six-block transformer with three clearly stacked operations: "空间注意力：同帧不同点", "因果时间注意力：同一点的历史", "点—图像交叉注意力：视觉证据". Observed frames connect to image features; future frames connect to a clean block "Learned Null Condition". Output arrows to "2D Trajectory Flow" and "Visibility". Use colored point identities consistently through the diagram.
+
+PAGE 09
+Title: "训练一次，适应不同观测长度与长期预测". Three-part process arranged left to right. Left: Flow Matching with exact formulas "x_k = (1-k)x_0 + kx_1", "L_pos = ||F_θ(x_k,k,c) - (x_1-x_0)||²", and "L_vis = BCE(V̂,V)"; visualize Gaussian noise flowing toward a clean point trajectory. Middle: a video timeline with a different random cutoff per sample, labeled "随机视觉截止帧", and three examples "纯跟踪", "先跟踪后预测", "纯预测". Right: overlapping autoregressive windows W1, W2, W3 with retained prefixes and small noise, labeled "重叠滑动窗口" and "历史加少量噪声后重新去噪". Bottom takeaway: "一个模型覆盖不同观测长度，并持续向未来滚动".
+
+PAGE 10
+Title: "结果：生成式预测更准，统一建模仍有代价". Left: compact MOVi-A table with columns "模型", "FVMD↓", "Best-of-K↓", "LRTL↓" and rows "此前方法 | 17838 | 127.0 | 14.1", "预测专用模型 | 17786 | 95.6 | 14.6", "统一模型 | 18091 | 98.6 | 13.9". Right: three clear quantitative callouts: "Physics101 MSE：28.62 → 21.41", "TAP-Vid AJ：Kinetics 49.8 / DAVIS 59.9", "Flow Matching AJ 53.7 > L1 43.3 > L2 30.2". Bottom boundary band with three labels: "输出仍是二维点", "滑动窗口会积累长期误差", "伪轨迹会带来教师偏差". Use a restrained result-focused academic layout without decorative charts.

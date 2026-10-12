@@ -1,0 +1,39 @@
+{
+  "samples": [
+    {
+      "id": "drink_bottle",
+      "source_fps": 30,
+      "camera_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_camera_aligned.npz",
+      "dense_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_dense.npz",
+      "query_json": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_queries.json"
+    },
+    {
+      "id": "drink_bottle_stride2",
+      "source_fps": 30,
+      "camera_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_camera_stride2.npz",
+      "dense_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_dense_stride2.npz",
+      "query_json": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_queries.json"
+    },
+    {
+      "id": "drink_bottle_start12",
+      "source_fps": 30,
+      "camera_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_camera_start12_stride2.npz",
+      "dense_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_dense_start12_stride2.npz",
+      "query_json": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_queries_start12.json"
+    },
+    {
+      "id": "sewing_scissors",
+      "source_fps": 30,
+      "camera_npz": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/preprocessed/sewing/sewing_user.npz",
+      "dense_npz": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/dense/sewing_dense.npz",
+      "query_json": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/queries/sewing_queries.json"
+    },
+    {
+      "id": "watering_can",
+      "source_fps": 30,
+      "camera_npz": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/preprocessed/watering/watering_user.npz",
+      "dense_npz": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/dense/watering_dense.npz",
+      "query_json": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/queries/watering_queries.json"
+    }
+  ]
+}

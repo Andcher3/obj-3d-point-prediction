@@ -1,0 +1,100 @@
+{
+  "render_smoke_passed": true,
+  "synthetic_only": true,
+  "model_imported": false,
+  "model_loaded": false,
+  "model_forward_called": false,
+  "real_tracking_quality_evaluated": false,
+  "nonidentity_camera_projection_passed": true,
+  "invalid_and_offscreen_points_handled": true,
+  "outputs": [
+    {
+      "video": "car-turn",
+      "frame_count": 7,
+      "output_resolution_hw": [
+        520,
+        1708
+      ],
+      "t0_image_written": true,
+      "coordinates_unmodified": true,
+      "file": "SYNTHETIC-NOT-MODEL_car-turn_7frames.mp4"
+    },
+    {
+      "video": "car-turn",
+      "frame_count": 22,
+      "output_resolution_hw": [
+        520,
+        1708
+      ],
+      "t0_image_written": true,
+      "coordinates_unmodified": true,
+      "file": "SYNTHETIC-NOT-MODEL_car-turn_22frames.mp4"
+    },
+    {
+      "video": "drift-turn",
+      "frame_count": 7,
+      "output_resolution_hw": [
+        520,
+        1708
+      ],
+      "t0_image_written": true,
+      "coordinates_unmodified": true,
+      "file": "SYNTHETIC-NOT-MODEL_drift-turn_7frames.mp4"
+    },
+    {
+      "video": "drift-turn",
+      "frame_count": 22,
+      "output_resolution_hw": [
+        520,
+        1708
+      ],
+      "t0_image_written": true,
+      "coordinates_unmodified": true,
+      "file": "SYNTHETIC-NOT-MODEL_drift-turn_22frames.mp4"
+    },
+    {
+      "video": "boat",
+      "frame_count": 7,
+      "output_resolution_hw": [
+        520,
+        1708
+      ],
+      "t0_image_written": true,
+      "coordinates_unmodified": true,
+      "file": "SYNTHETIC-NOT-MODEL_boat_7frames.mp4"
+    },
+    {
+      "video": "boat",
+      "frame_count": 22,
+      "output_resolution_hw": [
+        520,
+        1708
+      ],
+      "t0_image_written": true,
+      "coordinates_unmodified": true,
+      "file": "SYNTHETIC-NOT-MODEL_boat_22frames.mp4"
+    },
+    {
+      "video": "soccerball",
+      "frame_count": 7,
+      "output_resolution_hw": [
+        520,
+        1708
+      ],
+      "t0_image_written": true,
+      "coordinates_unmodified": true,
+      "file": "SYNTHETIC-NOT-MODEL_soccerball_7frames.mp4"
+    },
+    {
+      "video": "soccerball",
+      "frame_count": 22,
+      "output_resolution_hw": [
+        520,
+        1708
+      ],
+      "t0_image_written": true,
+      "coordinates_unmodified": true,
+      "file": "SYNTHETIC-NOT-MODEL_soccerball_22frames.mp4"
+    }
+  ]
+}

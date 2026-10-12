@@ -1,0 +1,26 @@
+{
+  "status": "DOWNLOAD_ENVIRONMENT_VERIFIED_AWAITING_GPU_ENABLE",
+  "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a",
+  "checkpoint_bytes": 6601806018,
+  "checkpoint_sha256": "cd71b27bbb0c7a22de36d1eacebea84d93196a4da6296c550b1ea27f3a1c5539",
+  "official_sha256": "cd71b27bbb0c7a22de36d1eacebea84d93196a4da6296c550b1ea27f3a1c5539",
+  "sha256_matches": true,
+  "cpu_strict_weight_load_passed": false,
+  "cpu_strict_weight_load_deferred": true,
+  "cgroup_memory_limit_bytes": 2147483648,
+  "parameter_count": null,
+  "torch": "2.8.0+cu128",
+  "cuda_build": "12.8",
+  "compiled_cuda_architectures": [
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "query_approved": true,
+  "gpu_inference_started": false,
+  "numerical_quality_evaluation_started": false
+}

@@ -1,0 +1,27 @@
+{
+  "source": "experiences_results\\pointodyssey-interface-preflight-2026-09-26\\object_r4\\pointodyssey_gt_bundle.npz",
+  "cache": "experiences_results\\pointodyssey-interface-preflight-2026-09-26\\object_r4\\p0_h_cache_aligned.npz",
+  "query_count": 48,
+  "t0_bbox_diagonal_in_model_units": 0.7397339034397326,
+  "fit_scale_gt_to_model": 0.1779741556010673,
+  "in_sample_residual_median_bbox_fraction": 0.08368880701647445,
+  "in_sample_residual_p90_bbox_fraction": 0.1572977461853354,
+  "held_out_residual_median_bbox_fraction": 0.08856137853306181,
+  "held_out_residual_p90_bbox_fraction": 0.1658359221917764,
+  "held_out_residual_max_bbox_fraction": 0.6399867209508183,
+  "held_out_residual_above_10_percent_count": 19,
+  "anchor_match_p90_dense_px": 0.9284259557724005,
+  "anchor_match_max_dense_px": 2.3862905502319336,
+  "registration_gate_pass": false,
+  "da3_direct_t0": {
+    "t0_bbox_diagonal_in_model_units": 0.7986115385913118,
+    "fit_scale_gt_to_model": 0.18641401950662811,
+    "in_sample_residual_median_bbox_fraction": 0.1254939517475645,
+    "in_sample_residual_p90_bbox_fraction": 0.3211567223366946,
+    "held_out_residual_median_bbox_fraction": 0.13609770340527821,
+    "held_out_residual_p90_bbox_fraction": 0.3411418847562942,
+    "held_out_residual_max_bbox_fraction": 0.8660620444888906,
+    "held_out_residual_above_10_percent_count": 34
+  },
+  "trackcraft_vs_da3_direct_t0_median_units": 0.03840969740990928
+}

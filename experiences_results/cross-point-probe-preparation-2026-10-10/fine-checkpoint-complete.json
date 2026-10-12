@@ -1,0 +1,60 @@
+{
+  "fine_checkpoint_files_ready": true,
+  "official_source": "MotionForesight README linked Google Drive release",
+  "official_drive_id": "1isAB_TnNW8gbMlgs5yVnPBKZSR85-JyZ",
+  "archive_bytes": 293148992,
+  "archive_sha256": "1c3e4f26a8558b25e4da88f15f1df2e9916a892fefa69248ce9f11485a63d5e9",
+  "publisher_sha256_available": false,
+  "local_remote_sha256_match": true,
+  "zip_crc_pass": true,
+  "extracted_files": [
+    "trainedon_ss100k/best.pt",
+    "trainedon_ss100k/config.json"
+  ],
+  "config": {
+    "run_name": "freshlora_ss100k_7to22_320x576",
+    "trained_on": "Something-Something ~100k-clip subset (ss_subset100k), dense TrackCraft3r tracks",
+    "epoch": 68,
+    "global_step": 3400,
+    "val_metrics": {
+      "ade_future_m": 0.039800019752874505,
+      "fde_future_m": 0.06785245837818366,
+      "ade_m": 0.039800019752874505,
+      "fde_m": 0.06785245837818366,
+      "loss": 0.06703520955943532
+    },
+    "model_config": {
+      "checkpoint_path": "/weka/scratch/hbharad2/users/yjangir1/future_flow_homaga/future-3d-scene-flow/models_pretrained/checkpoints/trackcraft3r/model.safetensors",
+      "model_id": "Wan-AI/Wan2.1-T2V-1.3B",
+      "lora_rank": 1024,
+      "lora_target_modules": "q,k,v,o,ffn.0,ffn.2",
+      "height": 320,
+      "width": 576,
+      "obs_frames": 7,
+      "total_frames": 22,
+      "regression_timestep": -1,
+      "trainable": [
+        "mask",
+        "io",
+        "head"
+      ],
+      "lora_scope": "attn",
+      "lora_last_n": 0,
+      "predict_vis": true,
+      "fresh_lora_rank": 32,
+      "fresh_lora_alpha": 32,
+      "fresh_lora_scope": "attn"
+    },
+    "base_checkpoint": "trackcraft3r/model.safetensors (Wan2.1-T2V-1.3B + TrackCraft3r); required at load time",
+    "load_with": "render_future_scene_flow_viewer.build_model_from_ckpt(best.pt, trackcraft3r/model.safetensors)",
+    "obs_frames": 7,
+    "total_frames": 22,
+    "future_frames": 15,
+    "height": 320,
+    "width": 576,
+    "notes": "fresh-LoRA fine-tune; checkpoint stores trainable tensors only. best.pt = best val future-ADE."
+  },
+  "model_loaded": false,
+  "forward_called": false,
+  "gpu_used": false
+}

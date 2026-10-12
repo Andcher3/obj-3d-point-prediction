@@ -1,0 +1,156 @@
+{
+  "protocol": {
+    "videos": [
+      "10790317943435558913",
+      "gear_v2_9-wrist_front_rgb_img-0"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "steps": 20,
+    "history_frames": 81,
+    "future_frames": 81,
+    "resolution": [
+      832,
+      480
+    ],
+    "text_conditioning": false,
+    "video_conditioning": true
+  },
+  "videos": {
+    "10790317943435558913": {
+      "runs": [
+        {
+          "video": "10790317943435558913",
+          "seed": 42,
+          "ade_px": 64.16958618164062,
+          "fde_px": 115.47699737548828,
+          "pred_path_px_mean": 1.4451603889465332,
+          "gt_path_px_mean": 3.629502534866333,
+          "pred_visible_rate": 0.7022475466919912,
+          "gt_visible_rate": 0.46384931940487495
+        },
+        {
+          "video": "10790317943435558913",
+          "seed": 43,
+          "ade_px": 61.605934143066406,
+          "fde_px": 109.44379425048828,
+          "pred_path_px_mean": 1.8273016214370728,
+          "gt_path_px_mean": 3.629502534866333,
+          "pred_visible_rate": 0.5267173156062045,
+          "gt_visible_rate": 0.46384931940487495
+        },
+        {
+          "video": "10790317943435558913",
+          "seed": 44,
+          "ade_px": 63.50592803955078,
+          "fde_px": 112.23712158203125,
+          "pred_path_px_mean": 1.5442107915878296,
+          "gt_path_px_mean": 3.629502534866333,
+          "pred_visible_rate": 0.6502057613168725,
+          "gt_visible_rate": 0.46384931940487495
+        }
+      ],
+      "best_of_3_ade_px": 61.605934143066406,
+      "best_of_3_fde_px": 109.44379425048828,
+      "static_ade_px": 102.11981964111328,
+      "static_fde_px": 186.0675048828125,
+      "mean_pairwise_ade_px": 17.49069881439209,
+      "mean_pairwise_fde_px": 38.44134553273519,
+      "pairs": [
+        {
+          "seeds": [
+            42,
+            43
+          ],
+          "pairwise_ade_px": 21.581228256225586,
+          "pairwise_fde_px": 54.3703498840332
+        },
+        {
+          "seeds": [
+            42,
+            44
+          ],
+          "pairwise_ade_px": 8.122889518737793,
+          "pairwise_fde_px": 15.814431190490723
+        },
+        {
+          "seeds": [
+            43,
+            44
+          ],
+          "pairwise_ade_px": 22.76797866821289,
+          "pairwise_fde_px": 45.13925552368164
+        }
+      ]
+    },
+    "gear_v2_9-wrist_front_rgb_img-0": {
+      "runs": [
+        {
+          "video": "gear_v2_9-wrist_front_rgb_img-0",
+          "seed": 42,
+          "ade_px": 50.733551025390625,
+          "fde_px": 111.96823120117188,
+          "pred_path_px_mean": 0.8590317368507385,
+          "gt_path_px_mean": 2.731931447982788,
+          "pred_visible_rate": 0.7595441595441595,
+          "gt_visible_rate": 0.5566635011079456
+        },
+        {
+          "video": "gear_v2_9-wrist_front_rgb_img-0",
+          "seed": 43,
+          "ade_px": 53.643577575683594,
+          "fde_px": 112.50276184082031,
+          "pred_path_px_mean": 0.8893474340438843,
+          "gt_path_px_mean": 2.731931447982788,
+          "pred_visible_rate": 0.8287749287749288,
+          "gt_visible_rate": 0.5566635011079456
+        },
+        {
+          "video": "gear_v2_9-wrist_front_rgb_img-0",
+          "seed": 44,
+          "ade_px": 53.3245964050293,
+          "fde_px": 113.03730773925781,
+          "pred_path_px_mean": 0.8804093599319458,
+          "gt_path_px_mean": 2.731931447982788,
+          "pred_visible_rate": 0.719088319088319,
+          "gt_visible_rate": 0.5566635011079456
+        }
+      ],
+      "best_of_3_ade_px": 50.733551025390625,
+      "best_of_3_fde_px": 111.96823120117188,
+      "static_ade_px": 56.98477554321289,
+      "static_fde_px": 139.2835693359375,
+      "mean_pairwise_ade_px": 10.095945358276367,
+      "mean_pairwise_fde_px": 17.137940724690754,
+      "pairs": [
+        {
+          "seeds": [
+            42,
+            43
+          ],
+          "pairwise_ade_px": 10.489641189575195,
+          "pairwise_fde_px": 20.448026657104492
+        },
+        {
+          "seeds": [
+            42,
+            44
+          ],
+          "pairwise_ade_px": 9.588335990905762,
+          "pairwise_fde_px": 15.87306022644043
+        },
+        {
+          "seeds": [
+            43,
+            44
+          ],
+          "pairwise_ade_px": 10.209858894348145,
+          "pairwise_fde_px": 15.092735290527344
+        }
+      ]
+    }
+  }
+}

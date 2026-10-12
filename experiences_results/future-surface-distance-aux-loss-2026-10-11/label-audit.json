@@ -1,0 +1,1446 @@
+{
+  "rows": [
+    {
+      "scene": "scene_1680",
+      "maximum_bbox_isometry_relative_error": 3.0020936492292094e-07,
+      "valid_aux_pairs": 913,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1456",
+      "maximum_bbox_isometry_relative_error": 1.873487036618826e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4223",
+      "maximum_bbox_isometry_relative_error": 4.2614621520442597e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4093",
+      "maximum_bbox_isometry_relative_error": 2.7150031201017555e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3017",
+      "maximum_bbox_isometry_relative_error": 7.173508151936403e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2896",
+      "maximum_bbox_isometry_relative_error": 2.876588780509337e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5242",
+      "maximum_bbox_isometry_relative_error": 1.9744413748412626e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4352",
+      "maximum_bbox_isometry_relative_error": 3.7914225003987667e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2784",
+      "maximum_bbox_isometry_relative_error": 3.7855639334338775e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_499",
+      "maximum_bbox_isometry_relative_error": 2.421725469048397e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_837",
+      "maximum_bbox_isometry_relative_error": 3.0261358574534825e-07,
+      "valid_aux_pairs": 1081,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3475",
+      "maximum_bbox_isometry_relative_error": 3.4110078672711097e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1647",
+      "maximum_bbox_isometry_relative_error": 1.9015578800463118e-07,
+      "valid_aux_pairs": 952,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4397",
+      "maximum_bbox_isometry_relative_error": 3.715566663231584e-07,
+      "valid_aux_pairs": 1081,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_546",
+      "maximum_bbox_isometry_relative_error": 3.7721935086665326e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3365",
+      "maximum_bbox_isometry_relative_error": 2.5260993652409525e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4679",
+      "maximum_bbox_isometry_relative_error": 2.696689875847369e-07,
+      "valid_aux_pairs": 288,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_386",
+      "maximum_bbox_isometry_relative_error": 2.081002463683035e-07,
+      "valid_aux_pairs": 1081,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5781",
+      "maximum_bbox_isometry_relative_error": 2.146594795249257e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1494",
+      "maximum_bbox_isometry_relative_error": 5.216928684603772e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_816",
+      "maximum_bbox_isometry_relative_error": 3.073833738653775e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1822",
+      "maximum_bbox_isometry_relative_error": 2.2839789437512081e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_266",
+      "maximum_bbox_isometry_relative_error": 2.2258231524574512e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4483",
+      "maximum_bbox_isometry_relative_error": 1.8974810700456146e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4145",
+      "maximum_bbox_isometry_relative_error": 2.55561417361605e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5409",
+      "maximum_bbox_isometry_relative_error": 3.661679102151538e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2355",
+      "maximum_bbox_isometry_relative_error": 2.8364581794448895e-07,
+      "valid_aux_pairs": 991,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5355",
+      "maximum_bbox_isometry_relative_error": 3.5623855865196674e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1636",
+      "maximum_bbox_isometry_relative_error": 2.303675046277931e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4947",
+      "maximum_bbox_isometry_relative_error": 2.92903592935545e-07,
+      "valid_aux_pairs": 616,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2420",
+      "maximum_bbox_isometry_relative_error": 2.197760267108606e-07,
+      "valid_aux_pairs": 167,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5795",
+      "maximum_bbox_isometry_relative_error": 2.489500730007421e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_497",
+      "maximum_bbox_isometry_relative_error": 4.6230402972469165e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2238",
+      "maximum_bbox_isometry_relative_error": 3.072393894854031e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5163",
+      "maximum_bbox_isometry_relative_error": 3.3985944014602865e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2527",
+      "maximum_bbox_isometry_relative_error": 3.929724812223867e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4042",
+      "maximum_bbox_isometry_relative_error": 2.6403702690913633e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2185",
+      "maximum_bbox_isometry_relative_error": 2.240068397441064e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_851",
+      "maximum_bbox_isometry_relative_error": 2.755876664650714e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2920",
+      "maximum_bbox_isometry_relative_error": 2.1918013715094276e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_684",
+      "maximum_bbox_isometry_relative_error": 1.6480377951211267e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_230",
+      "maximum_bbox_isometry_relative_error": 2.7844205874316685e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_718",
+      "maximum_bbox_isometry_relative_error": 2.854918363937031e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4592",
+      "maximum_bbox_isometry_relative_error": 4.323833309172187e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_307",
+      "maximum_bbox_isometry_relative_error": 2.9825986302967067e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3790",
+      "maximum_bbox_isometry_relative_error": 2.6046237167065556e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3076",
+      "maximum_bbox_isometry_relative_error": 1.9581504773213965e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_444",
+      "maximum_bbox_isometry_relative_error": 2.0848833059972094e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2951",
+      "maximum_bbox_isometry_relative_error": 3.5400037745603186e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_485",
+      "maximum_bbox_isometry_relative_error": 1.7559572995651251e-07,
+      "valid_aux_pairs": 1081,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5120",
+      "maximum_bbox_isometry_relative_error": 2.3498697032664495e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2985",
+      "maximum_bbox_isometry_relative_error": 2.3149691230628378e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5381",
+      "maximum_bbox_isometry_relative_error": 2.0450663384963264e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3918",
+      "maximum_bbox_isometry_relative_error": 4.5968107542648795e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5530",
+      "maximum_bbox_isometry_relative_error": 7.924115266177978e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_354",
+      "maximum_bbox_isometry_relative_error": 4.3221547230132273e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1591",
+      "maximum_bbox_isometry_relative_error": 2.2417739842239826e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1716",
+      "maximum_bbox_isometry_relative_error": 3.007610587246745e-07,
+      "valid_aux_pairs": 1081,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4935",
+      "maximum_bbox_isometry_relative_error": 3.2263787375086395e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_922",
+      "maximum_bbox_isometry_relative_error": 2.1803194272251858e-07,
+      "valid_aux_pairs": 1081,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4039",
+      "maximum_bbox_isometry_relative_error": 3.3487057748970983e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4955",
+      "maximum_bbox_isometry_relative_error": 5.256144959275844e-07,
+      "valid_aux_pairs": 175,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4443",
+      "maximum_bbox_isometry_relative_error": 2.2356422846314672e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2789",
+      "maximum_bbox_isometry_relative_error": 4.7340631681436207e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2313",
+      "maximum_bbox_isometry_relative_error": 2.432745702662942e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5390",
+      "maximum_bbox_isometry_relative_error": 3.0177722010193975e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5642",
+      "maximum_bbox_isometry_relative_error": 2.388026132393861e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_247",
+      "maximum_bbox_isometry_relative_error": 2.1456045828927017e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_243",
+      "maximum_bbox_isometry_relative_error": 5.246499199529353e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1284",
+      "maximum_bbox_isometry_relative_error": 3.022019257059583e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4106",
+      "maximum_bbox_isometry_relative_error": 2.05383074103338e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2208",
+      "maximum_bbox_isometry_relative_error": 1.9808017270861455e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_511",
+      "maximum_bbox_isometry_relative_error": 2.089165178631447e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5934",
+      "maximum_bbox_isometry_relative_error": 3.840718818537425e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4696",
+      "maximum_bbox_isometry_relative_error": 4.7448497753066476e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1577",
+      "maximum_bbox_isometry_relative_error": 3.0739846579308505e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3124",
+      "maximum_bbox_isometry_relative_error": 4.6808099796180613e-07,
+      "valid_aux_pairs": 905,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3114",
+      "maximum_bbox_isometry_relative_error": 2.121013835676422e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2877",
+      "maximum_bbox_isometry_relative_error": 2.232662978940425e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5245",
+      "maximum_bbox_isometry_relative_error": 1.897997492505965e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1941",
+      "maximum_bbox_isometry_relative_error": 2.963425345114956e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2581",
+      "maximum_bbox_isometry_relative_error": 2.507201202206488e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4399",
+      "maximum_bbox_isometry_relative_error": 4.583418444781273e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3714",
+      "maximum_bbox_isometry_relative_error": 1.5929218477594986e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3653",
+      "maximum_bbox_isometry_relative_error": 7.627886020600272e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_39",
+      "maximum_bbox_isometry_relative_error": 2.6050958013001946e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2047",
+      "maximum_bbox_isometry_relative_error": 2.3485570466164063e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1030",
+      "maximum_bbox_isometry_relative_error": 2.449331191201054e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4727",
+      "maximum_bbox_isometry_relative_error": 4.262104766894481e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4272",
+      "maximum_bbox_isometry_relative_error": 3.7287148302311834e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2725",
+      "maximum_bbox_isometry_relative_error": 3.226690523661091e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5794",
+      "maximum_bbox_isometry_relative_error": 1.9022071739982493e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5998",
+      "maximum_bbox_isometry_relative_error": 2.0550331214508333e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2153",
+      "maximum_bbox_isometry_relative_error": 3.1306166192734963e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1711",
+      "maximum_bbox_isometry_relative_error": 2.3554243000489805e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1545",
+      "maximum_bbox_isometry_relative_error": 6.535934176099545e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3824",
+      "maximum_bbox_isometry_relative_error": 2.646639813974616e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3608",
+      "maximum_bbox_isometry_relative_error": 4.709279153303214e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2347",
+      "maximum_bbox_isometry_relative_error": 3.539637987159949e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1540",
+      "maximum_bbox_isometry_relative_error": 2.1201728372943762e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3101",
+      "maximum_bbox_isometry_relative_error": 3.2033273100751103e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5746",
+      "maximum_bbox_isometry_relative_error": 8.104130984065705e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_542",
+      "maximum_bbox_isometry_relative_error": 2.5361279654134705e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3831",
+      "maximum_bbox_isometry_relative_error": 2.2532852028689376e-07,
+      "valid_aux_pairs": 993,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1478",
+      "maximum_bbox_isometry_relative_error": 2.3765936418840283e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2248",
+      "maximum_bbox_isometry_relative_error": 2.997308001795318e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4312",
+      "maximum_bbox_isometry_relative_error": 3.8774939525865193e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4181",
+      "maximum_bbox_isometry_relative_error": 2.2010522116033826e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3930",
+      "maximum_bbox_isometry_relative_error": 3.7813470044056885e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1346",
+      "maximum_bbox_isometry_relative_error": 4.051810549299262e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4523",
+      "maximum_bbox_isometry_relative_error": 2.166974439887781e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_636",
+      "maximum_bbox_isometry_relative_error": 2.0039074399846868e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3280",
+      "maximum_bbox_isometry_relative_error": 2.5345826770717395e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4555",
+      "maximum_bbox_isometry_relative_error": 3.0301441711344523e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_895",
+      "maximum_bbox_isometry_relative_error": 3.025285479907325e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1404",
+      "maximum_bbox_isometry_relative_error": 3.9819701669330243e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_446",
+      "maximum_bbox_isometry_relative_error": 1.3285438171806163e-07,
+      "valid_aux_pairs": 841,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3967",
+      "maximum_bbox_isometry_relative_error": 3.4873752952080395e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1668",
+      "maximum_bbox_isometry_relative_error": 5.680710728483973e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3934",
+      "maximum_bbox_isometry_relative_error": 5.69435201214219e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_428",
+      "maximum_bbox_isometry_relative_error": 5.996126333229768e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5398",
+      "maximum_bbox_isometry_relative_error": 2.3780022218033992e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_706",
+      "maximum_bbox_isometry_relative_error": 4.4377466679179634e-07,
+      "valid_aux_pairs": 808,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5748",
+      "maximum_bbox_isometry_relative_error": 2.381904806725288e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2580",
+      "maximum_bbox_isometry_relative_error": 7.660396477149334e-07,
+      "valid_aux_pairs": 913,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1301",
+      "maximum_bbox_isometry_relative_error": 3.204683309832035e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1215",
+      "maximum_bbox_isometry_relative_error": 1.7750048186826461e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1776",
+      "maximum_bbox_isometry_relative_error": 2.604604389944143e-07,
+      "valid_aux_pairs": 1081,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1450",
+      "maximum_bbox_isometry_relative_error": 2.2524774578869255e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5099",
+      "maximum_bbox_isometry_relative_error": 5.511619747267105e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3350",
+      "maximum_bbox_isometry_relative_error": 2.5690076199680334e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1691",
+      "maximum_bbox_isometry_relative_error": 2.3286422390356165e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3917",
+      "maximum_bbox_isometry_relative_error": 2.9584069238808297e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1056",
+      "maximum_bbox_isometry_relative_error": 2.882491116906749e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1895",
+      "maximum_bbox_isometry_relative_error": 8.217369327212509e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5419",
+      "maximum_bbox_isometry_relative_error": 2.901530251619988e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1441",
+      "maximum_bbox_isometry_relative_error": 2.3663447734634246e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2064",
+      "maximum_bbox_isometry_relative_error": 2.0422982061063522e-07,
+      "valid_aux_pairs": 265,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2549",
+      "maximum_bbox_isometry_relative_error": 2.0926721333580645e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4417",
+      "maximum_bbox_isometry_relative_error": 3.073427023991826e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_335",
+      "maximum_bbox_isometry_relative_error": 1.8652976052635495e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2836",
+      "maximum_bbox_isometry_relative_error": 3.8438236060756026e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3703",
+      "maximum_bbox_isometry_relative_error": 4.090516085852869e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5545",
+      "maximum_bbox_isometry_relative_error": 1.484120701888969e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2509",
+      "maximum_bbox_isometry_relative_error": 4.784704970006715e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2759",
+      "maximum_bbox_isometry_relative_error": 2.494589637080935e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2515",
+      "maximum_bbox_isometry_relative_error": 3.42288558385917e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4704",
+      "maximum_bbox_isometry_relative_error": 1.9976184262304741e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_2624",
+      "maximum_bbox_isometry_relative_error": 2.3361496914731106e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3207",
+      "maximum_bbox_isometry_relative_error": 2.1802684102567582e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_351",
+      "maximum_bbox_isometry_relative_error": 2.2880543326664338e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_4593",
+      "maximum_bbox_isometry_relative_error": 3.4346675192864495e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1697",
+      "maximum_bbox_isometry_relative_error": 3.5029069067604723e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3471",
+      "maximum_bbox_isometry_relative_error": 3.0858529953547986e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5850",
+      "maximum_bbox_isometry_relative_error": 9.364974857817288e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_3540",
+      "maximum_bbox_isometry_relative_error": 4.997228870706749e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1773",
+      "maximum_bbox_isometry_relative_error": 2.0753803653406067e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_1539",
+      "maximum_bbox_isometry_relative_error": 4.2135906141993473e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_179",
+      "maximum_bbox_isometry_relative_error": 4.849287051911233e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    },
+    {
+      "scene": "scene_5042",
+      "maximum_bbox_isometry_relative_error": 4.646060460800072e-07,
+      "valid_aux_pairs": 1128,
+      "all_pairs": 1128,
+      "geometry_future_used_as_prediction_input": false,
+      "surface_target": "rigid transport of GT frame0 visible material patch",
+      "full_mesh_geodesic": false
+    }
+  ],
+  "all_scenes_retained": true,
+  "future_GT_in_prediction_features": false
+}

@@ -1,0 +1,71 @@
+{
+  "files": [
+    {
+      "local_name": "status.json",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/status.json",
+      "bytes": 1074,
+      "sha256": "b6b00131efda8e753f703f37cc2adb007006d5d28dbe3a1687a543db46759e1b"
+    },
+    {
+      "local_name": "surface-audit.json",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/surfaces/surface-audit.json",
+      "bytes": 128045,
+      "sha256": "ff85dff72025a670f6248c6f1039463c527014d6e8b4fc0618691b9adb0454be"
+    },
+    {
+      "local_name": "surface_prepare.log",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/surface_prepare.log",
+      "bytes": 4651,
+      "sha256": "157eb3e5041ffc3d33a856460b0846d3adfc3991ac2f287a66139f66896f8b67"
+    },
+    {
+      "local_name": "condition_train.log",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/condition_train.log",
+      "bytes": 2840,
+      "sha256": "e0ea16db1cf8d72b03a462dad391e0921283d5afa0526774c226522eca1944d8"
+    },
+    {
+      "local_name": "input-diagnostics.json",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/input-diagnostics.json",
+      "bytes": 215616,
+      "sha256": "96e2dc17b1cb9fbe089cd3bb927c6f65adbc0472c287d8b1e62e8783b09683e6"
+    },
+    {
+      "local_name": "results.json",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/results/results.json",
+      "bytes": 68859,
+      "sha256": "622a4cc290495566c8332c1b15b08bab1e2015530fadd4e2076ddc31e9644c66"
+    },
+    {
+      "local_name": "comparisons.json",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/results/comparisons.json",
+      "bytes": 10649,
+      "sha256": "44bfbd362ef63c67ce774689ac16af773aa773b02b0791b82c200b0e9a6d0662"
+    },
+    {
+      "local_name": "feature-audit.json",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/results/feature-audit.json",
+      "bytes": 211738,
+      "sha256": "df82e2e7f3ec3e7ab7947fb609ca4cdee2098bfbaa6ef011e73abea43c7f2fc5"
+    },
+    {
+      "local_name": "complete.json",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/results/complete.json",
+      "bytes": 142,
+      "sha256": "7beb4f106ab18b2627a907be64f13d38eff5659d5320e0cce2d51216eccc82f1"
+    },
+    {
+      "local_name": "readiness.json",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-preflight-2026-10-11/readiness.json",
+      "bytes": 102071,
+      "sha256": "f09f0a8787d75bc0ab8576033267d885b9632a302dd5cf54a6ef0465dc305ddb"
+    },
+    {
+      "local_name": "surface_g2_visible_conditions_2026-10-11.json",
+      "remote_path": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface_g2_visible_conditions_2026-10-11.json",
+      "bytes": 1853,
+      "sha256": "8820a76f015d8e4c15acfbec7ad82171eebf3b5e74fbea419157c3e5e654e8ff"
+    }
+  ],
+  "model_weights_included": false
+}

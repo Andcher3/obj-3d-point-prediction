@@ -1,0 +1,27 @@
+MolmoMotion archive transaction verification
+Changed branch/field: archive_manifest.decision: active_base_candidate -> archived_historical_evidence
+
+MODIFIED_FILE: D:\Pycharm\post_graduate_project\archive\experiments\molmomotion\transaction\MODIFIED_FILE.json
+DIFF_FILE: D:\Pycharm\post_graduate_project\archive\experiments\molmomotion\transaction\DIFF_FILE.diff
+VERIFICATION: D:\Pycharm\post_graduate_project\archive\experiments\molmomotion\transaction\VERIFICATION.txt
+ROLLBACK: D:\Pycharm\post_graduate_project\archive\experiments\molmomotion\transaction\ROLLBACK.sh
+
+BASELINE
+Command: PowerShell archive preflight and SHA256 manifest creation
+Input: D:\Pycharm\post_graduate_project\experiences_results\MolmoMotion-{text-types,tracker3d-e2e,tracker3d-retest}
+Literal output: BASELINE source_count=3 archive_count=0 old_reference_hits=24 hashed_files=219 result=PASS exit=0
+Exit status: 0
+
+MODIFIED
+Command: PowerShell Move-Item plus reference rewrite and SHA256 re-verification
+Input: source roots above -> D:\Pycharm\post_graduate_project\archive\experiments\molmomotion\
+Literal output: MODIFIED_VERIFY source_count=0 archive_count=3 hash_mismatch=0 old_reference_hits=0 decision=archived_historical_evidence result=PASS exit=0
+Exit status: 0
+Changed behavior/status: MolmoMotion experiment artifacts are historical archive material and no longer active base-candidate outputs; archived file bytes match the original SHA256 manifest.
+
+ROLLBACK
+Command: D:\Git\Git\bin\bash.exe D:\Pycharm\post_graduate_project\archive\experiments\molmomotion\transaction\ROLLBACK.sh D:\Pycharm\post_graduate_project\archive\experiments\molmomotion\transaction\rollback_test_root
+Input: independent synthetic copy containing three archived experiment directories plus one modified report and its baseline backup
+Literal output: ROLLBACK restored_dirs=3 restored_files=1 source_count=3 archive_count=0 result=PASS exit=0
+Exit status: 0
+Restored behavior/status: the test copy returned all three experiment directories to experiences_results and restored the report content to BASELINE; the real MODIFIED_FILE state remains archived.

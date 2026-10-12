@@ -1,0 +1,156 @@
+{
+  "keys_equal": true,
+  "arrays": {
+    "p0_future": {
+      "shape": [
+        15,
+        48,
+        3
+      ],
+      "dtype": "float32",
+      "exact_equal": true,
+      "sha256": "b808de19182a569d4f6c52fade49935354fb7c271183ae2dee4441598068c66c",
+      "max_abs_diff": 0.0
+    },
+    "h_output_latent": {
+      "shape": [
+        15,
+        48,
+        16
+      ],
+      "dtype": "float32",
+      "exact_equal": true,
+      "sha256": "5447ec5d251d7fe11e5a61a0174b94f723439a7c6f2b2ff74a896c2d7dd61841",
+      "max_abs_diff": 0.0
+    },
+    "h_last_dit": {
+      "shape": [
+        15,
+        48,
+        1536
+      ],
+      "dtype": "float32",
+      "exact_equal": true,
+      "sha256": "352738f6061d32ed71a86954ba52888337a5bf9d8461eeb3bdd64c7d3911bfaf",
+      "max_abs_diff": 0.0
+    },
+    "query_uv_t0_source": {
+      "shape": [
+        48,
+        2
+      ],
+      "dtype": "float32",
+      "exact_equal": true,
+      "sha256": "986a2ade24a265c9b87d13eedf4c471832fdd23104e0da6e733f6070b8e8f686",
+      "max_abs_diff": 0.0
+    },
+    "query_uv_frame0_dense": {
+      "shape": [
+        48,
+        2
+      ],
+      "dtype": "float32",
+      "exact_equal": true,
+      "sha256": "5d06356a865d79bc77ebecb360717652419105bd0079e0147032fc5f23592ee7",
+      "max_abs_diff": 0.0
+    },
+    "query_uv_frame0_model": {
+      "shape": [
+        48,
+        2
+      ],
+      "dtype": "float32",
+      "exact_equal": true,
+      "sha256": "7cb8d4415bf233d5d24c27f0441c5406a8f6801f655a3d8c3bbd814dc9622512",
+      "max_abs_diff": 0.0
+    },
+    "query_anchor_match_error_px": {
+      "shape": [
+        48
+      ],
+      "dtype": "float32",
+      "exact_equal": true,
+      "sha256": "c8775e29635149c315962e7ad4c317fcd9346c4ee8c24d013c0dd35c3545c162",
+      "max_abs_diff": 0.0
+    },
+    "observed_frame_indices": {
+      "shape": [
+        7
+      ],
+      "dtype": "int32",
+      "exact_equal": true,
+      "sha256": "23f3c3fe0964c6feb3849313e5e142e2b0a43fe061b16b7298c0200a7a8d91b4",
+      "max_abs_diff": 0.0
+    },
+    "observed_timestamps_s": {
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "sha256": "e956810718367a0bec88712fc7a327117ac05d9ba7e2ccb3818adc18719af0a0",
+      "max_abs_diff": 0.0
+    },
+    "prediction_timestamps_s": {
+      "shape": [
+        15
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "sha256": "822fc53702e210ddf8df7886208d4873ed4af1882c81c1036bf7d2b541710b65",
+      "max_abs_diff": 0.0
+    },
+    "formal_future_target_timestamps_s": {
+      "shape": [
+        9
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "sha256": "c117bd8d70433d18200974cd75b8bbc999ea3f45e8199b467e14aa3bcd6420c8",
+      "max_abs_diff": 0.0
+    },
+    "formal_future_slot_indices": {
+      "shape": [
+        9
+      ],
+      "dtype": "int32",
+      "exact_equal": true,
+      "sha256": "921c803abfa6ac88f44f7ab19198e5c137d1c7183e8e6912757a6263e8dee0a5",
+      "max_abs_diff": 0.0
+    },
+    "formal_future_match_errors_s": {
+      "shape": [
+        9
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "sha256": "143bacd87d0d288cd603147acca0f954b55b953adab38a45a65e5bb82c8120b7",
+      "max_abs_diff": 0.0
+    },
+    "coordinate_frame": {
+      "shape": [],
+      "dtype": "<U20",
+      "exact_equal": true,
+      "sha256": "aa34599fb5c6204052b5967e6495ff4fc3d226242bd41d87e0145695959eb5d6"
+    },
+    "prediction_source": {
+      "shape": [],
+      "dtype": "<U29",
+      "exact_equal": true,
+      "sha256": "07783a8dbbe8a85da6e576ef2142f2e5a4cc03a0d4ed069bbbcfda1fe15d630c"
+    },
+    "hidden_feature_source_output": {
+      "shape": [],
+      "dtype": "<U34",
+      "exact_equal": true,
+      "sha256": "48cf6b657644d28884ad635fe31ed64d3af81b90a5def50af94c5e4ae5cbd159"
+    },
+    "hidden_feature_source_dit": {
+      "shape": [],
+      "dtype": "<U25",
+      "exact_equal": true,
+      "sha256": "7478e97a187aa2d9518b9712feb03e8f7b17d61709aa03c9a10f5de0294864e3"
+    }
+  },
+  "all_exact": true
+}

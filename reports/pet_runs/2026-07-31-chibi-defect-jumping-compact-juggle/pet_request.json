@@ -1,0 +1,16 @@
+{
+  "pet_name": "chibi-defect",
+  "sprite_version": 2,
+  "requested_change": "Refine jumping juggling motion with lower ball arcs, smaller arm motion, and character scale comparable to other states.",
+  "compatibility_note": "The current Codex v2 jumping contract uses exactly 5 frames; atlas columns 5-7 remain transparent.",
+  "reference_atlas": "../2026-07-30-chibi-defect-jumping-juggle-animation/final/spritesheet-extended.webp",
+  "rows_changed": ["jumping"],
+  "jumping": {
+    "frame_count": 5,
+    "ball_count_per_frame": 3,
+    "ball_types": ["ice", "electric", "electric"],
+    "highest_ball_limit": "only slightly above the head crest",
+    "arm_motion": "compact bent-elbow alternating catches and throws close to the torso",
+    "character_scale": "match idle, waiting, review, and failed rows as closely as possible"
+  }
+}

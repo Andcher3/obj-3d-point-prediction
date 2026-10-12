@@ -1,0 +1,173 @@
+设置成功!
+注意：
+1. 仅限学术用途和加速访问github/huggingface，不承诺稳定性
+2. 开启加速后对访问其他资源如pip源等会*更慢*
+Looking in indexes: https://download.pytorch.org/whl/cu128
+Looking in links: /root/autodl-tmp/wheelhouse-cu128
+Collecting torch==2.8.0+cu128
+  Downloading torch-2.8.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (30 kB)
+Collecting torchvision==0.23.0+cu128
+  Downloading torchvision-0.23.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (6.1 kB)
+Collecting filelock (from torch==2.8.0+cu128)
+  Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.10.0 (from torch==2.8.0+cu128)
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting sympy>=1.13.3 (from torch==2.8.0+cu128)
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch==2.8.0+cu128)
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting jinja2 (from torch==2.8.0+cu128)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.8.0+cu128)
+  Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+Collecting nvidia-cuda-nvrtc-cu12==12.8.93 (from torch==2.8.0+cu128)
+  Downloading nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (88.0 MB)
+Collecting nvidia-cuda-runtime-cu12==12.8.90 (from torch==2.8.0+cu128)
+  Downloading nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (954 kB)
+Collecting nvidia-cuda-cupti-cu12==12.8.90 (from torch==2.8.0+cu128)
+  Downloading nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (10.2 MB)
+Collecting nvidia-cudnn-cu12==9.10.2.21 (from torch==2.8.0+cu128)
+  Downloading nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl (706.8 MB)
+Collecting nvidia-cublas-cu12==12.8.4.1 (from torch==2.8.0+cu128)
+  Downloading nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl (594.3 MB)
+Collecting nvidia-cufft-cu12==11.3.3.83 (from torch==2.8.0+cu128)
+  Downloading nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (193.1 MB)
+Collecting nvidia-curand-cu12==10.3.9.90 (from torch==2.8.0+cu128)
+  Downloading nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl (63.6 MB)
+Collecting nvidia-cusolver-cu12==11.7.3.90 (from torch==2.8.0+cu128)
+  Downloading nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl (267.5 MB)
+Collecting nvidia-cusparse-cu12==12.5.8.93 (from torch==2.8.0+cu128)
+  Downloading nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (288.2 MB)
+Collecting nvidia-cusparselt-cu12==0.7.1 (from torch==2.8.0+cu128)
+  Downloading nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl (287.2 MB)
+Collecting nvidia-nccl-cu12==2.27.3 (from torch==2.8.0+cu128)
+  Downloading nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (322.4 MB)
+Collecting nvidia-nvtx-cu12==12.8.90 (from torch==2.8.0+cu128)
+  Downloading nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (89 kB)
+Collecting nvidia-nvjitlink-cu12==12.8.93 (from torch==2.8.0+cu128)
+  Downloading nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (39.3 MB)
+Collecting nvidia-cufile-cu12==1.13.1.3 (from torch==2.8.0+cu128)
+  Downloading nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.2 MB)
+Collecting triton==3.4.0 (from torch==2.8.0+cu128)
+  Downloading triton-3.4.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.7 kB)
+Collecting numpy (from torchvision==0.23.0+cu128)
+  Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting pillow!=8.3.*,>=5.3.0 (from torchvision==0.23.0+cu128)
+  Downloading pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting setuptools>=40.8.0 (from triton==3.4.0->torch==2.8.0+cu128)
+  Downloading setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.8.0+cu128)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.8.0+cu128)
+  Downloading markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Downloading torch-2.8.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl (889.1 MB)
+Downloading torchvision-0.23.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl (8.6 MB)
+Downloading triton-3.4.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (155.4 MB)
+Downloading pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+Downloading setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+Installing collected packages: nvidia-cusparselt-cu12, mpmath, typing-extensions, sympy, setuptools, pillow, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufile-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, networkx, MarkupSafe, fsspec, filelock, triton, nvidia-cusparse-cu12, nvidia-cufft-cu12, nvidia-cudnn-cu12, jinja2, nvidia-cusolver-cu12, torch, torchvision
+  Attempting uninstall: mpmath
+    Found existing installation: mpmath 1.3.0
+    Uninstalling mpmath-1.3.0:
+      Successfully uninstalled mpmath-1.3.0
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.16.0
+    Uninstalling typing_extensions-4.16.0:
+      Successfully uninstalled typing_extensions-4.16.0
+  Attempting uninstall: sympy
+    Found existing installation: sympy 1.13.1
+    Uninstalling sympy-1.13.1:
+      Successfully uninstalled sympy-1.13.1
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 83.0.0
+    Uninstalling setuptools-83.0.0:
+      Successfully uninstalled setuptools-83.0.0
+  Attempting uninstall: pillow
+    Found existing installation: pillow 12.3.0
+    Uninstalling pillow-12.3.0:
+      Successfully uninstalled pillow-12.3.0
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.2.6
+    Uninstalling numpy-2.2.6:
+      Successfully uninstalled numpy-2.2.6
+  Attempting uninstall: networkx
+    Found existing installation: networkx 3.4.2
+    Uninstalling networkx-3.4.2:
+      Successfully uninstalled networkx-3.4.2
+  Attempting uninstall: MarkupSafe
+    Found existing installation: MarkupSafe 3.0.3
+    Uninstalling MarkupSafe-3.0.3:
+      Successfully uninstalled MarkupSafe-3.0.3
+  Attempting uninstall: fsspec
+    Found existing installation: fsspec 2026.7.0
+    Uninstalling fsspec-2026.7.0:
+      Successfully uninstalled fsspec-2026.7.0
+  Attempting uninstall: filelock
+    Found existing installation: filelock 3.32.3
+    Uninstalling filelock-3.32.3:
+      Successfully uninstalled filelock-3.32.3
+  Attempting uninstall: triton
+    Found existing installation: triton 3.1.0
+    Uninstalling triton-3.1.0:
+      Successfully uninstalled triton-3.1.0
+  Attempting uninstall: jinja2
+    Found existing installation: Jinja2 3.1.6
+    Uninstalling Jinja2-3.1.6:
+      Successfully uninstalled Jinja2-3.1.6
+  Attempting uninstall: torch
+    Found existing installation: torch 2.5.1+cu118
+    Uninstalling torch-2.5.1+cu118:
+      Successfully uninstalled torch-2.5.1+cu118
+  Attempting uninstall: torchvision
+    Found existing installation: torchvision 0.20.1+cu118
+    Uninstalling torchvision-0.20.1+cu118:
+      Successfully uninstalled torchvision-0.20.1+cu118
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+anyio 4.15.1 requires typing_extensions>=4.16.0; python_version < "3.15", but you have typing-extensions 4.15.0 which is incompatible.
+Successfully installed MarkupSafe-3.0.3 filelock-3.32.3 fsspec-2026.7.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.4.2 numpy-2.2.6 nvidia-cublas-cu12-12.8.4.1 nvidia-cuda-cupti-cu12-12.8.90 nvidia-cuda-nvrtc-cu12-12.8.93 nvidia-cuda-runtime-cu12-12.8.90 nvidia-cudnn-cu12-9.10.2.21 nvidia-cufft-cu12-11.3.3.83 nvidia-cufile-cu12-1.13.1.3 nvidia-curand-cu12-10.3.9.90 nvidia-cusolver-cu12-11.7.3.90 nvidia-cusparse-cu12-12.5.8.93 nvidia-cusparselt-cu12-0.7.1 nvidia-nccl-cu12-2.27.3 nvidia-nvjitlink-cu12-12.8.93 nvidia-nvtx-cu12-12.8.90 pillow-12.3.0 setuptools-78.1.0 sympy-1.14.0 torch-2.8.0+cu128 torchvision-0.23.0+cu128 triton-3.4.0 typing-extensions-4.15.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Cloning into '/root/autodl-tmp/projects/Depth-Anything-3'...
+Updating files:   1% (2/134)Updating files:   2% (3/134)Updating files:   3% (5/134)Updating files:   4% (6/134)Updating files:   5% (7/134)Updating files:   6% (9/134)Updating files:   7% (10/134)Updating files:   8% (11/134)Updating files:   9% (13/134)Updating files:  10% (14/134)Updating files:  11% (15/134)Updating files:  12% (17/134)Updating files:  13% (18/134)Updating files:  14% (19/134)Updating files:  15% (21/134)Updating files:  16% (22/134)Updating files:  17% (23/134)Updating files:  18% (25/134)Updating files:  19% (26/134)Updating files:  20% (27/134)Updating files:  21% (29/134)Updating files:  22% (30/134)Updating files:  23% (31/134)Updating files:  24% (33/134)Updating files:  25% (34/134)Updating files:  26% (35/134)Updating files:  27% (37/134)Updating files:  28% (38/134)Updating files:  29% (39/134)Updating files:  30% (41/134)Updating files:  31% (42/134)Updating files:  32% (43/134)Updating files:  33% (45/134)Updating files:  34% (46/134)Updating files:  35% (47/134)Updating files:  36% (49/134)Updating files:  37% (50/134)Updating files:  38% (51/134)Updating files:  39% (53/134)Updating files:  40% (54/134)Updating files:  41% (55/134)Updating files:  42% (57/134)Updating files:  43% (58/134)Updating files:  44% (59/134)Updating files:  45% (61/134)Updating files:  46% (62/134)Updating files:  47% (63/134)Updating files:  48% (65/134)Updating files:  49% (66/134)Updating files:  50% (67/134)Updating files:  51% (69/134)Updating files:  52% (70/134)Updating files:  53% (72/134)Updating files:  54% (73/134)Updating files:  55% (74/134)Updating files:  56% (76/134)Updating files:  57% (77/134)Updating files:  58% (78/134)Updating files:  59% (80/134)Updating files:  60% (81/134)Updating files:  61% (82/134)Updating files:  62% (84/134)Updating files:  63% (85/134)Updating files:  64% (86/134)Updating files:  65% (88/134)Updating files:  66% (89/134)Updating files:  67% (90/134)Updating files:  68% (92/134)Updating files:  69% (93/134)Updating files:  70% (94/134)Updating files:  71% (96/134)Updating files:  72% (97/134)Updating files:  73% (98/134)Updating files:  74% (100/134)Updating files:  75% (101/134)Updating files:  76% (102/134)Updating files:  77% (104/134)Updating files:  78% (105/134)Updating files:  79% (106/134)Updating files:  80% (108/134)Updating files:  81% (109/134)Updating files:  82% (110/134)Updating files:  83% (112/134)Updating files:  84% (113/134)Updating files:  85% (114/134)Updating files:  86% (116/134)Updating files:  87% (117/134)Updating files:  88% (118/134)Updating files:  89% (120/134)Updating files:  90% (121/134)Updating files:  91% (122/134)Updating files:  92% (124/134)Updating files:  93% (125/134)Updating files:  94% (126/134)Updating files:  95% (128/134)Updating files:  96% (129/134)Updating files:  97% (130/134)Updating files:  98% (132/134)Updating files:  99% (133/134)Updating files: 100% (134/134)Updating files: 100% (134/134), done.
+Fetching origin
+HEAD is now at 3d835ec Update backend dashboard rendering
+Looking in indexes: http://mirrors.aliyun.com/pypi/simple
+Obtaining file:///root/autodl-tmp/projects/Depth-Anything-3
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: depth-anything-3
+  Building editable for depth-anything-3 (pyproject.toml): started
+  Building editable for depth-anything-3 (pyproject.toml): finished with status 'done'
+  Created wheel for depth-anything-3: filename=depth_anything_3-0.0.0-py3-none-any.whl size=12488 sha256=525993e468f51286deeb6d8dfbfcc106ce87d3b848d77fa74ffdd95688066a39
+  Stored in directory: /tmp/pip-ephem-wheel-cache-sa2a9apu/wheels/18/9e/b9/6e140034ee52f3ba4b101e10769908fa2d2d7d124e08faf733
+Successfully built depth-anything-3
+Installing collected packages: depth-anything-3
+Successfully installed depth-anything-3-0.0.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+/root/autodl-tmp/conda_envs/trackcraft-sm120/lib/python3.10/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/root/autodl-tmp/projects/Depth-Anything-3/src/depth_anything_3/api.py", line 31, in <module>
+    from depth_anything_3.cfg import create_object, load_config
+  File "/root/autodl-tmp/projects/Depth-Anything-3/src/depth_anything_3/cfg.py", line 22, in <module>
+    from omegaconf import DictConfig, ListConfig, OmegaConf
+ModuleNotFoundError: No module named 'omegaconf'
+torch 2.8.0+cu128 cuda 12.8 arch ['sm_70', 'sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+cuda_sm120_probe 33.683326721191406 NVIDIA RTX 6000D 42074112

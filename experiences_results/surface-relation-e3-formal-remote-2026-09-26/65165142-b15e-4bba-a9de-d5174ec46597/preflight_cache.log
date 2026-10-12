@@ -1,0 +1,94 @@
+/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+  [skip download] 1 file(s) found in /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B
+Loading models from: /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/diffusion_pytorch_model.safetensors
+    model_name: wan_video_dit model_class: WanModel
+        This model is initialized with extra kwargs: {'has_image_input': False, 'patch_size': [1, 2, 2], 'in_dim': 16, 'dim': 1536, 'ffn_dim': 8960, 'freq_dim': 256, 'text_dim': 4096, 'out_dim': 16, 'num_heads': 12, 'num_layers': 30, 'eps': 1e-06}
+    The following models are loaded: ['wan_video_dit'].
+  [skip download] 1 file(s) found in /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B
+Loading models from: /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth
+    model_name: wan_video_text_encoder model_class: WanTextEncoder
+    The following models are loaded: ['wan_video_text_encoder'].
+  [skip download] 1 file(s) found in /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B
+Loading models from: /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth
+    model_name: wan_video_vae model_class: WanVideoVAE
+    The following models are loaded: ['wan_video_vae'].
+Using wan_video_text_encoder from /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth.
+Using wan_video_dit from /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/diffusion_pytorch_model.safetensors.
+Using wan_video_vae from /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth.
+No wan_video_image_encoder models available.
+No wan_video_motion_controller models available.
+No wan_video_vace models available.
+No wans2v_audio_encoder models available.
+  [skip download] 5 file(s) found in /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/utils/hub.py", line 438, in cached_files
+    hf_hub_download(
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 87, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 135, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '['/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/umt5-xxl', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/special_tokens_map.json', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/spiece.model', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/tokenizer.json', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/tokenizer_config.json']'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 785, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 388, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/utils/hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/utils/hub.py", line 496, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '['/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/umt5-xxl', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/special_tokens_map.json', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/spiece.model', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/tokenizer.json', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/tokenizer_config.json']'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/utils/hub.py", line 438, in cached_files
+    hf_hub_download(
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 87, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 135, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '['/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/umt5-xxl', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/special_tokens_map.json', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/spiece.model', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/tokenizer.json', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/tokenizer_config.json']'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/projects/motionforesight/surface_relation_e3_formal_preflight.py", line 328, in <module>
+    main()
+  File "/root/autodl-tmp/projects/motionforesight/surface_relation_e3_formal_preflight.py", line 118, in main
+    model, state = build_model_from_ckpt(args.checkpoint, args.base_checkpoint)
+  File "/root/autodl-tmp/projects/motionforesight_src/scripts/inference_model.py", line 48, in build_model_from_ckpt
+    model = FreshLoRAFutureSceneFlowModel(cfg)
+  File "/root/autodl-tmp/projects/motionforesight_src/models_pretrained/future_scene_flow/model_fresh_lora.py", line 52, in __init__
+    super().__init__(config)
+  File "/root/autodl-tmp/projects/motionforesight_src/models_pretrained/future_scene_flow/model.py", line 99, in __init__
+    predictor = WanSceneFlowPredictor(
+  File "/root/autodl-tmp/projects/motionforesight_src/models_pretrained/evaluation/wan_scene_flow_predictor.py", line 86, in __init__
+    self.pipe = WanVideoPipeline.from_pretrained(
+  File "/root/autodl-tmp/projects/motionforesight_src/models_pretrained/diffsynth/pipelines/wan_video_new.py", line 405, in from_pretrained
+    pipe.prompter.fetch_tokenizer(tokenizer_config.path)
+  File "/root/autodl-tmp/projects/motionforesight_src/models_pretrained/diffsynth/prompters/wan_prompter.py", line 94, in fetch_tokenizer
+    self.tokenizer = HuggingfaceTokenizer(name=tokenizer_path, seq_len=self.text_len, clean='whitespace')
+  File "/root/autodl-tmp/projects/motionforesight_src/models_pretrained/diffsynth/prompters/wan_prompter.py", line 45, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(name, **kwargs)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 789, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/utils/hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/transformers/utils/hub.py", line 496, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '['/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/umt5-xxl', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/special_tokens_map.json', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/spiece.model', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/tokenizer.json', '/root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/google/tokenizer_config.json']'. Use `repo_type` argument if needed.

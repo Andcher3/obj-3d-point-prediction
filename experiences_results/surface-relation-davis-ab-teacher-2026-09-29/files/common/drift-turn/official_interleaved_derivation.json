@@ -1,0 +1,116 @@
+{
+  "status": "OFFICIAL_INTERLEAVED_DERIVED_NOT_QUALITY_APPROVED",
+  "input_frames": 23,
+  "output_frames": 22,
+  "run_indices": [
+    [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22
+    ],
+    [
+      0,
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21
+    ]
+  ],
+  "output_shape": [
+    22,
+    48,
+    3
+  ],
+  "finite_fraction": 1.0,
+  "gpu_device": "NVIDIA RTX 6000D",
+  "gpu_peak_allocated_bytes": 29442080768,
+  "gpu_peak_reserved_bytes": 29509025792,
+  "source_frame_indices_input": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "source_frame_indices_output": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "pj0_sources": [
+    "predictor._last_pj_input",
+    "predictor._last_pj_input"
+  ],
+  "frame0_pj_between_runs_max_abs": 0.0,
+  "anchored_frame0_between_runs_max_abs": 0.0,
+  "temporal_displacement_max_abs_change_after_merged_anchor": 0.003134608268737793,
+  "per_run_temporal_displacement_max_abs_change": [
+    0.0,
+    0.0
+  ],
+  "anchor_delta_norm_per_run": [
+    {
+      "p50": 0.004962819423792168,
+      "p90": 0.007570682712497114,
+      "max": 0.01104484467435503
+    },
+    {
+      "p50": 0.004373590610238006,
+      "p90": 0.007050669486789294,
+      "max": 0.009200946802928009
+    }
+  ]
+}

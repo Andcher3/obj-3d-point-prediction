@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "repair_state": "jumping",
+  "spritesheet": "../final/spritesheet-extended.webp",
+  "validation": "../final/validation-extended.json",
+  "jumping_frame_review": "review.json",
+  "jumping_chroma_despill": "chroma-despill-jumping.json",
+  "contact_sheet": "contact-sheet-extended.png",
+  "jumping_preview": "previews/jumping.gif",
+  "visual_qa": "final-visual-qa.json",
+  "row_preservation": "row-preservation.json"
+}

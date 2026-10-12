@@ -1,0 +1,38 @@
+ERROR:root:Exception retrieving Ego4D datasets: An error occurred (403) when calling the HeadObject operation: Forbidden
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/ego4d/cli/manifest.py", line 237, in print_datasets
+    p = download_datasets(version, tmppath, s3)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/ego4d/cli/manifest.py", line 228, in download_datasets
+    _datasets_object(version, s3).download_file(str(download_path))
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/boto3/s3/inject.py", line 392, in object_download_file
+    return self.meta.client.download_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/boto3/s3/inject.py", line 223, in download_file
+    return transfer.download_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/boto3/s3/transfer.py", line 484, in download_file
+    future.result()
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/s3transfer/futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/s3transfer/futures.py", line 287, in result
+    raise self._exception
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/s3transfer/tasks.py", line 272, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/s3transfer/download.py", line 379, in _submit
+    response = client.head_object(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (403) when calling the HeadObject operation: Forbidden
+Downloading datasets.csv..

@@ -1,0 +1,91 @@
+{
+  "run_index": 3,
+  "name": "sigma_0.01_seed_11",
+  "sigma": 0.01,
+  "seed": 11,
+  "elapsed_seconds": 44.4480946958065,
+  "peak_gpu_memory_gib": 17.087315559387207,
+  "generated_tokens": 256,
+  "latent_vector_count": 8,
+  "latent_dim": 4096,
+  "latent_finite": true,
+  "latent_sha256": "a23b7415eb2ff7d520a6b651fb8fc2e1297fbc09b23410f87b2dc6ba1d0aaa94",
+  "raw_sha256": "803f853380573560c6950b653694ccbd4aa86df694b19550ab97733e5a491349",
+  "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the large rabbit looking surprised, with the text 'THREE RODENTS' still visible, implying an interaction or confrontation between the rabbit and the rodents (0:08-0:09).</reason>\n<answer>The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or surprise.</answer><|im_end|>",
+  "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the large rabbit looking surprised, with the text 'THREE RODENTS' still visible, implying an interaction or confrontation between the rabbit and the rodents (0:08-0:09).</reason> <answer>The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or surprise.</answer>",
+  "answer": "The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or surprise.",
+  "has_answer_tag": true,
+  "has_latent_tags": true,
+  "noise_stats": {
+    "noise_std": 0.01,
+    "noise_seed": 11,
+    "scale_mode": "rms",
+    "perturbed_step_count": 8,
+    "steps": [
+      {
+        "active_vectors": 1,
+        "before_rms": 0.1666274517774582,
+        "noise_rms": 0.0016737441765144467,
+        "after_rms": 0.1666221022605896,
+        "relative_noise_rms": 0.010044828057289124,
+        "generation_step": 1628
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.17179618775844574,
+        "noise_rms": 0.0016906658420339227,
+        "after_rms": 0.17180569469928741,
+        "relative_noise_rms": 0.009841114282608032,
+        "generation_step": 1629
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.17400117218494415,
+        "noise_rms": 0.0017825677059590816,
+        "after_rms": 0.1740342378616333,
+        "relative_noise_rms": 0.010244572535157204,
+        "generation_step": 1630
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.207856222987175,
+        "noise_rms": 0.0021008143667131662,
+        "after_rms": 0.20784690976142883,
+        "relative_noise_rms": 0.010107055306434631,
+        "generation_step": 1631
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.17575302720069885,
+        "noise_rms": 0.0017709687817841768,
+        "after_rms": 0.17572826147079468,
+        "relative_noise_rms": 0.010076462291181087,
+        "generation_step": 1724
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.1754540055990219,
+        "noise_rms": 0.0017548392061144114,
+        "after_rms": 0.17546911537647247,
+        "relative_noise_rms": 0.010001705028116703,
+        "generation_step": 1725
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.18025915324687958,
+        "noise_rms": 0.0018272972665727139,
+        "after_rms": 0.18029022216796875,
+        "relative_noise_rms": 0.010137056931853294,
+        "generation_step": 1726
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.40546154975891113,
+        "noise_rms": 0.004025280941277742,
+        "after_rms": 0.4054539203643799,
+        "relative_noise_rms": 0.009927651844918728,
+        "generation_step": 1727
+      }
+    ]
+  }
+}

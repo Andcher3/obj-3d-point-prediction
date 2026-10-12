@@ -1,0 +1,1189 @@
+--- a/complete_scheme_v2.py
++++ b/complete_scheme_v2.py
+@@ -1,271 +1,279 @@
+-"""SemDiD-style branch comparison and feedback search for Future-L1.
+-
+-This module deliberately keeps model execution behind callbacks.  It can
+-therefore be unit-tested on CPU and later connected to ``model.generate`` and
+-an actual trajectory decoder without hiding missing capabilities.
++"""Event-aware branch selection for the third Future-L1 perturbation experiment.
++
++The production path requires bidirectional NLI. Lexical overlap is retained only
++for transparent diagnostics and is never silently substituted for NLI.
+ """
+-
+ from __future__ import annotations
+ 
++import math
+ import re
+-from dataclasses import dataclass, field
++from dataclasses import asdict, dataclass, field, replace
+ from typing import Any, Callable, Iterable, Mapping, Protocol, Sequence
+ 
+-
+-_STOPWORDS = {
+-    "a", "an", "and", "are", "be", "by", "could", "does", "event", "future",
+-    "happen", "in", "is", "likely", "next", "of", "on", "or", "the", "to",
+-    "video", "will", "with",
++_TOKEN_RE = re.compile(r"[a-z0-9]+(?:'[a-z]+)?")
++_STOPWORDS = {"a", "an", "and", "at", "by", "for", "from", "in", "of", "on", "the", "to", "with"}
++_MOTION_TERMS = {
++    "approach", "carry", "chop", "clean", "close", "cut", "drop", "flip",
++    "hold", "insert", "lift", "lower", "move", "open", "pick", "place",
++    "pour", "pull", "push", "remove", "rotate", "set", "slide", "take",
++    "tilt", "turn", "wash", "wipe",
+ }
+-_TOKEN_RE = re.compile(r"[a-z0-9]+(?:'[a-z]+)?")
+-
+-
+-def event_terms(text: str, target_object: str | None = None) -> frozenset[str]:
+-    """Extract content terms used by the lightweight semantic comparator."""
+-    terms = {
+-        token
+-        for token in _TOKEN_RE.findall(text.lower())
+-        if token not in _STOPWORDS and len(token) > 1
+-    }
+-    if target_object:
+-        terms.update(_TOKEN_RE.findall(target_object.lower()))
+-    return frozenset(terms)
+-
+-
+-def event_similarity(
+-    left: str,
+-    right: str,
+-    *,
+-    target_object: str | None = None,
+-) -> float:
+-    """Return a deterministic Jaccard similarity in ``[0, 1]``.
+-
+-    This is a transparent pre-filter, not a claim of human-level semantic
+-    judging.  A future evaluator can replace it through ``semantic_scorer``.
++
++
++def content_terms(text: str) -> frozenset[str]:
++    return frozenset(t for t in _TOKEN_RE.findall(text.lower()) if t not in _STOPWORDS)
++
++
++def target_coverage(answer: str, aliases: Sequence[str]) -> float:
++    answer_terms = content_terms(answer)
++    values = []
++    for alias in aliases:
++        terms = content_terms(alias)
++        values.append(len(answer_terms & terms) / len(terms) if terms else 0.0)
++    return max(values, default=0.0)
++
++
++def target_is_subject(answer: str, aliases: Sequence[str]) -> bool:
++    """Require the requested object to be the grammatical subject of the event.
++
++    This blocks a frequent false positive where the target phrase appears only
++    as a destination or reference object (for example, another board is placed
++    on top of the requested board).
+     """
+-    left_terms = event_terms(left, target_object)
+-    right_terms = event_terms(right, target_object)
+-    if not left_terms and not right_terms:
+-        return 1.0
+-    return len(left_terms & right_terms) / max(len(left_terms | right_terms), 1)
+-
+-
+-def event_distance(left: str, right: str, *, target_object: str | None = None) -> float:
+-    return 1.0 - event_similarity(left, right, target_object=target_object)
++    normalized = " ".join(_TOKEN_RE.findall(answer.lower()))
++    for alias in aliases:
++        alias_text = " ".join(_TOKEN_RE.findall(alias.lower()))
++        if alias_text.startswith("the "):
++            alias_text = alias_text[4:]
++        if normalized.startswith(f"the {alias_text} ") or normalized.startswith(f"{alias_text} "):
++            return True
++    return False
++
++
++def has_observable_motion(answer: str) -> bool:
++    terms = content_terms(answer)
++    for term in terms:
++        variants = {term}
++        if term.endswith("s"): variants.add(term[:-1])
++        if term.endswith("es"): variants.add(term[:-2])
++        if term.endswith("ed"): variants.update((term[:-2], term[:-1]))
++        if term.endswith("ing"): variants.update((term[:-3], term[:-3] + "e"))
++        if variants & _MOTION_TERMS:
++            return True
++    return False
+ 
+ 
+ @dataclass(frozen=True)
+ class BranchCandidate:
+-    """One generated future-event branch and its optional second-stage output."""
+-
+     branch_id: str
+     answer: str
+     sigma: float
+     seed: int
++    round_index: int
+     latent: Any = None
+     raw: str = ""
+     valid_format: bool = True
++    target_coverage: float = 0.0
++    subject_targeted: bool = False
++    motion_specific: bool = False
+     quality: float = 0.0
+-    trajectory: Any = None
+     metadata: Mapping[str, Any] = field(default_factory=dict)
+ 
+ 
++@dataclass
++class ActiveLatentBranch:
++    """One live latent hypothesis maintained during autoregressive decoding."""
++
++    branch_id: str
++    latent_state: Any
++    score: float = 0.0
++    alive: bool = True
++    history: list[Any] = field(default_factory=list)
++
++
++class ActiveLatentBranchPool:
++    """Maintain multiple latent hypotheses at each generation step.
++
++    The model runner calls ``advance`` immediately after producing the next
++    latent state.  ``propose`` creates sibling states before the next forward
++    pass; ``select`` can prune them using an event/quality callback.  This is
++    intentionally tensor-agnostic so the pool can be used with either a
++    single-device tensor or a model-specific cache/state object.
++    """
++
++    def __init__(
++        self,
++        initial_state: Any,
++        *,
++        branch_count: int,
++        propose: Callable[[Any, int], Sequence[Any]],
++        score: Callable[[Any], float] | None = None,
++    ):
++        if branch_count < 1:
++            raise ValueError("branch_count must be positive")
++        self.branch_count = branch_count
++        self._propose = propose
++        self._score = score or (lambda _state: 0.0)
++        self.branches = [
++            ActiveLatentBranch("active_0", initial_state, float(self._score(initial_state)))
++        ]
++
++    def advance(self, state: Any) -> None:
++        """Update the live parent state and retain its history."""
++        if not self.branches:
++            raise RuntimeError("cannot advance an empty latent branch pool")
++        parent = self.branches[0]
++        parent.history.append(parent.latent_state)
++        parent.latent_state = state
++        parent.score = float(self._score(state))
++
++    def propose(self) -> list[ActiveLatentBranch]:
++        """Create sibling latent states for the next forward step."""
++        parent = self.branches[0]
++        proposals = list(self._propose(parent.latent_state, self.branch_count - 1))
++        if len(proposals) > self.branch_count - 1:
++            raise RuntimeError("proposal callback returned too many branches")
++        for index, state in enumerate(proposals, start=1):
++            self.branches.append(
++                ActiveLatentBranch(
++                    f"active_{index}",
++                    state,
++                    float(self._score(state)),
++                    history=list(parent.history),
++                )
++            )
++        return list(self.branches)
++
++    def select(self, keep: Callable[[ActiveLatentBranch], bool] | None = None) -> list[ActiveLatentBranch]:
++        """Prune branches while preserving at least the best-scoring branch."""
++        candidates = [branch for branch in self.branches if branch.alive]
++        if keep is not None:
++            candidates = [branch for branch in candidates if keep(branch)]
++        if not candidates:
++            candidates = [max(self.branches, key=lambda branch: branch.score)]
++        candidates.sort(key=lambda branch: (-branch.score, branch.branch_id))
++        self.branches = candidates[: self.branch_count]
++        return list(self.branches)
++
++    def states(self) -> list[Any]:
++        return [branch.latent_state for branch in self.branches]
++
++
++def assess_candidate(candidate: BranchCandidate, *, target_aliases: Sequence[str]) -> BranchCandidate:
++    coverage = target_coverage(candidate.answer, target_aliases)
++    subject = target_is_subject(candidate.answer, target_aliases)
++    motion = has_observable_motion(candidate.answer)
++    concise = 1.0 if 4 <= len(content_terms(candidate.answer)) <= 35 else 0.0
++    quality = 0.55 * coverage + 0.25 * float(subject) + 0.15 * float(motion) + 0.05 * concise
++    return replace(candidate, target_coverage=coverage, subject_targeted=subject, motion_specific=motion, quality=quality)
++
++
++class PairwiseEntailment(Protocol):
++    model_name: str
++
++    def entailment_probabilities(self, pairs: Sequence[tuple[str, str]]) -> list[float]: ...
++
++
+ @dataclass(frozen=True)
+-class BranchComparison:
++class EventComparison:
+     left_id: str
+     right_id: str
+-    similarity: float
+-    distance: float
++    forward_entailment: float
++    reverse_entailment: float
++    equivalence_score: float
+     same_event: bool
+-
+-
+-class TrajectoryDecoder(Protocol):
+-    """Second-stage decoder contract: latent branch -> future trajectory."""
+-
+-    def decode(
+-        self,
+-        candidate: BranchCandidate,
+-        *,
+-        video_path: str,
+-        target_object: str,
+-    ) -> Any:
+-        ...
+ 
+ 
+ def compare_events(
+     candidates: Sequence[BranchCandidate],
+     *,
+-    target_object: str | None = None,
+-    same_event_threshold: float = 0.5,
+-) -> list[BranchComparison]:
+-    """Perform pairwise SemDiD-style event comparison for generated branches."""
+-    comparisons: list[BranchComparison] = []
+-    for index, left in enumerate(candidates):
+-        for right in candidates[index + 1 :]:
+-            similarity = event_similarity(
+-                left.answer, right.answer, target_object=target_object
+-            )
+-            comparisons.append(
+-                BranchComparison(
+-                    left_id=left.branch_id,
+-                    right_id=right.branch_id,
+-                    similarity=similarity,
+-                    distance=1.0 - similarity,
+-                    same_event=similarity >= same_event_threshold,
+-                )
+-            )
+-    return comparisons
+-
+-
+-def retain_joint_branches(
++    entailment: PairwiseEntailment,
++    threshold: float,
++) -> list[EventComparison]:
++    unordered = [(a, b) for i, a in enumerate(candidates) for b in candidates[i + 1 :]]
++    directional: list[tuple[str, str]] = []
++    for left, right in unordered:
++        directional.extend([(left.answer, right.answer), (right.answer, left.answer)])
++    probabilities = entailment.entailment_probabilities(directional)
++    if len(probabilities) != len(directional):
++        raise RuntimeError("entailment scorer returned an unexpected number of scores")
++    result = []
++    for index, (left, right) in enumerate(unordered):
++        forward, reverse = probabilities[2 * index : 2 * index + 2]
++        equivalence = min(float(forward), float(reverse))
++        result.append(EventComparison(left.branch_id, right.branch_id, float(forward), float(reverse), equivalence, equivalence >= threshold))
++    return result
++
++
++def select_unique_branches(
+     candidates: Iterable[BranchCandidate],
+     *,
++    comparisons: Sequence[EventComparison],
+     branch_count: int,
+-    target_object: str | None = None,
+-    semantic_scorer: Callable[[BranchCandidate], float] | None = None,
+-    diversity_weight: float = 0.5,
++    min_quality: float,
++    min_target_coverage: float,
+ ) -> list[BranchCandidate]:
+-    """Greedily retain high-quality, mutually distinct branches.
+-
+-    Unlike selecting the top answers independently, each accepted branch is
+-    scored against the branches already retained.  This preserves a joint
+-    set of alternatives instead of collapsing to one wording variant.
+-    """
+-    pool = [candidate for candidate in candidates if candidate.valid_format]
+-    if branch_count <= 0 or not pool:
++    if branch_count <= 0:
+         return []
+-    scorer = semantic_scorer or (lambda candidate: candidate.quality)
++    same = {frozenset((c.left_id, c.right_id)): c.same_event for c in comparisons}
++    pool = [c for c in candidates if c.valid_format and c.quality >= min_quality and c.target_coverage >= min_target_coverage and c.subject_targeted and c.motion_specific]
++    pool.sort(key=lambda c: (-c.quality, c.round_index, c.sigma, c.seed, c.branch_id))
+     selected: list[BranchCandidate] = []
+-    remaining = list(pool)
+-    while remaining and len(selected) < branch_count:
+-        def joint_score(candidate: BranchCandidate) -> float:
+-            quality = float(scorer(candidate))
+-            if not selected:
+-                return quality
+-            novelty = min(
+-                event_distance(
+-                    candidate.answer,
+-                    chosen.answer,
+-                    target_object=target_object,
+-                )
+-                for chosen in selected
+-            )
+-            return (1.0 - diversity_weight) * quality + diversity_weight * novelty
+-
+-        best = max(
+-            remaining,
+-            key=lambda candidate: (joint_score(candidate), candidate.branch_id),
+-        )
+-        selected.append(best)
+-        remaining.remove(best)
++    for candidate in pool:
++        if any(same.get(frozenset((candidate.branch_id, prior.branch_id)), candidate.answer == prior.answer) for prior in selected):
++            continue
++        selected.append(candidate)
++        if len(selected) == branch_count:
++            break
+     return selected
+ 
+ 
+-def build_feedback_prompt(
+-    *,
+-    question: str,
+-    target_object: str,
+-    retained: Sequence[BranchCandidate],
+-    round_index: int,
+-) -> str:
+-    """Create the feedback query for the next generation round."""
+-    branch_text = "\n".join(
+-        f"- {candidate.branch_id}: {candidate.answer}" for candidate in retained
++def build_feedback_prompt(*, question: str, target_object: str, retained: Sequence[BranchCandidate], round_index: int) -> str:
++    prior = "\n".join(f"- {c.answer}" for c in retained) or "- none accepted yet"
++    subject = target_object.strip()
++    if subject.lower().startswith("the "):
++        subject = subject[4:]
++    return (
++        f"{question.rstrip()}\nTarget object: {target_object}.\n"
++        f"Search round {round_index}. Already retained future events:\n{prior}\n"
++        "Predict exactly one other plausible immediate future event for the target object. "
++        "The event must be visibly compatible with the video, must change the target object's motion or state in a substantively different way, "
++        "and must not be a paraphrase, a sub-step, or a continuation of any retained event. "
++        f"The answer must be one sentence beginning exactly with: 'The {subject} will'. "
++        "Avoid 'or', and do not summarize the plot or an action already completed in the observed clip."
+     )
+-    return (
+-        f"{question}\n"
+-        f"Target object: {target_object}\n"
+-        f"This is feedback-search round {round_index}. Existing candidate events:\n"
+-        f"{branch_text or '- none'}\n"
+-        "Generate a new, visually grounded candidate event for the target object. "
+-        "It must describe the next observable motion, not a plot summary."
+-    )
+-
+-
+-def run_feedback_search(
+-    *,
+-    video_path: str,
+-    question: str,
+-    target_object: str,
+-    initial_candidates: Sequence[BranchCandidate],
+-    generate: Callable[[str, int], Sequence[BranchCandidate]],
+-    branch_count: int = 3,
+-    feedback_rounds: int = 1,
+-    trajectory_decoder: TrajectoryDecoder | None = None,
+-    semantic_scorer: Callable[[BranchCandidate], float] | None = None,
+-    diversity_weight: float = 0.5,
+-) -> dict[str, Any]:
+-    """Run joint branch retention, feedback search, and trajectory decoding.
+-
+-    ``generate(prompt, round_index)`` is the only model-specific callback.
+-    The function raises decoder errors instead of silently marking a branch
+-    as decoded, so incomplete second-stage support remains visible.
+-    """
+-    all_candidates = list(initial_candidates)
+-    retained = retain_joint_branches(
+-        all_candidates,
+-        branch_count=branch_count,
+-        target_object=target_object,
+-        semantic_scorer=semantic_scorer,
+-        diversity_weight=diversity_weight,
+-    )
+-    rounds: list[dict[str, Any]] = []
+-    for round_index in range(1, feedback_rounds + 1):
+-        prompt = build_feedback_prompt(
+-            question=question,
+-            target_object=target_object,
+-            retained=retained,
+-            round_index=round_index,
+-        )
+-        new_candidates = list(generate(prompt, round_index))
+-        all_candidates.extend(new_candidates)
+-        retained = retain_joint_branches(
+-            all_candidates,
+-            branch_count=branch_count,
+-            target_object=target_object,
+-            semantic_scorer=semantic_scorer,
+-            diversity_weight=diversity_weight,
+-        )
+-        rounds.append(
+-            {
+-                "round": round_index,
+-                "prompt": prompt,
+-                "generated_branch_ids": [candidate.branch_id for candidate in new_candidates],
+-                "retained_branch_ids": [candidate.branch_id for candidate in retained],
+-            }
+-        )
+-
+-    decoded: list[dict[str, Any]] = []
+-    if trajectory_decoder is not None:
+-        for candidate in retained:
+-            trajectory = trajectory_decoder.decode(
+-                candidate,
+-                video_path=video_path,
+-                target_object=target_object,
+-            )
+-            decoded.append(
+-                {"branch_id": candidate.branch_id, "trajectory": trajectory}
+-            )
+-
+-    return {
+-        "video_path": video_path,
+-        "target_object": target_object,
+-        "candidate_count": len(all_candidates),
+-        "comparisons": [
+-            comparison.__dict__
+-            for comparison in compare_events(
+-                all_candidates, target_object=target_object
+-            )
+-        ],
+-        "retained": [candidate.branch_id for candidate in retained],
+-        "rounds": rounds,
+-        "decoded_trajectories": decoded,
+-    }
+-
+-
+-def save_search_report(report: Mapping[str, Any], output_path: str) -> None:
+-    """Persist a JSON-compatible search report without silently dropping fields."""
+-    import json
+-
+-    with open(output_path, "w", encoding="utf-8") as handle:
+-        json.dump(dict(report), handle, indent=2, ensure_ascii=False, default=str)
++
++
++class TransformersNLI:
++    def __init__(self, model_path: str, *, device: str = "cuda", batch_size: int = 32):
++        import torch
++        from transformers import AutoModelForSequenceClassification, AutoTokenizer
++        self.model_name = model_path
++        self.torch = torch
++        self.batch_size = batch_size
++        self.device = torch.device(device)
++        self.tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=True)
++        self.model = AutoModelForSequenceClassification.from_pretrained(model_path, local_files_only=True).eval().to(self.device)
++        labels = {int(k): str(v).lower() for k, v in self.model.config.id2label.items()}
++        matches = [i for i, label in labels.items() if "entail" in label]
++        if len(matches) != 1:
++            raise RuntimeError(f"cannot identify entailment label from {labels}")
++        self.entailment_index = matches[0]
++        self.cache: dict[tuple[str, str], float] = {}
++
++    def entailment_probabilities(self, pairs: Sequence[tuple[str, str]]) -> list[float]:
++        missing = list(dict.fromkeys(pair for pair in pairs if pair not in self.cache))
++        for start in range(0, len(missing), self.batch_size):
++            batch = missing[start : start + self.batch_size]
++            inputs = self.tokenizer([x[0] for x in batch], [x[1] for x in batch], padding=True, truncation=True, max_length=192, return_tensors="pt")
++            inputs = {k: v.to(self.device) for k, v in inputs.items()}
++            with self.torch.inference_mode():
++                probs = self.model(**inputs).logits.float().softmax(-1)[:, self.entailment_index].cpu().tolist()
++            self.cache.update(zip(batch, map(float, probs)))
++        return [self.cache[pair] for pair in pairs]
++
++
++def serialise_candidate(candidate: BranchCandidate) -> dict[str, Any]:
++    value = asdict(candidate)
++    value.pop("latent", None)
++    return value
+--- a/run_complete_search_v2.py
++++ b/run_complete_search_v2.py
+@@ -1,218 +1,175 @@
+ #!/usr/bin/env python
+-"""GPU runner for the complete latent branch-search experiment.
+-
+-The script runs initial perturbation branches, performs feedback rounds, and
+-stores a joint branch report.  A real trajectory decoder is intentionally an
+-explicit dependency: this runner records retained latent branches but does
+-not claim that generated text is a decoded trajectory.
+-"""
+-
++"""Controlled Future-L1 event-branch experiment with NLI deduplication."""
+ from __future__ import annotations
+ 
+-import argparse
+-import hashlib
+-import json
+-import sys
++import argparse, hashlib, json, sys, time
+ from pathlib import Path
+ from typing import Any
+-
+ import numpy as np
+ import torch
+ from qwen_vl_utils import process_vision_info
+ from transformers import AutoProcessor
+ 
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = Path(__file__).resolve().parents[3]
+ sys.path.insert(0, str(ROOT))
++HERE = Path(__file__).resolve().parent
++sys.path.insert(0, str(HERE))
+ 
+-from src.model.future_l1 import FutureL1_Qwen3VL, RICE_Qwen3VL
+-from src.train.monkey_patch_forward import (
+-    replace_qwen3_vl_generation_forward,
+-    replace_qwen3_with_mixed_modality_forward,
+-)
+-from experiments.l1_latent_perturbation.complete_scheme import (
+-    BranchCandidate,
+-    run_feedback_search,
+-    save_search_report,
+-)
++from complete_scheme_v2 import (BranchCandidate, TransformersNLI, assess_candidate,
++    build_feedback_prompt, compare_events, select_unique_branches, serialise_candidate)
+ from experiments.l1_latent_perturbation.run_l1_latent_perturbation import (
+-    ANSWER_RE,
+-    LATENT_TOKEN_RE,
+-    SYSTEM_PROMPT,
+-    extract_latents,
+-)
++    ANSWER_RE, LATENT_TOKEN_RE, SYSTEM_PROMPT, extract_latents, tensor_sha256)
++from src.model.future_l1 import FutureL1_Qwen3VL
++from src.model.future_l1 import ActiveLatentBranchPool
++from src.train.monkey_patch_forward import replace_qwen3_vl_generation_forward, replace_qwen3_with_mixed_modality_forward
+ 
+ 
+-def parse_args() -> argparse.Namespace:
+-    parser = argparse.ArgumentParser()
+-    parser.add_argument("--model", required=True)
+-    parser.add_argument("--video", required=True)
+-    parser.add_argument("--target-object", required=True)
+-    parser.add_argument("--output-dir", required=True)
+-    parser.add_argument("--question", default="What will happen next in the video?")
+-    parser.add_argument("--sigmas", default="0.005,0.01,0.03,0.1,0.2")
+-    parser.add_argument("--seeds", default="11,22")
+-    parser.add_argument("--branch-count", type=int, default=3)
+-    parser.add_argument("--feedback-rounds", type=int, default=1)
+-    parser.add_argument("--max-new-tokens", type=int, default=256)
+-    parser.add_argument("--nframes", type=int, default=8)
+-    parser.add_argument("--max-pixels", type=int, default=401408)
+-    parser.add_argument("--scale-mode", choices=["rms", "std", "absolute"], default="rms")
+-    return parser.parse_args()
++def sha256(path: Path) -> str: return hashlib.sha256(path.read_bytes()).hexdigest()
+ 
+ 
+-def sanitize(raw: str) -> tuple[str, str]:
+-    visible = LATENT_TOKEN_RE.sub("", raw)
+-    visible = " ".join(visible.split())
+-    match = ANSWER_RE.search(visible)
+-    return visible, match.group(1).strip() if match else ""
++def parse_args():
++    p=argparse.ArgumentParser()
++    p.add_argument('--model',required=True); p.add_argument('--nli-model',required=True)
++    p.add_argument('--video',required=True); p.add_argument('--target-object',required=True)
++    p.add_argument('--target-aliases',default=''); p.add_argument('--output-dir',required=True)
++    p.add_argument('--question',default='What will happen next in the video?')
++    p.add_argument('--sigmas',default='0.01,0.03,0.1,0.2'); p.add_argument('--seeds',default='11,22,33')
++    p.add_argument('--branch-count',type=int,default=5); p.add_argument('--feedback-rounds',type=int,default=2)
++    p.add_argument('--nli-threshold',type=float,default=.70); p.add_argument('--min-quality',type=float,default=.75)
++    p.add_argument('--min-target-coverage',type=float,default=.75)
++    p.add_argument('--max-new-tokens',type=int,default=320); p.add_argument('--nframes',type=int,default=8)
++    p.add_argument('--max-pixels',type=int,default=401408); p.add_argument('--scale-mode',choices=['rms','std','absolute'],default='rms')
++    return p.parse_args()
++
++
++def sanitize(raw: str):
++    visible=LATENT_TOKEN_RE.sub('',raw); visible=' '.join(visible.split())
++    match=ANSWER_RE.search(visible)
++    return visible, match.group(1).strip() if match else ''
+ 
+ 
+ def build_inputs(processor: Any, video_path: str, question: str, nframes: int, max_pixels: int):
+-    messages = [
+-        {"role": "system", "content": SYSTEM_PROMPT},
+-        {
+-            "role": "user",
+-            "content": [
+-                {
+-                    "type": "video",
+-                    "video": video_path,
+-                    "nframes": nframes,
+-                    "max_pixels": max_pixels,
+-                    "min_pixels": 256 * 28 * 28,
+-                },
+-                {"type": "text", "text": question},
+-            ],
+-        },
+-    ]
+-    text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+-    image_inputs, video_inputs, video_kwargs = process_vision_info(
+-        messages,
+-        return_video_kwargs=True,
+-        image_patch_size=16,
+-        return_video_metadata=True,
+-    )
+-    video_metadata = None
+-    if video_inputs is not None:
+-        video_inputs, video_metadata = map(list, zip(*video_inputs))
+-    inputs = processor(
+-        text=[text],
+-        images=image_inputs,
+-        videos=video_inputs,
+-        video_metadata=video_metadata,
+-        **video_kwargs,
+-        do_resize=False,
+-        return_tensors="pt",
+-    )
+-    inputs.pop("mm_token_type_ids", None)
+-    return inputs
++    messages=[{'role':'system','content':SYSTEM_PROMPT},{'role':'user','content':[
++        {'type':'video','video':video_path,'nframes':nframes,'max_pixels':max_pixels,'min_pixels':256*28*28},
++        {'type':'text','text':question}]}]
++    rendered=processor.apply_chat_template(messages,tokenize=False,add_generation_prompt=True)
++    image_inputs,video_inputs,video_kwargs=process_vision_info(messages,return_video_kwargs=True,image_patch_size=16,return_video_metadata=True)
++    metadata=None
++    if video_inputs is not None: video_inputs,metadata=map(list,zip(*video_inputs))
++    inputs=processor(text=[rendered],images=image_inputs,videos=video_inputs,video_metadata=metadata,**video_kwargs,do_resize=False,return_tensors='pt')
++    inputs.pop('mm_token_type_ids',None)
++    return inputs.to('cuda'),rendered,video_kwargs,metadata
+ 
+ 
+-def main() -> None:
+-    args = parse_args()
+-    video = Path(args.video)
+-    if not video.is_file():
+-        raise FileNotFoundError(video)
+-    out_dir = Path(args.output_dir)
+-    out_dir.mkdir(parents=True, exist_ok=True)
+-    sigmas = [float(value) for value in args.sigmas.split(",") if value.strip()]
+-    seeds = [int(value) for value in args.seeds.split(",") if value.strip()]
+-    question = (
+-        f"{args.question.rstrip()} Focus on the target object: "
+-        f"{args.target_object.strip()}."
+-    )
++def main():
++    args=parse_args(); video=Path(args.video); out=Path(args.output_dir)
++    if not video.is_file(): raise FileNotFoundError(video)
++    if out.exists() and any(out.iterdir()): raise FileExistsError(f'refusing to overwrite non-empty output: {out}')
++    out.mkdir(parents=True,exist_ok=True)
++    aliases=[x.strip() for x in args.target_aliases.split('|') if x.strip()] or [args.target_object]
++    sigmas=[float(x) for x in args.sigmas.split(',') if x.strip() and float(x)>0]
++    seeds=[int(x) for x in args.seeds.split(',') if x.strip()]
+ 
+-    replace_qwen3_with_mixed_modality_forward()
+-    replace_qwen3_vl_generation_forward()
+-    model = FutureL1_Qwen3VL.from_pretrained(
+-        args.model,
+-        dtype=torch.bfloat16,
+-        device_map="cuda:0",
+-        attn_implementation="sdpa",
+-        trust_remote_code=True,
+-    ).eval()
+-    processor = AutoProcessor.from_pretrained(
+-        args.model,
+-        max_pixels=args.max_pixels,
+-        min_pixels=256 * 28 * 28,
+-        trust_remote_code=True,
+-    )
+-    model.config.infer_head_prefer = "render"
+-    model.config.fixed_latent_budget = False
+-    model.config.infer_latent_multiplier = 2.0
++    replace_qwen3_with_mixed_modality_forward(); replace_qwen3_vl_generation_forward()
++    started=time.perf_counter()
++    model=FutureL1_Qwen3VL.from_pretrained(args.model,dtype=torch.bfloat16,device_map='cuda:0',attn_implementation='sdpa',trust_remote_code=True).eval()
++    processor=AutoProcessor.from_pretrained(args.model,max_pixels=args.max_pixels,min_pixels=256*28*28,trust_remote_code=True)
++    model.config.infer_head_prefer='render'; model.config.fixed_latent_budget=False; model.config.infer_latent_multiplier=2.0
++    nli=TransformersNLI(args.nli_model,device='cuda',batch_size=64)
++    load_seconds=time.perf_counter()-started
+ 
+-    def generate_candidates(prompt: str, round_index: int) -> list[BranchCandidate]:
+-        inputs = build_inputs(processor, str(video), prompt, args.nframes, args.max_pixels)
+-        inputs = inputs.to("cuda")
+-        candidates: list[BranchCandidate] = []
+-        specs = [(sigma, seed) for sigma in sigmas for seed in seeds]
+-        if round_index == 0:
+-            # Keep two identical-noise baselines so determinism is measured,
+-            # rather than inferred from a single run.
+-            specs = [(0.0, 0), (0.0, 0)] + specs
+-        for spec_index, (sigma, seed) in enumerate(specs):
++    metadata={'experiment':'round3-event-aware-search','created_unix':time.time(),'model':args.model,'nli_model':args.nli_model,
++      'video':str(video),'video_sha256':sha256(video),'target_object':args.target_object,'target_aliases':aliases,
++      'question':args.question,'sigmas':sigmas,'seeds':seeds,'branch_count_max':args.branch_count,
++      'feedback_rounds':args.feedback_rounds,'feedback_zero_control':True,'nli_threshold':args.nli_threshold,
++      'min_quality':args.min_quality,'min_target_coverage':args.min_target_coverage,'max_new_tokens':args.max_new_tokens,
++      'nframes':args.nframes,'max_pixels':args.max_pixels,'scale_mode':args.scale_mode,'do_sample':False,
++      'active_latent_generation':True,'shared_prefill':True,'branch_cache_batching':True,
++      'torch':torch.__version__,'cuda_build':torch.version.cuda,'gpu':torch.cuda.get_device_name(0),'load_seconds':load_seconds,
++      'code_sha256':{p.name:sha256(p) for p in [Path(__file__),HERE/'complete_scheme_v2.py',ROOT/'src/model/future_l1.py']}}
++    (out/'metadata.json').write_text(json.dumps(metadata,indent=2),encoding='utf-8')
++    all_candidates=[]; round_records=[]; prompts=[]
++
++    def generate_round(prompt: str, round_index: int):
++        inputs,rendered,video_kwargs,video_metadata=build_inputs(processor,str(video),prompt,args.nframes,args.max_pixels)
++        prompts.append({'round':round_index,'prompt':prompt,'rendered_prompt':rendered,'video_kwargs':video_kwargs,'video_metadata':video_metadata})
++        specs=([(0.0,0),(0.0,0)] if round_index==0 else [(0.0,0)])+[(s,z) for s in sigmas for z in seeds]
++        produced=[]
++        for index,(sigma,seed) in enumerate(specs):
++            torch.manual_seed(123456); torch.cuda.manual_seed_all(123456); torch.cuda.reset_peak_memory_stats()
++            run_inputs={k:(v.clone() if isinstance(v,torch.Tensor) else v) for k,v in inputs.items()}
++            tick=time.perf_counter()
++            pool = ActiveLatentBranchPool(
++                torch.zeros(1, device="cuda"),
++                branch_count=args.branch_count,
++                propose=lambda state, count: [state.clone() for _ in range(count)],
++            )
+             with torch.inference_mode():
+-                output = model.generate(
+-                    **{key: value.clone() if isinstance(value, torch.Tensor) else value
+-                       for key, value in inputs.items()},
+-                    max_new_tokens=args.max_new_tokens,
+-                    do_sample=False,
+-                    use_cache=True,
+-                    return_dict_in_generate=True,
+-                    output_scores=False,
+-                    output_hidden_states=False,
+-                    latent_noise_std=sigma,
+-                    latent_noise_seed=seed,
+-                    latent_noise_scale_mode=args.scale_mode,
+-                    eos_token_id=processor.tokenizer.eos_token_id,
+-                    pad_token_id=processor.tokenizer.pad_token_id,
+-                )
+-            trimmed = output.sequences[0, inputs.input_ids.shape[1]:]
+-            raw = processor.tokenizer.decode(
+-                trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False
+-            )
+-            visible, answer = sanitize(raw)
+-            latents = extract_latents(output)
+-            branch_id = f"r{round_index}_{spec_index:02d}_sigma_{sigma:g}_seed_{seed}"
+-            np.savez_compressed(out_dir / f"{branch_id}_latents.npz", latents=latents.astype(np.float16))
+-            (out_dir / f"{branch_id}_raw.txt").write_text(raw, encoding="utf-8")
+-            valid = bool(answer and "<|latent_start|>" in raw and "<|latent_end|>" in raw
+-                        and np.isfinite(latents).all())
+-            candidates.append(
+-                BranchCandidate(
+-                    branch_id=branch_id,
+-                    answer=answer,
+-                    sigma=sigma,
+-                    seed=seed,
+-                    latent=latents,
+-                    raw=raw,
+-                    valid_format=valid,
+-                    metadata={
+-                        "visible": visible,
+-                        "latent_path": str(out_dir / f"{branch_id}_latents.npz"),
+-                        "raw_sha256": hashlib.sha256(raw.encode()).hexdigest(),
+-                    },
+-                )
+-            )
+-        return candidates
++                output=model.generate(**run_inputs,max_new_tokens=args.max_new_tokens,do_sample=False,use_cache=True,
++                    return_dict_in_generate=True,output_scores=False,output_hidden_states=False,
++                    latent_noise_std=sigma,latent_noise_seed=seed,latent_noise_scale_mode=args.scale_mode,
++                    latent_branch_count=args.branch_count, latent_branch_pool=pool,
++                    eos_token_id=processor.tokenizer.eos_token_id,pad_token_id=processor.tokenizer.pad_token_id)
++            torch.cuda.synchronize(); elapsed=time.perf_counter()-tick
++            for branch_index in range(output.sequences.shape[0]):
++                trimmed=output.sequences[branch_index,inputs.input_ids.shape[1]:]
++                raw=processor.tokenizer.decode(trimmed,skip_special_tokens=False,clean_up_tokenization_spaces=False)
++                visible,answer=sanitize(raw)
++                states, masks = getattr(output, "latent_states", None), getattr(output, "latent_mask", None)
++                latent = np.empty((0, 0), dtype=np.float32)
++                if states is not None and masks is not None:
++                    selected = states[branch_index][masks[branch_index].to(dtype=torch.bool)]
++                    latent = selected.detach().float().cpu().numpy() if selected.numel() else np.empty((0, int(states.shape[-1])), dtype=np.float32)
++                branch_id=f'r{round_index}_{index:02d}_b{branch_index:02d}_sigma_{sigma:g}_seed_{seed}'
++                latent_file=out/f'{branch_id}_latents.npz'; raw_file=out/f'{branch_id}_raw.txt'
++                np.savez_compressed(latent_file,latents=latent.astype(np.float16)); raw_file.write_text(raw,encoding='utf-8')
++                valid=bool(answer and '<|latent_start|>' in raw and '<|latent_end|>' in raw and '<|im_end|>' in raw and latent.size and np.isfinite(latent).all())
++                item=assess_candidate(BranchCandidate(branch_id,answer,sigma,seed,round_index,latent,raw,valid,
++                  metadata={'elapsed_seconds':elapsed,'generated_tokens':int(trimmed.numel()),'peak_gpu_memory_gib':torch.cuda.max_memory_allocated()/(1024**3),
++                   'latent_shape':list(latent.shape),'latent_sha256_float32':tensor_sha256(latent),'latent_sha256_saved':sha256(latent_file),
++                   'raw_sha256':sha256(raw_file),'noise_stats':getattr(output,'latent_noise_stats',None)}),target_aliases=aliases)
++                produced.append(item); all_candidates.append(item)
++                (out/f'{branch_id}.json').write_text(json.dumps(serialise_candidate(item),indent=2,default=str),encoding='utf-8')
++            print(f'RUN={branch_id}; VALID={valid}; COVERAGE={item.target_coverage:.3f}; SUBJECT={item.subject_targeted}; QUALITY={item.quality:.3f}; TIME={elapsed:.3f}',flush=True)
++        return produced
+ 
+-    initial = generate_candidates(question, 0)
+-    report = run_feedback_search(
+-        video_path=str(video),
+-        question=args.question,
+-        target_object=args.target_object,
+-        initial_candidates=initial,
+-        generate=generate_candidates,
+-        branch_count=args.branch_count,
+-        feedback_rounds=args.feedback_rounds,
+-    )
+-    report["trajectory_decoder"] = None
+-    report["warning"] = (
+-        "No second-stage trajectory decoder was supplied; retained branches are "
+-        "latent/text candidates, not decoded trajectories."
+-    )
+-    save_search_report(report, str(out_dir / "complete_search_report.json"))
+-    print(json.dumps(report, indent=2, default=str))
++    answer_subject=args.target_object.strip()
++    if answer_subject.lower().startswith('the '): answer_subject=answer_subject[4:]
++    initial_prompt=(f'{args.question.rstrip()} Focus only on this target object: {args.target_object}. '
++      'Predict exactly one immediate, observable next motion or state-changing interaction of that target. '
++      f'The answer must be one sentence beginning exactly with: "The {answer_subject} will". '
++      'Avoid alternatives joined by or, and do not describe any other object as the target.')
++    generate_round(initial_prompt,0)
++    comparisons=compare_events(all_candidates,entailment=nli,threshold=args.nli_threshold)
++    retained=select_unique_branches(all_candidates,comparisons=comparisons,branch_count=args.branch_count,
++      min_quality=args.min_quality,min_target_coverage=args.min_target_coverage)
++    round_records.append({'round':0,'generated':[c.branch_id for c in all_candidates],'retained':[c.branch_id for c in retained]})
++    for round_index in range(1,args.feedback_rounds+1):
++        prompt=build_feedback_prompt(question=args.question,target_object=args.target_object,retained=retained,round_index=round_index)
++        before={c.branch_id for c in retained}; generated=generate_round(prompt,round_index)
++        comparisons=compare_events(all_candidates,entailment=nli,threshold=args.nli_threshold)
++        retained=select_unique_branches(all_candidates,comparisons=comparisons,branch_count=args.branch_count,
++          min_quality=args.min_quality,min_target_coverage=args.min_target_coverage)
++        round_records.append({'round':round_index,'generated':[c.branch_id for c in generated],
++          'retained':[c.branch_id for c in retained],'new_retained':[c.branch_id for c in retained if c.branch_id not in before]})
++        partial={'metadata':metadata,'rounds':round_records,'retained':[serialise_candidate(c) for c in retained]}
++        (out/'search.partial.json').write_text(json.dumps(partial,indent=2,default=str),encoding='utf-8')
++
++    baseline=[c for c in all_candidates if c.round_index==0 and c.sigma==0]
++    baseline_representatives = [
++        next((c for c in baseline if c.branch_id.startswith(f"r0_{run_index:02d}_b00_")), None)
++        for run_index in (0, 1)
++    ]
++    report={'metadata':metadata,'prompts':prompts,'candidate_count':len(all_candidates),
++      'valid_count':sum(c.valid_format for c in all_candidates),'accepted_structure_count':sum(c.valid_format and c.quality>=args.min_quality and c.target_coverage>=args.min_target_coverage and c.subject_targeted and c.motion_specific for c in all_candidates),
++      'baseline_raw_equal':all(baseline_representatives) and baseline_representatives[0].raw==baseline_representatives[1].raw,
++      'baseline_latent_equal':all(baseline_representatives) and np.array_equal(baseline_representatives[0].latent,baseline_representatives[1].latent),
++      'rounds':round_records,'candidates':[serialise_candidate(c) for c in all_candidates],
++      'comparisons':[vars(c) for c in comparisons],'retained':[serialise_candidate(c) for c in retained],
++      'retained_count':len(retained),'trajectory_decoder':None,
++      'interpretation':'Retained entries are event candidates, not trajectory outputs or calibrated probabilities.'}
++    (out/'complete_search_report.json').write_text(json.dumps(report,indent=2,default=str),encoding='utf-8')
++    print('FINAL='+json.dumps({'candidate_count':len(all_candidates),'retained_count':len(retained),'retained':[c.answer for c in retained]},ensure_ascii=False),flush=True)
+ 
+ 
+-if __name__ == "__main__":
+-    main()
++if __name__=='__main__': main()
+--- a/src/model/future_l1.py
++++ b/src/model/future_l1.py
+@@ -32,6 +32,63 @@
+ from .projection_head import ProjectionHead, LVRHead
+ 
+ logger = logging.get_logger(__name__)
++
++
++class ActiveLatentBranchPool:
++    """Small tensor-agnostic state pool used by batched latent generation."""
++
++    def __init__(self, initial_state, *, branch_count, propose, score=None):
++        if int(branch_count) < 1:
++            raise ValueError("branch_count must be positive")
++        self.branch_count = int(branch_count)
++        self._propose = propose
++        self._score = score or (lambda _state: 0.0)
++        self.branches = [{"branch_id": "active_0", "latent_state": initial_state,
++                          "score": float(self._score(initial_state)), "alive": True}]
++
++    def advance(self, state):
++        if not self.branches:
++            raise RuntimeError("cannot advance an empty latent branch pool")
++        self.branches[0]["latent_state"] = state
++        self.branches[0]["score"] = float(self._score(state))
++
++    def propose(self):
++        parent = self.branches[0]
++        states = list(self._propose(parent["latent_state"], self.branch_count - 1))
++        if len(states) > self.branch_count - 1:
++            raise RuntimeError("proposal callback returned too many branches")
++        self.branches = [parent] + [
++            {"branch_id": f"active_{i}", "latent_state": state,
++             "score": float(self._score(state)), "alive": True}
++            for i, state in enumerate(states, 1)
++        ]
++        return self.branches
++
++    def states(self):
++        return [branch["latent_state"] for branch in self.branches]
++
++
++def _repeat_generation_batch(value, repeats: int):
++    """Repeat a generation-state value along its batch dimension."""
++    if torch.is_tensor(value):
++        # cache_position and other scalar/sequence-wide metadata are not
++        # batch-shaped; attention masks and KV tensors are.
++        if value.ndim < 2:
++            return value
++        return value.repeat_interleave(repeats, dim=0)
++    if isinstance(value, Cache):
++        repeat_fn = getattr(value, "batch_repeat_interleave", None)
++        if repeat_fn is None:
++            raise TypeError("cache does not support batch_repeat_interleave")
++        repeat_fn(repeats)
++        return value
++    if isinstance(value, tuple):
++        return tuple(_repeat_generation_batch(item, repeats) for item in value)
++    if isinstance(value, list):
++        return [_repeat_generation_batch(item, repeats) for item in value]
++    if isinstance(value, dict):
++        return {key: _repeat_generation_batch(item, repeats) for key, item in value.items()}
++    return value
+ 
+ 
+ def _merge_initial_cache_position(model, input_ids: torch.Tensor, model_kwargs: dict) -> dict:
+@@ -104,6 +161,87 @@
+             model.projection_head = model.projection_head.to(dtype=dtype)
+ 
+ 
++
++def _make_latent_noise_generator(device: torch.device, seed: int) -> torch.Generator:
++    """Create a dedicated RNG so latent proposals do not alter token RNG state."""
++    generator = torch.Generator(device=device)
++    generator.manual_seed(int(seed))
++    return generator
++
++
++def _apply_relative_latent_noise(
++    latent_hidden_state: Optional[torch.Tensor],
++    active_mask: torch.Tensor,
++    noise_std: float,
++    noise_generator: Optional[torch.Generator],
++    scale_mode: str = "rms",
++):
++    """Perturb active Future-L1 latent vectors and return auditable statistics.
++
++    noise_std is relative to each vector RMS by default. absolute keeps the
++    value in model-state units. A zero value is an exact no-op.
++    """
++    if latent_hidden_state is None or float(noise_std) == 0.0 or not active_mask.any():
++        return latent_hidden_state, None
++    if float(noise_std) < 0.0:
++        raise ValueError("latent_noise_std must be non-negative")
++    if noise_generator is None:
++        raise ValueError("noise_generator is required when latent_noise_std > 0")
++
++    selected = latent_hidden_state[active_mask]
++    selected_f = selected.float()
++    if scale_mode == "rms":
++        scale = selected_f.square().mean(dim=-1, keepdim=True).sqrt().clamp_min(1e-8)
++    elif scale_mode == "std":
++        scale = selected_f.std(dim=-1, keepdim=True, unbiased=False).clamp_min(1e-8)
++    elif scale_mode == "absolute":
++        scale = torch.ones(
++            (selected.shape[0], 1), device=selected.device, dtype=torch.float32
++        )
++    else:
++        raise ValueError(
++            f"Unsupported latent_noise_scale_mode={scale_mode!r}; "
++            "expected rms, std, or absolute"
++        )
++
++    raw_noise = torch.randn(
++        selected.shape,
++        generator=noise_generator,
++        device=selected.device,
++        dtype=torch.float32,
++    )
++    noise = (raw_noise * (float(noise_std) * scale)).to(dtype=selected.dtype)
++    perturbed = latent_hidden_state.clone()
++    perturbed[active_mask] = selected + noise
++
++    before_rms = selected_f.square().mean().sqrt()
++    noise_rms = noise.float().square().mean().sqrt()
++    after_rms = perturbed[active_mask].float().square().mean().sqrt()
++    stats = {
++        "active_vectors": int(active_mask.sum().item()),
++        "before_rms": float(before_rms.item()),
++        "noise_rms": float(noise_rms.item()),
++        "after_rms": float(after_rms.item()),
++        "relative_noise_rms": float((noise_rms / before_rms.clamp_min(1e-8)).item()),
++    }
++    return perturbed, stats
++
++
++class _FutureL1GenerationMixin:
++    """Allow inference-only latent controls through Transformers generation."""
++
++    def _validate_model_kwargs(self, model_kwargs):
++        for key in (
++            "latent_noise_std",
++            "latent_noise_seed",
++            "latent_noise_scale_mode",
++            "latent_branch_count",
++            "latent_branch_pool",
++        ):
++            model_kwargs.pop(key, None)
++        return super()._validate_model_kwargs(model_kwargs)
++
++
+ def _future_l1_sample(
+     model,
+     input_ids: torch.LongTensor,
+@@ -126,6 +264,39 @@
+     has_eos_stopping_criteria = any(hasattr(criteria, "eos_token_id") for criteria in stopping_criteria)
+     do_sample = generation_config.do_sample
+ 
++    # Experimental inference-only latent proposal controls. The default is an
++    # exact no-op and preserves the upstream path after this configuration block.
++    latent_noise_std = float(
++        model_kwargs.pop(
++            "latent_noise_std",
++            os.environ.get("FUTURE_L1_LATENT_NOISE_STD", "0"),
++        )
++    )
++    latent_noise_seed = int(
++        model_kwargs.pop(
++            "latent_noise_seed",
++            os.environ.get("FUTURE_L1_LATENT_NOISE_SEED", "0"),
++        )
++    )
++    latent_noise_scale_mode = str(
++        model_kwargs.pop(
++            "latent_noise_scale_mode",
++            os.environ.get("FUTURE_L1_LATENT_NOISE_SCALE_MODE", "rms"),
++        )
++    ).lower()
++    if latent_noise_std < 0.0:
++        raise ValueError("latent_noise_std must be non-negative")
++    latent_noise_generator = (
++        _make_latent_noise_generator(input_ids.device, latent_noise_seed)
++        if latent_noise_std > 0.0
++        else None
++    )
++    latent_noise_step_stats = []
++    latent_branch_count = int(model_kwargs.pop("latent_branch_count", 1))
++    latent_branch_pool = model_kwargs.pop("latent_branch_pool", None)
++    if latent_branch_count < 1:
++        raise ValueError("latent_branch_count must be positive")
++
+     # init attention / hidden states / scores tuples
+     scores = () if (return_dict_in_generate and output_scores) else None
+     raw_logits = () if (return_dict_in_generate and output_logits) else None
+@@ -142,6 +313,8 @@
+ 
+     # keep track of which sequences are already finished
+     batch_size, cur_len = input_ids.shape
++    if latent_branch_count > 1 and batch_size != 1:
++        raise ValueError("latent_branch_count currently requires a single prefill example")
+     this_peer_finished = False
+     unfinished_sequences = torch.ones(batch_size, dtype=torch.long, device=input_ids.device)
+     model_kwargs = _merge_initial_cache_position(model, input_ids, model_kwargs)
+@@ -197,6 +370,7 @@
+         raise ValueError("force_initial_latent=True requires config.latent_start_id to be set.")
+ 
+     is_prefill = True
++    branches_expanded = False
+ 
+     while model._has_unfinished_sequences(this_peer_finished, synced_gpus, device=input_ids.device):
+         # prepare model inputs
+@@ -294,13 +468,58 @@
+         latent_hidden_state = outputs.latent_hidden_state
+         next_tokens[in_latent_mode, None] = model.config.latent_id
+         next_tokens[latent_end, None] = model.config.latent_end_id
++        active_latent_mask = in_latent_mode & (next_tokens == model.config.latent_id)
++        latent_hidden_state, latent_noise_stat = _apply_relative_latent_noise(
++            latent_hidden_state,
++            active_latent_mask,
++            latent_noise_std,
++            latent_noise_generator,
++            latent_noise_scale_mode,
++        )
++        if latent_noise_stat is not None:
++            latent_noise_stat["generation_step"] = int(cur_len)
++            latent_noise_step_stats.append(latent_noise_stat)
+         if return_dict_in_generate and latent_hidden_state is not None:
+-            latent_mask = in_latent_mode & (next_tokens == model.config.latent_id)
++            latent_mask = active_latent_mask
+             if latent_mask.any():
+                 state_step = torch.zeros_like(latent_hidden_state)
+                 state_step[latent_mask] = latent_hidden_state[latent_mask].detach()
+                 latent_states_buffer.append(state_step)
+                 latent_mask_buffer.append(latent_mask.detach())
++
++        # One visual/text prefill is shared by all hypotheses.  Expand the
++        # resulting cache and per-example state only after that prefill, so
++        # subsequent decoding is a genuine batched multi-branch pass.
++        if latent_branch_count > 1 and not branches_expanded:
++            repeats = latent_branch_count
++            input_ids = input_ids.repeat_interleave(repeats, dim=0)
++            next_tokens = next_tokens.repeat_interleave(repeats, dim=0)
++            unfinished_sequences = unfinished_sequences.repeat_interleave(repeats, dim=0)
++            in_latent_mode = in_latent_mode.repeat_interleave(repeats, dim=0)
++            latent_remaining_steps = latent_remaining_steps.repeat_interleave(repeats, dim=0)
++            latent_steps_orig = latent_steps_orig.repeat_interleave(repeats, dim=0)
++            if in_text_mode is not None:
++                in_text_mode = in_text_mode.repeat_interleave(repeats, dim=0)
++                text_remaining_steps = text_remaining_steps.repeat_interleave(repeats, dim=0)
++            if latent_hidden_state is not None:
++                latent_hidden_state = latent_hidden_state.repeat_interleave(repeats, dim=0)
++            latent_states_buffer[:] = [
++                state.repeat_interleave(repeats, dim=0) for state in latent_states_buffer
++            ]
++            latent_mask_buffer[:] = [
++                mask.repeat_interleave(repeats, dim=0) for mask in latent_mask_buffer
++            ]
++            for key, value in list(model_kwargs.items()):
++                model_kwargs[key] = _repeat_generation_batch(value, repeats)
++            if latent_branch_pool is not None:
++                # The pool is deliberately state-only; model caches remain
++                # private to each expanded row.
++                try:
++                    latent_branch_pool.advance(latent_hidden_state)
++                    latent_branch_pool.propose()
++                except (AttributeError, RuntimeError, TypeError):
++                    logger.debug("latent branch pool could not mirror model state", exc_info=True)
++            branches_expanded = True
+ 
+         # update generated ids, model inputs, and length for next step
+         input_ids = torch.cat([input_ids, next_tokens[:, None]], dim=-1)
+@@ -341,12 +560,19 @@
+         if latent_states_buffer:
+             output.latent_states = torch.stack(latent_states_buffer, dim=1)
+             output.latent_mask = torch.stack(latent_mask_buffer, dim=1)
++        output.latent_noise_stats = {
++            "noise_std": float(latent_noise_std),
++            "noise_seed": int(latent_noise_seed),
++            "scale_mode": latent_noise_scale_mode,
++            "perturbed_step_count": len(latent_noise_step_stats),
++            "steps": latent_noise_step_stats,
++        }
+         return output
+ 
+     return input_ids
+ 
+ 
+-class FutureL1_Qwen2_5_VL(Qwen2_5_VLForConditionalGeneration):
++class FutureL1_Qwen2_5_VL(_FutureL1GenerationMixin, Qwen2_5_VLForConditionalGeneration):
+     def __init__(self, config):
+         super().__init__(config)
+         _maybe_add_projection_head(self, config)
+@@ -377,7 +603,7 @@
+         )
+ 
+ 
+-class FutureL1_Qwen3VL(Qwen3VLForConditionalGeneration):
++class FutureL1_Qwen3VL(_FutureL1GenerationMixin, Qwen3VLForConditionalGeneration):
+     def __init__(self, config):
+         super().__init__(config)
+         _maybe_add_projection_head(self, config)
+@@ -408,7 +634,7 @@
+         )
+ 
+ 
+-class RICE_Qwen3VL(Qwen3VLForConditionalGeneration):
++class RICE_Qwen3VL(_FutureL1GenerationMixin, Qwen3VLForConditionalGeneration):
+     def __init__(self, config):
+         super().__init__(config)
+         _maybe_add_projection_head(self, config)

@@ -1,0 +1,71 @@
+{
+  "files": [
+    {
+      "remote_relative": "reader-results-g1.1/results.json",
+      "local_name": "results.json",
+      "bytes": 143582,
+      "sha256": "1dfa1dd08109d0de137bcd22ab4e82266e6b1e32a7b60c829e86e9618c004433"
+    },
+    {
+      "remote_relative": "reader-results-g1.1/paired-summary.json",
+      "local_name": "paired-summary.json",
+      "bytes": 23603,
+      "sha256": "7046ce802d18ed606e3044ac3476a4a6dd137ea0e2e73bd10f1b258a155aff20"
+    },
+    {
+      "remote_relative": "reader-results-g1.1/paired-summary-reviewed.json",
+      "local_name": "paired-summary-reviewed.json",
+      "bytes": 23745,
+      "sha256": "cbc98e2ab6b8c50f46595d44270a231bf9404baa8ee88cdacad0a84b4b3e1360"
+    },
+    {
+      "remote_relative": "logs/gpu-interface-first-status.json",
+      "local_name": "gpu-interface-first-status.json",
+      "bytes": 638,
+      "sha256": "40aad850cd0b3fddd7f0495c23506eeb78defe7f3303c651246ddde5430df28b"
+    },
+    {
+      "remote_relative": "logs/gpu-geometry-all-status.json",
+      "local_name": "gpu-geometry-all-status.json",
+      "bytes": 649,
+      "sha256": "597d3e5b74023f681e246830d679575203af55748cd1d25e2c10b3fe853a564e"
+    },
+    {
+      "remote_relative": "logs/gpu-forecast-all-status.json",
+      "local_name": "gpu-forecast-all-status.json",
+      "bytes": 651,
+      "sha256": "17ab37b595dda0f64694ae46b92ee2e3f325d38844aafc8eef96639439fc2be4"
+    },
+    {
+      "remote_relative": "logs/reader-stage-status.json",
+      "local_name": "reader-stage-status.json",
+      "bytes": 880,
+      "sha256": "5c392755e198e5986c5ed1826362a305e1de5d259108e356b28bc22de2ac022c"
+    },
+    {
+      "remote_relative": "logs/observed-calibration-complete.json",
+      "local_name": "observed-calibration-complete.json",
+      "bytes": 207695,
+      "sha256": "c9d9293333cc678d65be27fc56164078564ae810245f4612d3dd80e13ec0ca41"
+    },
+    {
+      "remote_relative": "logs/calibrated-protocol.json",
+      "local_name": "calibrated-protocol.json",
+      "bytes": 2984,
+      "sha256": "7f2e0541613c149f9f92fa8981a3854a76642741338505ebac822cdb9ac5b569"
+    },
+    {
+      "remote_relative": "logs/first-model-coordinate-audit.json",
+      "local_name": "first-model-coordinate-audit.json",
+      "bytes": 4211,
+      "sha256": "8e3f339e7b15760bb444dd4e062789d4b8e605271f102ab6b4e32a2e21788299"
+    },
+    {
+      "remote_relative": "logs/reader-training.log",
+      "local_name": "reader-training.log",
+      "bytes": 2415,
+      "sha256": "645ea02deb1bd4e2571ac66cfa48013ba3300fb42a6b15f26bdba1a8583f1751"
+    }
+  ],
+  "weights_included": false
+}

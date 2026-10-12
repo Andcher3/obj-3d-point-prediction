@@ -1,0 +1,52 @@
+{
+  "video_path": "inputs/videos/gear_v2_9-wrist_front_rgb_img-0.mp4",
+  "video_len": 162,
+  "H": 480,
+  "W": 832,
+  "cond_index": 81,
+  "hist_len": 81,
+  "future_len": 81,
+  "use_overlap": false,
+  "save_offset": 0,
+  "pred_len": 81,
+  "grid_stride": 32,
+  "grid_border": 0,
+  "grid_origin": "topleft",
+  "num_points": 390,
+  "dtype": "float16",
+  "device": "cuda:0",
+  "noise_seed": 44,
+  "solver": "euler",
+  "steps": 20,
+  "fix_first_frame": false,
+  "vis_threshold": 0.5,
+  "vis_patch_size": 32,
+  "vis_temp_stride": 4,
+  "caption": "",
+  "gt_meta": {
+    "path": "inputs/tracks/gear_v2_9-wrist_front_rgb_img-0.npz",
+    "keys": [
+      "tracks",
+      "vis"
+    ],
+    "tracks_key": "tracks",
+    "vis_key": "vis",
+    "gt_coord_score": 1.3024957693463004,
+    "gt_coord_mode": "pixel",
+    "gt_swap_xy": false,
+    "gt_grid_origin_used": "topleft",
+    "gt_time0_used": 0,
+    "gt_hist_slice": [
+      0,
+      81
+    ],
+    "gt_fut_slice": [
+      81,
+      162
+    ],
+    "gt_eval_slice": [
+      81,
+      162
+    ]
+  }
+}

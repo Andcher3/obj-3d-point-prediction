@@ -1,0 +1,49 @@
+{
+  "protocol": {
+    "target_fps": 15.0,
+    "query_counts": [
+      32,
+      48,
+      64
+    ],
+    "main_graph": "knn_2d_k3",
+    "comparison_graph": "knn_3d_k3",
+    "timestamp_tolerance_s": 0.03333333333333333,
+    "conditions": [
+      "oracle",
+      "gaussian_0.01",
+      "gaussian_0.05",
+      "gaussian_0.10",
+      "gaussian_0.20",
+      "outlier_0.05",
+      "outlier_0.10",
+      "outlier_0.20"
+    ],
+    "non_oracle_seeds": 20
+  },
+  "bundle_count": 4,
+  "ready_bundle_count": 0,
+  "formal_data_gate_passed": false,
+  "results": [
+    {
+      "bundle": "experiences_results\\MolmoMotion-raw-video-trackcraft-2026-09-21\\drink_bottle_ambiguous_future\\arrays\\black_cup__greedy.npz",
+      "ready": false,
+      "reason": "missing_keys=['future_timestamps_s', 'pseudo_gt_timestamps_s', 't0_seconds']"
+    },
+    {
+      "bundle": "experiences_results\\MolmoMotion-raw-video-trackcraft-2026-09-21\\drink_bottle_ambiguous_future\\arrays\\keep_holding__greedy.npz",
+      "ready": false,
+      "reason": "missing_keys=['future_timestamps_s', 'pseudo_gt_timestamps_s', 't0_seconds']"
+    },
+    {
+      "bundle": "experiences_results\\MolmoMotion-raw-video-trackcraft-2026-09-21\\drink_bottle_ambiguous_future\\arrays\\laptop__greedy.npz",
+      "ready": false,
+      "reason": "missing_keys=['future_timestamps_s', 'pseudo_gt_timestamps_s', 't0_seconds']"
+    },
+    {
+      "bundle": "experiences_results\\MolmoMotion-raw-video-trackcraft-2026-09-21\\drink_bottle_ambiguous_future\\arrays\\mouse__greedy.npz",
+      "ready": false,
+      "reason": "missing_keys=['future_timestamps_s', 'pseudo_gt_timestamps_s', 't0_seconds']"
+    }
+  ]
+}

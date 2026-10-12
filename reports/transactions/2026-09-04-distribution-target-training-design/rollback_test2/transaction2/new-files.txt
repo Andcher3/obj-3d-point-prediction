@@ -1,0 +1,2 @@
+reports\ideas\2026-09-04-distribution-target-adversarial-training-detail.md
+reports\progress\2026-09-04-distribution-target-adversarial-training.md

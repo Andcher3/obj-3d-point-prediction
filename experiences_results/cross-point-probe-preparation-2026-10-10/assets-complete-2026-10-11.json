@@ -1,0 +1,72 @@
+{
+  "assets_ready": true,
+  "source": "/root/autodl-tmp/cross-point-probe-2026-10-10/source/motionforesight-c59df3ea37c9fa877bd3f5c6ef3f855544440c4d",
+  "files": [
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/source/motionforesight.zip",
+      "bytes": 72794713,
+      "sha256": "7bfd0c0fc4e9709db760f441a5b8cfa968e087ab241956a2db1fa5ca4b2c7196",
+      "official_sha256_available": false
+    },
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/trackcraft3r/model.safetensors",
+      "bytes": 17761542554,
+      "sha256": "d70084c009a9c894654685c1744217a3f86558a2189d3e896d29251ec177a7ad",
+      "official_sha256_available": true
+    },
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+      "bytes": 507609880,
+      "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+      "official_sha256_available": false
+    },
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/Wan-AI/Wan2.1-T2V-1.3B/diffusion_pytorch_model.safetensors",
+      "bytes": 5676070424,
+      "sha256": "96b6b242ca1c2f24e9d02cd6596066fab6d310e2d7538f33ae267cb18d957e8f",
+      "official_sha256_available": false
+    },
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/Wan-AI/Wan2.1-T2V-1.3B/google/umt5-xxl/special_tokens_map.json",
+      "bytes": 6623,
+      "sha256": "7b8a9f5040adb67b5805abdfd42c1f8d0f3d0e711f10726580eb3789cd0ad61d",
+      "official_sha256_available": false
+    },
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/Wan-AI/Wan2.1-T2V-1.3B/google/umt5-xxl/spiece.model",
+      "bytes": 4548313,
+      "sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458",
+      "official_sha256_available": false
+    },
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/Wan-AI/Wan2.1-T2V-1.3B/google/umt5-xxl/tokenizer.json",
+      "bytes": 16837417,
+      "sha256": "6e197b4d3dbd71da14b4eb255f4fa91c9c1f2068b20a2de2472967ca3d22602b",
+      "official_sha256_available": false
+    },
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/Wan-AI/Wan2.1-T2V-1.3B/google/umt5-xxl/tokenizer_config.json",
+      "bytes": 61728,
+      "sha256": "ed9a3a8b0faa71a70a32847e0435fe036e6e112d4df4edb7bb48a921e344dc05",
+      "official_sha256_available": false
+    },
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/DA3-BASE/model.safetensors",
+      "bytes": 541518028,
+      "sha256": "e01067dc1659613083d9145a9a2547ccdbe6ccbbf83c4fe7b3e8a4e2bdae78b5",
+      "official_sha256_available": true
+    },
+    {
+      "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/DA3-BASE/config.json",
+      "bytes": 1205,
+      "sha256": "5e34115ebc17bd2d8d43033c5f72e9446ac8833fd61d3fa160b7e67e0bb5b7b5",
+      "official_sha256_available": false
+    }
+  ],
+  "missing_assets": [],
+  "source_zip_crc_pass": true,
+  "fine_archive_crc_pass": true,
+  "model_loaded": false,
+  "forward_called": false,
+  "gpu_used": false
+}

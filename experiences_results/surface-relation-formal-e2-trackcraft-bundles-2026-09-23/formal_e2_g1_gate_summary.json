@@ -1,0 +1,829 @@
+{
+  "experiment_gate": "E2-G.1",
+  "interpretation_boundary": "TrackCraft3R pseudo-GT plus controlled perturbation; no MolmoMotion or Relation Head prediction claim",
+  "source_video_count": 5,
+  "motion_categories": [
+    "articulated",
+    "rigid"
+  ],
+  "category_limitation": "rigid and articulated only; no reliable deformable video",
+  "repair_rule": "3D symmetric kNN k=3 components connected by shortest observed-2D symmetric kNN k=3 crossing edges, deterministic Kruskal tie-break",
+  "structure_query48": [
+    {
+      "source_video": "356ed369-7023-4660-904b-be73823a21d3",
+      "motion_category": "rigid",
+      "query_count": 48,
+      "repaired_components": 1,
+      "added_connection_edge_count": 1,
+      "added_connection_edge_length_sum_px": 18.812407935871118,
+      "added_connection_edge_length_max_px": 18.812407935871118,
+      "added_connection_bridge_count": 1,
+      "repaired_history_graph_jaccard_mean": 0.833502850978579,
+      "repaired_history_graph_jaccard_min": 0.7238095238095238
+    },
+    {
+      "source_video": "4d053322-1eef-4a69-8201-932c7b82fb03",
+      "motion_category": "rigid",
+      "query_count": 48,
+      "repaired_components": 1,
+      "added_connection_edge_count": 1,
+      "added_connection_edge_length_sum_px": 19.83543496521325,
+      "added_connection_edge_length_max_px": 19.83543496521325,
+      "added_connection_bridge_count": 1,
+      "repaired_history_graph_jaccard_mean": 0.9262626262626262,
+      "repaired_history_graph_jaccard_min": 0.8787878787878788
+    },
+    {
+      "source_video": "65165142-b15e-4bba-a9de-d5174ec46597",
+      "motion_category": "articulated",
+      "query_count": 48,
+      "repaired_components": 1,
+      "added_connection_edge_count": 0,
+      "added_connection_edge_length_sum_px": 0.0,
+      "added_connection_edge_length_max_px": 0.0,
+      "added_connection_bridge_count": 0,
+      "repaired_history_graph_jaccard_mean": 0.7328626285148024,
+      "repaired_history_graph_jaccard_min": 0.5811965811965812
+    },
+    {
+      "source_video": "9069bd26-0139-4e88-9957-9f9489b35a91",
+      "motion_category": "rigid",
+      "query_count": 48,
+      "repaired_components": 1,
+      "added_connection_edge_count": 1,
+      "added_connection_edge_length_sum_px": 26.29147281007719,
+      "added_connection_edge_length_max_px": 26.29147281007719,
+      "added_connection_bridge_count": 1,
+      "repaired_history_graph_jaccard_mean": 0.9854674311196051,
+      "repaired_history_graph_jaccard_min": 0.967391304347826
+    },
+    {
+      "source_video": "cb78dba8-6647-4ec7-875c-6ba1548f8312",
+      "motion_category": "articulated",
+      "query_count": 48,
+      "repaired_components": 1,
+      "added_connection_edge_count": 1,
+      "added_connection_edge_length_sum_px": 20.080920799513795,
+      "added_connection_edge_length_max_px": 20.080920799513795,
+      "added_connection_bridge_count": 1,
+      "repaired_history_graph_jaccard_mean": 0.9698672114402451,
+      "repaired_history_graph_jaccard_min": 0.9545454545454546
+    }
+  ],
+  "performance_query48": [
+    {
+      "condition": "gaussian_0.01",
+      "knn_2d": {
+        "graph_native_rve_auc_macro_mean": 0.000719842377762581,
+        "shared_union_rve_auc_macro_mean": 0.0007911701128560137,
+        "component_centered_point_error_macro_mean": 0.0008112877306014541,
+        "video_values_graph_native": [
+          0.0008205128195008886,
+          0.0007992576728220543,
+          0.0007801472905380102,
+          0.0007982540755314778,
+          0.0004010400304204745
+        ],
+        "video_values_shared_union": [
+          0.0009534724238076176,
+          0.0009039149173243458,
+          0.00081203112871034,
+          0.0008702755255082251,
+          0.00041615656892953965
+        ]
+      },
+      "knn_3d": {
+        "graph_native_rve_auc_macro_mean": 0.000625773247452972,
+        "shared_union_rve_auc_macro_mean": 0.0006961714101018787,
+        "component_centered_point_error_macro_mean": 0.0007014742146245333,
+        "video_values_graph_native": [
+          0.0006468593453258929,
+          0.0006742990542106064,
+          0.0007236115688459304,
+          0.0006915967051886404,
+          0.0003924995636937897
+        ],
+        "video_values_shared_union": [
+          0.0007357945827698194,
+          0.0007718896254936177,
+          0.0007381620406039695,
+          0.0008158684219737792,
+          0.00041914237966820676
+        ]
+      },
+      "knn_3d_repaired": {
+        "graph_native_rve_auc_macro_mean": 0.0006286753064329496,
+        "shared_union_rve_auc_macro_mean": 0.0007338042918213762,
+        "component_centered_point_error_macro_mean": 0.000837848088529263,
+        "video_values_graph_native": [
+          0.0006540554294981574,
+          0.0006799669585209532,
+          0.0007236115688459304,
+          0.0006908365314287267,
+          0.00039490604387098046
+        ],
+        "video_values_shared_union": [
+          0.0008074417914074207,
+          0.0008324316931928621,
+          0.0007381620406039695,
+          0.0008586299212746738,
+          0.000432356012627955
+        ]
+      },
+      "repaired_over_original_3d_shared_union_ratio": 1.0540569192779552,
+      "repaired_over_2d_shared_union_ratio": 0.9274924316496804
+    },
+    {
+      "condition": "gaussian_0.05",
+      "knn_2d": {
+        "graph_native_rve_auc_macro_mean": 0.003570203119201655,
+        "shared_union_rve_auc_macro_mean": 0.003935653019500115,
+        "component_centered_point_error_macro_mean": 0.004072897815627229,
+        "video_values_graph_native": [
+          0.004055312143318608,
+          0.003983597526506685,
+          0.003879327090912763,
+          0.003941286324988439,
+          0.0019914925102817787
+        ],
+        "video_values_shared_union": [
+          0.004712798321639177,
+          0.004508786857478296,
+          0.004060709665801177,
+          0.004305021876259322,
+          0.0020909483763226033
+        ]
+      },
+      "knn_3d": {
+        "graph_native_rve_auc_macro_mean": 0.003102836203315828,
+        "shared_union_rve_auc_macro_mean": 0.003433434450038013,
+        "component_centered_point_error_macro_mean": 0.003500089066276605,
+        "video_values_graph_native": [
+          0.0032318865394343746,
+          0.0033467855004522262,
+          0.003580616004611997,
+          0.0034096570460869233,
+          0.0019452359259936203
+        ],
+        "video_values_shared_union": [
+          0.003639918557114333,
+          0.003837697484543821,
+          0.0036427588019322787,
+          0.003975310913430817,
+          0.002071486493168814
+        ]
+      },
+      "knn_3d_repaired": {
+        "graph_native_rve_auc_macro_mean": 0.003116532361449074,
+        "shared_union_rve_auc_macro_mean": 0.003631132157662887,
+        "component_centered_point_error_macro_mean": 0.004189146375506327,
+        "video_values_graph_native": [
+          0.0032262115257990142,
+          0.0033546041236373744,
+          0.003580616004611997,
+          0.003454054512204584,
+          0.001967175640992401
+        ],
+        "video_values_shared_union": [
+          0.003917209432047116,
+          0.004160883569294643,
+          0.0036427588019322787,
+          0.00427742658793001,
+          0.0021573823971103895
+        ]
+      },
+      "repaired_over_original_3d_shared_union_ratio": 1.0575801607695423,
+      "repaired_over_2d_shared_union_ratio": 0.9226250738242401
+    },
+    {
+      "condition": "gaussian_0.10",
+      "knn_2d": {
+        "graph_native_rve_auc_macro_mean": 0.007161437552458906,
+        "shared_union_rve_auc_macro_mean": 0.007914847283958675,
+        "component_centered_point_error_macro_mean": 0.008145647390277545,
+        "video_values_graph_native": [
+          0.008221490960309111,
+          0.00794645340232487,
+          0.007793806646644802,
+          0.007865299117768617,
+          0.003980137635247137
+        ],
+        "video_values_shared_union": [
+          0.009611992977100265,
+          0.008998604232949231,
+          0.008225342787968791,
+          0.008606102724859096,
+          0.004132193696915995
+        ]
+      },
+      "knn_3d": {
+        "graph_native_rve_auc_macro_mean": 0.006206073947582878,
+        "shared_union_rve_auc_macro_mean": 0.006829464401173895,
+        "component_centered_point_error_macro_mean": 0.006863411168815353,
+        "video_values_graph_native": [
+          0.00641542422465011,
+          0.0066830840067528055,
+          0.007157164072912633,
+          0.006885652456957322,
+          0.0038890449766415215
+        ],
+        "video_values_shared_union": [
+          0.007202250590038007,
+          0.007630248350521361,
+          0.007322112495175556,
+          0.007862962790929361,
+          0.004129747779205189
+        ]
+      },
+      "knn_3d_repaired": {
+        "graph_native_rve_auc_macro_mean": 0.006258710027607766,
+        "shared_union_rve_auc_macro_mean": 0.007299983167767285,
+        "component_centered_point_error_macro_mean": 0.008397894905080732,
+        "video_values_graph_native": [
+          0.006490092025144431,
+          0.006812489902691207,
+          0.007157164072912633,
+          0.006884916744303716,
+          0.003948887392986837
+        ],
+        "video_values_shared_union": [
+          0.007967980174578377,
+          0.008353197218657817,
+          0.007322112495175556,
+          0.008570107695957344,
+          0.004286518254467336
+        ]
+      },
+      "repaired_over_original_3d_shared_union_ratio": 1.068895412429782,
+      "repaired_over_2d_shared_union_ratio": 0.9223151004520884
+    },
+    {
+      "condition": "gaussian_0.20",
+      "knn_2d": {
+        "graph_native_rve_auc_macro_mean": 0.014329607815118686,
+        "shared_union_rve_auc_macro_mean": 0.015724096217493388,
+        "component_centered_point_error_macro_mean": 0.016185654001332827,
+        "video_values_graph_native": [
+          0.016276715691777043,
+          0.01593075949079112,
+          0.015592241399329973,
+          0.015864878481946783,
+          0.00798344401174851
+        ],
+        "video_values_shared_union": [
+          0.018874063516735852,
+          0.017911229949226955,
+          0.016309306718768832,
+          0.01718743968450528,
+          0.008338441218230018
+        ]
+      },
+      "knn_3d": {
+        "graph_native_rve_auc_macro_mean": 0.012485732869396454,
+        "shared_union_rve_auc_macro_mean": 0.013774163833956816,
+        "component_centered_point_error_macro_mean": 0.013829101779093553,
+        "video_values_graph_native": [
+          0.01296605901326187,
+          0.013427648517305671,
+          0.014362087359920644,
+          0.01382178906310351,
+          0.007851080393390579
+        ],
+        "video_values_shared_union": [
+          0.014403316390295618,
+          0.015282354390496305,
+          0.014668404189128527,
+          0.016169451014859337,
+          0.008347293185004295
+        ]
+      },
+      "knn_3d_repaired": {
+        "graph_native_rve_auc_macro_mean": 0.012511205213997446,
+        "shared_union_rve_auc_macro_mean": 0.014535074166367793,
+        "component_centered_point_error_macro_mean": 0.016656095653552735,
+        "video_values_graph_native": [
+          0.013092128103983428,
+          0.013515876234443494,
+          0.014362087359920644,
+          0.013728698528537893,
+          0.007857235843101763
+        ],
+        "video_values_shared_union": [
+          0.0159755003984181,
+          0.016469879773220186,
+          0.014668404189128527,
+          0.016949565980050006,
+          0.008612020491022148
+        ]
+      },
+      "repaired_over_original_3d_shared_union_ratio": 1.0552418529054475,
+      "repaired_over_2d_shared_union_ratio": 0.9243821689539916
+    },
+    {
+      "condition": "outlier_0.05",
+      "knn_2d": {
+        "graph_native_rve_auc_macro_mean": 0.004685458514568379,
+        "shared_union_rve_auc_macro_mean": 0.0055243469316007265,
+        "component_centered_point_error_macro_mean": 0.007437683498080852,
+        "video_values_graph_native": [
+          0.005195079992927856,
+          0.005389108326867767,
+          0.005115954573499356,
+          0.0051293994116002745,
+          0.0025977502679466434
+        ],
+        "video_values_shared_union": [
+          0.0069640148726541826,
+          0.006719330962141813,
+          0.005286024138292277,
+          0.005904941814004627,
+          0.0027474228709107314
+        ]
+      },
+      "knn_3d": {
+        "graph_native_rve_auc_macro_mean": 0.004192944139785251,
+        "shared_union_rve_auc_macro_mean": 0.0049847219476861345,
+        "component_centered_point_error_macro_mean": 0.0059239489694769484,
+        "video_values_graph_native": [
+          0.003955334756102564,
+          0.004737416233799283,
+          0.005552314477289795,
+          0.004100976589364096,
+          0.0026186786423705146
+        ],
+        "video_values_shared_union": [
+          0.004862014377509685,
+          0.005992673946761665,
+          0.00564409198475465,
+          0.005393770907638734,
+          0.00303105852176594
+        ]
+      },
+      "knn_3d_repaired": {
+        "graph_native_rve_auc_macro_mean": 0.004328948401478528,
+        "shared_union_rve_auc_macro_mean": 0.005345321306251533,
+        "component_centered_point_error_macro_mean": 0.007454859208724224,
+        "video_values_graph_native": [
+          0.003841220540436415,
+          0.00464519256940637,
+          0.005552314477289795,
+          0.00503389276151421,
+          0.0025721216587458492
+        ],
+        "video_values_shared_union": [
+          0.005483956943128571,
+          0.006248229632002088,
+          0.00564409198475465,
+          0.006420680724237696,
+          0.00292964724713466
+        ]
+      },
+      "repaired_over_original_3d_shared_union_ratio": 1.0723409173771037,
+      "repaired_over_2d_shared_union_ratio": 0.967593341336852
+    },
+    {
+      "condition": "outlier_0.10",
+      "knn_2d": {
+        "graph_native_rve_auc_macro_mean": 0.008522636363470774,
+        "shared_union_rve_auc_macro_mean": 0.009897159391679736,
+        "component_centered_point_error_macro_mean": 0.01197147234901846,
+        "video_values_graph_native": [
+          0.008806706261883207,
+          0.009799144370614882,
+          0.00940367931050638,
+          0.009677087758922946,
+          0.004926564115426461
+        ],
+        "video_values_shared_union": [
+          0.011381625215740588,
+          0.011673669439412789,
+          0.010177032567711646,
+          0.010986119698901882,
+          0.005267350036631773
+        ]
+      },
+      "knn_3d": {
+        "graph_native_rve_auc_macro_mean": 0.007204664661864193,
+        "shared_union_rve_auc_macro_mean": 0.008438702268571434,
+        "component_centered_point_error_macro_mean": 0.0097379885748767,
+        "video_values_graph_native": [
+          0.007607139394051686,
+          0.007662447604470671,
+          0.008509213574681575,
+          0.007857292288323114,
+          0.004387230447793921
+        ],
+        "video_values_shared_union": [
+          0.009378515562986852,
+          0.009429551881538847,
+          0.008699716654900666,
+          0.009993831665642897,
+          0.0046918955777879075
+        ]
+      },
+      "knn_3d_repaired": {
+        "graph_native_rve_auc_macro_mean": 0.007370404738686281,
+        "shared_union_rve_auc_macro_mean": 0.008946484241168512,
+        "component_centered_point_error_macro_mean": 0.011992366272902438,
+        "video_values_graph_native": [
+          0.007581628530603487,
+          0.008157942483591786,
+          0.008509213574681575,
+          0.007924170242742244,
+          0.004679068861812309
+        ],
+        "video_values_shared_union": [
+          0.010308040121893054,
+          0.01047605123733513,
+          0.008699716654900666,
+          0.01013768019820437,
+          0.0051109329935093446
+        ]
+      },
+      "repaired_over_original_3d_shared_union_ratio": 1.0601729930072576,
+      "repaired_over_2d_shared_union_ratio": 0.9039446458434901
+    },
+    {
+      "condition": "outlier_0.20",
+      "knn_2d": {
+        "graph_native_rve_auc_macro_mean": 0.013571053987383975,
+        "shared_union_rve_auc_macro_mean": 0.015562267970259894,
+        "component_centered_point_error_macro_mean": 0.01787853362469758,
+        "video_values_graph_native": [
+          0.015145852111680864,
+          0.014902333299327815,
+          0.014862516019072168,
+          0.01515693099901957,
+          0.007787637507819462
+        ],
+        "video_values_shared_union": [
+          0.018751116903391762,
+          0.01775290298418128,
+          0.015745605130559025,
+          0.017275538278298877,
+          0.008286176554868534
+        ]
+      },
+      "knn_3d": {
+        "graph_native_rve_auc_macro_mean": 0.011946449078300832,
+        "shared_union_rve_auc_macro_mean": 0.013649904174589791,
+        "component_centered_point_error_macro_mean": 0.01526564926803128,
+        "video_values_graph_native": [
+          0.012436839522984843,
+          0.012999428623517672,
+          0.014145755646170783,
+          0.012820302595788587,
+          0.007329919003042274
+        ],
+        "video_values_shared_union": [
+          0.014764351116704738,
+          0.015123917504790505,
+          0.014622123990274252,
+          0.015728171882280068,
+          0.008010956378899398
+        ]
+      },
+      "knn_3d_repaired": {
+        "graph_native_rve_auc_macro_mean": 0.011923999089212989,
+        "shared_union_rve_auc_macro_mean": 0.014441312301921722,
+        "component_centered_point_error_macro_mean": 0.017986804964013288,
+        "video_values_graph_native": [
+          0.012315727027102756,
+          0.01284619317903562,
+          0.014145755646170783,
+          0.012967783535239827,
+          0.00734453605851596
+        ],
+        "video_values_shared_union": [
+          0.016243227723938505,
+          0.016400055837642948,
+          0.014622123990274252,
+          0.016956104862632767,
+          0.007985049095120125
+        ]
+      },
+      "repaired_over_original_3d_shared_union_ratio": 1.0579790244099434,
+      "repaired_over_2d_shared_union_ratio": 0.927969646167232
+    }
+  ],
+  "density_48_to_64": [
+    {
+      "graph_type": "knn_2d",
+      "condition": "gaussian_0.01",
+      "ratio_64_over_48_median": 0.8115601673929963,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7139248892367933,
+        0.862960624439504,
+        0.8891674873231965,
+        0.7552142861792874,
+        0.8115601673929963
+      ]
+    },
+    {
+      "graph_type": "knn_2d",
+      "condition": "gaussian_0.05",
+      "ratio_64_over_48_median": 0.8142225401208856,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7264458533032211,
+        0.8712772444582478,
+        0.8941549696348758,
+        0.7641076789630751,
+        0.8142225401208856
+      ]
+    },
+    {
+      "graph_type": "knn_2d",
+      "condition": "gaussian_0.10",
+      "ratio_64_over_48_median": 0.8279058676136063,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7046524218745794,
+        0.8785973936514282,
+        0.8835101815040862,
+        0.7634496094187583,
+        0.8279058676136063
+      ]
+    },
+    {
+      "graph_type": "knn_2d",
+      "condition": "gaussian_0.20",
+      "ratio_64_over_48_median": 0.8219229899038604,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7216886513035179,
+        0.8804261360923314,
+        0.8911597644832646,
+        0.7653773399452656,
+        0.8219229899038604
+      ]
+    },
+    {
+      "graph_type": "knn_2d",
+      "condition": "outlier_0.05",
+      "ratio_64_over_48_median": 0.9094097826526217,
+      "increase_count": 1,
+      "comparison_count": 5,
+      "video_values": [
+        0.7449521656469983,
+        0.9272357189667747,
+        1.0329923386552542,
+        0.8203154846967382,
+        0.9094097826526217
+      ]
+    },
+    {
+      "graph_type": "knn_2d",
+      "condition": "outlier_0.10",
+      "ratio_64_over_48_median": 0.8062704329087236,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7795700613777885,
+        0.8425177927665718,
+        0.8662334870601032,
+        0.7426495306403635,
+        0.8062704329087236
+      ]
+    },
+    {
+      "graph_type": "knn_2d",
+      "condition": "outlier_0.20",
+      "ratio_64_over_48_median": 0.8011655830558738,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.6978718153258779,
+        0.8687211983981318,
+        0.8798246656588321,
+        0.7493776402077182,
+        0.8011655830558738
+      ]
+    },
+    {
+      "graph_type": "knn_3d",
+      "condition": "gaussian_0.01",
+      "ratio_64_over_48_median": 0.8373315136179066,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.8100668056330216,
+        0.9729949844388746,
+        0.9358493160136258,
+        0.7876295406607051,
+        0.8373315136179066
+      ]
+    },
+    {
+      "graph_type": "knn_3d",
+      "condition": "gaussian_0.05",
+      "ratio_64_over_48_median": 0.839117179594834,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.8050147067944048,
+        0.9915825280733546,
+        0.9297923262802178,
+        0.8086983558079248,
+        0.839117179594834
+      ]
+    },
+    {
+      "graph_type": "knn_3d",
+      "condition": "gaussian_0.10",
+      "ratio_64_over_48_median": 0.853865934324285,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.8093879865801302,
+        0.9891027827408507,
+        0.9268013452926922,
+        0.8201853835809741,
+        0.853865934324285
+      ]
+    },
+    {
+      "graph_type": "knn_3d",
+      "condition": "gaussian_0.20",
+      "ratio_64_over_48_median": 0.8418146504252799,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.8173503156423716,
+        0.9903692510739981,
+        0.9248629955456393,
+        0.7980835849952463,
+        0.8418146504252799
+      ]
+    },
+    {
+      "graph_type": "knn_3d",
+      "condition": "outlier_0.05",
+      "ratio_64_over_48_median": 0.8672952642339569,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.8638727852535627,
+        0.8672952642339569,
+        0.8930288086090677,
+        0.8688790525329847,
+        0.8446017356401425
+      ]
+    },
+    {
+      "graph_type": "knn_3d",
+      "condition": "outlier_0.10",
+      "ratio_64_over_48_median": 0.8838923778423813,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.8017992185700905,
+        0.9834692628885819,
+        0.9544081693279716,
+        0.7637365364448041,
+        0.8838923778423813
+      ]
+    },
+    {
+      "graph_type": "knn_3d",
+      "condition": "outlier_0.20",
+      "ratio_64_over_48_median": 0.8244170531118373,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7764101150522644,
+        0.9710916966588451,
+        0.9111236152669644,
+        0.8020032203888201,
+        0.8244170531118373
+      ]
+    },
+    {
+      "graph_type": "knn_3d_repaired",
+      "condition": "gaussian_0.01",
+      "ratio_64_over_48_median": 0.8314130614320684,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7718185089179457,
+        0.9518786398740041,
+        0.9541145735501856,
+        0.79474203623706,
+        0.8314130614320684
+      ]
+    },
+    {
+      "graph_type": "knn_3d_repaired",
+      "condition": "gaussian_0.05",
+      "ratio_64_over_48_median": 0.84159403435022,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.809090991508112,
+        0.991334470899631,
+        0.9617393631377911,
+        0.8005829256440199,
+        0.84159403435022
+      ]
+    },
+    {
+      "graph_type": "knn_3d_repaired",
+      "condition": "gaussian_0.10",
+      "ratio_64_over_48_median": 0.8549004690784798,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7987377529770592,
+        0.9757364335068609,
+        0.9654931485846748,
+        0.7948913956335362,
+        0.8549004690784798
+      ]
+    },
+    {
+      "graph_type": "knn_3d_repaired",
+      "condition": "gaussian_0.20",
+      "ratio_64_over_48_median": 0.8487603176558454,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7923495887055148,
+        0.9918175567764796,
+        0.9595852099570271,
+        0.7996945422956042,
+        0.8487603176558454
+      ]
+    },
+    {
+      "graph_type": "knn_3d_repaired",
+      "condition": "outlier_0.05",
+      "ratio_64_over_48_median": 0.8734843954711843,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.8108233493911384,
+        0.8822012284313743,
+        0.8734843954711843,
+        0.7779919214305824,
+        0.8794317818738222
+      ]
+    },
+    {
+      "graph_type": "knn_3d_repaired",
+      "condition": "outlier_0.10",
+      "ratio_64_over_48_median": 0.8119269948667268,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7408487601057542,
+        0.9640259554044596,
+        0.9563865327100923,
+        0.8119269948667268,
+        0.8016891841488698
+      ]
+    },
+    {
+      "graph_type": "knn_3d_repaired",
+      "condition": "outlier_0.20",
+      "ratio_64_over_48_median": 0.8668715320673294,
+      "increase_count": 0,
+      "comparison_count": 5,
+      "video_values": [
+        0.7572772266334128,
+        0.9628967051407413,
+        0.9015332615183346,
+        0.7772368529492509,
+        0.8668715320673294
+      ]
+    }
+  ],
+  "repair_summary": {
+    "videos_requiring_added_edges": 4,
+    "videos_already_connected": 1,
+    "added_edge_count_total": 4,
+    "added_edge_count_values": [
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "all_repaired_graphs_connected": true,
+    "all_added_edges_are_bridges": true
+  },
+  "decision": {
+    "formal_default_graph": "unfrozen",
+    "retain_2d_k3_as_engineering_candidate": true,
+    "retain_3d_k3_as_numeric_control": true,
+    "switch_to_3d": false,
+    "e2_m": "blocked",
+    "e3": "paused",
+    "e4": "paused",
+    "irls_huber_learned_gate": "paused"
+  }
+}

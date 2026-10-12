@@ -1,0 +1,33 @@
+{
+  "environment_without_weights_passed": true,
+  "torch_cuda_build": "12.8",
+  "compiled_cuda_architectures": [
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "sm_120_build_supported": true,
+  "official_model_class_imported": true,
+  "official_sparse_query_container_passed": true,
+  "model_constructed": false,
+  "checkpoint_loaded": false,
+  "model_forward_called": false,
+  "gpu_runtime_tested": false,
+  "versions": {
+    "torch": "2.8.0",
+    "torchvision": "0.23.0",
+    "numpy": "1.26.4",
+    "opencv-python": "4.11.0.86",
+    "pillow": "12.3.0",
+    "einops": "0.8.2",
+    "trimesh": "5.1.1",
+    "matplotlib": "3.10.9",
+    "scipy": "1.15.3",
+    "huggingface_hub": "0.34.4",
+    "viser": "1.1.1"
+  }
+}

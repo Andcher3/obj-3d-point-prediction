@@ -1,0 +1,7 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "Running row is visually coherent and its foreground thought cloud cleanly replaces the head area without visible overlap artifacts.",
+  "running_row": "Six seated thinking frames retain a comparably scaled yellow-and-blue character; the full white cloud overlaps the crest and forehead lens with no top gap while the large cyan face lens remains visible.",
+  "review_warnings": [],
+  "repair_rows": []
+}

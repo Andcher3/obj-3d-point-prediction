@@ -1,0 +1,26 @@
+{
+  "sha256": {
+    "logs/all-true-focal-audit.json": "cf0293453e33b392dadb88818edb13ee97c76ccbeca0f83672a54ea2bc3ff61c",
+    "logs/true-focal-comparison.csv": "0b2c036fe8e9313bc33b5f4d4208bae8ff97a904c753d5c39f7aacec5de37cc9",
+    "true-focal-review.html": "48001e38f0f3e0ce6ec0d8593711d72cec42ea2745c06bff6f2d7bcf1b829196",
+    "outputs/scene_3626/scene_3626_true_focal_review.mp4": "e4278e6677136e104701c06906c96011ef0cd49e4917d549a8989ac78360e619",
+    "outputs/scene_1782/scene_1782_true_focal_review.mp4": "d0d97fd05025620eeb43b49598498799d2dfdf8012620cd449d7446ba85dbfd1",
+    "outputs/scene_3881/scene_3881_true_focal_review.mp4": "5a55a722684538b538a4f90c31be38223cd8503fb1ac55a08455b9d162bfb419",
+    "outputs/scene_2344/scene_2344_true_focal_review.mp4": "d3870c52c8c72c06173d0a2ab7586bbb32bc36d7bbc4ab4aba14f5398dcf8235",
+    "outputs/scene_3782/scene_3782_true_focal_review.mp4": "eec4c892350a83236dccb4cfbe611c16ebc3c43f7da2b97b14e19edd23946c17",
+    "outputs/scene_5916/scene_5916_true_focal_review.mp4": "74497c72e45abedcdac2431197f97344826d98adf40c463b95793f320903d1d9",
+    "outputs/scene_1924/scene_1924_true_focal_review.mp4": "05e6c335accbd5a9817afb2bd492f90a976a822641b8005bc73202369484a9da",
+    "outputs/scene_5025/scene_5025_true_focal_review.mp4": "fe008d56847e0b23a8fd2914e5070d91f655261c7fe32ddc46ab0f34be9a6310",
+    "outputs/scene_1143/scene_1143_true_focal_review.mp4": "5e940e74369800e5877d523a4f7c50c416936254ba347118d9089fa9b2350a24",
+    "outputs/scene_4203/scene_4203_true_focal_review.mp4": "780fd8a07456f9e06118651da8ef026af13ef40b898398a70fd46582235aaaf2",
+    "outputs/scene_2854/scene_2854_true_focal_review.mp4": "877141062b1fb13251fa7c59c824c27e71b9789d5adee62de11f0d49cd6082a9",
+    "outputs/scene_1179/scene_1179_true_focal_review.mp4": "2feaccea80660bfe2036d6753586fbb3c7b5a925cd08f32f167a7a8c17e5d427",
+    "outputs/scene_813/scene_813_true_focal_review.mp4": "4713d828ef4f7ebb6cd0539474fca24aa658983998eb0744ea482ebf6a5b536e",
+    "outputs/scene_346/scene_346_true_focal_review.mp4": "5180ee41e480540b3355389a3986b81579135addf36cecee740c270e868740c2",
+    "outputs/scene_2329/scene_2329_true_focal_review.mp4": "70f2e77c43bae47ba9c31dbc7d3b8142768acbafe0869e9c2078f6c3de3dc27b",
+    "outputs/scene_3457/scene_3457_true_focal_review.mp4": "4d896fe8c56b619f5832c15d61cccb63286dac1db274b5d82c1715c89e094f8f",
+    "outputs/scene_1580/scene_1580_true_focal_review.mp4": "716cf70b5025e24f7a27bb0d9c7a4df69bdb69411fc36d9f3c805233b2dd42f9"
+  },
+  "reuses_scene_5702_local_video": true,
+  "local_images_to_decode": true
+}

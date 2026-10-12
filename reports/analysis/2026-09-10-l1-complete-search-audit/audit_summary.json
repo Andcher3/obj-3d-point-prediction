@@ -1,0 +1,459 @@
+{
+  "verification_status": "ANALYZED",
+  "model_inference_rerun": false,
+  "source_files": 153,
+  "source_files_unchanged": true,
+  "candidate_total": 66,
+  "samples": [
+    {
+      "video": "cut_0",
+      "target": "the pink rectangular cutting board",
+      "video_sha256": "3a19e1596686eafb10ea5aa3d304abcc24d464d6f3a2ceb2a7ce544b23363e62",
+      "candidate_count": 22,
+      "reported_count": 22,
+      "all_valid": true,
+      "all_eos": true,
+      "all_latents_nonempty_finite": true,
+      "baseline_raw_equal": true,
+      "baseline_array_equal": true,
+      "round_summaries": [
+        {
+          "round": 0,
+          "count": 12,
+          "unique_answers": 1,
+          "first_reason_count": 1,
+          "nonzero_count": 10,
+          "nonzero_answer_changed_baseline": 0,
+          "groups": [
+            {
+              "answer": "The person in green gloves will pick up the blue cutting board and move it to a different location on the countertop.",
+              "branch_ids": [
+                "r0_00_sigma_0_seed_0",
+                "r0_01_sigma_0_seed_0",
+                "r0_02_sigma_0.005_seed_11",
+                "r0_03_sigma_0.005_seed_22",
+                "r0_04_sigma_0.01_seed_11",
+                "r0_05_sigma_0.01_seed_22",
+                "r0_06_sigma_0.03_seed_11",
+                "r0_07_sigma_0.03_seed_22",
+                "r0_08_sigma_0.1_seed_11",
+                "r0_09_sigma_0.1_seed_22",
+                "r0_10_sigma_0.2_seed_11",
+                "r0_11_sigma_0.2_seed_22"
+              ]
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "count": 10,
+          "unique_answers": 3,
+          "first_reason_count": 1,
+          "nonzero_count": 10,
+          "nonzero_answer_changed_baseline": 10,
+          "groups": [
+            {
+              "answer": "The person in red gloves will pick up the pink rectangular cutting board and move it to a different location on the countertop.",
+              "branch_ids": [
+                "r1_00_sigma_0.005_seed_11",
+                "r1_03_sigma_0.01_seed_22",
+                "r1_04_sigma_0.03_seed_11",
+                "r1_05_sigma_0.03_seed_22",
+                "r1_08_sigma_0.2_seed_11",
+                "r1_09_sigma_0.2_seed_22"
+              ]
+            },
+            {
+              "answer": "The person in red gloves will move the pink rectangular cutting board to a different location on the countertop.",
+              "branch_ids": [
+                "r1_01_sigma_0.005_seed_22"
+              ]
+            },
+            {
+              "answer": "The person in red gloves will place the pink rectangular cutting board on the countertop.",
+              "branch_ids": [
+                "r1_02_sigma_0.01_seed_11",
+                "r1_06_sigma_0.1_seed_11",
+                "r1_07_sigma_0.1_seed_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "retained": [
+        {
+          "video": "cut_0",
+          "branch_id": "r1_09_sigma_0.2_seed_22",
+          "round": 1,
+          "sigma": 0.2,
+          "seed": 22,
+          "answer": "The person in red gloves will pick up the pink rectangular cutting board and move it to a different location on the countertop.",
+          "valid_format": true,
+          "eos": true,
+          "latent_nonempty": true,
+          "latent_shape": [
+            4,
+            4096
+          ],
+          "latent_finite": true,
+          "first_reason_sha256": "5f94e715b55b40e0f06ab7b1390bb6f65557eb8bab2a72e74574d07aabd6d492",
+          "retained": true,
+          "latent_equal_baseline": false,
+          "aligned_vectors": 4,
+          "latent_relative_l2": 0.34244888759105724,
+          "answer_changed_baseline": true
+        },
+        {
+          "video": "cut_0",
+          "branch_id": "r1_07_sigma_0.1_seed_22",
+          "round": 1,
+          "sigma": 0.1,
+          "seed": 22,
+          "answer": "The person in red gloves will place the pink rectangular cutting board on the countertop.",
+          "valid_format": true,
+          "eos": true,
+          "latent_nonempty": true,
+          "latent_shape": [
+            4,
+            4096
+          ],
+          "latent_finite": true,
+          "first_reason_sha256": "5f94e715b55b40e0f06ab7b1390bb6f65557eb8bab2a72e74574d07aabd6d492",
+          "retained": true,
+          "latent_equal_baseline": false,
+          "aligned_vectors": 4,
+          "latent_relative_l2": 0.27817083575950063,
+          "answer_changed_baseline": true
+        },
+        {
+          "video": "cut_0",
+          "branch_id": "r1_01_sigma_0.005_seed_22",
+          "round": 1,
+          "sigma": 0.005,
+          "seed": 22,
+          "answer": "The person in red gloves will move the pink rectangular cutting board to a different location on the countertop.",
+          "valid_format": true,
+          "eos": true,
+          "latent_nonempty": true,
+          "latent_shape": [
+            4,
+            4096
+          ],
+          "latent_finite": true,
+          "first_reason_sha256": "5f94e715b55b40e0f06ab7b1390bb6f65557eb8bab2a72e74574d07aabd6d492",
+          "retained": true,
+          "latent_equal_baseline": false,
+          "aligned_vectors": 4,
+          "latent_relative_l2": 0.25921294453106036,
+          "answer_changed_baseline": true
+        }
+      ],
+      "unique_retained_answers": 3,
+      "all_comparisons_reproduced": true,
+      "comparison_count": 231,
+      "selection_reproduced": true,
+      "feedback_prompt_reproduced": true,
+      "report_matches_log": true,
+      "trajectory_decoder": null
+    },
+    {
+      "video": "cut_1",
+      "target": "the orange bowl",
+      "video_sha256": "974a3e8b4cdf0b8ec94a2437534ad1d15751a549ab749b47cf2c0c7fbd95bcfb",
+      "candidate_count": 22,
+      "reported_count": 22,
+      "all_valid": true,
+      "all_eos": true,
+      "all_latents_nonempty_finite": true,
+      "baseline_raw_equal": true,
+      "baseline_array_equal": true,
+      "round_summaries": [
+        {
+          "round": 0,
+          "count": 12,
+          "unique_answers": 1,
+          "first_reason_count": 1,
+          "nonzero_count": 10,
+          "nonzero_answer_changed_baseline": 0,
+          "groups": [
+            {
+              "answer": "The next step is to continue cleaning the inside of the orange bowl with the purple object to ensure it is thoroughly cleaned.",
+              "branch_ids": [
+                "r0_00_sigma_0_seed_0",
+                "r0_01_sigma_0_seed_0",
+                "r0_02_sigma_0.005_seed_11",
+                "r0_03_sigma_0.005_seed_22",
+                "r0_04_sigma_0.01_seed_11",
+                "r0_05_sigma_0.01_seed_22",
+                "r0_06_sigma_0.03_seed_11",
+                "r0_07_sigma_0.03_seed_22",
+                "r0_08_sigma_0.1_seed_11",
+                "r0_09_sigma_0.1_seed_22",
+                "r0_10_sigma_0.2_seed_11",
+                "r0_11_sigma_0.2_seed_22"
+              ]
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "count": 10,
+          "unique_answers": 1,
+          "first_reason_count": 1,
+          "nonzero_count": 10,
+          "nonzero_answer_changed_baseline": 0,
+          "groups": [
+            {
+              "answer": "The next step is to continue cleaning the inside of the orange bowl with the purple object to ensure it is thoroughly cleaned.",
+              "branch_ids": [
+                "r1_00_sigma_0.005_seed_11",
+                "r1_01_sigma_0.005_seed_22",
+                "r1_02_sigma_0.01_seed_11",
+                "r1_03_sigma_0.01_seed_22",
+                "r1_04_sigma_0.03_seed_11",
+                "r1_05_sigma_0.03_seed_22",
+                "r1_06_sigma_0.1_seed_11",
+                "r1_07_sigma_0.1_seed_22",
+                "r1_08_sigma_0.2_seed_11",
+                "r1_09_sigma_0.2_seed_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "retained": [
+        {
+          "video": "cut_1",
+          "branch_id": "r1_09_sigma_0.2_seed_22",
+          "round": 1,
+          "sigma": 0.2,
+          "seed": 22,
+          "answer": "The next step is to continue cleaning the inside of the orange bowl with the purple object to ensure it is thoroughly cleaned.",
+          "valid_format": true,
+          "eos": true,
+          "latent_nonempty": true,
+          "latent_shape": [
+            4,
+            4096
+          ],
+          "latent_finite": true,
+          "first_reason_sha256": "4166ac56525a32bdc3acbd366ac8a14bd4c8c88792e83dba23a187cc62f2e892",
+          "retained": true,
+          "latent_equal_baseline": false,
+          "aligned_vectors": 4,
+          "latent_relative_l2": 0.2624474246417242,
+          "answer_changed_baseline": false
+        },
+        {
+          "video": "cut_1",
+          "branch_id": "r1_08_sigma_0.2_seed_11",
+          "round": 1,
+          "sigma": 0.2,
+          "seed": 11,
+          "answer": "The next step is to continue cleaning the inside of the orange bowl with the purple object to ensure it is thoroughly cleaned.",
+          "valid_format": true,
+          "eos": true,
+          "latent_nonempty": true,
+          "latent_shape": [
+            4,
+            4096
+          ],
+          "latent_finite": true,
+          "first_reason_sha256": "4166ac56525a32bdc3acbd366ac8a14bd4c8c88792e83dba23a187cc62f2e892",
+          "retained": true,
+          "latent_equal_baseline": false,
+          "aligned_vectors": 4,
+          "latent_relative_l2": 0.27325334015960867,
+          "answer_changed_baseline": false
+        },
+        {
+          "video": "cut_1",
+          "branch_id": "r1_07_sigma_0.1_seed_22",
+          "round": 1,
+          "sigma": 0.1,
+          "seed": 22,
+          "answer": "The next step is to continue cleaning the inside of the orange bowl with the purple object to ensure it is thoroughly cleaned.",
+          "valid_format": true,
+          "eos": true,
+          "latent_nonempty": true,
+          "latent_shape": [
+            4,
+            4096
+          ],
+          "latent_finite": true,
+          "first_reason_sha256": "4166ac56525a32bdc3acbd366ac8a14bd4c8c88792e83dba23a187cc62f2e892",
+          "retained": true,
+          "latent_equal_baseline": false,
+          "aligned_vectors": 4,
+          "latent_relative_l2": 0.19404043413307948,
+          "answer_changed_baseline": false
+        }
+      ],
+      "unique_retained_answers": 1,
+      "all_comparisons_reproduced": true,
+      "comparison_count": 231,
+      "selection_reproduced": true,
+      "feedback_prompt_reproduced": true,
+      "report_matches_log": true,
+      "trajectory_decoder": null
+    },
+    {
+      "video": "cut_2",
+      "target": "the food and knife on the cutting board",
+      "video_sha256": "f07b76161cf5cf2edc7fdfdcf027ec1822caddc34152ba522449297926a53a80",
+      "candidate_count": 22,
+      "reported_count": 22,
+      "all_valid": true,
+      "all_eos": true,
+      "all_latents_nonempty_finite": true,
+      "baseline_raw_equal": true,
+      "baseline_array_equal": true,
+      "round_summaries": [
+        {
+          "round": 0,
+          "count": 12,
+          "unique_answers": 2,
+          "first_reason_count": 1,
+          "nonzero_count": 10,
+          "nonzero_answer_changed_baseline": 1,
+          "groups": [
+            {
+              "answer": "The person will start cutting the food on the cutting board.",
+              "branch_ids": [
+                "r0_00_sigma_0_seed_0",
+                "r0_01_sigma_0_seed_0",
+                "r0_02_sigma_0.005_seed_11",
+                "r0_03_sigma_0.005_seed_22",
+                "r0_04_sigma_0.01_seed_11",
+                "r0_06_sigma_0.03_seed_11",
+                "r0_07_sigma_0.03_seed_22",
+                "r0_08_sigma_0.1_seed_11",
+                "r0_09_sigma_0.1_seed_22",
+                "r0_10_sigma_0.2_seed_11",
+                "r0_11_sigma_0.2_seed_22"
+              ]
+            },
+            {
+              "answer": "The person will start cutting the food on the cutting board with the knife.",
+              "branch_ids": [
+                "r0_05_sigma_0.01_seed_22"
+              ]
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "count": 10,
+          "unique_answers": 1,
+          "first_reason_count": 1,
+          "nonzero_count": 10,
+          "nonzero_answer_changed_baseline": 0,
+          "groups": [
+            {
+              "answer": "The person will start cutting the food on the cutting board.",
+              "branch_ids": [
+                "r1_00_sigma_0.005_seed_11",
+                "r1_01_sigma_0.005_seed_22",
+                "r1_02_sigma_0.01_seed_11",
+                "r1_03_sigma_0.01_seed_22",
+                "r1_04_sigma_0.03_seed_11",
+                "r1_05_sigma_0.03_seed_22",
+                "r1_06_sigma_0.1_seed_11",
+                "r1_07_sigma_0.1_seed_22",
+                "r1_08_sigma_0.2_seed_11",
+                "r1_09_sigma_0.2_seed_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "retained": [
+        {
+          "video": "cut_2",
+          "branch_id": "r1_09_sigma_0.2_seed_22",
+          "round": 1,
+          "sigma": 0.2,
+          "seed": 22,
+          "answer": "The person will start cutting the food on the cutting board.",
+          "valid_format": true,
+          "eos": true,
+          "latent_nonempty": true,
+          "latent_shape": [
+            4,
+            4096
+          ],
+          "latent_finite": true,
+          "first_reason_sha256": "0f8c107cc1e1ef479593b1574b661645698e27d45a0615d4596342253e3ca8d7",
+          "retained": true,
+          "latent_equal_baseline": false,
+          "aligned_vectors": 4,
+          "latent_relative_l2": 0.27506913223036467,
+          "answer_changed_baseline": false
+        },
+        {
+          "video": "cut_2",
+          "branch_id": "r1_08_sigma_0.2_seed_11",
+          "round": 1,
+          "sigma": 0.2,
+          "seed": 11,
+          "answer": "The person will start cutting the food on the cutting board.",
+          "valid_format": true,
+          "eos": true,
+          "latent_nonempty": true,
+          "latent_shape": [
+            4,
+            4096
+          ],
+          "latent_finite": true,
+          "first_reason_sha256": "0f8c107cc1e1ef479593b1574b661645698e27d45a0615d4596342253e3ca8d7",
+          "retained": true,
+          "latent_equal_baseline": false,
+          "aligned_vectors": 4,
+          "latent_relative_l2": 0.27184747874030885,
+          "answer_changed_baseline": false
+        },
+        {
+          "video": "cut_2",
+          "branch_id": "r1_07_sigma_0.1_seed_22",
+          "round": 1,
+          "sigma": 0.1,
+          "seed": 22,
+          "answer": "The person will start cutting the food on the cutting board.",
+          "valid_format": true,
+          "eos": true,
+          "latent_nonempty": true,
+          "latent_shape": [
+            4,
+            4096
+          ],
+          "latent_finite": true,
+          "first_reason_sha256": "0f8c107cc1e1ef479593b1574b661645698e27d45a0615d4596342253e3ca8d7",
+          "retained": true,
+          "latent_equal_baseline": false,
+          "aligned_vectors": 4,
+          "latent_relative_l2": 0.20248489235828263,
+          "answer_changed_baseline": false
+        }
+      ],
+      "unique_retained_answers": 1,
+      "all_comparisons_reproduced": true,
+      "comparison_count": 231,
+      "selection_reproduced": true,
+      "feedback_prompt_reproduced": true,
+      "report_matches_log": true,
+      "trajectory_decoder": null
+    }
+  ],
+  "code_probes": {
+    "identical_answers_selected": [
+      "b3",
+      "b2",
+      "b1"
+    ],
+    "identical_answers_unique": 1,
+    "same_event_different_wording_similarity": 0.0,
+    "opposite_order_similarity": 1.0,
+    "empty_latent_passes_finiteness": true,
+    "notes": "Diagnostic counterexamples, not a semantic benchmark. No source modification."
+  }
+}

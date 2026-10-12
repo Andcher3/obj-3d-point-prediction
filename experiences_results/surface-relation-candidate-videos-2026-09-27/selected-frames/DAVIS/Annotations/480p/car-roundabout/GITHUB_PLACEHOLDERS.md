@@ -1,0 +1,83 @@
+# 本地文件占位说明
+
+原文件保留在本地，未上传至 GitHub。此文件不包含数据或权重。
+
+详细清单见仓库根目录 `github_upload_manifest.json`。
+
+| 原路径（相对仓库根目录） | 字节数 | 原因 |
+|---|---:|---|
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00000.png` | 2569 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00001.png` | 2572 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00002.png` | 2583 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00003.png` | 2571 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00004.png` | 2569 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00005.png` | 2580 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00006.png` | 2572 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00007.png` | 2579 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00008.png` | 2582 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00009.png` | 2566 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00010.png` | 2586 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00011.png` | 2554 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00012.png` | 2545 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00013.png` | 2578 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00014.png` | 2590 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00015.png` | 2587 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00016.png` | 2612 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00017.png` | 2595 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00018.png` | 2580 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00019.png` | 2579 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00020.png` | 2564 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00021.png` | 2561 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00022.png` | 2560 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00023.png` | 2565 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00024.png` | 2574 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00025.png` | 2578 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00026.png` | 2566 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00027.png` | 2584 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00028.png` | 2567 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00029.png` | 2552 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00030.png` | 2538 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00031.png` | 2541 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00032.png` | 2550 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00033.png` | 2536 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00034.png` | 2505 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00035.png` | 2491 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00036.png` | 2517 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00037.png` | 2529 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00038.png` | 2556 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00039.png` | 2553 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00040.png` | 2564 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00041.png` | 2560 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00042.png` | 2546 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00043.png` | 2539 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00044.png` | 2513 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00045.png` | 2513 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00046.png` | 2531 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00047.png` | 2551 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00048.png` | 2538 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00049.png` | 2527 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00050.png` | 2523 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00051.png` | 2501 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00052.png` | 2496 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00053.png` | 2461 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00054.png` | 2453 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00055.png` | 2452 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00056.png` | 2460 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00057.png` | 2441 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00058.png` | 2416 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00059.png` | 2388 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00060.png` | 2363 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00061.png` | 2341 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00062.png` | 2362 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00063.png` | 2365 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00064.png` | 2363 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00065.png` | 2354 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00066.png` | 2325 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00067.png` | 2324 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00068.png` | 2300 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00069.png` | 2304 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00070.png` | 2295 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00071.png` | 2280 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00072.png` | 2284 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00073.png` | 2258 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/car-roundabout/00074.png` | 2235 | local_dataset_or_runtime_input |

@@ -1,0 +1,14 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "Rows 1 and 2 faithfully use the user GIF's five pale-blue arched panels, yellow two-cyan-lens head, and blue segmented body; all frames are transparent and unclipped.",
+  "directional_rows": {
+    "running-right": "Eight ordered source-GIF samples show visible curling and bobbing cadence while facing screen-right.",
+    "running-left": "Framewise horizontal mirror preserves the same identity, pose order, and cadence while facing screen-left."
+  },
+  "review_warnings": [
+    "The five separated arch panels are an intentional user-specified part of the character."
+  ],
+  "repair_rows": [],
+  "repair_notes": null,
+  "reviewed_by": "independent visual QA worker"
+}

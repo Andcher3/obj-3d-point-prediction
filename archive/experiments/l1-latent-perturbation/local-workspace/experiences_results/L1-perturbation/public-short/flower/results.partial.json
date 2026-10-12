@@ -1,0 +1,618 @@
+[
+  {
+    "run_index": 0,
+    "name": "baseline_0",
+    "sigma": 0.0,
+    "seed": 0,
+    "elapsed_seconds": 42.67368148639798,
+    "peak_gpu_memory_gib": 16.828104972839355,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "c70ba71abc7ab9bbaec7f5742eac5f00c0e3e979b3aec4e3eefbeabefff70f76",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.0,
+      "noise_seed": 0,
+      "scale_mode": "rms",
+      "perturbed_step_count": 0,
+      "steps": []
+    }
+  },
+  {
+    "run_index": 1,
+    "name": "sigma_0.005_seed_11",
+    "sigma": 0.005,
+    "seed": 11,
+    "elapsed_seconds": 42.33186974003911,
+    "peak_gpu_memory_gib": 17.068671226501465,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "1546cc291cbd3fde9bef722562a209ed41a1e370ce4d5a3ec659f0757115060f",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.005,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.0008359662024304271,
+          "after_rms": 0.1664498746395111,
+          "relative_noise_rms": 0.005022014491260052,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17221702635288239,
+          "noise_rms": 0.0008475187350995839,
+          "after_rms": 0.17219451069831848,
+          "relative_noise_rms": 0.004921224899590015,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17070434987545013,
+          "noise_rms": 0.0008742508362047374,
+          "after_rms": 0.17071300745010376,
+          "relative_noise_rms": 0.005121432710438967,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.22538794577121735,
+          "noise_rms": 0.0011389130959287286,
+          "after_rms": 0.22537153959274292,
+          "relative_noise_rms": 0.0050531234592199326,
+          "generation_step": 1646
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 2,
+    "name": "sigma_0.005_seed_22",
+    "sigma": 0.005,
+    "seed": 22,
+    "elapsed_seconds": 42.38369024917483,
+    "peak_gpu_memory_gib": 17.06918430328369,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "f77a300e4daed44196540e4f87dd0e015c957e0771f31f50a02a61e295cc354d",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.005,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.0008242594194598496,
+          "after_rms": 0.16644252836704254,
+          "relative_noise_rms": 0.0049516865983605385,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17169390618801117,
+          "noise_rms": 0.0008638131548650563,
+          "after_rms": 0.17170019447803497,
+          "relative_noise_rms": 0.005031122826039791,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17078973352909088,
+          "noise_rms": 0.0008654540288262069,
+          "after_rms": 0.17076951265335083,
+          "relative_noise_rms": 0.00506736570969224,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.23186829686164856,
+          "noise_rms": 0.0011717400047928095,
+          "after_rms": 0.2318250834941864,
+          "relative_noise_rms": 0.005053472239524126,
+          "generation_step": 1646
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 3,
+    "name": "sigma_0.01_seed_11",
+    "sigma": 0.01,
+    "seed": 11,
+    "elapsed_seconds": 42.305296182632446,
+    "peak_gpu_memory_gib": 17.069506645202637,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "c086252a04c7c66878d1d1d5c795b47101b04aabe4029a726df1a1acbded8e90",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.01,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.0016719324048608541,
+          "after_rms": 0.1664564162492752,
+          "relative_noise_rms": 0.010044028982520103,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17165128886699677,
+          "noise_rms": 0.0016890820115804672,
+          "after_rms": 0.17165842652320862,
+          "relative_noise_rms": 0.009840194135904312,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.16994325816631317,
+          "noise_rms": 0.0017410278087481856,
+          "after_rms": 0.16997908055782318,
+          "relative_noise_rms": 0.010244759730994701,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.22591307759284973,
+          "noise_rms": 0.0022830546367913485,
+          "after_rms": 0.22591210901737213,
+          "relative_noise_rms": 0.010105898603796959,
+          "generation_step": 1646
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 4,
+    "name": "sigma_0.01_seed_22",
+    "sigma": 0.01,
+    "seed": 22,
+    "elapsed_seconds": 42.30635133944452,
+    "peak_gpu_memory_gib": 17.069878578186035,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "79f64f30b8a9ebe8a120a4577a592762738a0367292f27cc98a5f20d95fc9005",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.01,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.0016485188389196992,
+          "after_rms": 0.16643264889717102,
+          "relative_noise_rms": 0.009903373196721077,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17190171778202057,
+          "noise_rms": 0.0017297707963734865,
+          "after_rms": 0.1719246357679367,
+          "relative_noise_rms": 0.010062556713819504,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1708248108625412,
+          "noise_rms": 0.0017311980482190847,
+          "after_rms": 0.1707991659641266,
+          "relative_noise_rms": 0.010134347714483738,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.2267862856388092,
+          "noise_rms": 0.0022923925425857306,
+          "after_rms": 0.22673317790031433,
+          "relative_noise_rms": 0.010108161717653275,
+          "generation_step": 1646
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 5,
+    "name": "sigma_0.03_seed_11",
+    "sigma": 0.03,
+    "seed": 11,
+    "elapsed_seconds": 42.33419519662857,
+    "peak_gpu_memory_gib": 17.068215370178223,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "dfe79d1a11d51ff61934ae37b10596aa008dd11565f9685170e0b4843822e9da",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.03,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.0050160582177340984,
+          "after_rms": 0.1664808988571167,
+          "relative_noise_rms": 0.030133655294775963,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17163704335689545,
+          "noise_rms": 0.005067868623882532,
+          "after_rms": 0.17169012129306793,
+          "relative_noise_rms": 0.029526660218834877,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17086735367774963,
+          "noise_rms": 0.005251547787338495,
+          "after_rms": 0.17101997137069702,
+          "relative_noise_rms": 0.030734647065401077,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.22835783660411835,
+          "noise_rms": 0.006923287641257048,
+          "after_rms": 0.22843319177627563,
+          "relative_noise_rms": 0.03031771443784237,
+          "generation_step": 1646
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 6,
+    "name": "sigma_0.03_seed_22",
+    "sigma": 0.03,
+    "seed": 22,
+    "elapsed_seconds": 42.264196606352925,
+    "peak_gpu_memory_gib": 17.07121753692627,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "03eeba62594bbdf55d4a9bb7139ee4c1641ac107a6fdbe0a5392639d3697fb3c",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.03,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.004945819266140461,
+          "after_rms": 0.1664150059223175,
+          "relative_noise_rms": 0.02971169911324978,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1712305247783661,
+          "noise_rms": 0.005169491749256849,
+          "after_rms": 0.17134861648082733,
+          "relative_noise_rms": 0.030190246179699898,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17040640115737915,
+          "noise_rms": 0.005180398002266884,
+          "after_rms": 0.1703905314207077,
+          "relative_noise_rms": 0.03040025383234024,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.23554186522960663,
+          "noise_rms": 0.007142619229853153,
+          "after_rms": 0.2354734241962433,
+          "relative_noise_rms": 0.03032420203089714,
+          "generation_step": 1646
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 7,
+    "name": "sigma_0.1_seed_11",
+    "sigma": 0.1,
+    "seed": 11,
+    "elapsed_seconds": 42.550468968227506,
+    "peak_gpu_memory_gib": 17.06984806060791,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "e6482a90658a300daf7dc4241a1b651fcbe8a390c8fbe7041084edec48a3160e",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.1,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.016719987615942955,
+          "after_rms": 0.16715577244758606,
+          "relative_noise_rms": 0.10044427216053009,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17075268924236298,
+          "noise_rms": 0.01680336892604828,
+          "after_rms": 0.17148229479789734,
+          "relative_noise_rms": 0.09840764105319977,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.16980262100696564,
+          "noise_rms": 0.01739485375583172,
+          "after_rms": 0.17098645865917206,
+          "relative_noise_rms": 0.10244160890579224,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.23145678639411926,
+          "noise_rms": 0.023392148315906525,
+          "after_rms": 0.23256909847259521,
+          "relative_noise_rms": 0.10106486082077026,
+          "generation_step": 1646
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 8,
+    "name": "sigma_0.1_seed_22",
+    "sigma": 0.1,
+    "seed": 22,
+    "elapsed_seconds": 42.34010640345514,
+    "peak_gpu_memory_gib": 17.071600914001465,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "59f8ac3ca8cf33e44a7a34ea76bca607eeb70cb6e74eaa3ba005c800ea81f3b2",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.1,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.01648583635687828,
+          "after_rms": 0.1668960154056549,
+          "relative_noise_rms": 0.09903762489557266,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1712583303451538,
+          "noise_rms": 0.017231866717338562,
+          "after_rms": 0.17223136126995087,
+          "relative_noise_rms": 0.10061914473772049,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17028991878032684,
+          "noise_rms": 0.017257943749427795,
+          "after_rms": 0.1708705723285675,
+          "relative_noise_rms": 0.10134448111057281,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.241238534450531,
+          "noise_rms": 0.02438049577176571,
+          "after_rms": 0.241866335272789,
+          "relative_noise_rms": 0.10106385499238968,
+          "generation_step": 1646
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 9,
+    "name": "sigma_0.2_seed_11",
+    "sigma": 0.2,
+    "seed": 11,
+    "elapsed_seconds": 42.45514038577676,
+    "peak_gpu_memory_gib": 17.07123851776123,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "03f6138a3a7d88619f2a1eef2a83b988bc7cfd302363c9b76a492b03026608d6",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.2,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.03343997523188591,
+          "after_rms": 0.1694880574941635,
+          "relative_noise_rms": 0.20088854432106018,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1708207130432129,
+          "noise_rms": 0.03362337499856949,
+          "after_rms": 0.17392224073410034,
+          "relative_noise_rms": 0.19683429598808289,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1691322773694992,
+          "noise_rms": 0.03465668112039566,
+          "after_rms": 0.17320358753204346,
+          "relative_noise_rms": 0.20490872859954834,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.23315836489200592,
+          "noise_rms": 0.04712788760662079,
+          "after_rms": 0.23781418800354004,
+          "relative_noise_rms": 0.20212823152542114,
+          "generation_step": 1646
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 10,
+    "name": "sigma_0.2_seed_22",
+    "sigma": 0.2,
+    "seed": 22,
+    "elapsed_seconds": 42.32202688790858,
+    "peak_gpu_memory_gib": 17.07151508331299,
+    "generated_tokens": 136,
+    "latent_vector_count": 4,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "690dc2828b8eaeede212ad550397c75a87bfc3c520276aa83ca3f2065d8c65e3",
+    "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+    "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.2,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 4,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1664603352546692,
+          "noise_rms": 0.03297167271375656,
+          "after_rms": 0.168991357088089,
+          "relative_noise_rms": 0.19807524979114532,
+          "generation_step": 1643
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1705978661775589,
+          "noise_rms": 0.03433805704116821,
+          "after_rms": 0.1742447018623352,
+          "relative_noise_rms": 0.20128069818019867,
+          "generation_step": 1644
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1711549162864685,
+          "noise_rms": 0.034691132605075836,
+          "after_rms": 0.17408998310565948,
+          "relative_noise_rms": 0.20268850028514862,
+          "generation_step": 1645
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.24823573231697083,
+          "noise_rms": 0.05018223077058792,
+          "after_rms": 0.25204384326934814,
+          "relative_noise_rms": 0.20215554535388947,
+          "generation_step": 1646
+        }
+      ]
+    }
+  }
+]

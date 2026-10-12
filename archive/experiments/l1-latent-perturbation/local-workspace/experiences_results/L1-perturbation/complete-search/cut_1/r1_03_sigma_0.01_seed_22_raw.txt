@@ -1,0 +1,4 @@
+<reason>In the video, the person is seen cleaning the inside of the orange bowl with a purple object. The focus is on the thorough cleaning process, ensuring that the bowl is cleaned properly.</reason>
+<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>
+<reason>By frame 0:02, the person is actively scrubbing the inside of the bowl, indicating that the cleaning process is ongoing. The person's hands are moving in a circular motion, which is a common technique for cleaning the inside of a bowl to remove any dirt or residue. This motion suggests that the person is ensuring that all parts of the bowl are cleaned.</reason>
+<answer>The next step is to continue cleaning the inside of the orange bowl with the purple object to ensure it is thoroughly cleaned.</answer><|im_end|>

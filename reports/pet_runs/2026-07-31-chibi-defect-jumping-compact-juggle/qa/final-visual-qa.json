@@ -1,0 +1,7 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "Structural validation passed and every non-jumping atlas row remains pixel-identical to the approved source.",
+  "jumping_row": "Five-frame loop. Every frame contains one robot, one blue-white ice orb, and two golden electric orbs. The arc stays close to the crest and shoulders, arms remain bent with compact motion, and character scale, baseline, identity, and cape stay stable.",
+  "review_warnings": [],
+  "repair_rows": []
+}

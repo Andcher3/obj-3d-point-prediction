@@ -1,0 +1,17 @@
+name: HAR
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy=1.24.3
+
+# Current verified package in the local HAR environment:
+# - numpy 1.24.3
+#
+# Useful optional packages for later baseline work, when network/cache permits:
+# - pandas
+# - matplotlib
+# - seaborn
+# - scipy
+# - scikit-learn
+# - ipykernel

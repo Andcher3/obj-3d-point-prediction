@@ -1,0 +1,574 @@
+/root/autodl-tmp/projects/TrajLoom-probe/analyze_event_text_probe.py:41: RuntimeWarning: Mean of empty slice
+  fde = float(err[-1, last_valid].mean())
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+{
+  "protocol": {
+    "fixed_seed_text_contrast": 42,
+    "correct_text_seeds": [
+      42,
+      43,
+      44
+    ],
+    "future_frames": 81,
+    "solver_steps": 20
+  },
+  "videos": {
+    "10790317943435558913": {
+      "target_roi_xyxy_frame0": [
+        320,
+        576,
+        128,
+        416
+      ],
+      "cases": {
+        "no_text_seed42": {
+          "caption": "",
+          "full_grid": {
+            "active_points": 237,
+            "ade_px": 67.37236785888672,
+            "fde_px": 117.99723815917969,
+            "mean_final_displacement_xy_px": [
+              -24.151836395263672,
+              72.31602478027344
+            ],
+            "mean_final_displacement_norm_px": 79.66860961914062
+          },
+          "target_roi": {
+            "active_points": 74,
+            "ade_px": 69.19390869140625,
+            "fde_px": 133.2808837890625,
+            "mean_final_displacement_xy_px": [
+              -30.074323654174805,
+              69.72466278076172
+            ],
+            "mean_final_displacement_norm_px": 76.36461639404297
+          }
+        },
+        "no_text_seed43": {
+          "caption": "",
+          "full_grid": {
+            "active_points": 237,
+            "ade_px": 64.86642456054688,
+            "fde_px": 111.6207275390625,
+            "mean_final_displacement_xy_px": [
+              -3.771756410598755,
+              115.48783111572266
+            ],
+            "mean_final_displacement_norm_px": 117.86167907714844
+          },
+          "target_roi": {
+            "active_points": 74,
+            "ade_px": 65.20507049560547,
+            "fde_px": 120.32510375976562,
+            "mean_final_displacement_xy_px": [
+              -6.0608110427856445,
+              112.7955322265625
+            ],
+            "mean_final_displacement_norm_px": 113.4426498413086
+          }
+        },
+        "no_text_seed44": {
+          "caption": "",
+          "full_grid": {
+            "active_points": 237,
+            "ade_px": 66.75799560546875,
+            "fde_px": 114.46011352539062,
+            "mean_final_displacement_xy_px": [
+              -18.53672218322754,
+              88.18602752685547
+            ],
+            "mean_final_displacement_norm_px": 93.7620620727539
+          },
+          "target_roi": {
+            "active_points": 74,
+            "ade_px": 66.57990264892578,
+            "fde_px": 123.74864959716797,
+            "mean_final_displacement_xy_px": [
+              -23.402027130126953,
+              89.38175964355469
+            ],
+            "mean_final_displacement_norm_px": 92.70684814453125
+          }
+        },
+        "correct_seed42": {
+          "caption": "The robot moves forward toward the shape-sorting board, so the board and colored blocks move downward and become larger in the camera view.",
+          "full_grid": {
+            "active_points": 237,
+            "ade_px": 65.86345672607422,
+            "fde_px": 114.20195007324219,
+            "mean_final_displacement_xy_px": [
+              -28.63911247253418,
+              75.66376495361328
+            ],
+            "mean_final_displacement_norm_px": 84.60939025878906
+          },
+          "target_roi": {
+            "active_points": 74,
+            "ade_px": 66.98924255371094,
+            "fde_px": 128.5688018798828,
+            "mean_final_displacement_xy_px": [
+              -35.0945930480957,
+              72.19087982177734
+            ],
+            "mean_final_displacement_norm_px": 80.9410629272461
+          }
+        },
+        "correct_seed43": {
+          "caption": "The robot moves forward toward the shape-sorting board, so the board and colored blocks move downward and become larger in the camera view.",
+          "full_grid": {
+            "active_points": 237,
+            "ade_px": 64.09461975097656,
+            "fde_px": 109.77540588378906,
+            "mean_final_displacement_xy_px": [
+              -5.466772079467773,
+              121.06322479248047
+            ],
+            "mean_final_displacement_norm_px": 123.58702850341797
+          },
+          "target_roi": {
+            "active_points": 74,
+            "ade_px": 63.19730758666992,
+            "fde_px": 116.01669311523438,
+            "mean_final_displacement_xy_px": [
+              -7.956080913543701,
+              117.51512145996094
+            ],
+            "mean_final_displacement_norm_px": 118.33002471923828
+          }
+        },
+        "correct_seed44": {
+          "caption": "The robot moves forward toward the shape-sorting board, so the board and colored blocks move downward and become larger in the camera view.",
+          "full_grid": {
+            "active_points": 237,
+            "ade_px": 65.08845520019531,
+            "fde_px": 110.03797912597656,
+            "mean_final_displacement_xy_px": [
+              -22.347904205322266,
+              92.85054779052734
+            ],
+            "mean_final_displacement_norm_px": 99.1717300415039
+          },
+          "target_roi": {
+            "active_points": 74,
+            "ade_px": 64.06941223144531,
+            "fde_px": 117.67719268798828,
+            "mean_final_displacement_xy_px": [
+              -27.719594955444336,
+              93.80403900146484
+            ],
+            "mean_final_displacement_norm_px": 98.11695098876953
+          }
+        },
+        "opposite_seed42": {
+          "caption": "The robot moves backward away from the shape-sorting board, so the board and colored blocks move upward and become smaller in the camera view.",
+          "full_grid": {
+            "active_points": 237,
+            "ade_px": 68.4171142578125,
+            "fde_px": 120.01982879638672,
+            "mean_final_displacement_xy_px": [
+              -16.75395965576172,
+              72.3638916015625
+            ],
+            "mean_final_displacement_norm_px": 77.76235961914062
+          },
+          "target_roi": {
+            "active_points": 74,
+            "ade_px": 70.78199768066406,
+            "fde_px": 136.6063995361328,
+            "mean_final_displacement_xy_px": [
+              -22.7297306060791,
+              69.21790313720703
+            ],
+            "mean_final_displacement_norm_px": 73.29036712646484
+          }
+        },
+        "opposite_seed43": {
+          "caption": "The robot moves backward away from the shape-sorting board, so the board and colored blocks move upward and become smaller in the camera view.",
+          "full_grid": {
+            "active_points": 237,
+            "ade_px": 66.24574279785156,
+            "fde_px": 114.74136352539062,
+            "mean_final_displacement_xy_px": [
+              3.0276899337768555,
+              115.77501678466797
+            ],
+            "mean_final_displacement_norm_px": 118.13510131835938
+          },
+          "target_roi": {
+            "active_points": 74,
+            "ade_px": 67.37358856201172,
+            "fde_px": 125.07659912109375,
+            "mean_final_displacement_xy_px": [
+              0.5709459185600281,
+              112.41885375976562
+            ],
+            "mean_final_displacement_norm_px": 112.89205169677734
+          }
+        },
+        "opposite_seed44": {
+          "caption": "The robot moves backward away from the shape-sorting board, so the board and colored blocks move upward and become smaller in the camera view.",
+          "full_grid": {
+            "active_points": 237,
+            "ade_px": 67.73021697998047,
+            "fde_px": 116.95344543457031,
+            "mean_final_displacement_xy_px": [
+              -11.276503562927246,
+              88.65840148925781
+            ],
+            "mean_final_displacement_norm_px": 93.24190521240234
+          },
+          "target_roi": {
+            "active_points": 74,
+            "ade_px": 68.01461029052734,
+            "fde_px": 127.40602111816406,
+            "mean_final_displacement_xy_px": [
+              -16.277027130126953,
+              89.48648834228516
+            ],
+            "mean_final_displacement_norm_px": 91.42674255371094
+          }
+        }
+      },
+      "contrasts": {
+        "correct_vs_opposite_seed42": {
+          "all_mean_px": 6.885908603668213,
+          "final_mean_px": 12.093216896057129
+        },
+        "correct_vs_no_text_seed42": {
+          "all_mean_px": 4.260412216186523,
+          "final_mean_px": 6.680298328399658
+        },
+        "correct_seed42_vs_seed43": {
+          "all_mean_px": 28.405305862426758,
+          "final_mean_px": 53.019832611083984
+        },
+        "correct_seed42_vs_seed44": {
+          "all_mean_px": 11.517072677612305,
+          "final_mean_px": 20.55467414855957
+        }
+      },
+      "paired_text_contrasts_by_seed": {
+        "42": {
+          "target_correct_minus_opposite_ade_px": -3.792755126953125,
+          "target_correct_minus_opposite_fde_px": -8.03759765625,
+          "target_prediction_distance": {
+            "all_mean_px": 7.494419574737549,
+            "final_mean_px": 13.17662525177002
+          },
+          "target_correct_minus_opposite_final_displacement_xy_px": [
+            -12.364862442016602,
+            2.9729766845703125
+          ]
+        },
+        "43": {
+          "target_correct_minus_opposite_ade_px": -4.176280975341797,
+          "target_correct_minus_opposite_fde_px": -9.059906005859375,
+          "target_prediction_distance": {
+            "all_mean_px": 5.853877544403076,
+            "final_mean_px": 10.144710540771484
+          },
+          "target_correct_minus_opposite_final_displacement_xy_px": [
+            -8.52702683210373,
+            5.0962677001953125
+          ]
+        },
+        "44": {
+          "target_correct_minus_opposite_ade_px": -3.9451980590820312,
+          "target_correct_minus_opposite_fde_px": -9.728828430175781,
+          "target_prediction_distance": {
+            "all_mean_px": 7.59072208404541,
+            "final_mean_px": 12.525846481323242
+          },
+          "target_correct_minus_opposite_final_displacement_xy_px": [
+            -11.442567825317383,
+            4.3175506591796875
+          ]
+        }
+      },
+      "mean_target_text_effect_px": 6.979673067728679,
+      "mean_target_random_seed_effect_px": 20.444071133931477,
+      "text_to_random_effect_ratio": 0.3414032861656581,
+      "target_text_ade_delta_correct_minus_opposite_px": -3.792755126953125,
+      "target_text_fde_delta_correct_minus_opposite_px": -8.03759765625
+    },
+    "gear_v2_9-wrist_front_rgb_img-0": {
+      "target_roi_xyxy_frame0": [
+        384,
+        480,
+        64,
+        256
+      ],
+      "cases": {
+        "no_text_seed42": {
+          "caption": "",
+          "full_grid": {
+            "active_points": 250,
+            "ade_px": 49.23574447631836,
+            "fde_px": 114.4448471069336,
+            "mean_final_displacement_xy_px": [
+              40.5776252746582,
+              5.504875183105469
+            ],
+            "mean_final_displacement_norm_px": 44.28206253051758
+          },
+          "target_roi": {
+            "active_points": 5,
+            "ade_px": 169.82626342773438,
+            "fde_px": NaN,
+            "mean_final_displacement_xy_px": [
+              186.5749969482422,
+              22.662500381469727
+            ],
+            "mean_final_displacement_norm_px": 189.87594604492188
+          }
+        },
+        "no_text_seed43": {
+          "caption": "",
+          "full_grid": {
+            "active_points": 250,
+            "ade_px": 52.34601974487305,
+            "fde_px": 115.23278045654297,
+            "mean_final_displacement_xy_px": [
+              45.87181091308594,
+              18.49831199645996
+            ],
+            "mean_final_displacement_norm_px": 50.271812438964844
+          },
+          "target_roi": {
+            "active_points": 5,
+            "ade_px": 171.2740478515625,
+            "fde_px": NaN,
+            "mean_final_displacement_xy_px": [
+              202.2375030517578,
+              74.8125
+            ],
+            "mean_final_displacement_norm_px": 216.4381866455078
+          }
+        },
+        "no_text_seed44": {
+          "caption": "",
+          "full_grid": {
+            "active_points": 250,
+            "ade_px": 51.86891555786133,
+            "fde_px": 115.5868911743164,
+            "mean_final_displacement_xy_px": [
+              44.33712387084961,
+              10.057562828063965
+            ],
+            "mean_final_displacement_norm_px": 46.33106994628906
+          },
+          "target_roi": {
+            "active_points": 5,
+            "ade_px": 177.03054809570312,
+            "fde_px": NaN,
+            "mean_final_displacement_xy_px": [
+              229.0749969482422,
+              29.024999618530273
+            ],
+            "mean_final_displacement_norm_px": 232.2616424560547
+          }
+        },
+        "correct_seed42": {
+          "caption": "The robot moves forward toward the green cylindrical object, so the green object becomes larger and moves toward the center of the camera view.",
+          "full_grid": {
+            "active_points": 250,
+            "ade_px": 49.434532165527344,
+            "fde_px": 116.341064453125,
+            "mean_final_displacement_xy_px": [
+              37.329063415527344,
+              3.054500102996826
+            ],
+            "mean_final_displacement_norm_px": 41.0648307800293
+          },
+          "target_roi": {
+            "active_points": 5,
+            "ade_px": 166.7809600830078,
+            "fde_px": NaN,
+            "mean_final_displacement_xy_px": [
+              174.4499969482422,
+              9.25
+            ],
+            "mean_final_displacement_norm_px": 176.67837524414062
+          }
+        },
+        "correct_seed43": {
+          "caption": "The robot moves forward toward the green cylindrical object, so the green object becomes larger and moves toward the center of the camera view.",
+          "full_grid": {
+            "active_points": 250,
+            "ade_px": 52.59526443481445,
+            "fde_px": 115.78011322021484,
+            "mean_final_displacement_xy_px": [
+              43.590126037597656,
+              16.808124542236328
+            ],
+            "mean_final_displacement_norm_px": 47.54926300048828
+          },
+          "target_roi": {
+            "active_points": 5,
+            "ade_px": 168.030029296875,
+            "fde_px": NaN,
+            "mean_final_displacement_xy_px": [
+              192.33749389648438,
+              63.54999923706055
+            ],
+            "mean_final_displacement_norm_px": 203.38034057617188
+          }
+        },
+        "correct_seed44": {
+          "caption": "The robot moves forward toward the green cylindrical object, so the green object becomes larger and moves toward the center of the camera view.",
+          "full_grid": {
+            "active_points": 250,
+            "ade_px": 52.55271530151367,
+            "fde_px": 116.56034088134766,
+            "mean_final_displacement_xy_px": [
+              41.92681121826172,
+              8.02271842956543
+            ],
+            "mean_final_displacement_norm_px": 43.69969177246094
+          },
+          "target_roi": {
+            "active_points": 5,
+            "ade_px": 175.58287048339844,
+            "fde_px": NaN,
+            "mean_final_displacement_xy_px": [
+              218.60000610351562,
+              16.262500762939453
+            ],
+            "mean_final_displacement_norm_px": 220.439453125
+          }
+        },
+        "opposite_seed42": {
+          "caption": "The robot moves backward away from the green cylindrical object, so the green object becomes smaller and moves away from the center of the camera view.",
+          "full_grid": {
+            "active_points": 250,
+            "ade_px": 51.06060791015625,
+            "fde_px": 118.33155822753906,
+            "mean_final_displacement_xy_px": [
+              43.068626403808594,
+              0.12150000035762787
+            ],
+            "mean_final_displacement_norm_px": 45.99435043334961
+          },
+          "target_roi": {
+            "active_points": 5,
+            "ade_px": 176.79522705078125,
+            "fde_px": NaN,
+            "mean_final_displacement_xy_px": [
+              188.25,
+              1.8125
+            ],
+            "mean_final_displacement_norm_px": 189.9691925048828
+          }
+        },
+        "opposite_seed43": {
+          "caption": "The robot moves backward away from the green cylindrical object, so the green object becomes smaller and moves away from the center of the camera view.",
+          "full_grid": {
+            "active_points": 250,
+            "ade_px": 54.43549728393555,
+            "fde_px": 117.96414184570312,
+            "mean_final_displacement_xy_px": [
+              49.0281867980957,
+              13.1264066696167
+            ],
+            "mean_final_displacement_norm_px": 51.48973846435547
+          },
+          "target_roi": {
+            "active_points": 5,
+            "ade_px": 178.42681884765625,
+            "fde_px": NaN,
+            "mean_final_displacement_xy_px": [
+              205.14999389648438,
+              55.82500076293945
+            ],
+            "mean_final_displacement_norm_px": 213.35293579101562
+          }
+        },
+        "opposite_seed44": {
+          "caption": "The robot moves backward away from the green cylindrical object, so the green object becomes smaller and moves away from the center of the camera view.",
+          "full_grid": {
+            "active_points": 250,
+            "ade_px": 53.64071273803711,
+            "fde_px": 118.72126007080078,
+            "mean_final_displacement_xy_px": [
+              47.48843765258789,
+              4.935593605041504
+            ],
+            "mean_final_displacement_norm_px": 48.50114059448242
+          },
+          "target_roi": {
+            "active_points": 5,
+            "ade_px": 185.78733825683594,
+            "fde_px": NaN,
+            "mean_final_displacement_xy_px": [
+              230.4875030517578,
+              8.350000381469727
+            ],
+            "mean_final_displacement_norm_px": 231.69931030273438
+          }
+        }
+      },
+      "contrasts": {
+        "correct_vs_opposite_seed42": {
+          "all_mean_px": 6.585707664489746,
+          "final_mean_px": 10.058195114135742
+        },
+        "correct_vs_no_text_seed42": {
+          "all_mean_px": 7.84596586227417,
+          "final_mean_px": 9.537989616394043
+        },
+        "correct_seed42_vs_seed43": {
+          "all_mean_px": 16.12096405029297,
+          "final_mean_px": 28.78159523010254
+        },
+        "correct_seed42_vs_seed44": {
+          "all_mean_px": 17.759002685546875,
+          "final_mean_px": 20.83351707458496
+        }
+      },
+      "paired_text_contrasts_by_seed": {
+        "42": {
+          "target_correct_minus_opposite_ade_px": -10.014266967773438,
+          "target_correct_minus_opposite_fde_px": NaN,
+          "target_prediction_distance": {
+            "all_mean_px": 12.044482231140137,
+            "final_mean_px": 17.55988883972168
+          },
+          "target_correct_minus_opposite_final_displacement_xy_px": [
+            -13.800003051757812,
+            7.4375
+          ]
+        },
+        "43": {
+          "target_correct_minus_opposite_ade_px": -10.39678955078125,
+          "target_correct_minus_opposite_fde_px": NaN,
+          "target_prediction_distance": {
+            "all_mean_px": 12.10763168334961,
+            "final_mean_px": 17.405765533447266
+          },
+          "target_correct_minus_opposite_final_displacement_xy_px": [
+            -12.8125,
+            7.724998474121094
+          ]
+        },
+        "44": {
+          "target_correct_minus_opposite_ade_px": -10.2044677734375,
+          "target_correct_minus_opposite_fde_px": NaN,
+          "target_prediction_distance": {
+            "all_mean_px": 11.598624229431152,
+            "final_mean_px": 16.817848205566406
+          },
+          "target_correct_minus_opposite_final_displacement_xy_px": [
+            -11.887496948242188,
+            7.912500381469727
+          ]
+        }
+      },
+      "mean_target_text_effect_px": 11.916912714640299,
+      "mean_target_random_seed_effect_px": 36.51676495869955,
+      "text_to_random_effect_ratio": 0.3263408663970734,
+      "target_text_ade_delta_correct_minus_opposite_px": -10.014266967773438,
+      "target_text_fde_delta_correct_minus_opposite_px": NaN
+    }
+  }
+}

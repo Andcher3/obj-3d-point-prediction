@@ -1,0 +1,18 @@
+{
+  "cpu_data_ready": true,
+  "counts": {
+    "train": 100,
+    "validation": 20,
+    "test": 40
+  },
+  "publisher_md5_all_pass": true,
+  "gt_audit_all_pass": true,
+  "splits_disjoint": true,
+  "future_gt_input": false,
+  "model_forward_called": false,
+  "training_started": false,
+  "gpu_used": false,
+  "observed_model_cache_ready": false,
+  "model_assets_checked": false,
+  "next_gpu_stage": "generate observed-only model caches after user enables GPU"
+}

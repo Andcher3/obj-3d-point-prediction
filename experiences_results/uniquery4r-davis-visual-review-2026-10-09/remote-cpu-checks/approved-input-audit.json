@@ -1,0 +1,40 @@
+{
+  "approved_input_integrity_passed": true,
+  "verified_file_count": 180,
+  "query_approved": true,
+  "videos": [
+    {
+      "video": "car-turn",
+      "frames": [
+        14,
+        35
+      ],
+      "t0": 20
+    },
+    {
+      "video": "drift-turn",
+      "frames": [
+        14,
+        35
+      ],
+      "t0": 20
+    },
+    {
+      "video": "boat",
+      "frames": [
+        14,
+        35
+      ],
+      "t0": 20
+    },
+    {
+      "video": "soccerball",
+      "frames": [
+        8,
+        29
+      ],
+      "t0": 14
+    }
+  ],
+  "inference_started": false
+}

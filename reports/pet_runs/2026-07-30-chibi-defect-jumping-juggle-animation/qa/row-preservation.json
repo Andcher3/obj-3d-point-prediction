@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "source_atlas": "../2026-07-30-chibi-defect-running-overlap/final/spritesheet-extended.webp",
+  "changed_rows": [4],
+  "unchanged_rows": [0, 1, 2, 3, 5, 6, 7, 8, 9, 10],
+  "method": "Decoded RGBA row comparison over each complete 1536x208 atlas row",
+  "note": "Only the jumping row differs; every other row is pixel-identical to the approved source atlas."
+}

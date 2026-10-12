@@ -1,0 +1,30 @@
+{
+  "samples": [
+    {
+      "id": "sewing_scissors",
+      "source_video": "cb78dba8-6647-4ec7-875c-6ba1548f8312.mp4",
+      "source_fps": 30,
+      "camera_npz": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/preprocessed/sewing/sewing_user.npz",
+      "dense_npz": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/dense/sewing_dense.npz",
+      "query_json": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/queries/sewing_queries.json",
+      "prompts": [
+        {"name": "observed_pickup", "text": "Pick up the blue-handled scissors."},
+        {"name": "counterfactual_static", "text": "Leave the blue-handled scissors on the table without moving them."},
+        {"name": "multistep", "text": "Pick up the blue-handled scissors, move them to the left of the sewing machine, and set them down."}
+      ]
+    },
+    {
+      "id": "watering_can",
+      "source_video": "356ed369-7023-4660-904b-be73823a21d3.mp4 (left-eye crop, rotated)",
+      "source_fps": 30,
+      "camera_npz": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/preprocessed/watering/watering_user.npz",
+      "dense_npz": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/dense/watering_dense.npz",
+      "query_json": "/root/autodl-tmp/projects/MolmoMotion-tracker3d-retest/queries/watering_queries.json",
+      "prompts": [
+        {"name": "observed_carry", "text": "Carry the gray watering can forward while walking."},
+        {"name": "counterfactual_setdown", "text": "Set the gray watering can down on the ground."},
+        {"name": "multistep", "text": "Stop walking, lower the gray watering can to the ground, and release the handle."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3535 @@
+{
+  "rows": [
+    {
+      "scene": "scene_1680",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1806,
+        "accepted_undirected_edges": 6412,
+        "rejected_undirected_edges": 484,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1806,
+        "accepted_undirected_edges": 6703,
+        "rejected_undirected_edges": 193,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.8093971631205674,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1456",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2253,
+        "accepted_undirected_edges": 6425,
+        "rejected_undirected_edges": 2174,
+        "query_connected_components": 7,
+        "reachable_query_pair_fraction": 0.40868794326241137,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2253,
+        "accepted_undirected_edges": 8599,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4223",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1990,
+        "accepted_undirected_edges": 7025,
+        "rejected_undirected_edges": 607,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1990,
+        "accepted_undirected_edges": 7383,
+        "rejected_undirected_edges": 249,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4093",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3285,
+        "accepted_undirected_edges": 12244,
+        "rejected_undirected_edges": 439,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3285,
+        "accepted_undirected_edges": 12681,
+        "rejected_undirected_edges": 2,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3017",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2515,
+        "accepted_undirected_edges": 9176,
+        "rejected_undirected_edges": 434,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2515,
+        "accepted_undirected_edges": 9409,
+        "rejected_undirected_edges": 201,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2896",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 10972,
+        "accepted_undirected_edges": 41756,
+        "rejected_undirected_edges": 1252,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 10972,
+        "accepted_undirected_edges": 42939,
+        "rejected_undirected_edges": 69,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5242",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 8045,
+        "accepted_undirected_edges": 30990,
+        "rejected_undirected_edges": 524,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 8045,
+        "accepted_undirected_edges": 31222,
+        "rejected_undirected_edges": 292,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4352",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 5781,
+        "accepted_undirected_edges": 22035,
+        "rejected_undirected_edges": 530,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5781,
+        "accepted_undirected_edges": 22565,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2784",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3231,
+        "accepted_undirected_edges": 10944,
+        "rejected_undirected_edges": 1181,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3231,
+        "accepted_undirected_edges": 12088,
+        "rejected_undirected_edges": 37,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_499",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4928,
+        "accepted_undirected_edges": 17917,
+        "rejected_undirected_edges": 1203,
+        "query_connected_components": 4,
+        "reachable_query_pair_fraction": 0.8776595744680851,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4928,
+        "accepted_undirected_edges": 18914,
+        "rejected_undirected_edges": 206,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_837",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3985,
+        "accepted_undirected_edges": 14446,
+        "rejected_undirected_edges": 950,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3985,
+        "accepted_undirected_edges": 15367,
+        "rejected_undirected_edges": 29,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3475",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2579,
+        "accepted_undirected_edges": 9712,
+        "rejected_undirected_edges": 160,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2579,
+        "accepted_undirected_edges": 9633,
+        "rejected_undirected_edges": 239,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1647",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2778,
+        "accepted_undirected_edges": 10399,
+        "rejected_undirected_edges": 295,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2778,
+        "accepted_undirected_edges": 10552,
+        "rejected_undirected_edges": 142,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.8439716312056738,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4397",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3677,
+        "accepted_undirected_edges": 12532,
+        "rejected_undirected_edges": 1365,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3677,
+        "accepted_undirected_edges": 13122,
+        "rejected_undirected_edges": 775,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_546",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 10567,
+        "accepted_undirected_edges": 40692,
+        "rejected_undirected_edges": 840,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 10567,
+        "accepted_undirected_edges": 41532,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3365",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1788,
+        "accepted_undirected_edges": 6579,
+        "rejected_undirected_edges": 251,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1788,
+        "accepted_undirected_edges": 6797,
+        "rejected_undirected_edges": 33,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4679",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4754,
+        "accepted_undirected_edges": 14843,
+        "rejected_undirected_edges": 2370,
+        "query_connected_components": 6,
+        "reachable_query_pair_fraction": 0.27393617021276595,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4754,
+        "accepted_undirected_edges": 17075,
+        "rejected_undirected_edges": 138,
+        "query_connected_components": 5,
+        "reachable_query_pair_fraction": 0.2553191489361702,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_386",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3355,
+        "accepted_undirected_edges": 12616,
+        "rejected_undirected_edges": 419,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3355,
+        "accepted_undirected_edges": 12766,
+        "rejected_undirected_edges": 269,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5781",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2799,
+        "accepted_undirected_edges": 10565,
+        "rejected_undirected_edges": 177,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2799,
+        "accepted_undirected_edges": 10496,
+        "rejected_undirected_edges": 246,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1494",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 7758,
+        "accepted_undirected_edges": 29625,
+        "rejected_undirected_edges": 791,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 7758,
+        "accepted_undirected_edges": 30416,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_816",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3839,
+        "accepted_undirected_edges": 14727,
+        "rejected_undirected_edges": 226,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3839,
+        "accepted_undirected_edges": 14951,
+        "rejected_undirected_edges": 2,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1822",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2567,
+        "accepted_undirected_edges": 9271,
+        "rejected_undirected_edges": 585,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2567,
+        "accepted_undirected_edges": 9753,
+        "rejected_undirected_edges": 103,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_266",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4032,
+        "accepted_undirected_edges": 14420,
+        "rejected_undirected_edges": 1182,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4032,
+        "accepted_undirected_edges": 15201,
+        "rejected_undirected_edges": 401,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4483",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4746,
+        "accepted_undirected_edges": 18204,
+        "rejected_undirected_edges": 293,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4746,
+        "accepted_undirected_edges": 18417,
+        "rejected_undirected_edges": 80,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4145",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3497,
+        "accepted_undirected_edges": 12681,
+        "rejected_undirected_edges": 907,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3497,
+        "accepted_undirected_edges": 13208,
+        "rejected_undirected_edges": 380,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5409",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2171,
+        "accepted_undirected_edges": 7824,
+        "rejected_undirected_edges": 430,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2171,
+        "accepted_undirected_edges": 8105,
+        "rejected_undirected_edges": 149,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2355",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4800,
+        "accepted_undirected_edges": 18454,
+        "rejected_undirected_edges": 229,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4800,
+        "accepted_undirected_edges": 18558,
+        "rejected_undirected_edges": 125,
+        "query_connected_components": 3,
+        "reachable_query_pair_fraction": 0.8785460992907801,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5355",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 5969,
+        "accepted_undirected_edges": 22864,
+        "rejected_undirected_edges": 360,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5969,
+        "accepted_undirected_edges": 23017,
+        "rejected_undirected_edges": 207,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1636",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3654,
+        "accepted_undirected_edges": 13429,
+        "rejected_undirected_edges": 703,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3654,
+        "accepted_undirected_edges": 14132,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4947",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1329,
+        "accepted_undirected_edges": 4720,
+        "rejected_undirected_edges": 167,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1329,
+        "accepted_undirected_edges": 4758,
+        "rejected_undirected_edges": 129,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.5460992907801419,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2420",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 7274,
+        "accepted_undirected_edges": 26313,
+        "rejected_undirected_edges": 1534,
+        "query_connected_components": 3,
+        "reachable_query_pair_fraction": 0.5664893617021277,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 7274,
+        "accepted_undirected_edges": 27147,
+        "rejected_undirected_edges": 700,
+        "query_connected_components": 8,
+        "reachable_query_pair_fraction": 0.14804964539007093,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5795",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 5163,
+        "accepted_undirected_edges": 19491,
+        "rejected_undirected_edges": 581,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5163,
+        "accepted_undirected_edges": 18267,
+        "rejected_undirected_edges": 1805,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_497",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1783,
+        "accepted_undirected_edges": 6751,
+        "rejected_undirected_edges": 62,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1783,
+        "accepted_undirected_edges": 6813,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2238",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2735,
+        "accepted_undirected_edges": 9245,
+        "rejected_undirected_edges": 1322,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2735,
+        "accepted_undirected_edges": 10307,
+        "rejected_undirected_edges": 260,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5163",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 14344,
+        "accepted_undirected_edges": 55382,
+        "rejected_undirected_edges": 1042,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 14344,
+        "accepted_undirected_edges": 56424,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2527",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 791,
+        "accepted_undirected_edges": 2923,
+        "rejected_undirected_edges": 3,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 791,
+        "accepted_undirected_edges": 2926,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4042",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 10280,
+        "accepted_undirected_edges": 39020,
+        "rejected_undirected_edges": 1364,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 10280,
+        "accepted_undirected_edges": 40201,
+        "rejected_undirected_edges": 183,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2185",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3183,
+        "accepted_undirected_edges": 11968,
+        "rejected_undirected_edges": 277,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3183,
+        "accepted_undirected_edges": 12186,
+        "rejected_undirected_edges": 59,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_851",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3301,
+        "accepted_undirected_edges": 11986,
+        "rejected_undirected_edges": 734,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3301,
+        "accepted_undirected_edges": 12712,
+        "rejected_undirected_edges": 8,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2920",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4117,
+        "accepted_undirected_edges": 15273,
+        "rejected_undirected_edges": 720,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4117,
+        "accepted_undirected_edges": 15821,
+        "rejected_undirected_edges": 172,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_684",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 12281,
+        "accepted_undirected_edges": 47314,
+        "rejected_undirected_edges": 998,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 12281,
+        "accepted_undirected_edges": 48134,
+        "rejected_undirected_edges": 178,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_230",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 5071,
+        "accepted_undirected_edges": 19331,
+        "rejected_undirected_edges": 415,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5071,
+        "accepted_undirected_edges": 19608,
+        "rejected_undirected_edges": 138,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_718",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4296,
+        "accepted_undirected_edges": 15541,
+        "rejected_undirected_edges": 1162,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4296,
+        "accepted_undirected_edges": 16604,
+        "rejected_undirected_edges": 99,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4592",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2643,
+        "accepted_undirected_edges": 9886,
+        "rejected_undirected_edges": 307,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2643,
+        "accepted_undirected_edges": 10169,
+        "rejected_undirected_edges": 24,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_307",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1726,
+        "accepted_undirected_edges": 6568,
+        "rejected_undirected_edges": 32,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1726,
+        "accepted_undirected_edges": 6578,
+        "rejected_undirected_edges": 22,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3790",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 8318,
+        "accepted_undirected_edges": 32201,
+        "rejected_undirected_edges": 269,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 8318,
+        "accepted_undirected_edges": 32435,
+        "rejected_undirected_edges": 35,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3076",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 8034,
+        "accepted_undirected_edges": 29703,
+        "rejected_undirected_edges": 1691,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 8034,
+        "accepted_undirected_edges": 31370,
+        "rejected_undirected_edges": 24,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_444",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3320,
+        "accepted_undirected_edges": 12253,
+        "rejected_undirected_edges": 621,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3320,
+        "accepted_undirected_edges": 12672,
+        "rejected_undirected_edges": 202,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2951",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 6726,
+        "accepted_undirected_edges": 25406,
+        "rejected_undirected_edges": 978,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 6726,
+        "accepted_undirected_edges": 26384,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_485",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 6395,
+        "accepted_undirected_edges": 24482,
+        "rejected_undirected_edges": 458,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 6395,
+        "accepted_undirected_edges": 24790,
+        "rejected_undirected_edges": 150,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5120",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3513,
+        "accepted_undirected_edges": 13416,
+        "rejected_undirected_edges": 179,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3513,
+        "accepted_undirected_edges": 13558,
+        "rejected_undirected_edges": 37,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2985",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3256,
+        "accepted_undirected_edges": 12016,
+        "rejected_undirected_edges": 536,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3256,
+        "accepted_undirected_edges": 12522,
+        "rejected_undirected_edges": 30,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5381",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3596,
+        "accepted_undirected_edges": 13817,
+        "rejected_undirected_edges": 125,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3596,
+        "accepted_undirected_edges": 13845,
+        "rejected_undirected_edges": 97,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3918",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2244,
+        "accepted_undirected_edges": 8043,
+        "rejected_undirected_edges": 554,
+        "query_connected_components": 3,
+        "reachable_query_pair_fraction": 0.8058510638297872,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2244,
+        "accepted_undirected_edges": 8508,
+        "rejected_undirected_edges": 89,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5530",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3455,
+        "accepted_undirected_edges": 12796,
+        "rejected_undirected_edges": 471,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3455,
+        "accepted_undirected_edges": 13267,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_354",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 15929,
+        "accepted_undirected_edges": 62626,
+        "rejected_undirected_edges": 210,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 15929,
+        "accepted_undirected_edges": 62836,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1591",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 13607,
+        "accepted_undirected_edges": 52119,
+        "rejected_undirected_edges": 1324,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 13607,
+        "accepted_undirected_edges": 53329,
+        "rejected_undirected_edges": 114,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1716",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3103,
+        "accepted_undirected_edges": 11253,
+        "rejected_undirected_edges": 717,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3103,
+        "accepted_undirected_edges": 11849,
+        "rejected_undirected_edges": 121,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4935",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 5931,
+        "accepted_undirected_edges": 22636,
+        "rejected_undirected_edges": 553,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5931,
+        "accepted_undirected_edges": 22949,
+        "rejected_undirected_edges": 240,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_922",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 9094,
+        "accepted_undirected_edges": 34955,
+        "rejected_undirected_edges": 697,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 9094,
+        "accepted_undirected_edges": 35077,
+        "rejected_undirected_edges": 575,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4039",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 5812,
+        "accepted_undirected_edges": 22125,
+        "rejected_undirected_edges": 615,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5812,
+        "accepted_undirected_edges": 22676,
+        "rejected_undirected_edges": 64,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4955",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 12991,
+        "accepted_undirected_edges": 47066,
+        "rejected_undirected_edges": 2452,
+        "query_connected_components": 5,
+        "reachable_query_pair_fraction": 0.28191489361702127,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 12991,
+        "accepted_undirected_edges": 48859,
+        "rejected_undirected_edges": 659,
+        "query_connected_components": 8,
+        "reachable_query_pair_fraction": 0.1551418439716312,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4443",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 7559,
+        "accepted_undirected_edges": 29365,
+        "rejected_undirected_edges": 191,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 7559,
+        "accepted_undirected_edges": 29272,
+        "rejected_undirected_edges": 284,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2789",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4130,
+        "accepted_undirected_edges": 14169,
+        "rejected_undirected_edges": 1286,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4130,
+        "accepted_undirected_edges": 15239,
+        "rejected_undirected_edges": 216,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2313",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 8565,
+        "accepted_undirected_edges": 32432,
+        "rejected_undirected_edges": 1107,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 8565,
+        "accepted_undirected_edges": 33539,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5390",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 5307,
+        "accepted_undirected_edges": 19803,
+        "rejected_undirected_edges": 830,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5307,
+        "accepted_undirected_edges": 20633,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5642",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1362,
+        "accepted_undirected_edges": 5034,
+        "rejected_undirected_edges": 152,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1362,
+        "accepted_undirected_edges": 5015,
+        "rejected_undirected_edges": 171,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_247",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1694,
+        "accepted_undirected_edges": 6172,
+        "rejected_undirected_edges": 225,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1694,
+        "accepted_undirected_edges": 6357,
+        "rejected_undirected_edges": 40,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_243",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2931,
+        "accepted_undirected_edges": 10701,
+        "rejected_undirected_edges": 518,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2931,
+        "accepted_undirected_edges": 11219,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1284",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1833,
+        "accepted_undirected_edges": 6519,
+        "rejected_undirected_edges": 401,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1833,
+        "accepted_undirected_edges": 6886,
+        "rejected_undirected_edges": 34,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4106",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 12252,
+        "accepted_undirected_edges": 46563,
+        "rejected_undirected_edges": 1604,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 12252,
+        "accepted_undirected_edges": 47123,
+        "rejected_undirected_edges": 1044,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2208",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 5643,
+        "accepted_undirected_edges": 21396,
+        "rejected_undirected_edges": 611,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5643,
+        "accepted_undirected_edges": 21881,
+        "rejected_undirected_edges": 126,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_511",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 28869,
+        "accepted_undirected_edges": 113709,
+        "rejected_undirected_edges": 671,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 28869,
+        "accepted_undirected_edges": 113806,
+        "rejected_undirected_edges": 574,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5934",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 9608,
+        "accepted_undirected_edges": 37202,
+        "rejected_undirected_edges": 488,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 9608,
+        "accepted_undirected_edges": 37601,
+        "rejected_undirected_edges": 89,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4696",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3211,
+        "accepted_undirected_edges": 11913,
+        "rejected_undirected_edges": 486,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3211,
+        "accepted_undirected_edges": 12399,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1577",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 13225,
+        "accepted_undirected_edges": 51000,
+        "rejected_undirected_edges": 999,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 13225,
+        "accepted_undirected_edges": 51999,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3124",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4228,
+        "accepted_undirected_edges": 15155,
+        "rejected_undirected_edges": 1042,
+        "query_connected_components": 5,
+        "reachable_query_pair_fraction": 0.8014184397163121,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4228,
+        "accepted_undirected_edges": 16197,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 4,
+        "reachable_query_pair_fraction": 0.8023049645390071,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3114",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1435,
+        "accepted_undirected_edges": 5095,
+        "rejected_undirected_edges": 344,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1435,
+        "accepted_undirected_edges": 5439,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2877",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4405,
+        "accepted_undirected_edges": 16529,
+        "rejected_undirected_edges": 598,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4405,
+        "accepted_undirected_edges": 17127,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5245",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3050,
+        "accepted_undirected_edges": 10946,
+        "rejected_undirected_edges": 794,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3050,
+        "accepted_undirected_edges": 11557,
+        "rejected_undirected_edges": 183,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1941",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 5303,
+        "accepted_undirected_edges": 20613,
+        "rejected_undirected_edges": 25,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5303,
+        "accepted_undirected_edges": 20638,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2581",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4431,
+        "accepted_undirected_edges": 17135,
+        "rejected_undirected_edges": 140,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4431,
+        "accepted_undirected_edges": 17136,
+        "rejected_undirected_edges": 139,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4399",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2529,
+        "accepted_undirected_edges": 9085,
+        "rejected_undirected_edges": 610,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2529,
+        "accepted_undirected_edges": 9582,
+        "rejected_undirected_edges": 113,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3714",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4699,
+        "accepted_undirected_edges": 15641,
+        "rejected_undirected_edges": 1833,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4699,
+        "accepted_undirected_edges": 17414,
+        "rejected_undirected_edges": 60,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3653",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 9816,
+        "accepted_undirected_edges": 36585,
+        "rejected_undirected_edges": 1964,
+        "query_connected_components": 3,
+        "reachable_query_pair_fraction": 0.9175531914893617,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 9816,
+        "accepted_undirected_edges": 38549,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_39",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4170,
+        "accepted_undirected_edges": 15669,
+        "rejected_undirected_edges": 575,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4170,
+        "accepted_undirected_edges": 16020,
+        "rejected_undirected_edges": 224,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2047",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 16674,
+        "accepted_undirected_edges": 64811,
+        "rejected_undirected_edges": 927,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 16674,
+        "accepted_undirected_edges": 65641,
+        "rejected_undirected_edges": 97,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1030",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1290,
+        "accepted_undirected_edges": 4828,
+        "rejected_undirected_edges": 52,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1290,
+        "accepted_undirected_edges": 4880,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4727",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4193,
+        "accepted_undirected_edges": 15774,
+        "rejected_undirected_edges": 565,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4193,
+        "accepted_undirected_edges": 16108,
+        "rejected_undirected_edges": 231,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4272",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4088,
+        "accepted_undirected_edges": 15383,
+        "rejected_undirected_edges": 431,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4088,
+        "accepted_undirected_edges": 15802,
+        "rejected_undirected_edges": 12,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2725",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 10795,
+        "accepted_undirected_edges": 41305,
+        "rejected_undirected_edges": 1142,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 10795,
+        "accepted_undirected_edges": 42447,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5794",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2035,
+        "accepted_undirected_edges": 7372,
+        "rejected_undirected_edges": 347,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2035,
+        "accepted_undirected_edges": 7657,
+        "rejected_undirected_edges": 62,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5998",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3125,
+        "accepted_undirected_edges": 12075,
+        "rejected_undirected_edges": 40,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3125,
+        "accepted_undirected_edges": 12115,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2153",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 7752,
+        "accepted_undirected_edges": 29818,
+        "rejected_undirected_edges": 493,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 7752,
+        "accepted_undirected_edges": 30311,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1711",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 1892,
+        "accepted_undirected_edges": 6693,
+        "rejected_undirected_edges": 535,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1892,
+        "accepted_undirected_edges": 7156,
+        "rejected_undirected_edges": 72,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1545",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 8069,
+        "accepted_undirected_edges": 31207,
+        "rejected_undirected_edges": 468,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 8069,
+        "accepted_undirected_edges": 31671,
+        "rejected_undirected_edges": 4,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3824",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 4193,
+        "accepted_undirected_edges": 16007,
+        "rejected_undirected_edges": 287,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4193,
+        "accepted_undirected_edges": 16294,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3608",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 3995,
+        "accepted_undirected_edges": 14555,
+        "rejected_undirected_edges": 929,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3995,
+        "accepted_undirected_edges": 15472,
+        "rejected_undirected_edges": 12,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2347",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 2308,
+        "accepted_undirected_edges": 8125,
+        "rejected_undirected_edges": 731,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2308,
+        "accepted_undirected_edges": 8845,
+        "rejected_undirected_edges": 11,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1540",
+      "split": "train",
+      "estimated": {
+        "surface_vertex_count": 7223,
+        "accepted_undirected_edges": 27222,
+        "rejected_undirected_edges": 937,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 7223,
+        "accepted_undirected_edges": 28159,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3101",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 1115,
+        "accepted_undirected_edges": 4085,
+        "rejected_undirected_edges": 122,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1115,
+        "accepted_undirected_edges": 4207,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5746",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 849,
+        "accepted_undirected_edges": 3176,
+        "rejected_undirected_edges": 6,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 849,
+        "accepted_undirected_edges": 3182,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_542",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 2330,
+        "accepted_undirected_edges": 7162,
+        "rejected_undirected_edges": 1506,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2330,
+        "accepted_undirected_edges": 8472,
+        "rejected_undirected_edges": 196,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3831",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 3233,
+        "accepted_undirected_edges": 11189,
+        "rejected_undirected_edges": 121,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.8803191489361702,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3233,
+        "accepted_undirected_edges": 11310,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.8803191489361702,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1478",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 3824,
+        "accepted_undirected_edges": 13143,
+        "rejected_undirected_edges": 1385,
+        "query_connected_components": 3,
+        "reachable_query_pair_fraction": 0.9175531914893617,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3824,
+        "accepted_undirected_edges": 13407,
+        "rejected_undirected_edges": 1121,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2248",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 4782,
+        "accepted_undirected_edges": 17091,
+        "rejected_undirected_edges": 1415,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4782,
+        "accepted_undirected_edges": 18326,
+        "rejected_undirected_edges": 180,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4312",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 2647,
+        "accepted_undirected_edges": 10031,
+        "rejected_undirected_edges": 154,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2647,
+        "accepted_undirected_edges": 10185,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4181",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 3782,
+        "accepted_undirected_edges": 13939,
+        "rejected_undirected_edges": 713,
+        "query_connected_components": 3,
+        "reachable_query_pair_fraction": 0.9175531914893617,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3782,
+        "accepted_undirected_edges": 14494,
+        "rejected_undirected_edges": 158,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3930",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 3544,
+        "accepted_undirected_edges": 12065,
+        "rejected_undirected_edges": 1489,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9184397163120568,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3544,
+        "accepted_undirected_edges": 13160,
+        "rejected_undirected_edges": 394,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1346",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 5602,
+        "accepted_undirected_edges": 21002,
+        "rejected_undirected_edges": 607,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.8093971631205674,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5602,
+        "accepted_undirected_edges": 21607,
+        "rejected_undirected_edges": 2,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4523",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 5185,
+        "accepted_undirected_edges": 19131,
+        "rejected_undirected_edges": 939,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5185,
+        "accepted_undirected_edges": 20070,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_636",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 7454,
+        "accepted_undirected_edges": 28712,
+        "rejected_undirected_edges": 488,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 7454,
+        "accepted_undirected_edges": 29194,
+        "rejected_undirected_edges": 6,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3280",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 3244,
+        "accepted_undirected_edges": 11711,
+        "rejected_undirected_edges": 688,
+        "query_connected_components": 3,
+        "reachable_query_pair_fraction": 0.9175531914893617,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3244,
+        "accepted_undirected_edges": 12366,
+        "rejected_undirected_edges": 33,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4555",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 9847,
+        "accepted_undirected_edges": 38433,
+        "rejected_undirected_edges": 213,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 9847,
+        "accepted_undirected_edges": 38646,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_895",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 4491,
+        "accepted_undirected_edges": 17410,
+        "rejected_undirected_edges": 118,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4491,
+        "accepted_undirected_edges": 17528,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1404",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 5050,
+        "accepted_undirected_edges": 18565,
+        "rejected_undirected_edges": 1112,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5050,
+        "accepted_undirected_edges": 19677,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_446",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 4256,
+        "accepted_undirected_edges": 15237,
+        "rejected_undirected_edges": 1019,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4256,
+        "accepted_undirected_edges": 15901,
+        "rejected_undirected_edges": 355,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.7455673758865248,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3967",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 9710,
+        "accepted_undirected_edges": 37563,
+        "rejected_undirected_edges": 529,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 9710,
+        "accepted_undirected_edges": 38092,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1668",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 9213,
+        "accepted_undirected_edges": 35344,
+        "rejected_undirected_edges": 730,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 9213,
+        "accepted_undirected_edges": 36025,
+        "rejected_undirected_edges": 49,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3934",
+      "split": "validation",
+      "estimated": {
+        "surface_vertex_count": 4182,
+        "accepted_undirected_edges": 15009,
+        "rejected_undirected_edges": 1086,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.8439716312056738,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4182,
+        "accepted_undirected_edges": 16095,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_428",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 1529,
+        "accepted_undirected_edges": 4963,
+        "rejected_undirected_edges": 825,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1529,
+        "accepted_undirected_edges": 5788,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5398",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 1959,
+        "accepted_undirected_edges": 7437,
+        "rejected_undirected_edges": 47,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1959,
+        "accepted_undirected_edges": 7297,
+        "rejected_undirected_edges": 187,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_706",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 4229,
+        "accepted_undirected_edges": 15514,
+        "rejected_undirected_edges": 885,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4229,
+        "accepted_undirected_edges": 16242,
+        "rejected_undirected_edges": 157,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.7163120567375887,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5748",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 5044,
+        "accepted_undirected_edges": 18978,
+        "rejected_undirected_edges": 711,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5044,
+        "accepted_undirected_edges": 19689,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2580",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 9193,
+        "accepted_undirected_edges": 33845,
+        "rejected_undirected_edges": 1769,
+        "query_connected_components": 3,
+        "reachable_query_pair_fraction": 0.8058510638297872,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 9193,
+        "accepted_undirected_edges": 35614,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.8093971631205674,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1301",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 5268,
+        "accepted_undirected_edges": 19178,
+        "rejected_undirected_edges": 1275,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5268,
+        "accepted_undirected_edges": 20453,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1215",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 8454,
+        "accepted_undirected_edges": 32140,
+        "rejected_undirected_edges": 961,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 8454,
+        "accepted_undirected_edges": 32917,
+        "rejected_undirected_edges": 184,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1776",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 1995,
+        "accepted_undirected_edges": 7211,
+        "rejected_undirected_edges": 360,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1995,
+        "accepted_undirected_edges": 7174,
+        "rejected_undirected_edges": 397,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1450",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 3267,
+        "accepted_undirected_edges": 12376,
+        "rejected_undirected_edges": 217,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3267,
+        "accepted_undirected_edges": 12592,
+        "rejected_undirected_edges": 1,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5099",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 3582,
+        "accepted_undirected_edges": 13791,
+        "rejected_undirected_edges": 161,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3582,
+        "accepted_undirected_edges": 13952,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3350",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 8615,
+        "accepted_undirected_edges": 33292,
+        "rejected_undirected_edges": 444,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 8615,
+        "accepted_undirected_edges": 33736,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1691",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 12433,
+        "accepted_undirected_edges": 46942,
+        "rejected_undirected_edges": 1911,
+        "query_connected_components": 7,
+        "reachable_query_pair_fraction": 0.7632978723404256,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 12433,
+        "accepted_undirected_edges": 48585,
+        "rejected_undirected_edges": 268,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3917",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 1978,
+        "accepted_undirected_edges": 7294,
+        "rejected_undirected_edges": 308,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1978,
+        "accepted_undirected_edges": 7602,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1056",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 3265,
+        "accepted_undirected_edges": 11772,
+        "rejected_undirected_edges": 771,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3265,
+        "accepted_undirected_edges": 12435,
+        "rejected_undirected_edges": 108,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1895",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 8014,
+        "accepted_undirected_edges": 30054,
+        "rejected_undirected_edges": 1066,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 8014,
+        "accepted_undirected_edges": 30883,
+        "rejected_undirected_edges": 237,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5419",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 2207,
+        "accepted_undirected_edges": 7714,
+        "rejected_undirected_edges": 615,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2207,
+        "accepted_undirected_edges": 8304,
+        "rejected_undirected_edges": 25,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1441",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 13706,
+        "accepted_undirected_edges": 53504,
+        "rejected_undirected_edges": 479,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 13706,
+        "accepted_undirected_edges": 53974,
+        "rejected_undirected_edges": 9,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2064",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 16813,
+        "accepted_undirected_edges": 63338,
+        "rejected_undirected_edges": 2046,
+        "query_connected_components": 5,
+        "reachable_query_pair_fraction": 0.45567375886524825,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 16813,
+        "accepted_undirected_edges": 64496,
+        "rejected_undirected_edges": 888,
+        "query_connected_components": 7,
+        "reachable_query_pair_fraction": 0.2349290780141844,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2549",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 7250,
+        "accepted_undirected_edges": 27784,
+        "rejected_undirected_edges": 483,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 7250,
+        "accepted_undirected_edges": 28267,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4417",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 1659,
+        "accepted_undirected_edges": 6035,
+        "rejected_undirected_edges": 339,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1659,
+        "accepted_undirected_edges": 6374,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_335",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 19907,
+        "accepted_undirected_edges": 78172,
+        "rejected_undirected_edges": 379,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 19907,
+        "accepted_undirected_edges": 78544,
+        "rejected_undirected_edges": 7,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2836",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 11238,
+        "accepted_undirected_edges": 43539,
+        "rejected_undirected_edges": 590,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 11238,
+        "accepted_undirected_edges": 43772,
+        "rejected_undirected_edges": 357,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3703",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 6988,
+        "accepted_undirected_edges": 26862,
+        "rejected_undirected_edges": 495,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 6988,
+        "accepted_undirected_edges": 27357,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5545",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 3469,
+        "accepted_undirected_edges": 13005,
+        "rejected_undirected_edges": 450,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3469,
+        "accepted_undirected_edges": 13402,
+        "rejected_undirected_edges": 53,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2509",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 2456,
+        "accepted_undirected_edges": 8873,
+        "rejected_undirected_edges": 557,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2456,
+        "accepted_undirected_edges": 9430,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2759",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 16345,
+        "accepted_undirected_edges": 63563,
+        "rejected_undirected_edges": 850,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 16345,
+        "accepted_undirected_edges": 64085,
+        "rejected_undirected_edges": 328,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2515",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 1062,
+        "accepted_undirected_edges": 3847,
+        "rejected_undirected_edges": 190,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1062,
+        "accepted_undirected_edges": 4037,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4704",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 5133,
+        "accepted_undirected_edges": 19329,
+        "rejected_undirected_edges": 629,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 5133,
+        "accepted_undirected_edges": 19872,
+        "rejected_undirected_edges": 86,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_2624",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 2008,
+        "accepted_undirected_edges": 7571,
+        "rejected_undirected_edges": 154,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2008,
+        "accepted_undirected_edges": 7725,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3207",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 1451,
+        "accepted_undirected_edges": 5016,
+        "rejected_undirected_edges": 469,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1451,
+        "accepted_undirected_edges": 5380,
+        "rejected_undirected_edges": 105,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_351",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 4644,
+        "accepted_undirected_edges": 16893,
+        "rejected_undirected_edges": 1037,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4644,
+        "accepted_undirected_edges": 17823,
+        "rejected_undirected_edges": 107,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_4593",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 6891,
+        "accepted_undirected_edges": 25335,
+        "rejected_undirected_edges": 1583,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 6891,
+        "accepted_undirected_edges": 26775,
+        "rejected_undirected_edges": 143,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1697",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 2753,
+        "accepted_undirected_edges": 10364,
+        "rejected_undirected_edges": 269,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2753,
+        "accepted_undirected_edges": 10532,
+        "rejected_undirected_edges": 101,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3471",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 1982,
+        "accepted_undirected_edges": 7462,
+        "rejected_undirected_edges": 117,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1982,
+        "accepted_undirected_edges": 7579,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5850",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 4699,
+        "accepted_undirected_edges": 17677,
+        "rejected_undirected_edges": 638,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 4699,
+        "accepted_undirected_edges": 18315,
+        "rejected_undirected_edges": 0,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_3540",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 1578,
+        "accepted_undirected_edges": 5731,
+        "rejected_undirected_edges": 256,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 1578,
+        "accepted_undirected_edges": 5933,
+        "rejected_undirected_edges": 54,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1773",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 2967,
+        "accepted_undirected_edges": 10967,
+        "rejected_undirected_edges": 330,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2967,
+        "accepted_undirected_edges": 11285,
+        "rejected_undirected_edges": 12,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_1539",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 3167,
+        "accepted_undirected_edges": 11377,
+        "rejected_undirected_edges": 749,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 3167,
+        "accepted_undirected_edges": 12067,
+        "rejected_undirected_edges": 59,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_179",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 2078,
+        "accepted_undirected_edges": 7731,
+        "rejected_undirected_edges": 253,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 2078,
+        "accepted_undirected_edges": 7898,
+        "rejected_undirected_edges": 86,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    },
+    {
+      "scene": "scene_5042",
+      "split": "test",
+      "estimated": {
+        "surface_vertex_count": 6701,
+        "accepted_undirected_edges": 25496,
+        "rejected_undirected_edges": 629,
+        "query_connected_components": 2,
+        "reachable_query_pair_fraction": 0.9583333333333334,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      },
+      "oracle": {
+        "surface_vertex_count": 6701,
+        "accepted_undirected_edges": 25571,
+        "rejected_undirected_edges": 554,
+        "query_connected_components": 1,
+        "reachable_query_pair_fraction": 1.0,
+        "distance_kind": "discrete graph shortest path on visible pixel surface",
+        "complete_surface_geodesic": false
+      }
+    }
+  ],
+  "counts": {
+    "train": 100,
+    "validation": 20,
+    "test": 40
+  },
+  "surface_domain": "frame0 visible target mask only; pixel-grid graph path approximation, not full object geodesic",
+  "future_geometry_used": false,
+  "training_started": false,
+  "GPU_used": false,
+  "all_scenes_retained": true,
+  "full_mesh_archives_used": false
+}

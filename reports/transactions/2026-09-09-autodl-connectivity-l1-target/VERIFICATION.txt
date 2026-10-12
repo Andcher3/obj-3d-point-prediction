@@ -1,0 +1,42 @@
+TRANSACTION=2026-09-09-autodl-connectivity-l1-target
+OBJECT=D:\Pycharm\post_graduate_project\reports\progress_log.md
+CHANGED_BRANCH_FIELD=REMOTE_CONNECTIVITY: UNVERIFIED -> VERIFIED; FIRST_REMOTE_TEST: UNSET -> FUTURE_L1_LATENT_PERTURBATION
+ORIGINAL_SHA256=090AB3478D0F1D8471EAF9CA267C9FD748F97C8B017070FB1AA54DB820850F0E
+MODIFIED_SHA256=35CBDF78B0B712EACDD3C8A252DC9EF2820DCD421BE59D4FDF571686A9FB135E
+
+ARTIFACTS
+MODIFIED_FILE=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\MODIFIED_FILE
+DIFF_FILE=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\DIFF_FILE
+VERIFICATION.txt=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\VERIFICATION.txt
+ROLLBACK.sh=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\ROLLBACK.sh
+
+BASELINE
+COMMAND=pwsh -NoProfile -ExecutionPolicy Bypass -File "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\VERIFY_BASELINE.ps1" -FixtureRoot "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\backup\files"
+INPUT=preserved original copy of reports\progress_log.md with the AutoDL progress note and remote probe absent
+LITERAL_OUTPUT=BASELINE_NOTE_EXISTS=False; BASELINE_PROBE_EXISTS=False; BASELINE_LOG_LINK=False; STATUS=PASS
+EXIT_STATUS=0
+
+MODIFIED
+COMMAND=pwsh -NoProfile -ExecutionPolicy Bypass -File "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\VERIFY_MODIFIED.ps1" -ProjectRoot "D:\Pycharm\post_graduate_project" -TransactionRoot "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target"
+INPUT=D:\Pycharm\post_graduate_project\reports\progress_log.md; D:\Pycharm\post_graduate_project\reports\progress\2026-09-09-autodl-connectivity-and-l1-test-target.md; D:\Pycharm\post_graduate_project\reports\remote\2026-09-09-autodl-connectivity-probe.txt; D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\MODIFIED_FILE
+LITERAL_OUTPUT=MODIFIED_NOTE_EXISTS=True; PROBE_EXISTS=True; LOG_LINK=True; SSH_AUTH_PASS=True; SSH_LOGOUT_PASS=True; L1_TARGET_RECORDED=True; MODIFIED_COPY_MATCH=True; STATUS=PASS
+EXIT_STATUS=0
+
+ROLLBACK
+COMMAND=pwsh -NoProfile -Command "$script=[scriptblock]::Create((Get-Content -LiteralPath 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\ROLLBACK.sh' -Raw -Encoding UTF8)); & $script -ProjectRoot 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\rollback_test\project' -TransactionRoot 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-autodl-connectivity-l1-target\rollback_test\transaction'"
+INPUT=another-copy fixture containing the modified progress log, new AutoDL note, new remote probe, preserved original, and rollback manifests
+LITERAL_OUTPUT=ROLLBACK_APPLIED=PASS
+RESULT=ROLLBACK_TEST=PASS; RESTORED_LOG_HASH=True; RESTORED_LINK=False; NEW_NOTE_REMOVED=True; NEW_PROBE_REMOVED=True; EXIT=0
+EXIT_STATUS=0
+RESTORED_BEHAVIOR_STATUS=The another-copy fixture restored the original progress-log SHA256 and removed both new files, returning REMOTE_CONNECTIVITY to UNVERIFIED and FIRST_REMOTE_TEST to UNSET. The live workspace remains changed with REMOTE_CONNECTIVITY=VERIFIED and FIRST_REMOTE_TEST=FUTURE_L1_LATENT_PERTURBATION.
+
+LIVE_RESULT
+REMOTE_CONNECTIVITY=VERIFIED
+FIRST_REMOTE_TEST=FUTURE_L1_LATENT_PERTURBATION
+LIVE_MODIFIED_FILE_LEFT_CHANGED=True
+
+CREDENTIAL_SCAN
+COMMAND=pwsh in-memory exact-token scan over the new report, probe, and transaction artifacts
+INPUT=two new project records and four transaction artifacts
+LITERAL_OUTPUT=CREDENTIAL_PERSISTED_IN_ARTIFACTS=False
+EXIT_STATUS=0

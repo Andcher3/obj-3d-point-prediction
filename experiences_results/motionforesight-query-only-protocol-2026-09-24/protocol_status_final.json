@@ -1,0 +1,60 @@
+{
+  "protocol": "query-only with fixed t0-to-frame0 query mapping",
+  "stages": [
+    {
+      "stage": "smoke12",
+      "expected_shape": [
+        12,
+        48,
+        3
+      ],
+      "log": "experiences_results\\motionforesight-query-only-protocol-2026-09-24\\smoke12.log",
+      "log_exists": true,
+      "returncode": 0,
+      "output_exists": true,
+      "shape": [
+        12,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "shape_ok": true
+    },
+    {
+      "stage": "smoke16",
+      "expected_shape": [
+        16,
+        48,
+        3
+      ],
+      "log": "experiences_results\\motionforesight-query-only-protocol-2026-09-24\\smoke16.log",
+      "log_exists": true,
+      "returncode": 0,
+      "output_exists": true,
+      "shape": [
+        16,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "shape_ok": true
+    },
+    {
+      "stage": "full22",
+      "expected_shape": [
+        22,
+        48,
+        3
+      ],
+      "log": "experiences_results\\motionforesight-query-only-protocol-2026-09-24\\full22.log",
+      "log_exists": true,
+      "returncode": 1,
+      "output_exists": false,
+      "shape_ok": false,
+      "failure_stage": "predictor.predict/model_fn_wan_video",
+      "cuda_oom": true
+    }
+  ],
+  "overall_smoke_pass": true,
+  "full22_dense_output_ready": false
+}

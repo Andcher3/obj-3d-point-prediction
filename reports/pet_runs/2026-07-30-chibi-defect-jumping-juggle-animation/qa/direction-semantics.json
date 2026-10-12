@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "reviewed_at_normal_size": true,
+  "directions": [
+    {"degrees": 0, "result": "pass", "horizontal": "none", "vertical": "large lens is high in the head; blind hard gate confirmed up"},
+    {"degrees": 22.5, "result": "warning", "horizontal": "right cue is subtle", "vertical": "lens remains high and reads up"},
+    {"degrees": 45, "result": "pass", "horizontal": "lens and head progress toward screen-right", "vertical": "lens remains in the upper half"},
+    {"degrees": 67.5, "result": "warning", "horizontal": "clear screen-right progression", "vertical": "near-horizontal vertical cue is subtle"},
+    {"degrees": 90, "result": "pass", "horizontal": "blind hard gate confirmed screen-right", "vertical": "none"},
+    {"degrees": 112.5, "result": "warning", "horizontal": "screen-right landmark remains clear", "vertical": "downward cue is subtle at normal size"},
+    {"degrees": 135, "result": "pass", "horizontal": "screen-right", "vertical": "lens is lower than 090"},
+    {"degrees": 157.5, "result": "pass", "horizontal": "screen-right cue remains", "vertical": "lens is low and approaches 180"},
+    {"degrees": 180, "result": "pass", "horizontal": "none", "vertical": "large lens is unmistakably low; blind hard gate confirmed down"},
+    {"degrees": 202.5, "result": "warning", "horizontal": "first leftward step is subtle", "vertical": "lens stays low and reads down"},
+    {"degrees": 225, "result": "warning", "horizontal": "leftward body cue is weaker than ideal but continues toward 270", "vertical": "down cue is clear"},
+    {"degrees": 247.5, "result": "warning", "horizontal": "lens progresses left but blind vote was inconsistent", "vertical": "down cue remains"},
+    {"degrees": 270, "result": "pass", "horizontal": "blind hard gate confirmed screen-left", "vertical": "none"},
+    {"degrees": 292.5, "result": "pass", "horizontal": "screen-left", "vertical": "lens begins moving up"},
+    {"degrees": 315, "result": "warning", "horizontal": "left cue is subtle", "vertical": "up cue is clear"},
+    {"degrees": 337.5, "result": "warning", "horizontal": "near-vertical horizontal cue is subtle", "vertical": "up cue is clear and approaches 000"}
+  ],
+  "summary": "All four cardinal hard gates pass. Intermediate warnings are subtle-axis or blind-review disagreements; the labeled loop remains ordered, identity-preserving, and free of quadrant reversal at the cardinal level."
+}

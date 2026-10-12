@@ -1,0 +1,80 @@
+{
+  "packaging_checks_passed": true,
+  "model_forward_called": false,
+  "numerical_quality_evaluation_started": false,
+  "raw_outputs_unchanged": true,
+  "videos": [
+    {
+      "video": "car-turn",
+      "contexts": [
+        {
+          "context_frames": 22,
+          "raw_sha256": "ca2819808bafc87f804886d1fe67196928b22eecc844743707f97528502293fb",
+          "browser_video": "car-turn_22frames_browser.mp4",
+          "decoded_frames": 22
+        },
+        {
+          "context_frames": 7,
+          "raw_sha256": "ca65351ecc8fb29f857da4e45220a60fea7bf86ed8d92fb280a5a744beca088a",
+          "browser_video": "car-turn_7frames_browser.mp4",
+          "decoded_frames": 7
+        }
+      ],
+      "t0_comparison": "car-turn_t0_teacher_observed_compare.png"
+    },
+    {
+      "video": "drift-turn",
+      "contexts": [
+        {
+          "context_frames": 22,
+          "raw_sha256": "f997cdabf9b001f965a79eb68bbb3534813b68c864ff64c14ad9111a1d48f6e7",
+          "browser_video": "drift-turn_22frames_browser.mp4",
+          "decoded_frames": 22
+        },
+        {
+          "context_frames": 7,
+          "raw_sha256": "7da1d5237020bdd5bd75fc94633b946e60ff50f088d0ab02a2144ac6a6a1ec40",
+          "browser_video": "drift-turn_7frames_browser.mp4",
+          "decoded_frames": 7
+        }
+      ],
+      "t0_comparison": "drift-turn_t0_teacher_observed_compare.png"
+    },
+    {
+      "video": "boat",
+      "contexts": [
+        {
+          "context_frames": 22,
+          "raw_sha256": "98d4c4c4021cc8dd89c677a80181393102c006255229779039a442f84b6528d2",
+          "browser_video": "boat_22frames_browser.mp4",
+          "decoded_frames": 22
+        },
+        {
+          "context_frames": 7,
+          "raw_sha256": "ce33f22611dcc435fd20d254a05bb6cdb7e07b6f52f4354b3b3233ce9cd9881d",
+          "browser_video": "boat_7frames_browser.mp4",
+          "decoded_frames": 7
+        }
+      ],
+      "t0_comparison": "boat_t0_teacher_observed_compare.png"
+    },
+    {
+      "video": "soccerball",
+      "contexts": [
+        {
+          "context_frames": 22,
+          "raw_sha256": "901f9fbab55cfb05c00539381653cbb361d58bd4ee606838f3d85042878b4ed6",
+          "browser_video": "soccerball_22frames_browser.mp4",
+          "decoded_frames": 22
+        },
+        {
+          "context_frames": 7,
+          "raw_sha256": "f9ffd6d07da5f45da591ee9ceb4e3065f74f6c0ad1a917db895a7caede2c8377",
+          "browser_video": "soccerball_7frames_browser.mp4",
+          "decoded_frames": 7
+        }
+      ],
+      "t0_comparison": "soccerball_t0_teacher_observed_compare.png"
+    }
+  ]
+}

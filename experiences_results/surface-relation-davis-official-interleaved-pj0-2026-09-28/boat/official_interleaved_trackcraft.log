@@ -1,0 +1,70 @@
+/root/autodl-tmp/conda_envs/trackcraft-e2/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loaded 23 frames from /tmp/tmpsxqcsrai.npz, subsampled to 23 (stride=1)
+  LoRA injected: rank=1024, targets=q,k,v,o,ffn.0,ffn.2
+  patch_embedding expanded: 16->32 channels
+  DiT head expanded to 2x output (xyz | vis)
+  release dit: loaded 1425 tensors
+  release vae: loaded 194 tensors
+  release vae_vis: loaded 194 tensors
+  release vae_pj: loaded 194 tensors
+  release text_encoder: loaded 242 tensors
+WanSceneFlowPredictor loaded from /root/trackcraft-assets/checkpoints/trackcraft3r/model.safetensors
+{
+  "status": "OFFICIAL_INTERLEAVED_DERIVED_NOT_QUALITY_APPROVED",
+  "input_frames": 23,
+  "output_frames": 22,
+  "run_indices": [
+    [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22
+    ],
+    [
+      0,
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21
+    ]
+  ],
+  "pj0_sources": [
+    "predictor._last_pj_input",
+    "predictor._last_pj_input"
+  ],
+  "frame0_pj_between_runs_max_abs": 0.0,
+  "anchored_frame0_between_runs_max_abs": 0.0,
+  "temporal_displacement_max_abs_change_after_merged_anchor": 0.0016871997521030746,
+  "per_run_temporal_displacement_max_abs_change": [
+    1.3877787807814457e-17,
+    6.938893903907228e-18
+  ],
+  "anchor_delta_norm_per_run": [
+    {
+      "p50": 0.006540911291656506,
+      "p90": 0.008634137264797424,
+      "max": 0.010083150525007556
+    },
+    {
+      "p50": 0.006505710955650395,
+      "p90": 0.008343055250443824,
+      "max": 0.00941892471422234
+    }
+  ]
+}

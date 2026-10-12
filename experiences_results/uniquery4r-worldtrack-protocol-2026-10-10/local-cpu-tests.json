@@ -1,0 +1,10 @@
+{
+  "tests_run": 20,
+  "errors": 0,
+  "failures": 0,
+  "passed": true,
+  "differential_reference_cases": 120,
+  "model_loaded": false,
+  "model_forward_called": false,
+  "actual_benchmark_inference": false
+}

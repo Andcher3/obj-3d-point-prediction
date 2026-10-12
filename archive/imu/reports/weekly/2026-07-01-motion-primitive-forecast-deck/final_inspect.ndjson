@@ -1,0 +1,27 @@
+{"kind":"slide","id":"sl/2x4nap4r","slide":1,"title":"Slide 1","textShapes":0}
+{"kind":"image","id":"im/mhk3q5o7","slide":1,"name":"","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/2x4nap4r","slide":1,"text":"先从相关文献出发。当前传感器序列建模大致有三条线索：一类强调传感器与语言语义对齐，一类强调无标签重构预训练，还有一类开始把连续传感器流写成未来序列预测问题。对这个任务最有直接价值的是后两点：把 IMU 转成稳定 token，并预测未来一段状态序列。"}
+{"kind":"slide","id":"sl/pg3ex0nu","slide":2,"title":"Slide 2","textShapes":0}
+{"kind":"image","id":"im/bi9s36hc","slide":2,"name":"","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/pg3ex0nu","slide":2,"text":"这页把文献方法和结构选择对应起来。SensorLM 和 SensorLLM 说明传感器信号可以接近语义空间；EVI-MAE 提供无标签预训练思路；P2LHAP 给出 patch-level label sequence 和 smoothing；MoPFormer 给出 motion primitive tokenization；FUTR 和 ActFusion 支持并行的未来序列预测。这些共同导向右侧的结构。"}
+{"kind":"slide","id":"sl/s72x4nap","slide":3,"title":"Slide 3","textShapes":0}
+{"kind":"image","id":"im/epkzupwb","slide":3,"name":"","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/s72x4nap","slide":3,"text":"目标任务是基于过去到当前的手机 IMU，预测当前到未来的双流状态序列。双流分别是人体动作和手机或运镜动作，每条流都包含 action 或 motion label，以及 stable / transition phase。这样不仅能回答当前状态，也能估计未来延续、切换时间和下一状态。"}
+{"kind":"slide","id":"sl/val87ed8","slide":4,"title":"Slide 4","textShapes":0}
+{"kind":"image","id":"im/87ed8bat","slide":4,"name":"","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/val87ed8","slide":4,"text":"这一页说明数据形式。输入是连续六轴 IMU，先切成时间 patch，再在 tokenizer 内部按单通道处理。标签也必须是连续时间对齐的序列，human 和 camera 分别标注。推理阶段需要 label sequence，因为切换时机来自平滑后的第一次标签变化。"}
+{"kind":"slide","id":"sl/mlkjm1cf","slide":5,"title":"Slide 5","textShapes":0}
+{"kind":"image","id":"im/al87ed8b","slide":5,"name":"","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/mlkjm1cf","slide":5,"text":"方法的第一步是把单通道 IMU 片段转成 motion primitive token。归一化后的片段进入 VQ codebook，得到表示局部运动形状的 primitive embedding；均值和标准差保留为 statistical embedding；再加上通道 metadata 和时间位置编码。这样 token 同时保留局部形状和幅值信息。"}
+{"kind":"slide","id":"sl/58z25kb6","slide":6,"title":"Slide 6","textShapes":0}
+{"kind":"image","id":"im/czed8v6p","slide":6,"name":"","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/58z25kb6","slide":6,"text":"当前状态不需要 decoder 生成，因为时刻 t 已经在输入中。每个通道独立经过共享 causal encoder，然后在同一时间位置做 channel fusion，得到时间级 hidden state g_t。当前的 human action、human phase、camera motion 和 camera phase 都从 g_t 预测。"}
+{"kind":"slide","id":"sl/0z61032l","slide":7,"title":"Slide 7","textShapes":0}
+{"kind":"image","id":"im/32lszqtc","slide":7,"name":"","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/0z61032l","slide":7,"text":"未来状态预测分两步。第一步用 parallel query forecast decoder 预测未来 token 的动态成分，也就是 primitive embedding 和 statistical embedding；再加上已知 metadata 和未来位置编码组成完整 future motion token。第二步把真实过去 token 和预测未来 token 拼接后送入 causal re-encoder，再从未来 hidden states 做分类。"}
+{"kind":"slide","id":"sl/fu18jqh0","slide":8,"title":"Slide 8","textShapes":0}
+{"kind":"image","id":"im/czed8v6p","slide":8,"name":"","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/fu18jqh0","slide":8,"text":"训练分成两个阶段。无标签阶段只学习 IMU 动态：输入过去 IMU，预测未来 motion token，并用 primitive 和 statistical component 的对齐损失训练。微调阶段使用连续标签，分别监督 human action、human phase、camera motion 和 camera phase。这样先学时序结构，再用较少标签学习语义状态。"}
+{"kind":"slide","id":"sl/qh0fepkz","slide":9,"title":"Slide 9","textShapes":0}
+{"kind":"image","id":"im/e1w7mp0b","slide":9,"name":"","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/qh0fepkz","slide":9,"text":"推理阶段先得到 human 和 camera 两条概率序列，再分别进行 P2LHAP-style smoothing。平滑会去掉短时孤立错误并合并相邻同类 patch。最终当前状态读取 time t，延续趋势看未来是否保持当前标签，切换时机读取平滑序列中第一次 label 变化的位置。"}

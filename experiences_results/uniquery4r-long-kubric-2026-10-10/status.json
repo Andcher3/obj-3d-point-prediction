@@ -1,0 +1,143 @@
+{
+  "dataset": "trackcraft3r/trackcraft3r-eval",
+  "revision": "df2fc292f46c4afbfbe3459de91bac755dacda97",
+  "completed": [
+    {
+      "file": "00001.npz",
+      "frames": 81,
+      "images_decoded": 81,
+      "unique_jpeg_payloads": 81,
+      "image_size": [
+        832,
+        480
+      ],
+      "tracks_shape": [
+        399360,
+        81,
+        3
+      ],
+      "gt_camera_shape": [
+        81,
+        4,
+        4
+      ],
+      "gt_intrinsics": [
+        910.0,
+        910.0,
+        416.0,
+        240.0
+      ],
+      "zip_crc_pass": true,
+      "finite_gt_pass": true,
+      "foreground_points_frame0": 162704,
+      "identity_check_points": 514,
+      "gt_frame0_projection_p50_px": 4403.17440179184,
+      "gt_frame0_projection_p90_px": 16490.61175084256,
+      "sampled_gt_path_length64_p50": 0.20130237936973572,
+      "source_fps_verified": false,
+      "preview_display_fps": 12,
+      "instance_ids_provided": false,
+      "object_selection_pending": true,
+      "gpu_used": false,
+      "model_queries_created": false,
+      "sha256": "e1aa341bd2ab49ac3cd1a646c6e376186a2e9e9b59505625f5486b6f6bf30408",
+      "expected_sha256": "e1aa341bd2ab49ac3cd1a646c6e376186a2e9e9b59505625f5486b6f6bf30408",
+      "bytes": 215953991
+    },
+    {
+      "file": "00002.npz",
+      "frames": 81,
+      "images_decoded": 81,
+      "unique_jpeg_payloads": 81,
+      "image_size": [
+        832,
+        480
+      ],
+      "tracks_shape": [
+        399360,
+        81,
+        3
+      ],
+      "gt_camera_shape": [
+        81,
+        4,
+        4
+      ],
+      "gt_intrinsics": [
+        910.0,
+        910.0,
+        416.0,
+        240.0
+      ],
+      "zip_crc_pass": true,
+      "finite_gt_pass": true,
+      "foreground_points_frame0": 46767,
+      "identity_check_points": 514,
+      "gt_frame0_projection_p50_px": 8000.386130406327,
+      "gt_frame0_projection_p90_px": 31783.96344511583,
+      "sampled_gt_path_length64_p50": 1.2444497346878052,
+      "source_fps_verified": false,
+      "preview_display_fps": 12,
+      "instance_ids_provided": false,
+      "object_selection_pending": true,
+      "gpu_used": false,
+      "model_queries_created": false,
+      "sha256": "b654a00220f949bb719cc92aa3b0d2d751c1bfdd46ff1b9cb6b89cf628df6142",
+      "expected_sha256": "b654a00220f949bb719cc92aa3b0d2d751c1bfdd46ff1b9cb6b89cf628df6142",
+      "bytes": 119899165
+    },
+    {
+      "file": "00003.npz",
+      "frames": 81,
+      "images_decoded": 81,
+      "unique_jpeg_payloads": 81,
+      "image_size": [
+        832,
+        480
+      ],
+      "tracks_shape": [
+        399360,
+        81,
+        3
+      ],
+      "gt_camera_shape": [
+        81,
+        4,
+        4
+      ],
+      "gt_intrinsics": [
+        910.0,
+        910.0,
+        416.0,
+        240.0
+      ],
+      "zip_crc_pass": true,
+      "finite_gt_pass": true,
+      "foreground_points_frame0": 173927,
+      "identity_check_points": 514,
+      "gt_frame0_projection_p50_px": 3353.4957156872188,
+      "gt_frame0_projection_p90_px": 11624.336630369568,
+      "sampled_gt_path_length64_p50": 0.01639493927359581,
+      "source_fps_verified": false,
+      "preview_display_fps": 12,
+      "instance_ids_provided": false,
+      "object_selection_pending": true,
+      "gpu_used": false,
+      "model_queries_created": false,
+      "sha256": "c74d20aca0f4f286b28627768106508bb96ada576da75d80930a859ccda6f62b",
+      "expected_sha256": "c74d20aca0f4f286b28627768106508bb96ada576da75d80930a859ccda6f62b",
+      "bytes": 225420176
+    }
+  ],
+  "gpu_used": false,
+  "stage": "completed",
+  "started_unix": 1791638527.6048365,
+  "download_concurrency": 2,
+  "requested_files": [
+    "kubric_da3/00001.npz",
+    "kubric_da3/00002.npz",
+    "kubric_da3/00003.npz"
+  ],
+  "current_file": "kubric_da3/00003.npz",
+  "finished_unix": 1791639173.922784
+}

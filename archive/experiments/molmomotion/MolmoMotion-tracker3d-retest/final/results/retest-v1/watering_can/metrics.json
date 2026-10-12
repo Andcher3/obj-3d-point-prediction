@@ -1,0 +1,262 @@
+{
+  "sample_id": "watering_can",
+  "source_video": "356ed369-7023-4660-904b-be73823a21d3.mp4 (left-eye crop, rotated)",
+  "source_fps": 30,
+  "raw_frame_indices": [
+    131,
+    133,
+    135,
+    137,
+    139,
+    141,
+    143,
+    145,
+    147,
+    149,
+    151,
+    153
+  ],
+  "history_raw_frames": [
+    131,
+    133,
+    135
+  ],
+  "offline_pseudo_gt_raw_frames": [
+    137,
+    139,
+    141,
+    143,
+    145,
+    147,
+    149,
+    151,
+    153
+  ],
+  "valid_query_count": 8,
+  "pseudo_gt_motion": {
+    "mean_path_length_m": 0.08397991955280304,
+    "centroid_final_delta_m": [
+      0.014943845570087433,
+      -0.014113131910562515,
+      -0.009901046752929688
+    ],
+    "finite_fraction": 1.0
+  },
+  "records": [
+    {
+      "sample_id": "watering_can",
+      "prompt": "observed_carry",
+      "prompt_text": "Carry the gray watering can forward while walking.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 71.93446648865938,
+      "sequence_score": -460.4962463378906,
+      "input_ids_sha256": "8ca703595d7521af26d6a01e58a77ecc709f47caf1dec02f9762e4fee486cc64",
+      "future_array_sha256": "2886d06219565f4029af741e9e329b724eb3ca6d5da6b609d75b3951fc7ff634",
+      "future_text_sha256": "206f4b3c848189e36d68d9cffcd170f7b2f3c243bc67828ef4538c0e0a0f5432",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.11764207482337952,
+      "pseudo_gt_fde_m": 0.2667921781539917,
+      "mean_path_length_m": 1.2007572650909424,
+      "centroid_final_delta_m": [
+        1.151543140411377,
+        0.05868024006485939,
+        -0.2884734869003296
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "observed_carry",
+      "prompt_text": "Carry the gray watering can forward while walking.",
+      "draw": "sample1",
+      "seed": 20261915,
+      "parse_success": true,
+      "seconds": 72.46744146198034,
+      "sequence_score": -1328.1409912109375,
+      "input_ids_sha256": "8ca703595d7521af26d6a01e58a77ecc709f47caf1dec02f9762e4fee486cc64",
+      "future_array_sha256": "254da3423661a186449a1e968e37f67534dd1909edb8a256689dfd4c7d4e86be",
+      "future_text_sha256": "b3725e4d4d26fad5fc00c270d61a18d5c22dddb2ef6140ea7090036f4f316aec",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.12299299240112305,
+      "pseudo_gt_fde_m": 0.25356775522232056,
+      "mean_path_length_m": 0.7917146682739258,
+      "centroid_final_delta_m": [
+        0.27041810750961304,
+        0.02818024531006813,
+        0.10577654838562012
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "counterfactual_setdown",
+      "prompt_text": "Set the gray watering can down on the ground.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 70.28704477474093,
+      "sequence_score": -520.96826171875,
+      "input_ids_sha256": "9aa4b9ba8a45c2e25314a6ad0ca764fd07333f494cfb23d38d9c4cf96bad4037",
+      "future_array_sha256": "a8d46e18e0631146929100cd3be3c2f7bbaa266649724bca966d380afed24048",
+      "future_text_sha256": "af41f3847901254db578f4af3cfb6474b64cb48a52e6a76b6c53389ad3da41d0",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.14315186440944672,
+      "pseudo_gt_fde_m": 0.337418794631958,
+      "mean_path_length_m": 0.5882555246353149,
+      "centroid_final_delta_m": [
+        0.44979310035705566,
+        0.07743024826049805,
+        -0.0420985221862793
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "counterfactual_setdown",
+      "prompt_text": "Set the gray watering can down on the ground.",
+      "draw": "sample1",
+      "seed": 20262015,
+      "parse_success": true,
+      "seconds": 73.50927538052201,
+      "sequence_score": -1509.945068359375,
+      "input_ids_sha256": "9aa4b9ba8a45c2e25314a6ad0ca764fd07333f494cfb23d38d9c4cf96bad4037",
+      "future_array_sha256": "3885875ca8024cbf9b8020fcec004bebb66a01b359903a6c8c0abd2d34a9f25a",
+      "future_text_sha256": "6fd417889dd9c027bb53fce80a007c683811e3839d6ac62e023e7002d0fdeef6",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.1860678493976593,
+      "pseudo_gt_fde_m": 0.3274707496166229,
+      "mean_path_length_m": 0.7340784072875977,
+      "centroid_final_delta_m": [
+        0.25854310393333435,
+        0.0014302432537078857,
+        0.09090161323547363
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "multistep",
+      "prompt_text": "Stop walking, lower the gray watering can to the ground, and release the handle.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 69.47897301986814,
+      "sequence_score": -382.3696594238281,
+      "input_ids_sha256": "665c83f83df86a9760cd86bc69643185fe20c58a49cec6ca2cbcf622c985ea72",
+      "future_array_sha256": "506c819d150f854d44b511da57597a2c17a3c6067167588869791f9742df22db",
+      "future_text_sha256": "46e8d56e20e6ae6771cd0a2ddb2b41192110e1708a74b0cf016397dd4bd6d001",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.09837693721055984,
+      "pseudo_gt_fde_m": 0.1948225498199463,
+      "mean_path_length_m": 0.3064418435096741,
+      "centroid_final_delta_m": [
+        0.20466811954975128,
+        0.03168024495244026,
+        -0.007723450660705566
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "multistep",
+      "prompt_text": "Stop walking, lower the gray watering can to the ground, and release the handle.",
+      "draw": "sample1",
+      "seed": 20262115,
+      "parse_success": true,
+      "seconds": 70.06558619812131,
+      "sequence_score": -1617.0799560546875,
+      "input_ids_sha256": "665c83f83df86a9760cd86bc69643185fe20c58a49cec6ca2cbcf622c985ea72",
+      "future_array_sha256": "d5e5912a740463391a0d3746faebd62a510ddd5eacb42bf2a041de24be0a9607",
+      "future_text_sha256": "3be714377dbef80718a22e66e1be9685cd96d065faa5162cc927df2d10bf8d11",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.16059593856334686,
+      "pseudo_gt_fde_m": 0.24913786351680756,
+      "mean_path_length_m": 1.115024447441101,
+      "centroid_final_delta_m": [
+        0.08966810256242752,
+        -0.061194755136966705,
+        -0.021848440170288086
+      ],
+      "finite_fraction": 1.0
+    }
+  ],
+  "pairwise": {
+    "observed_carry__greedy__vs__observed_carry__sample1": {
+      "ade_m": 0.4502246677875519,
+      "fde_m": 0.9667719006538391,
+      "direction_cosine": 0.831873893737793
+    },
+    "observed_carry__greedy__vs__counterfactual_setdown__greedy": {
+      "ade_m": 0.258663535118103,
+      "fde_m": 0.7532585859298706,
+      "direction_cosine": 0.9806019067764282
+    },
+    "observed_carry__greedy__vs__counterfactual_setdown__sample1": {
+      "ade_m": 0.4182415008544922,
+      "fde_m": 0.9767913818359375,
+      "direction_cosine": 0.8052786588668823
+    },
+    "observed_carry__greedy__vs__multistep__greedy": {
+      "ade_m": 0.4098586440086365,
+      "fde_m": 0.9932650923728943,
+      "direction_cosine": 0.973142683506012
+    },
+    "observed_carry__greedy__vs__multistep__sample1": {
+      "ade_m": 0.6014852523803711,
+      "fde_m": 1.1022589206695557,
+      "direction_cosine": 0.819327712059021
+    },
+    "observed_carry__sample1__vs__counterfactual_setdown__greedy": {
+      "ade_m": 0.24441291391849518,
+      "fde_m": 0.24915499985218048,
+      "direction_cosine": 0.9060681462287903
+    },
+    "observed_carry__sample1__vs__counterfactual_setdown__sample1": {
+      "ade_m": 0.11177603155374527,
+      "fde_m": 0.09605143219232559,
+      "direction_cosine": 0.9979537129402161
+    },
+    "observed_carry__sample1__vs__multistep__greedy": {
+      "ade_m": 0.1337457150220871,
+      "fde_m": 0.13849970698356628,
+      "direction_cosine": 0.9283079504966736
+    },
+    "observed_carry__sample1__vs__multistep__sample1": {
+      "ade_m": 0.33540603518486023,
+      "fde_m": 0.24079719185829163,
+      "direction_cosine": 0.6150076985359192
+    },
+    "counterfactual_setdown__greedy__vs__counterfactual_setdown__sample1": {
+      "ade_m": 0.20015399158000946,
+      "fde_m": 0.2548370957374573,
+      "direction_cosine": 0.8809017539024353
+    },
+    "counterfactual_setdown__greedy__vs__multistep__greedy": {
+      "ade_m": 0.19402237236499786,
+      "fde_m": 0.2522212266921997,
+      "direction_cosine": 0.9983601570129395
+    },
+    "counterfactual_setdown__greedy__vs__multistep__sample1": {
+      "ade_m": 0.3831784129142761,
+      "fde_m": 0.39861762523651123,
+      "direction_cosine": 0.7226846814155579
+    },
+    "counterfactual_setdown__sample1__vs__multistep__greedy": {
+      "ade_m": 0.12098104506731033,
+      "fde_m": 0.1290506273508072,
+      "direction_cosine": 0.9063073992729187
+    },
+    "counterfactual_setdown__sample1__vs__multistep__sample1": {
+      "ade_m": 0.3270183801651001,
+      "fde_m": 0.21929535269737244,
+      "direction_cosine": 0.6144219040870667
+    },
+    "multistep__greedy__vs__multistep__sample1": {
+      "ade_m": 0.24826139211654663,
+      "fde_m": 0.1692386418581009,
+      "direction_cosine": 0.7241218686103821
+    }
+  }
+}

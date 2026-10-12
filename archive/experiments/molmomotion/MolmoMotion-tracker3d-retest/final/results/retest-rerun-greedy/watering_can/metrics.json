@@ -1,0 +1,133 @@
+{
+  "sample_id": "watering_can",
+  "source_video": "356ed369-7023-4660-904b-be73823a21d3.mp4 (left-eye crop, rotated)",
+  "source_fps": 30,
+  "raw_frame_indices": [
+    131,
+    133,
+    135,
+    137,
+    139,
+    141,
+    143,
+    145,
+    147,
+    149,
+    151,
+    153
+  ],
+  "history_raw_frames": [
+    131,
+    133,
+    135
+  ],
+  "offline_pseudo_gt_raw_frames": [
+    137,
+    139,
+    141,
+    143,
+    145,
+    147,
+    149,
+    151,
+    153
+  ],
+  "valid_query_count": 8,
+  "pseudo_gt_motion": {
+    "mean_path_length_m": 0.08397991955280304,
+    "centroid_final_delta_m": [
+      0.014943845570087433,
+      -0.014113131910562515,
+      -0.009901046752929688
+    ],
+    "finite_fraction": 1.0
+  },
+  "records": [
+    {
+      "sample_id": "watering_can",
+      "prompt": "observed_carry",
+      "prompt_text": "Carry the gray watering can forward while walking.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 71.74450084194541,
+      "sequence_score": -460.4962463378906,
+      "input_ids_sha256": "8ca703595d7521af26d6a01e58a77ecc709f47caf1dec02f9762e4fee486cc64",
+      "future_array_sha256": "2886d06219565f4029af741e9e329b724eb3ca6d5da6b609d75b3951fc7ff634",
+      "future_text_sha256": "206f4b3c848189e36d68d9cffcd170f7b2f3c243bc67828ef4538c0e0a0f5432",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.11764207482337952,
+      "pseudo_gt_fde_m": 0.2667921781539917,
+      "mean_path_length_m": 1.2007572650909424,
+      "centroid_final_delta_m": [
+        1.151543140411377,
+        0.05868024006485939,
+        -0.2884734869003296
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "counterfactual_setdown",
+      "prompt_text": "Set the gray watering can down on the ground.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 70.40941626951098,
+      "sequence_score": -520.96826171875,
+      "input_ids_sha256": "9aa4b9ba8a45c2e25314a6ad0ca764fd07333f494cfb23d38d9c4cf96bad4037",
+      "future_array_sha256": "a8d46e18e0631146929100cd3be3c2f7bbaa266649724bca966d380afed24048",
+      "future_text_sha256": "af41f3847901254db578f4af3cfb6474b64cb48a52e6a76b6c53389ad3da41d0",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.14315186440944672,
+      "pseudo_gt_fde_m": 0.337418794631958,
+      "mean_path_length_m": 0.5882555246353149,
+      "centroid_final_delta_m": [
+        0.44979310035705566,
+        0.07743024826049805,
+        -0.0420985221862793
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "multistep",
+      "prompt_text": "Stop walking, lower the gray watering can to the ground, and release the handle.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 69.01303542777896,
+      "sequence_score": -382.3696594238281,
+      "input_ids_sha256": "665c83f83df86a9760cd86bc69643185fe20c58a49cec6ca2cbcf622c985ea72",
+      "future_array_sha256": "506c819d150f854d44b511da57597a2c17a3c6067167588869791f9742df22db",
+      "future_text_sha256": "46e8d56e20e6ae6771cd0a2ddb2b41192110e1708a74b0cf016397dd4bd6d001",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.09837693721055984,
+      "pseudo_gt_fde_m": 0.1948225498199463,
+      "mean_path_length_m": 0.3064418435096741,
+      "centroid_final_delta_m": [
+        0.20466811954975128,
+        0.03168024495244026,
+        -0.007723450660705566
+      ],
+      "finite_fraction": 1.0
+    }
+  ],
+  "pairwise": {
+    "observed_carry__greedy__vs__counterfactual_setdown__greedy": {
+      "ade_m": 0.258663535118103,
+      "fde_m": 0.7532585859298706,
+      "direction_cosine": 0.9806019067764282
+    },
+    "observed_carry__greedy__vs__multistep__greedy": {
+      "ade_m": 0.4098586440086365,
+      "fde_m": 0.9932650923728943,
+      "direction_cosine": 0.973142683506012
+    },
+    "counterfactual_setdown__greedy__vs__multistep__greedy": {
+      "ade_m": 0.19402237236499786,
+      "fde_m": 0.2522212266921997,
+      "direction_cosine": 0.9983601570129395
+    }
+  }
+}

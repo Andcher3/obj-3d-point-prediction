@@ -1,0 +1,13 @@
+{
+  "sha256_verified": true,
+  "videos_full_decode": true,
+  "scene_count": 18,
+  "frames_per_video": 22,
+  "resolution": [
+    2048,
+    560
+  ],
+  "raw_arrays_verified_on_remote": true,
+  "raw_arrays_downloaded": false,
+  "local_images_from_h264_decode": true
+}

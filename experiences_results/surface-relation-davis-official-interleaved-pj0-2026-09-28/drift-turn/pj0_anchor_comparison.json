@@ -1,0 +1,497 @@
+{
+  "status": "DIAGNOSTIC_ONLY_NOT_TRAINING_APPROVAL",
+  "video_id": "drift-turn",
+  "source_raw_directory": "/root/autodl-tmp/projects/motionforesight/outputs/davis_frame0_direct_2026-09-28/drift-turn",
+  "anchored_directory": "/root/autodl-tmp/projects/motionforesight/outputs/davis_official_interleaved_pj0_2026-09-28/drift-turn",
+  "contexts": {
+    "observed7": {
+      "raw_frame0_query_error_px": {
+        "p50": 1.1213097043234295,
+        "p90": 1.7204495482323117,
+        "mean": 1.159593116266402,
+        "max": 2.6875232655854466
+      },
+      "anchored_frame0_query_error_px": {
+        "p50": 0.7603675836543271,
+        "p90": 0.9989226702968019,
+        "mean": 0.7100268218496003,
+        "max": 1.211234580083057
+      },
+      "raw_mask_hits": {
+        "source_frame_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "counts_of_48": [
+          48,
+          39,
+          39,
+          43,
+          35,
+          31,
+          25
+        ],
+        "fraction_stats": {
+          "p50": 0.8125,
+          "p90": 0.9375000000000001,
+          "mean": 0.7738095238095237,
+          "max": 1.0
+        }
+      },
+      "anchored_mask_hits": {
+        "source_frame_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "counts_of_48": [
+          48,
+          41,
+          41,
+          44,
+          36,
+          30,
+          24
+        ],
+        "fraction_stats": {
+          "p50": 0.8541666666666666,
+          "p90": 0.95,
+          "mean": 0.7857142857142857,
+          "max": 1.0
+        }
+      },
+      "temporal_displacement_max_abs_change": 1.4901161193847656e-08,
+      "anchor_delta_norm": {
+        "p50": 0.004420786233686051,
+        "p90": 0.006307742857291179,
+        "mean": 0.004572007191209765,
+        "max": 0.006983183829059553
+      }
+    },
+    "official_teacher22": {
+      "raw_frame0_query_error_px": {
+        "p50": 2.1882799270407953,
+        "p90": 3.976263524855799,
+        "mean": 2.3132050603912657,
+        "max": 5.690733277935889
+      },
+      "anchored_frame0_query_error_px": {
+        "p50": 0.7603700718778081,
+        "p90": 0.9989216785559168,
+        "mean": 0.7100273511468416,
+        "max": 1.2112324272840334
+      },
+      "raw_mask_hits": {
+        "source_frame_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "counts_of_48": [
+          43,
+          36,
+          26,
+          22,
+          17,
+          15,
+          8,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fraction_stats": {
+          "p50": 0.0,
+          "p90": 0.5333333333333334,
+          "mean": 0.1609848484848485,
+          "max": 0.8958333333333334
+        }
+      },
+      "anchored_mask_hits": {
+        "source_frame_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "counts_of_48": [
+          48,
+          37,
+          27,
+          23,
+          19,
+          16,
+          8,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fraction_stats": {
+          "p50": 0.0,
+          "p90": 0.5541666666666668,
+          "mean": 0.17329545454545456,
+          "max": 1.0
+        }
+      },
+      "temporal_displacement_max_abs_change": 0.0028085708618164062,
+      "anchor_delta_norm": {
+        "p50": 0.005444596479047502,
+        "p90": 0.00878250625061671,
+        "mean": 0.005729857488863442,
+        "max": 0.015062558542213299
+      },
+      "anchor_delta_norm_per_run": [
+        {
+          "p50": 0.00486710627338951,
+          "p90": 0.00851728970913209,
+          "mean": 0.00531112529463035,
+          "max": 0.010271131987858109
+        },
+        {
+          "p50": 0.005887155622446908,
+          "p90": 0.008961432397845736,
+          "mean": 0.006148589683096534,
+          "max": 0.015062558542213299
+        }
+      ],
+      "per_run_temporal_displacement_max_abs_change": [
+        1.3877787807814457e-17,
+        6.938893903907228e-18
+      ]
+    }
+  },
+  "quality_before_legacy_direct22": {
+    "status": "FAIL",
+    "video_id": "drift-turn",
+    "protocol": "frame0_direct_query_2026-09-28",
+    "query_reference_source_frame_index": 14,
+    "output_camera_source_frame_index": 20,
+    "source_frame_indices": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "observed_source_frame_indices": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "evaluated_future_source_frame_indices": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "preview_mp4_fps_used": false,
+    "gates": {
+      "frame0_query_48": true,
+      "observed_frame0_anchor_p90_le_5pct": true,
+      "observed_frame0_anchor_max_le_10pct": true,
+      "teacher_frame0_anchor_p90_le_5pct": false,
+      "teacher_frame0_anchor_max_le_10pct": false,
+      "cross_context_t0_uv_p90_le_5pct": false,
+      "cross_context_t0_uv_max_le_10pct": false,
+      "valid_queries_at_least_44": true,
+      "registration_p90_le_10pct": false,
+      "registration_90pct_below_10pct": false,
+      "registration_max_le_20pct": true,
+      "valid_graph_connected": true,
+      "finite_predictions_teacher": true
+    },
+    "valid_query_count": 48,
+    "observed_frame0_anchor_normalized_bbox": {
+      "p50": 0.012657446009218705,
+      "p90": 0.01942059110375273,
+      "mean": 0.013089592647964896,
+      "max": 0.030337007252775057
+    },
+    "teacher_frame0_anchor_normalized_bbox": {
+      "p50": 0.07667322847517058,
+      "p90": 0.09709662055207743,
+      "mean": 0.07262670812275347,
+      "max": 0.10244606062760125
+    },
+    "cross_context_t0_uv_normalized_frame0_bbox": {
+      "p50": 0.5776427228342393,
+      "p90": 0.6264447022811945,
+      "mean": 0.5601938286306204,
+      "max": 0.6645770890730079
+    },
+    "registration_crossfit_normalized_3d_bbox": {
+      "p50": 0.05352195343552174,
+      "p90": 0.10476687981902115,
+      "mean": 0.06343653940702923,
+      "max": 0.157335538423927
+    },
+    "registration_fraction_below_10pct": 0.8958333333333334,
+    "graph": {
+      "edge_count": 88,
+      "component_count": 1,
+      "component_sizes": [
+        48
+      ],
+      "bridge_edges": [],
+      "connected": true
+    },
+    "shapes": {
+      "observed": [
+        7,
+        48,
+        3
+      ],
+      "teacher": [
+        22,
+        48,
+        3
+      ],
+      "p0": [
+        9,
+        48,
+        3
+      ],
+      "h_output": [
+        9,
+        48,
+        16
+      ]
+    },
+    "sources": {
+      "baseline": "MotionForesight, seven observed frames only",
+      "pseudo_gt": "TrackCraft3R, offline full22 query-only"
+    }
+  },
+  "quality_after": {
+    "status": "FAIL",
+    "training_approved": false,
+    "video_id": "drift-turn",
+    "protocol": "official_interleaved23_pj0_anchor_2026-09-28",
+    "query_reference_source_frame_index": 14,
+    "output_camera_source_frame_index": 20,
+    "offline_teacher_input_source_frames": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "teacher_output_source_frames": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "extra_context_not_evaluated_source_frame": 36,
+    "observed_source_frames": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "evaluated_future_source_frames": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "observed_trackcraft_protocol": "nonofficial 7-frame diagnostic; no future-frame padding",
+    "gates": {
+      "frame0_query_48": true,
+      "observed_frame0_anchor_p90_le_5pct": true,
+      "observed_frame0_anchor_max_le_10pct": true,
+      "teacher_frame0_anchor_p90_le_5pct": true,
+      "teacher_frame0_anchor_max_le_10pct": true,
+      "cross_context_t0_uv_p90_le_5pct": false,
+      "cross_context_t0_uv_max_le_10pct": false,
+      "valid_queries_at_least_44": true,
+      "registration_p90_le_10pct": false,
+      "registration_90pct_below_10pct": false,
+      "registration_max_le_20pct": true,
+      "valid_graph_connected": true,
+      "finite_predictions_teacher": true,
+      "official_teacher_interleaved_12_frame_runs": true
+    },
+    "valid_query_count": 48,
+    "observed_frame0_anchor_normalized_bbox": {
+      "p50": 0.008583098496478102,
+      "p90": 0.01127593002889002,
+      "mean": 0.008014847394976462,
+      "max": 0.013672526192173119
+    },
+    "teacher_frame0_anchor_normalized_bbox": {
+      "p50": 0.008583126583771247,
+      "p90": 0.011275918834028637,
+      "mean": 0.0080148533697319,
+      "max": 0.013672501891181781
+    },
+    "cross_context_t0_uv_normalized_frame0_bbox": {
+      "p50": 0.39363041140644045,
+      "p90": 0.4357064627493452,
+      "mean": 0.36720909348291797,
+      "max": 0.4729465897214847
+    },
+    "registration_crossfit_normalized_3d_bbox": {
+      "p50": 0.07187326944609318,
+      "p90": 0.11710372776730293,
+      "mean": 0.07411865070791751,
+      "max": 0.1820624508320289
+    },
+    "registration_fraction_below_10pct": 0.8333333333333334,
+    "graph": {
+      "edge_count": 88,
+      "component_count": 1,
+      "component_sizes": [
+        48
+      ],
+      "bridge_edges": [],
+      "connected": true
+    },
+    "interpretation_limit": "Pj0 anchoring fixes the frame0 output contract but does not validate future pseudo-trajectories or observed/full DA3 consistency"
+  },
+  "cross_context_t0_uv_after_px": {
+    "p50": 34.87130025325784,
+    "p90": 38.59877297216555,
+    "mean": 32.53066374830394,
+    "max": 41.897836285071136
+  }
+}

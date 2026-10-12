@@ -1,0 +1,61 @@
+{
+  "formal_e2_ready": true,
+  "protocol": {
+    "minimum_independent_videos": 1,
+    "query_count_range": [
+      48,
+      64
+    ],
+    "required_observed_history": true,
+    "required_time_metadata": true,
+    "required_projection_consistency_tolerance": 0.001,
+    "main_graph": "2d_symmetric_knn_k3",
+    "minimum_comparison": "observed_3d_symmetric_knn_k3",
+    "hybrid": "deferred_until_real_mask_depth_boundary_data"
+  },
+  "data_root": "experiences_results\\surface-relation-formal-e2-trackcraft-bundles-2026-09-23",
+  "npz_file_count": 1,
+  "valid_npz_file_count": 1,
+  "source_video_count": 1,
+  "source_videos": {
+    "cb78dba8-6647-4ec7-875c-6ba1548f8312": {
+      "file_count": 1,
+      "query_count_min": 64,
+      "query_count_max": 64,
+      "query_count_values": [
+        64
+      ],
+      "projection_error_max": 6.103515625e-05,
+      "time_metadata_file_count": 1,
+      "paths": [
+        "cb78dba8-6647-4ec7-875c-6ba1548f8312.npz"
+      ]
+    }
+  },
+  "reasons_not_ready": [],
+  "records": [
+    {
+      "path": "cb78dba8-6647-4ec7-875c-6ba1548f8312.npz",
+      "source_video_group": "cb78dba8-6647-4ec7-875c-6ba1548f8312",
+      "status": "ok",
+      "query_count": 64,
+      "history_frames": 3,
+      "prediction_shape": [
+        9,
+        64,
+        3
+      ],
+      "pseudo_gt_shape": [
+        9,
+        64,
+        3
+      ],
+      "projection_max_abs_error": 6.103515625e-05,
+      "has_time_metadata": true,
+      "missing_time_keys": [],
+      "trajectory_source": "trackcraft3r_pseudo_gt",
+      "prediction_source": "controlled_perturbation_baseline",
+      "valid_fraction": 1.0
+    }
+  ]
+}

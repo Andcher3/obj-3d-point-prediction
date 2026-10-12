@@ -1,0 +1,17 @@
+{
+  "name": "soccerball_7frames",
+  "frame_count": 7,
+  "query_source_model_index": 6,
+  "query_source_video_index": 14,
+  "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62",
+  "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a",
+  "seconds": 0.11177706718444824,
+  "peak_allocated_bytes": 10517212160,
+  "raw_output": true,
+  "t0_posthoc_alignment": false,
+  "scale": "global ambiguous model scale; not meters",
+  "coordinate_frame": "context view0 camera",
+  "video_fps": 8,
+  "video_fps_meaning": "playback only",
+  "numerical_quality_evaluation_started": false
+}

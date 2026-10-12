@@ -1,0 +1,12 @@
+test_camera_conversion (test_prepare_uniquery4r_movif_gt.PreparationChecks) ... ok
+test_erosion_image_boundary (test_prepare_uniquery4r_movif_gt.PreparationChecks) ... ok
+test_material_identity_and_motion (test_prepare_uniquery4r_movif_gt.PreparationChecks) ... ok
+test_metrics_oracle_and_fixed_scale (test_prepare_uniquery4r_movif_gt.PreparationChecks) ... ok
+test_synthetic_scene_preparation (test_prepare_uniquery4r_movif_gt.PreparationChecks) ... ok
+test_tf_example_wire_parser (test_prepare_uniquery4r_movif_gt.PreparationChecks) ... ok
+test_truncated_proto_rejected (test_prepare_uniquery4r_movif_gt.PreparationChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.208s
+
+OK

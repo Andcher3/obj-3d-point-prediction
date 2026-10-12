@@ -1,0 +1,9 @@
+{
+  "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/query-previews-cpu.zip",
+  "bytes": 64469941,
+  "sha256": "9e3edac21aaf4933471087a7f39d21c1f9411ea374faf42e17ac7fc3c6b8492b",
+  "zip_crc_pass": true,
+  "query_count": 7680,
+  "scenes": 160,
+  "future_rgb_included": false
+}

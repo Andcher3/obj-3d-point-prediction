@@ -1,0 +1,46 @@
+{
+  "video_id": "9069bd26-0139-4e88-9957-9f9489b35a91",
+  "scope": "t0-first-frame TrackCraft3R teacher audit; no Relation Head training",
+  "teacher_frame_count": 16,
+  "formal_t0_dense_frame_index": 0,
+  "future_slice": "1:10",
+  "fixed_query_frame0_anchor": true,
+  "valid_query_count": 48,
+  "match_error_px": {
+    "p50": 0.4098910386706085,
+    "max": 0.5717024283768651
+  },
+  "crossfit_registration_norm": {
+    "p50": 0.0456235636571421,
+    "p90": 0.14026977821373898,
+    "max": 0.3924905334931236,
+    "count_over_10pct": 7
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_fit_p90_m": 0.11506305281929491,
+      "holdout_p90_m": 0.08601920907451471,
+      "scale": 1.2163498628764118
+    },
+    {
+      "fold": 1,
+      "train_fit_p90_m": 0.09594300795836179,
+      "holdout_p90_m": 0.14327171776210829,
+      "scale": 1.1753021154227468
+    },
+    {
+      "fold": 2,
+      "train_fit_p90_m": 0.10463643113562016,
+      "holdout_p90_m": 0.14551519618371983,
+      "scale": 1.3129289402919022
+    },
+    {
+      "fold": 3,
+      "train_fit_p90_m": 0.12975516998740255,
+      "holdout_p90_m": 0.07804122745284997,
+      "scale": 1.3007266620011269
+    }
+  ],
+  "gate": "FAIL"
+}

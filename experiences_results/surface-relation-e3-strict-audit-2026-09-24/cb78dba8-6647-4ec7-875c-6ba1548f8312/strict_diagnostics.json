@@ -1,0 +1,31 @@
+{
+  "video_id": "cb78dba8-6647-4ec7-875c-6ba1548f8312",
+  "direct_uv_self_consistency": {
+    "finite_count": 48,
+    "similarity_fit_p90_m": 0.08850343770762294
+  },
+  "pairwise_distance_relative_error": {
+    "p50": 0.11522682539007141,
+    "p90": 0.33925546769542936,
+    "max": 1.7057118238267284
+  },
+  "formal_bbox_xyxy": [
+    402.0,
+    236.0,
+    501.0,
+    388.0
+  ],
+  "formal_bbox_diag_2d": 181.39735389470266,
+  "query_pairwise_spacing_px": {
+    "p50": 13.038404810405298,
+    "p90": 16.1245154965971,
+    "max": 17.4928556845359
+  },
+  "query_pairwise_second_spacing_gap_px": {
+    "p50": 0.6577724541836867,
+    "p90": 4.651348094048057,
+    "min": 0.0
+  },
+  "note": "These spacing fields describe distances among query UV points, not distances to dense-track candidates.",
+  "prior_audit_status": "FAIL"
+}

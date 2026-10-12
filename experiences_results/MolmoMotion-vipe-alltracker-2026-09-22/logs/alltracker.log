@@ -1,0 +1,57 @@
+Downloading: "https://download.pytorch.org/models/convnext_tiny-983f1562.pth" to /root/autodl-tmp/vipe-cache/torch/hub/checkpoints/convnext_tiny-983f1562.pth
+  0%|          | 0.00/109M [00:00<?, ?B/s] 18%|█▊        | 19.6M/109M [00:00<00:00, 201MB/s] 36%|███▌      | 38.9M/109M [00:00<00:00, 199MB/s] 53%|█████▎    | 57.9M/109M [00:00<00:00, 192MB/s] 71%|███████   | 77.6M/109M [00:00<00:00, 198MB/s] 90%|████████▉ | 98.1M/109M [00:00<00:00, 204MB/s]100%|██████████| 109M/109M [00:00<00:00, 195MB/s] 
++-------------------------------------------+------------+
+|                  Modules                  | Parameters |
++-------------------------------------------+------------+
+|      cnn.features.3.0.block.3.weight      |   147456   |
+|      cnn.features.3.0.block.5.weight      |   147456   |
+|      cnn.features.3.1.block.3.weight      |   147456   |
+|      cnn.features.3.1.block.5.weight      |   147456   |
+|      cnn.features.3.2.block.3.weight      |   147456   |
+|      cnn.features.3.2.block.5.weight      |   147456   |
+|          cnn.features.4.1.weight          |   663552   |
+|      cnn.features.5.0.block.3.weight      |   589824   |
+|      cnn.features.5.0.block.5.weight      |   589824   |
+|      cnn.features.5.1.block.3.weight      |   589824   |
+|      cnn.features.5.1.block.5.weight      |   589824   |
+|      cnn.features.5.2.block.3.weight      |   589824   |
+|      cnn.features.5.2.block.5.weight      |   589824   |
+|      cnn.features.5.3.block.3.weight      |   589824   |
+|      cnn.features.5.3.block.5.weight      |   589824   |
+|      cnn.features.5.4.block.3.weight      |   589824   |
+|      cnn.features.5.4.block.5.weight      |   589824   |
+|      cnn.features.5.5.block.3.weight      |   589824   |
+|      cnn.features.5.5.block.5.weight      |   589824   |
+|      cnn.features.5.6.block.3.weight      |   589824   |
+|      cnn.features.5.6.block.5.weight      |   589824   |
+|      cnn.features.5.7.block.3.weight      |   589824   |
+|      cnn.features.5.7.block.5.weight      |   589824   |
+|      cnn.features.5.8.block.3.weight      |   589824   |
+|      cnn.features.5.8.block.5.weight      |   589824   |
+|          upsample_weight.0.weight         |   294912   |
+|          upsample_weight.2.weight         |   147456   |
+|             flow_head.0.weight            |   294912   |
+|           visconf_head.0.weight           |   294912   |
+| update_block.motion_encoder.convc1.weight |   207360   |
+| update_block.motion_encoder.convc2.weight |   884736   |
+| update_block.motion_encoder.convf2.weight |   147456   |
+|  update_block.motion_encoder.conv.weight  |   290304   |
++-------------------------------------------+------------+
+total params: 16.48 M
+Downloading: "https://huggingface.co/aharley/alltracker/resolve/main/alltracker.pth" to /root/autodl-tmp/vipe-cache/torch/hub/checkpoints/alltracker.pth
+  0%|          | 0.00/62.9M [00:00<?, ?B/s]  0%|          | 128k/62.9M [00:00<05:08, 213kB/s]  0%|          | 256k/62.9M [00:00<03:11, 343kB/s]  1%|          | 384k/62.9M [00:01<02:45, 397kB/s]  1%|          | 640k/62.9M [00:01<01:33, 700kB/s]  1%|▏         | 896k/62.9M [00:01<01:11, 913kB/s]  2%|▏         | 1.12M/62.9M [00:01<00:54, 1.19MB/s]  2%|▏         | 1.38M/62.9M [00:01<00:46, 1.39MB/s]  3%|▎         | 1.75M/62.9M [00:01<00:46, 1.37MB/s]  4%|▎         | 2.25M/62.9M [00:02<00:32, 1.96MB/s]  5%|▌         | 3.38M/62.9M [00:02<00:16, 3.74MB/s]  6%|▌         | 3.88M/62.9M [00:02<00:19, 3.23MB/s]  9%|▉         | 5.88M/62.9M [00:02<00:11, 5.08MB/s] 11%|█         | 7.00M/62.9M [00:02<00:10, 5.81MB/s] 14%|█▍        | 8.88M/62.9M [00:03<00:07, 7.10MB/s] 16%|█▌        | 9.88M/62.9M [00:03<00:09, 6.01MB/s] 19%|█▉        | 12.1M/62.9M [00:03<00:06, 7.95MB/s] 21%|██        | 13.0M/62.9M [00:03<00:08, 6.40MB/s] 24%|██▎       | 14.9M/62.9M [00:04<00:09, 5.58MB/s] 25%|██▌       | 15.9M/62.9M [00:04<00:07, 6.23MB/s] 27%|██▋       | 17.2M/62.9M [00:04<00:06, 7.32MB/s] 29%|██▉       | 18.1M/62.9M [00:04<00:07, 6.10MB/s] 30%|███       | 19.1M/62.9M [00:04<00:08, 5.50MB/s] 32%|███▏      | 19.9M/62.9M [00:04<00:07, 5.73MB/s] 33%|███▎      | 20.5M/62.9M [00:05<00:10, 4.15MB/s] 36%|███▌      | 22.5M/62.9M [00:05<00:06, 6.18MB/s] 37%|███▋      | 23.2M/62.9M [00:05<00:07, 5.45MB/s] 38%|███▊      | 23.9M/62.9M [00:05<00:09, 4.24MB/s] 41%|████      | 25.9M/62.9M [00:06<00:07, 5.11MB/s] 42%|████▏     | 26.6M/62.9M [00:06<00:08, 4.33MB/s] 44%|████▍     | 27.9M/62.9M [00:06<00:06, 5.26MB/s] 47%|████▋     | 29.4M/62.9M [00:06<00:05, 6.78MB/s] 48%|████▊     | 30.2M/62.9M [00:07<00:05, 5.92MB/s] 49%|████▉     | 31.0M/62.9M [00:07<00:07, 4.51MB/s] 50%|█████     | 31.8M/62.9M [00:07<00:06, 4.70MB/s] 51%|█████▏    | 32.4M/62.9M [00:07<00:06, 4.62MB/s] 53%|█████▎    | 33.5M/62.9M [00:07<00:05, 5.16MB/s] 55%|█████▍    | 34.5M/62.9M [00:08<00:05, 5.54MB/s] 56%|█████▌    | 35.4M/62.9M [00:08<00:04, 6.04MB/s] 59%|█████▉    | 37.0M/62.9M [00:08<00:03, 8.19MB/s] 60%|██████    | 38.0M/62.9M [00:08<00:04, 6.31MB/s] 62%|██████▏   | 38.8M/62.9M [00:08<00:04, 6.25MB/s] 63%|██████▎   | 39.5M/62.9M [00:08<00:04, 5.87MB/s] 64%|██████▎   | 40.1M/62.9M [00:08<00:04, 5.25MB/s] 65%|██████▍   | 40.8M/62.9M [00:09<00:04, 4.66MB/s] 66%|██████▋   | 41.8M/62.9M [00:09<00:04, 5.38MB/s] 68%|██████▊   | 42.8M/62.9M [00:09<00:03, 5.62MB/s] 70%|███████   | 44.1M/62.9M [00:09<00:02, 7.17MB/s] 71%|███████▏  | 44.9M/62.9M [00:09<00:03, 4.99MB/s] 72%|███████▏  | 45.5M/62.9M [00:10<00:03, 4.73MB/s] 73%|███████▎  | 46.1M/62.9M [00:10<00:03, 5.00MB/s] 75%|███████▌  | 47.4M/62.9M [00:10<00:02, 6.34MB/s] 76%|███████▋  | 48.1M/62.9M [00:10<00:03, 4.51MB/s] 79%|███████▉  | 49.6M/62.9M [00:10<00:02, 5.07MB/s] 81%|████████▏ | 51.2M/62.9M [00:10<00:01, 6.98MB/s] 83%|████████▎ | 52.1M/62.9M [00:11<00:01, 6.16MB/s] 84%|████████▍ | 52.9M/62.9M [00:11<00:02, 4.21MB/s] 87%|████████▋ | 54.5M/62.9M [00:11<00:01, 5.94MB/s] 88%|████████▊ | 55.4M/62.9M [00:11<00:01, 4.99MB/s] 89%|████████▉ | 56.1M/62.9M [00:12<00:01, 5.19MB/s] 90%|█████████ | 56.9M/62.9M [00:12<00:01, 4.87MB/s] 92%|█████████▏| 57.6M/62.9M [00:12<00:01, 4.45MB/s] 93%|█████████▎| 58.2M/62.9M [00:12<00:01, 4.69MB/s] 94%|█████████▍| 59.2M/62.9M [00:12<00:00, 5.61MB/s] 96%|█████████▌| 60.2M/62.9M [00:12<00:00, 5.62MB/s] 98%|█████████▊| 61.5M/62.9M [00:13<00:00, 6.88MB/s] 99%|█████████▉| 62.2M/62.9M [00:13<00:00, 4.78MB/s]100%|██████████| 62.9M/62.9M [00:13<00:00, 4.92MB/s]
+loaded weights from https://huggingface.co/aharley/alltracker/resolve/main/alltracker.pth
+Resized from (720,1280) to (288,512) for inference (max_side=512)
+rgbs torch.Size([1, 25, 3, 288, 512])
+starting forward...
+/root/miniconda3/envs/vipe/lib/python3.10/site-packages/torch/functional.py:554: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4314.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+finished forward; 1.23 seconds / 25 frames; 20 fps
+traj_maps_e (float32) min = -30.00, mean = 198.44, max = 511.89 torch.Size([1, 25, 2, 288, 512])
+visconf_maps_e (float32) min = 0.00, mean = 0.98, max = 1.00 torch.Size([1, 25, 2, 288, 512])
+traj_maps_e shape: (288, 512)
+query poitns in [ 720. 1280.]
+Saved to /root/autodl-tmp/projects/molmo-vipe-test/output/tracks_2d/test_video_stride2_15fps/test_video_stride2_15fps_f0.npz
+(25, 8, 2)
+(25, 8)
+(288, 512)

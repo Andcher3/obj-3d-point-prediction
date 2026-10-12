@@ -1,0 +1,142 @@
+{
+  "protocol": {
+    "history_size": 3,
+    "history_frame_indices": [
+      0,
+      1,
+      2
+    ],
+    "future_horizon": 30,
+    "coordinate_frame": "ViPE world points transformed into camera coordinates at history frame 2",
+    "vipe_instance_segmentation": false,
+    "query_point_count": 8
+  },
+  "input_diagnostics": {
+    "history_centroid_step_m": [
+      0.007478605955839157,
+      0.0064048124477267265
+    ],
+    "history_mean_point_step_m": [
+      0.0074894847348332405,
+      0.006703254766762257
+    ],
+    "history_mean_pixel_step": [
+      0.2546174228191376,
+      1.0608729124069214
+    ],
+    "history_xyz_min": [
+      -0.04859812930226326,
+      -0.0027166581712663174,
+      0.7873124480247498
+    ],
+    "history_xyz_max": [
+      -0.026454653590917587,
+      0.04235966131091118,
+      0.8429734110832214
+    ]
+  },
+  "records": [
+    {
+      "prompt": "mouse",
+      "prompt_text": "Move the drink bottle to the right and place it next to the computer mouse.",
+      "seconds": 125.39458016585559,
+      "shape": [
+        8,
+        30,
+        3
+      ],
+      "future_array_sha256": "4c5f5f1c23aa98a5b9932b631a3d78a918e953e53c9c33fd940da86baa6b28e6",
+      "future_text_sha256": "4cc3cd262261bccfc7d1f8848aeffa4d42c2aa43519b0809880ef632495c792e",
+      "mean_path_length_m": 0.0008317788015119731,
+      "centroid_final_delta_m": [
+        -1.420825719833374e-05,
+        -0.00012145936489105225,
+        0.0005742311477661133
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "prompt": "black_cup",
+      "prompt_text": "Move the drink bottle to the right and place it next to the black water cup.",
+      "seconds": 121.31961658084765,
+      "shape": [
+        8,
+        30,
+        3
+      ],
+      "future_array_sha256": "4c5f5f1c23aa98a5b9932b631a3d78a918e953e53c9c33fd940da86baa6b28e6",
+      "future_text_sha256": "4cc3cd262261bccfc7d1f8848aeffa4d42c2aa43519b0809880ef632495c792e",
+      "mean_path_length_m": 0.0008317788015119731,
+      "centroid_final_delta_m": [
+        -1.420825719833374e-05,
+        -0.00012145936489105225,
+        0.0005742311477661133
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "prompt": "laptop",
+      "prompt_text": "Move the drink bottle toward the laptop and place it next to the laptop computer.",
+      "seconds": 120.46928552631289,
+      "shape": [
+        8,
+        30,
+        3
+      ],
+      "future_array_sha256": "4c5f5f1c23aa98a5b9932b631a3d78a918e953e53c9c33fd940da86baa6b28e6",
+      "future_text_sha256": "4cc3cd262261bccfc7d1f8848aeffa4d42c2aa43519b0809880ef632495c792e",
+      "mean_path_length_m": 0.0008317788015119731,
+      "centroid_final_delta_m": [
+        -1.420825719833374e-05,
+        -0.00012145936489105225,
+        0.0005742311477661133
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "prompt": "keep_holding",
+      "prompt_text": "Keep holding the drink bottle and do not put it down.",
+      "seconds": 119.83229853911325,
+      "shape": [
+        8,
+        30,
+        3
+      ],
+      "future_array_sha256": "4c5f5f1c23aa98a5b9932b631a3d78a918e953e53c9c33fd940da86baa6b28e6",
+      "future_text_sha256": "4cc3cd262261bccfc7d1f8848aeffa4d42c2aa43519b0809880ef632495c792e",
+      "mean_path_length_m": 0.0008317788015119731,
+      "centroid_final_delta_m": [
+        -1.420825719833374e-05,
+        -0.00012145936489105225,
+        0.0005742311477661133
+      ],
+      "finite_fraction": 1.0
+    }
+  ],
+  "pairwise": {
+    "mouse__vs__black_cup": {
+      "mean_point_distance_m": 0.0,
+      "max_point_distance_m": 0.0
+    },
+    "mouse__vs__laptop": {
+      "mean_point_distance_m": 0.0,
+      "max_point_distance_m": 0.0
+    },
+    "mouse__vs__keep_holding": {
+      "mean_point_distance_m": 0.0,
+      "max_point_distance_m": 0.0
+    },
+    "black_cup__vs__laptop": {
+      "mean_point_distance_m": 0.0,
+      "max_point_distance_m": 0.0
+    },
+    "black_cup__vs__keep_holding": {
+      "mean_point_distance_m": 0.0,
+      "max_point_distance_m": 0.0
+    },
+    "laptop__vs__keep_holding": {
+      "mean_point_distance_m": 0.0,
+      "max_point_distance_m": 0.0
+    }
+  }
+}

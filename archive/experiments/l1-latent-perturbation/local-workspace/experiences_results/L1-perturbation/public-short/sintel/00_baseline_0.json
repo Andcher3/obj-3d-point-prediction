@@ -1,0 +1,26 @@
+{
+  "run_index": 0,
+  "name": "baseline_0",
+  "sigma": 0.0,
+  "seed": 0,
+  "elapsed_seconds": 44.00613174773753,
+  "peak_gpu_memory_gib": 16.82855224609375,
+  "generated_tokens": 205,
+  "latent_vector_count": 4,
+  "latent_dim": 4096,
+  "latent_finite": true,
+  "latent_sha256": "9b438706d26666c3156ab7ba7d9261d58ca791cde37a15426a06f59dae97da8a",
+  "raw_sha256": "d96d69a68836182ce5ed13a1503e0992416f405877261ec7f1f4b21b78abd9bf",
+  "raw": "<reason>The video begins with a wide shot of a snowy mountain landscape, setting a serene and isolated scene. As the camera pans, it reveals a character standing on a snowy ledge, holding a weapon, suggesting a sense of readiness or anticipation. This character is then shown in a close-up, emphasizing their focused expression and the weapon they are holding, indicating a potential confrontation or significant event.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>The scene then transitions to a dimly lit room where a woman with red hair is seen, her expression serious and contemplative. This shift in setting and character suggests a change in the narrative focus, possibly indicating a new phase or a different perspective on the unfolding events. The woman's serious expression and the dim lighting create a sense of tension or impending action.</reason>\n<answer>The next event in the video is likely to involve the woman with red hair taking some significant action or decision, possibly related to the character on the snowy ledge or the broader narrative context.</answer><|im_end|>",
+  "visible": "<reason>The video begins with a wide shot of a snowy mountain landscape, setting a serene and isolated scene. As the camera pans, it reveals a character standing on a snowy ledge, holding a weapon, suggesting a sense of readiness or anticipation. This character is then shown in a close-up, emphasizing their focused expression and the weapon they are holding, indicating a potential confrontation or significant event.</reason> <reason>The scene then transitions to a dimly lit room where a woman with red hair is seen, her expression serious and contemplative. This shift in setting and character suggests a change in the narrative focus, possibly indicating a new phase or a different perspective on the unfolding events. The woman's serious expression and the dim lighting create a sense of tension or impending action.</reason> <answer>The next event in the video is likely to involve the woman with red hair taking some significant action or decision, possibly related to the character on the snowy ledge or the broader narrative context.</answer>",
+  "answer": "The next event in the video is likely to involve the woman with red hair taking some significant action or decision, possibly related to the character on the snowy ledge or the broader narrative context.",
+  "has_answer_tag": true,
+  "has_latent_tags": true,
+  "noise_stats": {
+    "noise_std": 0.0,
+    "noise_seed": 0,
+    "scale_mode": "rms",
+    "perturbed_step_count": 0,
+    "steps": []
+  }
+}

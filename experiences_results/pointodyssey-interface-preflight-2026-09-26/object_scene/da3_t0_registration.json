@@ -1,0 +1,28 @@
+{
+  "video_id": "scene_d78_0318_3rd",
+  "target_mask_ids": [
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147
+  ],
+  "query_count": 48,
+  "future_gt_valid_min": 48,
+  "future_visible_min": 29,
+  "da3_direct_t0": {
+    "t0_bbox_diagonal_in_model_units": 0.26899770849137333,
+    "fit_scale_gt_to_model": 0.21774523095878112,
+    "in_sample_residual_median_bbox_fraction": 0.10537274661118758,
+    "in_sample_residual_p90_bbox_fraction": 0.19211083401913523,
+    "held_out_residual_median_bbox_fraction": 0.10286974113829236,
+    "held_out_residual_p90_bbox_fraction": 0.2097371527089311,
+    "held_out_residual_max_bbox_fraction": 0.9797987163978057,
+    "held_out_residual_above_10_percent_count": 26
+  },
+  "gt_used_as_model_input": false,
+  "registration_gate_pass": false
+}

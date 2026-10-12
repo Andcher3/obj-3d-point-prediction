@@ -1,0 +1,169 @@
+{
+  "status": "PASS",
+  "scope": "formal-video observed-only E3 interface preflight; Relation Head not trained",
+  "video_id": "scene_d78_0318_3rd",
+  "checkpoint_config": {
+    "checkpoint_path": "/weka/scratch/hbharad2/users/yjangir1/future_flow_homaga/future-3d-scene-flow/models_pretrained/checkpoints/trackcraft3r/model.safetensors",
+    "model_id": "Wan-AI/Wan2.1-T2V-1.3B",
+    "lora_rank": 1024,
+    "lora_target_modules": "q,k,v,o,ffn.0,ffn.2",
+    "height": 320,
+    "width": 576,
+    "obs_frames": 7,
+    "total_frames": 22,
+    "regression_timestep": -1,
+    "trainable": [
+      "mask",
+      "io",
+      "head"
+    ],
+    "lora_scope": "attn",
+    "lora_last_n": 0,
+    "predict_vis": true,
+    "fresh_lora_rank": 32,
+    "fresh_lora_alpha": 32,
+    "fresh_lora_scope": "attn"
+  },
+  "input": {
+    "observed_rgb_shape": [
+      1,
+      7,
+      3,
+      320,
+      576
+    ],
+    "observed_pointmap_shape": [
+      1,
+      7,
+      3,
+      320,
+      576
+    ],
+    "observed_frame_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "observed_timestamps_s": [
+      0.0,
+      0.06666666666666667,
+      0.13333333333333333,
+      0.2,
+      0.26666666666666666,
+      0.3333333333333333,
+      0.4
+    ],
+    "observed_tensor_sha256": "4b85a3fd053db5c6b038b2e16c0aa0be143adbd7d9c8a128eb6f0716c626c239",
+    "future_frame_tensor_supplied_to_motionforesight": false,
+    "trackcraft_identity_mapping_scope": "seven observed frames only"
+  },
+  "outputs": {
+    "p0_future_shape": [
+      15,
+      48,
+      3
+    ],
+    "h_output_latent_shape": [
+      15,
+      48,
+      16
+    ],
+    "h_last_dit_shape": [
+      15,
+      48,
+      1536
+    ],
+    "finite": true,
+    "cache_npz": "outputs/pointodyssey_interface_pilot/export_scene_d78/p0_h_cache_aligned.npz"
+  },
+  "query_alignment": {
+    "count": 48,
+    "anchor": "first observed frame via observed-only TrackCraft3R",
+    "match_error_px_median": 0.512603759765625,
+    "match_error_px_max": 2.2127304077148438,
+    "permutation_sampling_max_abs_error": 0.0
+  },
+  "pseudo_gt_alignment": {
+    "method": "least-squares similarity estimated from shared t0 queries only",
+    "uses_future_points_for_alignment": false,
+    "scale": 0.23754207310747616,
+    "rotation_angle_deg": 22.3966346569007,
+    "translation_norm": 0.3301464021205902,
+    "raw_t0_error_median": 2.8729920387268066,
+    "raw_t0_error_max": 3.062574625015259,
+    "aligned_t0_error_median": 0.04908232390880585,
+    "aligned_t0_error_max": 0.21877804398536682,
+    "pseudo_gt_shape": [
+      15,
+      48,
+      3
+    ],
+    "valid_fraction": 0.7902777777777777
+  },
+  "time_mapping": {
+    "model_future_slots": 15,
+    "prediction_timestamps_s": [
+      0.4666666666666667,
+      0.5333333333333333,
+      0.6000000000000001,
+      0.6666666666666667,
+      0.7333333333333334,
+      0.8,
+      0.8666666666666667,
+      0.9333333333333333,
+      1.0,
+      1.0666666666666667,
+      1.1333333333333333,
+      1.2000000000000002,
+      1.2666666666666666,
+      1.3333333333333335,
+      1.4
+    ],
+    "formal_future_slot_indices_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "formal_match_errors_s": [
+      0.0,
+      0.0,
+      1.1102230246251565e-16,
+      1.1102230246251565e-16,
+      1.1102230246251565e-16,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.220446049250313e-16,
+      0.0,
+      2.220446049250313e-16,
+      0.0
+    ],
+    "tolerance_s": 0.03333333333333333,
+    "unique_mapping": true,
+    "valid": true,
+    "basis": "consecutive stride-1 model slots on an explicitly resampled 15 fps input grid",
+    "remaining_limit": "checkpoint training-rate calibration on Ego4D is not established"
+  },
+  "coordinate_frame": "last_observed_camera",
+  "ground_truth_source": "pointodyssey_v1.2_exact_rendered_tracks",
+  "gpu_peak_allocated_bytes": 11198361088
+}

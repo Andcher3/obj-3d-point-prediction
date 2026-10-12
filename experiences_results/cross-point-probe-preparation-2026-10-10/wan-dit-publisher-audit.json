@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-10T09:55:59Z",
+  "repository": "Wan-AI/Wan2.1-T2V-1.3B",
+  "revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+  "filename": "diffusion_pytorch_model.safetensors",
+  "publisher_metadata_endpoint": "https://hf-mirror.com/api/models/Wan-AI/Wan2.1-T2V-1.3B/revision/37ec512624d61f7aa208f7ea8140a131f93afc9a?blobs=true",
+  "bytes": 5676070424,
+  "publisher_sha256": "96b6b242ca1c2f24e9d02cd6596066fab6d310e2d7538f33ae267cb18d957e8f",
+  "computed_sha256": "96b6b242ca1c2f24e9d02cd6596066fab6d310e2d7538f33ae267cb18d957e8f",
+  "publisher_size_match": true,
+  "publisher_sha256_match": true,
+  "aria2_complete": true,
+  "model_loaded": false,
+  "gpu_used": false,
+  "all_assets_ready": false
+}

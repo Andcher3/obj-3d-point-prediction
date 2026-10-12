@@ -1,0 +1,59 @@
+Looking in indexes: http://mirrors.aliyun.com/pypi/simple
+ERROR: Could not find a version that satisfies the requirement ego4d (from versions: none)
+ERROR: No matching distribution found for ego4d
+Collecting ego4d
+  Downloading ego4d-1.7.3.tar.gz (94 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: boto3 in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from ego4d) (1.43.93)
+Requirement already satisfied: tqdm in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from ego4d) (4.70.1)
+Requirement already satisfied: regex in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from ego4d) (2026.9.10)
+Collecting dataclasses_json (from ego4d)
+  Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting iopath (from ego4d)
+  Downloading iopath-0.1.10.tar.gz (42 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: botocore<1.44.0,>=1.43.93 in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from boto3->ego4d) (1.43.93)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from boto3->ego4d) (1.1.0)
+Requirement already satisfied: s3transfer<0.20.0,>=0.19.0 in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from boto3->ego4d) (0.19.2)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from botocore<1.44.0,>=1.43.93->boto3->ego4d) (2.9.0.post0)
+Requirement already satisfied: urllib3!=2.2.0,<3,>=1.25.4 in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from botocore<1.44.0,>=1.43.93->boto3->ego4d) (2.7.0)
+Requirement already satisfied: six>=1.5 in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.44.0,>=1.43.93->boto3->ego4d) (1.17.0)
+Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses_json->ego4d)
+  Downloading marshmallow-3.26.2-py3-none-any.whl.metadata (7.3 kB)
+Collecting typing-inspect<1,>=0.4.0 (from dataclasses_json->ego4d)
+  Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+Requirement already satisfied: packaging>=17.0 in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from marshmallow<4.0.0,>=3.18.0->dataclasses_json->ego4d) (26.3)
+Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses_json->ego4d)
+  Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Requirement already satisfied: typing-extensions>=3.7.4 in /root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages (from typing-inspect<1,>=0.4.0->dataclasses_json->ego4d) (4.16.0)
+Collecting portalocker (from iopath->ego4d)
+  Downloading portalocker-4.3.2-py3-none-any.whl.metadata (10 kB)
+Downloading dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+Downloading marshmallow-3.26.2-py3-none-any.whl (50 kB)
+Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Downloading portalocker-4.3.2-py3-none-any.whl (128 kB)
+Building wheels for collected packages: ego4d, iopath
+  Building wheel for ego4d (pyproject.toml): started
+  Building wheel for ego4d (pyproject.toml): finished with status 'done'
+  Created wheel for ego4d: filename=ego4d-1.7.3-py3-none-any.whl size=118281 sha256=2526ca6896fd001c7b639d57f27fd4ef131e699bc194e2714a7233346604b947
+  Stored in directory: /tmp/pip-ephem-wheel-cache-pm8c1oqv/wheels/f5/df/07/e6fbe27d3ca2410baf3e04485d356eda052539f27ac2d52d8a
+  Building wheel for iopath (pyproject.toml): started
+  Building wheel for iopath (pyproject.toml): finished with status 'done'
+  Created wheel for iopath: filename=iopath-0.1.10-py3-none-any.whl size=31598 sha256=adbb0a997ab2a6dadc3091d15ae93b299396ec567ce77543bbbe2719e445d2d1
+  Stored in directory: /tmp/pip-ephem-wheel-cache-pm8c1oqv/wheels/ba/5e/16/6117f8fe7e9c0c161a795e10d94645ebcf301ccbd01f66d8ec
+Successfully built ego4d iopath
+Installing collected packages: portalocker, mypy-extensions, marshmallow, typing-inspect, iopath, dataclasses_json, ego4d
+
+Successfully installed dataclasses_json-0.6.7 ego4d-1.7.3 iopath-0.1.10 marshmallow-3.26.2 mypy-extensions-1.1.0 portalocker-4.3.2 typing-inspect-0.9.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

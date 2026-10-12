@@ -1,0 +1,51 @@
+{
+  "stage": "optional official64-frame comparison code; current active CPU preparation uses original22 MOVi-F/query6 with nominal density sampling",
+  "active_protocol": "configs/uniquery4r_movif_density_query6_2026-10-10.json",
+  "purpose": "UniQuery4R tracking-teacher benchmark diagnostic; object forecasting task unchanged",
+  "gpu_forward_authorized": false,
+  "automatic_download_authorized": false,
+  "frame_count": 64,
+  "frame_selection": "native first64, no temporal stride, padding, repeat or interpolation",
+  "query_source_frame": 0,
+  "query_selection": "all source-visible annotated points with finite source UV/XYZ, nonzero Z and in-image UV",
+  "query_subsampling": false,
+  "object_mask_erosion": false,
+  "future_visibility_filter": false,
+  "dynamic_rule": "cumulative sum of consecutive GT 3D step lengths >0.01 in reference-coordinate metric units",
+  "dynamic_selection_source": "GT only; no prediction-based point exclusion",
+  "dynamic_scale": "recompute median norm ratio on dynamic subset across all64 frames",
+  "point_metric": "warp3d absolute target positions; do not substitute independently decoded warp3d_delta",
+  "distance_thresholds_m": [0.1, 0.3, 0.5, 1.0],
+  "threshold_comparison": "<=",
+  "alignment": "one global scale only, no rotation/translation/pointwise offset/focal fit",
+  "nonfinite_policy": "explicit failure; reference equivalence certified only for finite samples",
+  "coordinate_frame": "input frame0 camera",
+  "gt_camera_provenance": {
+    "original_worldtrack": "extrinsics_w2c from verified original dataset",
+    "trackcraft_enriched": "extrinsics_w2c_gt required; never use estimated extrinsics_w2c for GT"
+  },
+  "resolution": "official keep_ratio max_size504 patch14, no upscaling",
+  "query_uv_mode_default": "open_d4rt_endpoint; acknowledged public sparse evaluator",
+  "query_uv_mode_alternative": "pixel_center_resize; report separately, do not select by best score",
+  "chunk_size": 5000,
+  "encode_protocol": "all64 RGB frames in one forward; query-axis chunks only, no temporal windows",
+  "gt_as_model_input": false,
+  "required_subset_counts": {"pstudio_mini":50,"po_mini":50,"ds_mini":50,"adt_mini":50},
+  "aggregation": "sequence means within subset, then equal-weight four-subset macro",
+  "reference_st4rtrack_commit": "0f9a3f44a7ebac76600cd31ec9eea5228ad7db91",
+  "deployed_uniquery4r_commit": "95119742e61c64c27b09349035019c8cd7b41e62",
+  "unresolved": [
+    "UniQuery4R's exact unpublished evaluation wrapper, source normalization and original sequence identities",
+    "original WorldTrack source-file hashes and full200 samples not acquired",
+    "MOVi-F source has24 frames; existing caches have22/query6 and cannot be relabeled64/query0",
+    "TrackCraft3R enriched PO contains23 sequences, not a complete50-sequence substitute",
+    "no GPU inference or performance reproduction has been performed"
+  ],
+  "sources": [
+    "https://arxiv.org/html/2608.17283v1",
+    "https://github.com/HavenFeng/St4RTrack/blob/0f9a3f44a7ebac76600cd31ec9eea5228ad7db91/dust3r/track_eval.py",
+    "https://github.com/HavenFeng/St4RTrack/blob/0f9a3f44a7ebac76600cd31ec9eea5228ad7db91/dust3r/track_eval_util.py",
+    "https://github.com/Lijiaxin0111/Open-d4rt/blob/main/eval_track3d_in_worldtrack.py",
+    "https://huggingface.co/datasets/trackcraft3r/trackcraft3r-eval/blob/main/README.md"
+  ]
+}

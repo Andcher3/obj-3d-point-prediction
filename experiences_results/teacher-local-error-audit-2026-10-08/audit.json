@@ -1,0 +1,1309 @@
+{
+  "status": "LOCAL_CACHE_AUDIT_NO_GPU_NO_TRAINING",
+  "videos": {
+    "car-turn": {
+      "route_a_t0_mask_interface_control": {
+        "known_t0_query_count": 48,
+        "processed_hw": [
+          224,
+          392
+        ],
+        "source_hw": [
+          480,
+          854
+        ],
+        "actual_ab_helper_hit_count_known_t0": 0,
+        "correctly_scaled_hit_count_known_t0": 48,
+        "palette_indices_t0": [
+          0,
+          1
+        ],
+        "scaling_roundtrip_max_abs_px": 1.4210854715202004e-14,
+        "stored_source_query_conversion_max_abs_px": 3.487723222406203e-05
+      },
+      "cached_frame0_teacher_diagnostics": {
+        "source_protocol": "2026-09-28 frame0-query official interleaving; not 2026-09-29 Route A",
+        "arrays_finite": true,
+        "query_same_processed_pixels_obs_teacher_max_abs": 0.0,
+        "inferred_effective_K_from_saved_Pj0": [
+          401.60260035937125,
+          382.73535511417225,
+          196.00000008241514,
+          112.00000000879561
+        ],
+        "inferred_K_fit_max_px": 8.831820719565768e-06,
+        "raw_teacher_frame0_query_error_processed_px": [
+          {
+            "p50": 20.912197071816074,
+            "p90": 27.318893800651505,
+            "max": 32.77883649490479
+          },
+          {
+            "p50": 20.97005808476743,
+            "p90": 29.405813882290285,
+            "max": 35.238758699213975
+          }
+        ],
+        "anchored_teacher_frame0_query_error_processed_px": [
+          {
+            "p50": 0.710102170581532,
+            "p90": 1.0461809170084138,
+            "max": 1.1927018475106197
+          },
+          {
+            "p50": 0.710102170581532,
+            "p90": 1.0461809170084138,
+            "max": 1.1927018475106197
+          }
+        ],
+        "input_geometry_same_frame14": {
+          "original_crossfit_fraction_bbox": {
+            "p50": 0.023534701106519285,
+            "p90": 0.0647533041120509,
+            "max": 0.08241191347812737
+          },
+          "corrected_crossfit_fraction_bbox": {
+            "p50": 0.02353470110651943,
+            "p90": 0.06475330411205045,
+            "max": 0.08241191347812737
+          },
+          "reflection_folds": 0,
+          "difference_max_fraction_bbox": 7.327669241755664e-16,
+          "pairwise_distance_relative_difference_after_median_scale": {
+            "p50": 0.04496387096201176,
+            "p90": 0.1410743050249683,
+            "max": 0.5018607885459313
+          },
+          "interpretation": "Same source14 query pixels; input Pj0 geometry discrepancy, not 3D ground-truth error. Context/model-grid intrinsics sampling remain coupled."
+        },
+        "interleave_index_exact_match": true,
+        "source_frames_exact_match": true,
+        "raw_merge_reproduction_max_abs": 2.9802322387695312e-08,
+        "anchored_merge_reproduction_max_abs": 0.0,
+        "within_run_constant_offset_residual_max_abs": 5.960464477539063e-08,
+        "teacher_start_exactly_input_Pj0_max_abs": 0.0,
+        "different_anchor_offsets_between_runs_norm": {
+          "p50": 0.008628927080475895,
+          "p90": 0.014698524010508893,
+          "max": 0.033844528494404946
+        },
+        "anchor_induced_adjacent_step_change_norm": {
+          "p50": 0.008238769125879217,
+          "p90": 0.014698542309404223,
+          "max": 0.03384456231123374
+        },
+        "anchor_induced_adjacent_step_p90_fraction_median_query_spacing": 0.24154023690639875,
+        "mask_recomputation": [
+          {
+            "source_frame": 14,
+            "correct_count_of_48": 48,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 15,
+            "correct_count_of_48": 39,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 16,
+            "correct_count_of_48": 40,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 17,
+            "correct_count_of_48": 39,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 18,
+            "correct_count_of_48": 39,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 19,
+            "correct_count_of_48": 35,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 20,
+            "correct_count_of_48": 34,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 21,
+            "correct_count_of_48": 31,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 22,
+            "correct_count_of_48": 40,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 23,
+            "correct_count_of_48": 32,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 24,
+            "correct_count_of_48": 36,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 25,
+            "correct_count_of_48": 30,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 26,
+            "correct_count_of_48": 32,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 27,
+            "correct_count_of_48": 22,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 28,
+            "correct_count_of_48": 22,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 29,
+            "correct_count_of_48": 22,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 30,
+            "correct_count_of_48": 25,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 31,
+            "correct_count_of_48": 20,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 32,
+            "correct_count_of_48": 23,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 33,
+            "correct_count_of_48": 22,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 34,
+            "correct_count_of_48": 24,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 35,
+            "correct_count_of_48": 25,
+            "unscaled_count_of_48": 0
+          }
+        ]
+      },
+      "route_a_observed_query_mapping_metadata_only": {
+        "unique_frame0_queries": 48,
+        "mapping_p90_fraction_bbox": 0.005523842555227081,
+        "mapping_max_fraction_bbox": 0.00767587355815761,
+        "point_identity_independently_verified": false
+      },
+      "route_a_metadata_only": {
+        "input_frames": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "output_frames": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "same_input_Pj0_between_runs_max_abs": 0.0,
+        "original_merge_displacement_change_max_abs": 0.007948637008666992,
+        "raw_npz_available_in_route_a_local_directory": false
+      },
+      "previous_pose_diagnostic_only": {
+        "pointmap_roundtrip_max_px": 1.2710574864626038e-13,
+        "loader_intrinsics_difference_max_abs": 0.0,
+        "loader_pose_difference_max_abs": 1.138383577942524e-17,
+        "frame0_pose_identity_difference_max_abs": 1.138383577942524e-17
+      },
+      "previous_future_projection_alternatives_metadata_only": {
+        "w2c_per_frame": [
+          31,
+          40,
+          32,
+          36,
+          30,
+          32,
+          22,
+          22,
+          22
+        ],
+        "identity": [
+          31,
+          40,
+          33,
+          37,
+          35,
+          37,
+          30,
+          32,
+          29
+        ],
+        "inverse_as_w2c": [
+          36,
+          43,
+          34,
+          41,
+          38,
+          37,
+          29,
+          31,
+          27
+        ],
+        "w2c0_fixed": [
+          31,
+          40,
+          33,
+          37,
+          35,
+          37,
+          30,
+          32,
+          29
+        ]
+      }
+    },
+    "drift-turn": {
+      "route_a_t0_mask_interface_control": {
+        "known_t0_query_count": 48,
+        "processed_hw": [
+          224,
+          392
+        ],
+        "source_hw": [
+          480,
+          854
+        ],
+        "actual_ab_helper_hit_count_known_t0": 0,
+        "correctly_scaled_hit_count_known_t0": 48,
+        "palette_indices_t0": [
+          0,
+          1
+        ],
+        "scaling_roundtrip_max_abs_px": 1.4210854715202004e-14,
+        "stored_source_query_conversion_max_abs_px": 1.7438616112031013e-05
+      },
+      "cached_frame0_teacher_diagnostics": {
+        "source_protocol": "2026-09-28 frame0-query official interleaving; not 2026-09-29 Route A",
+        "arrays_finite": true,
+        "query_same_processed_pixels_obs_teacher_max_abs": 0.0,
+        "inferred_effective_K_from_saved_Pj0": [
+          556.9821181960248,
+          562.4603865769997,
+          196.00000020027542,
+          112.00000007137918
+        ],
+        "inferred_K_fit_max_px": 6.603944240164617e-06,
+        "raw_teacher_frame0_query_error_processed_px": [
+          {
+            "p50": 1.903308101518263,
+            "p90": 3.998597752514037,
+            "max": 4.95297066924707
+          },
+          {
+            "p50": 2.457594285762782,
+            "p90": 3.961195280526044,
+            "max": 6.451238104636853
+          }
+        ],
+        "anchored_teacher_frame0_query_error_processed_px": [
+          {
+            "p50": 0.7603700291223352,
+            "p90": 0.9989215889209723,
+            "max": 1.2112323312432163
+          },
+          {
+            "p50": 0.7603700291223352,
+            "p90": 0.9989215889209723,
+            "max": 1.2112323312432163
+          }
+        ],
+        "input_geometry_same_frame14": {
+          "original_crossfit_fraction_bbox": {
+            "p50": 0.06117313904893183,
+            "p90": 0.10122261087199266,
+            "max": 0.1392237899444497
+          },
+          "corrected_crossfit_fraction_bbox": {
+            "p50": 0.061173139048932276,
+            "p90": 0.10122261087199237,
+            "max": 0.1392237899444497
+          },
+          "reflection_folds": 0,
+          "difference_max_fraction_bbox": 1.9619042397428856e-15,
+          "pairwise_distance_relative_difference_after_median_scale": {
+            "p50": 0.07924513684418204,
+            "p90": 0.23944587253263694,
+            "max": 0.6304203861827185
+          },
+          "interpretation": "Same source14 query pixels; input Pj0 geometry discrepancy, not 3D ground-truth error. Context/model-grid intrinsics sampling remain coupled."
+        },
+        "interleave_index_exact_match": true,
+        "source_frames_exact_match": true,
+        "raw_merge_reproduction_max_abs": 5.960464477539063e-08,
+        "anchored_merge_reproduction_max_abs": 0.0,
+        "within_run_constant_offset_residual_max_abs": 1.1210795491933823e-07,
+        "teacher_start_exactly_input_Pj0_max_abs": 0.0,
+        "different_anchor_offsets_between_runs_norm": {
+          "p50": 0.0033810229544790947,
+          "p90": 0.00513390299111725,
+          "max": 0.006215995862566458
+        },
+        "anchor_induced_adjacent_step_change_norm": {
+          "p50": 0.0033587559165400823,
+          "p90": 0.005131869578304556,
+          "max": 0.006216142381137706
+        },
+        "anchor_induced_adjacent_step_p90_fraction_median_query_spacing": 0.06610616850690097,
+        "mask_recomputation": [
+          {
+            "source_frame": 14,
+            "correct_count_of_48": 48,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 15,
+            "correct_count_of_48": 37,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 16,
+            "correct_count_of_48": 27,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 17,
+            "correct_count_of_48": 23,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 18,
+            "correct_count_of_48": 19,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 19,
+            "correct_count_of_48": 16,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 20,
+            "correct_count_of_48": 8,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 21,
+            "correct_count_of_48": 5,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 22,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 23,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 24,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 25,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 26,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 27,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 28,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 29,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 30,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 31,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 32,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 33,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 34,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 35,
+            "correct_count_of_48": 0,
+            "unscaled_count_of_48": 0
+          }
+        ]
+      },
+      "route_a_observed_query_mapping_metadata_only": {
+        "unique_frame0_queries": 48,
+        "mapping_p90_fraction_bbox": 0.003501176462656904,
+        "mapping_max_fraction_bbox": 0.005652071095387113,
+        "point_identity_independently_verified": false
+      },
+      "route_a_metadata_only": {
+        "input_frames": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "output_frames": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "same_input_Pj0_between_runs_max_abs": 0.0,
+        "original_merge_displacement_change_max_abs": 0.003134608268737793,
+        "raw_npz_available_in_route_a_local_directory": false
+      },
+      "previous_pose_diagnostic_only": {
+        "pointmap_roundtrip_max_px": 1.7112135109858138e-13,
+        "loader_intrinsics_difference_max_abs": 0.0,
+        "loader_pose_difference_max_abs": 3.62069527259771e-17,
+        "frame0_pose_identity_difference_max_abs": 3.62069527259771e-17
+      },
+      "previous_future_projection_alternatives_metadata_only": {
+        "w2c_per_frame": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "identity": [
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "inverse_as_w2c": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "w2c0_fixed": [
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "boat": {
+      "route_a_t0_mask_interface_control": {
+        "known_t0_query_count": 48,
+        "processed_hw": [
+          224,
+          392
+        ],
+        "source_hw": [
+          480,
+          854
+        ],
+        "actual_ab_helper_hit_count_known_t0": 0,
+        "correctly_scaled_hit_count_known_t0": 48,
+        "palette_indices_t0": [
+          0,
+          1
+        ],
+        "scaling_roundtrip_max_abs_px": 2.842170943040401e-14,
+        "stored_source_query_conversion_max_abs_px": 2.615792413962481e-05
+      },
+      "cached_frame0_teacher_diagnostics": {
+        "source_protocol": "2026-09-28 frame0-query official interleaving; not 2026-09-29 Route A",
+        "arrays_finite": true,
+        "query_same_processed_pixels_obs_teacher_max_abs": 0.0,
+        "inferred_effective_K_from_saved_Pj0": [
+          422.297425821263,
+          406.02124211886746,
+          195.9999999729865,
+          112.00000000653904
+        ],
+        "inferred_K_fit_max_px": 4.492343977105778e-06,
+        "raw_teacher_frame0_query_error_processed_px": [
+          {
+            "p50": 2.905953591375119,
+            "p90": 4.317586927189174,
+            "max": 5.0313187834412805
+          },
+          {
+            "p50": 2.930040395064804,
+            "p90": 4.093266423648737,
+            "max": 4.397300404666714
+          }
+        ],
+        "anchored_teacher_frame0_query_error_processed_px": [
+          {
+            "p50": 0.7165786802775025,
+            "p90": 1.0560722088584442,
+            "max": 1.2522180339159223
+          },
+          {
+            "p50": 0.7165786802775025,
+            "p90": 1.0560722088584442,
+            "max": 1.2522180339159223
+          }
+        ],
+        "input_geometry_same_frame14": {
+          "original_crossfit_fraction_bbox": {
+            "p50": 0.03292401014818269,
+            "p90": 0.062152280562932774,
+            "max": 0.46393140616890083
+          },
+          "corrected_crossfit_fraction_bbox": {
+            "p50": 0.03292401014818268,
+            "p90": 0.06215228056293286,
+            "max": 0.46393140616890116
+          },
+          "reflection_folds": 0,
+          "difference_max_fraction_bbox": 2.888221730963045e-16,
+          "pairwise_distance_relative_difference_after_median_scale": {
+            "p50": 0.038010417207216304,
+            "p90": 0.20890052856409452,
+            "max": 1.6368657983781472
+          },
+          "interpretation": "Same source14 query pixels; input Pj0 geometry discrepancy, not 3D ground-truth error. Context/model-grid intrinsics sampling remain coupled."
+        },
+        "interleave_index_exact_match": true,
+        "source_frames_exact_match": true,
+        "raw_merge_reproduction_max_abs": 2.9802322387695312e-08,
+        "anchored_merge_reproduction_max_abs": 0.0,
+        "within_run_constant_offset_residual_max_abs": 5.5762939155101776e-08,
+        "teacher_start_exactly_input_Pj0_max_abs": 0.0,
+        "different_anchor_offsets_between_runs_norm": {
+          "p50": 0.0012672180032226896,
+          "p90": 0.0024236833776166452,
+          "max": 0.003967348356588704
+        },
+        "anchor_induced_adjacent_step_change_norm": {
+          "p50": 0.0012596355579302418,
+          "p90": 0.0023839417403249785,
+          "max": 0.003967397878124444
+        },
+        "anchor_induced_adjacent_step_p90_fraction_median_query_spacing": 0.022123060371031116,
+        "mask_recomputation": [
+          {
+            "source_frame": 14,
+            "correct_count_of_48": 48,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 15,
+            "correct_count_of_48": 48,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 16,
+            "correct_count_of_48": 48,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 17,
+            "correct_count_of_48": 48,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 18,
+            "correct_count_of_48": 46,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 19,
+            "correct_count_of_48": 46,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 20,
+            "correct_count_of_48": 47,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 21,
+            "correct_count_of_48": 45,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 22,
+            "correct_count_of_48": 40,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 23,
+            "correct_count_of_48": 43,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 24,
+            "correct_count_of_48": 41,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 25,
+            "correct_count_of_48": 42,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 26,
+            "correct_count_of_48": 39,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 27,
+            "correct_count_of_48": 37,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 28,
+            "correct_count_of_48": 39,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 29,
+            "correct_count_of_48": 40,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 30,
+            "correct_count_of_48": 38,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 31,
+            "correct_count_of_48": 39,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 32,
+            "correct_count_of_48": 39,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 33,
+            "correct_count_of_48": 41,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 34,
+            "correct_count_of_48": 39,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 35,
+            "correct_count_of_48": 37,
+            "unscaled_count_of_48": 0
+          }
+        ]
+      },
+      "route_a_observed_query_mapping_metadata_only": {
+        "unique_frame0_queries": 48,
+        "mapping_p90_fraction_bbox": 0.0023255079302629024,
+        "mapping_max_fraction_bbox": 0.0038345717146605826,
+        "point_identity_independently_verified": false
+      },
+      "route_a_metadata_only": {
+        "input_frames": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "output_frames": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "same_input_Pj0_between_runs_max_abs": 0.0,
+        "original_merge_displacement_change_max_abs": 0.002248913049697876,
+        "raw_npz_available_in_route_a_local_directory": false
+      },
+      "previous_pose_diagnostic_only": {
+        "pointmap_roundtrip_max_px": 1.4210854715202004e-13,
+        "loader_intrinsics_difference_max_abs": 0.0,
+        "loader_pose_difference_max_abs": 2.001305796224325e-18,
+        "frame0_pose_identity_difference_max_abs": 2.001305796224325e-18
+      },
+      "previous_future_projection_alternatives_metadata_only": {
+        "w2c_per_frame": [
+          45,
+          40,
+          43,
+          41,
+          42,
+          39,
+          37,
+          39,
+          40
+        ],
+        "identity": [
+          37,
+          36,
+          37,
+          34,
+          33,
+          30,
+          30,
+          27,
+          31
+        ],
+        "inverse_as_w2c": [
+          33,
+          29,
+          31,
+          27,
+          29,
+          27,
+          27,
+          26,
+          26
+        ],
+        "w2c0_fixed": [
+          37,
+          36,
+          37,
+          34,
+          33,
+          30,
+          30,
+          27,
+          31
+        ]
+      }
+    },
+    "soccerball": {
+      "route_a_t0_mask_interface_control": {
+        "known_t0_query_count": 48,
+        "processed_hw": [
+          224,
+          392
+        ],
+        "source_hw": [
+          480,
+          854
+        ],
+        "actual_ab_helper_hit_count_known_t0": 0,
+        "correctly_scaled_hit_count_known_t0": 48,
+        "palette_indices_t0": [
+          0,
+          1
+        ],
+        "scaling_roundtrip_max_abs_px": 0.0,
+        "stored_source_query_conversion_max_abs_px": 2.6157924082781392e-05
+      },
+      "cached_frame0_teacher_diagnostics": {
+        "source_protocol": "2026-09-28 frame0-query official interleaving; not 2026-09-29 Route A",
+        "arrays_finite": true,
+        "query_same_processed_pixels_obs_teacher_max_abs": 0.0,
+        "inferred_effective_K_from_saved_Pj0": [
+          369.74676566664783,
+          357.3701263499304,
+          195.9999999788132,
+          111.99999899972285
+        ],
+        "inferred_K_fit_max_px": 2.7219318013573977e-06,
+        "raw_teacher_frame0_query_error_processed_px": [
+          {
+            "p50": 2.745000113246355,
+            "p90": 4.622926870012818,
+            "max": 5.770700223927224
+          },
+          {
+            "p50": 2.626259158379918,
+            "p90": 4.103887817856447,
+            "max": 5.64082498708564
+          }
+        ],
+        "anchored_teacher_frame0_query_error_processed_px": [
+          {
+            "p50": 0.6477698479492553,
+            "p90": 0.9653288844206638,
+            "max": 1.2070376802945213
+          },
+          {
+            "p50": 0.6477698479492553,
+            "p90": 0.9653288844206638,
+            "max": 1.2070376802945213
+          }
+        ],
+        "input_geometry_same_frame14": {
+          "original_crossfit_fraction_bbox": {
+            "p50": 0.08676189468659205,
+            "p90": 0.18980413809057012,
+            "max": 0.307974120849046
+          },
+          "corrected_crossfit_fraction_bbox": {
+            "p50": 0.08676189468659254,
+            "p90": 0.18980413809057037,
+            "max": 0.30797412084904613
+          },
+          "reflection_folds": 0,
+          "difference_max_fraction_bbox": 1.4838946608446692e-15,
+          "pairwise_distance_relative_difference_after_median_scale": {
+            "p50": 0.1839568579151904,
+            "p90": 0.5125756755581288,
+            "max": 4.586069899448317
+          },
+          "interpretation": "Same source14 query pixels; input Pj0 geometry discrepancy, not 3D ground-truth error. Context/model-grid intrinsics sampling remain coupled."
+        },
+        "interleave_index_exact_match": true,
+        "source_frames_exact_match": true,
+        "raw_merge_reproduction_max_abs": 2.9802322387695312e-08,
+        "anchored_merge_reproduction_max_abs": 0.0,
+        "within_run_constant_offset_residual_max_abs": 5.844049155712128e-08,
+        "teacher_start_exactly_input_Pj0_max_abs": 0.0,
+        "different_anchor_offsets_between_runs_norm": {
+          "p50": 0.0017285526038659511,
+          "p90": 0.0033312031045744663,
+          "max": 0.004171138505302354
+        },
+        "anchor_induced_adjacent_step_change_norm": {
+          "p50": 0.0017149691517134899,
+          "p90": 0.0032942449209831027,
+          "max": 0.00417117685862118
+        },
+        "anchor_induced_adjacent_step_p90_fraction_median_query_spacing": 0.05752969492422641,
+        "mask_recomputation": [
+          {
+            "source_frame": 14,
+            "correct_count_of_48": 48,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 15,
+            "correct_count_of_48": 40,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 16,
+            "correct_count_of_48": 34,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 17,
+            "correct_count_of_48": 31,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 18,
+            "correct_count_of_48": 27,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 19,
+            "correct_count_of_48": 13,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 20,
+            "correct_count_of_48": 4,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 21,
+            "correct_count_of_48": 3,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 22,
+            "correct_count_of_48": 27,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 23,
+            "correct_count_of_48": 21,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 24,
+            "correct_count_of_48": 37,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 25,
+            "correct_count_of_48": 36,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 26,
+            "correct_count_of_48": 43,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 27,
+            "correct_count_of_48": 38,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 28,
+            "correct_count_of_48": 44,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 29,
+            "correct_count_of_48": 42,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 30,
+            "correct_count_of_48": 43,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 31,
+            "correct_count_of_48": 39,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 32,
+            "correct_count_of_48": 44,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 33,
+            "correct_count_of_48": 36,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 34,
+            "correct_count_of_48": 44,
+            "unscaled_count_of_48": 0
+          },
+          {
+            "source_frame": 35,
+            "correct_count_of_48": 37,
+            "unscaled_count_of_48": 0
+          }
+        ]
+      },
+      "route_a_observed_query_mapping_metadata_only": {
+        "unique_frame0_queries": 48,
+        "mapping_p90_fraction_bbox": 0.005466740209937453,
+        "mapping_max_fraction_bbox": 0.006446419140779182,
+        "point_identity_independently_verified": false
+      },
+      "route_a_metadata_only": {
+        "input_frames": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "output_frames": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "same_input_Pj0_between_runs_max_abs": 0.0,
+        "original_merge_displacement_change_max_abs": 0.0015914738178253174,
+        "raw_npz_available_in_route_a_local_directory": false
+      },
+      "previous_pose_diagnostic_only": {
+        "pointmap_roundtrip_max_px": 1.4836567898030567e-13,
+        "loader_intrinsics_difference_max_abs": 0.0,
+        "loader_pose_difference_max_abs": 4.65874635037189e-19,
+        "frame0_pose_identity_difference_max_abs": 4.65874635037189e-19
+      },
+      "previous_future_projection_alternatives_metadata_only": {
+        "w2c_per_frame": [
+          3,
+          27,
+          21,
+          37,
+          36,
+          43,
+          38,
+          44,
+          42
+        ],
+        "identity": [
+          6,
+          27,
+          21,
+          37,
+          36,
+          43,
+          38,
+          44,
+          42
+        ],
+        "inverse_as_w2c": [
+          8,
+          27,
+          21,
+          37,
+          36,
+          43,
+          38,
+          44,
+          42
+        ],
+        "w2c0_fixed": [
+          6,
+          27,
+          21,
+          37,
+          36,
+          43,
+          38,
+          44,
+          42
+        ]
+      }
+    }
+  },
+  "analytic_checks": {
+    "similarity_known_transform_max_abs": 3.552713678800501e-15,
+    "reflection_scale_formula": {
+      "original_squared_error": 0.9540843309285282,
+      "corrected_squared_error": 0.7504246044590555,
+      "scale_bug_confirmed": true
+    },
+    "camera_roundtrip_max_abs": 4.440892098500626e-16
+  },
+  "inputs_sha256": {
+    "experiences_results\\surface-relation-davis-ab-teacher-2026-09-29\\files\\common\\car-turn\\query_t0_manifest.json": "1f20f52b52d2ea34aac905362697868064c72f2283e03f75bb5577e45f50fd9c",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\car-turn\\full22_query_tracks.npz": "327db7da40cfb9c324ac536368f9ab67086e86eea705b719ead3eaa1d7670556",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\car-turn\\observed7_query_tracks.npz": "8645a83e4f6097eb161213b15691106aab3bb5ec389b3ca0c34b8cac1c8eeca5",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\car-turn\\visualization_projection.npz": "ec5beddc0540112acd6fd6d267889917aade34ea9e73ef69c5d8a80798cd28eb",
+    "experiences_results\\surface-relation-davis-ab-teacher-2026-09-29\\files\\common\\drift-turn\\query_t0_manifest.json": "a8293e51dfeaf533abaaa365ebbe49a408e90bed183d955beba7ba4e4f0661b9",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\drift-turn\\full22_query_tracks.npz": "baa33091078dc76d5b3ea9a8a35909b1346ec5bc149151ae58bfcc50de022704",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\drift-turn\\observed7_query_tracks.npz": "e08d6a5b0afbe59ca302b907b78df27930ea42c53cc2ce1bb28d50bb3fb37e7e",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\drift-turn\\visualization_projection.npz": "90736d6f053175008eac22a067f92a6ede48b80b4cdfdd7f3f7cd08bef2ae3bc",
+    "experiences_results\\surface-relation-davis-ab-teacher-2026-09-29\\files\\common\\boat\\query_t0_manifest.json": "4ad6f69abcadcec442c3d590984cf81816c1ef7ee25bc5787f4c8f8c77234aed",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\boat\\full22_query_tracks.npz": "55f3f3939f90e5392ed5e32b9c25da608336355e79fcb5afa28e85fc336b68a1",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\boat\\observed7_query_tracks.npz": "fd08254ad51e7353ef884a27bc152e3a831096b82eeae108fa971ef223cdedba",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\boat\\visualization_projection.npz": "69cfdd19e0daa0291ae44446839cf8ecfe5e30903e1dfea301e3e5fbdd8a5d41",
+    "experiences_results\\surface-relation-davis-ab-teacher-2026-09-29\\files\\common\\soccerball\\query_t0_manifest.json": "b47d5e88bba66bc061cc2028afab75667e1d63a80934e77cb4e38e6d6ce8ab7c",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\soccerball\\full22_query_tracks.npz": "d52c1da25015c4ee206fd099bbff4f511fbc406937aab0ea48be9c6202a3ad6c",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\soccerball\\observed7_query_tracks.npz": "aaf14e2a5f5c97019a65c50b256e11dde6cd7cff5a2c2b7c7c72b7ea19baa141",
+    "experiences_results\\surface-relation-davis-official-interleaved-pj0-2026-09-28\\soccerball\\visualization_projection.npz": "a1e264153fa0f10c1e39e30947613996c6368a5c88d916cd78d011136b2e3626"
+  },
+  "limitations": [
+    "Route A/B raw NPZ and DA3 user arrays are not present locally; their true future mask counts cannot be recomputed here.",
+    "No manual surface-point identity labels or independent true geometry are used; discrepancy is not automatically error.",
+    "Known-coordinate controls and retained frame0 caches are different evidence sources; no result is substituted for Route A quality gates."
+  ]
+}

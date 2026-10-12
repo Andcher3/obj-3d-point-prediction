@@ -1,0 +1,29 @@
+第 1 页
+这一页作为独立的论文阅读汇报，不只承担后续方法铺垫。SensorLM 关注的问题是把 wearable sensor 数据和自然语言描述对齐。它的输入为 Fitbit / Pixel Watch 上一天级别的多模态特征，形式大致是 26 个分钟级特征乘以 1440 分钟，这与 UCI HAR 那种短窗口原始 IMU 明显不同。作者先用规则和外部日志构造三层 caption：statistical caption 描述均值、最大值、标准差等统计量；structural caption 描述上升、下降、稳定、spike 这类时间结构；semantic caption 描述 Walk、Outdoor Bike、Sleep 等高层活动事件。模型包含 sensor encoder、text encoder 和 multimodal text decoder。训练时有两条目标：一条像 CLIP，把匹配的 sensor-text pair 拉近，把不匹配的 pair 拉远；另一条像 captioning，给定 sensor 后生成对应文本。SensorLLM 则更接近短窗口 motion sensor 和 HAR，它的重点是先训练 sensor encoder，再把传感器表示对齐到 LLM 的语义空间。两篇文章共同说明：通用 LLM 不能天然读懂传感器表格或 IMU 序列，必须先有 sensor-side encoder 和 alignment。它们的局限也比较清楚：SensorLM 偏日级 wearable health/activity，SensorLLM 偏语义解释和识别，二者尚未直接面向手机 IMU 的未来状态序列预测。
+
+第 2 页
+这一页继续独立介绍两篇更贴近时序建模的论文。EVI-MAE 的核心是 masked multimodal autoencoder。它同时使用第一视角视频和 body-worn IMU，把 video token 和 IMU token 随机遮盖，然后训练模型重构被遮盖部分。这个目标不需要人工标签，因此适合作为动作表征预训练方法。它带来的启发是：如果我们能收集大量无标签手机 IMU，模型可以先通过重构或预测学习“运动本身的结构”，再用少量标签学习具体语义。P2LHAP 更直接面向 wearable sensor 的 HAR、HAS 和 HAF，也就是识别、分割和预测。它把连续传感器流切成 patch sequence，不再把一个固定窗口当作完整活动样本；随后用 Seq2Seq Transformer 输出 patch-level activity label sequence。这样当前识别、活动边界和未来预测都可以从同一条标签序列中读出来。P2LHAP 还使用 smoothing 来缓解 over-segmentation，也就是避免一长段站立中间突然出现一个孤立错误标签，从而造成错误边界。对当前方向最有价值的是输出形式：未来延续、切换时机和下一状态都可以由未来 label sequence 派生，不一定从一开始就设计很多独立的回归头。
+
+第 3 页
+这一页放的是进一步参考的建模工具，定位上和前两页不同：它们不一定是已经完整精读过的主论文，但提供了可借鉴的任务形式。MoPFormer 里的 motion primitive tokenization 说明，连续运动片段可以先归一化，再通过 VQ codebook 映射到一组离散的局部运动原型。这个思路适合解决 IMU 原始数值太连续、太局部的问题，让 Transformer 看到更稳定的 token。FUTR 和 ActFusion 提供了未来序列预测的思路：给定已观察到的序列，用一组 future queries 并行预测多个未来位置。它的优势是不会像逐步自回归那样把前一步错误继续传到后面，推理也更快。Boundary-aware 相关工作说明，活动边界可以来自 patch-level label sequence 的平滑和合并，不一定需要单独回归一个边界时间点。这一页的作用是明确当前构想里的三个组件来源：token 化、并行未来预测、平滑后的边界读取。它们仍然需要在手机 IMU 双标签任务上做实验验证。
+
+第 4 页
+这一页定义目标任务。输入是从过去到当前时刻的一段手机 IMU 序列，包含三轴加速度和三轴角速度。输出包含两条同步的状态流，超出单一 HAR 标签：一条是人体动作，比如 walking、sitting、standing；另一条是手机或相机运动，比如 static、panning、tilting、rotation、free motion。每条状态流都可以再分成 action 或 motion label，以及 phase label。phase label 表示当前 patch 是稳定片段还是过渡片段。这样设计的原因是，组会中提到的“未来延续概率”和“切换趋势预测”不应强行变成几个孤立标量。更自然的形式是输出当前到未来一段 patch 的标签序列。若未来若干 patch 仍保持当前标签，就表示状态延续；若在某个 future patch 出现标签变化，就能读出切换时机和下一个动作。最终可读出的信息包括当前人体动作、当前手机运动、未来是否延续、预计在哪个 patch 切换，以及切换后的下一状态。
+
+第 5 页
+这一页解释数据形式。原始输入可以写成 X，形状是 L 乘 P 乘 C。L 表示有多少个 patch，P 表示每个 patch 里有多少个采样点，C 表示通道数。对手机 IMU 来说，C 通常是 6，也就是 acc_x、acc_y、acc_z、gyro_x、gyro_y、gyro_z。这里的 patch 是时间上的小片段，例如 0.5 秒或 1 秒，不是一个完整动作样本。每个 patch 还会对应两条标签序列：human label sequence 和 camera motion label sequence。训练时，如果某个 patch 内跨越了动作切换，它的标签如何分配需要在数据集构建时定义，比较稳妥的方式是按 patch 内占比最高的状态赋主标签，同时用 phase 标注它是否位于 transition。这样模型的监督目标仍是 patch-level 分类，但切换信息会体现在 phase sequence 和 label sequence 的变化里。推理时，模型先输出未来一段 patch 的概率分布，再通过平滑把短暂孤立错误去掉，最后从标签序列中读取切换趋势。
+
+第 6 页
+这一页需要把几个术语讲清楚。Motion primitive token 指的是一个短时间、单通道 IMU 片段的紧凑表示。它不承担最终动作标签职责，主要用于编码局部运动形状，例如一次上升、下降、周期摆动、冲击尖峰或短暂平稳段。左侧第 1 步是把多通道 IMU 按通道切开，每次只处理一个 channel 的一个 patch。第 2 步是 instance normalization，也就是对这个片段减去自身均值、除以自身标准差。这样做会暂时去掉幅值和偏置，让后续匹配更关注波形形状。被去掉的均值 μ 和标准差 σ 不丢弃，会通过一个小的 MLP 或线性层变成 statistical embedding，记作 s_i,c。第 3 步是 VQ codebook 查找。VQ codebook 可以理解成一张可学习的局部波形字典，里面每个条目代表一种常见短时运动原型。归一化后的片段和字典里的原型计算距离，选择最近的条目，它对应的向量就是 primitive embedding，记作 e_i,c。因为查找发生在归一化片段上，所以 e_i,c 主要保留局部形状，而 s_i,c 保留幅值、能量和偏置。第 4 步加入 channel metadata 和时间位置编码。metadata m_c 是通道身份的 embedding，例如 smartphone、accelerometer、x-axis 这类信息；p_i 是 patch 在时间序列中的位置编码，第一版可以用 learnable positional embedding，后续如果要处理更长序列，也可以换成 sinusoidal 或 RoPE。第 5 步把这些向量相加，得到完整 token：z_i,c = e_i,c + s_i,c + m_c + p_i。这样 token 同时包含局部形状、幅值统计、通道身份和时间位置。
+
+第 7 页
+这一页解释当前状态预测。token 构造完成后，每个通道都会形成一条随时间排列的 token sequence。Channel-independent causal encoder 的含义是：不同通道先分别进入同一个共享 Transformer encoder，避免一开始把所有通道拼成一条特别长的序列。这样做有两个好处。第一，计算量更可控；第二，每个通道可以先学习自己的时间动态，例如 acc_x 的周期变化或 gyro_z 的旋转趋势。causal mask 表示第 i 个 patch 只能看见自己和过去 patch，不能看见未来 patch，这符合实时推理的要求。每个通道得到 hidden sequence 后，再在同一时间位置做 channel fusion，把 6 个通道的信息合成一个时间级 hidden state，记作 g_t。当前人体动作、人体 phase、手机运动和手机 phase 都从 g_t 接分类头得到。这里可以理解为四个监督头：human action head、human phase head、camera motion head、camera phase head。phase head 的作用是帮助模型识别稳定段和过渡段；action/motion head 给出具体状态类别。
+
+第 8 页
+这一页解释未来状态预测。forecast decoder 不直接预测未来 label，也不只预测 primitive embedding。它预测 future motion token 的动态组成部分，也就是 future primitive embedding 和 future statistical embedding。对于未来第 k 个 patch、第 c 个通道，decoder 输出 e_hat_k,c 和 s_hat_k,c。metadata m_c 是已知的，因为未来仍然是同一个传感器通道；时间位置 p_k 也是已知的，因为我们知道要预测未来第几个 patch。因此完整 future token 写成 z_hat_k,c = e_hat_k,c + s_hat_k,c + m_c + p_k。随后把真实历史 token z_1:t,c 和预测未来 token z_hat_t+1:t+n,c 拼接，送入 causal re-encoder。re-encoder 的作用是让历史和预测出的未来 token 再进行一次时序建模，得到未来 hidden states，然后从这些 hidden states 上接分类头，输出未来 human label sequence 和 camera label sequence。这里采用 parallel query decoder：一次性给出 n 个未来 query，分别对应未来 n 个 patch。这样固定 horizon 的未来预测可以并行完成，避免逐步自回归预测中前一步错误影响后一步。
+
+第 9 页
+这一页说明训练策略。第一阶段是无标签 future token 预训练。输入过去一段 IMU token，forecast decoder 预测未来 motion token 的动态部分，再和真实未来 token 对齐。损失可以写成完整 token 的余弦对齐，也可以更清楚地分成两项：primitive embedding 对齐和 statistical embedding 对齐。primitive 部分负责学习未来局部运动形状，statistical 部分负责学习未来幅值、能量和波动强度。这里的真实未来 token 只作为训练目标使用，推理时模型只能根据历史预测未来。第二阶段是有标签微调。输入仍然是 IMU 序列，模型输出当前和未来的 human action、human phase、camera motion、camera phase。监督损失主要是 patch-level cross entropy，可以给 transition patch 或类别不平衡情况设置权重。两阶段训练的意义是：大量无标签 IMU 用来学习运动动力学，少量标注数据用来把这些动力学表示映射到人体动作和手机运动语义上。
+
+第 10 页
+这一页解释推理流程。推理时，模型先根据当前之前的 IMU 序列输出两条概率序列：human label probabilities 和 camera label probabilities。每个 future patch 都有一个类别分布，包含软概率信息。当前状态可以取 t 时刻概率最大的类别；未来延续概率可以读取未来若干 patch 中“保持当前类别”的概率，例如前 8 个 future patch 中 current label 的平均概率或最小概率；切换趋势可以从概率最高类别的序列变化中读取。为了避免偶然错误，输出标签需要做 smoothing。典型情况是一长串 standing 中间出现一个孤立 sitting，这种短片段往往是模型抖动，不应被当成真实动作切换。平滑方法可以参考 P2LHAP：先把短于阈值的孤立片段合并到前后相邻的主导类别，再合并连续同类 patch。平滑后，第一处 label 变化的位置就是估计切换时机；变化后的标签就是下一状态。最终汇报结果可以包含当前人体动作、当前手机运动、未来延续概率、预计切换 patch 和下一状态。

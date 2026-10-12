@@ -1,0 +1,17 @@
+{
+  "scope": "synthetic/oracle Relation Head engineering test; no real-video claim",
+  "node_count": 12,
+  "edge_count": 21,
+  "zero_correction_max_abs": 0.0,
+  "gradient_finite": true,
+  "initial_loss": 0.3911446769507877,
+  "overfit_final_loss": 0.004859959111158602,
+  "overfit_loss_ratio": 0.012424965486031817,
+  "edge_head_parameters": 1155,
+  "node_residual_parameters": 1163,
+  "parameter_match_ratio": 0.9931212381771282,
+  "query_permutation_max_abs": 1.1102230246251565e-16,
+  "constrained_l2_test": "PASS",
+  "overfit_test": "PASS",
+  "permutation_test": "PASS"
+}

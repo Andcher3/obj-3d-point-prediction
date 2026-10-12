@@ -1,0 +1,552 @@
+{
+  "title": "Claim-to-source and access ledger",
+  "date": "2026-09-07",
+  "workspace": "D:/Pycharm/post_graduate_project",
+  "status": "complete; structural verification passed; no model inference",
+  "research_scope": "Multiple future free-text branches without a required external future goal; publicly released resources; stage-two single-future geometric supervision.",
+  "scope_notes": [
+    "Human-object target motion; flexible teacher inputs; no IMU.",
+    "No model download, local inference, or training.",
+    "Offline multi-sampling teacher and deployment mode-map student are separate decisions."
+  ],
+  "search_waves": [
+    {
+      "wave": 1,
+      "lanes": [
+        "visual commonsense generation",
+        "next-event narrative prediction",
+        "text event and dialogue multi-inference",
+        "language-conditioned trajectory supervision"
+      ],
+      "purpose": "Find genuine free-text generation and distinguish fixed-label or goal-conditioned substitutes."
+    },
+    {
+      "wave": 2,
+      "lanes": [
+        "author repositories and generation code",
+        "checkpoint file listings",
+        "paper limitations and contrary evidence"
+      ],
+      "purpose": "Check multiple outputs, event versus wording diversity, public release, and changed-condition demonstrations."
+    },
+    {
+      "wave": 3,
+      "lanes": [
+        "VANS video-text path",
+        "TEMPURA infilling boundary",
+        "MolmoMotion released variants",
+        "local historical semantic-match training"
+      ],
+      "purpose": "Resolve material task-fit and stage-two supervision gaps."
+    }
+  ],
+  "access_limitations": [
+    "Python and PowerShell direct-network requests failed via local proxy; no repeated retries after consistent failure.",
+    "Browser/web primary pages and raw source remained accessible.",
+    "Two delegated lanes ended with account-limit errors; consequential final claims were independently checked by the coordinating agent."
+  ],
+  "stopping_reason": "A direct-task family with multi-output code and checkpoint entrances, a newer video-text candidate with public files, and a paired 3D trajectory resource are verified. Remaining gaps are model runtime and task-specific empirical validation, which further bibliography expansion will not establish.",
+  "entries": [
+    {
+      "id": "vcg",
+      "claim": "VisualCOMET generates multiple free-text AFTER inferences for one image/event/place without an external future goal.",
+      "sources": [
+        {
+          "title": "VisualCOMET: Reasoning about the Dynamic Context of a Still Image",
+          "publisher_or_author": "VisualCOMET authors; arXiv / ECCV",
+          "date": "2020",
+          "url": "https://arxiv.org/abs/2004.10796",
+          "native_refs": [
+            "turn92view4"
+          ]
+        },
+        {
+          "title": "VisualCOMET official repository",
+          "publisher_or_author": "jamespark3922/visual-comet",
+          "date": "current repository checked 2026-09-07",
+          "url": "https://github.com/jamespark3922/visual-comet",
+          "native_refs": [
+            "turn84view0"
+          ]
+        }
+      ],
+      "evidence": "README generation example uses multiple inferences per relation; dataset sample has several AFTER annotations.",
+      "confidence": "high",
+      "limits": "Human alternatives may overlap; single-image input; published checkpoint link only, no archive download or inference."
+    },
+    {
+      "id": "kmbart",
+      "claim": "KM-BART supports multi-result decoding and publishes full model checkpoint links.",
+      "sources": [
+        {
+          "title": "KM-BART: Knowledge Enhanced Multimodal BART for Visual Commonsense Generation",
+          "publisher_or_author": "ACL Anthology",
+          "date": "2021",
+          "url": "https://aclanthology.org/2021.acl-long.44/",
+          "native_refs": [
+            "turn86view1"
+          ]
+        },
+        {
+          "title": "KM-BART generation.py",
+          "publisher_or_author": "fomalhautb/KM-BART",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/fomalhautb/KM-BART/blob/main/src/generation.py",
+          "native_refs": [
+            "turn110view0"
+          ]
+        },
+        {
+          "title": "KM-BART official repository",
+          "publisher_or_author": "fomalhautb/KM-BART",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/fomalhautb/KM-BART",
+          "native_refs": [
+            "turn87view1"
+          ]
+        },
+        {
+          "title": "bart_full_model.zip",
+          "publisher_or_author": "author-published Google Drive link",
+          "date": "checked 2026-09-07",
+          "url": "https://drive.google.com/file/d/1YEnV7PJHHTj1CP9gZrafVVFkisggBQd7/view",
+          "native_refs": [
+            "turn87view3"
+          ]
+        },
+        {
+          "title": "random_full_model.zip",
+          "publisher_or_author": "author-published Google Drive link",
+          "date": "checked 2026-09-07",
+          "url": "https://drive.google.com/file/d/1YtUHKR85Qk9xCWpnI0j65A0yN8C9tIZ-/view",
+          "native_refs": [
+            "turn87view4"
+          ]
+        }
+      ],
+      "evidence": "generate passes args.num_gen to num_return_sequences and groups outputs; author-linked file titles visible.",
+      "confidence": "high",
+      "limits": "num_gen defaults to one; multiple sequences do not guarantee distinct events; weights not downloaded."
+    },
+    {
+      "id": "dive",
+      "claim": "DIVE explicitly improves descriptive and diverse visual commonsense generation; public training code was found but no dedicated pretrained checkpoint link was confirmed.",
+      "sources": [
+        {
+          "title": "DIVE: Towards Descriptive and Diverse Visual Commonsense Generation",
+          "publisher_or_author": "ACL Anthology; DIVE authors",
+          "date": "EMNLP 2023; arXiv version 2024",
+          "url": "https://aclanthology.org/2023.emnlp-main.601/",
+          "native_refs": [
+            "turn94view2"
+          ]
+        },
+        {
+          "title": "DIVE paper full text",
+          "publisher_or_author": "DIVE authors; arXiv",
+          "date": "2024 arXiv posting of 2023 work",
+          "url": "https://arxiv.org/html/2408.08021v1",
+          "native_refs": [
+            "turn96view3"
+          ]
+        },
+        {
+          "title": "DIVE official README",
+          "publisher_or_author": "Park-ing-lot/DIVE",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/Park-ing-lot/DIVE",
+          "native_refs": [
+            "turn110view1"
+          ]
+        }
+      ],
+      "evidence": "Generic inference filtering; contrastive retrieval learning; human evaluation of diversity; generation requires user-provided model path.",
+      "confidence": "high for mechanism; bounded negative finding for checkpoint",
+      "limits": "No exhaustive proof that weights do not exist elsewhere; paper still reports context-irrelevant inferences."
+    },
+    {
+      "id": "vans_mechanism",
+      "claim": "VANS predicts a free-text next-event caption from video and question, samples caption groups in training, and generates video conditioned on caption.",
+      "sources": [
+        {
+          "title": "Video-as-Answer: Predict and Generate Next Video Event with Joint-GRPO",
+          "publisher_or_author": "Junhao Cheng, Liang Hou, Xin Tao, Jing Liao; arXiv",
+          "date": "2025-11-23 v2",
+          "url": "https://arxiv.org/html/2511.16669",
+          "native_refs": [
+            "turn104view3",
+            "turn105view2"
+          ]
+        }
+      ],
+      "evidence": "Figure 1 generic predictive question; Sec 4.2 caption group sampling; Appendix D.3 multi-future examples vary hypothetical question.",
+      "confidence": "high",
+      "limits": "Multi-future figure is not fixed-question mode-coverage evaluation; reward uses reference future caption/video."
+    },
+    {
+      "id": "vans_release",
+      "claim": "VANS public model listing contains two safetensors files; code exposes a language generation component.",
+      "sources": [
+        {
+          "title": "VANS official repository",
+          "publisher_or_author": "KlingAIResearch/VANS",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/KlingAIResearch/VANS",
+          "native_refs": [
+            "turn99view2"
+          ]
+        },
+        {
+          "title": "KlingTeam/VANS file listing",
+          "publisher_or_author": "Kling Team / Hugging Face",
+          "date": "checked 2026-09-07",
+          "url": "https://huggingface.co/KlingTeam/VANS/tree/main",
+          "native_refs": [
+            "turn104view2"
+          ]
+        },
+        {
+          "title": "VANS model configuration",
+          "publisher_or_author": "KlingAIResearch/VANS",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/KlingAIResearch/VANS/blob/main/config.py",
+          "native_refs": [
+            "turn104view1"
+          ]
+        }
+      ],
+      "evidence": "VANS_mllm.safetensors 37.3 MB and VANS_vlm.safetensors 2.84 GB visible; filenames differ from local config names.",
+      "confidence": "high for published files",
+      "limits": "No tensor inspection, download, model loading, or runtime comparison; filename alone not used to assert component contents."
+    },
+    {
+      "id": "vans_codegen",
+      "claim": "VANS language code samples one answer per standard input; given GT-named script field is not inserted as an answer when add_query=False.",
+      "sources": [
+        {
+          "title": "VANS agent_mllm.py",
+          "publisher_or_author": "KlingAIResearch/VANS",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/KlingAIResearch/VANS/blob/main/vans/models_mllm/agent_mllm.py",
+          "native_refs": [
+            "turn108view0",
+            "turn109view0"
+          ]
+        },
+        {
+          "title": "VANS pipeline",
+          "publisher_or_author": "KlingAIResearch/VANS",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/KlingAIResearch/VANS/blob/main/vans/pipelines/wan_video_new.py",
+          "native_refs": [
+            "turn105view0",
+            "turn106view1"
+          ]
+        },
+        {
+          "title": "VANS inference entry point",
+          "publisher_or_author": "KlingAIResearch/VANS",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/KlingAIResearch/VANS/blob/main/inference.py",
+          "native_refs": [
+            "turn104view0"
+          ]
+        }
+      ],
+      "evidence": "generate_with_query sets add_query=False; tokenizer builds user messages from video and instruction; do_sample=True, temperature=.7, top_p=.9; pipeline extracts first answer.",
+      "confidence": "high for inspected path",
+      "limits": "Not a complete repository-wide leakage audit. Multiple-output adaptation not executed."
+    },
+    {
+      "id": "comet",
+      "claim": "COMET-ATOMIC2020 supplies open-text commonsense tails and multiple beam outputs under fixed relation queries.",
+      "sources": [
+        {
+          "title": "(COMET-)ATOMIC 2020: On Symbolic and Neural Commonsense Knowledge Graphs",
+          "publisher_or_author": "ATOMIC2020 authors; AAAI / arXiv",
+          "date": "2020 preprint; AAAI 2021",
+          "url": "https://arxiv.org/html/2010.05953",
+          "native_refs": [
+            "turn96view1"
+          ]
+        },
+        {
+          "title": "COMET ATOMIC2020 generation example",
+          "publisher_or_author": "allenai/comet-atomic-2020",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/allenai/comet-atomic-2020/blob/master/models/comet_atomic2020_bart/generation_example.py",
+          "native_refs": [
+            "turn87view2"
+          ]
+        },
+        {
+          "title": "COMET ATOMIC2020 repository",
+          "publisher_or_author": "Allen Institute for AI",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/allenai/comet-atomic-2020",
+          "native_refs": [
+            "turn86view2"
+          ]
+        }
+      ],
+      "evidence": "Example num_generate=5 and corresponding num_beams/num_return_sequences. Temporal relation tail direction checked.",
+      "confidence": "high",
+      "limits": "No visual grounding or prescribed time horizon; author checkpoint URL not downloaded."
+    },
+    {
+      "id": "convosense",
+      "claim": "ConvoSense has pretrained model files and diverse multi-inference decoding, including subsequent-event relation in dialogue.",
+      "sources": [
+        {
+          "title": "ConvoSense paper",
+          "publisher_or_author": "TACL / MIT Press; authors",
+          "date": "2024",
+          "url": "https://doi.org/10.1162/tacl_a_00659",
+          "native_refs": [
+            "turn89view3"
+          ]
+        },
+        {
+          "title": "ConvoSense repository",
+          "publisher_or_author": "emorynlp/ConvoSense",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/emorynlp/ConvoSense",
+          "native_refs": [
+            "turn89view4"
+          ]
+        },
+        {
+          "title": "ConvoSenseGenerator files",
+          "publisher_or_author": "sefinch / Hugging Face",
+          "date": "checked 2026-09-07",
+          "url": "https://huggingface.co/sefinch/ConvoSenseGenerator/tree/main",
+          "native_refs": [
+            "turn91view0"
+          ]
+        }
+      ],
+      "evidence": "Grouped diverse beam and multiple returns; two model weight shards visible.",
+      "confidence": "high",
+      "limits": "Dialogue domain; no evidence of target-object video transfer; no inference run."
+    },
+    {
+      "id": "v2c",
+      "claim": "Video2Commonsense predicts free-text effects but default code keeps one result per effect request.",
+      "sources": [
+        {
+          "title": "Video2Commonsense: Generating Commonsense Descriptions to Enrich Video Captioning",
+          "publisher_or_author": "ACL Anthology; authors",
+          "date": "EMNLP 2020",
+          "url": "https://aclanthology.org/2020.emnlp-main.61/",
+          "native_refs": [
+            "turn96view0"
+          ]
+        },
+        {
+          "title": "Video2Commonsense cap2cms decoder",
+          "publisher_or_author": "jacobswan1/Video2Commonsense",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/jacobswan1/Video2Commonsense/blob/master/model/transformer/cap2cms_Translator.py",
+          "native_refs": [
+            "turn94view5"
+          ]
+        }
+      ],
+      "evidence": "Beam decoder collects top one; test path selects first hypothesis.",
+      "confidence": "high",
+      "limits": "Multiple relation heads not counted as multiple alternative futures."
+    },
+    {
+      "id": "novacomet",
+      "claim": "NovaCOMET provides open commonsense distillation, with no confirmed public pretrained model artifact in this search.",
+      "sources": [
+        {
+          "title": "NovaCOMET: Open Commonsense Foundation Models with Symbolic Knowledge Distillation",
+          "publisher_or_author": "ACL Anthology; authors",
+          "date": "2023",
+          "url": "https://aclanthology.org/2023.findings-emnlp.80/",
+          "native_refs": [
+            "turn111view0"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "limits": "Public checkpoint availability unresolved; some abduction tasks use subsequent evidence."
+    },
+    {
+      "id": "adjacent",
+      "claim": "Several adjacent generation/anticipation methods fail one or more input, output, task or release criteria.",
+      "sources": [
+        {
+          "title": "Learning to Generate Long-term Future Narrations Describing Activities of Daily Living",
+          "publisher_or_author": "ViNa authors; arXiv",
+          "date": "2025",
+          "url": "https://arxiv.org/html/2503.01416v1",
+          "native_refs": [
+            "turn111view2"
+          ]
+        },
+        {
+          "title": "AntGPT: Can Large Language Models Help Long-term Action Anticipation from Videos?",
+          "publisher_or_author": "AntGPT authors; arXiv",
+          "date": "2023 preprint; ICLR 2024",
+          "url": "https://arxiv.org/abs/2307.16368",
+          "access_notes": "Rechecked exact arXiv identity and ICLR abstract during final citation QA.",
+          "native_refs": [
+            "turn112academia12",
+            "turn112search0"
+          ]
+        },
+        {
+          "title": "EgoPlan",
+          "publisher_or_author": "EgoPlan authors; arXiv",
+          "date": "2023 preprint",
+          "url": "https://arxiv.org/html/2312.06722v3",
+          "access_notes": "Live-checked earlier; user-provided goal boundary retained."
+        },
+        {
+          "title": "TEMPURA",
+          "publisher_or_author": "TEMPURA authors; arXiv",
+          "date": "2025",
+          "url": "https://arxiv.org/html/2505.01583",
+          "native_refs": [
+            "turn103view4"
+          ]
+        },
+        {
+          "title": "What Makes the Story Forward? Inferring Commonsense Explanations as Prompts for Future Event Generation",
+          "publisher_or_author": "CoEP authors; arXiv",
+          "date": "2022",
+          "url": "https://arxiv.org/abs/2201.07099",
+          "access_notes": "Paper existence/mechanism read; pretrained multi-branch artifact unconfirmed.",
+          "native_refs": [
+            "turn112view0"
+          ]
+        },
+        {
+          "title": "Verbalized Sampling",
+          "publisher_or_author": "CHATS-lab; arXiv",
+          "date": "2025",
+          "url": "https://arxiv.org/abs/2510.01171",
+          "access_notes": "Generic diversity evidence, not target task validation."
+        },
+        {
+          "title": "Divergent Thinking: Escape the Homogeneity Trap in Generative Commonsense Reasoning",
+          "publisher_or_author": "ACL Anthology",
+          "date": "2026",
+          "url": "https://aclanthology.org/2026.findings-acl.915/",
+          "access_notes": "Adjacent semantic diversity task.",
+          "native_refs": [
+            "turn112view1"
+          ]
+        }
+      ],
+      "confidence": "high for bounded task distinctions; checkpoint negatives bounded",
+      "limits": "Not asserted exhaustive absence of usable methods."
+    },
+    {
+      "id": "single_future",
+      "claim": "What Happens Next explicitly trains with one future per initial condition and generates multiple hypotheses at inference.",
+      "sources": [
+        {
+          "title": "What Happens Next? Anticipating Future Motion by Generating Point Trajectories",
+          "publisher_or_author": "paper authors; arXiv",
+          "date": "2025",
+          "url": "https://arxiv.org/html/2509.21592v2#S3.SS3",
+          "native_refs": [
+            "turn94view7",
+            "turn110view3"
+          ]
+        }
+      ],
+      "evidence": "Section 3.3 says single training future and related-instance generalization.",
+      "confidence": "high",
+      "limits": "Does not guarantee every unseen conditional mode or exact probability calibration."
+    },
+    {
+      "id": "molmo",
+      "claim": "MolmoMotion pairs language-conditioned 3D point forecasting with public data and pretrained AR checkpoints; FM paper variant not publicly released here.",
+      "sources": [
+        {
+          "title": "MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction",
+          "publisher_or_author": "Ai2 / paper authors",
+          "date": "2026",
+          "url": "https://arxiv.org/html/2606.18558",
+          "native_refs": [
+            "turn95view1"
+          ]
+        },
+        {
+          "title": "MolmoMotion official README",
+          "publisher_or_author": "Allen Institute for AI",
+          "date": "checked 2026-09-07",
+          "url": "https://github.com/allenai/molmo-motion",
+          "native_refs": [
+            "turn110view2"
+          ]
+        },
+        {
+          "title": "MolmoMotion-4B-H3-F30 files",
+          "publisher_or_author": "Allen Institute for AI / Hugging Face",
+          "date": "checked 2026-09-07",
+          "url": "https://huggingface.co/allenai/MolmoMotion-4B-H3-F30/tree/main",
+          "native_refs": [
+            "turn91view1"
+          ]
+        },
+        {
+          "title": "MolmoMotion-1M dataset",
+          "publisher_or_author": "Allen Institute for AI / Hugging Face",
+          "date": "checked 2026-09-07",
+          "url": "https://huggingface.co/datasets/allenai/molmo-motion-1m",
+          "native_refs": [
+            "turn96view5"
+          ]
+        }
+      ],
+      "evidence": "README explicitly all released checkpoints AR; paired annotations/tracks; default five-dataset mixture and excluded optional robot/simulation subsets.",
+      "confidence": "high",
+      "limits": "No installed or tested inference; counterfactual reliability unproven; raw-video reconstruction required for multiple subsets."
+    },
+    {
+      "id": "history",
+      "claim": "Earlier local draft paired only semantically equivalent realized-event candidates with the observed trajectory target.",
+      "sources": [
+        {
+          "title": "MotionForesight semantic conditional Flow review",
+          "publisher_or_author": "local research history",
+          "date": "2026-08-04",
+          "url": "file:///D:/Pycharm/post_graduate_project/reports/progress/2026-08-04-motionforesight-method-review.md"
+        },
+        {
+          "title": "Memory registry and rollout recap",
+          "publisher_or_author": "local memory",
+          "date": "2026-08-05 updated",
+          "url": "file:///D:/codex/.codex/memories/rollout_summaries/2026-08-04T09-25-48-7gRI-motionforesight_semantic_flow_method_review.md",
+          "access_notes": "Lines 13-15; memory registry lines 87-89; UUID 019fcc17-ef2b-75c0-9420-2314bc94cf6a."
+        }
+      ],
+      "confidence": "high",
+      "limits": "Historical hypothesis, not selected current architecture."
+    },
+    {
+      "id": "synthesis",
+      "claim": "Extra text branches do not by themselves create paired 3D targets; realized-event triples train conditional generation; unseen branch geometry relies on transfer, additional paired data, or validated pseudo-trajectories.",
+      "sources": [],
+      "evidence": "Own synthesis from conditional training definition and cited task mechanisms.",
+      "confidence": "conceptual analysis",
+      "limits": "Not an experimentally validated method; no fixed architecture, sample count, loss weights or dataset proposed."
+    }
+  ],
+  "verification": {
+    "canonical_matches_delivered_report": true,
+    "utf8_readback": true,
+    "tables_and_math_delimiters": true,
+    "local_report_links": true,
+    "progress_index_unique_entry": true,
+    "page_rendering": false,
+    "weights_downloaded": false,
+    "model_inference": false,
+    "citation_qa": "AntGPT arXiv link and NovaCOMET / Divergent Thinking exact titles corrected before delivery."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "frames_root": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-jumping-juggle-animation\\frames",
+  "states": [
+    "jumping"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-jumping-juggle-animation\\frames\\jumping\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15961,
+          "bbox": [
+            12,
+            5,
+            179,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 262
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-jumping-juggle-animation\\frames\\jumping\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16976,
+          "bbox": [
+            16,
+            5,
+            175,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 278
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-jumping-juggle-animation\\frames\\jumping\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14979,
+          "bbox": [
+            25,
+            5,
+            166,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 241
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-jumping-juggle-animation\\frames\\jumping\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17895,
+          "bbox": [
+            14,
+            5,
+            178,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 292
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-jumping-juggle-animation\\frames\\jumping\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16584,
+          "bbox": [
+            13,
+            5,
+            179,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 261
+        }
+      ]
+    }
+  ]
+}

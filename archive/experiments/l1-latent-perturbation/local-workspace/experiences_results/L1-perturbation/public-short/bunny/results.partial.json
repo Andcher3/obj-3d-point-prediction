@@ -1,0 +1,938 @@
+[
+  {
+    "run_index": 0,
+    "name": "baseline_0",
+    "sigma": 0.0,
+    "seed": 0,
+    "elapsed_seconds": 45.171652575954795,
+    "peak_gpu_memory_gib": 16.82832908630371,
+    "generated_tokens": 254,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "a6555dce3025849bd7d4ccdf4a48320e9ee8b108f0c2d41042ee191a163b0041",
+    "raw_sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason>\n<answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason> <answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer>",
+    "answer": "The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.0,
+      "noise_seed": 0,
+      "scale_mode": "rms",
+      "perturbed_step_count": 0,
+      "steps": []
+    }
+  },
+  {
+    "run_index": 1,
+    "name": "sigma_0.005_seed_11",
+    "sigma": 0.005,
+    "seed": 11,
+    "elapsed_seconds": 44.07566543482244,
+    "peak_gpu_memory_gib": 17.089838981628418,
+    "generated_tokens": 239,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "edcef56d4850df123a38de82e96e2926d4cdf413c47e2ffc06420f53ae00649f",
+    "raw_sha256": "41df429fcd2b72f6dce8ccd62ea5ed44ed1325a4a5fe0b2c0c8567c0521735a4",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the three rodents standing together, ready to interact with the rabbit (0:08-0:09).</reason>\n<answer>The three rodents will likely interact with the big rabbit, setting up a potential conflict or collaboration in the story.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the three rodents standing together, ready to interact with the rabbit (0:08-0:09).</reason> <answer>The three rodents will likely interact with the big rabbit, setting up a potential conflict or collaboration in the story.</answer>",
+    "answer": "The three rodents will likely interact with the big rabbit, setting up a potential conflict or collaboration in the story.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.005,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.0008368720882572234,
+          "after_rms": 0.16662068665027618,
+          "relative_noise_rms": 0.005022414028644562,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17218482494354248,
+          "noise_rms": 0.0008473194320686162,
+          "after_rms": 0.17217612266540527,
+          "relative_noise_rms": 0.004920987877994776,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17494484782218933,
+          "noise_rms": 0.0008960628765635192,
+          "after_rms": 0.17495079338550568,
+          "relative_noise_rms": 0.005121973343193531,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.21066859364509583,
+          "noise_rms": 0.0010645610745996237,
+          "after_rms": 0.2106463462114334,
+          "relative_noise_rms": 0.00505325011909008,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17538462579250336,
+          "noise_rms": 0.0008836026536300778,
+          "after_rms": 0.17538012564182281,
+          "relative_noise_rms": 0.005038084927946329,
+          "generation_step": 1724
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1758517473936081,
+          "noise_rms": 0.0008793646702542901,
+          "after_rms": 0.1758688986301422,
+          "relative_noise_rms": 0.005000602453947067,
+          "generation_step": 1725
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.18192073702812195,
+          "noise_rms": 0.0009220771607942879,
+          "after_rms": 0.18192389607429504,
+          "relative_noise_rms": 0.0050685652531683445,
+          "generation_step": 1726
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.4243796467781067,
+          "noise_rms": 0.002106736646965146,
+          "after_rms": 0.424389123916626,
+          "relative_noise_rms": 0.004964273422956467,
+          "generation_step": 1727
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 2,
+    "name": "sigma_0.005_seed_22",
+    "sigma": 0.005,
+    "seed": 22,
+    "elapsed_seconds": 44.38410582579672,
+    "peak_gpu_memory_gib": 17.084568977355957,
+    "generated_tokens": 256,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "3e9930806791159fded9b92bbde7a91dad8d78e6c388f94e6025d2da0e551bb6",
+    "raw_sha256": "551b893aaeed5c36237ed2f9b8779f420b0bb3cd204194cec9bc26040fc89b1e",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the large rabbit looking surprised, with the text 'THREE RODENTS' still visible, implying an interaction or confrontation between the rabbit and the rodents (0:08-0:09).</reason>\n<answer>The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or significant event in the story",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the large rabbit looking surprised, with the text 'THREE RODENTS' still visible, implying an interaction or confrontation between the rabbit and the rodents (0:08-0:09).</reason> <answer>The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or significant event in the story",
+    "answer": "",
+    "has_answer_tag": false,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.005,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.0008251012186519802,
+          "after_rms": 0.16661638021469116,
+          "relative_noise_rms": 0.004951772280037403,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1714165210723877,
+          "noise_rms": 0.0008624231559224427,
+          "after_rms": 0.17141391336917877,
+          "relative_noise_rms": 0.005031155422329903,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17389708757400513,
+          "noise_rms": 0.0008811464067548513,
+          "after_rms": 0.17387737333774567,
+          "relative_noise_rms": 0.005067056510597467,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.20878754556179047,
+          "noise_rms": 0.0010552048915997148,
+          "after_rms": 0.2087595909833908,
+          "relative_noise_rms": 0.005053964909166098,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17563648521900177,
+          "noise_rms": 0.000886335561517626,
+          "after_rms": 0.17563879489898682,
+          "relative_noise_rms": 0.005046420730650425,
+          "generation_step": 1724
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17579029500484467,
+          "noise_rms": 0.000877652782946825,
+          "after_rms": 0.17578953504562378,
+          "relative_noise_rms": 0.004992612171918154,
+          "generation_step": 1725
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.18094122409820557,
+          "noise_rms": 0.0009097153670154512,
+          "after_rms": 0.18092544376850128,
+          "relative_noise_rms": 0.005027684383094311,
+          "generation_step": 1726
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.3731459975242615,
+          "noise_rms": 0.001885301899164915,
+          "after_rms": 0.3731621503829956,
+          "relative_noise_rms": 0.00505245104432106,
+          "generation_step": 1727
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 3,
+    "name": "sigma_0.01_seed_11",
+    "sigma": 0.01,
+    "seed": 11,
+    "elapsed_seconds": 44.4480946958065,
+    "peak_gpu_memory_gib": 17.087315559387207,
+    "generated_tokens": 256,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "a23b7415eb2ff7d520a6b651fb8fc2e1297fbc09b23410f87b2dc6ba1d0aaa94",
+    "raw_sha256": "803f853380573560c6950b653694ccbd4aa86df694b19550ab97733e5a491349",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the large rabbit looking surprised, with the text 'THREE RODENTS' still visible, implying an interaction or confrontation between the rabbit and the rodents (0:08-0:09).</reason>\n<answer>The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or surprise.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the large rabbit looking surprised, with the text 'THREE RODENTS' still visible, implying an interaction or confrontation between the rabbit and the rodents (0:08-0:09).</reason> <answer>The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or surprise.</answer>",
+    "answer": "The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or surprise.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.01,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.0016737441765144467,
+          "after_rms": 0.1666221022605896,
+          "relative_noise_rms": 0.010044828057289124,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17179618775844574,
+          "noise_rms": 0.0016906658420339227,
+          "after_rms": 0.17180569469928741,
+          "relative_noise_rms": 0.009841114282608032,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17400117218494415,
+          "noise_rms": 0.0017825677059590816,
+          "after_rms": 0.1740342378616333,
+          "relative_noise_rms": 0.010244572535157204,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.207856222987175,
+          "noise_rms": 0.0021008143667131662,
+          "after_rms": 0.20784690976142883,
+          "relative_noise_rms": 0.010107055306434631,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17575302720069885,
+          "noise_rms": 0.0017709687817841768,
+          "after_rms": 0.17572826147079468,
+          "relative_noise_rms": 0.010076462291181087,
+          "generation_step": 1724
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1754540055990219,
+          "noise_rms": 0.0017548392061144114,
+          "after_rms": 0.17546911537647247,
+          "relative_noise_rms": 0.010001705028116703,
+          "generation_step": 1725
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.18025915324687958,
+          "noise_rms": 0.0018272972665727139,
+          "after_rms": 0.18029022216796875,
+          "relative_noise_rms": 0.010137056931853294,
+          "generation_step": 1726
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.40546154975891113,
+          "noise_rms": 0.004025280941277742,
+          "after_rms": 0.4054539203643799,
+          "relative_noise_rms": 0.009927651844918728,
+          "generation_step": 1727
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 4,
+    "name": "sigma_0.01_seed_22",
+    "sigma": 0.01,
+    "seed": 22,
+    "elapsed_seconds": 44.43128973245621,
+    "peak_gpu_memory_gib": 17.090188026428223,
+    "generated_tokens": 254,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "137b7565de85fa085432c1f4a9c6f97d7cc5155f771b6c24c33f5a6b33ceb4bc",
+    "raw_sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason>\n<answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason> <answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer>",
+    "answer": "The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.01,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.0016502024373039603,
+          "after_rms": 0.16660825908184052,
+          "relative_noise_rms": 0.009903544560074806,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17191481590270996,
+          "noise_rms": 0.0017298905877396464,
+          "after_rms": 0.1719302088022232,
+          "relative_noise_rms": 0.010062486864626408,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17430981993675232,
+          "noise_rms": 0.0017665239283815026,
+          "after_rms": 0.17428629100322723,
+          "relative_noise_rms": 0.010134391486644745,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.20919165015220642,
+          "noise_rms": 0.0021144242491573095,
+          "after_rms": 0.2091332972049713,
+          "relative_noise_rms": 0.010107593610882759,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1759994775056839,
+          "noise_rms": 0.0017766380915418267,
+          "after_rms": 0.17598450183868408,
+          "relative_noise_rms": 0.010094564408063889,
+          "generation_step": 1724
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1758655458688736,
+          "noise_rms": 0.0017559969564899802,
+          "after_rms": 0.17587530612945557,
+          "relative_noise_rms": 0.009984883479773998,
+          "generation_step": 1725
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.18162821233272552,
+          "noise_rms": 0.0018263200763612986,
+          "after_rms": 0.1815861463546753,
+          "relative_noise_rms": 0.010055266320705414,
+          "generation_step": 1726
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.4010961055755615,
+          "noise_rms": 0.004052820149809122,
+          "after_rms": 0.4011651277542114,
+          "relative_noise_rms": 0.010104361921548843,
+          "generation_step": 1727
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 5,
+    "name": "sigma_0.03_seed_11",
+    "sigma": 0.03,
+    "seed": 11,
+    "elapsed_seconds": 44.4076912868768,
+    "peak_gpu_memory_gib": 17.08823871612549,
+    "generated_tokens": 254,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "71753272652a128ef4cc0de86a7c34ead8643b4d93417df28f29c26c66d08da1",
+    "raw_sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason>\n<answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason> <answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer>",
+    "answer": "The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.03,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.005021038465201855,
+          "after_rms": 0.16664905846118927,
+          "relative_noise_rms": 0.0301333200186491,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17254109680652618,
+          "noise_rms": 0.005094236694276333,
+          "after_rms": 0.1726122945547104,
+          "relative_noise_rms": 0.029524773359298706,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17372001707553864,
+          "noise_rms": 0.0053391652181744576,
+          "after_rms": 0.173883318901062,
+          "relative_noise_rms": 0.030734311789274216,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.20788951218128204,
+          "noise_rms": 0.0063033620826900005,
+          "after_rms": 0.2079666405916214,
+          "relative_noise_rms": 0.030320731922984123,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1762572079896927,
+          "noise_rms": 0.005327900405973196,
+          "after_rms": 0.1762530654668808,
+          "relative_noise_rms": 0.030227985233068466,
+          "generation_step": 1724
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1751617044210434,
+          "noise_rms": 0.005256057716906071,
+          "after_rms": 0.17524409294128418,
+          "relative_noise_rms": 0.03000688925385475,
+          "generation_step": 1725
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.18136781454086304,
+          "noise_rms": 0.005515202414244413,
+          "after_rms": 0.1814752221107483,
+          "relative_noise_rms": 0.030408937484025955,
+          "generation_step": 1726
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.4454304277896881,
+          "noise_rms": 0.013266811147332191,
+          "after_rms": 0.4454594552516937,
+          "relative_noise_rms": 0.029784249141812325,
+          "generation_step": 1727
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 6,
+    "name": "sigma_0.03_seed_22",
+    "sigma": 0.03,
+    "seed": 22,
+    "elapsed_seconds": 44.221639243885875,
+    "peak_gpu_memory_gib": 17.091599464416504,
+    "generated_tokens": 254,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "2ef53800d4051cbef2f602d50d9d4a8fc64637520562d9e91407c7bf44f15e88",
+    "raw_sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason>\n<answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason> <answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer>",
+    "answer": "The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.03,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.004950871225446463,
+          "after_rms": 0.16657355427742004,
+          "relative_noise_rms": 0.029712218791246414,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17222048342227936,
+          "noise_rms": 0.005199362523853779,
+          "after_rms": 0.17230379581451416,
+          "relative_noise_rms": 0.030190151184797287,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17336426675319672,
+          "noise_rms": 0.0052705486305058,
+          "after_rms": 0.1733483225107193,
+          "relative_noise_rms": 0.03040158562362194,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.21178650856018066,
+          "noise_rms": 0.00642185565084219,
+          "after_rms": 0.21168790757656097,
+          "relative_noise_rms": 0.030322307720780373,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17603977024555206,
+          "noise_rms": 0.005331342574208975,
+          "after_rms": 0.17610973119735718,
+          "relative_noise_rms": 0.030284876003861427,
+          "generation_step": 1724
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1759171336889267,
+          "noise_rms": 0.0052702296525239944,
+          "after_rms": 0.1759481281042099,
+          "relative_noise_rms": 0.029958592727780342,
+          "generation_step": 1725
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.18079742789268494,
+          "noise_rms": 0.005453978665173054,
+          "after_rms": 0.18070971965789795,
+          "relative_noise_rms": 0.03016624040901661,
+          "generation_step": 1726
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.3941780924797058,
+          "noise_rms": 0.011948570609092712,
+          "after_rms": 0.39452436566352844,
+          "relative_noise_rms": 0.030312620103359222,
+          "generation_step": 1727
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 7,
+    "name": "sigma_0.1_seed_11",
+    "sigma": 0.1,
+    "seed": 11,
+    "elapsed_seconds": 43.59361036866903,
+    "peak_gpu_memory_gib": 17.088500022888184,
+    "generated_tokens": 213,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "8a96ddea476b848d60cd17b4afb80a8bcabdeb21d5700210b291ae6943b213c8",
+    "raw_sha256": "c684c762d1af4955b6a2fded5d31c0f9acc18a5d7c8ff9b36e68ee60116ca946",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears, indicating the introduction of a main character (0:02-0:03).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>The next frame shows the text 'THREE RODENTS' (0:04-0:05), suggesting the presence of additional characters. The final frame reveals a large rabbit standing in a grassy field, looking surprised (0:06-0:07). This sequence of events suggests that the large rabbit will encounter the three rodents, leading to a potential interaction or conflict.</reason>\n<answer>The large rabbit will encounter the three rodents, leading to a potential interaction or conflict.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears, indicating the introduction of a main character (0:02-0:03).</reason> <reason>The next frame shows the text 'THREE RODENTS' (0:04-0:05), suggesting the presence of additional characters. The final frame reveals a large rabbit standing in a grassy field, looking surprised (0:06-0:07). This sequence of events suggests that the large rabbit will encounter the three rodents, leading to a potential interaction or conflict.</reason> <answer>The large rabbit will encounter the three rodents, leading to a potential interaction or conflict.</answer>",
+    "answer": "The large rabbit will encounter the three rodents, leading to a potential interaction or conflict.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.1,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.016737673431634903,
+          "after_rms": 0.16732817888259888,
+          "relative_noise_rms": 0.10044967383146286,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17104138433933258,
+          "noise_rms": 0.016832491382956505,
+          "after_rms": 0.17184090614318848,
+          "relative_noise_rms": 0.09841180592775345,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17240464687347412,
+          "noise_rms": 0.01766226440668106,
+          "after_rms": 0.1735609769821167,
+          "relative_noise_rms": 0.10244657099246979,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.212741881608963,
+          "noise_rms": 0.02150139771401882,
+          "after_rms": 0.2138584554195404,
+          "relative_noise_rms": 0.10106800496578217,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17443570494651794,
+          "noise_rms": 0.017576390877366066,
+          "after_rms": 0.17512531578540802,
+          "relative_noise_rms": 0.10076142847537994,
+          "generation_step": 1683
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17389161884784698,
+          "noise_rms": 0.017391202971339226,
+          "after_rms": 0.17477035522460938,
+          "relative_noise_rms": 0.10001173615455627,
+          "generation_step": 1684
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17780254781246185,
+          "noise_rms": 0.018022777512669563,
+          "after_rms": 0.1786954551935196,
+          "relative_noise_rms": 0.10136400163173676,
+          "generation_step": 1685
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.3008027672767639,
+          "noise_rms": 0.02986115776002407,
+          "after_rms": 0.3020046353340149,
+          "relative_noise_rms": 0.09927155077457428,
+          "generation_step": 1686
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 8,
+    "name": "sigma_0.1_seed_22",
+    "sigma": 0.1,
+    "seed": 22,
+    "elapsed_seconds": 44.29533549584448,
+    "peak_gpu_memory_gib": 17.08134937286377,
+    "generated_tokens": 254,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "fb035766cecba2c32d0a772475e291f4fa2f955719f6ca67887a841bbf5945ad",
+    "raw_sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason>\n<answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason> <answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer>",
+    "answer": "The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.1,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.01650278829038143,
+          "after_rms": 0.1670687049627304,
+          "relative_noise_rms": 0.09904003143310547,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17131325602531433,
+          "noise_rms": 0.017237991094589233,
+          "after_rms": 0.17225004732608795,
+          "relative_noise_rms": 0.10062263160943985,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17416097223758698,
+          "noise_rms": 0.01764841005206108,
+          "after_rms": 0.17474354803562164,
+          "relative_noise_rms": 0.10133389383554459,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.21433047950267792,
+          "noise_rms": 0.021664177998900414,
+          "after_rms": 0.21479982137680054,
+          "relative_noise_rms": 0.10107838362455368,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17577020823955536,
+          "noise_rms": 0.017741750925779343,
+          "after_rms": 0.1766050159931183,
+          "relative_noise_rms": 0.10093718767166138,
+          "generation_step": 1724
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1756422519683838,
+          "noise_rms": 0.017538856714963913,
+          "after_rms": 0.17631880939006805,
+          "relative_noise_rms": 0.09985556453466415,
+          "generation_step": 1725
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.18095038831233978,
+          "noise_rms": 0.018195021897554398,
+          "after_rms": 0.18131643533706665,
+          "relative_noise_rms": 0.10055254399776459,
+          "generation_step": 1726
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.42346489429473877,
+          "noise_rms": 0.04279161989688873,
+          "after_rms": 0.4260055124759674,
+          "relative_noise_rms": 0.10105115920305252,
+          "generation_step": 1727
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 9,
+    "name": "sigma_0.2_seed_11",
+    "sigma": 0.2,
+    "seed": 11,
+    "elapsed_seconds": 44.503319500014186,
+    "peak_gpu_memory_gib": 17.09000301361084,
+    "generated_tokens": 254,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "5c6d9bb28a30669f96807f029c17bb816af75ffa723d14efa3f57cc59b914dfc",
+    "raw_sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason>\n<answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason> <answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer>",
+    "answer": "The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.2,
+      "noise_seed": 11,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.033475346863269806,
+          "after_rms": 0.16967923939228058,
+          "relative_noise_rms": 0.20089934766292572,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1708669513463974,
+          "noise_rms": 0.03363366797566414,
+          "after_rms": 0.17413097620010376,
+          "relative_noise_rms": 0.1968412697315216,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17109934985637665,
+          "noise_rms": 0.03505469113588333,
+          "after_rms": 0.17514973878860474,
+          "relative_noise_rms": 0.20487916469573975,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.2135455459356308,
+          "noise_rms": 0.04316097870469093,
+          "after_rms": 0.21794459223747253,
+          "relative_noise_rms": 0.20211602747440338,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17600803077220917,
+          "noise_rms": 0.035467278212308884,
+          "after_rms": 0.17897911369800568,
+          "relative_noise_rms": 0.20150943100452423,
+          "generation_step": 1724
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1780444085597992,
+          "noise_rms": 0.035615164786577225,
+          "after_rms": 0.181449294090271,
+          "relative_noise_rms": 0.20003528892993927,
+          "generation_step": 1725
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.18213918805122375,
+          "noise_rms": 0.036923088133335114,
+          "after_rms": 0.18601636588573456,
+          "relative_noise_rms": 0.2027190774679184,
+          "generation_step": 1726
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.5805344581604004,
+          "noise_rms": 0.11526712030172348,
+          "after_rms": 0.5913028120994568,
+          "relative_noise_rms": 0.19855345785617828,
+          "generation_step": 1727
+        }
+      ]
+    }
+  },
+  {
+    "run_index": 10,
+    "name": "sigma_0.2_seed_22",
+    "sigma": 0.2,
+    "seed": 22,
+    "elapsed_seconds": 44.289829686284065,
+    "peak_gpu_memory_gib": 17.0927152633667,
+    "generated_tokens": 254,
+    "latent_vector_count": 8,
+    "latent_dim": 4096,
+    "latent_finite": true,
+    "latent_sha256": "02462068c5e2484aff01177a01492055ba44b3d7ae77cf9c83cfa293a672bff2",
+    "raw_sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason>\n<answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer><|im_end|>",
+    "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason> <answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer>",
+    "answer": "The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.",
+    "has_answer_tag": true,
+    "has_latent_tags": true,
+    "noise_stats": {
+      "noise_std": 0.2,
+      "noise_seed": 22,
+      "scale_mode": "rms",
+      "perturbed_step_count": 8,
+      "steps": [
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1666274517774582,
+          "noise_rms": 0.03300557658076286,
+          "after_rms": 0.16915737092494965,
+          "relative_noise_rms": 0.19808006286621094,
+          "generation_step": 1628
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17109674215316772,
+          "noise_rms": 0.03443044796586037,
+          "after_rms": 0.17469613254070282,
+          "relative_noise_rms": 0.20123380422592163,
+          "generation_step": 1629
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17374169826507568,
+          "noise_rms": 0.03521605208516121,
+          "after_rms": 0.17661510407924652,
+          "relative_noise_rms": 0.20269200205802917,
+          "generation_step": 1630
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.21399211883544922,
+          "noise_rms": 0.04326239228248596,
+          "after_rms": 0.2171178162097931,
+          "relative_noise_rms": 0.20216815173625946,
+          "generation_step": 1631
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.1751422882080078,
+          "noise_rms": 0.03536055237054825,
+          "after_rms": 0.17855563759803772,
+          "relative_noise_rms": 0.20189614593982697,
+          "generation_step": 1724
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17467132210731506,
+          "noise_rms": 0.03488227725028992,
+          "after_rms": 0.1776440143585205,
+          "relative_noise_rms": 0.19970236718654633,
+          "generation_step": 1725
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.17997954785823822,
+          "noise_rms": 0.036195892840623856,
+          "after_rms": 0.18239697813987732,
+          "relative_noise_rms": 0.20111113786697388,
+          "generation_step": 1726
+        },
+        {
+          "active_vectors": 1,
+          "before_rms": 0.395917683839798,
+          "noise_rms": 0.08001231402158737,
+          "after_rms": 0.40465372800827026,
+          "relative_noise_rms": 0.20209330320358276,
+          "generation_step": 1727
+        }
+      ]
+    }
+  }
+]

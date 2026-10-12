@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-10",
+  "user_statement": "目前的query取样没有问题",
+  "approved_query_review_archive_sha256": "1ac37bba7eafb03fa374553cd6e0bcbf03a34445ff569754b06a789c8030d566",
+  "scope": "18 scenes, original target IDs, query6, nominal density grid with exact old48 fallback; query sampling approval only",
+  "query_review_approved": true,
+  "gpu_forward_authorized": false,
+  "input_and_prediction_arrays_modified": false
+}

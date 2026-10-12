@@ -1,0 +1,110 @@
+{
+  "video_id": "drift-turn",
+  "visualization_status": "COMPLETE_PARTIAL_FAIL_OUT_OF_FRAME",
+  "quality_gate_status": "FAIL",
+  "query_reference_source_frame_index": 14,
+  "output_camera_source_frame_index": 20,
+  "source_frame_indices": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "observed_source_frame_indices": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "preview_encode_fps_playback_only": 8.0,
+  "capture_fps_known": false,
+  "trajectory_source": {
+    "teacher": "new full22_query_tracks.npz frame14 direct query",
+    "observed": "new observed7_query_tracks.npz frame14 direct query"
+  },
+  "teacher_video": {
+    "frame_count": 22,
+    "rendered_valid_points_per_frame": [
+      48,
+      48,
+      48,
+      47,
+      44,
+      34,
+      28,
+      19,
+      9,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "resolution_hw": [
+      480,
+      854
+    ],
+    "encode_fps": 8.0
+  },
+  "observed_video": {
+    "frame_count": 7,
+    "rendered_valid_points_per_frame": [
+      48,
+      48,
+      48,
+      48,
+      48,
+      47,
+      46
+    ],
+    "resolution_hw": [
+      480,
+      854
+    ],
+    "encode_fps": 8.0
+  },
+  "frame0_query_count_rendered": 48,
+  "t0_comparison": {
+    "resolution_hw": [
+      480,
+      854
+    ],
+    "teacher_rendered_count": 28,
+    "observed_rendered_count": 46
+  },
+  "product_sha256": {
+    "teacher_full22_trackcraft_query_overlay.mp4": "1e694c4b946383f6aefd1f12fc11022fa8554198751d3974ab7a5582bd5a8cc4",
+    "observed7_trackcraft_query_overlay.mp4": "45dcd4a0984cc86bc32a4a5b771aaa5587e1e26547e2b8bea030ef63be23eb58",
+    "frame0_source14_48_queries.png": "2e5b291dc872ceb4e1360f891eed9f24ad336cb15aa04457f78b5289263c10f9",
+    "t0_source20_teacher_observed_query_comparison.png": "d1aa96aebcd092a5d23445aed9420063eae970cffcea4d6934920de2c7ef6fbb"
+  }
+}

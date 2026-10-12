@@ -1,0 +1,13 @@
+{
+  "source_ready": true,
+  "revision": "41736238f5bced4debf3f2a12375d2466874866d",
+  "revision_origin": "MotionForesight pinned gitlink external/depth-anything-3",
+  "path": "/root/autodl-tmp/cross-point-probe-2026-10-10/source/Depth-Anything-3-41736238f5bced4debf3f2a12375d2466874866d",
+  "zip_bytes": 23765234,
+  "zip_sha256": "d8199ee9ff8de0d72c189bd8d72326a201b4096367a255425345f1f81b4402ff",
+  "publisher_sha256_available": false,
+  "zip_crc_pass": true,
+  "model_loaded": false,
+  "forward_called": false,
+  "gpu_used": false
+}

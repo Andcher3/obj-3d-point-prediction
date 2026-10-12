@@ -1,0 +1,12 @@
+{
+  "controller_pid": 4853,
+  "state": "completed",
+  "GPU_used": true,
+  "started_at_utc": "2026-10-11T03:12:26.395019+00:00",
+  "hard_timeout_seconds": 1800,
+  "child_pid": 4854,
+  "elapsed_seconds": 56.07133312895894,
+  "updated_at_utc": "2026-10-11T03:13:20.463606+00:00",
+  "returncode": 0,
+  "finished_at_utc": "2026-10-11T03:13:22.466352+00:00"
+}

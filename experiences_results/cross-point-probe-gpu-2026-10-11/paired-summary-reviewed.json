@@ -1,0 +1,794 @@
+{
+  "readers": [
+    {
+      "reader": "ridge",
+      "independent_test_scenes": 40,
+      "fitted_seeds": 1,
+      "all_runs_selected_zero_correction_initialization": false,
+      "metrics": {
+        "ade": {
+          "relative_gain": 0.02468413978752234,
+          "descriptive_95pct_interval": [
+            0.005776456696931693,
+            0.04126921096456325
+          ],
+          "two_reader_family_97_5pct_interval": [
+            0.0035005434783769705,
+            0.04354244787230096
+          ],
+          "scene_win_fraction": 0.525,
+          "mean_paired_error_reduction": 0.08505300109575412,
+          "bootstrap_replicates": 10000
+        },
+        "fde": {
+          "relative_gain": 0.007100526570476463,
+          "descriptive_95pct_interval": [
+            -0.0029937064784402436,
+            0.016420818457582625
+          ],
+          "two_reader_family_97_5pct_interval": [
+            -0.004345608187763672,
+            0.01811726277098892
+          ],
+          "scene_win_fraction": 0.425,
+          "mean_paired_error_reduction": 0.02835604326453849,
+          "bootstrap_replicates": 10000
+        },
+        "relative_vector_error": {
+          "relative_gain": 0.08140612612692855,
+          "descriptive_95pct_interval": [
+            0.05660765649892659,
+            0.10412473507248889
+          ],
+          "two_reader_family_97_5pct_interval": [
+            0.05324831303532198,
+            0.10746067495894825
+          ],
+          "scene_win_fraction": 0.875,
+          "mean_paired_error_reduction": 0.09288354393131319,
+          "bootstrap_replicates": 10000
+        },
+        "pair_length_error": {
+          "relative_gain": 0.10809175587879419,
+          "descriptive_95pct_interval": [
+            0.05470719765631093,
+            0.1559506122434182
+          ],
+          "two_reader_family_97_5pct_interval": [
+            0.04647630892308399,
+            0.16271829713124578
+          ],
+          "scene_win_fraction": 0.575,
+          "mean_paired_error_reduction": 0.06545953801106555,
+          "bootstrap_replicates": 10000
+        },
+        "future_change_error": {
+          "relative_gain": 0.012763365280581928,
+          "descriptive_95pct_interval": [
+            -0.0014984458294722248,
+            0.025183824512340334
+          ],
+          "two_reader_family_97_5pct_interval": [
+            -0.003621406230749703,
+            0.02663385000565462
+          ],
+          "scene_win_fraction": 0.7,
+          "mean_paired_error_reduction": 0.02158802598557594,
+          "bootstrap_replicates": 10000
+        }
+      },
+      "decision": "does_not_meet_5pct_practical_target_for_this_reader",
+      "scene_ids": [
+        "scene_1056",
+        "scene_1215",
+        "scene_1301",
+        "scene_1441",
+        "scene_1450",
+        "scene_1539",
+        "scene_1691",
+        "scene_1697",
+        "scene_1773",
+        "scene_1776",
+        "scene_179",
+        "scene_1895",
+        "scene_2064",
+        "scene_2509",
+        "scene_2515",
+        "scene_2549",
+        "scene_2580",
+        "scene_2624",
+        "scene_2759",
+        "scene_2836",
+        "scene_3207",
+        "scene_335",
+        "scene_3350",
+        "scene_3471",
+        "scene_351",
+        "scene_3540",
+        "scene_3703",
+        "scene_3917",
+        "scene_428",
+        "scene_4417",
+        "scene_4593",
+        "scene_4704",
+        "scene_5042",
+        "scene_5099",
+        "scene_5398",
+        "scene_5419",
+        "scene_5545",
+        "scene_5748",
+        "scene_5850",
+        "scene_706"
+      ],
+      "seed_results": [
+        {
+          "condition": "self_shared_no_neighbors",
+          "seed": null,
+          "selected_epoch": null,
+          "test_scene_macro": {
+            "ade": 3.4456538420166787,
+            "fde": 3.993512732202325,
+            "relative_vector_error": 1.1409896079134048,
+            "pair_length_error": 0.6055923273599777,
+            "future_change_error": 1.6914054805295067
+          }
+        },
+        {
+          "condition": "self_shared_true_neighbors",
+          "seed": null,
+          "selected_epoch": null,
+          "test_scene_macro": {
+            "ade": 3.360600840920924,
+            "fde": 3.9651566889377863,
+            "relative_vector_error": 1.0481060639820916,
+            "pair_length_error": 0.5401327893489122,
+            "future_change_error": 1.6698174545439304
+          }
+        }
+      ],
+      "no_neighbor_macro": {
+        "ade": 3.445653842016678,
+        "fde": 3.993512732202325,
+        "relative_vector_error": 1.1409896079134048,
+        "pair_length_error": 0.6055923273599777,
+        "future_change_error": 1.6914054805295067
+      },
+      "true_neighbor_macro": {
+        "ade": 3.3606008409209247,
+        "fde": 3.9651566889377863,
+        "relative_vector_error": 1.0481060639820914,
+        "pair_length_error": 0.5401327893489122,
+        "future_change_error": 1.6698174545439304
+      },
+      "scene_rows": [
+        {
+          "scene": "scene_1056",
+          "no_neighbors_ade": 1.8725716929612617,
+          "neighbors_ade": 1.8635992598210989
+        },
+        {
+          "scene": "scene_1215",
+          "no_neighbors_ade": 1.413569541459651,
+          "neighbors_ade": 1.4810494154598173
+        },
+        {
+          "scene": "scene_1301",
+          "no_neighbors_ade": 5.909192398153072,
+          "neighbors_ade": 5.901685313395002
+        },
+        {
+          "scene": "scene_1441",
+          "no_neighbors_ade": 1.7180229657752026,
+          "neighbors_ade": 1.7922692812350058
+        },
+        {
+          "scene": "scene_1450",
+          "no_neighbors_ade": 4.263589306551847,
+          "neighbors_ade": 4.259923161314917
+        },
+        {
+          "scene": "scene_1539",
+          "no_neighbors_ade": 2.1884396534142727,
+          "neighbors_ade": 2.1567952435912225
+        },
+        {
+          "scene": "scene_1691",
+          "no_neighbors_ade": 2.3619350163255697,
+          "neighbors_ade": 2.2909354790575267
+        },
+        {
+          "scene": "scene_1697",
+          "no_neighbors_ade": 2.82620458010994,
+          "neighbors_ade": 2.7793738659933904
+        },
+        {
+          "scene": "scene_1773",
+          "no_neighbors_ade": 3.7154371756919153,
+          "neighbors_ade": 3.1915065402806446
+        },
+        {
+          "scene": "scene_1776",
+          "no_neighbors_ade": 3.3208759817101914,
+          "neighbors_ade": 3.330823175402985
+        },
+        {
+          "scene": "scene_179",
+          "no_neighbors_ade": 3.6898541081171268,
+          "neighbors_ade": 3.5381253516991644
+        },
+        {
+          "scene": "scene_1895",
+          "no_neighbors_ade": 1.7388245937599032,
+          "neighbors_ade": 1.795837536149094
+        },
+        {
+          "scene": "scene_2064",
+          "no_neighbors_ade": 2.0147709894860863,
+          "neighbors_ade": 1.9373008157512175
+        },
+        {
+          "scene": "scene_2509",
+          "no_neighbors_ade": 1.7764535535317598,
+          "neighbors_ade": 1.8188161376935124
+        },
+        {
+          "scene": "scene_2515",
+          "no_neighbors_ade": 0.4169053791983716,
+          "neighbors_ade": 0.4174924077108565
+        },
+        {
+          "scene": "scene_2549",
+          "no_neighbors_ade": 1.4946592401630103,
+          "neighbors_ade": 1.541962033906305
+        },
+        {
+          "scene": "scene_2580",
+          "no_neighbors_ade": 3.9835351960736953,
+          "neighbors_ade": 4.076660108407198
+        },
+        {
+          "scene": "scene_2624",
+          "no_neighbors_ade": 2.5702666952327515,
+          "neighbors_ade": 2.4655383034200913
+        },
+        {
+          "scene": "scene_2759",
+          "no_neighbors_ade": 0.9728825428674542,
+          "neighbors_ade": 1.0091312373449528
+        },
+        {
+          "scene": "scene_2836",
+          "no_neighbors_ade": 1.8920345540765957,
+          "neighbors_ade": 2.010557755528001
+        },
+        {
+          "scene": "scene_3207",
+          "no_neighbors_ade": 3.3640729407058148,
+          "neighbors_ade": 3.3748585998773244
+        },
+        {
+          "scene": "scene_335",
+          "no_neighbors_ade": 1.6295364628674358,
+          "neighbors_ade": 1.7104824457227183
+        },
+        {
+          "scene": "scene_3350",
+          "no_neighbors_ade": 2.534592110160353,
+          "neighbors_ade": 2.588034895146937
+        },
+        {
+          "scene": "scene_3471",
+          "no_neighbors_ade": 5.86625672330275,
+          "neighbors_ade": 5.768491201096738
+        },
+        {
+          "scene": "scene_351",
+          "no_neighbors_ade": 4.24034291646467,
+          "neighbors_ade": 3.9995618228005876
+        },
+        {
+          "scene": "scene_3540",
+          "no_neighbors_ade": 3.68209479497027,
+          "neighbors_ade": 3.84981134261944
+        },
+        {
+          "scene": "scene_3703",
+          "no_neighbors_ade": 4.966947726594316,
+          "neighbors_ade": 5.014968322790703
+        },
+        {
+          "scene": "scene_3917",
+          "no_neighbors_ade": 2.0599964298812603,
+          "neighbors_ade": 1.8775511593606518
+        },
+        {
+          "scene": "scene_428",
+          "no_neighbors_ade": 4.277392066249076,
+          "neighbors_ade": 4.331439235689309
+        },
+        {
+          "scene": "scene_4417",
+          "no_neighbors_ade": 4.50076487382961,
+          "neighbors_ade": 4.350916833238158
+        },
+        {
+          "scene": "scene_4593",
+          "no_neighbors_ade": 1.752069945586338,
+          "neighbors_ade": 1.5997477330360819
+        },
+        {
+          "scene": "scene_4704",
+          "no_neighbors_ade": 1.9426210091503986,
+          "neighbors_ade": 1.9801186344487258
+        },
+        {
+          "scene": "scene_5042",
+          "no_neighbors_ade": 0.6614348298999092,
+          "neighbors_ade": 0.6712755441116525
+        },
+        {
+          "scene": "scene_5099",
+          "no_neighbors_ade": 1.9470984942425384,
+          "neighbors_ade": 1.8933758040718285
+        },
+        {
+          "scene": "scene_5398",
+          "no_neighbors_ade": 19.997505380894907,
+          "neighbors_ade": 18.625464964960745
+        },
+        {
+          "scene": "scene_5419",
+          "no_neighbors_ade": 7.432235958630826,
+          "neighbors_ade": 7.43721125897274
+        },
+        {
+          "scene": "scene_5545",
+          "no_neighbors_ade": 2.8035706885281804,
+          "neighbors_ade": 2.492484999791192
+        },
+        {
+          "scene": "scene_5748",
+          "no_neighbors_ade": 3.9091013914880484,
+          "neighbors_ade": 3.7364152562151496
+        },
+        {
+          "scene": "scene_5850",
+          "no_neighbors_ade": 3.9063696421313883,
+          "neighbors_ade": 3.885481424888681
+        },
+        {
+          "scene": "scene_706",
+          "no_neighbors_ade": 6.212124130429376,
+          "neighbors_ade": 5.5769597348356115
+        }
+      ]
+    },
+    {
+      "reader": "mlp_128_128",
+      "independent_test_scenes": 40,
+      "fitted_seeds": 3,
+      "all_runs_selected_zero_correction_initialization": true,
+      "metrics": {
+        "ade": {
+          "relative_gain": 0.0,
+          "descriptive_95pct_interval": [
+            0.0,
+            0.0
+          ],
+          "two_reader_family_97_5pct_interval": [
+            0.0,
+            0.0
+          ],
+          "scene_win_fraction": 0.0,
+          "mean_paired_error_reduction": 0.0,
+          "bootstrap_replicates": 10000
+        },
+        "fde": {
+          "relative_gain": 0.0,
+          "descriptive_95pct_interval": [
+            0.0,
+            0.0
+          ],
+          "two_reader_family_97_5pct_interval": [
+            0.0,
+            0.0
+          ],
+          "scene_win_fraction": 0.0,
+          "mean_paired_error_reduction": 0.0,
+          "bootstrap_replicates": 10000
+        },
+        "relative_vector_error": {
+          "relative_gain": 0.0,
+          "descriptive_95pct_interval": [
+            0.0,
+            0.0
+          ],
+          "two_reader_family_97_5pct_interval": [
+            0.0,
+            0.0
+          ],
+          "scene_win_fraction": 0.0,
+          "mean_paired_error_reduction": 0.0,
+          "bootstrap_replicates": 10000
+        },
+        "pair_length_error": {
+          "relative_gain": 0.0,
+          "descriptive_95pct_interval": [
+            0.0,
+            0.0
+          ],
+          "two_reader_family_97_5pct_interval": [
+            0.0,
+            0.0
+          ],
+          "scene_win_fraction": 0.0,
+          "mean_paired_error_reduction": 0.0,
+          "bootstrap_replicates": 10000
+        },
+        "future_change_error": {
+          "relative_gain": 0.0,
+          "descriptive_95pct_interval": [
+            0.0,
+            0.0
+          ],
+          "two_reader_family_97_5pct_interval": [
+            0.0,
+            0.0
+          ],
+          "scene_win_fraction": 0.0,
+          "mean_paired_error_reduction": 0.0,
+          "bootstrap_replicates": 10000
+        }
+      },
+      "decision": "validation_retained_zero_correction_information_value_unresolved",
+      "scene_ids": [
+        "scene_1056",
+        "scene_1215",
+        "scene_1301",
+        "scene_1441",
+        "scene_1450",
+        "scene_1539",
+        "scene_1691",
+        "scene_1697",
+        "scene_1773",
+        "scene_1776",
+        "scene_179",
+        "scene_1895",
+        "scene_2064",
+        "scene_2509",
+        "scene_2515",
+        "scene_2549",
+        "scene_2580",
+        "scene_2624",
+        "scene_2759",
+        "scene_2836",
+        "scene_3207",
+        "scene_335",
+        "scene_3350",
+        "scene_3471",
+        "scene_351",
+        "scene_3540",
+        "scene_3703",
+        "scene_3917",
+        "scene_428",
+        "scene_4417",
+        "scene_4593",
+        "scene_4704",
+        "scene_5042",
+        "scene_5099",
+        "scene_5398",
+        "scene_5419",
+        "scene_5545",
+        "scene_5748",
+        "scene_5850",
+        "scene_706"
+      ],
+      "seed_results": [
+        {
+          "condition": "self_shared_no_neighbors",
+          "seed": 0,
+          "selected_epoch": -1,
+          "test_scene_macro": {
+            "ade": 3.548819891080103,
+            "fde": 3.9913797152229775,
+            "relative_vector_error": 1.1775111248961339,
+            "pair_length_error": 0.6283031194055653,
+            "future_change_error": 1.8178265581453417
+          }
+        },
+        {
+          "condition": "self_shared_no_neighbors",
+          "seed": 1,
+          "selected_epoch": -1,
+          "test_scene_macro": {
+            "ade": 3.548819891080103,
+            "fde": 3.9913797152229775,
+            "relative_vector_error": 1.1775111248961339,
+            "pair_length_error": 0.6283031194055653,
+            "future_change_error": 1.8178265581453417
+          }
+        },
+        {
+          "condition": "self_shared_no_neighbors",
+          "seed": 2,
+          "selected_epoch": -1,
+          "test_scene_macro": {
+            "ade": 3.548819891080103,
+            "fde": 3.9913797152229775,
+            "relative_vector_error": 1.1775111248961339,
+            "pair_length_error": 0.6283031194055653,
+            "future_change_error": 1.8178265581453417
+          }
+        },
+        {
+          "condition": "self_shared_true_neighbors",
+          "seed": 0,
+          "selected_epoch": -1,
+          "test_scene_macro": {
+            "ade": 3.548819891080103,
+            "fde": 3.9913797152229775,
+            "relative_vector_error": 1.1775111248961339,
+            "pair_length_error": 0.6283031194055653,
+            "future_change_error": 1.8178265581453417
+          }
+        },
+        {
+          "condition": "self_shared_true_neighbors",
+          "seed": 1,
+          "selected_epoch": -1,
+          "test_scene_macro": {
+            "ade": 3.548819891080103,
+            "fde": 3.9913797152229775,
+            "relative_vector_error": 1.1775111248961339,
+            "pair_length_error": 0.6283031194055653,
+            "future_change_error": 1.8178265581453417
+          }
+        },
+        {
+          "condition": "self_shared_true_neighbors",
+          "seed": 2,
+          "selected_epoch": -1,
+          "test_scene_macro": {
+            "ade": 3.548819891080103,
+            "fde": 3.9913797152229775,
+            "relative_vector_error": 1.1775111248961339,
+            "pair_length_error": 0.6283031194055653,
+            "future_change_error": 1.8178265581453417
+          }
+        }
+      ],
+      "no_neighbor_macro": {
+        "ade": 3.548819891080103,
+        "fde": 3.9913797152229784,
+        "relative_vector_error": 1.1775111248961339,
+        "pair_length_error": 0.6283031194055653,
+        "future_change_error": 1.8178265581453417
+      },
+      "true_neighbor_macro": {
+        "ade": 3.548819891080103,
+        "fde": 3.9913797152229784,
+        "relative_vector_error": 1.1775111248961339,
+        "pair_length_error": 0.6283031194055653,
+        "future_change_error": 1.8178265581453417
+      },
+      "scene_rows": [
+        {
+          "scene": "scene_1056",
+          "no_neighbors_ade": 2.2702090520186693,
+          "neighbors_ade": 2.2702090520186693
+        },
+        {
+          "scene": "scene_1215",
+          "no_neighbors_ade": 0.7537893840039839,
+          "neighbors_ade": 0.7537893840039839
+        },
+        {
+          "scene": "scene_1301",
+          "no_neighbors_ade": 5.9402177431898116,
+          "neighbors_ade": 5.9402177431898116
+        },
+        {
+          "scene": "scene_1441",
+          "no_neighbors_ade": 0.2395596550932948,
+          "neighbors_ade": 0.2395596550932948
+        },
+        {
+          "scene": "scene_1450",
+          "no_neighbors_ade": 3.781610912809503,
+          "neighbors_ade": 3.781610912809503
+        },
+        {
+          "scene": "scene_1539",
+          "no_neighbors_ade": 2.346337012107964,
+          "neighbors_ade": 2.346337012107964
+        },
+        {
+          "scene": "scene_1691",
+          "no_neighbors_ade": 2.3682659389951484,
+          "neighbors_ade": 2.3682659389951484
+        },
+        {
+          "scene": "scene_1697",
+          "no_neighbors_ade": 4.007968804724122,
+          "neighbors_ade": 4.007968804724122
+        },
+        {
+          "scene": "scene_1773",
+          "no_neighbors_ade": 4.624305049545739,
+          "neighbors_ade": 4.624305049545739
+        },
+        {
+          "scene": "scene_1776",
+          "no_neighbors_ade": 3.6345243383094243,
+          "neighbors_ade": 3.6345243383094243
+        },
+        {
+          "scene": "scene_179",
+          "no_neighbors_ade": 4.094495221612587,
+          "neighbors_ade": 4.094495221612587
+        },
+        {
+          "scene": "scene_1895",
+          "no_neighbors_ade": 1.646464511091242,
+          "neighbors_ade": 1.646464511091242
+        },
+        {
+          "scene": "scene_2064",
+          "no_neighbors_ade": 2.7641065315108073,
+          "neighbors_ade": 2.7641065315108073
+        },
+        {
+          "scene": "scene_2509",
+          "no_neighbors_ade": 2.71991897838508,
+          "neighbors_ade": 2.71991897838508
+        },
+        {
+          "scene": "scene_2515",
+          "no_neighbors_ade": 0.4072778314468764,
+          "neighbors_ade": 0.4072778314468764
+        },
+        {
+          "scene": "scene_2549",
+          "no_neighbors_ade": 0.6967426478525857,
+          "neighbors_ade": 0.6967426478525857
+        },
+        {
+          "scene": "scene_2580",
+          "no_neighbors_ade": 3.9676743308307536,
+          "neighbors_ade": 3.9676743308307536
+        },
+        {
+          "scene": "scene_2624",
+          "no_neighbors_ade": 3.805328005229777,
+          "neighbors_ade": 3.805328005229777
+        },
+        {
+          "scene": "scene_2759",
+          "no_neighbors_ade": 0.650189289413936,
+          "neighbors_ade": 0.650189289413936
+        },
+        {
+          "scene": "scene_2836",
+          "no_neighbors_ade": 2.325254900046118,
+          "neighbors_ade": 2.325254900046118
+        },
+        {
+          "scene": "scene_3207",
+          "no_neighbors_ade": 3.380988757468943,
+          "neighbors_ade": 3.380988757468943
+        },
+        {
+          "scene": "scene_335",
+          "no_neighbors_ade": 0.4618058337673175,
+          "neighbors_ade": 0.4618058337673175
+        },
+        {
+          "scene": "scene_3350",
+          "no_neighbors_ade": 2.4294642673111504,
+          "neighbors_ade": 2.4294642673111504
+        },
+        {
+          "scene": "scene_3471",
+          "no_neighbors_ade": 5.46938027483328,
+          "neighbors_ade": 5.46938027483328
+        },
+        {
+          "scene": "scene_351",
+          "no_neighbors_ade": 5.300959411415827,
+          "neighbors_ade": 5.300959411415827
+        },
+        {
+          "scene": "scene_3540",
+          "no_neighbors_ade": 4.574332133539905,
+          "neighbors_ade": 4.574332133539905
+        },
+        {
+          "scene": "scene_3703",
+          "no_neighbors_ade": 5.310290284597978,
+          "neighbors_ade": 5.310290284597978
+        },
+        {
+          "scene": "scene_3917",
+          "no_neighbors_ade": 2.1729496098934367,
+          "neighbors_ade": 2.1729496098934367
+        },
+        {
+          "scene": "scene_428",
+          "no_neighbors_ade": 4.71894867914809,
+          "neighbors_ade": 4.71894867914809
+        },
+        {
+          "scene": "scene_4417",
+          "no_neighbors_ade": 4.106572976322246,
+          "neighbors_ade": 4.106572976322246
+        },
+        {
+          "scene": "scene_4593",
+          "no_neighbors_ade": 1.458816360402955,
+          "neighbors_ade": 1.458816360402955
+        },
+        {
+          "scene": "scene_4704",
+          "no_neighbors_ade": 1.61523348247155,
+          "neighbors_ade": 1.61523348247155
+        },
+        {
+          "scene": "scene_5042",
+          "no_neighbors_ade": 0.3779170152501989,
+          "neighbors_ade": 0.3779170152501989
+        },
+        {
+          "scene": "scene_5099",
+          "no_neighbors_ade": 2.6600805176848272,
+          "neighbors_ade": 2.6600805176848272
+        },
+        {
+          "scene": "scene_5398",
+          "no_neighbors_ade": 20.623642961266224,
+          "neighbors_ade": 20.623642961266224
+        },
+        {
+          "scene": "scene_5419",
+          "no_neighbors_ade": 7.758017206642589,
+          "neighbors_ade": 7.758017206642589
+        },
+        {
+          "scene": "scene_5545",
+          "no_neighbors_ade": 2.110572258362767,
+          "neighbors_ade": 2.110572258362767
+        },
+        {
+          "scene": "scene_5748",
+          "no_neighbors_ade": 3.0356454210306008,
+          "neighbors_ade": 3.0356454210306008
+        },
+        {
+          "scene": "scene_5850",
+          "no_neighbors_ade": 3.982399047896667,
+          "neighbors_ade": 3.982399047896667
+        },
+        {
+          "scene": "scene_706",
+          "no_neighbors_ade": 7.360539005680153,
+          "neighbors_ade": 7.360539005680153
+        }
+      ]
+    }
+  ],
+  "baseline": {
+    "ade": 3.548819891080103,
+    "fde": 3.9913797152229775,
+    "relative_vector_error": 1.1775111249178916,
+    "pair_length_error": 0.6283031194805874,
+    "future_change_error": 1.8178265581285522
+  },
+  "coordinate_protocol": "user-approved observed-frame0 similarity; fixed for future labels and all groups",
+  "GT_assisted_label_evaluation_calibration": true,
+  "bootstrap_unit": "independent scene; paired conditions; three MLP seeds averaged within scene",
+  "primary_metric": "scene-macro ADE",
+  "secondary_intervals": "descriptive, not family-corrected",
+  "test_used_for_tuning": false,
+  "family_size_primary_readers": 2,
+  "minimum_practical_gain": 0.05,
+  "no_claim_about_all_relation_architectures": true
+}

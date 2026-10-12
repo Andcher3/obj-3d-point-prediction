@@ -1,0 +1,520 @@
+{
+  "status": "DIAGNOSTIC_ONLY_NOT_TRAINING_APPROVAL",
+  "video_id": "soccerball",
+  "source_raw_directory": "/root/autodl-tmp/projects/motionforesight/outputs/davis_frame0_direct_2026-09-28/soccerball",
+  "anchored_directory": "/root/autodl-tmp/projects/motionforesight/outputs/davis_official_interleaved_pj0_2026-09-28/soccerball",
+  "contexts": {
+    "observed7": {
+      "raw_frame0_query_error_px": {
+        "p50": 3.104618727282968,
+        "p90": 4.453868239846799,
+        "mean": 3.0465851872446073,
+        "max": 5.467379681414039
+      },
+      "anchored_frame0_query_error_px": {
+        "p50": 0.6477695381250796,
+        "p90": 0.9653292735396946,
+        "mean": 0.6485024803071914,
+        "max": 1.2070375978518693
+      },
+      "raw_mask_hits": {
+        "source_frame_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "counts_of_48": [
+          46,
+          42,
+          36,
+          34,
+          40,
+          32,
+          11
+        ],
+        "fraction_stats": {
+          "p50": 0.75,
+          "p90": 0.9083333333333333,
+          "mean": 0.7172619047619049,
+          "max": 0.9583333333333334
+        }
+      },
+      "anchored_mask_hits": {
+        "source_frame_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "counts_of_48": [
+          48,
+          41,
+          37,
+          34,
+          37,
+          26,
+          8
+        ],
+        "fraction_stats": {
+          "p50": 0.7708333333333334,
+          "p90": 0.9125,
+          "mean": 0.6875000000000001,
+          "max": 1.0
+        }
+      },
+      "temporal_displacement_max_abs_change": 7.450580596923828e-09,
+      "anchor_delta_norm": {
+        "p50": 0.007771107851832651,
+        "p90": 0.010011801433276969,
+        "mean": 0.007767541436423224,
+        "max": 0.011870155255646274
+      }
+    },
+    "official_teacher22": {
+      "raw_frame0_query_error_px": {
+        "p50": 2.661695237833958,
+        "p90": 4.2424183737566885,
+        "mean": 2.7372327690717775,
+        "max": 5.691996708416535
+      },
+      "anchored_frame0_query_error_px": {
+        "p50": 0.6477698919768995,
+        "p90": 0.9653292138019203,
+        "mean": 0.6485026484833405,
+        "max": 1.2070376483641536
+      },
+      "raw_mask_hits": {
+        "source_frame_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "counts_of_48": [
+          46,
+          41,
+          33,
+          29,
+          34,
+          19,
+          4,
+          4,
+          26,
+          18,
+          36,
+          33,
+          41,
+          38,
+          44,
+          41,
+          42,
+          40,
+          41,
+          34,
+          41,
+          36
+        ],
+        "fraction_stats": {
+          "p50": 0.75,
+          "p90": 0.8729166666666667,
+          "mean": 0.6827651515151515,
+          "max": 0.9583333333333334
+        }
+      },
+      "anchored_mask_hits": {
+        "source_frame_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "counts_of_48": [
+          48,
+          40,
+          34,
+          31,
+          27,
+          13,
+          4,
+          3,
+          27,
+          21,
+          37,
+          36,
+          43,
+          38,
+          44,
+          42,
+          43,
+          39,
+          44,
+          36,
+          44,
+          37
+        ],
+        "fraction_stats": {
+          "p50": 0.7708333333333334,
+          "p90": 0.9166666666666666,
+          "mean": 0.6922348484848485,
+          "max": 1.0
+        }
+      },
+      "temporal_displacement_max_abs_change": 0.0016708970069885254,
+      "anchor_delta_norm": {
+        "p50": 0.00673763797949318,
+        "p90": 0.008912162357490183,
+        "mean": 0.006748167979356567,
+        "max": 0.01201622722788274
+      },
+      "anchor_delta_norm_per_run": [
+        {
+          "p50": 0.006814296273542509,
+          "p90": 0.009175460960763679,
+          "mean": 0.006830571078849636,
+          "max": 0.011364222040761266
+        },
+        {
+          "p50": 0.00661105581589088,
+          "p90": 0.008410113216683977,
+          "mean": 0.006665764879863499,
+          "max": 0.01201622722788274
+        }
+      ],
+      "per_run_temporal_displacement_max_abs_change": [
+        5.551115123125783e-17,
+        5.551115123125783e-17
+      ]
+    }
+  },
+  "quality_before_legacy_direct22": {
+    "status": "FAIL",
+    "video_id": "soccerball",
+    "protocol": "frame0_direct_query_2026-09-28",
+    "query_reference_source_frame_index": 14,
+    "output_camera_source_frame_index": 20,
+    "source_frame_indices": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "observed_source_frame_indices": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "evaluated_future_source_frame_indices": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "preview_mp4_fps_used": false,
+    "gates": {
+      "frame0_query_48": true,
+      "observed_frame0_anchor_p90_le_5pct": false,
+      "observed_frame0_anchor_max_le_10pct": true,
+      "teacher_frame0_anchor_p90_le_5pct": false,
+      "teacher_frame0_anchor_max_le_10pct": false,
+      "cross_context_t0_uv_p90_le_5pct": false,
+      "cross_context_t0_uv_max_le_10pct": false,
+      "valid_queries_at_least_44": true,
+      "registration_p90_le_10pct": false,
+      "registration_90pct_below_10pct": false,
+      "registration_max_le_20pct": false,
+      "valid_graph_connected": true,
+      "finite_predictions_teacher": true
+    },
+    "valid_query_count": 48,
+    "observed_frame0_anchor_normalized_bbox": {
+      "p50": 0.05190247939883276,
+      "p90": 0.07445899959705246,
+      "mean": 0.050932284704774976,
+      "max": 0.09140270874051355
+    },
+    "teacher_frame0_anchor_normalized_bbox": {
+      "p50": 0.12343294070596922,
+      "p90": 0.14720295710600645,
+      "mean": 0.1188491457951008,
+      "max": 0.17945346122959538
+    },
+    "cross_context_t0_uv_normalized_frame0_bbox": {
+      "p50": 0.1831259677264142,
+      "p90": 0.3085937254723905,
+      "mean": 0.18410802634426693,
+      "max": 0.3348140401140937
+    },
+    "registration_crossfit_normalized_3d_bbox": {
+      "p50": 0.16146964124353086,
+      "p90": 0.34588809278337845,
+      "mean": 0.18372505484208357,
+      "max": 0.5000516314899546
+    },
+    "registration_fraction_below_10pct": 0.22916666666666666,
+    "graph": {
+      "edge_count": 92,
+      "component_count": 1,
+      "component_sizes": [
+        48
+      ],
+      "bridge_edges": [
+        [
+          17,
+          39
+        ],
+        [
+          21,
+          32
+        ],
+        [
+          27,
+          40
+        ]
+      ],
+      "connected": true
+    },
+    "shapes": {
+      "observed": [
+        7,
+        48,
+        3
+      ],
+      "teacher": [
+        22,
+        48,
+        3
+      ],
+      "p0": [
+        9,
+        48,
+        3
+      ],
+      "h_output": [
+        9,
+        48,
+        16
+      ]
+    },
+    "sources": {
+      "baseline": "MotionForesight, seven observed frames only",
+      "pseudo_gt": "TrackCraft3R, offline full22 query-only"
+    }
+  },
+  "quality_after": {
+    "status": "FAIL",
+    "training_approved": false,
+    "video_id": "soccerball",
+    "protocol": "official_interleaved23_pj0_anchor_2026-09-28",
+    "query_reference_source_frame_index": 14,
+    "output_camera_source_frame_index": 20,
+    "offline_teacher_input_source_frames": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "teacher_output_source_frames": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "extra_context_not_evaluated_source_frame": 36,
+    "observed_source_frames": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "evaluated_future_source_frames": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "observed_trackcraft_protocol": "nonofficial 7-frame diagnostic; no future-frame padding",
+    "gates": {
+      "frame0_query_48": true,
+      "observed_frame0_anchor_p90_le_5pct": true,
+      "observed_frame0_anchor_max_le_10pct": true,
+      "teacher_frame0_anchor_p90_le_5pct": true,
+      "teacher_frame0_anchor_max_le_10pct": true,
+      "cross_context_t0_uv_p90_le_5pct": false,
+      "cross_context_t0_uv_max_le_10pct": false,
+      "valid_queries_at_least_44": true,
+      "registration_p90_le_10pct": false,
+      "registration_90pct_below_10pct": false,
+      "registration_max_le_20pct": false,
+      "valid_graph_connected": false,
+      "finite_predictions_teacher": true,
+      "official_teacher_interleaved_12_frame_runs": true
+    },
+    "valid_query_count": 48,
+    "observed_frame0_anchor_normalized_bbox": {
+      "p50": 0.010829299202595455,
+      "p90": 0.016138207984344736,
+      "mean": 0.010841552403342227,
+      "max": 0.02017904598254818
+    },
+    "teacher_frame0_anchor_normalized_bbox": {
+      "p50": 0.010829305118229032,
+      "p90": 0.01613820698565895,
+      "mean": 0.010841555214882026,
+      "max": 0.020179046827003826
+    },
+    "cross_context_t0_uv_normalized_frame0_bbox": {
+      "p50": 0.26614827309652966,
+      "p90": 0.32223189880085085,
+      "mean": 0.2410511889963769,
+      "max": 0.36261610063932204
+    },
+    "registration_crossfit_normalized_3d_bbox": {
+      "p50": 0.1760604154354295,
+      "p90": 0.31237208568047736,
+      "mean": 0.19097816086886707,
+      "max": 0.3956537200566368
+    },
+    "registration_fraction_below_10pct": 0.22916666666666666,
+    "graph": {
+      "edge_count": 89,
+      "component_count": 2,
+      "component_sizes": [
+        39,
+        9
+      ],
+      "bridge_edges": [
+        [
+          22,
+          40
+        ],
+        [
+          36,
+          39
+        ]
+      ],
+      "connected": false
+    },
+    "interpretation_limit": "Pj0 anchoring fixes the frame0 output contract but does not validate future pseudo-trajectories or observed/full DA3 consistency"
+  },
+  "cross_context_t0_uv_after_px": {
+    "p50": 15.920027760910592,
+    "p90": 19.27474754833331,
+    "mean": 14.418810898055247,
+    "max": 21.690384542293803
+  }
+}

@@ -1,0 +1,14 @@
+Datasets to download: {'clips'}
+Download Path: /root/autodl-tmp/datasets/ego4d-molmomotion-probe/v2
+Checking requested datasets and versions...
+Created download directory for version 'v2_1' of dataset: 'clips' at: /root/autodl-tmp/datasets/ego4d-molmomotion-probe/v2/clips
+Only downloading a subset of the video files because the 'video_uids' flag has been set on the command line or in the config file. A total of 3 video files will be downloaded.
+
+Retrieving object metadata from S3...
+  0%|          | 0/3 [00:00<?, ?object/s]100%|██████████| 3/3 [00:00<00:00, 2206.75object/s]
+Checking if latest file versions are already downloaded...
+  0%|          | 0/3 [00:00<?, ?file/s] 33%|███▎      | 1/3 [00:00<00:01,  1.54file/s]100%|██████████| 3/3 [00:01<00:00,  2.53file/s]100%|██████████| 3/3 [00:01<00:00,  2.38file/s]
+No existing videos to filter.
+Downloading 3 files..
+  0%|          | 0.00/4.42M [00:00<?, ?iB/s]  6%|▌         | 256k/4.42M [00:18<05:15, 13.9kiB/s] 11%|█▏        | 512k/4.42M [00:23<02:48, 24.5kiB/s] 17%|█▋        | 768k/4.42M [00:29<02:03, 31.1kiB/s] 23%|██▎       | 1.00M/4.42M [00:34<01:33, 38.2kiB/s] 28%|██▊       | 1.25M/4.42M [00:36<01:08, 48.8kiB/s] 34%|███▍      | 1.50M/4.42M [00:42<01:05, 46.9kiB/s] 40%|███▉      | 1.75M/4.42M [00:43<00:42, 65.5kiB/s] 45%|████▌     | 2.00M/4.42M [00:48<00:42, 60.2kiB/s] 49%|████▉     | 2.18M/4.42M [00:50<00:35, 66.8kiB/s] 55%|█████▌    | 2.43M/4.42M [00:53<00:29, 71.4kiB/s] 59%|█████▉    | 2.61M/4.42M [01:02<00:42, 45.0kiB/s] 65%|██████▍   | 2.86M/4.42M [01:02<00:24, 66.6kiB/s] 70%|███████   | 3.11M/4.42M [01:10<00:27, 50.2kiB/s] 76%|███████▌  | 3.36M/4.42M [01:23<00:32, 34.5kiB/s] 82%|████████▏ | 3.61M/4.42M [01:31<00:25, 33.1kiB/s] 87%|████████▋ | 3.86M/4.42M [01:36<00:15, 38.5kiB/s] 93%|█████████▎| 4.11M/4.42M [01:40<00:07, 43.2kiB/s] 98%|█████████▊| 4.36M/4.42M [01:45<00:01, 44.7kiB/s]100%|██████████| 4.42M/4.42M [01:47<00:00, 45.2kiB/s]100%|██████████| 4.42M/4.42M [01:47<00:00, 43.2kiB/s]
+Checking file integrity...

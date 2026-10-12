@@ -1,0 +1,83 @@
+# 本地文件占位说明
+
+原文件保留在本地，未上传至 GitHub。此文件不包含数据或权重。
+
+详细清单见仓库根目录 `github_upload_manifest.json`。
+
+| 原路径（相对仓库根目录） | 字节数 | 原因 |
+|---|---:|---|
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00000.png` | 3596 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00001.png` | 3590 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00002.png` | 3571 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00003.png` | 3592 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00004.png` | 3560 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00005.png` | 3537 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00006.png` | 3592 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00007.png` | 3594 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00008.png` | 3601 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00009.png` | 3605 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00010.png` | 3582 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00011.png` | 3560 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00012.png` | 3581 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00013.png` | 3586 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00014.png` | 3564 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00015.png` | 3570 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00016.png` | 3537 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00017.png` | 3515 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00018.png` | 3556 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00019.png` | 3544 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00020.png` | 3529 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00021.png` | 3528 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00022.png` | 3495 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00023.png` | 3491 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00024.png` | 3530 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00025.png` | 3519 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00026.png` | 3524 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00027.png` | 3523 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00028.png` | 3522 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00029.png` | 3495 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00030.png` | 3480 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00031.png` | 3434 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00032.png` | 3490 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00033.png` | 3432 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00034.png` | 3436 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00035.png` | 3401 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00036.png` | 3452 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00037.png` | 3440 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00038.png` | 3399 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00039.png` | 3443 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00040.png` | 3401 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00041.png` | 3406 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00042.png` | 3386 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00043.png` | 3403 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00044.png` | 3419 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00045.png` | 3420 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00046.png` | 3385 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00047.png` | 3380 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00048.png` | 3434 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00049.png` | 3398 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00050.png` | 3386 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00051.png` | 3440 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00052.png` | 3436 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00053.png` | 3423 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00054.png` | 3426 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00055.png` | 3393 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00056.png` | 3413 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00057.png` | 3454 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00058.png` | 3460 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00059.png` | 3409 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00060.png` | 3430 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00061.png` | 3444 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00062.png` | 3425 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00063.png` | 3402 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00064.png` | 3372 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00065.png` | 3449 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00066.png` | 3408 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00067.png` | 3397 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00068.png` | 3426 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00069.png` | 3346 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00070.png` | 3325 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00071.png` | 3347 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00072.png` | 3311 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00073.png` | 3352 | local_dataset_or_runtime_input |
+| `experiences_results/surface-relation-candidate-videos-2026-09-27/selected-frames/DAVIS/Annotations/480p/boat/00074.png` | 3355 | local_dataset_or_runtime_input |

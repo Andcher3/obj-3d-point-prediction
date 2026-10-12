@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-10",
+  "verification_scope": "CPU preparation and interface only; no performance claim",
+  "local": {
+    "density_tests": {"command": "python -m unittest discover -s scripts -p test_uniquery4r_density_query6.py -v", "tests": 5, "exit_code": 0},
+    "gt_interface_tests": {"command": "python -m unittest discover -s scripts -p test_prepare_uniquery4r_movif_gt.py -v", "tests": 7, "exit_code": 0},
+    "worldtrack_protocol_tests": {"command": "python -m unittest discover -s scripts -p test_uniquery4r_worldtrack_protocol.py -v", "tests": 22, "exit_code": 0, "pinned_official_function_random_cases": 120}
+  },
+  "remote": {
+    "density_tests": {"tests": 5, "exit_code": 0},
+    "gt_interface_tests": {"tests": 7, "exit_code": 0},
+    "official_preprocessing": {"passed": true, "scenes": 18, "shape_each": [22,3,252,252], "model_loaded": false},
+    "initial_preprocessing_issue": {"ssh_command_wait_seconds": 60, "visible_cpu_count": 208, "cgroup_cpu_max": "50000 100000", "observed_worker_threads": 167, "resolution": "ended timed-out own CPU check; bound OMP/MKL/OpenBLAS/Torch workers to1; successful CPU check"}
+  },
+  "query_preparation": {"ready_scenes":18, "total_queries":1280, "grid_scenes":13, "old48_byte_exact_reuse_scenes":5},
+  "local_delivery": {"archive_bytes":8123412, "archive_sha256":"1ac37bba7eafb03fa374553cd6e0bcbf03a34445ff569754b06a789c8030d566", "verified_review_files":77},
+  "model_forward_called": false,
+  "gpu_forward_authorized": false,
+  "query_review_approved": false
+}

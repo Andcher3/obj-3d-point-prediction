@@ -1,0 +1,4 @@
+<reason>In the video, the person is seen holding a knife and a piece of food, preparing to cut it. The person is wearing gloves, which suggests they are about to perform a precise task. The cutting board is placed on a kitchen counter, and the person is standing in front of it, indicating that they are about to start the cutting process.</reason>
+<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>
+<reason>By frame 0:02, the person is holding the knife and the food, and the person's hands are positioned to begin cutting. The person's focus and the setup suggest that the next step involves the person starting to cut the food on the cutting board.</reason>
+<answer>The person will start cutting the food on the cutting board.</answer><|im_end|>

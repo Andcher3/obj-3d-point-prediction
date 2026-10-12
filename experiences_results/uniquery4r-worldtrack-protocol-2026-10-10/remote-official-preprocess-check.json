@@ -1,0 +1,16 @@
+{
+  "cpu_audit_passed": true,
+  "samples": [
+    {
+      "sequence": "synthetic64",
+      "subset": "po_mini",
+      "queries": 3,
+      "input_hashes_passed": true
+    }
+  ],
+  "preprocess_checked": true,
+  "model_loaded": false,
+  "model_forward_called": false,
+  "synthetic_fixture_only": true,
+  "native_worldtrack_data_tested": false
+}

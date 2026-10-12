@@ -1,0 +1,43 @@
+{
+  "before": {
+    "timestamp_utc": "2026-09-28T12:22:08Z",
+    "df_root": {
+      "total": 32212254720,
+      "used": 29784948736,
+      "free": 2427305984
+    },
+    "df_data": {
+      "total": 53687091200,
+      "used": 50361155584,
+      "free": 3325935616
+    },
+    "cache_bytes": {
+      "root_miniconda_pkgs": 209299641,
+      "tmp_pip": 33860,
+      "huggingface_preserved": 541526307
+    }
+  },
+  "after": {
+    "timestamp_utc": "2026-09-28T12:22:08Z",
+    "df_root": {
+      "total": 32212254720,
+      "used": 29784891392,
+      "free": 2427363328
+    },
+    "df_data": {
+      "total": 53687091200,
+      "used": 50361159680,
+      "free": 3325931520
+    },
+    "cache_bytes": {
+      "root_miniconda_pkgs": 209299641,
+      "tmp_pip": 0,
+      "huggingface_preserved": 541526307
+    }
+  },
+  "freed_bytes": {
+    "root": 57344,
+    "data": -4096
+  },
+  "policy": "removed only conda package/index caches and stale pip temporary directories; preserved Hugging Face model cache and all project outputs/environments"
+}

@@ -1,0 +1,973 @@
+{
+  "ok": true,
+  "frames_root": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames",
+  "states": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "idle",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\idle\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19742,
+          "bbox": [
+            23,
+            5,
+            168,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\idle\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19936,
+          "bbox": [
+            23,
+            5,
+            168,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\idle\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20139,
+          "bbox": [
+            22,
+            5,
+            169,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\idle\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19211,
+          "bbox": [
+            26,
+            5,
+            166,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\idle\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19474,
+          "bbox": [
+            25,
+            5,
+            167,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\idle\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19347,
+          "bbox": [
+            25,
+            5,
+            166,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-right\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16123,
+          "bbox": [
+            2,
+            42,
+            190,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-right\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16123,
+          "bbox": [
+            2,
+            42,
+            190,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-right\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16052,
+          "bbox": [
+            2,
+            40,
+            190,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-right\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15094,
+          "bbox": [
+            11,
+            44,
+            180,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-right\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15363,
+          "bbox": [
+            19,
+            34,
+            176,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-right\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15363,
+          "bbox": [
+            19,
+            34,
+            176,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-right\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15330,
+          "bbox": [
+            28,
+            33,
+            176,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-right\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16137,
+          "bbox": [
+            9,
+            33,
+            176,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running-left",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-left\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16123,
+          "bbox": [
+            2,
+            42,
+            190,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-left\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16123,
+          "bbox": [
+            2,
+            42,
+            190,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-left\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16052,
+          "bbox": [
+            2,
+            40,
+            190,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-left\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15094,
+          "bbox": [
+            12,
+            44,
+            181,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-left\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15363,
+          "bbox": [
+            16,
+            34,
+            173,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-left\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15363,
+          "bbox": [
+            16,
+            34,
+            173,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-left\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15330,
+          "bbox": [
+            16,
+            33,
+            164,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running-left\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16137,
+          "bbox": [
+            16,
+            33,
+            183,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "waving",
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waving\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19753,
+          "bbox": [
+            21,
+            5,
+            170,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waving\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20287,
+          "bbox": [
+            20,
+            5,
+            171,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waving\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20253,
+          "bbox": [
+            20,
+            5,
+            172,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waving\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18989,
+          "bbox": [
+            24,
+            5,
+            167,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\jumping\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19389,
+          "bbox": [
+            5,
+            20,
+            187,
+            188
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\jumping\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19676,
+          "bbox": [
+            9,
+            5,
+            183,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\jumping\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16997,
+          "bbox": [
+            5,
+            19,
+            187,
+            188
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\jumping\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19571,
+          "bbox": [
+            7,
+            5,
+            184,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\jumping\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18151,
+          "bbox": [
+            5,
+            26,
+            187,
+            181
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "failed",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\failed\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20487,
+          "bbox": [
+            6,
+            14,
+            186,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\failed\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20487,
+          "bbox": [
+            6,
+            14,
+            186,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\failed\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20487,
+          "bbox": [
+            6,
+            14,
+            186,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\failed\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20487,
+          "bbox": [
+            6,
+            14,
+            186,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\failed\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20487,
+          "bbox": [
+            6,
+            14,
+            186,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\failed\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20487,
+          "bbox": [
+            6,
+            14,
+            186,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\failed\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20487,
+          "bbox": [
+            6,
+            14,
+            186,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\failed\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20487,
+          "bbox": [
+            6,
+            14,
+            186,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "waiting",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waiting\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18192,
+          "bbox": [
+            26,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waiting\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18233,
+          "bbox": [
+            26,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waiting\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18235,
+          "bbox": [
+            26,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waiting\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18439,
+          "bbox": [
+            27,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waiting\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18596,
+          "bbox": [
+            27,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\waiting\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18759,
+          "bbox": [
+            27,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12624,
+          "bbox": [
+            50,
+            5,
+            141,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12653,
+          "bbox": [
+            50,
+            5,
+            141,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12733,
+          "bbox": [
+            51,
+            5,
+            141,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12479,
+          "bbox": [
+            52,
+            5,
+            140,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12829,
+          "bbox": [
+            50,
+            5,
+            141,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\running\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12759,
+          "bbox": [
+            51,
+            5,
+            141,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "review",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\review\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19787,
+          "bbox": [
+            27,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\review\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20263,
+          "bbox": [
+            26,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\review\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21254,
+          "bbox": [
+            22,
+            5,
+            169,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\review\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20548,
+          "bbox": [
+            22,
+            5,
+            169,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\review\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21474,
+          "bbox": [
+            22,
+            5,
+            170,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-body-only-movement\\frames\\review\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19761,
+          "bbox": [
+            27,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    }
+  ]
+}

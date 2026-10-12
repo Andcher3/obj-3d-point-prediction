@@ -1,0 +1,13 @@
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[93m[WARN ] Dependency `gsplat` is required for rendering 3DGS. Install via: pip install git+https://github.com/nerfstudio-project/gsplat.git@0b4dddf04cb687367602c01196913cde6a743d70[0m
+loading DA3 /dev/shm/trackcraft_runtime/da3-base ...
+[97m[INFO ] using MLP layer as FFN[0m
+Loading weights from local directory
+1 videos
+[97m[INFO ] Processed Images Done taking 0.04768800735473633 seconds. Shape:  torch.Size([12, 3, 294, 504])[0m
+[97m[INFO ] Selecting reference view using strategy: saddle_balanced[0m
+[97m[INFO ] Model Forward Pass Done. Time: 0.6560173034667969 seconds[0m
+[97m[INFO ] Conversion to Prediction Done. Time: 0.007950782775878906 seconds[0m
+  sewing: 12 frames | depth (12, 480, 832) | context [0, 5, 10, 15, 20, 25, 30] | future [35, 40, 45, 50, 55] | fx,fy,cx,cy=(687.7,673.5,416.0,240.0) | cam0->camN trans [ 0.21  -0.045  0.066]
+wrote 1 user npz to /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/preprocessed

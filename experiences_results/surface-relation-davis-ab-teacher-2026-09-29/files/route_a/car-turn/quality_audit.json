@@ -1,0 +1,172 @@
+{
+  "video_id": "car-turn",
+  "preview_mp4_fps_used": false,
+  "time_basis": "consecutive DAVIS source frame indices; capture fps unavailable",
+  "common_t0_geometry_source": "route A DA3 source-frame-20 point geometry",
+  "common_t0_registration_normalized_3d_bbox": {
+    "p50": 0.11986451159367538,
+    "p90": 0.2855189455701956,
+    "mean": 0.16476516866522048,
+    "max": 0.7511373705719657
+  },
+  "common_t0_registration_fraction_below_10pct": 0.3333333333333333,
+  "registration_folds": [
+    {
+      "fold": 0,
+      "held_error_m": {
+        "p50": 0.18916922459525187,
+        "p90": 0.31141562577891374,
+        "mean": 0.2559339591668506,
+        "max": 0.9883550247812364
+      }
+    },
+    {
+      "fold": 1,
+      "held_error_m": {
+        "p50": 0.17175856808499035,
+        "p90": 0.6007921563848669,
+        "mean": 0.2835851660335138,
+        "max": 1.2550199504955812
+      }
+    },
+    {
+      "fold": 2,
+      "held_error_m": {
+        "p50": 0.27007113825037565,
+        "p90": 0.4484051834308672,
+        "mean": 0.30206293678523083,
+        "max": 0.5433374741267626
+      }
+    },
+    {
+      "fold": 3,
+      "held_error_m": {
+        "p50": 0.19258183902654552,
+        "p90": 0.3844514326352355,
+        "mean": 0.2595937384630624,
+        "max": 0.6584874738179148
+      }
+    }
+  ],
+  "route": "A_t0_first",
+  "status": "FAIL",
+  "training_approved": false,
+  "gates": {
+    "future_frames_not_supplied_to_model": true,
+    "common_t0_registration_p90_le_10pct": false,
+    "common_t0_registration_90pct_below_10pct": false,
+    "common_t0_registration_max_le_20pct": false,
+    "finite_p0_h": true,
+    "direct_t0_query_order": true,
+    "t0_anchor_p90_le_5pct": true,
+    "t0_anchor_max_le_10pct": true,
+    "valid_queries_at_least_44": true,
+    "valid_graph_connected": true,
+    "finite_teacher": true
+  },
+  "valid_query_count": 48,
+  "t0_anchor_px": {
+    "p50": 0.6768431540415749,
+    "p90": 0.9057041684144489,
+    "mean": 0.6352703122898761,
+    "max": 1.1644580972280443
+  },
+  "t0_anchor_normalized_bbox": {
+    "p50": 0.007536313075684083,
+    "p90": 0.01008456704683479,
+    "mean": 0.007073420086346958,
+    "max": 0.012965663805305878
+  },
+  "graph": {
+    "edge_count": 84,
+    "component_count": 1,
+    "component_sizes": [
+      48
+    ],
+    "bridge_edges": [],
+    "connected": true
+  },
+  "future_mask_hits": [
+    {
+      "source_frame_index": 21,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 22,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 23,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 24,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 25,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 26,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 27,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 28,
+      "hit_count": 0,
+      "fraction": 0.0
+    },
+    {
+      "source_frame_index": 29,
+      "hit_count": 0,
+      "fraction": 0.0
+    }
+  ],
+  "teacher_input_frames": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "teacher_future_frames": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "repair_scope": [
+    "running"
+  ],
+  "character_original_size": [91, 123],
+  "character_repaired_size": [115, 156],
+  "bubble_repaired_size": [74, 64],
+  "character_area_ratio_vs_prior_version": 1.6,
+  "layout": "bubble behind crown with controlled overlap; seated robot anchored to a shared baseline",
+  "spritesheet": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-running-balance/final/spritesheet-extended.webp",
+  "validation": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-running-balance/final/validation-extended.json",
+  "chroma_despill": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-running-balance/qa/chroma-despill-extended.json",
+  "contact_sheet": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-running-balance/qa/contact-sheet-extended.png",
+  "review": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-running-balance/qa/review.json",
+  "final_visual_qa": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-running-balance/qa/final-visual-qa.json",
+  "package": "C:/Users/Andcher/.codex/pets/chibi-defect",
+  "installed_validation_ok": true
+}

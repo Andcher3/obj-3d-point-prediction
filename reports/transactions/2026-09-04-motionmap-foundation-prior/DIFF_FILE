@@ -1,0 +1,386 @@
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -13,8 +13,17 @@
+ 
+ - `research_roadmap.md`
+ - `reports/ideas/2026-09-03-motionforesight-probabilistic-semantic-design.md`
+-- `reports/weekly/2026-08-06-flowforesight-method-slides/speaker-notes.txt`
++- `reports/ideas/2026-09-04-motionmap-foundation-prior-redesign.md`
+ - `reports/progress_log.md`
++
++## Method Status
++
++GROUP_MEETING_DRAFT_NONBINDING=true
++
++- The August FlowForesight slides and speaker notes were a temporary group-meeting draft.
++- Their exact frame counts, point counts, sample counts, branch counts, loss weights, and architecture choices are not research decisions.
++- Preserve the active task interface and research questions only. A full method redesign is allowed.
++- MotionMap-style explicit mode distributions and pretrained motion priors are current hypotheses, not selected or validated components.
+ 
+ ## Active Task Definition
+ 
+@@ -73,6 +82,9 @@
+ 
+ - MotionForesight and Generative Point Tracking and Forecasting have been summarized in local presentation materials.
+ - A conditional Flow Matching multi-future sketch and method figure exist.
++- MotionMap and stochastic conditioning have been reviewed as complementary references: the former exposes modes and confidence through a dataset-built map, while the latter encourages a generator to use stochastic variation.
++- MotionForesight already repurposes a pretrained video prior. Any new prior-based contribution must expose, adapt, or calibrate a distribution over future 3D trajectories rather than merely reuse backbone features.
++- A continuous pretrained motion-latent probability field is a candidate redesign; its prior source, density parameterization, and mode extraction remain open.
+ - No MotionForesight reproduction, training code, dataset protocol, calibrated probability output, or semantic-guidance experiment has been completed locally.
+ - The existing six-output figure is stale with respect to the variable-sample interpretation.
+ - The FlowForesight method-slide folder currently contains images for pages 1-3; pages 4-5 remain text prompts/notes only.
+--- a/AGENTS_zh.md
++++ b/AGENTS_zh.md
+@@ -13,11 +13,20 @@
+ ```text
+ research_roadmap.md
+ reports/ideas/2026-09-03-motionforesight-probabilistic-semantic-design.md
+-reports/weekly/2026-08-06-flowforesight-method-slides/speaker-notes.txt
++reports/ideas/2026-09-04-motionmap-foundation-prior-redesign.md
+ reports/progress_log.md
+ ```
+ 
+-## 2. 当前任务接口
++## 2. 方法状态
++
++GROUP_MEETING_DRAFT_NONBINDING=true
++
++- 2026 年 8 月的 FlowForesight 方法页和发言稿是临时组会草案。
++- 其中的帧数、点数、样本数、分支数、损失权重和网络结构均未定稿。
++- 当前只保留任务接口与两个研究问题，允许重新设计全部方法。
++- MotionMap 式显式模式分布和预训练动作先验只是待验证候选。
++
++## 3. 当前任务接口
+ 
+ ```text
+ 输入：观察期 RGB 视频 + 指定目标物体 + 目标查询点
+@@ -26,7 +35,7 @@
+ 
+ 固定数量的多条轨迹只是从分布中采样后的结果。正式方法需要表达不同未来的概率差异，采样数统一写成可变的 `S`。
+ 
+-## 3. 两个核心创新目标
++## 4. 两个核心创新目标
+ 
+ ### 连续概率形式的未来不确定性
+ 
+@@ -52,17 +61,19 @@
+ 
+ 该表达式用于明确研究问题，暂不代表最终网络结构。
+ 
+-## 4. 当前实际进度
++## 5. 当前实际进度
+ 
+ - 已整理 MotionForesight 与 Generative Point Tracking and Forecasting。
+ - 已形成条件 Flow Matching 多未来方法草图和汇报材料。
+ - 已讨论显式 VLM 事件语义、开放词汇事件关系图和非文本未来潜变量。
++- 已区分 MotionMap 的显式模式图与随机条件化的噪声利用问题，并提出用预训练动作先验构造连续运动潜空间概率场的候选方向。
++- MotionForesight 本身已经复用了视频模型先验；后续创新需体现在先验分布的显式表达、条件适配和概率校准。
+ - 尚未复现 MotionForesight。
+ - 尚无当前方法的训练代码、数据协议、概率校准实验或语义引导实验。
+ - 现有六路输出图只适合作为示例；正式设计应使用可变采样数 `S`。
+ - FlowForesight 五页方法材料只完成了前三页图片。
+ 
+-## 5. 当前困难
++## 6. 当前困难
+ 
+ 1. 每段训练视频通常只有一个真实后续，难以监督同一过去的完整多未来分布。
+ 2. Flow Matching 可以采样，但“某类未来发生的概率”怎样计算和校准尚未确定。
+@@ -71,7 +82,7 @@
+ 5. 宏观语义与局部动力学的时间尺度、接口和约束方式尚未固定。
+ 6. 伪轨迹误差、遮挡、无效点和相机坐标变化可能污染概率学习。
+ 
+-## 6. 工作顺序
++## 7. 工作顺序
+ 
+ 1. 固定数据集、观察/预测时长、目标指定方式、查询点、坐标系、有效性规则和评测指标。
+ 2. 复现单未来 MotionForesight 基线。
+@@ -79,7 +90,7 @@
+ 4. 明确连续概率输出的数学含义和可测指标。
+ 5. 分别验证语义条件是否控制宏观未来、最近帧条件是否控制局部运动。
+ 
+-## 7. IMU 归档边界
++## 8. IMU 归档边界
+ 
+ 旧 IMU/HAR/OIS 工作已归档到：
+ 
+@@ -89,7 +100,7 @@
+ 
+ 后续默认不读取、不运行、不引用归档中的数据、论文路线、脚本和方法设计。用户明确重新启用该方向时再恢复。
+ 
+-## 8. 幻灯片与进展记录
++## 9. 幻灯片与进展记录
+ 
+ - PPT 每页继续使用图像生成工具生成整页图片，再插入 PPT。
+ - 使用微软雅黑风格，内容密度适中，优先使用论文原图、方法图、数据流和结果表。
+--- a/research_roadmap.md
++++ b/research_roadmap.md
+@@ -2,7 +2,7 @@
+ 
+ ACTIVE_RESEARCH_SCOPE=VIDEO_MOTION_FORECASTING
+ 
+-日期：2026-09-03
++日期：2026-09-04
+ 
+ ## 1. 研究目标
+ 
+@@ -14,6 +14,12 @@
+ ```
+ 
+ `D_future` 表示目标物体查询点在未来时段的三维轨迹。任务沿用 MotionForesight 的轨迹表示，避免直接生成未来视频中的背景、纹理与光照等冗余信息，同时保留运动方向、距离、速度、旋转、关节运动和局部形变。
++
++## 1.1 方法状态
++
++GROUP_MEETING_DRAFT_NONBINDING=true
++
++2026 年 8 月的 FlowForesight 方法页只用于临时组会讨论。其中的观察帧数、预测帧数、查询点数、固定六路输出、损失权重和具体模块均不再作为设计约束。当前只保留任务接口与两个研究问题，允许重新设计全部方法。
+ 
+ ## 2. 核心研究问题
+ 
+@@ -78,6 +84,28 @@
+ 
+ 主要困难：潜变量可能记忆外观或坐标、缺乏可解释性、模式坍缩、单未来监督和缺少直接语义标签。
+ 
++### 路线 D：预训练动作先验上的连续概率场
++
++CONTINUOUS_FOUNDATION_PRIOR=true
++
++```text
++广域预训练动作/轨迹先验 p0(z)
+++ 长程观察语义对先验进行条件重加权
+++ 最近帧动态与目标几何进行模式内轨迹细化
++-> 连续运动潜变量 z 的条件密度
++-> 目标点未来三维轨迹分布
++```
++
++候选表达为：
++
++```text
++p(z | x) ∝ p0(z | c_global) · exp(s_phi(x, z))
++p(D_future | x)
++= integral p(D_future | z, c_local, c_geometry) p(z | x) dz
++```
++
++`p0` 用更广泛的视频或三维轨迹预训练建立运动支持域，目标数据负责根据当前观察重加权和校准。MotionMap 式二维图只作为概率场可视化候选；正式建模空间保持连续，不使用由目标训练集 t-SNE 与查表形成的封闭 codebook。当前优先考察与任务表示直接匹配的预训练三维点轨迹先验，通用视频生成模型只作为较弱的候选来源。
++
+ ## 4. 当前关键困难
+ 
+ 1. **单未来监督**：一段视频只观察到一个真实后续，完整条件分布只能依赖跨样本统计学习。
+@@ -88,6 +116,8 @@
+ 6. **尺度耦合**：宏观语义和局部物理信息需要在不同时间尺度上交互，同时避免互相覆盖。
+ 7. **伪标签噪声**：遮挡、失效点、深度与相机估计误差会被生成模型当作分布的一部分。
+ 8. **评测**：轨迹精度、多样性、分布覆盖、概率校准、语义一致性和物理有效性需要同时评价。
++9. **先验可迁移性**：预训练模型拥有广泛运动知识并不保证其分数等于当前视频下的条件概率，也不保证其潜变量能稳定映射到目标物体的三维点轨迹。
++10. **支持域证据**：需要在目标训练集缺少某类运动、而预训练来源包含该类运动的控制划分上验证先验是否真正扩展了可预测模式。
+ 
+ ## 5. 分阶段计划
+ 
+@@ -111,6 +141,12 @@
+ - 检查不同噪声是否产生稳定的模式差异。
+ - 比较精度、覆盖、多样性、校准代理指标与推理成本。
+ 
++### 阶段 2.5：预训练动作先验审查
++
++- 比较目标数据轨迹先验、MotionForesight 视频潜变量和预训练三维点轨迹先验的接口匹配程度。
++- 在目标训练集留出完整运动族，检查外部先验是否增加模式召回，而非只改善普通域内误差。
++- 将生成模型候选作为软先验或提议，不直接当作真实反事实标签。
++
+ ### 阶段 3：宏观语义与局部动态分层
+ 
+ - 明确全局分支和局部分支各自可见的帧范围。
+@@ -133,10 +169,11 @@
+ 
+ ## 6. 当前最近行动
+ 
+-1. 将“连续概率”具体化为可训练、可读取、可校准的输出量。
+-2. 画出全局语义分支、局部动态分支与轨迹 Flow 的最小接口图。
+-3. 整理 MotionForesight 复现所需的数据、代码、权重和评测条件。
+-4. 设计最小消融，避免在第一个实验中同时加入 VLM、事件图、概率估计和轨迹生成。
++1. 复现 MotionForesight 的确定性基线，并保留其原始实验参数作为复现参数。
++2. 对比 MotionMap、目标数据条件 Flow 与预训练三维轨迹先验，明确概率对象、支持域和模式提取方式。
++3. 设计“目标训练集未见运动族”的验证划分，检验外部先验是否带来新模式。
++4. 画出连续全局运动潜变量、局部动态分支与三维轨迹解码器的最小接口图。
++5. 所有新超参数通过实验协议确定，不沿用临时组会草案中的数字。
+ 
+ ## 7. 归档说明
+ 
+--- a/reports\ideas\2026-09-02-project-status-flowforesight.md
++++ b/reports\ideas\2026-09-02-project-status-flowforesight.md
+@@ -3,6 +3,8 @@
+ 日期：2026-09-02
+ 
+ > 2026-09-03 范围修正：用户已确认当前工作与 IMU 无关，旧 IMU/HAR/OIS 内容已归档到 `archive/imu/`。当前唯一活动方向是完全基于视频输入的 MotionForesight 式未来三维轨迹预测。最新定义见 `reports/ideas/2026-09-03-motionforesight-probabilistic-semantic-design.md`；本文件保留为修正前的项目快照。
++
++> 2026-09-04 方法状态修正：本文件中的 FlowForesight 结构与全部具体数字均是临时组会草案，不代表已确认方法。后续可以整体重做；只保留视频输入、指定物体三维点轨迹输出、未来不确定性和语义—局部动态分层这四项研究边界。
+ 
+ ## 1. 当前定位
+ 
+--- a/reports\ideas\2026-09-03-motionforesight-probabilistic-semantic-design.md
++++ b/reports\ideas\2026-09-03-motionforesight-probabilistic-semantic-design.md
+@@ -1,6 +1,10 @@
+ # MotionForesight 概率化与语义—物理分层设计
+ 
+ 日期：2026-09-03
++
++## 2026-09-04 方法状态修正
++
++此前 FlowForesight 方法页是为临近组会形成的临时版本。观察/预测帧数、查询点数、固定输出数、损失权重和具体网络均没有经过充分论证，后续不继承这些数字，允许重新设计全部方法。当前新增候选为“MotionMap 式显式模式分布 + 预训练动作先验 + 连续运动潜空间”，详见 `reports/ideas/2026-09-04-motionmap-foundation-prior-redesign.md`。
+ 
+ ## 已确认的研究边界
+ 
+--- a/reports\progress_log.md
++++ b/reports\progress_log.md
+@@ -20,3 +20,4 @@
+ - 2026-08-05 [完成运动预测论文介绍页](progress/2026-08-05-motion-forecast-paper-slide-images.md)：完成两篇论文的 10 张介绍页和发言稿。
+ - 2026-09-02 [复盘项目现状与 FlowForesight 构想](progress/2026-09-02-project-status-flowforesight-review.md)：确认当前尚处于方法设计和汇报材料阶段。
+ - 2026-09-03 [固定视频预测范围并归档 IMU 工作](progress/2026-09-03-motionforesight-scope-reset.md)：将当前范围固定为视频输入的指定物体未来三维轨迹分布预测，归档旧 IMU 工作，并记录连续概率和语义—物理分层两个核心创新目标。
++- 2026-09-04 [审查 MotionMap 与预训练动作先验重设计](progress/2026-09-04-motionmap-foundation-prior-review.md)：将旧组会方法及数字降为非约束草案，区分显式模式概率、随机条件利用与外部先验扩展，提出连续运动潜空间概率场候选。
+--- /dev/null
++++ b/reports\ideas\2026-09-04-motionmap-foundation-prior-redesign.md
+@@ -0,0 +1,136 @@
++# MotionMap 式显式分布与预训练动作先验重设计候选
++
++日期：2026-09-04  
++状态：研究假设，尚未选定或验证
++
++## 1. 方法状态
++
++2026 年 8 月的 FlowForesight 结构和所有具体数字只服务于临时组会。后续只保留以下边界：
++
++- 输入为观察期视频、指定目标物体和目标查询点；
++- 输出为目标点未来三维轨迹；
++- 输出需要表达多个未来及其相对概率；
++- 长程语义负责整体未来，最近帧动态与几何负责局部物理细节。
++
++## 2. 三篇工作的作用边界
++
++### MotionForesight
++
++MotionForesight 已经把预训练视频模型和 TrackCraft3R 的跟踪接口转用于未来三维轨迹预测，但继承的是确定性单步回归接口。它说明“视频模型先验可以转成显式几何预测”，尚未给出可读取、可校准的多未来模式分布。
++
++### MotionMap
++
++MotionMap 的优点是直接预测模式图：局部极大值对应候选未来，峰值提供模式置信度，输出模式数可变。它的限制也很明确：
++
++- 多未来监督来自训练集中观察末段相似的其他序列；
++- 全部未来先编码，再用 t-SNE 压到二维并量化到热图格点；
++- codebook 把格点映射到该格点内训练未来的平均潜变量；
++- 论文主动把可预测未来限制为训练集中出现的转移。
++
++因此，MotionMap 更适合作为“显式分布与模式检索”的结构启发，不宜直接搬用二维 t-SNE 与封闭 codebook。
++
++### Stochastic Conditioning
++
++Mix-and-Match stochastic conditioning 处理的是生成器忽略随机变量的问题。它通过随机替换或扰动部分条件，使 CVAE 必须使用变化源，从而提高输出多样性。该方法仍输出隐式分布，也没有提供模式概率、概率校准或训练集外运动支持。
++
++## 3. 当前最有价值的研究问题
++
++“使用大模型动作先验”本身已被 MotionForesight 部分覆盖。新的研究点应具体化为：
++
++> 怎样把广域预训练模型中的动作支持域显式化为连续运动潜变量分布，再由当前观察视频进行条件重加权和概率校准，最终解码为指定物体的多模态三维点轨迹？
++
++## 4. 候选模型：连续先验运动图
++
++记输入为 `x=(V_obs, M_target, Q_target)`，建立连续宏观运动潜变量 `z`：
++
++```text
++p(z | x) = 1/Z(x) · p0(z | c_global)^alpha · exp(s_phi(x, z))
++
++p(D_future | x)
++= integral p_psi(D_future | z, c_local, c_geometry)
++           p(z | x) dz
++```
++
++- `p0`：由大规模视频或三维轨迹预训练得到的动作支持先验；
++- `s_phi`：当前观察视频对候选动作的兼容性重加权；
++- `c_global`：长程、高层语义与交互状态；
++- `c_local`：最近帧速度、加速度、接触和短时趋势；
++- `c_geometry`：目标点历史、可见性和场景几何；
++- `p_psi`：给定宏观模式后的三维轨迹细化分布。
++
++模型空间保持连续。二维“MotionMap”只用于显示概率场切片或投影，不承担正式密度建模。模式 `m` 的概率定义为其吸引域 `B_m` 上的概率质量：
++
++```text
++P(m | x) = integral_{z in B_m} p(z | x) dz
++```
++
++这样可区分两类不确定性：宏观模式之间的概率质量，以及固定模式内部的轨迹分散程度。
++
++## 5. 先验来源优先级
++
++1. **预训练三维点轨迹模型**：与当前输出最匹配。MolmoMotion 已从 116 万视频学习语言条件的三维点运动，并提供 Flow Matching 预测头；可研究其作为轨迹先验或教师，但当前任务需要从视频推断未来，不能依赖测试时给定真实未来动作描述。
++2. **MotionForesight 的冻结视频/跟踪潜变量**：与被动视频预测设置最接近，但现有确定性适配器没有显式暴露多未来分布。
++3. **通用视频生成模型**：可产生弱候选，再通过三维跟踪转为轨迹。生成像素、几何漂移、跟踪误差和模型分数不可校准等问题使其更适合作为提议分布，暂不作为主输出或真实标签。
++4. **人体动作模型**：对人体骨架有效，与任意指定物体、刚体/关节/形变统一点轨迹的接口不匹配，优先级较低。
++
++## 6. 单真实未来下的训练方式
++
++单个样本的真实后续只证明该后续可行，不能证明其他候选不可能。训练可按以下方式组织：
++
++1. 用广域数据预训练或冻结轨迹编码器、解码器和先验 `p0`；
++2. 将真实未来编码为 `z_gt=E(D_gt)`；
++3. 用真实未来最大化条件似然：
++
++```text
++L_real = -log p_phi(z_gt | x)
++         -log p_psi(D_gt | z_gt, c_local, c_geometry)
++```
++
++4. 用先验保持项限制目标数据微调造成的支持域坍缩，权重由验证实验确定；
++5. 将大模型产生的其他未来视为软候选或提议样本，只做兼容性、排序或一致性约束；未经观测的候选不直接写成真实正标签；
++6. 明确违反已观察速度、接触、几何或目标约束的轨迹可以作为负例，其余未发生未来保持“未知”。
++
++条件密度模型可以在大量单后续样本上通过最大似然学习总体分布。外部先验缓解数据覆盖不足，但无法单独确定某个具体视频中所有反事实未来的真实频率。
++
++## 7. 语义与局部物理的接口
++
++- 长程分支只控制 `p(z | x)`，主要改变动作类别、交互结果、整体方向和终点区域；
++- 最近帧分支进入 `p_psi`，主要改变起始速度、加速度、接触时刻、局部约束和模式内细节；
++- 语义条件交换应显著改变宏观模式概率；
++- 最近帧动态交换应主要改变同一模式内的速度与短程形状；
++- 两种交换若产生相同影响，说明分层没有形成。
++
++## 8. 最小实验矩阵
++
++| 版本 | 先验 | 显式概率 | 全局语义 | 局部动态 | 目的 |
++|---|---|---|---|---|---|
++| M0 | MotionForesight 冻结视频先验 | 否 | 隐式 | 联合 | 确定性复现基线 |
++| M1 | 目标训练集轨迹 | 条件 Flow | 否 | 是 | 单后续概率生成基线 |
++| M2 | 广域预训练轨迹先验 | 连续潜变量密度 | 否 | 是 | 检验支持域是否扩展 |
++| M3 | 广域预训练轨迹先验 | 连续潜变量密度 | 是 | 是 | 检验宏观语义重加权 |
++| M4 | M3 | 模式概率质量 + 模式内密度 | 是 | 是 | 检验两级不确定性 |
++
++重点评测：
++
++- 轨迹误差：ADE、FDE、代表轨迹误差与 `best-of-S`；
++- 分布表现：覆盖率、模式召回、重复率、条件似然或可比较的密度分数；
++- 概率表现：在有多后续或可构造等价条件的子集上评测校准；
++- 物理表现：平滑性、接触/约束一致性、三维几何一致性；
++- 先验增益：目标训练集整类留出的运动族是否能由外部先验恢复；
++- 分层效果：语义交换、最近帧交换、分支遮蔽和先验打乱。
++
++`S` 只是统一计算预算，不是方法内部固定的未来数量。
++
++## 9. 当前判断
++
++优先候选是“连续运动潜空间概率场 + 预训练三维轨迹先验 + 观察视频重加权 + 局部物理解码”。它保留 MotionMap 的显式概率地形和高概率模式选择，同时去掉目标训练集 t-SNE/codebook 对支持域的硬限制。
++
++该方向成立需要三项证据：外部先验确实带来目标训练集未见运动模式；概率在可评测子集上有校准意义；全局语义与局部动态分别控制预期的轨迹尺度。
++
++## 10. 论文来源
++
++- MotionForesight: https://arxiv.org/abs/2607.16192
++- MotionMap: https://arxiv.org/abs/2412.18883
++- A Stochastic Conditioning Scheme for Diverse Human Motion Prediction: https://openaccess.thecvf.com/content_CVPR_2020/html/Aliakbarian_A_Stochastic_Conditioning_Scheme_for_Diverse_Human_Motion_Prediction_CVPR_2020_paper.html
++- MolmoMotion: https://arxiv.org/abs/2606.18558
++- What Happens Next? Anticipating Future Motion by Generating Point Trajectories: https://proceedings.iclr.cc/paper_files/paper/2026/hash/ccb25da33d3cf9eee401bb97c24f3463-Abstract-Conference.html
+--- /dev/null
++++ b/reports\progress\2026-09-04-motionmap-foundation-prior-review.md
+@@ -0,0 +1,8 @@
++# 2026-09-04 MotionMap 与预训练动作先验重设计审查
++
++- 日期：2026-09-04
++- 完成工作：将 2026 年 8 月组会版 FlowForesight 及其全部具体数字标记为非约束草案；对照 MotionForesight、MotionMap、Mix-and-Match stochastic conditioning、MolmoMotion 与 What Happens Next，重新审查单真实未来监督和外部动作先验的作用。
++- 本地产物或改动：更新 `AGENTS.md`、`AGENTS_zh.md`、`research_roadmap.md`、两份既有 idea 文档和 `reports/progress_log.md`；新增 `reports/ideas/2026-09-04-motionmap-foundation-prior-redesign.md`。
++- 关键结果：MotionMap 提供显式模式图和模式置信度，但其多未来集合、二维空间与 codebook 均由训练数据构造；随机条件化主要防止模型忽略噪声。MotionForesight 已经复用视频先验，因此新候选聚焦于把广域预训练动作支持显式化为连续运动潜变量概率场，再由观察视频进行条件重加权，并由最近帧动态与几何完成模式内轨迹细化。
++- 仍未解决：外部模型分数不能直接解释为真实条件概率；单后续监督不能确认所有反事实；先验潜变量到任意物体三维点轨迹的映射、概率归一化、模式提取和校准均需实验验证。
++- 下一步：复现 MotionForesight 确定性基线；建立目标数据条件 Flow；设计目标训练集整类留出实验，对比目标数据先验与预训练三维轨迹先验是否产生可测的模式召回增益。

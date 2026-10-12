@@ -1,0 +1,133 @@
+{
+  "sample_id": "sewing_scissors",
+  "source_video": "cb78dba8-6647-4ec7-875c-6ba1548f8312.mp4",
+  "source_fps": 30,
+  "raw_frame_indices": [
+    171,
+    173,
+    175,
+    177,
+    179,
+    181,
+    183,
+    185,
+    187,
+    189,
+    191,
+    193
+  ],
+  "history_raw_frames": [
+    171,
+    173,
+    175
+  ],
+  "offline_pseudo_gt_raw_frames": [
+    177,
+    179,
+    181,
+    183,
+    185,
+    187,
+    189,
+    191,
+    193
+  ],
+  "valid_query_count": 8,
+  "pseudo_gt_motion": {
+    "mean_path_length_m": 0.21228453516960144,
+    "centroid_final_delta_m": [
+      -0.11940547823905945,
+      -0.006704270839691162,
+      0.0572284460067749
+    ],
+    "finite_fraction": 1.0
+  },
+  "records": [
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "observed_pickup",
+      "prompt_text": "Pick up the blue-handled scissors.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 60.18218670040369,
+      "sequence_score": -241.0894775390625,
+      "input_ids_sha256": "6d4b229b109fbe054f23a9a6bf38d1b1aed11acd40c4674a0c9f8be49cbe4268",
+      "future_array_sha256": "aad4ad73ce5aa3fcd8ccfea5aeaf8c8637b0cbe8cd89a1d29f2657b728d3aa5f",
+      "future_text_sha256": "95ec16762da7612d06690a26fa8cdb8d3a026ac082f05cc2c256eddb9182c4c0",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.07751170545816422,
+      "pseudo_gt_fde_m": 0.15175467729568481,
+      "mean_path_length_m": 0.0592699870467186,
+      "centroid_final_delta_m": [
+        0.05511537194252014,
+        -0.01907120645046234,
+        -0.000702202320098877
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "counterfactual_static",
+      "prompt_text": "Leave the blue-handled scissors on the table without moving them.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 58.89725923538208,
+      "sequence_score": -96.3609390258789,
+      "input_ids_sha256": "6abc228c6dca017aa6dec4451285d00d6dca92d69a253d9618ead6cbb53f1e1a",
+      "future_array_sha256": "445cdc50d5e1df47e58da69b3521ba19d66cd5b3d47e680cb800c85164a4ea86",
+      "future_text_sha256": "61226f608594eab029c75dbfc69f010667f3264c8ea4ddb4b7880008cbc1bd07",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.07221570611000061,
+      "pseudo_gt_fde_m": 0.138845294713974,
+      "mean_path_length_m": 0.0021593566052615643,
+      "centroid_final_delta_m": [
+        0.000990360975265503,
+        -0.0006962120532989502,
+        -0.0007021427154541016
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "multistep",
+      "prompt_text": "Pick up the blue-handled scissors, move them to the left of the sewing machine, and set them down.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 61.79773564636707,
+      "sequence_score": -290.17181396484375,
+      "input_ids_sha256": "daced5ae63ce90c52eb49b103b3b5a10ab60204599f31ca94b4f5713cdb21818",
+      "future_array_sha256": "a47f3e1eddfc56ce0b1b33c84da32e0be447923480af1672a62de21966107b78",
+      "future_text_sha256": "9beef05e4e6ad32409b40a98c3c75c918fe14f7d2f728695e6c101694a86f8e7",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.08383556455373764,
+      "pseudo_gt_fde_m": 0.1733929067850113,
+      "mean_path_length_m": 0.29757925868034363,
+      "centroid_final_delta_m": [
+        0.2914903461933136,
+        -0.0006962120532989502,
+        0.05342286825180054
+      ],
+      "finite_fraction": 1.0
+    }
+  ],
+  "pairwise": {
+    "observed_pickup__greedy__vs__counterfactual_static__greedy": {
+      "ade_m": 0.02871113270521164,
+      "fde_m": 0.057292740792036057,
+      "direction_cosine": NaN
+    },
+    "observed_pickup__greedy__vs__multistep__greedy": {
+      "ade_m": 0.100487120449543,
+      "fde_m": 0.24334242939949036,
+      "direction_cosine": 0.9301917552947998
+    },
+    "counterfactual_static__greedy__vs__multistep__greedy": {
+      "ade_m": 0.1257854551076889,
+      "fde_m": 0.29550039768218994,
+      "direction_cosine": NaN
+    }
+  }
+}

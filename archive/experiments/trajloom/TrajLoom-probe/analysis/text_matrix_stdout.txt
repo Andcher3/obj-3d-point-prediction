@@ -1,0 +1,508 @@
+{
+  "protocol": {
+    "videos": [
+      "10790317943435558913",
+      "gear_v2_9-wrist_front_rgb_img-0"
+    ],
+    "conditions": [
+      "none",
+      "consistent",
+      "static",
+      "conflict"
+    ],
+    "fixed_seed": 42,
+    "repeated_consistent_caption_seeds": [
+      43,
+      44
+    ],
+    "steps": 20,
+    "history_frames": 81,
+    "future_frames": 81,
+    "resolution": [
+      832,
+      480
+    ],
+    "text_encoder": "Wan UMT5-XXL pooled embeddings",
+    "interpretation": "fixed-seed cross-condition differences test text sensitivity; repeated seeds test stochastic branch variation"
+  },
+  "rows": [
+    {
+      "video": "10790317943435558913",
+      "condition": "none",
+      "seed": 42,
+      "caption": "",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "3aef153155960b2e1294eca461683631845650e90a548de309013f5d238d06b5",
+      "pred_visibility_mean": 0.7022475466919912,
+      "ade_px": 70.12161254882812,
+      "fde_px": 118.94658660888672,
+      "pred_path_px_mean": 1.4270210266113281,
+      "gt_path_px_mean": 3.802070140838623,
+      "final_centroid": [
+        363.4993896484375,
+        323.72613525390625
+      ],
+      "last_history_centroid": [
+        382.1328125,
+        260.43658447265625
+      ]
+    },
+    {
+      "video": "10790317943435558913",
+      "condition": "consistent",
+      "seed": 42,
+      "caption": "The robot moves the colored board forward across the table.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "d87ddfd932197b5fcb2f602593c22de98495ccd2b8e4ed13db9cb30f459be6b5",
+      "pred_visibility_mean": 0.8172522950300728,
+      "ade_px": 78.00587463378906,
+      "fde_px": 136.43502807617188,
+      "pred_path_px_mean": 1.141649842262268,
+      "gt_path_px_mean": 3.802070140838623,
+      "final_centroid": [
+        372.04302978515625,
+        304.1030578613281
+      ],
+      "last_history_centroid": [
+        381.97454833984375,
+        259.88079833984375
+      ]
+    },
+    {
+      "video": "10790317943435558913",
+      "condition": "consistent",
+      "seed": 43,
+      "caption": "The robot moves the colored board forward across the table.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "001f0e72de9635a77794f75501b32365de0ef67569c40cb73fb77d9007ecaf6e",
+      "pred_visibility_mean": 0.6839189616967395,
+      "ade_px": 71.89976501464844,
+      "fde_px": 122.81565856933594,
+      "pred_path_px_mean": 1.4049413204193115,
+      "gt_path_px_mean": 3.802070140838623,
+      "final_centroid": [
+        388.7082214355469,
+        339.0555725097656
+      ],
+      "last_history_centroid": [
+        383.38385009765625,
+        260.853759765625
+      ]
+    },
+    {
+      "video": "10790317943435558913",
+      "condition": "consistent",
+      "seed": 44,
+      "caption": "The robot moves the colored board forward across the table.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "13a908756d9cfd27fa1258f6f02ec3a80900ca913b65b955c944a025d93aeb22",
+      "pred_visibility_mean": 0.7989237100348211,
+      "ade_px": 75.7939682006836,
+      "fde_px": 131.56103515625,
+      "pred_path_px_mean": 1.2083274126052856,
+      "gt_path_px_mean": 3.802070140838623,
+      "final_centroid": [
+        374.8137512207031,
+        315.76373291015625
+      ],
+      "last_history_centroid": [
+        380.9802551269531,
+        259.6875
+      ]
+    },
+    {
+      "video": "10790317943435558913",
+      "condition": "static",
+      "seed": 42,
+      "caption": "The robot keeps the colored board still on the table.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "3e9c18c33622d5ce2a5b0c8228dec95ebe83c36c6793bc3dcdf1c5d9156fb5b8",
+      "pred_visibility_mean": 0.8289965178854067,
+      "ade_px": 78.9122085571289,
+      "fde_px": 138.3820343017578,
+      "pred_path_px_mean": 1.0847691297531128,
+      "gt_path_px_mean": 3.802070140838623,
+      "final_centroid": [
+        370.9326171875,
+        300.8817138671875
+      ],
+      "last_history_centroid": [
+        382.1751708984375,
+        259.6252136230469
+      ]
+    },
+    {
+      "video": "10790317943435558913",
+      "condition": "conflict",
+      "seed": 42,
+      "caption": "The robot moves the colored board backward away from the camera.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "7537f681fac866f5a5bc403c5143bc2c1a8beb4b460134f2ab888a755cfc941a",
+      "pred_visibility_mean": 0.7763849319404875,
+      "ade_px": 74.48455047607422,
+      "fde_px": 128.37258911132812,
+      "pred_path_px_mean": 1.3208763599395752,
+      "gt_path_px_mean": 3.802070140838623,
+      "final_centroid": [
+        359.75164794921875,
+        310.7824401855469
+      ],
+      "last_history_centroid": [
+        381.54595947265625,
+        259.88916015625
+      ]
+    },
+    {
+      "video": "gear_v2_9-wrist_front_rgb_img-0",
+      "condition": "none",
+      "seed": 42,
+      "caption": "",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "bd3f64f1d7690b1d80c79e9ed52c53b967f6fdde01b9a0ce03faec6feb499290",
+      "pred_visibility_mean": 0.7595441595441595,
+      "ade_px": 50.199947357177734,
+      "fde_px": 110.77210235595703,
+      "pred_path_px_mean": 0.8512728810310364,
+      "gt_path_px_mean": 2.68924880027771,
+      "final_centroid": [
+        369.3255920410156,
+        203.67384338378906
+      ],
+      "last_history_centroid": [
+        286.28533935546875,
+        187.0741424560547
+      ]
+    },
+    {
+      "video": "gear_v2_9-wrist_front_rgb_img-0",
+      "condition": "consistent",
+      "seed": 42,
+      "caption": "The robot moves the green object forward along the workspace.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "c9bbdb6ec14bb87e048e9fc65fd4833200a399b500b9255420d808038612587d",
+      "pred_visibility_mean": 0.7520417853751187,
+      "ade_px": 50.31673812866211,
+      "fde_px": 111.56013488769531,
+      "pred_path_px_mean": 0.8441466689109802,
+      "gt_path_px_mean": 2.68924880027771,
+      "final_centroid": [
+        366.6543273925781,
+        201.55198669433594
+      ],
+      "last_history_centroid": [
+        286.1507873535156,
+        186.91310119628906
+      ]
+    },
+    {
+      "video": "gear_v2_9-wrist_front_rgb_img-0",
+      "condition": "consistent",
+      "seed": 43,
+      "caption": "The robot moves the green object forward along the workspace.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "3dadb9da7198e59bc088cbf611f79ae332e3aaf8adf00dce7430adc6ed44aa82",
+      "pred_visibility_mean": 0.8231402342513454,
+      "ade_px": 52.42913055419922,
+      "fde_px": 111.08076477050781,
+      "pred_path_px_mean": 0.8586004972457886,
+      "gt_path_px_mean": 2.68924880027771,
+      "final_centroid": [
+        376.48834228515625,
+        222.7208709716797
+      ],
+      "last_history_centroid": [
+        289.4194030761719,
+        188.73406982421875
+      ]
+    },
+    {
+      "video": "gear_v2_9-wrist_front_rgb_img-0",
+      "condition": "consistent",
+      "seed": 44,
+      "caption": "The robot moves the green object forward along the workspace.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "5f451052a29b0d5256f95c53e853b71432bf329fe9f2c7d1b50126a990d3c5c7",
+      "pred_visibility_mean": 0.714846470402026,
+      "ade_px": 53.258670806884766,
+      "fde_px": 112.01170349121094,
+      "pred_path_px_mean": 0.8549416661262512,
+      "gt_path_px_mean": 2.68924880027771,
+      "final_centroid": [
+        376.4292907714844,
+        205.72850036621094
+      ],
+      "last_history_centroid": [
+        285.1646728515625,
+        187.80364990234375
+      ]
+    },
+    {
+      "video": "gear_v2_9-wrist_front_rgb_img-0",
+      "condition": "static",
+      "seed": 42,
+      "caption": "The robot keeps the green object still in its current position.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "bbf975008c1de1506885ab57d42cd280f582861ebf73bcc91f059f0f4b91a19b",
+      "pred_visibility_mean": 0.7127888572333017,
+      "ade_px": 50.563316345214844,
+      "fde_px": 112.6197738647461,
+      "pred_path_px_mean": 0.796970784664154,
+      "gt_path_px_mean": 2.68924880027771,
+      "final_centroid": [
+        365.8902893066406,
+        198.75364685058594
+      ],
+      "last_history_centroid": [
+        285.66351318359375,
+        186.64361572265625
+      ]
+    },
+    {
+      "video": "gear_v2_9-wrist_front_rgb_img-0",
+      "condition": "conflict",
+      "seed": 42,
+      "caption": "The robot moves the green object backward along the workspace.",
+      "pred_shape": [
+        81,
+        390,
+        2
+      ],
+      "pred_sha256": "732912145f83c2cbee369abd2724dc857ffa9d36603707cd265be73a59ffce42",
+      "pred_visibility_mean": 0.7236783792339347,
+      "ade_px": 49.802303314208984,
+      "fde_px": 110.77931213378906,
+      "pred_path_px_mean": 0.8336841464042664,
+      "gt_path_px_mean": 2.68924880027771,
+      "final_centroid": [
+        359.9007873535156,
+        201.601318359375
+      ],
+      "last_history_centroid": [
+        285.6029357910156,
+        187.06895446777344
+      ]
+    }
+  ],
+  "videos": {
+    "10790317943435558913": {
+      "available_runs": [
+        {
+          "condition": "conflict",
+          "seed": 42
+        },
+        {
+          "condition": "consistent",
+          "seed": 42
+        },
+        {
+          "condition": "consistent",
+          "seed": 43
+        },
+        {
+          "condition": "consistent",
+          "seed": 44
+        },
+        {
+          "condition": "none",
+          "seed": 42
+        },
+        {
+          "condition": "static",
+          "seed": 42
+        }
+      ],
+      "fixed_seed42_condition_pairs": {
+        "none__vs__consistent": {
+          "ade_px": 11.56261920928955,
+          "fde_px": 23.737638473510742
+        },
+        "none__vs__static": {
+          "ade_px": 13.454039573669434,
+          "fde_px": 27.196678161621094
+        },
+        "none__vs__conflict": {
+          "ade_px": 7.571696758270264,
+          "fde_px": 14.836249351501465
+        },
+        "consistent__vs__static": {
+          "ade_px": 2.196028470993042,
+          "fde_px": 4.253712177276611
+        },
+        "consistent__vs__conflict": {
+          "ade_px": 7.24886417388916,
+          "fde_px": 14.547758102416992
+        },
+        "static__vs__conflict": {
+          "ade_px": 8.475908279418945,
+          "fde_px": 16.675655364990234
+        }
+      },
+      "consistent_same_caption_seed_pairs": {
+        "42__vs__43": {
+          "ade_px": 20.515226364135742,
+          "fde_px": 47.09846115112305
+        },
+        "42__vs__44": {
+          "ade_px": 8.135034561157227,
+          "fde_px": 15.16729736328125
+        },
+        "43__vs__44": {
+          "ade_px": 19.320634841918945,
+          "fde_px": 37.010963439941406
+        }
+      },
+      "condition_vs_none_seed42": {
+        "consistent": {
+          "ade_px": 11.56261920928955,
+          "fde_px": 23.737638473510742
+        },
+        "static": {
+          "ade_px": 13.454039573669434,
+          "fde_px": 27.196678161621094
+        },
+        "conflict": {
+          "ade_px": 7.571696758270264,
+          "fde_px": 14.836249351501465
+        }
+      },
+      "condition_path_px_seed42": {
+        "none": 1.4270210266113281,
+        "consistent": 1.141649842262268,
+        "static": 1.0847691297531128,
+        "conflict": 1.3208763599395752
+      }
+    },
+    "gear_v2_9-wrist_front_rgb_img-0": {
+      "available_runs": [
+        {
+          "condition": "conflict",
+          "seed": 42
+        },
+        {
+          "condition": "consistent",
+          "seed": 42
+        },
+        {
+          "condition": "consistent",
+          "seed": 43
+        },
+        {
+          "condition": "consistent",
+          "seed": 44
+        },
+        {
+          "condition": "none",
+          "seed": 42
+        },
+        {
+          "condition": "static",
+          "seed": 42
+        }
+      ],
+      "fixed_seed42_condition_pairs": {
+        "none__vs__consistent": {
+          "ade_px": 3.484799861907959,
+          "fde_px": 5.070085048675537
+        },
+        "none__vs__static": {
+          "ade_px": 2.4202466011047363,
+          "fde_px": 4.101715564727783
+        },
+        "none__vs__conflict": {
+          "ade_px": 5.290623188018799,
+          "fde_px": 8.294360160827637
+        },
+        "consistent__vs__static": {
+          "ade_px": 4.163029670715332,
+          "fde_px": 5.766379356384277
+        },
+        "consistent__vs__conflict": {
+          "ade_px": 2.432264566421509,
+          "fde_px": 4.399620056152344
+        },
+        "static__vs__conflict": {
+          "ade_px": 4.716339111328125,
+          "fde_px": 7.186498165130615
+        }
+      },
+      "consistent_same_caption_seed_pairs": {
+        "42__vs__43": {
+          "ade_px": 9.947218894958496,
+          "fde_px": 18.792640686035156
+        },
+        "42__vs__44": {
+          "ade_px": 9.182734489440918,
+          "fde_px": 15.371747016906738
+        },
+        "43__vs__44": {
+          "ade_px": 9.139941215515137,
+          "fde_px": 12.871935844421387
+        }
+      },
+      "condition_vs_none_seed42": {
+        "consistent": {
+          "ade_px": 3.484799861907959,
+          "fde_px": 5.070085048675537
+        },
+        "static": {
+          "ade_px": 2.4202466011047363,
+          "fde_px": 4.101715564727783
+        },
+        "conflict": {
+          "ade_px": 5.290623188018799,
+          "fde_px": 8.294360160827637
+        }
+      },
+      "condition_path_px_seed42": {
+        "none": 0.8512728810310364,
+        "consistent": 0.8441466689109802,
+        "static": 0.796970784664154,
+        "conflict": 0.8336841464042664
+      }
+    }
+  }
+}

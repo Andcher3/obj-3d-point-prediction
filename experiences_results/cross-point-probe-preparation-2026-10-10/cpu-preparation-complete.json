@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-10-10T16:37:22.299911+00:00",
+  "cpu_preparation_pass": true,
+  "assets_ready": true,
+  "cpu_environment_pass": true,
+  "all_160_inputs_and_preprocessing_pass": true,
+  "query_previews_delivered": true,
+  "query_user_review": "pending",
+  "counts": {
+    "train": 100,
+    "validation": 20,
+    "test": 40
+  },
+  "query_count_per_scene": 48,
+  "observed_frames": 7,
+  "future_frames": 15,
+  "native_fps": 12,
+  "query_frame": 0,
+  "reference_camera_frame": 6,
+  "model_loaded": false,
+  "forward_called": false,
+  "training_started": false,
+  "gpu_used": false,
+  "gpu_forward_authorized": false,
+  "observed_model_cache_ready": false,
+  "training_coordinate_audit_pass": false,
+  "actual_weight_loading_tested": false,
+  "gpu_stage_pending": [
+    "actual offline model loading",
+    "observed-only geometry and MF caches",
+    "prediction/GT coordinate and scale audit",
+    "independent-reader training"
+  ],
+  "data_disk_free_gib": 11.656150817871094
+}

@@ -1,0 +1,43 @@
+{
+  "video_id": "356ed369-7023-4660-904b-be73823a21d3",
+  "scope": "single-context offline relation-target audit; no Relation Head training",
+  "frame_indices": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76
+  ],
+  "t0_dense_frame_index": 6,
+  "query_count": 48,
+  "valid_query_count": 48,
+  "global_match_error_px": {
+    "p50": 0.6022419002180011,
+    "max": 67.69590155399423
+  },
+  "edge_count": 90,
+  "bbox_diag_3d": 0.655720982555527,
+  "edge_displacement_change_m": {
+    "p50": 0.028219410530404273,
+    "p90": 0.13582677635776477,
+    "max": 0.34727425946001855
+  },
+  "normalized_shape_change": {
+    "p50": 0.2643492107246162,
+    "p90": 1.183709256024553,
+    "max": 7.040884604467026
+  },
+  "future_horizon_count": 9,
+  "coordinate_frame": "single_trackcraft_context_last_observed_camera"
+}

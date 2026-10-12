@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P2LHAP Academic Poster</title>
+  <style>
+    :root {
+      --ink: #142033;
+      --muted: #586579;
+      --paper: #fbfcfd;
+      --line: #d5dde8;
+      --blue: #1d4ed8;
+      --blue-soft: #dbeafe;
+      --cyan: #0e7490;
+      --cyan-soft: #cffafe;
+      --green: #15803d;
+      --green-soft: #dcfce7;
+      --amber: #b45309;
+      --amber-soft: #fef3c7;
+      --rose: #be123c;
+      --rose-soft: #ffe4e6;
+      --violet: #6d28d9;
+      --violet-soft: #ede9fe;
+      --slate: #334155;
+      --slate-soft: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #e8edf4;
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+    }
+
+    body {
+      padding: 22px;
+    }
+
+    .poster {
+      width: 3500px;
+      height: 4000px;
+      margin: 0 auto;
+      background: var(--paper);
+      box-shadow: 0 26px 80px rgba(15, 23, 42, 0.24);
+      padding: 42px 48px 32px;
+      display: grid;
+      grid-template-rows: 170px 1fr 36px;
+      gap: 20px;
+      overflow: hidden;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr 760px;
+      gap: 28px;
+      border-bottom: 4px solid var(--ink);
+      padding-bottom: 18px;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 23px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 52px;
+      line-height: 1.03;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 22px;
+      line-height: 1.34;
+      max-width: 1420px;
+      font-weight: 700;
+    }
+
+    .header-note {
+      border-left: 6px solid var(--cyan);
+      background: linear-gradient(90deg, var(--cyan-soft), rgba(255,255,255,0));
+      padding: 16px 20px;
+      font-size: 20px;
+      line-height: 1.32;
+      font-weight: 800;
+      align-self: stretch;
+    }
+
+    .content {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 650px 1500px 1fr;
+      gap: 26px;
+    }
+
+    .col {
+      display: grid;
+      gap: 16px;
+      min-height: 0;
+    }
+
+    .left { grid-template-rows: 360px 430px 1fr; }
+    .middle { grid-template-rows: 1500px 680px 1fr; }
+    .right { grid-template-rows: 1320px 760px 1fr; }
+
+    section {
+      background: #fff;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 18px;
+      overflow: hidden;
+    }
+
+    h2 {
+      margin: 0 0 11px;
+      font-size: 25px;
+      line-height: 1.14;
+    }
+
+    h3 {
+      margin: 0 0 7px;
+      font-size: 18px;
+      line-height: 1.16;
+    }
+
+    p {
+      margin: 0 0 9px;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: 15px;
+      line-height: 1.3;
+      margin: 4px 0;
+    }
+
+    .pill-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 29px;
+      padding: 4px 11px;
+      border-radius: 16px;
+      font-size: 14px;
+      font-weight: 900;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+    }
+
+    .blue { background: var(--blue-soft); color: #1d4ed8; }
+    .cyan { background: var(--cyan-soft); color: #0e7490; }
+    .green { background: var(--green-soft); color: #166534; }
+    .amber { background: var(--amber-soft); color: #92400e; }
+    .rose { background: var(--rose-soft); color: #be123c; }
+    .violet { background: var(--violet-soft); color: #5b21b6; }
+    .slate { background: var(--slate-soft); color: #334155; }
+
+    .task-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .task {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      align-items: center;
+      gap: 12px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .task strong {
+      width: 54px;
+      height: 42px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background: var(--blue);
+      font-size: 18px;
+    }
+
+    .task:nth-child(2) strong { background: var(--green); }
+    .task:nth-child(3) strong { background: var(--amber); }
+
+    .task p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.28;
+    }
+
+    .shape-table {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 9px;
+    }
+
+    .shape-row {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 10px;
+      align-items: center;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+
+    .shape-row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .shape-row code {
+      display: block;
+      color: #0f172a;
+      background: #f1f5f9;
+      border-radius: 6px;
+      padding: 7px 9px;
+      font-size: 15px;
+      font-family: Consolas, "SFMono-Regular", monospace;
+      font-weight: 800;
+    }
+
+    .shape-row span {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.28;
+      font-weight: 700;
+    }
+
+    .dataset-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .dataset {
+      border-left: 6px solid var(--blue);
+      background: #f8fafc;
+      border-radius: 7px;
+      padding: 10px 12px;
+    }
+
+    .dataset:nth-child(2) { border-color: var(--green); }
+    .dataset:nth-child(3) { border-color: var(--amber); }
+
+    .dataset p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .box {
+      border: 1px solid #e2e8f0;
+      background: #fbfdff;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .box h3 {
+      color: var(--blue);
+    }
+
+    .box:nth-child(2n) h3 {
+      color: var(--rose);
+    }
+
+    .formula {
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: #0f172a;
+      color: white;
+      border-radius: 7px;
+      font-family: Consolas, "SFMono-Regular", monospace;
+      font-size: 15px;
+      line-height: 1.42;
+      white-space: pre-wrap;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.23;
+    }
+
+    th,
+    td {
+      padding: 6px 6px;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    td.num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      font-weight: 900;
+    }
+
+    .mini {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .result-grid .wide {
+      grid-column: 1 / -1;
+    }
+
+    .callout {
+      border-left: 6px solid var(--rose);
+      background: var(--rose-soft);
+      padding: 10px 12px;
+      border-radius: 7px;
+      margin-top: 10px;
+    }
+
+    .callout p {
+      margin: 0;
+      color: #7f1d1d;
+      font-size: 14px;
+      line-height: 1.3;
+      font-weight: 800;
+    }
+
+    .param-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-top: 9px;
+    }
+
+    .param {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 7px;
+      padding: 8px 10px;
+    }
+
+    .param strong {
+      display: block;
+      color: var(--blue);
+      font-size: 18px;
+      line-height: 1.05;
+      margin-bottom: 3px;
+    }
+
+    .param span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.18;
+      font-weight: 800;
+    }
+
+    .figure-card {
+      background: #f8fafc;
+      border: 1px solid #dbe4ef;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin: 10px 0 12px;
+    }
+
+    .figure-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .figure-title strong {
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    .figure-title span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .figure-note {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+
+    .generated-figure {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border: 1px solid #dbe4ef;
+      border-radius: 7px;
+      background: #ffffff;
+    }
+
+    .model-flow-figure {
+      max-height: none;
+    }
+
+    .label-forecast-figure {
+      max-height: none;
+    }
+
+    .experiments-figure {
+      max-height: none;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 9px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.22;
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    @media print {
+      @page {
+        size: 35in 40in;
+        margin: 0;
+      }
+
+      html,
+      body {
+        padding: 0;
+        background: white;
+      }
+
+      .poster {
+        width: 100vw;
+        height: 114.29vw;
+        max-height: 100vh;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="poster" aria-label="P2LHAP academic poster">
+    <header>
+      <div>
+        <div class="eyebrow">论文精读海报 | HAR / HAS / HAF Unified Modeling</div>
+        <h1>P2LHAP：Patch-to-Label Seq2Seq Transformer</h1>
+        <p class="subtitle">面向可穿戴传感器连续数据流，同时完成活动识别、活动分割与活动预测。核心不是把一个固定窗口分类，而是把多通道传感器流切成 patch 序列，并输出 patch-level activity label sequence。</p>
+      </div>
+      <aside class="header-note">
+        对方向一的直接价值：它提供了“未来延续概率/切换趋势”的更系统输出形式。先预测未来 patch 标签序列，再派生延续、切换、下一状态和首次切换位置。
+      </aside>
+    </header>
+
+    <div class="content">
+      <div class="col left">
+        <section>
+          <h2>1. 问题动机：三个任务统一</h2>
+          <p>传统方法常把 HAS、HAR、HAF 分开建模，或用共享编码器加多个任务头。P2LHAP 改为用一个 Seq2Seq 标签序列输出统一三者。</p>
+          <div class="task-grid">
+            <div class="task"><strong>HAS</strong><p>Activity Segmentation：从连续流中确定每段活动的起止边界。</p></div>
+            <div class="task"><strong>HAR</strong><p>Activity Recognition：给每个 patch 或活动段赋予活动类别。</p></div>
+            <div class="task"><strong>HAF</strong><p>Activity Forecast：预测未来若干 patch 的活动标签序列。</p></div>
+          </div>
+        </section>
+
+        <section>
+          <h2>2. 数据与输入形状</h2>
+          <div class="shape-table">
+            <div class="shape-row"><code>X_{1:L}</code><span>M 维连续 wearable sensor sequence；每个时刻 x_t 属于 R^{1 x M}。</span></div>
+            <div class="shape-row"><code>y_{1:L}</code><span>每个采样点对应活动标签；最终转成 patch-level labels。</span></div>
+            <div class="shape-row"><code>P, S</code><span>patch length 与 stride；默认 P=10, S=10，可 overlap 或 non-overlap。</span></div>
+            <div class="shape-row"><code>B x M x L</code><span>batch 中的多通道序列；按通道独立切分 patch。</span></div>
+            <div class="shape-row"><code>(B*M) x P x N</code><span>reshape 后送入 Transformer；N = floor((L-P)/S)+2。</span></div>
+          </div>
+          <div class="callout">
+            <p>注意：论文不是完全取消长度超参数，而是不再假设一个固定滑窗就是一个完整活动。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>3. 数据集与默认设置</h2>
+          <div class="dataset-grid">
+            <div class="dataset"><h3>WISDM</h3><p>29 人，裤袋手机三轴加速度计，20 Hz，6 类日常活动；论文用线性插值填补缺失值。</p></div>
+            <div class="dataset"><h3>PAMAP2</h3><p>9 人，胸/手/踝 IMU，100 Hz；加速度、角速度、磁力计；12 个必做活动 + 6 个可选活动。</p></div>
+            <div class="dataset"><h3>UNIMIB SHAR</h3><p>30 人，Samsung 手机 Bosch BMA220，50 Hz；11,771 段，17 类活动：9 类 ADL + 8 类跌倒。</p></div>
+          </div>
+          <div class="param-grid">
+            <div class="param"><strong>0.7/0.1/0.2</strong><span>train / validation / test</span></div>
+            <div class="param"><strong>pred_len=8</strong><span>future patch label horizon</span></div>
+            <div class="param"><strong>6 layers</strong><span>encoder-decoder layers</span></div>
+            <div class="param"><strong>8 heads</strong><span>default attention heads</span></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col middle">
+        <section>
+          <h2>4. 方法数据流：Patch-to-Label Seq2Seq</h2>
+          <div class="figure-card">
+            <div class="figure-title">
+              <strong>Imagegen 图：模型数据流</strong>
+              <span>sensor stream -> patch tokens -> labels</span>
+            </div>
+            <img class="generated-figure model-flow-figure" src="assets/p2lhap-imagegen-model-flow.png" alt="P2LHAP model and data flow generated by imagegen">
+            <p class="figure-note">该图用于把论文的 channel split、normalization、patch token、shared Transformer、current/future labels 串成一条可讲述的数据管线。</p>
+          </div>
+
+          <div class="two">
+            <div class="box">
+              <h3>A. Patching</h3>
+              <ul>
+                <li>每个 sensor channel 独立处理。</li>
+                <li>先归一化，再切成长度 P 的 patch。</li>
+                <li>patch 作为 Transformer token，而不是单点或完整活动窗口。</li>
+                <li>短事件可由多个 patch 捕获，长活动可包含任意数量 patch。</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>B. Channel Independence</h3>
+              <ul>
+                <li>每个 patch 只含单一传感器通道信息。</li>
+                <li>不同通道共享 embedding 与 Transformer 权重。</li>
+                <li>目标是减少多变量互相干扰并控制参数规模。</li>
+                <li>类似 PatchTST 在时间序列预测中的设计思想。</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>C. Encoder</h3>
+              <ul>
+                <li>linear projection: patch block -> D 维 latent space。</li>
+                <li>learnable positional encoding 保留 patch 时序位置。</li>
+                <li>multi-head attention + BatchNorm + FFN + residual。</li>
+                <li>输出每个通道的 patch-level latent representation。</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>D. Decoder + Head</h3>
+              <ul>
+                <li>decoder 结合 encoder representation 与 patch-level sensor data。</li>
+                <li>用 K/Q/V attention 生成 z' 表示。</li>
+                <li>Flatten + Linear + Softmax 输出 patch activity labels。</li>
+                <li>同时输出未来长度 T_pre 的 label sequence。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="formula">z' = softmax(Q^T K / sigma) V
+y_hat = argmax(softmax(Linear(z')))
+y_pre = { y_hat_{L+1}, ..., y_hat_{L+T_P} }</div>
+        </section>
+
+        <section>
+          <h2>5. 训练目标与平滑策略</h2>
+          <div class="two">
+            <div class="box">
+              <h3>Patch Classification Loss</h3>
+              <p>对每个 patch 的预测标签与真实标签做 Softmax CrossEntropy，并考虑类别不均衡下的有效样本权重。</p>
+              <div class="formula">L_cls = l_p(y_hat, y)</div>
+            </div>
+            <div class="box">
+              <h3>Forecast Loss</h3>
+              <p>根据未来 patch activity label sequence 与 ground truth future labels 计算预测损失。</p>
+              <div class="formula">L_pre = l_p(y_hat_pre, y_gt)</div>
+            </div>
+            <div class="box">
+              <h3>Smoothing Loss</h3>
+              <p>使用 truncated MSE 约束相邻 patch 的类别概率变化，减少过度分割。</p>
+              <div class="formula">L_seg = LT-MSE
+Delta_t,c = |log y_t,c - log y_{t-1,c}|
+tau = 2</div>
+            </div>
+            <div class="box">
+              <h3>总目标</h3>
+              <p>训练时联合优化当前分类、分割平滑和未来标签预测。</p>
+              <div class="formula">L = L_cls + L_seg + L_pre</div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>6. 推理阶段：从标签序列派生三任务</h2>
+          <div class="figure-card">
+            <div class="figure-title">
+              <strong>Imagegen 图：标签序列、平滑与预测</strong>
+              <span>observed labels -> segments -> forecast</span>
+            </div>
+            <img class="generated-figure label-forecast-figure" src="assets/p2lhap-imagegen-label-forecast.png" alt="Patch label sequence, smoothing, segmentation and forecast generated by imagegen">
+          </div>
+          <div class="two">
+            <div class="box">
+              <h3>Recognition</h3>
+              <p>每个 patch 的标签就是局部活动识别结果；活动段标签可由相邻 patch 合并后得到。</p>
+            </div>
+            <div class="box">
+              <h3>Segmentation</h3>
+              <p>对 y_hat 使用 smoothing window 做 majority correction，再合并相邻同类 patch 得到边界 B={(s_i,e_i)}。</p>
+            </div>
+            <div class="box">
+              <h3>Forecast</h3>
+              <p>输出未来 8 个 patch 的类别序列，可直接判断接下来活动是否延续或切换。</p>
+            </div>
+            <div class="box">
+              <h3>对方向一的迁移</h3>
+              <p>可扩展为 human label sequence + phone motion label sequence，或组合状态序列。</p>
+            </div>
+          </div>
+          <div class="formula">state_t = (human_action_t, phone_motion_t)
+future states -> continue_prob, switch_prob, next_state, first_switch_patch</div>
+        </section>
+      </div>
+
+      <div class="col right">
+        <section>
+          <h2>7. 实验结果：Recognition / Segmentation / Forecast</h2>
+          <div class="figure-card">
+            <div class="figure-title">
+              <strong>Imagegen 图：实验现象概览</strong>
+              <span>qualitative summary, exact numbers below</span>
+            </div>
+            <img class="generated-figure experiments-figure" src="assets/p2lhap-imagegen-experiments.png" alt="P2LHAP experiment and ablation overview generated by imagegen">
+          </div>
+          <div class="result-grid">
+            <div class="box">
+              <h3>Recognition: Acc / F1</h3>
+              <table>
+                <thead><tr><th>Dataset</th><th>Acc</th><th>F1</th></tr></thead>
+                <tbody>
+                  <tr><td>PAMAP2</td><td class="num">98.71%</td><td class="num">98.92%</td></tr>
+                  <tr><td>WISDM</td><td class="num">97.51%</td><td class="num">97.52%</td></tr>
+                  <tr><td>UNIMIB</td><td class="num">81.51%</td><td class="num">82.04%</td></tr>
+                </tbody>
+              </table>
+              <p class="mini">论文表 II：P2LHAP 在作者设置下整体优于选定对比方法；UNIMIB F1 比 leading method 高 3.26%。</p>
+            </div>
+            <div class="box">
+              <h3>Segmentation: Jaccard Index</h3>
+              <table>
+                <thead><tr><th>Method</th><th>JI</th></tr></thead>
+                <tbody>
+                  <tr><td>Attn</td><td class="num">0.7908</td></tr>
+                  <tr><td>A&amp;D</td><td class="num">0.8312</td></tr>
+                  <tr><td>JSR</td><td class="num">0.8947</td></tr>
+                  <tr><td>Ours w/o smoothing</td><td class="num">0.8445</td></tr>
+                  <tr><td><strong>Ours</strong></td><td class="num">0.9294</td></tr>
+                </tbody>
+              </table>
+              <p class="mini">论文表 III：PAMAP2 上 smoothing 对分割边界非常关键。</p>
+            </div>
+            <div class="box">
+              <h3>Forecast: PAMAP2</h3>
+              <table>
+                <thead><tr><th>Signal Forecaster</th><th>MSE</th></tr></thead>
+                <tbody>
+                  <tr><td>SynSigGAN</td><td class="num">0.355</td></tr>
+                  <tr><td>Conv2LSTM</td><td class="num">0.302</td></tr>
+                  <tr><td>Seq2Seq-LSTM</td><td class="num">0.240</td></tr>
+                  <tr><td>TTS-GAN</td><td class="num">0.163</td></tr>
+                  <tr><td><strong>Ours</strong></td><td class="num">0.126</td></tr>
+                </tbody>
+              </table>
+              <p class="mini">未来 8 个 patch 的活动类别预测平均准确率约 96.59%；表 IV 还比较未来传感器信号预测 MSE。</p>
+            </div>
+            <div class="box">
+              <h3>Complexity: PAMAP2</h3>
+              <table>
+                <thead><tr><th>Method</th><th>Param</th><th>Time</th></tr></thead>
+                <tbody>
+                  <tr><td>Attn</td><td class="num">1.983M</td><td class="num">8.22</td></tr>
+                  <tr><td>A&amp;D</td><td class="num">1.503M</td><td class="num">11.88</td></tr>
+                  <tr><td>JSR</td><td class="num">2.799M</td><td class="num">0.78</td></tr>
+                  <tr><td><strong>Ours</strong></td><td class="num">1.449M</td><td class="num">0.08</td></tr>
+                </tbody>
+              </table>
+              <p class="mini">表 VIII：作者报告更低参数量和推理时间，说明框架有移动/嵌入式潜力。</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>8. 消融实验：为什么 patch 和结构有效</h2>
+          <div class="result-grid">
+            <div class="box wide">
+              <h3>Patch Size 对 F1 的影响</h3>
+              <table>
+                <thead><tr><th>Dataset</th><th>P=1</th><th>P=2</th><th>P=5</th><th>P=10</th><th>P=20</th></tr></thead>
+                <tbody>
+                  <tr><td>WISDM</td><td class="num">0.8544</td><td class="num">0.9056</td><td class="num">0.8819</td><td class="num">0.9751</td><td class="num">0.9568</td></tr>
+                  <tr><td>PAMAP2</td><td class="num">0.9151</td><td class="num">0.9406</td><td class="num">0.9610</td><td class="num">0.9892</td><td class="num">0.9667</td></tr>
+                  <tr><td>UNIMIB</td><td class="num">0.6719</td><td class="num">0.6950</td><td class="num">0.7566</td><td class="num">0.8204</td><td class="num">0.7876</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="box">
+              <h3>No Patching vs P2LHAP</h3>
+              <table>
+                <thead><tr><th>Model</th><th>WISDM</th><th>PAMAP2</th><th>UNIMIB</th></tr></thead>
+                <tbody>
+                  <tr><td>Transformer only</td><td class="num">0.9090</td><td class="num">0.8783</td><td class="num">0.7533</td></tr>
+                  <tr><td><strong>P2LHAP</strong></td><td class="num">0.9752</td><td class="num">0.9892</td><td class="num">0.8204</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="box">
+              <h3>Depth / Heads</h3>
+              <p>论文在 PAMAP2 上调节 encoder-decoder 层数和 attention heads。最佳默认配置为 6 层、8 heads；继续加到 16 heads 或 8 层不一定更好。</p>
+              <p class="mini">结论：patch 组织、合适模型容量和 smoothing 都是性能来源，不只是“换成 Transformer”。</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>9. 局限与对本课题的使用方式</h2>
+          <div class="two">
+            <div class="box">
+              <h3>论文局限</h3>
+              <ul>
+                <li>closed-set softmax，不能拒识未知活动。</li>
+                <li>数据划分为连续流 0.7/0.1/0.2，不是跨受试者验证。</li>
+                <li>数据集不是 UCI HAR，也不是手机运镜双标签场景。</li>
+                <li>仍需设置 patch size、stride、forecast horizon。</li>
+                <li>channel-independent 减少干扰，但可能弱化真实跨通道耦合。</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>对方向一的启发</h3>
+              <ul>
+                <li>把“延续/切换”建模为未来 patch 标签序列预测。</li>
+                <li>从未来序列派生 continue_prob 与 switch_prob。</li>
+                <li>将单标签扩展为双标签：人体动作 + 手机/相机运动。</li>
+                <li>或把二者组合成 joint state sequence。</li>
+                <li>先评估 segmentation/forecast，再讨论语义对齐或多模态。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="callout">
+            <p>最重要的迁移点不是直接照搬模型，而是采用 patch-level future label sequence 作为“未来延续概率”和“切换趋势预测”的基础输出。</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div>Prepared for weekly research discussion | D:\Pycharm\post_graduate_project | 2026-06-28</div>
+      <div>Paper: P2LHAP: Wearable sensor-based HAR, segmentation and forecast through Patch-to-Label Seq2Seq Transformer | <a href="https://arxiv.org/abs/2403.08214">arXiv:2403.08214</a></div>
+    </footer>
+  </main>
+</body>
+</html>

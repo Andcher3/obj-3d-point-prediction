@@ -1,0 +1,594 @@
+{
+  "formal_e2_ready": false,
+  "protocol": {
+    "minimum_independent_videos": 5,
+    "query_count_range": [
+      48,
+      64
+    ],
+    "required_observed_history": true,
+    "required_time_metadata": true,
+    "required_projection_consistency_tolerance": 0.001,
+    "main_graph": "2d_symmetric_knn_k3",
+    "minimum_comparison": "observed_3d_symmetric_knn_k3",
+    "hybrid": "deferred_until_real_mask_depth_boundary_data"
+  },
+  "data_root": "experiences_results",
+  "npz_file_count": 21,
+  "valid_npz_file_count": 21,
+  "source_video_count": 3,
+  "source_videos": {
+    "drink_bottle": {
+      "file_count": 15,
+      "query_count_min": 8,
+      "query_count_max": 8,
+      "query_count_values": [
+        8
+      ],
+      "projection_error_max": 0.0,
+      "time_metadata_file_count": 0,
+      "paths": [
+        "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/black_cup__greedy.npz",
+        "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/keep_holding__greedy.npz",
+        "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/laptop__greedy.npz",
+        "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/mouse__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12/drink_bottle_start12/arrays/carry_right__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12/drink_bottle_start12/arrays/keep_holding__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12/drink_bottle_start12/arrays/set_down__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12-cross-prompt/drink_bottle_start12_cross_prompt/arrays/scissors_exact__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/black_cup__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/keep_holding__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/laptop__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/mouse__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2-simple-actions/drink_bottle_stride2_simple_actions/arrays/carry_right__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2-simple-actions/drink_bottle_stride2_simple_actions/arrays/pickup__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2-simple-actions/drink_bottle_stride2_simple_actions/arrays/set_down__greedy.npz"
+      ]
+    },
+    "sewing_scissors": {
+      "file_count": 3,
+      "query_count_min": 8,
+      "query_count_max": 8,
+      "query_count_values": [
+        8
+      ],
+      "projection_error_max": 6.103515625e-05,
+      "time_metadata_file_count": 0,
+      "paths": [
+        "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/sewing_scissors/arrays/counterfactual_static__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/sewing_scissors/arrays/multistep__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/sewing_scissors/arrays/observed_pickup__greedy.npz"
+      ]
+    },
+    "watering_can": {
+      "file_count": 3,
+      "query_count_min": 8,
+      "query_count_max": 8,
+      "query_count_values": [
+        8
+      ],
+      "projection_error_max": 3.0517578125e-05,
+      "time_metadata_file_count": 0,
+      "paths": [
+        "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/watering_can/arrays/counterfactual_setdown__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/watering_can/arrays/multistep__greedy.npz",
+        "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/watering_can/arrays/observed_carry__greedy.npz"
+      ]
+    }
+  },
+  "reasons_not_ready": [
+    "independent_source_videos=3 < required_min=5",
+    "drink_bottle: query_count_range=8..8 outside 48..64",
+    "drink_bottle: missing t0_seconds/future_timestamps_s/pseudo_gt_timestamps_s in some files",
+    "sewing_scissors: query_count_range=8..8 outside 48..64",
+    "sewing_scissors: missing t0_seconds/future_timestamps_s/pseudo_gt_timestamps_s in some files",
+    "watering_can: query_count_range=8..8 outside 48..64",
+    "watering_can: missing t0_seconds/future_timestamps_s/pseudo_gt_timestamps_s in some files"
+  ],
+  "records": [
+    {
+      "path": "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/black_cup__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/keep_holding__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/laptop__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/mouse__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/sewing_scissors/arrays/counterfactual_static__greedy.npz",
+      "source_video_group": "sewing_scissors",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 6.103515625e-05,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/sewing_scissors/arrays/multistep__greedy.npz",
+      "source_video_group": "sewing_scissors",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 6.103515625e-05,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/sewing_scissors/arrays/observed_pickup__greedy.npz",
+      "source_video_group": "sewing_scissors",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 6.103515625e-05,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/watering_can/arrays/counterfactual_setdown__greedy.npz",
+      "source_video_group": "watering_can",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 3.0517578125e-05,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/watering_can/arrays/multistep__greedy.npz",
+      "source_video_group": "watering_can",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 3.0517578125e-05,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/watering_can/arrays/observed_carry__greedy.npz",
+      "source_video_group": "watering_can",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 3.0517578125e-05,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12/drink_bottle_start12/arrays/carry_right__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12/drink_bottle_start12/arrays/keep_holding__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12/drink_bottle_start12/arrays/set_down__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12-cross-prompt/drink_bottle_start12_cross_prompt/arrays/scissors_exact__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/black_cup__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/keep_holding__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/laptop__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/mouse__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2-simple-actions/drink_bottle_stride2_simple_actions/arrays/carry_right__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2-simple-actions/drink_bottle_stride2_simple_actions/arrays/pickup__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    },
+    {
+      "path": "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2-simple-actions/drink_bottle_stride2_simple_actions/arrays/set_down__greedy.npz",
+      "source_video_group": "drink_bottle",
+      "status": "ok",
+      "query_count": 8,
+      "history_frames": 3,
+      "prediction_shape": [
+        8,
+        30,
+        3
+      ],
+      "pseudo_gt_shape": [
+        8,
+        9,
+        3
+      ],
+      "projection_max_abs_error": 0.0,
+      "has_time_metadata": false,
+      "missing_time_keys": [
+        "future_timestamps_s",
+        "pseudo_gt_timestamps_s",
+        "t0_seconds"
+      ]
+    }
+  ]
+}

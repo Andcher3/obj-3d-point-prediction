@@ -1,0 +1,260 @@
+{
+  "scope": "CPU-only first-frame GT coordinate-convention audit",
+  "samples": [
+    {
+      "file": "00001.npz",
+      "points_checked": 904,
+      "heldout_points": 226,
+      "normalized_camera0_identity_max_error": 9.5367431640625e-07,
+      "convention_trials": [
+        {
+          "pixel_offset": 0.0,
+          "fit_success": true,
+          "heldout_p50_px": 0.028504960103932647,
+          "heldout_p90_px": 0.05401102184510145,
+          "heldout_max_px": 0.09883746364310488,
+          "positive_depth_fraction": 1.0,
+          "derived_absolute_world_to_camera0": [
+            [
+              0.19347450010092493,
+              -0.9811053033544344,
+              3.9249212443526194e-05,
+              -0.005465547425037494
+            ],
+            [
+              -0.19121863378655446,
+              -0.03774765656785972,
+              -0.9808213642230875,
+              -0.005849451285889517
+            ],
+            [
+              0.9622905236483943,
+              0.18975641795058829,
+              -0.194908824692626,
+              10.898055794987581
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "pixel_offset": 0.5,
+          "fit_success": true,
+          "heldout_p50_px": 0.0022655216011831345,
+          "heldout_p90_px": 0.004054487618268919,
+          "heldout_max_px": 0.0056168341739245625,
+          "positive_depth_fraction": 1.0,
+          "derived_absolute_world_to_camera0": [
+            [
+              0.19397873034018176,
+              -0.9810057350334067,
+              2.678940085265591e-06,
+              3.356697268222132e-06
+            ],
+            [
+              -0.1906734236131442,
+              -0.03770540288552665,
+              -0.9809291249223273,
+              1.0164701566014235e-05
+            ],
+            [
+              0.9622971982206192,
+              0.19027887540346078,
+              -0.19436576826164803,
+              10.898187180310352
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "lowest_error_pixel_offset": 0.5,
+      "first_frame_coordinate_check_pass": true,
+      "gt_intrinsics_fixed_not_fitted": true,
+      "gt_used_only_for_label_coordinate_diagnostic": true,
+      "model_input_change": false,
+      "original_arrays_unchanged": true,
+      "future_projection_independently_verified": false,
+      "future_coordinate_formula_candidate": "X_camera_t = E_relative_t @ A_world_to_camera0 @ X_world_t"
+    },
+    {
+      "file": "00002.npz",
+      "points_checked": 917,
+      "heldout_points": 230,
+      "normalized_camera0_identity_max_error": 2.2841771851744852e-07,
+      "convention_trials": [
+        {
+          "pixel_offset": 0.0,
+          "fit_success": true,
+          "heldout_p50_px": 0.007408211999079893,
+          "heldout_p90_px": 0.017188967990306794,
+          "heldout_max_px": 0.07578778222018083,
+          "positive_depth_fraction": 1.0,
+          "derived_absolute_world_to_camera0": [
+            [
+              -0.9051363351960635,
+              -0.42512137146427087,
+              0.00018501939528484113,
+              -0.005388172097634237
+            ],
+            [
+              -0.21300011659766258,
+              0.4531270371914069,
+              -0.8656251142934331,
+              -0.0054953493015627965
+            ],
+            [
+              0.3679118984719323,
+              -0.7835481527580003,
+              -0.5006926475117284,
+              10.07891464813883
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "pixel_offset": 0.5,
+          "fit_success": true,
+          "heldout_p50_px": 0.001111531374449088,
+          "heldout_p90_px": 0.002074035842251204,
+          "heldout_max_px": 0.0039933988660644,
+          "positive_depth_fraction": 1.0,
+          "derived_absolute_world_to_camera0": [
+            [
+              -0.9049983911577673,
+              -0.4254149879802466,
+              -1.9025717073739568e-06,
+              -1.5752294779816446e-05
+            ],
+            [
+              -0.21278959334276837,
+              0.4526777206514445,
+              -0.8659119298120521,
+              -5.792038359414839e-06
+            ],
+            [
+              0.3683727744647701,
+              -0.7836484985167647,
+              -0.5001964911967577,
+              10.077831480115469
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "lowest_error_pixel_offset": 0.5,
+      "first_frame_coordinate_check_pass": true,
+      "gt_intrinsics_fixed_not_fitted": true,
+      "gt_used_only_for_label_coordinate_diagnostic": true,
+      "model_input_change": false,
+      "original_arrays_unchanged": true,
+      "future_projection_independently_verified": false,
+      "future_coordinate_formula_candidate": "X_camera_t = E_relative_t @ A_world_to_camera0 @ X_world_t"
+    },
+    {
+      "file": "00003.npz",
+      "points_checked": 902,
+      "heldout_points": 226,
+      "normalized_camera0_identity_max_error": 2.283533007130245e-07,
+      "convention_trials": [
+        {
+          "pixel_offset": 0.0,
+          "fit_success": true,
+          "heldout_p50_px": 0.0275717009043177,
+          "heldout_p90_px": 0.04725514493654337,
+          "heldout_max_px": 0.11808476981716999,
+          "positive_depth_fraction": 1.0,
+          "derived_absolute_world_to_camera0": [
+            [
+              -0.9795997655885295,
+              -0.2009583224521848,
+              0.00022780715938054696,
+              -0.004880773735920296
+            ],
+            [
+              -0.09759069854447755,
+              0.47472809353191925,
+              -0.87470526051302,
+              -0.005121105916371002
+            ],
+            [
+              0.17567115533433214,
+              -0.8568833000174253,
+              -0.48465519220859266,
+              9.560481749153107
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "pixel_offset": 0.5,
+          "fit_success": true,
+          "heldout_p50_px": 0.0019320893679408801,
+          "heldout_p90_px": 0.003731069452699946,
+          "heldout_max_px": 0.005650849130408091,
+          "positive_depth_fraction": 1.0,
+          "derived_absolute_world_to_camera0": [
+            [
+              -0.9795129563979026,
+              -0.20138115162792217,
+              4.2014707263143825e-06,
+              -7.881271833140835e-06
+            ],
+            [
+              -0.09751056705062303,
+              0.4742707393983847,
+              -0.8749622592226334,
+              1.5867129034598076e-05
+            ],
+            [
+              0.17619891475859456,
+              -0.8570372789555427,
+              -0.4841911243696776,
+              9.560530575956005
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "lowest_error_pixel_offset": 0.5,
+      "first_frame_coordinate_check_pass": true,
+      "gt_intrinsics_fixed_not_fitted": true,
+      "gt_used_only_for_label_coordinate_diagnostic": true,
+      "model_input_change": false,
+      "original_arrays_unchanged": true,
+      "future_projection_independently_verified": false,
+      "future_coordinate_formula_candidate": "X_camera_t = E_relative_t @ A_world_to_camera0 @ X_world_t"
+    }
+  ],
+  "all_first_frame_checks_pass": true,
+  "gpu_used": false,
+  "model_queries_created": false
+}

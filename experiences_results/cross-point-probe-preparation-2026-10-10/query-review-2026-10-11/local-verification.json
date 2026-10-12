@@ -1,0 +1,9 @@
+{
+  "archive_sha256_pass": true,
+  "archive_crc_pass": true,
+  "all_file_hashes_pass": true,
+  "files": 323,
+  "scenes": 160,
+  "query_user_review": "pending",
+  "future_rgb_included": false
+}

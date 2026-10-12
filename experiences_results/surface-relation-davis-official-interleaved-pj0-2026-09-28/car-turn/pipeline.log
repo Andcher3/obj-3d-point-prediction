@@ -1,0 +1,24 @@
+[2026-09-28T12:26:11Z] START car-turn observed7_pj0_anchor
+[2026-09-28T12:26:11Z] END car-turn observed7_pj0_anchor rc=0
+[2026-09-28T12:26:11Z] START car-turn full23_da3
+[2026-09-28T12:26:21Z] END car-turn full23_da3 rc=0
+[2026-09-28T12:26:21Z] START car-turn official_interleaved_trackcraft
+[2026-09-28T12:29:44Z] END car-turn official_interleaved_trackcraft rc=0
+[2026-09-28T12:29:44Z] START car-turn quality_audit
+[2026-09-28T12:29:44Z] END car-turn quality_audit rc=0
+[2026-09-28T12:29:44Z] START car-turn projection
+[2026-09-28T12:29:45Z] END car-turn projection rc=0
+[2026-09-28T12:29:45Z] START car-turn comparison
+[2026-09-28T12:29:45Z] END car-turn comparison rc=1
+Traceback (most recent call last):
+  File "/root/autodl-tmp/projects/motionforesight/audit_davis_pj0_anchor_comparison.py", line 107, in <module>
+    main()
+  File "/root/autodl-tmp/projects/motionforesight/audit_davis_pj0_anchor_comparison.py", line 65, in main
+    raw_uv, raw_valid = project(raw, w2c, k)
+  File "/root/autodl-tmp/projects/motionforesight/build_davis_visualization_projection_bundle.py", line 19, in project
+    camera = transform(w2c, points)
+  File "/root/autodl-tmp/projects/motionforesight/build_davis_visualization_projection_bundle.py", line 15, in transform
+    return np.einsum("tij,tnj->tni", matrix, xyz1)[..., :3]
+  File "/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/numpy/core/einsumfunc.py", line 1371, in einsum
+    return c_einsum(*operands, **kwargs)
+ValueError: operands could not be broadcast together with remapped shapes [original->remapped]: (23,4,4)->(23,newaxis,4,4) (22,48,4)->(22,48,newaxis,4) 

@@ -1,0 +1,17 @@
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+usage: run_text_type_probe.py [-h] --model MODEL --repo REPO --output-dir
+                              OUTPUT_DIR [--examples EXAMPLES [EXAMPLES ...]]
+                              [--variants VARIANTS [VARIANTS ...]]
+                              [--future-horizon FUTURE_HORIZON]
+
+Probe MolmoMotion sensitivity to action-text form on bundled valid inputs.
+
+options:
+  -h, --help            show this help message and exit
+  --model MODEL         Local MolmoMotion checkpoint directory
+  --repo REPO           Official molmo-motion repository
+  --output-dir OUTPUT_DIR
+  --examples EXAMPLES [EXAMPLES ...]
+  --variants VARIANTS [VARIANTS ...]
+  --future-horizon FUTURE_HORIZON

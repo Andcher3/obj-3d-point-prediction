@@ -1,0 +1,35 @@
+{
+  "video_id": "356ed369-7023-4660-904b-be73823a21d3",
+  "scope": "single-context relation-target quality audit; no Relation Head training",
+  "frame_count": 16,
+  "t0_dense_frame_index": 6,
+  "t0_timestamp_error_s": 0.03333333333330302,
+  "formal_16_frame_protocol": true,
+  "valid_query_count": 48,
+  "anchor_valid_query_count": 24,
+  "anchor_error_norm_2d": {
+    "p50": 0.10195059218442147,
+    "p90": 0.3542165016558468,
+    "max": 0.41310933919268966,
+    "count_over_5pct": 30,
+    "count_over_10pct": 24
+  },
+  "bbox_xyxy": [
+    72.0,
+    316.0,
+    178.0,
+    516.0
+  ],
+  "bbox_diag_2d": 226.35370551417972,
+  "graph": {
+    "edge_count": 86,
+    "connected": true,
+    "component_count": 1
+  },
+  "future_pairwise_distance_drift": {
+    "p50": 0.1642813084493583,
+    "p90": 0.9107299850461912,
+    "max": 9.587946484663549
+  },
+  "gate": "FAIL"
+}

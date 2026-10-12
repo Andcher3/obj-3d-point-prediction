@@ -1,0 +1,158 @@
+{
+  "rows": [
+    {
+      "scene": "scene_3626",
+      "source0_target_pixels": 1624,
+      "nominal_density_expected_count": 24.7802734375,
+      "old_query_frame": 6,
+      "old48_visible_source0": 47,
+      "old48_inside_source0": 48
+    },
+    {
+      "scene": "scene_1782",
+      "source0_target_pixels": 4848,
+      "nominal_density_expected_count": 73.974609375,
+      "old_query_frame": 6,
+      "old48_visible_source0": 32,
+      "old48_inside_source0": 38
+    },
+    {
+      "scene": "scene_3881",
+      "source0_target_pixels": 1316,
+      "nominal_density_expected_count": 20.08056640625,
+      "old_query_frame": 6,
+      "old48_visible_source0": 7,
+      "old48_inside_source0": 26
+    },
+    {
+      "scene": "scene_2344",
+      "source0_target_pixels": 6764,
+      "nominal_density_expected_count": 103.21044921875,
+      "old_query_frame": 6,
+      "old48_visible_source0": 46,
+      "old48_inside_source0": 47
+    },
+    {
+      "scene": "scene_3782",
+      "source0_target_pixels": 860,
+      "nominal_density_expected_count": 13.12255859375,
+      "old_query_frame": 6,
+      "old48_visible_source0": 47,
+      "old48_inside_source0": 48
+    },
+    {
+      "scene": "scene_5916",
+      "source0_target_pixels": 7697,
+      "nominal_density_expected_count": 117.4468994140625,
+      "old_query_frame": 6,
+      "old48_visible_source0": 30,
+      "old48_inside_source0": 36
+    },
+    {
+      "scene": "scene_1924",
+      "source0_target_pixels": 4000,
+      "nominal_density_expected_count": 61.03515625,
+      "old_query_frame": 6,
+      "old48_visible_source0": 5,
+      "old48_inside_source0": 5
+    },
+    {
+      "scene": "scene_5025",
+      "source0_target_pixels": 5442,
+      "nominal_density_expected_count": 83.038330078125,
+      "old_query_frame": 6,
+      "old48_visible_source0": 48,
+      "old48_inside_source0": 48
+    },
+    {
+      "scene": "scene_1143",
+      "source0_target_pixels": 4953,
+      "nominal_density_expected_count": 75.5767822265625,
+      "old_query_frame": 6,
+      "old48_visible_source0": 46,
+      "old48_inside_source0": 48
+    },
+    {
+      "scene": "scene_4203",
+      "source0_target_pixels": 6102,
+      "nominal_density_expected_count": 93.109130859375,
+      "old_query_frame": 6,
+      "old48_visible_source0": 44,
+      "old48_inside_source0": 44
+    },
+    {
+      "scene": "scene_2854",
+      "source0_target_pixels": 3493,
+      "nominal_density_expected_count": 53.2989501953125,
+      "old_query_frame": 6,
+      "old48_visible_source0": 35,
+      "old48_inside_source0": 48
+    },
+    {
+      "scene": "scene_1179",
+      "source0_target_pixels": 2588,
+      "nominal_density_expected_count": 39.48974609375,
+      "old_query_frame": 6,
+      "old48_visible_source0": 39,
+      "old48_inside_source0": 44
+    },
+    {
+      "scene": "scene_813",
+      "source0_target_pixels": 4862,
+      "nominal_density_expected_count": 74.188232421875,
+      "old_query_frame": 6,
+      "old48_visible_source0": 44,
+      "old48_inside_source0": 47
+    },
+    {
+      "scene": "scene_346",
+      "source0_target_pixels": 2798,
+      "nominal_density_expected_count": 42.694091796875,
+      "old_query_frame": 6,
+      "old48_visible_source0": 22,
+      "old48_inside_source0": 31
+    },
+    {
+      "scene": "scene_5702",
+      "source0_target_pixels": 3303,
+      "nominal_density_expected_count": 50.3997802734375,
+      "old_query_frame": 6,
+      "old48_visible_source0": 43,
+      "old48_inside_source0": 48
+    },
+    {
+      "scene": "scene_2329",
+      "source0_target_pixels": 5315,
+      "nominal_density_expected_count": 81.1004638671875,
+      "old_query_frame": 6,
+      "old48_visible_source0": 42,
+      "old48_inside_source0": 42
+    },
+    {
+      "scene": "scene_3457",
+      "source0_target_pixels": 1411,
+      "nominal_density_expected_count": 21.5301513671875,
+      "old_query_frame": 6,
+      "old48_visible_source0": 38,
+      "old48_inside_source0": 48
+    },
+    {
+      "scene": "scene_1580",
+      "source0_target_pixels": 3735,
+      "nominal_density_expected_count": 56.9915771484375,
+      "old_query_frame": 6,
+      "old48_visible_source0": 25,
+      "old48_inside_source0": 25
+    }
+  ],
+  "actual_official_spatial_density_measured": false,
+  "nominal_whole_image_budget": 1000,
+  "nominal_spacing_pixels_256": 8.09543081003105,
+  "nominal_density_used_for_resampling": false,
+  "sampling_changed": false,
+  "model_forward_called": false,
+  "needs_confirmation": [
+    "nominal density approximation versus actual annotation spacing",
+    "reuse source6 points versus resample48 at source0"
+  ]
+}

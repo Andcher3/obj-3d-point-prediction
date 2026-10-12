@@ -1,0 +1,32 @@
+{
+  "purpose": "GPU follow-up for target-object future-motion search",
+  "videos": [
+    {
+      "id": "cut_0",
+      "path": "/root/autodl-tmp/datasets/cut_0.mp4",
+      "duration_seconds": 8.0,
+      "target_object": "the pink rectangular cutting board",
+      "notes": "Kitchen first-person view; keep the target object explicit in the prompt."
+    },
+    {
+      "id": "cut_1",
+      "path": "/root/autodl-tmp/datasets/cut_1.mp4",
+      "duration_seconds": 8.0,
+      "target_object": "the orange bowl",
+      "notes": "Kitchen first-person view; verify the object identity from the full clip before running."
+    },
+    {
+      "id": "cut_2",
+      "path": "/root/autodl-tmp/datasets/cut_2.mp4",
+      "duration_seconds": 8.0,
+      "target_object": "the food and knife on the cutting board",
+      "notes": "Kitchen first-person view; use an object/action label after visual confirmation."
+    }
+  ],
+  "input_policy": {
+    "video_is_observation_only": true,
+    "nframes": 8,
+    "question": "What will happen next in the video?",
+    "target_object_required": true
+  }
+}

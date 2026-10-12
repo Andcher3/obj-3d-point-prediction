@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "sequence": "soccerball",
+  "observed": {
+    "rgb_shape": [
+      7,
+      224,
+      392,
+      3
+    ],
+    "depth_shape": [
+      7,
+      224,
+      392
+    ],
+    "resolution_hw": [
+      224,
+      392
+    ]
+  },
+  "offline_full": {
+    "rgb_shape": [
+      22,
+      224,
+      392,
+      3
+    ],
+    "depth_shape": [
+      22,
+      224,
+      392
+    ],
+    "resolution_hw": [
+      224,
+      392
+    ]
+  },
+  "query_count": 48,
+  "candidate_pixel_count": 160,
+  "time_basis": "consecutive DAVIS source frame indices",
+  "preview_mp4_fps_used": false
+}

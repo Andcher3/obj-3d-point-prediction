@@ -1,0 +1,20 @@
+{
+  "video_id": "boat",
+  "quality_before_legacy_direct22": "FAIL",
+  "quality_after": "FAIL",
+  "teacher_frame0_mask_before_after": [
+    43,
+    48
+  ],
+  "future21_29_mask_counts_after": [
+    45,
+    40,
+    43,
+    41,
+    42,
+    39,
+    37,
+    39,
+    40
+  ]
+}

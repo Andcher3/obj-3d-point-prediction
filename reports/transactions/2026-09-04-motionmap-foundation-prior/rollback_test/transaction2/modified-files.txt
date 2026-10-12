@@ -1,0 +1,6 @@
+AGENTS.md
+AGENTS_zh.md
+research_roadmap.md
+reports\ideas\2026-09-02-project-status-flowforesight.md
+reports\ideas\2026-09-03-motionforesight-probabilistic-semantic-design.md
+reports\progress_log.md

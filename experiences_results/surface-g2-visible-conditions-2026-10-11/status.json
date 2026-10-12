@@ -1,0 +1,31 @@
+{
+  "started_at_utc": "2026-10-11T02:57:51.551125+00:00",
+  "controller_pid": 4135,
+  "state": "completed",
+  "GPU_used": false,
+  "hard_timeout_seconds": 900,
+  "stage": "condition_train",
+  "command": [
+    "/root/autodl-tmp/uniquery4r-visual-review/venv/bin/python",
+    "-u",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10/code/run_g2_visible_conditions.py",
+    "--base",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10",
+    "--surface-dir",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/surfaces",
+    "--config",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10/surface_g2_visible_conditions_2026-10-11.json",
+    "--output",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-g2-visible-run-2026-10-11/results",
+    "--allow-training"
+  ],
+  "child_pid": 4162,
+  "elapsed_seconds": 38.26970560103655,
+  "updated_at_utc": "2026-10-11T02:58:27.818057+00:00",
+  "returncode": 0,
+  "stage_codes": {
+    "surface_prepare": 0,
+    "condition_train": 0
+  },
+  "completed_at_utc": "2026-10-11T02:58:29.820832+00:00"
+}

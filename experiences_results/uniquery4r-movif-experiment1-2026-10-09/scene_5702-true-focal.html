@@ -1,0 +1,6 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>scene_5702：真实焦距对照</title><style>body{font:16px "Microsoft YaHei",sans-serif;margin:24px;background:#10151d;color:#edf2fa}p{line-height:1.7}video,img{width:100%;display:block}a{color:#86baff}summary{cursor:pointer}</style>
+<h1>scene_5702：真实焦距投影与二维输出检查</h1>
+<p>从左到右：模型二维输出 / 原三维回投影 / t0拟合焦距回投影 / 仿真真实焦距回投影 / 仿真真值。</p>
+<p>第四列只用真实fx/fy替换预测焦距。三维点、预测相机位置/朝向与主点保持不变。第五列使用完整真实几何和真实相机，因此第四列不保证等于第五列。</p>
+<p>源256×256，显示2倍，12fps数据、8fps慢放，t0=6；没有GPU推理或训练，没有强制将输出移回query。</p><video controls loop preload="metadata" src="outputs/scene_5702/scene_5702_true_focal_review.mp4"></video><details open><summary>t0 对照图</summary><img src="outputs/scene_5702/scene_5702_true_focal_review_t0.png"></details><details><summary>分帧总览</summary><img src="outputs/scene_5702/scene_5702_true_focal_review_contact.jpg"></details><p><a href="focal-review.html#scene_5702">返回18样本焦距对照</a></p></html>

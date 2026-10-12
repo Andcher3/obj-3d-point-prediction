@@ -1,0 +1,9 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "The running row is visually complete and satisfies the requested character-to-bubble scale balance.",
+  "running_row": "Across all six frames, the seated robot is substantially larger, the white bubble and green diagram remain clear behind the crown, both cyan lenses remain unobstructed, and size/baseline continuity is stable without clipping.",
+  "review_warnings": [],
+  "repair_rows": [],
+  "repair_notes": null,
+  "reviewed_by": "independent visual QA worker"
+}

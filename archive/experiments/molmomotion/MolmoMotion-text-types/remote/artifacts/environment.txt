@@ -1,0 +1,5 @@
+python=3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]
+torch=2.9.1+cu128
+torchvision=0.24.1+cu128
+cuda=12.8
+gpu=NVIDIA GeForce RTX 5090

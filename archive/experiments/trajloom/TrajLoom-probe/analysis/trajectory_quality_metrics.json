@@ -1,0 +1,81 @@
+{
+  "runs_root": "outputs/matrix",
+  "num_videos": 6,
+  "num_videos_processed": 6,
+  "eval_start": 0,
+  "eval_len": -1,
+  "use_visibility": true,
+  "visibility_name": "gt_visibility.npy",
+  "grid_stride": 32.0,
+  "num_missing_visibility_files": 0,
+  "flowsmooth_tv_video_mean": 0.0679149594906517,
+  "divcurl_energy_video_mean": 0.002191402574363436,
+  "per_video": [
+    {
+      "video": "10790317943435558913/seed_42/10790317943435558913",
+      "run_dir": "outputs/matrix/10790317943435558913/seed_42/10790317943435558913",
+      "T": 81,
+      "N": 390,
+      "grid_H": 15,
+      "grid_W": 26,
+      "visibility_used": true,
+      "flowsmooth_tv": 0.0695088019917787,
+      "divcurl_energy": 0.002327700703772095
+    },
+    {
+      "video": "10790317943435558913/seed_43/10790317943435558913",
+      "run_dir": "outputs/matrix/10790317943435558913/seed_43/10790317943435558913",
+      "T": 81,
+      "N": 390,
+      "grid_H": 15,
+      "grid_W": 26,
+      "visibility_used": true,
+      "flowsmooth_tv": 0.07276509648164478,
+      "divcurl_energy": 0.002377822652124851
+    },
+    {
+      "video": "10790317943435558913/seed_44/10790317943435558913",
+      "run_dir": "outputs/matrix/10790317943435558913/seed_44/10790317943435558913",
+      "T": 81,
+      "N": 390,
+      "grid_H": 15,
+      "grid_W": 26,
+      "visibility_used": true,
+      "flowsmooth_tv": 0.06715136483486997,
+      "divcurl_energy": 0.0021677033223741695
+    },
+    {
+      "video": "gear_v2_9-wrist_front_rgb_img-0/seed_42/gear_v2_9-wrist_front_rgb_img-0",
+      "run_dir": "outputs/matrix/gear_v2_9-wrist_front_rgb_img-0/seed_42/gear_v2_9-wrist_front_rgb_img-0",
+      "T": 81,
+      "N": 390,
+      "grid_H": 15,
+      "grid_W": 26,
+      "visibility_used": true,
+      "flowsmooth_tv": 0.06612253432960165,
+      "divcurl_energy": 0.002132355062766887
+    },
+    {
+      "video": "gear_v2_9-wrist_front_rgb_img-0/seed_43/gear_v2_9-wrist_front_rgb_img-0",
+      "run_dir": "outputs/matrix/gear_v2_9-wrist_front_rgb_img-0/seed_43/gear_v2_9-wrist_front_rgb_img-0",
+      "T": 81,
+      "N": 390,
+      "grid_H": 15,
+      "grid_W": 26,
+      "visibility_used": true,
+      "flowsmooth_tv": 0.06526380787061817,
+      "divcurl_energy": 0.0020292684106516185
+    },
+    {
+      "video": "gear_v2_9-wrist_front_rgb_img-0/seed_44/gear_v2_9-wrist_front_rgb_img-0",
+      "run_dir": "outputs/matrix/gear_v2_9-wrist_front_rgb_img-0/seed_44/gear_v2_9-wrist_front_rgb_img-0",
+      "T": 81,
+      "N": 390,
+      "grid_H": 15,
+      "grid_W": 26,
+      "visibility_used": true,
+      "flowsmooth_tv": 0.06667815143539686,
+      "divcurl_energy": 0.0021135652944909945
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "input": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-running-overlap\\final\\running-row.png",
+  "output": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-running-overlap\\final\\running-row-clean.png",
+  "chroma_key": "#FF00FF",
+  "algorithm": "edge-local-chroma-spill-suppression",
+  "strength": 1,
+  "edge_radius": 5,
+  "spill_tolerance": 0.15,
+  "minimum_saturation": 0.1,
+  "changed_pixels": 9354,
+  "decontaminated_pixels": 8293,
+  "spill_suppressed_pixels": 9354,
+  "rejected_pixels": 0,
+  "changed_by_cell": {
+    "r0c4": 1574,
+    "r0c0": 1568,
+    "r0c2": 1562,
+    "r0c5": 1559,
+    "r0c1": 1549,
+    "r0c3": 1542
+  },
+  "alpha_preserved": true
+}

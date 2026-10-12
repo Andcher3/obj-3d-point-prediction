@@ -1,0 +1,384 @@
+{
+  "checkpoint": "/root/autodl-tmp/models/MolmoMotion-4B-H3-F30",
+  "repository": "/root/autodl-tmp/projects/molmo-motion",
+  "repository_commit": "61f5b21b694ad8f854ec7ecd2400005acc73f685",
+  "model_load_seconds": 29.148272630292922,
+  "future_horizon": 30,
+  "records": [
+    {
+      "example": "egodex_clean_surface",
+      "source_video": "part1_clean_surface_1713",
+      "variant": "official",
+      "action": "Roll a lint roller on a blue cloth",
+      "action_characters": 34,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 66.3291452950798,
+      "peak_cuda_allocated_gib": 9.631503582000732,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.9109165072441101,
+      "mean_final_displacement_m": 0.209746852517128,
+      "centroid_final_delta_m": [
+        -0.18256103992462158,
+        0.08230072259902954,
+        -0.05717560648918152
+      ],
+      "ade_to_official_m": 0.0,
+      "fde_to_official_m": 0.0,
+      "centroid_direction_cosine_to_official": 0.9999998807907104
+    },
+    {
+      "example": "egodex_clean_surface",
+      "source_video": "part1_clean_surface_1713",
+      "variant": "compact",
+      "action": "rolling a lint roller",
+      "action_characters": 21,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 65.49432683410123,
+      "peak_cuda_allocated_gib": 9.633838176727295,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.9096949100494385,
+      "mean_final_displacement_m": 0.22094431519508362,
+      "centroid_final_delta_m": [
+        -0.18681102991104126,
+        0.09492573887109756,
+        -0.0651756227016449
+      ],
+      "ade_to_official_m": 0.010010480880737305,
+      "fde_to_official_m": 0.015591662377119064,
+      "centroid_direction_cosine_to_official": 0.9988539814949036
+    },
+    {
+      "example": "egodex_clean_surface",
+      "source_video": "part1_clean_surface_1713",
+      "variant": "free_sentence",
+      "action": "The person rolls the lint roller back and forth across the blue cloth to clean its surface.",
+      "action_characters": 91,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 66.21246260218322,
+      "peak_cuda_allocated_gib": 9.639367580413818,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.9198915362358093,
+      "mean_final_displacement_m": 0.23661711812019348,
+      "centroid_final_delta_m": [
+        -0.20031103491783142,
+        0.09905072301626205,
+        -0.07317560911178589
+      ],
+      "ade_to_official_m": 0.02137153595685959,
+      "fde_to_official_m": 0.029273653402924538,
+      "centroid_direction_cosine_to_official": 0.9985973834991455
+    },
+    {
+      "example": "egodex_clean_surface",
+      "source_video": "part1_clean_surface_1713",
+      "variant": "multi_step",
+      "action": "First roll the lint roller across the blue cloth, then lift it, reposition it, and roll over another area of the cloth.",
+      "action_characters": 119,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 65.68270488269627,
+      "peak_cuda_allocated_gib": 9.638105869293213,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.9442322254180908,
+      "mean_final_displacement_m": 0.22642704844474792,
+      "centroid_final_delta_m": [
+        -0.2005610316991806,
+        0.08442572504281998,
+        -0.05842560529708862
+      ],
+      "ade_to_official_m": 0.009345801547169685,
+      "fde_to_official_m": 0.01850184053182602,
+      "centroid_direction_cosine_to_official": 0.9996562004089355
+    },
+    {
+      "example": "egodex_clean_surface",
+      "source_video": "part1_clean_surface_1713",
+      "variant": "contradictory",
+      "action": "Lift the lint roller straight up and hold it still without touching the blue cloth.",
+      "action_characters": 83,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 66.00151296984404,
+      "peak_cuda_allocated_gib": 9.636862754821777,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.8990082740783691,
+      "mean_final_displacement_m": 0.22148431837558746,
+      "centroid_final_delta_m": [
+        -0.18593603372573853,
+        0.0970507338643074,
+        -0.06655064225196838
+      ],
+      "ade_to_official_m": 0.019200272858142853,
+      "fde_to_official_m": 0.017964957281947136,
+      "centroid_direction_cosine_to_official": 0.9980573058128357
+    },
+    {
+      "example": "egodex_ball_base",
+      "source_video": "part2_assemble_disassemble_furniture_bench_stool_8419",
+      "variant": "official",
+      "action": "Put white ball on white 3D printed base",
+      "action_characters": 39,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 60.756154293660074,
+      "peak_cuda_allocated_gib": 9.599307537078857,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.3612430691719055,
+      "mean_final_displacement_m": 0.0714808851480484,
+      "centroid_final_delta_m": [
+        -0.039488255977630615,
+        -0.05660390853881836,
+        0.015528649091720581
+      ],
+      "ade_to_official_m": 0.0,
+      "fde_to_official_m": 0.0,
+      "centroid_direction_cosine_to_official": 1.0000001192092896
+    },
+    {
+      "example": "egodex_ball_base",
+      "source_video": "part2_assemble_disassemble_furniture_bench_stool_8419",
+      "variant": "compact",
+      "action": "placing a ball",
+      "action_characters": 14,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 62.997382952366024,
+      "peak_cuda_allocated_gib": 9.614055633544922,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.1073262095451355,
+      "mean_final_displacement_m": 0.10671824216842651,
+      "centroid_final_delta_m": [
+        -0.031613245606422424,
+        -0.03560391068458557,
+        -0.0954713225364685
+      ],
+      "ade_to_official_m": 0.0793965607881546,
+      "fde_to_official_m": 0.11377694457769394,
+      "centroid_direction_cosine_to_official": -0.0023540277034044266
+    },
+    {
+      "example": "egodex_ball_base",
+      "source_video": "part2_assemble_disassemble_furniture_bench_stool_8419",
+      "variant": "free_sentence",
+      "action": "The person places the white ball onto the top of the white 3D-printed base.",
+      "action_characters": 75,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 62.50503576081246,
+      "peak_cuda_allocated_gib": 9.606379985809326,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.2873584032058716,
+      "mean_final_displacement_m": 0.09119082242250443,
+      "centroid_final_delta_m": [
+        -0.017113246023654938,
+        -0.0833539143204689,
+        -0.03197133541107178
+      ],
+      "ade_to_official_m": 0.033176619559526443,
+      "fde_to_official_m": 0.05901797115802765,
+      "centroid_direction_cosine_to_official": 0.7057015895843506
+    },
+    {
+      "example": "egodex_ball_base",
+      "source_video": "part2_assemble_disassemble_furniture_bench_stool_8419",
+      "variant": "multi_step",
+      "action": "Pick up the white ball, move it above the white 3D-printed base, place it on the base, and then release it.",
+      "action_characters": 107,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 63.919368609786034,
+      "peak_cuda_allocated_gib": 9.616927146911621,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.41599926352500916,
+      "mean_final_displacement_m": 0.032336704432964325,
+      "centroid_final_delta_m": [
+        -0.01836325228214264,
+        -0.0208539217710495,
+        -0.011596322059631348
+      ],
+      "ade_to_official_m": 0.06335149705410004,
+      "fde_to_official_m": 0.049906741827726364,
+      "centroid_direction_cosine_to_official": 0.9561000466346741
+    },
+    {
+      "example": "egodex_ball_base",
+      "source_video": "part2_assemble_disassemble_furniture_bench_stool_8419",
+      "variant": "contradictory",
+      "action": "Move the white ball away from the base and place it to the side.",
+      "action_characters": 64,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 65.2427838249132,
+      "peak_cuda_allocated_gib": 9.622642040252686,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 0.43869471549987793,
+      "mean_final_displacement_m": 0.048061616718769073,
+      "centroid_final_delta_m": [
+        -0.001988247036933899,
+        -0.036228910088539124,
+        -0.03072136640548706
+      ],
+      "ade_to_official_m": 0.07491695135831833,
+      "fde_to_official_m": 0.06313848495483398,
+      "centroid_direction_cosine_to_official": 0.40850988030433655
+    },
+    {
+      "example": "davis_car_turn",
+      "source_video": "car-turn",
+      "variant": "official",
+      "action": "A silver car follows the road and slowly turns to the right",
+      "action_characters": 59,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 83.05916386144236,
+      "peak_cuda_allocated_gib": 9.756322860717773,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 3.31303071975708,
+      "mean_final_displacement_m": 3.2415413856506348,
+      "centroid_final_delta_m": [
+        -2.777625799179077,
+        0.4762943387031555,
+        -1.6016263961791992
+      ],
+      "ade_to_official_m": 0.0,
+      "fde_to_official_m": 0.0,
+      "centroid_direction_cosine_to_official": 0.9999998807907104
+    },
+    {
+      "example": "davis_car_turn",
+      "source_video": "car-turn",
+      "variant": "compact",
+      "action": "turning the car right",
+      "action_characters": 21,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 83.80816452903673,
+      "peak_cuda_allocated_gib": 9.75876235961914,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 3.0782299041748047,
+      "mean_final_displacement_m": 3.012969732284546,
+      "centroid_final_delta_m": [
+        -2.3553757667541504,
+        0.7331693768501282,
+        -1.7292518615722656
+      ],
+      "ade_to_official_m": 0.18865805864334106,
+      "fde_to_official_m": 0.5126597881317139,
+      "centroid_direction_cosine_to_official": 0.9888293147087097
+    },
+    {
+      "example": "davis_car_turn",
+      "source_video": "car-turn",
+      "variant": "free_sentence",
+      "action": "The silver car continues forward along the road and gradually steers around the right-hand bend.",
+      "action_characters": 96,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 82.13599606137723,
+      "peak_cuda_allocated_gib": 9.748284816741943,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 2.4053916931152344,
+      "mean_final_displacement_m": 2.3955020904541016,
+      "centroid_final_delta_m": [
+        -1.6930007934570312,
+        0.5086693167686462,
+        -1.6021270751953125
+      ],
+      "ade_to_official_m": 0.3098331093788147,
+      "fde_to_official_m": 1.085430383682251,
+      "centroid_direction_cosine_to_official": 0.9701167941093445
+    },
+    {
+      "example": "davis_car_turn",
+      "source_video": "car-turn",
+      "variant": "multi_step",
+      "action": "Continue forward, enter the curve, turn right along the road, and then straighten the car after the bend.",
+      "action_characters": 105,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 83.35009511001408,
+      "peak_cuda_allocated_gib": 9.757387161254883,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 2.984250783920288,
+      "mean_final_displacement_m": 2.9201457500457764,
+      "centroid_final_delta_m": [
+        -2.3988759517669678,
+        0.5075442790985107,
+        -1.5853767395019531
+      ],
+      "ade_to_official_m": 0.1206333115696907,
+      "fde_to_official_m": 0.38195621967315674,
+      "centroid_direction_cosine_to_official": 0.9977736473083496
+    },
+    {
+      "example": "davis_car_turn",
+      "source_video": "car-turn",
+      "variant": "contradictory",
+      "action": "The silver car stops immediately and reverses to the left.",
+      "action_characters": 58,
+      "output_shape": [
+        8,
+        30,
+        3
+      ],
+      "inference_seconds": 84.5666424962692,
+      "peak_cuda_allocated_gib": 9.76654577255249,
+      "finite_fraction": 1.0,
+      "mean_path_length_m": 3.779608726501465,
+      "mean_final_displacement_m": 3.678642988204956,
+      "centroid_final_delta_m": [
+        -3.1260008811950684,
+        0.8084192872047424,
+        -1.7613773345947266
+      ],
+      "ade_to_official_m": 0.19196568429470062,
+      "fde_to_official_m": 0.5105289220809937,
+      "centroid_direction_cosine_to_official": 0.9970847368240356
+    }
+  ]
+}

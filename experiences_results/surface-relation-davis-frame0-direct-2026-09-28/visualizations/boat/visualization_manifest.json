@@ -1,0 +1,110 @@
+{
+  "video_id": "boat",
+  "visualization_status": "COMPLETE",
+  "quality_gate_status": "FAIL",
+  "query_reference_source_frame_index": 14,
+  "output_camera_source_frame_index": 20,
+  "source_frame_indices": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "observed_source_frame_indices": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "preview_encode_fps_playback_only": 8.0,
+  "capture_fps_known": false,
+  "trajectory_source": {
+    "teacher": "new full22_query_tracks.npz frame14 direct query",
+    "observed": "new observed7_query_tracks.npz frame14 direct query"
+  },
+  "teacher_video": {
+    "frame_count": 22,
+    "rendered_valid_points_per_frame": [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "resolution_hw": [
+      480,
+      854
+    ],
+    "encode_fps": 8.0
+  },
+  "observed_video": {
+    "frame_count": 7,
+    "rendered_valid_points_per_frame": [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "resolution_hw": [
+      480,
+      854
+    ],
+    "encode_fps": 8.0
+  },
+  "frame0_query_count_rendered": 48,
+  "t0_comparison": {
+    "resolution_hw": [
+      480,
+      854
+    ],
+    "teacher_rendered_count": 48,
+    "observed_rendered_count": 48
+  },
+  "product_sha256": {
+    "teacher_full22_trackcraft_query_overlay.mp4": "c79ed9abc1e4da85c8d4adf8f41deec8e8f106cf51ab01b6a11f1e8fdba431be",
+    "observed7_trackcraft_query_overlay.mp4": "5ef93ab848de1408eb36806b153c3c239ac4dba7689e69a45e34fbbe4295dbe1",
+    "frame0_source14_48_queries.png": "780ed341a6c9698f5f3de02c96cb7d8c599543d82a553536cb1f30ce50735fb7",
+    "t0_source20_teacher_observed_query_comparison.png": "32687fa5e4cbdef47f80b455d4fb12bd9ddeaa068ca5fc1b6c1d70e6c5472f36"
+  }
+}

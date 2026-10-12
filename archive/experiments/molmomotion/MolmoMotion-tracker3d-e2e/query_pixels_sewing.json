@@ -1,0 +1,15 @@
+{
+  "target": "blue-handled scissors on the table",
+  "coordinate_space": "TrackCraft3R 832x480 frame 0",
+  "selection": "manual points inside the target region, then projected to MolmoMotion t0",
+  "frame0_query_pixels": [
+    [580, 270],
+    [600, 280],
+    [620, 295],
+    [650, 315],
+    [680, 325],
+    [710, 340],
+    [690, 355],
+    [670, 345]
+  ]
+}

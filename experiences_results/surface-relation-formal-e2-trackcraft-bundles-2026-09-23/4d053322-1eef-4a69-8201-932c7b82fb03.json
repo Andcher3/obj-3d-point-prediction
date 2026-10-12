@@ -1,0 +1,17 @@
+{
+  "output": "/root/autodl-tmp/ego4d-formal-e2/formal_bundles/4d053322-1eef-4a69-8201-932c7b82fb03.npz",
+  "history_shape": [
+    3,
+    64,
+    3
+  ],
+  "pseudo_gt_shape": [
+    9,
+    64,
+    3
+  ],
+  "finite_fraction": 1.0,
+  "valid_fraction": 1.0,
+  "t0_match_error_px_max": 1.4014312795942376,
+  "t0_match_error_px_median": 0.4224630611995767
+}

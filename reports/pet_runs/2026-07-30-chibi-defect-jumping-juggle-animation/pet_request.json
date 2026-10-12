@@ -1,0 +1,10 @@
+{
+  "pet_id": "chibi-defect",
+  "display_name": "Chibi Defect",
+  "description": "Replace the jumping row with a continuous five-frame juggling loop using one ice charging orb and two electric charging orbs.",
+  "sprite_version_number": 2,
+  "chroma_key": "#FF00FF",
+  "repair_state": "jumping",
+  "source_run": "../2026-07-30-chibi-defect-running-overlap",
+  "approved_base": "../2026-07-30-chibi-defect-jumping-juggle-base/jumping-juggle-base.png"
+}

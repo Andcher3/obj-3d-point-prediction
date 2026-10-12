@@ -1,0 +1,36 @@
+TRANSACTION=2026-09-03-motionforesight-scope
+OBJECT=D:\Pycharm\post_graduate_project\research_roadmap.md
+CHANGED_BRANCH_FIELD=ACTIVE_RESEARCH_SCOPE: IMU -> VIDEO_MOTION_FORECASTING
+ORIGINAL_SHA256=18ED850CBC820CFAC3B802FD59B28128DF583E8468D5D67C7040514E744A0FA6
+MODIFIED_SHA256=BBB05472030C73BB0A80218D0C4A53AC19234D168E527CF34F0AC4A406FE5E46
+
+ARTIFACTS
+MODIFIED_FILE=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\MODIFIED_FILE
+DIFF_FILE=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\DIFF_FILE
+VERIFICATION.txt=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\VERIFICATION.txt
+ROLLBACK.sh=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\ROLLBACK.sh
+
+BASELINE
+COMMAND=pwsh -NoProfile -ExecutionPolicy Bypass -File D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\VERIFY_BASELINE.ps1 -FixtureRoot D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\backup\files
+INPUT=preserved original copies of AGENTS.md and research_roadmap.md
+LITERAL_OUTPUT=BASELINE_ACTIVE_SCOPE=IMU; ARCHIVE_PRESENT=False; STATUS=PASS
+EXIT_STATUS=0
+
+MODIFIED
+COMMAND=pwsh -NoProfile -ExecutionPolicy Bypass -File D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\VERIFY_MODIFIED.ps1 -ProjectRoot D:\Pycharm\post_graduate_project -TransactionRoot D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope
+INPUT=D:\Pycharm\post_graduate_project\AGENTS.md; D:\Pycharm\post_graduate_project\research_roadmap.md; D:\Pycharm\post_graduate_project\reports\progress_log.md; D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\moved-paths.txt
+LITERAL_OUTPUT=MODIFIED_ACTIVE_SCOPE=VIDEO_MOTION_FORECASTING; ROOT_IMU_ASSETS=False; ARCHIVED_IMU_ASSETS=True; MOVED_PATHS=44; ACTIVE_WEEKLY=2; PROGRESS_LINKS=14; STATUS=PASS
+EXIT_STATUS=0
+
+ROLLBACK
+COMMAND=pwsh -NoProfile -Command "$script=[scriptblock]::Create((Get-Content -LiteralPath 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\ROLLBACK.sh' -Raw -Encoding UTF8)); & $script -ProjectRoot 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\rollback_test\project2' -BackupRoot 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-03-motionforesight-scope\rollback_test\backup2'"
+INPUT=another-copy fixture with modified AGENTS.md, archived HAR/sample.txt, baseline backup, and one new file
+LITERAL_OUTPUT=ROLLBACK_APPLIED=PASS
+RESULT=ROLLBACK_TEST=PASS; RESTORED_SCOPE=IMU; RESTORED_MOVED_PATH=True; NEW_FILE_REMOVED=True; EXIT=0
+EXIT_STATUS=0
+RESTORED_BEHAVIOR_STATUS=The another-copy fixture restored the original IMU scope marker, moved HAR/sample.txt back from archive to the original path, and removed the newly introduced active file. The live workspace remains on VIDEO_MOTION_FORECASTING.
+
+LIVE_RESULT
+ROOT_ACTIVE_SCOPE=VIDEO_MOTION_FORECASTING
+IMU_ARCHIVE=D:\Pycharm\post_graduate_project\archive\imu
+LIVE_MODIFIED_FILE_LEFT_CHANGED=True

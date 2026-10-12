@@ -1,0 +1,10 @@
+{
+  "video_id": "scene_d78_0318_3rd",
+  "process_res": 392,
+  "trackcraft_source": "experiences_results\\pointodyssey-interface-preflight-2026-09-26\\full22_res392\\scene_d78_0318_3rd\\full22_tracks_res392.npz",
+  "motionforesight_source": "experiences_results\\pointodyssey-interface-preflight-2026-09-26\\full22_res392\\scene_d78_0318_3rd\\mf392_arrays.npz",
+  "label_scope": "diagnostic same-input pseudo-GT; not official 3D truth",
+  "query_count": 48,
+  "future_slots": 9,
+  "coordinate_frame": "last_observed_camera"
+}

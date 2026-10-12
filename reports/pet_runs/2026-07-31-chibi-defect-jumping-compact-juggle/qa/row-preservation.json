@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "source_atlas": "reports\\pet_runs\\2026-07-31-chibi-defect-jumping-compact-juggle\\references\\approved-atlas.webp",
+  "changed_rows": [
+    4
+  ],
+  "unchanged_rows": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "method": "Decoded RGBA row comparison over each complete 1536x208 atlas row",
+  "note": "Only the jumping row may differ; all other rows must remain pixel-identical.",
+  "source_sha256": "f8014e4d8596e607c26097c7e5f8b9a81c4e5f6d6f2d35427af07dcd7c298ac6",
+  "output_sha256": "eeb2b012c6f8b523e9159d4f4f67181b356335839362e4ed074f4aaa340ec9d7"
+}

@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SensorLM Academic Poster</title>
+  <style>
+    :root {
+      --ink: #16202e;
+      --muted: #5d6878;
+      --paper: #fbfcfd;
+      --line: #d5dce6;
+      --blue: #2563eb;
+      --blue-soft: #dbeafe;
+      --teal: #0f766e;
+      --teal-soft: #ccfbf1;
+      --amber: #b45309;
+      --amber-soft: #fef3c7;
+      --rose: #be123c;
+      --rose-soft: #ffe4e6;
+      --green: #15803d;
+      --green-soft: #dcfce7;
+      --violet: #6d28d9;
+      --violet-soft: #ede9fe;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #e8edf4;
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+    }
+
+    body {
+      padding: 24px;
+    }
+
+    .poster {
+      width: 2000px;
+      height: 1500px;
+      margin: 0 auto;
+      background: var(--paper);
+      box-shadow: 0 24px 70px rgba(15, 23, 42, 0.22);
+      display: grid;
+      grid-template-rows: 158px 1fr 36px;
+      gap: 18px;
+      padding: 40px 44px 30px;
+      overflow: hidden;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr 390px;
+      gap: 24px;
+      border-bottom: 4px solid var(--ink);
+      padding-bottom: 20px;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.04;
+      margin: 0 0 9px;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      font-size: 21px;
+      line-height: 1.32;
+      color: var(--muted);
+      max-width: 1080px;
+      margin: 0;
+    }
+
+    .header-note {
+      align-self: stretch;
+      border-left: 5px solid var(--teal);
+      background: linear-gradient(90deg, var(--teal-soft), rgba(255, 255, 255, 0));
+      padding: 16px 18px;
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: 700;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 390px 1fr 440px;
+      gap: 18px;
+      min-height: 0;
+    }
+
+    .col {
+      display: grid;
+      gap: 18px;
+      min-height: 0;
+    }
+
+    .left {
+      grid-template-rows: 240px 330px 1fr;
+    }
+
+    .middle {
+      grid-template-rows: 480px 238px 1fr;
+    }
+
+    .right {
+      grid-template-rows: 600px 285px 1fr;
+    }
+
+    section {
+      border: 2px solid var(--line);
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 15px 17px;
+      overflow: hidden;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 7px;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 10px;
+      font-size: 16px;
+      line-height: 1.36;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      font-size: 15px;
+      line-height: 1.28;
+      margin: 4px 0;
+    }
+
+    .tag-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      border-radius: 16px;
+      padding: 4px 12px;
+      font-size: 15px;
+      font-weight: 800;
+      border: 1px solid rgba(22, 32, 46, 0.1);
+      white-space: nowrap;
+    }
+
+    .blue { background: var(--blue-soft); color: #1d4ed8; }
+    .teal { background: var(--teal-soft); color: #0f766e; }
+    .amber { background: var(--amber-soft); color: #92400e; }
+    .rose { background: var(--rose-soft); color: #be123c; }
+    .green { background: var(--green-soft); color: #166534; }
+    .violet { background: var(--violet-soft); color: #5b21b6; }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .metric {
+      border-radius: 8px;
+      padding: 13px 14px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 23px;
+      line-height: 1.05;
+      margin-bottom: 5px;
+      color: var(--blue);
+    }
+
+    .metric span {
+      display: block;
+      font-size: 13px;
+      line-height: 1.25;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .caption-stack {
+      display: grid;
+      gap: 9px;
+    }
+
+    .caption-type {
+      border-left: 6px solid;
+      padding: 9px 11px;
+      background: #f8fafc;
+      border-radius: 6px;
+    }
+
+    .caption-type.stat { border-color: var(--amber); }
+    .caption-type.struct { border-color: var(--blue); }
+    .caption-type.sem { border-color: var(--teal); }
+
+    .caption-type h3 {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .caption-type small {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .caption-type p {
+      font-size: 15px;
+      margin: 0;
+      color: #344054;
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: 170px 36px 170px 36px 180px 36px 1fr;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 0 14px;
+    }
+
+    .node {
+      min-height: 58px;
+      border-radius: 8px;
+      border: 2px solid #dbe4ef;
+      background: #f8fafc;
+      padding: 11px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .node.sensor { background: var(--blue-soft); border-color: #bfdbfe; }
+    .node.text { background: var(--amber-soft); border-color: #fde68a; }
+    .node.fuse { background: var(--violet-soft); border-color: #ddd6fe; }
+    .node.task { background: var(--green-soft); border-color: #bbf7d0; }
+
+    .arrow {
+      text-align: center;
+      color: var(--muted);
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .arch-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .branch {
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px 12px;
+      background: #fbfdff;
+    }
+
+    .branch h3 {
+      color: var(--blue);
+    }
+
+    .branch:nth-child(2) h3 {
+      color: var(--rose);
+    }
+
+    .formula {
+      margin: 9px 0 0;
+      padding: 9px 12px;
+      border-radius: 6px;
+      background: #0f172a;
+      color: #f8fafc;
+      font-size: 15px;
+      line-height: 1.35;
+      font-family: Consolas, "SFMono-Regular", monospace;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.25;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 6px 5px;
+      vertical-align: middle;
+      text-align: left;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    td.num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      font-weight: 800;
+    }
+
+    .result-block {
+      display: grid;
+      gap: 10px;
+    }
+
+    .two-col-table {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .callout {
+      border-left: 6px solid var(--rose);
+      background: var(--rose-soft);
+      border-radius: 6px;
+      padding: 12px 14px;
+    }
+
+    .callout p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: #7f1d1d;
+    }
+
+    .takeaway-list {
+      counter-reset: takeaway;
+      display: grid;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .takeaway {
+      counter-increment: takeaway;
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 9px;
+      align-items: start;
+    }
+
+    .takeaway::before {
+      content: counter(takeaway);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .takeaway p {
+      margin: 1px 0 0;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    footer {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.25;
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    @media print {
+      @page {
+        size: 20in 15in;
+        margin: 0;
+      }
+
+      html,
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .poster {
+        width: 100vw;
+        height: 75vw;
+        max-height: 100vh;
+        box-shadow: none;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="poster" aria-label="SensorLM academic poster">
+    <header>
+      <div>
+        <div class="eyebrow">论文精读海报 | Sensor-Language Foundation Model</div>
+        <h1>SensorLM: 可穿戴传感器信号的语言语义建模</h1>
+        <p class="subtitle">核心观点：先用层级 caption 构造 sensor-text pair，再联合训练 sensor encoder、text encoder 与 multimodal decoder，使传感器表示支持识别、检索与生成。</p>
+      </div>
+      <aside class="header-note">
+        对方向一的价值：从“手机 IMU 短窗口分类”走向“人体动作、手机运动、场景语义联合表示”。注意：它不能直接替代标准 HAR 监督分类器。
+      </aside>
+    </header>
+
+    <div class="content">
+      <div class="col left">
+        <section>
+          <h2>1. 问题定位</h2>
+          <p>传统 HAR 多是封闭类别分类：<strong>sensor -> activity label</strong>。SensorLM 转向更开放的目标：<strong>sensor -> language-understandable representation</strong>。</p>
+          <div class="tag-row">
+            <span class="tag blue">zero-shot</span>
+            <span class="tag teal">few-shot</span>
+            <span class="tag amber">retrieval</span>
+            <span class="tag rose">captioning</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>2. 数据形态</h2>
+          <div class="metric-grid">
+            <div class="metric"><strong>26 x 1440</strong><span>一天级分钟特征矩阵</span></div>
+            <div class="metric"><strong>103K+</strong><span>Fitbit / Pixel Watch 用户规模</span></div>
+            <div class="metric"><strong>59.7M h</strong><span>大规模真实世界 wearable 数据</span></div>
+            <div class="metric"><strong>127</strong><span>覆盖国家和地区</span></div>
+          </div>
+          <p style="margin-top: 10px;">包括 PPG、三轴加速度、海拔、皮温、EDA 等；不是 UCI HAR 的 <strong>128 x 9</strong> 短窗口原始 IMU。</p>
+        </section>
+
+        <section>
+          <h2>3. 层级 Caption 构造</h2>
+          <div class="caption-stack">
+            <div class="caption-type stat">
+              <h3>Statistical <small>数值摘要</small></h3>
+            <p>用 mean / max / min / std 等统计量模板化描述总体水平。</p>
+            </div>
+            <div class="caption-type struct">
+              <h3>Structural <small>时间结构</small></h3>
+            <p>检测 increase / decrease / stable / spike / drop，描述局部变化。</p>
+            </div>
+            <div class="caption-type sem">
+              <h3>Semantic <small>活动语义</small></h3>
+            <p>从活动、睡眠、mood 事件记录生成文本，例如 Walk、Outdoor Bike、Sleep。</p>
+            </div>
+          </div>
+          <div class="callout" style="margin-top: 13px;">
+            <p>关键判断：caption 是弱语义监督，不是逐窗口精确 HAR 标签。</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col middle">
+        <section>
+          <h2>4. 方法主线：先构造配对，再联合预训练</h2>
+          <div class="pipeline">
+            <div class="node sensor">Sensor Matrix<br>X_i</div>
+            <div class="arrow">-></div>
+            <div class="node text">Caption Text<br>T_i</div>
+            <div class="arrow">-></div>
+            <div class="node fuse">Sensor-Text<br>Alignment</div>
+            <div class="arrow">-></div>
+            <div class="node task">Recognition<br>Retrieval<br>Generation</div>
+          </div>
+
+          <div class="arch-grid">
+            <div class="branch">
+              <h3>Sensor Encoder</h3>
+              <ul>
+                <li>ViT-style 2D patches</li>
+                <li>2 features x 10 min -> 1872 tokens</li>
+                <li>Transformer 捕获局部与长程依赖</li>
+              </ul>
+            </div>
+            <div class="branch">
+              <h3>Text Encoder</h3>
+              <ul>
+                <li>输入 tokenized caption</li>
+                <li>输出 pooled text embedding</li>
+                <li>向 decoder 提供文本侧表示</li>
+              </ul>
+            </div>
+            <div class="branch">
+              <h3>Contrastive Flow</h3>
+              <ul>
+                <li>sensor/text 分别 pool、project、normalize</li>
+                <li>匹配 pair 拉近，非匹配 pair 拉远</li>
+                <li>支撑 zero-shot 分类与跨模态检索</li>
+              </ul>
+            </div>
+            <div class="branch">
+              <h3>Generative Flow</h3>
+              <ul>
+                <li>decoder 使用 causal mask</li>
+                <li>cross-attention 读取 sensor tokens</li>
+                <li>预测下一个 caption token</li>
+              </ul>
+            </div>
+          </div>
+          <div class="formula">L_SensorLM = lambda_con L_contrastive + lambda_cap L_captioning</div>
+        </section>
+
+        <section>
+          <h2>5. 三种模型变体</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>范式</th>
+                <th>训练目标</th>
+                <th>擅长</th>
+                <th>局限</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>CLIP-like</strong></td>
+                <td>只用对比损失</td>
+                <td>zero-shot、sensor-text retrieval</td>
+                <td>不能生成文本</td>
+              </tr>
+              <tr>
+                <td><strong>Cap-like</strong></td>
+                <td>只用生成损失</td>
+                <td>sensor caption generation</td>
+                <td>embedding 对齐弱，zero-shot 差</td>
+              </tr>
+              <tr>
+                <td><strong>CoCa-like</strong></td>
+                <td>对比 + 生成</td>
+                <td>兼顾识别、检索、生成</td>
+                <td>结构和训练成本更高</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-top: 9px;">直接启发：分类/检索主要依赖 contrastive alignment；自然语言解释需要 captioning objective。</p>
+        </section>
+
+        <section>
+          <h2>6. 下游任务如何连接 HAR</h2>
+          <div class="two-col-table">
+            <div>
+              <h3>Zero-shot Activity Recognition</h3>
+              <p>候选活动写成 prompt，经 text encoder 得到 label embedding；与 sensor embedding 比相似度。</p>
+            </div>
+            <div>
+              <h3>Few-shot / Linear Probing</h3>
+              <p>冻结 sensor encoder，只用每类少量标签训练线性分类器，评价 label efficiency。</p>
+            </div>
+            <div>
+              <h3>Sensor-Text Retrieval</h3>
+              <p>sensor 查 caption，或 caption 查 sensor；R@K 表示正确配对是否进入前 K 名。</p>
+            </div>
+            <div>
+              <h3>Caption Generation</h3>
+              <p>给定 sensor 自回归生成文本；用于解释，不等同于精确动作标注。</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col right">
+        <section>
+          <h2>7. 主要结果怎么读</h2>
+          <div class="result-block">
+            <div>
+              <h3>Zero-shot 20 类活动识别</h3>
+              <table>
+                <thead><tr><th>方法</th><th>AUROC</th><th>F1</th><th>BAcc</th></tr></thead>
+                <tbody>
+                  <tr><td>Gemma-3-27B</td><td class="num">0.50</td><td class="num">0.01</td><td class="num">0.05</td></tr>
+                  <tr><td>Gemini 2.0</td><td class="num">0.51</td><td class="num">0.03</td><td class="num">0.07</td></tr>
+                  <tr><td><strong>SensorLM</strong></td><td class="num">0.84</td><td class="num">0.29</td><td class="num">0.31</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h3>Few-shot Activity AUROC</h3>
+              <table>
+                <thead><tr><th>labels/class</th><th>SimCLR</th><th>SensorLM</th></tr></thead>
+                <tbody>
+                  <tr><td>5</td><td class="num">0.54</td><td class="num">0.73</td></tr>
+                  <tr><td>10</td><td class="num">0.55</td><td class="num">0.79</td></tr>
+                  <tr><td>20</td><td class="num">0.58</td><td class="num">0.83</td></tr>
+                  <tr><td>50</td><td class="num">0.60</td><td class="num">0.88</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h3>关键消融</h3>
+              <table>
+                <thead><tr><th>设置</th><th>Zero-shot AUROC</th><th>结论</th></tr></thead>
+                <tbody>
+                  <tr><td>statistical</td><td class="num">0.51</td><td>几乎无活动语义</td></tr>
+                  <tr><td>structural</td><td class="num">0.50</td><td>趋势不等于类别</td></tr>
+                  <tr><td>semantic</td><td class="num">0.71</td><td>活动事件是关键</td></tr>
+                  <tr><td>structural + semantic</td><td class="num">0.84</td><td>整体最好</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>8. 必须保留的限制</h2>
+          <ul>
+            <li>不是 UCI HAR 式短窗口原始 IMU；输入是一整天 26 维分钟级特征。</li>
+            <li>semantic caption 来自事件记录和模板生成，存在噪声与覆盖不足。</li>
+            <li>没有在标准监督 HAR benchmark 上直接和 1D CNN / LSTM 比准确率。</li>
+            <li>Zero-shot AUROC 高，但 F1 / BAcc 仍不是成熟分类器水平。</li>
+            <li>2D patch 依赖 feature 顺序，迁移到手机 IMU 时需重设通道组织。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>9. 对后续研究的结论</h2>
+          <div class="takeaway-list">
+            <div class="takeaway">
+              <p><strong>短期不能直接复现。</strong> 当前阶段更适合作为方法路线参考。</p>
+            </div>
+            <div class="takeaway">
+              <p><strong>中期可借鉴对齐目标。</strong> 手机 IMU 可与动作文本、视频事件或运镜语义做 contrastive alignment。</p>
+            </div>
+            <div class="takeaway">
+              <p><strong>长期价值在开放语义。</strong> 对“边走边拍摄、镜头上扬、场景切换”等组合行为更有意义。</p>
+            </div>
+            <div class="takeaway">
+              <p><strong>下一篇看 SensorLLM。</strong> 它更接近短窗口 motion sensor 与 HAR 设定。</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div>Prepared for weekly research discussion | D:\Pycharm\post_graduate_project | 2026-06-27</div>
+      <div>Paper: SensorLM: Learning the Language of Wearable Sensors | <a href="https://arxiv.org/abs/2506.09108">arXiv:2506.09108</a></div>
+    </footer>
+  </main>
+</body>
+</html>

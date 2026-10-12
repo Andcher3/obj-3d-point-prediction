@@ -1,0 +1,17 @@
+{
+  "samples": [
+    {
+      "id": "drink_bottle_start12",
+      "source_video": "/root/autodl-tmp/projects/molmo-raw-test/test_video.mp4",
+      "source_fps": 30.0,
+      "camera_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_camera_start12_stride2.npz",
+      "dense_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_dense_start12_stride2.npz",
+      "query_json": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_queries_start12.json",
+      "prompts": [
+        {"name": "carry_right", "text": "Carry the drink bottle to the right."},
+        {"name": "set_down", "text": "Set the drink bottle down."},
+        {"name": "keep_holding", "text": "Keep holding the drink bottle."}
+      ]
+    }
+  ]
+}

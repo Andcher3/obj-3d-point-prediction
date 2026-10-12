@@ -1,0 +1,12 @@
+# 本地文件占位说明
+
+原文件保留在本地，未上传至 GitHub。此文件不包含数据或权重。
+
+详细清单见仓库根目录 `github_upload_manifest.json`。
+
+| 原路径（相对仓库根目录） | 字节数 | 原因 |
+|---|---:|---|
+| `archive/experiments/molmomotion/MolmoMotion-vipe-alltracker-2026-09-22/result/output/molmomotion_greedy/arrays/black_cup__greedy.npz` | 3804 | dataset_array_or_model_weight |
+| `archive/experiments/molmomotion/MolmoMotion-vipe-alltracker-2026-09-22/result/output/molmomotion_greedy/arrays/keep_holding__greedy.npz` | 3786 | dataset_array_or_model_weight |
+| `archive/experiments/molmomotion/MolmoMotion-vipe-alltracker-2026-09-22/result/output/molmomotion_greedy/arrays/laptop__greedy.npz` | 3806 | dataset_array_or_model_weight |
+| `archive/experiments/molmomotion/MolmoMotion-vipe-alltracker-2026-09-22/result/output/molmomotion_greedy/arrays/mouse__greedy.npz` | 3802 | dataset_array_or_model_weight |

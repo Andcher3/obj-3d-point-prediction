@@ -1,0 +1,11 @@
+[2026-09-28T07:56:36Z] START drift-turn prepare_inputs
+[2026-09-28T07:56:45Z] END drift-turn prepare_inputs rc=0
+[2026-09-28T07:56:45Z] START drift-turn observed_dense
+[2026-09-28T07:59:50Z] END drift-turn observed_dense rc=0
+[2026-09-28T07:59:50Z] START drift-turn query_mapping
+[2026-09-28T07:59:51Z] END drift-turn query_mapping rc=0
+[2026-09-28T07:59:51Z] START drift-turn full22_trackcraft+motionforesight
+[2026-09-28T08:02:57Z] END drift-turn full22_trackcraft rc=0 motionforesight rc=0
+[2026-09-28T08:02:57Z] START drift-turn build_bundle
+[2026-09-28T08:02:57Z] END drift-turn build_bundle rc=0
+[2026-09-28T08:02:57Z] COMPLETED selected preprocessing: drift-turn

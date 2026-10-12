@@ -1,0 +1,16 @@
+usage: run_text_type_probe.py [-h] [--example EXAMPLE] [--model MODEL]
+                              [--future-horizon FUTURE_HORIZON]
+                              [--output OUTPUT] [--pad] [--from-prediction]
+
+MolmoMotion quickstart: predict a 3D point trajectory and render it as an MP4.
+
+options:
+  -h, --help            show this help message and exit
+  --example EXAMPLE     Sub-directory of examples/data/ to run on.
+  --model MODEL
+  --future-horizon FUTURE_HORIZON
+  --output OUTPUT       Output MP4 path.
+  --pad                 Extend the canvas (black border) so track that
+                        projects off the frame stays visible.
+  --from-prediction     Skip the model (no GPU needed); use the bundled
+                        released-model prediction from predictions_h3.jsonl.

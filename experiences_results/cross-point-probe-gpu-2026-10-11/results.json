@@ -1,0 +1,4083 @@
+{
+  "results": [
+    {
+      "condition": "self_shared_no_neighbors",
+      "reader": "ridge",
+      "alpha": 100,
+      "validation_candidates": [
+        {
+          "alpha": 0.0001,
+          "validation_ade": 7.445050339628193
+        },
+        {
+          "alpha": 0.001,
+          "validation_ade": 6.496147208707318
+        },
+        {
+          "alpha": 0.01,
+          "validation_ade": 5.378867761512489
+        },
+        {
+          "alpha": 0.1,
+          "validation_ade": 4.583040816411415
+        },
+        {
+          "alpha": 1,
+          "validation_ade": 3.932932110229276
+        },
+        {
+          "alpha": 10,
+          "validation_ade": 3.6883121853887095
+        },
+        {
+          "alpha": 100,
+          "validation_ade": 3.607520982648972
+        }
+      ],
+      "test": {
+        "scene_macro": {
+          "ade": 3.4456538420166787,
+          "fde": 3.993512732202325,
+          "relative_vector_error": 1.1409896079134048,
+          "pair_length_error": 0.6055923273599777,
+          "future_change_error": 1.6914054805295067
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.277392066249076,
+            "fde": 5.8787310199458105,
+            "future_change_error": 2.1052024686915054,
+            "relative_vector_error": 0.5897276194228026,
+            "pair_length_error": 0.2940831010990658
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 19.997505380894907,
+            "fde": 18.494913722911672,
+            "future_change_error": 5.798612765863945,
+            "relative_vector_error": 3.2765130315730437,
+            "pair_length_error": 2.208774854097364
+          },
+          {
+            "scene": "scene_706",
+            "ade": 6.212124130429376,
+            "fde": 6.109741827874179,
+            "future_change_error": 2.8068033015624847,
+            "relative_vector_error": 2.8156074194747354,
+            "pair_length_error": 2.1059386654557524
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.9091013914880484,
+            "fde": 4.48261953969878,
+            "future_change_error": 1.0693288084127575,
+            "relative_vector_error": 3.1650698022870336,
+            "pair_length_error": 1.8223511465470523
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 3.9835351960736953,
+            "fde": 4.905409332588121,
+            "future_change_error": 1.5645625018557776,
+            "relative_vector_error": 1.1457519754154692,
+            "pair_length_error": 0.7888635324450052
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.909192398153072,
+            "fde": 6.064154195525383,
+            "future_change_error": 1.7362959500109725,
+            "relative_vector_error": 1.7341357142980285,
+            "pair_length_error": 0.6002077309098857
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 1.413569541459651,
+            "fde": 1.9725407242586848,
+            "future_change_error": 0.5620033436365399,
+            "relative_vector_error": 0.8796927502117959,
+            "pair_length_error": 0.5750477228737552
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.3208759817101914,
+            "fde": 5.301420146481103,
+            "future_change_error": 2.5465339862577183,
+            "relative_vector_error": 1.586302080418404,
+            "pair_length_error": 0.5769377123889833
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 4.263589306551847,
+            "fde": 6.9433861297761235,
+            "future_change_error": 2.7527134525390644,
+            "relative_vector_error": 1.080483806789367,
+            "pair_length_error": 0.4559848370461009
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 1.9470984942425384,
+            "fde": 2.4489262634070945,
+            "future_change_error": 1.2215480933972849,
+            "relative_vector_error": 0.6455451271147855,
+            "pair_length_error": 0.1856800237971989
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.534592110160353,
+            "fde": 3.7738541602840416,
+            "future_change_error": 2.248985678806298,
+            "relative_vector_error": 0.8555000515151602,
+            "pair_length_error": 0.3838375068952299
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.3619350163255697,
+            "fde": 2.406855077689308,
+            "future_change_error": 0.4251118942323522,
+            "relative_vector_error": 0.9985664134918533,
+            "pair_length_error": 0.8581144803394873
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 2.0599964298812603,
+            "fde": 2.709705077897884,
+            "future_change_error": 1.4397668739494347,
+            "relative_vector_error": 1.4215613861517316,
+            "pair_length_error": 0.7469612694454539
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 1.8725716929612617,
+            "fde": 2.2600883788849684,
+            "future_change_error": 1.2149261760994923,
+            "relative_vector_error": 0.6989442749772683,
+            "pair_length_error": 0.3457983922058398
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.7388245937599032,
+            "fde": 2.4346904559947364,
+            "future_change_error": 1.5099290209416907,
+            "relative_vector_error": 0.8113228303792888,
+            "pair_length_error": 0.3804456331431261
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.432235958630826,
+            "fde": 10.097082824256114,
+            "future_change_error": 3.1814597015191173,
+            "relative_vector_error": 0.8646277996833392,
+            "pair_length_error": 0.553363675287251
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 1.7180229657752026,
+            "fde": 1.9822106791864462,
+            "future_change_error": 0.4473687202565204,
+            "relative_vector_error": 0.3300258323368114,
+            "pair_length_error": 0.16819442978916183
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 2.0147709894860863,
+            "fde": 1.7050318064746326,
+            "future_change_error": 0.5107364062647152,
+            "relative_vector_error": 0.9123375334839744,
+            "pair_length_error": 0.6133936453553278
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 1.4946592401630103,
+            "fde": 1.6651112532017511,
+            "future_change_error": 0.6140559443536667,
+            "relative_vector_error": 0.7278732615437239,
+            "pair_length_error": 0.5055312283214093
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.50076487382961,
+            "fde": 5.504914789943068,
+            "future_change_error": 4.226017778153501,
+            "relative_vector_error": 1.255636851791829,
+            "pair_length_error": 0.5560422661619947
+          },
+          {
+            "scene": "scene_335",
+            "ade": 1.6295364628674358,
+            "fde": 1.9919852387208663,
+            "future_change_error": 0.5955916403994375,
+            "relative_vector_error": 0.528163411130197,
+            "pair_length_error": 0.23050410875396188
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 1.8920345540765957,
+            "fde": 2.557370593203509,
+            "future_change_error": 1.9529913702186612,
+            "relative_vector_error": 1.14008890368006,
+            "pair_length_error": 0.5195565039104174
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 4.966947726594316,
+            "fde": 5.95694203700131,
+            "future_change_error": 2.237644294341191,
+            "relative_vector_error": 0.7024603074508536,
+            "pair_length_error": 0.2665743809315598
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.8035706885281804,
+            "fde": 2.414759328320572,
+            "future_change_error": 0.9187696669340057,
+            "relative_vector_error": 1.253546049178893,
+            "pair_length_error": 0.5252501823531023
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 1.7764535535317598,
+            "fde": 2.171757326649953,
+            "future_change_error": 1.1242124999139274,
+            "relative_vector_error": 0.6078276551333722,
+            "pair_length_error": 0.3926199456048785
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 0.9728825428674542,
+            "fde": 1.289634891357383,
+            "future_change_error": 0.541557890601998,
+            "relative_vector_error": 0.42965148257698355,
+            "pair_length_error": 0.2299535501616014
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4169053791983716,
+            "fde": 0.7037626134483737,
+            "future_change_error": 0.31324849764653434,
+            "relative_vector_error": 0.27326891540214476,
+            "pair_length_error": 0.14339428490873904
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.9426210091503986,
+            "fde": 2.549097708876627,
+            "future_change_error": 1.4567371091101207,
+            "relative_vector_error": 0.9124624639059528,
+            "pair_length_error": 0.2768023134699431
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 2.5702666952327515,
+            "fde": 2.6469111457019654,
+            "future_change_error": 2.1059336504205217,
+            "relative_vector_error": 1.5362996052330502,
+            "pair_length_error": 0.8127555788894529
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.3640729407058148,
+            "fde": 3.881092028568427,
+            "future_change_error": 1.3915266133509272,
+            "relative_vector_error": 0.7236854358072915,
+            "pair_length_error": 0.5096008277435238
+          },
+          {
+            "scene": "scene_351",
+            "ade": 4.24034291646467,
+            "fde": 4.657337235763326,
+            "future_change_error": 1.8019905817613768,
+            "relative_vector_error": 1.6790246401016369,
+            "pair_length_error": 0.5664967141159881
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.752069945586338,
+            "fde": 1.9139420103363451,
+            "future_change_error": 0.9617734466784646,
+            "relative_vector_error": 1.1862341619715429,
+            "pair_length_error": 0.48653517731497536
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 2.82620458010994,
+            "fde": 3.0990024056638483,
+            "future_change_error": 1.8943541092858824,
+            "relative_vector_error": 1.290569121990431,
+            "pair_length_error": 0.796224804899226
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.86625672330275,
+            "fde": 7.503436009535845,
+            "future_change_error": 3.1555536111555194,
+            "relative_vector_error": 1.1519576751117762,
+            "pair_length_error": 0.38708937907036733
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.9063696421313883,
+            "fde": 4.6700743982477615,
+            "future_change_error": 1.8267531043204495,
+            "relative_vector_error": 1.399622237731401,
+            "pair_length_error": 0.5070498910890502
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 3.68209479497027,
+            "fde": 4.254743160138599,
+            "future_change_error": 2.568860281559617,
+            "relative_vector_error": 1.181968691162378,
+            "pair_length_error": 0.5147265960096411
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 3.7154371756919153,
+            "fde": 3.4077414156576564,
+            "future_change_error": 2.0693472688056,
+            "relative_vector_error": 1.4900286069155724,
+            "pair_length_error": 0.6071924581880295
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.1884396534142727,
+            "fde": 2.1321003678119257,
+            "future_change_error": 0.8059839828969754,
+            "relative_vector_error": 0.9698098133337476,
+            "pair_length_error": 0.796670329928454
+          },
+          {
+            "scene": "scene_179",
+            "ade": 3.6898541081171268,
+            "fde": 3.940265316635504,
+            "future_change_error": 1.6564441074184295,
+            "relative_vector_error": 1.0425315847076408,
+            "pair_length_error": 0.7062228317211375
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.6614348298999092,
+            "fde": 0.857166650173301,
+            "future_change_error": 0.2949826275557801,
+            "relative_vector_error": 0.3451579916508153,
+            "pair_length_error": 0.22292138173061538
+          }
+        ]
+      },
+      "baseline_test": {
+        "scene_macro": {
+          "ade": 3.548819891080103,
+          "fde": 3.9913797152229775,
+          "relative_vector_error": 1.1775111249178916,
+          "pair_length_error": 0.6283031194805874,
+          "future_change_error": 1.8178265581285522
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.71894867914809,
+            "fde": 6.433877516849364,
+            "future_change_error": 2.2948341171599624,
+            "relative_vector_error": 0.5940414610934857,
+            "pair_length_error": 0.28471541662024663
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 20.623642961266224,
+            "fde": 16.399673970033625,
+            "future_change_error": 6.215795344406234,
+            "relative_vector_error": 3.458780777286459,
+            "pair_length_error": 2.3829021506108066
+          },
+          {
+            "scene": "scene_706",
+            "ade": 7.360539005680153,
+            "fde": 6.376993493493024,
+            "future_change_error": 2.998672358307705,
+            "relative_vector_error": 2.978347616329071,
+            "pair_length_error": 2.259930616672858
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.0356454210306008,
+            "fde": 3.5419521252740664,
+            "future_change_error": 1.4304970435477247,
+            "relative_vector_error": 3.3182319657044284,
+            "pair_length_error": 1.9783882462355906
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 3.9676743308307536,
+            "fde": 4.9343674221769005,
+            "future_change_error": 1.7156324842393929,
+            "relative_vector_error": 1.1585977856388587,
+            "pair_length_error": 0.7833642580969755
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.9402177431898116,
+            "fde": 6.076477728273942,
+            "future_change_error": 3.0946209825784092,
+            "relative_vector_error": 1.766741273661855,
+            "pair_length_error": 0.6225449271181979
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 0.7537893840039838,
+            "fde": 0.9537925096994361,
+            "future_change_error": 0.38302710496575243,
+            "relative_vector_error": 0.8956478413829597,
+            "pair_length_error": 0.554279803272452
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.6345243383094243,
+            "fde": 5.663123627653162,
+            "future_change_error": 2.656154870159628,
+            "relative_vector_error": 1.6481810148684841,
+            "pair_length_error": 0.6143206104422072
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 3.781610912809503,
+            "fde": 6.835087970930878,
+            "future_change_error": 2.9098045687801255,
+            "relative_vector_error": 1.1245797447751427,
+            "pair_length_error": 0.4852358977791082
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 2.6600805176848272,
+            "fde": 3.3228412734167074,
+            "future_change_error": 1.254225674425738,
+            "relative_vector_error": 0.6496621515255016,
+            "pair_length_error": 0.1771545614200136
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.4294642673111504,
+            "fde": 3.6003239765783825,
+            "future_change_error": 2.137644401679727,
+            "relative_vector_error": 0.8426290435850362,
+            "pair_length_error": 0.3621359590968242
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.3682659389951484,
+            "fde": 2.490688711769896,
+            "future_change_error": 0.4079238591175414,
+            "relative_vector_error": 0.9966310298175828,
+            "pair_length_error": 0.846223221185396
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 2.1729496098934367,
+            "fde": 1.7150045098654216,
+            "future_change_error": 1.4202562852451415,
+            "relative_vector_error": 1.4792008423656449,
+            "pair_length_error": 0.8064650775390114
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 2.2702090520186693,
+            "fde": 3.2316090875820764,
+            "future_change_error": 1.5521194831791976,
+            "relative_vector_error": 0.7213860139932886,
+            "pair_length_error": 0.35358181093670676
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.646464511091242,
+            "fde": 2.3688851533796518,
+            "future_change_error": 1.469624470723755,
+            "relative_vector_error": 0.8412721449020149,
+            "pair_length_error": 0.395375767340556
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.758017206642589,
+            "fde": 10.625562485175141,
+            "future_change_error": 3.2960606171526288,
+            "relative_vector_error": 0.8627165323721584,
+            "pair_length_error": 0.552893605345454
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 0.2395596550932948,
+            "fde": 0.2647814833646332,
+            "future_change_error": 0.1714596833592059,
+            "relative_vector_error": 0.30595332031193373,
+            "pair_length_error": 0.13308297044498865
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 2.7641065315108073,
+            "fde": 2.870327026993157,
+            "future_change_error": 0.645469654687996,
+            "relative_vector_error": 0.9345290537099936,
+            "pair_length_error": 0.622068213064778
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 0.6967426478525857,
+            "fde": 0.6983708741394049,
+            "future_change_error": 0.3497806090700027,
+            "relative_vector_error": 0.7186252981652761,
+            "pair_length_error": 0.5036023603676072
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.106572976322246,
+            "fde": 5.094224383534873,
+            "future_change_error": 4.584068394674093,
+            "relative_vector_error": 1.3394648679378127,
+            "pair_length_error": 0.6247088735351661
+          },
+          {
+            "scene": "scene_335",
+            "ade": 0.4618058337673175,
+            "fde": 0.46954512309965385,
+            "future_change_error": 0.26658189524690323,
+            "relative_vector_error": 0.5167899934574901,
+            "pair_length_error": 0.19463011636843688
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 2.325254900046118,
+            "fde": 2.8866631114399803,
+            "future_change_error": 2.088749305366407,
+            "relative_vector_error": 1.1592848586352285,
+            "pair_length_error": 0.5122351835670542
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 5.310290284597978,
+            "fde": 6.4408236254158595,
+            "future_change_error": 2.27975326579272,
+            "relative_vector_error": 0.7080324772542649,
+            "pair_length_error": 0.25993077094661576
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.110572258362767,
+            "fde": 1.4503485847781667,
+            "future_change_error": 1.0867503350375425,
+            "relative_vector_error": 1.3033061655530873,
+            "pair_length_error": 0.5621250734488039
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 2.71991897838508,
+            "fde": 2.7349680915565577,
+            "future_change_error": 0.993893002930478,
+            "relative_vector_error": 0.6028160013644036,
+            "pair_length_error": 0.36298651180889013
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 0.650189289413936,
+            "fde": 0.5998758198195282,
+            "future_change_error": 0.39924219180708287,
+            "relative_vector_error": 0.4310154797911472,
+            "pair_length_error": 0.20809094118826754
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4072778314468764,
+            "fde": 0.5374205903460033,
+            "future_change_error": 0.2733366615849706,
+            "relative_vector_error": 0.26887629917369255,
+            "pair_length_error": 0.13103726088413353
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.6152334824715502,
+            "fde": 2.180171408551737,
+            "future_change_error": 1.4646929125708805,
+            "relative_vector_error": 0.9293033818522755,
+            "pair_length_error": 0.27611888619882824
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 3.805328005229777,
+            "fde": 4.694408779487135,
+            "future_change_error": 2.7853280943614798,
+            "relative_vector_error": 1.6537089827538927,
+            "pair_length_error": 0.9232273405759408
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.380988757468943,
+            "fde": 3.8937987486277574,
+            "future_change_error": 1.437561755321178,
+            "relative_vector_error": 0.7250208712261451,
+            "pair_length_error": 0.5010343517960864
+          },
+          {
+            "scene": "scene_351",
+            "ade": 5.300959411415827,
+            "fde": 5.5132350844137035,
+            "future_change_error": 1.7336657255344308,
+            "relative_vector_error": 1.77811964113812,
+            "pair_length_error": 0.5976770581270952
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.458816360402955,
+            "fde": 1.5688057134517026,
+            "future_change_error": 0.9809767776669676,
+            "relative_vector_error": 1.17305979261926,
+            "pair_length_error": 0.49529963238441815
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 4.007968804724122,
+            "fde": 4.80520595216959,
+            "future_change_error": 2.214890444696101,
+            "relative_vector_error": 1.3573975008944896,
+            "pair_length_error": 0.8632637805542415
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.46938027483328,
+            "fde": 6.921118719210125,
+            "future_change_error": 3.238095372766242,
+            "relative_vector_error": 1.1877189213309567,
+            "pair_length_error": 0.40729678916242396
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.982399047896667,
+            "fde": 4.693563026588825,
+            "future_change_error": 2.290953153745963,
+            "relative_vector_error": 1.4401617034748295,
+            "pair_length_error": 0.5353592572988648
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 4.574332133539905,
+            "fde": 5.241354487943215,
+            "future_change_error": 2.846763602093304,
+            "relative_vector_error": 1.2499848777763227,
+            "pair_length_error": 0.5626625815333971
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 4.624305049545739,
+            "fde": 4.379616027414329,
+            "future_change_error": 2.573461159557227,
+            "relative_vector_error": 1.548721032748278,
+            "pair_length_error": 0.6362524582280511
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.346337012107964,
+            "fde": 2.450408946805233,
+            "future_change_error": 0.828860493701102,
+            "relative_vector_error": 0.9811738001393067,
+            "pair_length_error": 0.784937687189691
+          },
+          {
+            "scene": "scene_179",
+            "ade": 4.094495221612587,
+            "fde": 4.402857125481223,
+            "future_change_error": 1.732952057810993,
+            "relative_vector_error": 1.113263733521518,
+            "pair_length_error": 0.7665940852172227
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.3779170152501989,
+            "fde": 0.29303431213505726,
+            "future_change_error": 0.20888211009015617,
+            "relative_vector_error": 0.3374697025839658,
+            "pair_length_error": 0.20839066562008962
+          }
+        ]
+      }
+    },
+    {
+      "condition": "self_shared_no_neighbors",
+      "reader": "mlp_128_128",
+      "seed": 0,
+      "parameter_count": 122413,
+      "history": [
+        {
+          "epoch": -1,
+          "training_mse": null,
+          "validation_ade": 3.3239701273948787
+        },
+        {
+          "epoch": 0,
+          "training_mse": 10.427746998636346,
+          "validation_ade": 3.857773578304278
+        },
+        {
+          "epoch": 1,
+          "training_mse": 8.06688097903603,
+          "validation_ade": 4.106705603731659
+        },
+        {
+          "epoch": 2,
+          "training_mse": 6.424763528924239,
+          "validation_ade": 4.040954104203459
+        },
+        {
+          "epoch": 3,
+          "training_mse": 5.248377511375828,
+          "validation_ade": 4.521435441684688
+        },
+        {
+          "epoch": 4,
+          "training_mse": 4.122655354048076,
+          "validation_ade": 4.977836914411007
+        },
+        {
+          "epoch": 5,
+          "training_mse": 3.1482606310593453,
+          "validation_ade": 4.800777955730378
+        },
+        {
+          "epoch": 6,
+          "training_mse": 2.311109461282429,
+          "validation_ade": 5.144434323840971
+        },
+        {
+          "epoch": 7,
+          "training_mse": 1.7195854939912494,
+          "validation_ade": 5.755301062234219
+        },
+        {
+          "epoch": 8,
+          "training_mse": 1.328186831976238,
+          "validation_ade": 5.82918078142752
+        },
+        {
+          "epoch": 9,
+          "training_mse": 1.0327832447855096,
+          "validation_ade": 5.810492277317463
+        },
+        {
+          "epoch": 10,
+          "training_mse": 0.8489747047424316,
+          "validation_ade": 6.357163795857728
+        },
+        {
+          "epoch": 11,
+          "training_mse": 0.6928627836076837,
+          "validation_ade": 6.391505741318988
+        },
+        {
+          "epoch": 12,
+          "training_mse": 0.6270437711163571,
+          "validation_ade": 6.330429913934218
+        },
+        {
+          "epoch": 13,
+          "training_mse": 0.5438078218384793,
+          "validation_ade": 6.323143042433777
+        },
+        {
+          "epoch": 14,
+          "training_mse": 0.502723941677495,
+          "validation_ade": 6.46351413686444
+        },
+        {
+          "epoch": 15,
+          "training_mse": 0.4589663759658211,
+          "validation_ade": 6.343303602123602
+        },
+        {
+          "epoch": 16,
+          "training_mse": 0.4573598347212139,
+          "validation_ade": 6.508272820093862
+        },
+        {
+          "epoch": 17,
+          "training_mse": 0.41559447740253647,
+          "validation_ade": 6.436147489127246
+        },
+        {
+          "epoch": 18,
+          "training_mse": 0.3919150029358111,
+          "validation_ade": 6.535256109164026
+        },
+        {
+          "epoch": 19,
+          "training_mse": 0.36762764579371404,
+          "validation_ade": 6.318402424690809
+        }
+      ],
+      "selected_epoch": -1,
+      "test": {
+        "scene_macro": {
+          "ade": 3.548819891080103,
+          "fde": 3.9913797152229775,
+          "relative_vector_error": 1.1775111248961339,
+          "pair_length_error": 0.6283031194055653,
+          "future_change_error": 1.8178265581453417
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.71894867914809,
+            "fde": 6.433877516849364,
+            "future_change_error": 2.2948341172378743,
+            "relative_vector_error": 0.5940414609743908,
+            "pair_length_error": 0.2847154166221918
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 20.623642961266224,
+            "fde": 16.399673970033625,
+            "future_change_error": 6.215795344372242,
+            "relative_vector_error": 3.4587807767598004,
+            "pair_length_error": 2.382902150872401
+          },
+          {
+            "scene": "scene_706",
+            "ade": 7.360539005680153,
+            "fde": 6.376993493493024,
+            "future_change_error": 2.9986723555930412,
+            "relative_vector_error": 2.9783476153012947,
+            "pair_length_error": 2.259930615907637
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.0356454210306008,
+            "fde": 3.5419521252740664,
+            "future_change_error": 1.43049704342896,
+            "relative_vector_error": 3.3182319652299452,
+            "pair_length_error": 1.9783882463906215
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 3.9676743308307536,
+            "fde": 4.9343674221769005,
+            "future_change_error": 1.715632484383425,
+            "relative_vector_error": 1.158597785681142,
+            "pair_length_error": 0.7833642580452641
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.9402177431898116,
+            "fde": 6.076477728273942,
+            "future_change_error": 3.0946209823641344,
+            "relative_vector_error": 1.7667412739307353,
+            "pair_length_error": 0.6225449268093255
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 0.7537893840039838,
+            "fde": 0.9537925096994361,
+            "future_change_error": 0.3830271051130895,
+            "relative_vector_error": 0.895647841364259,
+            "pair_length_error": 0.5542798031134444
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.6345243383094243,
+            "fde": 5.663123627653162,
+            "future_change_error": 2.656154871154212,
+            "relative_vector_error": 1.6481810147163074,
+            "pair_length_error": 0.6143206099824473
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 3.781610912809503,
+            "fde": 6.835087970930878,
+            "future_change_error": 2.909804568432112,
+            "relative_vector_error": 1.1245797446035306,
+            "pair_length_error": 0.48523589763211317
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 2.6600805176848272,
+            "fde": 3.3228412734167074,
+            "future_change_error": 1.2542256744215765,
+            "relative_vector_error": 0.6496621515699491,
+            "pair_length_error": 0.17715456116140899
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.4294642673111504,
+            "fde": 3.6003239765783825,
+            "future_change_error": 2.137644401679727,
+            "relative_vector_error": 0.8426290436013943,
+            "pair_length_error": 0.36213595887003885
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.3682659389951484,
+            "fde": 2.490688711769896,
+            "future_change_error": 0.40792385911531276,
+            "relative_vector_error": 0.9966310299386917,
+            "pair_length_error": 0.8462232211472243
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 2.1729496098934367,
+            "fde": 1.7150045098654216,
+            "future_change_error": 1.4202562852055096,
+            "relative_vector_error": 1.4792008419902896,
+            "pair_length_error": 0.8064650773628516
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 2.2702090520186693,
+            "fde": 3.2316090875820764,
+            "future_change_error": 1.552119483473222,
+            "relative_vector_error": 0.7213860140536269,
+            "pair_length_error": 0.3535818109680529
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.646464511091242,
+            "fde": 2.3688851533796518,
+            "future_change_error": 1.4696244706831727,
+            "relative_vector_error": 0.8412721448235834,
+            "pair_length_error": 0.3953757670876369
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.758017206642589,
+            "fde": 10.625562485175141,
+            "future_change_error": 3.296060617077563,
+            "relative_vector_error": 0.8627165322901554,
+            "pair_length_error": 0.5528936053121056
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 0.2395596550932948,
+            "fde": 0.2647814833646332,
+            "future_change_error": 0.17145968336470613,
+            "relative_vector_error": 0.3059533202760852,
+            "pair_length_error": 0.13308297163045468
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 2.7641065315108073,
+            "fde": 2.870327026993157,
+            "future_change_error": 0.6454696546688045,
+            "relative_vector_error": 0.9345290541964074,
+            "pair_length_error": 0.6220682133515208
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 0.6967426478525857,
+            "fde": 0.6983708741394049,
+            "future_change_error": 0.3497806089050254,
+            "relative_vector_error": 0.7186252981272051,
+            "pair_length_error": 0.5036023606086676
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.106572976322246,
+            "fde": 5.094224383534873,
+            "future_change_error": 4.584068392243946,
+            "relative_vector_error": 1.339464867498282,
+            "pair_length_error": 0.6247088727946183
+          },
+          {
+            "scene": "scene_335",
+            "ade": 0.4618058337673175,
+            "fde": 0.46954512309965385,
+            "future_change_error": 0.26658189524818976,
+            "relative_vector_error": 0.5167899937851256,
+            "pair_length_error": 0.19463011745417985
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 2.325254900046118,
+            "fde": 2.8866631114399803,
+            "future_change_error": 2.0887493054220543,
+            "relative_vector_error": 1.1592848586198508,
+            "pair_length_error": 0.5122351835647927
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 5.310290284597978,
+            "fde": 6.4408236254158595,
+            "future_change_error": 2.279753265839344,
+            "relative_vector_error": 0.7080324772970137,
+            "pair_length_error": 0.2599307706302551
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.110572258362767,
+            "fde": 1.4503485847781667,
+            "future_change_error": 1.0867503364810407,
+            "relative_vector_error": 1.3033061657294103,
+            "pair_length_error": 0.5621250728545364
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 2.71991897838508,
+            "fde": 2.7349680915565577,
+            "future_change_error": 0.9938930033718675,
+            "relative_vector_error": 0.6028160013355727,
+            "pair_length_error": 0.3629865110195459
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 0.650189289413936,
+            "fde": 0.5998758198195282,
+            "future_change_error": 0.3992421919320065,
+            "relative_vector_error": 0.4310154801166492,
+            "pair_length_error": 0.20809094157238425
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4072778314468764,
+            "fde": 0.5374205903460033,
+            "future_change_error": 0.27333666161978704,
+            "relative_vector_error": 0.26887629921012607,
+            "pair_length_error": 0.13103726081773673
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.6152334824715502,
+            "fde": 2.180171408551737,
+            "future_change_error": 1.464692912388832,
+            "relative_vector_error": 0.9293033819408373,
+            "pair_length_error": 0.2761188857476864
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 3.805328005229777,
+            "fde": 4.694408779487135,
+            "future_change_error": 2.7853280950454775,
+            "relative_vector_error": 1.653708982183943,
+            "pair_length_error": 0.9232273405032644
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.380988757468943,
+            "fde": 3.8937987486277574,
+            "future_change_error": 1.437561755321178,
+            "relative_vector_error": 0.7250208712264048,
+            "pair_length_error": 0.501034351764943
+          },
+          {
+            "scene": "scene_351",
+            "ade": 5.300959411415827,
+            "fde": 5.5132350844137035,
+            "future_change_error": 1.7336657259544186,
+            "relative_vector_error": 1.7781196413629143,
+            "pair_length_error": 0.597677057861269
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.458816360402955,
+            "fde": 1.5688057134517026,
+            "future_change_error": 0.9809767772104173,
+            "relative_vector_error": 1.173059792689169,
+            "pair_length_error": 0.49529963190827425
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 4.007968804724122,
+            "fde": 4.80520595216959,
+            "future_change_error": 2.2148904454161644,
+            "relative_vector_error": 1.3573975012799084,
+            "pair_length_error": 0.863263780547244
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.46938027483328,
+            "fde": 6.921118719210125,
+            "future_change_error": 3.2380953727438726,
+            "relative_vector_error": 1.1877189213614108,
+            "pair_length_error": 0.40729678902908
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.982399047896667,
+            "fde": 4.693563026588825,
+            "future_change_error": 2.290953152675596,
+            "relative_vector_error": 1.4401617035285375,
+            "pair_length_error": 0.5353592575008514
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 4.574332133539905,
+            "fde": 5.241354487943215,
+            "future_change_error": 2.8467636023113996,
+            "relative_vector_error": 1.2499848781557739,
+            "pair_length_error": 0.5626625818755117
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 4.624305049545739,
+            "fde": 4.379616027414329,
+            "future_change_error": 2.573461162327794,
+            "relative_vector_error": 1.5487210325988996,
+            "pair_length_error": 0.6362524572288065
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.346337012107964,
+            "fde": 2.450408946805233,
+            "future_change_error": 0.8288604937020022,
+            "relative_vector_error": 0.9811738001398201,
+            "pair_length_error": 0.7849376874013225
+          },
+          {
+            "scene": "scene_179",
+            "ade": 4.094495221612587,
+            "fde": 4.402857125481223,
+            "future_change_error": 1.732952057810993,
+            "relative_vector_error": 1.113263733593539,
+            "pair_length_error": 0.7665940854673357
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.3779170152501989,
+            "fde": 0.29303431213505726,
+            "future_change_error": 0.20888211007356958,
+            "relative_vector_error": 0.33746970276337634,
+            "pair_length_error": 0.2083906658035627
+          }
+        ]
+      }
+    },
+    {
+      "condition": "self_shared_no_neighbors",
+      "reader": "mlp_128_128",
+      "seed": 1,
+      "parameter_count": 122413,
+      "history": [
+        {
+          "epoch": -1,
+          "training_mse": null,
+          "validation_ade": 3.3239701273948787
+        },
+        {
+          "epoch": 0,
+          "training_mse": 10.31308146526939,
+          "validation_ade": 3.9695061604068775
+        },
+        {
+          "epoch": 1,
+          "training_mse": 8.185984084480687,
+          "validation_ade": 3.9374846701091406
+        },
+        {
+          "epoch": 2,
+          "training_mse": 6.501835546995464,
+          "validation_ade": 4.378265493587516
+        },
+        {
+          "epoch": 3,
+          "training_mse": 5.381882165607653,
+          "validation_ade": 4.514405138849956
+        },
+        {
+          "epoch": 4,
+          "training_mse": 4.315343279587595,
+          "validation_ade": 4.748460172897258
+        },
+        {
+          "epoch": 5,
+          "training_mse": 3.3588482706170333,
+          "validation_ade": 5.317479760360966
+        },
+        {
+          "epoch": 6,
+          "training_mse": 2.519501861773039,
+          "validation_ade": 5.018667753785454
+        },
+        {
+          "epoch": 7,
+          "training_mse": 1.8482199781819393,
+          "validation_ade": 5.547062719611379
+        },
+        {
+          "epoch": 8,
+          "training_mse": 1.418355985691673,
+          "validation_ade": 5.655543875986629
+        },
+        {
+          "epoch": 9,
+          "training_mse": 1.1289043112805015,
+          "validation_ade": 5.9968345143051796
+        },
+        {
+          "epoch": 10,
+          "training_mse": 0.9280010775515908,
+          "validation_ade": 6.175171039898643
+        },
+        {
+          "epoch": 11,
+          "training_mse": 0.8561001576875386,
+          "validation_ade": 6.357929445715859
+        },
+        {
+          "epoch": 12,
+          "training_mse": 0.6667765441693758,
+          "validation_ade": 6.340596617068529
+        },
+        {
+          "epoch": 13,
+          "training_mse": 0.559679710551312,
+          "validation_ade": 6.128411914529512
+        },
+        {
+          "epoch": 14,
+          "training_mse": 0.5078210720890447,
+          "validation_ade": 6.3958314751808025
+        },
+        {
+          "epoch": 15,
+          "training_mse": 0.4584711460690749,
+          "validation_ade": 6.310771071984627
+        },
+        {
+          "epoch": 16,
+          "training_mse": 0.42708680190538106,
+          "validation_ade": 6.626695112264622
+        },
+        {
+          "epoch": 17,
+          "training_mse": 0.391176008864453,
+          "validation_ade": 6.459560951106347
+        },
+        {
+          "epoch": 18,
+          "training_mse": 0.377401507214496,
+          "validation_ade": 6.4357069454994065
+        },
+        {
+          "epoch": 19,
+          "training_mse": 0.3644655095903497,
+          "validation_ade": 6.375221594398279
+        }
+      ],
+      "selected_epoch": -1,
+      "test": {
+        "scene_macro": {
+          "ade": 3.548819891080103,
+          "fde": 3.9913797152229775,
+          "relative_vector_error": 1.1775111248961339,
+          "pair_length_error": 0.6283031194055653,
+          "future_change_error": 1.8178265581453417
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.71894867914809,
+            "fde": 6.433877516849364,
+            "future_change_error": 2.2948341172378743,
+            "relative_vector_error": 0.5940414609743908,
+            "pair_length_error": 0.2847154166221918
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 20.623642961266224,
+            "fde": 16.399673970033625,
+            "future_change_error": 6.215795344372242,
+            "relative_vector_error": 3.4587807767598004,
+            "pair_length_error": 2.382902150872401
+          },
+          {
+            "scene": "scene_706",
+            "ade": 7.360539005680153,
+            "fde": 6.376993493493024,
+            "future_change_error": 2.9986723555930412,
+            "relative_vector_error": 2.9783476153012947,
+            "pair_length_error": 2.259930615907637
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.0356454210306008,
+            "fde": 3.5419521252740664,
+            "future_change_error": 1.43049704342896,
+            "relative_vector_error": 3.3182319652299452,
+            "pair_length_error": 1.9783882463906215
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 3.9676743308307536,
+            "fde": 4.9343674221769005,
+            "future_change_error": 1.715632484383425,
+            "relative_vector_error": 1.158597785681142,
+            "pair_length_error": 0.7833642580452641
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.9402177431898116,
+            "fde": 6.076477728273942,
+            "future_change_error": 3.0946209823641344,
+            "relative_vector_error": 1.7667412739307353,
+            "pair_length_error": 0.6225449268093255
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 0.7537893840039838,
+            "fde": 0.9537925096994361,
+            "future_change_error": 0.3830271051130895,
+            "relative_vector_error": 0.895647841364259,
+            "pair_length_error": 0.5542798031134444
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.6345243383094243,
+            "fde": 5.663123627653162,
+            "future_change_error": 2.656154871154212,
+            "relative_vector_error": 1.6481810147163074,
+            "pair_length_error": 0.6143206099824473
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 3.781610912809503,
+            "fde": 6.835087970930878,
+            "future_change_error": 2.909804568432112,
+            "relative_vector_error": 1.1245797446035306,
+            "pair_length_error": 0.48523589763211317
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 2.6600805176848272,
+            "fde": 3.3228412734167074,
+            "future_change_error": 1.2542256744215765,
+            "relative_vector_error": 0.6496621515699491,
+            "pair_length_error": 0.17715456116140899
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.4294642673111504,
+            "fde": 3.6003239765783825,
+            "future_change_error": 2.137644401679727,
+            "relative_vector_error": 0.8426290436013943,
+            "pair_length_error": 0.36213595887003885
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.3682659389951484,
+            "fde": 2.490688711769896,
+            "future_change_error": 0.40792385911531276,
+            "relative_vector_error": 0.9966310299386917,
+            "pair_length_error": 0.8462232211472243
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 2.1729496098934367,
+            "fde": 1.7150045098654216,
+            "future_change_error": 1.4202562852055096,
+            "relative_vector_error": 1.4792008419902896,
+            "pair_length_error": 0.8064650773628516
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 2.2702090520186693,
+            "fde": 3.2316090875820764,
+            "future_change_error": 1.552119483473222,
+            "relative_vector_error": 0.7213860140536269,
+            "pair_length_error": 0.3535818109680529
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.646464511091242,
+            "fde": 2.3688851533796518,
+            "future_change_error": 1.4696244706831727,
+            "relative_vector_error": 0.8412721448235834,
+            "pair_length_error": 0.3953757670876369
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.758017206642589,
+            "fde": 10.625562485175141,
+            "future_change_error": 3.296060617077563,
+            "relative_vector_error": 0.8627165322901554,
+            "pair_length_error": 0.5528936053121056
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 0.2395596550932948,
+            "fde": 0.2647814833646332,
+            "future_change_error": 0.17145968336470613,
+            "relative_vector_error": 0.3059533202760852,
+            "pair_length_error": 0.13308297163045468
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 2.7641065315108073,
+            "fde": 2.870327026993157,
+            "future_change_error": 0.6454696546688045,
+            "relative_vector_error": 0.9345290541964074,
+            "pair_length_error": 0.6220682133515208
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 0.6967426478525857,
+            "fde": 0.6983708741394049,
+            "future_change_error": 0.3497806089050254,
+            "relative_vector_error": 0.7186252981272051,
+            "pair_length_error": 0.5036023606086676
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.106572976322246,
+            "fde": 5.094224383534873,
+            "future_change_error": 4.584068392243946,
+            "relative_vector_error": 1.339464867498282,
+            "pair_length_error": 0.6247088727946183
+          },
+          {
+            "scene": "scene_335",
+            "ade": 0.4618058337673175,
+            "fde": 0.46954512309965385,
+            "future_change_error": 0.26658189524818976,
+            "relative_vector_error": 0.5167899937851256,
+            "pair_length_error": 0.19463011745417985
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 2.325254900046118,
+            "fde": 2.8866631114399803,
+            "future_change_error": 2.0887493054220543,
+            "relative_vector_error": 1.1592848586198508,
+            "pair_length_error": 0.5122351835647927
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 5.310290284597978,
+            "fde": 6.4408236254158595,
+            "future_change_error": 2.279753265839344,
+            "relative_vector_error": 0.7080324772970137,
+            "pair_length_error": 0.2599307706302551
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.110572258362767,
+            "fde": 1.4503485847781667,
+            "future_change_error": 1.0867503364810407,
+            "relative_vector_error": 1.3033061657294103,
+            "pair_length_error": 0.5621250728545364
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 2.71991897838508,
+            "fde": 2.7349680915565577,
+            "future_change_error": 0.9938930033718675,
+            "relative_vector_error": 0.6028160013355727,
+            "pair_length_error": 0.3629865110195459
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 0.650189289413936,
+            "fde": 0.5998758198195282,
+            "future_change_error": 0.3992421919320065,
+            "relative_vector_error": 0.4310154801166492,
+            "pair_length_error": 0.20809094157238425
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4072778314468764,
+            "fde": 0.5374205903460033,
+            "future_change_error": 0.27333666161978704,
+            "relative_vector_error": 0.26887629921012607,
+            "pair_length_error": 0.13103726081773673
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.6152334824715502,
+            "fde": 2.180171408551737,
+            "future_change_error": 1.464692912388832,
+            "relative_vector_error": 0.9293033819408373,
+            "pair_length_error": 0.2761188857476864
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 3.805328005229777,
+            "fde": 4.694408779487135,
+            "future_change_error": 2.7853280950454775,
+            "relative_vector_error": 1.653708982183943,
+            "pair_length_error": 0.9232273405032644
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.380988757468943,
+            "fde": 3.8937987486277574,
+            "future_change_error": 1.437561755321178,
+            "relative_vector_error": 0.7250208712264048,
+            "pair_length_error": 0.501034351764943
+          },
+          {
+            "scene": "scene_351",
+            "ade": 5.300959411415827,
+            "fde": 5.5132350844137035,
+            "future_change_error": 1.7336657259544186,
+            "relative_vector_error": 1.7781196413629143,
+            "pair_length_error": 0.597677057861269
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.458816360402955,
+            "fde": 1.5688057134517026,
+            "future_change_error": 0.9809767772104173,
+            "relative_vector_error": 1.173059792689169,
+            "pair_length_error": 0.49529963190827425
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 4.007968804724122,
+            "fde": 4.80520595216959,
+            "future_change_error": 2.2148904454161644,
+            "relative_vector_error": 1.3573975012799084,
+            "pair_length_error": 0.863263780547244
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.46938027483328,
+            "fde": 6.921118719210125,
+            "future_change_error": 3.2380953727438726,
+            "relative_vector_error": 1.1877189213614108,
+            "pair_length_error": 0.40729678902908
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.982399047896667,
+            "fde": 4.693563026588825,
+            "future_change_error": 2.290953152675596,
+            "relative_vector_error": 1.4401617035285375,
+            "pair_length_error": 0.5353592575008514
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 4.574332133539905,
+            "fde": 5.241354487943215,
+            "future_change_error": 2.8467636023113996,
+            "relative_vector_error": 1.2499848781557739,
+            "pair_length_error": 0.5626625818755117
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 4.624305049545739,
+            "fde": 4.379616027414329,
+            "future_change_error": 2.573461162327794,
+            "relative_vector_error": 1.5487210325988996,
+            "pair_length_error": 0.6362524572288065
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.346337012107964,
+            "fde": 2.450408946805233,
+            "future_change_error": 0.8288604937020022,
+            "relative_vector_error": 0.9811738001398201,
+            "pair_length_error": 0.7849376874013225
+          },
+          {
+            "scene": "scene_179",
+            "ade": 4.094495221612587,
+            "fde": 4.402857125481223,
+            "future_change_error": 1.732952057810993,
+            "relative_vector_error": 1.113263733593539,
+            "pair_length_error": 0.7665940854673357
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.3779170152501989,
+            "fde": 0.29303431213505726,
+            "future_change_error": 0.20888211007356958,
+            "relative_vector_error": 0.33746970276337634,
+            "pair_length_error": 0.2083906658035627
+          }
+        ]
+      }
+    },
+    {
+      "condition": "self_shared_no_neighbors",
+      "reader": "mlp_128_128",
+      "seed": 2,
+      "parameter_count": 122413,
+      "history": [
+        {
+          "epoch": -1,
+          "training_mse": null,
+          "validation_ade": 3.3239701273948787
+        },
+        {
+          "epoch": 0,
+          "training_mse": 10.284446164181357,
+          "validation_ade": 3.928777036064863
+        },
+        {
+          "epoch": 1,
+          "training_mse": 7.968771231801886,
+          "validation_ade": 4.200284941720168
+        },
+        {
+          "epoch": 2,
+          "training_mse": 6.3516526222229,
+          "validation_ade": 4.181917065889126
+        },
+        {
+          "epoch": 3,
+          "training_mse": 5.170410080959923,
+          "validation_ade": 4.487474666621079
+        },
+        {
+          "epoch": 4,
+          "training_mse": 3.992598621468795,
+          "validation_ade": 4.6282744577446895
+        },
+        {
+          "epoch": 5,
+          "training_mse": 2.9846477069352804,
+          "validation_ade": 4.564699636650285
+        },
+        {
+          "epoch": 6,
+          "training_mse": 2.267899601083053,
+          "validation_ade": 5.039053911310544
+        },
+        {
+          "epoch": 7,
+          "training_mse": 1.7719893267280178,
+          "validation_ade": 5.4255424261609475
+        },
+        {
+          "epoch": 8,
+          "training_mse": 1.3944426774978638,
+          "validation_ade": 5.49297028214882
+        },
+        {
+          "epoch": 9,
+          "training_mse": 1.1256055486829657,
+          "validation_ade": 6.143513792238335
+        },
+        {
+          "epoch": 10,
+          "training_mse": 0.9277951121330261,
+          "validation_ade": 5.885668980365363
+        },
+        {
+          "epoch": 11,
+          "training_mse": 0.7428400234172219,
+          "validation_ade": 6.177571256490501
+        },
+        {
+          "epoch": 12,
+          "training_mse": 0.6191265896746987,
+          "validation_ade": 6.278770774683965
+        },
+        {
+          "epoch": 13,
+          "training_mse": 0.5386797032858196,
+          "validation_ade": 6.455858248776164
+        },
+        {
+          "epoch": 14,
+          "training_mse": 0.49042107243286936,
+          "validation_ade": 6.315012857218259
+        },
+        {
+          "epoch": 15,
+          "training_mse": 0.4421746871973339,
+          "validation_ade": 6.184038385997381
+        },
+        {
+          "epoch": 16,
+          "training_mse": 0.4213599013654809,
+          "validation_ade": 6.233029700846329
+        },
+        {
+          "epoch": 17,
+          "training_mse": 0.41227461319220693,
+          "validation_ade": 6.413636227504007
+        },
+        {
+          "epoch": 18,
+          "training_mse": 0.38681708197844655,
+          "validation_ade": 6.404373536205772
+        },
+        {
+          "epoch": 19,
+          "training_mse": 0.36501245435915497,
+          "validation_ade": 6.3936193582658
+        }
+      ],
+      "selected_epoch": -1,
+      "test": {
+        "scene_macro": {
+          "ade": 3.548819891080103,
+          "fde": 3.9913797152229775,
+          "relative_vector_error": 1.1775111248961339,
+          "pair_length_error": 0.6283031194055653,
+          "future_change_error": 1.8178265581453417
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.71894867914809,
+            "fde": 6.433877516849364,
+            "future_change_error": 2.2948341172378743,
+            "relative_vector_error": 0.5940414609743908,
+            "pair_length_error": 0.2847154166221918
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 20.623642961266224,
+            "fde": 16.399673970033625,
+            "future_change_error": 6.215795344372242,
+            "relative_vector_error": 3.4587807767598004,
+            "pair_length_error": 2.382902150872401
+          },
+          {
+            "scene": "scene_706",
+            "ade": 7.360539005680153,
+            "fde": 6.376993493493024,
+            "future_change_error": 2.9986723555930412,
+            "relative_vector_error": 2.9783476153012947,
+            "pair_length_error": 2.259930615907637
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.0356454210306008,
+            "fde": 3.5419521252740664,
+            "future_change_error": 1.43049704342896,
+            "relative_vector_error": 3.3182319652299452,
+            "pair_length_error": 1.9783882463906215
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 3.9676743308307536,
+            "fde": 4.9343674221769005,
+            "future_change_error": 1.715632484383425,
+            "relative_vector_error": 1.158597785681142,
+            "pair_length_error": 0.7833642580452641
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.9402177431898116,
+            "fde": 6.076477728273942,
+            "future_change_error": 3.0946209823641344,
+            "relative_vector_error": 1.7667412739307353,
+            "pair_length_error": 0.6225449268093255
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 0.7537893840039838,
+            "fde": 0.9537925096994361,
+            "future_change_error": 0.3830271051130895,
+            "relative_vector_error": 0.895647841364259,
+            "pair_length_error": 0.5542798031134444
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.6345243383094243,
+            "fde": 5.663123627653162,
+            "future_change_error": 2.656154871154212,
+            "relative_vector_error": 1.6481810147163074,
+            "pair_length_error": 0.6143206099824473
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 3.781610912809503,
+            "fde": 6.835087970930878,
+            "future_change_error": 2.909804568432112,
+            "relative_vector_error": 1.1245797446035306,
+            "pair_length_error": 0.48523589763211317
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 2.6600805176848272,
+            "fde": 3.3228412734167074,
+            "future_change_error": 1.2542256744215765,
+            "relative_vector_error": 0.6496621515699491,
+            "pair_length_error": 0.17715456116140899
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.4294642673111504,
+            "fde": 3.6003239765783825,
+            "future_change_error": 2.137644401679727,
+            "relative_vector_error": 0.8426290436013943,
+            "pair_length_error": 0.36213595887003885
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.3682659389951484,
+            "fde": 2.490688711769896,
+            "future_change_error": 0.40792385911531276,
+            "relative_vector_error": 0.9966310299386917,
+            "pair_length_error": 0.8462232211472243
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 2.1729496098934367,
+            "fde": 1.7150045098654216,
+            "future_change_error": 1.4202562852055096,
+            "relative_vector_error": 1.4792008419902896,
+            "pair_length_error": 0.8064650773628516
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 2.2702090520186693,
+            "fde": 3.2316090875820764,
+            "future_change_error": 1.552119483473222,
+            "relative_vector_error": 0.7213860140536269,
+            "pair_length_error": 0.3535818109680529
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.646464511091242,
+            "fde": 2.3688851533796518,
+            "future_change_error": 1.4696244706831727,
+            "relative_vector_error": 0.8412721448235834,
+            "pair_length_error": 0.3953757670876369
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.758017206642589,
+            "fde": 10.625562485175141,
+            "future_change_error": 3.296060617077563,
+            "relative_vector_error": 0.8627165322901554,
+            "pair_length_error": 0.5528936053121056
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 0.2395596550932948,
+            "fde": 0.2647814833646332,
+            "future_change_error": 0.17145968336470613,
+            "relative_vector_error": 0.3059533202760852,
+            "pair_length_error": 0.13308297163045468
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 2.7641065315108073,
+            "fde": 2.870327026993157,
+            "future_change_error": 0.6454696546688045,
+            "relative_vector_error": 0.9345290541964074,
+            "pair_length_error": 0.6220682133515208
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 0.6967426478525857,
+            "fde": 0.6983708741394049,
+            "future_change_error": 0.3497806089050254,
+            "relative_vector_error": 0.7186252981272051,
+            "pair_length_error": 0.5036023606086676
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.106572976322246,
+            "fde": 5.094224383534873,
+            "future_change_error": 4.584068392243946,
+            "relative_vector_error": 1.339464867498282,
+            "pair_length_error": 0.6247088727946183
+          },
+          {
+            "scene": "scene_335",
+            "ade": 0.4618058337673175,
+            "fde": 0.46954512309965385,
+            "future_change_error": 0.26658189524818976,
+            "relative_vector_error": 0.5167899937851256,
+            "pair_length_error": 0.19463011745417985
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 2.325254900046118,
+            "fde": 2.8866631114399803,
+            "future_change_error": 2.0887493054220543,
+            "relative_vector_error": 1.1592848586198508,
+            "pair_length_error": 0.5122351835647927
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 5.310290284597978,
+            "fde": 6.4408236254158595,
+            "future_change_error": 2.279753265839344,
+            "relative_vector_error": 0.7080324772970137,
+            "pair_length_error": 0.2599307706302551
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.110572258362767,
+            "fde": 1.4503485847781667,
+            "future_change_error": 1.0867503364810407,
+            "relative_vector_error": 1.3033061657294103,
+            "pair_length_error": 0.5621250728545364
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 2.71991897838508,
+            "fde": 2.7349680915565577,
+            "future_change_error": 0.9938930033718675,
+            "relative_vector_error": 0.6028160013355727,
+            "pair_length_error": 0.3629865110195459
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 0.650189289413936,
+            "fde": 0.5998758198195282,
+            "future_change_error": 0.3992421919320065,
+            "relative_vector_error": 0.4310154801166492,
+            "pair_length_error": 0.20809094157238425
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4072778314468764,
+            "fde": 0.5374205903460033,
+            "future_change_error": 0.27333666161978704,
+            "relative_vector_error": 0.26887629921012607,
+            "pair_length_error": 0.13103726081773673
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.6152334824715502,
+            "fde": 2.180171408551737,
+            "future_change_error": 1.464692912388832,
+            "relative_vector_error": 0.9293033819408373,
+            "pair_length_error": 0.2761188857476864
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 3.805328005229777,
+            "fde": 4.694408779487135,
+            "future_change_error": 2.7853280950454775,
+            "relative_vector_error": 1.653708982183943,
+            "pair_length_error": 0.9232273405032644
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.380988757468943,
+            "fde": 3.8937987486277574,
+            "future_change_error": 1.437561755321178,
+            "relative_vector_error": 0.7250208712264048,
+            "pair_length_error": 0.501034351764943
+          },
+          {
+            "scene": "scene_351",
+            "ade": 5.300959411415827,
+            "fde": 5.5132350844137035,
+            "future_change_error": 1.7336657259544186,
+            "relative_vector_error": 1.7781196413629143,
+            "pair_length_error": 0.597677057861269
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.458816360402955,
+            "fde": 1.5688057134517026,
+            "future_change_error": 0.9809767772104173,
+            "relative_vector_error": 1.173059792689169,
+            "pair_length_error": 0.49529963190827425
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 4.007968804724122,
+            "fde": 4.80520595216959,
+            "future_change_error": 2.2148904454161644,
+            "relative_vector_error": 1.3573975012799084,
+            "pair_length_error": 0.863263780547244
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.46938027483328,
+            "fde": 6.921118719210125,
+            "future_change_error": 3.2380953727438726,
+            "relative_vector_error": 1.1877189213614108,
+            "pair_length_error": 0.40729678902908
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.982399047896667,
+            "fde": 4.693563026588825,
+            "future_change_error": 2.290953152675596,
+            "relative_vector_error": 1.4401617035285375,
+            "pair_length_error": 0.5353592575008514
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 4.574332133539905,
+            "fde": 5.241354487943215,
+            "future_change_error": 2.8467636023113996,
+            "relative_vector_error": 1.2499848781557739,
+            "pair_length_error": 0.5626625818755117
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 4.624305049545739,
+            "fde": 4.379616027414329,
+            "future_change_error": 2.573461162327794,
+            "relative_vector_error": 1.5487210325988996,
+            "pair_length_error": 0.6362524572288065
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.346337012107964,
+            "fde": 2.450408946805233,
+            "future_change_error": 0.8288604937020022,
+            "relative_vector_error": 0.9811738001398201,
+            "pair_length_error": 0.7849376874013225
+          },
+          {
+            "scene": "scene_179",
+            "ade": 4.094495221612587,
+            "fde": 4.402857125481223,
+            "future_change_error": 1.732952057810993,
+            "relative_vector_error": 1.113263733593539,
+            "pair_length_error": 0.7665940854673357
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.3779170152501989,
+            "fde": 0.29303431213505726,
+            "future_change_error": 0.20888211007356958,
+            "relative_vector_error": 0.33746970276337634,
+            "pair_length_error": 0.2083906658035627
+          }
+        ]
+      }
+    },
+    {
+      "condition": "self_shared_true_neighbors",
+      "reader": "ridge",
+      "alpha": 100,
+      "validation_candidates": [
+        {
+          "alpha": 0.0001,
+          "validation_ade": 7.335741123858668
+        },
+        {
+          "alpha": 0.001,
+          "validation_ade": 6.3382881552750145
+        },
+        {
+          "alpha": 0.01,
+          "validation_ade": 5.376336154508103
+        },
+        {
+          "alpha": 0.1,
+          "validation_ade": 4.666923902050852
+        },
+        {
+          "alpha": 1,
+          "validation_ade": 4.033051052720124
+        },
+        {
+          "alpha": 10,
+          "validation_ade": 3.6532309765668707
+        },
+        {
+          "alpha": 100,
+          "validation_ade": 3.5626705585984184
+        }
+      ],
+      "test": {
+        "scene_macro": {
+          "ade": 3.360600840920924,
+          "fde": 3.9651566889377863,
+          "relative_vector_error": 1.0481060639820916,
+          "pair_length_error": 0.5401327893489122,
+          "future_change_error": 1.6698174545439304
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.331439235689309,
+            "fde": 5.945134819025201,
+            "future_change_error": 2.09170468296982,
+            "relative_vector_error": 0.5496913669650552,
+            "pair_length_error": 0.2959316356480187
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 18.625464964960745,
+            "fde": 18.009165540618724,
+            "future_change_error": 6.106211176376484,
+            "relative_vector_error": 2.936817917420115,
+            "pair_length_error": 1.894999825105948
+          },
+          {
+            "scene": "scene_706",
+            "ade": 5.5769597348356115,
+            "fde": 5.650837638231793,
+            "future_change_error": 2.5861660266988626,
+            "relative_vector_error": 2.379200139180455,
+            "pair_length_error": 1.7228489046624513
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.7364152562151496,
+            "fde": 4.341703695514345,
+            "future_change_error": 1.046803344692102,
+            "relative_vector_error": 2.5358920813416694,
+            "pair_length_error": 1.1936310389674492
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 4.076660108407198,
+            "fde": 4.9815472068874795,
+            "future_change_error": 1.567946715854093,
+            "relative_vector_error": 1.1268902884132637,
+            "pair_length_error": 0.7797191565736766
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.901685313395002,
+            "fde": 6.130685003249003,
+            "future_change_error": 1.7246127469167465,
+            "relative_vector_error": 1.6073494316586423,
+            "pair_length_error": 0.4872069504329517
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 1.4810494154598173,
+            "fde": 2.0621655802947085,
+            "future_change_error": 0.572108092572957,
+            "relative_vector_error": 0.860477651589207,
+            "pair_length_error": 0.6061998954320308
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.330823175402985,
+            "fde": 5.259189773572657,
+            "future_change_error": 2.4784229099351265,
+            "relative_vector_error": 1.4075068243794127,
+            "pair_length_error": 0.4458074983242998
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 4.259923161314917,
+            "fde": 6.904877200461529,
+            "future_change_error": 2.711810141968246,
+            "relative_vector_error": 0.9726791405249325,
+            "pair_length_error": 0.38051679091146956
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 1.8933758040718285,
+            "fde": 2.454713121030406,
+            "future_change_error": 1.2247878313976368,
+            "relative_vector_error": 0.645713109822225,
+            "pair_length_error": 0.20833786233559992
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.588034895146937,
+            "fde": 3.815315791188528,
+            "future_change_error": 2.233082921124202,
+            "relative_vector_error": 0.8464296047603442,
+            "pair_length_error": 0.41716444732154945
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.2909354790575267,
+            "fde": 2.352506487901562,
+            "future_change_error": 0.418437134094375,
+            "relative_vector_error": 0.981472522057235,
+            "pair_length_error": 0.8687096114199084
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 1.8775511593606518,
+            "fde": 2.682972631583035,
+            "future_change_error": 1.3563588371612816,
+            "relative_vector_error": 1.1880028382931196,
+            "pair_length_error": 0.5364869485441968
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 1.8635992598210989,
+            "fde": 2.329402856820334,
+            "future_change_error": 1.2064686065863794,
+            "relative_vector_error": 0.6934319605354927,
+            "pair_length_error": 0.340784123423637
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.795837536149094,
+            "fde": 2.4448727691790846,
+            "future_change_error": 1.4732604812527796,
+            "relative_vector_error": 0.7734228199434113,
+            "pair_length_error": 0.35800762164981903
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.43721125897274,
+            "fde": 10.099404343553804,
+            "future_change_error": 3.1690072910503675,
+            "relative_vector_error": 0.851718445701053,
+            "pair_length_error": 0.5743594734019644
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 1.7922692812350058,
+            "fde": 2.0843009154063683,
+            "future_change_error": 0.4531328240733869,
+            "relative_vector_error": 0.35418534252297434,
+            "pair_length_error": 0.21663881149662573
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 1.9373008157512175,
+            "fde": 1.670096519377646,
+            "future_change_error": 0.5095516232931797,
+            "relative_vector_error": 0.8882375197493764,
+            "pair_length_error": 0.6186255348343942
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 1.541962033906305,
+            "fde": 1.7881359284023304,
+            "future_change_error": 0.617044069646325,
+            "relative_vector_error": 0.7133272987145796,
+            "pair_length_error": 0.5115153854509963
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.350916833238158,
+            "fde": 5.300314812864454,
+            "future_change_error": 4.027557423710945,
+            "relative_vector_error": 1.190833262067472,
+            "pair_length_error": 0.4898258728116798
+          },
+          {
+            "scene": "scene_335",
+            "ade": 1.7104824457227183,
+            "fde": 2.095764559229336,
+            "future_change_error": 0.6016755038719542,
+            "relative_vector_error": 0.5523005229493435,
+            "pair_length_error": 0.30011285052480874
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 2.010557755528001,
+            "fde": 2.6914576204904783,
+            "future_change_error": 1.9400390394815274,
+            "relative_vector_error": 1.093992597159699,
+            "pair_length_error": 0.5155905044760102
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 5.014968322790703,
+            "fde": 5.973057903449541,
+            "future_change_error": 2.2280349000480903,
+            "relative_vector_error": 0.6924008265812112,
+            "pair_length_error": 0.2732661036367787
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.492484999791192,
+            "fde": 2.324563185517353,
+            "future_change_error": 0.9028729009667632,
+            "relative_vector_error": 1.1944137809881745,
+            "pair_length_error": 0.47699138530437707
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 1.8188161376935124,
+            "fde": 2.2162664394628315,
+            "future_change_error": 1.123737316261511,
+            "relative_vector_error": 0.5847889475164433,
+            "pair_length_error": 0.4056822276430809
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 1.0091312373449528,
+            "fde": 1.340397594152549,
+            "future_change_error": 0.5492364036619649,
+            "relative_vector_error": 0.43094492253501665,
+            "pair_length_error": 0.2531765205579771
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4174924077108565,
+            "fde": 0.7047019388267715,
+            "future_change_error": 0.30954399247874365,
+            "relative_vector_error": 0.25502997694062446,
+            "pair_length_error": 0.1447100115088729
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.9801186344487258,
+            "fde": 2.573470350764736,
+            "future_change_error": 1.448368380080104,
+            "relative_vector_error": 0.8565970563836999,
+            "pair_length_error": 0.26640528354330917
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 2.4655383034200913,
+            "fde": 2.6631234361953484,
+            "future_change_error": 2.0410491683818313,
+            "relative_vector_error": 1.3495901665136671,
+            "pair_length_error": 0.5874636348502881
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.3748585998773244,
+            "fde": 3.8896666735289154,
+            "future_change_error": 1.3917205150652616,
+            "relative_vector_error": 0.7120179300973204,
+            "pair_length_error": 0.5289241939972802
+          },
+          {
+            "scene": "scene_351",
+            "ade": 3.9995618228005876,
+            "fde": 4.488718101209906,
+            "future_change_error": 1.814081656617485,
+            "relative_vector_error": 1.52125877493407,
+            "pair_length_error": 0.45415908537427846
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.5997477330360819,
+            "fde": 1.8818953064463178,
+            "future_change_error": 0.9619301272767411,
+            "relative_vector_error": 1.1899458243092638,
+            "pair_length_error": 0.5293444449577432
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 2.7793738659933904,
+            "fde": 3.1109733851795727,
+            "future_change_error": 1.8649773825031741,
+            "relative_vector_error": 1.0465894324809566,
+            "pair_length_error": 0.5858100595950796
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.768491201096738,
+            "fde": 7.50271012240344,
+            "future_change_error": 3.0266833953381576,
+            "relative_vector_error": 1.096794304770128,
+            "pair_length_error": 0.3478068092919197
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.885481424888681,
+            "fde": 4.637304636741943,
+            "future_change_error": 1.7833762649354659,
+            "relative_vector_error": 1.2198949274972737,
+            "pair_length_error": 0.4188167856630624
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 3.84981134261944,
+            "fde": 4.317378263445245,
+            "future_change_error": 2.4556617667695955,
+            "relative_vector_error": 1.0953531409532846,
+            "pair_length_error": 0.4509396877420006
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 3.1915065402806446,
+            "fde": 3.0701969954042805,
+            "future_change_error": 2.062060614746888,
+            "relative_vector_error": 1.3787275033147297,
+            "pair_length_error": 0.5540571933382445
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.1567952435912225,
+            "fde": 2.1088810004071914,
+            "future_change_error": 0.8034820127841613,
+            "relative_vector_error": 0.9528637861738752,
+            "pair_length_error": 0.818761394095501
+          },
+          {
+            "scene": "scene_179",
+            "ade": 3.5381253516991644,
+            "fde": 3.8230504191283177,
+            "future_change_error": 1.6119984513196894,
+            "relative_vector_error": 0.8640991797764757,
+            "pair_length_error": 0.5261001077122799
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.6712755441116525,
+            "fde": 0.8853469903643953,
+            "future_change_error": 0.2976935077928153,
+            "relative_vector_error": 0.33335939176836477,
+            "pair_length_error": 0.21987590139492857
+          }
+        ]
+      },
+      "baseline_test": {
+        "scene_macro": {
+          "ade": 3.548819891080103,
+          "fde": 3.9913797152229775,
+          "relative_vector_error": 1.1775111249178916,
+          "pair_length_error": 0.6283031194805874,
+          "future_change_error": 1.8178265581285522
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.71894867914809,
+            "fde": 6.433877516849364,
+            "future_change_error": 2.2948341171599624,
+            "relative_vector_error": 0.5940414610934857,
+            "pair_length_error": 0.28471541662024663
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 20.623642961266224,
+            "fde": 16.399673970033625,
+            "future_change_error": 6.215795344406234,
+            "relative_vector_error": 3.458780777286459,
+            "pair_length_error": 2.3829021506108066
+          },
+          {
+            "scene": "scene_706",
+            "ade": 7.360539005680153,
+            "fde": 6.376993493493024,
+            "future_change_error": 2.998672358307705,
+            "relative_vector_error": 2.978347616329071,
+            "pair_length_error": 2.259930616672858
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.0356454210306008,
+            "fde": 3.5419521252740664,
+            "future_change_error": 1.4304970435477247,
+            "relative_vector_error": 3.3182319657044284,
+            "pair_length_error": 1.9783882462355906
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 3.9676743308307536,
+            "fde": 4.9343674221769005,
+            "future_change_error": 1.7156324842393929,
+            "relative_vector_error": 1.1585977856388587,
+            "pair_length_error": 0.7833642580969755
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.9402177431898116,
+            "fde": 6.076477728273942,
+            "future_change_error": 3.0946209825784092,
+            "relative_vector_error": 1.766741273661855,
+            "pair_length_error": 0.6225449271181979
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 0.7537893840039838,
+            "fde": 0.9537925096994361,
+            "future_change_error": 0.38302710496575243,
+            "relative_vector_error": 0.8956478413829597,
+            "pair_length_error": 0.554279803272452
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.6345243383094243,
+            "fde": 5.663123627653162,
+            "future_change_error": 2.656154870159628,
+            "relative_vector_error": 1.6481810148684841,
+            "pair_length_error": 0.6143206104422072
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 3.781610912809503,
+            "fde": 6.835087970930878,
+            "future_change_error": 2.9098045687801255,
+            "relative_vector_error": 1.1245797447751427,
+            "pair_length_error": 0.4852358977791082
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 2.6600805176848272,
+            "fde": 3.3228412734167074,
+            "future_change_error": 1.254225674425738,
+            "relative_vector_error": 0.6496621515255016,
+            "pair_length_error": 0.1771545614200136
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.4294642673111504,
+            "fde": 3.6003239765783825,
+            "future_change_error": 2.137644401679727,
+            "relative_vector_error": 0.8426290435850362,
+            "pair_length_error": 0.3621359590968242
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.3682659389951484,
+            "fde": 2.490688711769896,
+            "future_change_error": 0.4079238591175414,
+            "relative_vector_error": 0.9966310298175828,
+            "pair_length_error": 0.846223221185396
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 2.1729496098934367,
+            "fde": 1.7150045098654216,
+            "future_change_error": 1.4202562852451415,
+            "relative_vector_error": 1.4792008423656449,
+            "pair_length_error": 0.8064650775390114
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 2.2702090520186693,
+            "fde": 3.2316090875820764,
+            "future_change_error": 1.5521194831791976,
+            "relative_vector_error": 0.7213860139932886,
+            "pair_length_error": 0.35358181093670676
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.646464511091242,
+            "fde": 2.3688851533796518,
+            "future_change_error": 1.469624470723755,
+            "relative_vector_error": 0.8412721449020149,
+            "pair_length_error": 0.395375767340556
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.758017206642589,
+            "fde": 10.625562485175141,
+            "future_change_error": 3.2960606171526288,
+            "relative_vector_error": 0.8627165323721584,
+            "pair_length_error": 0.552893605345454
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 0.2395596550932948,
+            "fde": 0.2647814833646332,
+            "future_change_error": 0.1714596833592059,
+            "relative_vector_error": 0.30595332031193373,
+            "pair_length_error": 0.13308297044498865
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 2.7641065315108073,
+            "fde": 2.870327026993157,
+            "future_change_error": 0.645469654687996,
+            "relative_vector_error": 0.9345290537099936,
+            "pair_length_error": 0.622068213064778
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 0.6967426478525857,
+            "fde": 0.6983708741394049,
+            "future_change_error": 0.3497806090700027,
+            "relative_vector_error": 0.7186252981652761,
+            "pair_length_error": 0.5036023603676072
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.106572976322246,
+            "fde": 5.094224383534873,
+            "future_change_error": 4.584068394674093,
+            "relative_vector_error": 1.3394648679378127,
+            "pair_length_error": 0.6247088735351661
+          },
+          {
+            "scene": "scene_335",
+            "ade": 0.4618058337673175,
+            "fde": 0.46954512309965385,
+            "future_change_error": 0.26658189524690323,
+            "relative_vector_error": 0.5167899934574901,
+            "pair_length_error": 0.19463011636843688
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 2.325254900046118,
+            "fde": 2.8866631114399803,
+            "future_change_error": 2.088749305366407,
+            "relative_vector_error": 1.1592848586352285,
+            "pair_length_error": 0.5122351835670542
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 5.310290284597978,
+            "fde": 6.4408236254158595,
+            "future_change_error": 2.27975326579272,
+            "relative_vector_error": 0.7080324772542649,
+            "pair_length_error": 0.25993077094661576
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.110572258362767,
+            "fde": 1.4503485847781667,
+            "future_change_error": 1.0867503350375425,
+            "relative_vector_error": 1.3033061655530873,
+            "pair_length_error": 0.5621250734488039
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 2.71991897838508,
+            "fde": 2.7349680915565577,
+            "future_change_error": 0.993893002930478,
+            "relative_vector_error": 0.6028160013644036,
+            "pair_length_error": 0.36298651180889013
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 0.650189289413936,
+            "fde": 0.5998758198195282,
+            "future_change_error": 0.39924219180708287,
+            "relative_vector_error": 0.4310154797911472,
+            "pair_length_error": 0.20809094118826754
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4072778314468764,
+            "fde": 0.5374205903460033,
+            "future_change_error": 0.2733366615849706,
+            "relative_vector_error": 0.26887629917369255,
+            "pair_length_error": 0.13103726088413353
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.6152334824715502,
+            "fde": 2.180171408551737,
+            "future_change_error": 1.4646929125708805,
+            "relative_vector_error": 0.9293033818522755,
+            "pair_length_error": 0.27611888619882824
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 3.805328005229777,
+            "fde": 4.694408779487135,
+            "future_change_error": 2.7853280943614798,
+            "relative_vector_error": 1.6537089827538927,
+            "pair_length_error": 0.9232273405759408
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.380988757468943,
+            "fde": 3.8937987486277574,
+            "future_change_error": 1.437561755321178,
+            "relative_vector_error": 0.7250208712261451,
+            "pair_length_error": 0.5010343517960864
+          },
+          {
+            "scene": "scene_351",
+            "ade": 5.300959411415827,
+            "fde": 5.5132350844137035,
+            "future_change_error": 1.7336657255344308,
+            "relative_vector_error": 1.77811964113812,
+            "pair_length_error": 0.5976770581270952
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.458816360402955,
+            "fde": 1.5688057134517026,
+            "future_change_error": 0.9809767776669676,
+            "relative_vector_error": 1.17305979261926,
+            "pair_length_error": 0.49529963238441815
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 4.007968804724122,
+            "fde": 4.80520595216959,
+            "future_change_error": 2.214890444696101,
+            "relative_vector_error": 1.3573975008944896,
+            "pair_length_error": 0.8632637805542415
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.46938027483328,
+            "fde": 6.921118719210125,
+            "future_change_error": 3.238095372766242,
+            "relative_vector_error": 1.1877189213309567,
+            "pair_length_error": 0.40729678916242396
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.982399047896667,
+            "fde": 4.693563026588825,
+            "future_change_error": 2.290953153745963,
+            "relative_vector_error": 1.4401617034748295,
+            "pair_length_error": 0.5353592572988648
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 4.574332133539905,
+            "fde": 5.241354487943215,
+            "future_change_error": 2.846763602093304,
+            "relative_vector_error": 1.2499848777763227,
+            "pair_length_error": 0.5626625815333971
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 4.624305049545739,
+            "fde": 4.379616027414329,
+            "future_change_error": 2.573461159557227,
+            "relative_vector_error": 1.548721032748278,
+            "pair_length_error": 0.6362524582280511
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.346337012107964,
+            "fde": 2.450408946805233,
+            "future_change_error": 0.828860493701102,
+            "relative_vector_error": 0.9811738001393067,
+            "pair_length_error": 0.784937687189691
+          },
+          {
+            "scene": "scene_179",
+            "ade": 4.094495221612587,
+            "fde": 4.402857125481223,
+            "future_change_error": 1.732952057810993,
+            "relative_vector_error": 1.113263733521518,
+            "pair_length_error": 0.7665940852172227
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.3779170152501989,
+            "fde": 0.29303431213505726,
+            "future_change_error": 0.20888211009015617,
+            "relative_vector_error": 0.3374697025839658,
+            "pair_length_error": 0.20839066562008962
+          }
+        ]
+      }
+    },
+    {
+      "condition": "self_shared_true_neighbors",
+      "reader": "mlp_128_128",
+      "seed": 0,
+      "parameter_count": 122413,
+      "history": [
+        {
+          "epoch": -1,
+          "training_mse": null,
+          "validation_ade": 3.3239701273948787
+        },
+        {
+          "epoch": 0,
+          "training_mse": 10.298813995562101,
+          "validation_ade": 3.7858859410963817
+        },
+        {
+          "epoch": 1,
+          "training_mse": 7.739683527695505,
+          "validation_ade": 4.1942987514274765
+        },
+        {
+          "epoch": 2,
+          "training_mse": 5.947375598706697,
+          "validation_ade": 4.388724864599299
+        },
+        {
+          "epoch": 3,
+          "training_mse": 4.499278444992869,
+          "validation_ade": 4.726918945213844
+        },
+        {
+          "epoch": 4,
+          "training_mse": 3.3555530748869242,
+          "validation_ade": 5.685314626296384
+        },
+        {
+          "epoch": 5,
+          "training_mse": 2.4353413079914294,
+          "validation_ade": 5.69890390093983
+        },
+        {
+          "epoch": 6,
+          "training_mse": 1.7589814851158543,
+          "validation_ade": 5.849840055130518
+        },
+        {
+          "epoch": 7,
+          "training_mse": 1.3197650658456903,
+          "validation_ade": 6.213484370090576
+        },
+        {
+          "epoch": 8,
+          "training_mse": 1.047069383294959,
+          "validation_ade": 6.169031995085241
+        },
+        {
+          "epoch": 9,
+          "training_mse": 0.8465646881806222,
+          "validation_ade": 6.191489586309283
+        },
+        {
+          "epoch": 10,
+          "training_mse": 0.731543735453957,
+          "validation_ade": 6.091580632490632
+        },
+        {
+          "epoch": 11,
+          "training_mse": 0.637304917762154,
+          "validation_ade": 6.346122971832688
+        },
+        {
+          "epoch": 12,
+          "training_mse": 0.5719917338145407,
+          "validation_ade": 6.340400743532369
+        },
+        {
+          "epoch": 13,
+          "training_mse": 0.48784395895506205,
+          "validation_ade": 6.3913454432159975
+        },
+        {
+          "epoch": 14,
+          "training_mse": 0.44615647824187027,
+          "validation_ade": 6.394565320483451
+        },
+        {
+          "epoch": 15,
+          "training_mse": 0.4139210221014525,
+          "validation_ade": 6.157854369875528
+        },
+        {
+          "epoch": 16,
+          "training_mse": 0.3839391407213713,
+          "validation_ade": 6.281028752467959
+        },
+        {
+          "epoch": 17,
+          "training_mse": 0.36175090074539185,
+          "validation_ade": 6.300531242272871
+        },
+        {
+          "epoch": 18,
+          "training_mse": 0.3514935107607591,
+          "validation_ade": 6.30489505479302
+        },
+        {
+          "epoch": 19,
+          "training_mse": 0.33813245202365677,
+          "validation_ade": 6.383725069927976
+        }
+      ],
+      "selected_epoch": -1,
+      "test": {
+        "scene_macro": {
+          "ade": 3.548819891080103,
+          "fde": 3.9913797152229775,
+          "relative_vector_error": 1.1775111248961339,
+          "pair_length_error": 0.6283031194055653,
+          "future_change_error": 1.8178265581453417
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.71894867914809,
+            "fde": 6.433877516849364,
+            "future_change_error": 2.2948341172378743,
+            "relative_vector_error": 0.5940414609743908,
+            "pair_length_error": 0.2847154166221918
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 20.623642961266224,
+            "fde": 16.399673970033625,
+            "future_change_error": 6.215795344372242,
+            "relative_vector_error": 3.4587807767598004,
+            "pair_length_error": 2.382902150872401
+          },
+          {
+            "scene": "scene_706",
+            "ade": 7.360539005680153,
+            "fde": 6.376993493493024,
+            "future_change_error": 2.9986723555930412,
+            "relative_vector_error": 2.9783476153012947,
+            "pair_length_error": 2.259930615907637
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.0356454210306008,
+            "fde": 3.5419521252740664,
+            "future_change_error": 1.43049704342896,
+            "relative_vector_error": 3.3182319652299452,
+            "pair_length_error": 1.9783882463906215
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 3.9676743308307536,
+            "fde": 4.9343674221769005,
+            "future_change_error": 1.715632484383425,
+            "relative_vector_error": 1.158597785681142,
+            "pair_length_error": 0.7833642580452641
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.9402177431898116,
+            "fde": 6.076477728273942,
+            "future_change_error": 3.0946209823641344,
+            "relative_vector_error": 1.7667412739307353,
+            "pair_length_error": 0.6225449268093255
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 0.7537893840039838,
+            "fde": 0.9537925096994361,
+            "future_change_error": 0.3830271051130895,
+            "relative_vector_error": 0.895647841364259,
+            "pair_length_error": 0.5542798031134444
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.6345243383094243,
+            "fde": 5.663123627653162,
+            "future_change_error": 2.656154871154212,
+            "relative_vector_error": 1.6481810147163074,
+            "pair_length_error": 0.6143206099824473
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 3.781610912809503,
+            "fde": 6.835087970930878,
+            "future_change_error": 2.909804568432112,
+            "relative_vector_error": 1.1245797446035306,
+            "pair_length_error": 0.48523589763211317
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 2.6600805176848272,
+            "fde": 3.3228412734167074,
+            "future_change_error": 1.2542256744215765,
+            "relative_vector_error": 0.6496621515699491,
+            "pair_length_error": 0.17715456116140899
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.4294642673111504,
+            "fde": 3.6003239765783825,
+            "future_change_error": 2.137644401679727,
+            "relative_vector_error": 0.8426290436013943,
+            "pair_length_error": 0.36213595887003885
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.3682659389951484,
+            "fde": 2.490688711769896,
+            "future_change_error": 0.40792385911531276,
+            "relative_vector_error": 0.9966310299386917,
+            "pair_length_error": 0.8462232211472243
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 2.1729496098934367,
+            "fde": 1.7150045098654216,
+            "future_change_error": 1.4202562852055096,
+            "relative_vector_error": 1.4792008419902896,
+            "pair_length_error": 0.8064650773628516
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 2.2702090520186693,
+            "fde": 3.2316090875820764,
+            "future_change_error": 1.552119483473222,
+            "relative_vector_error": 0.7213860140536269,
+            "pair_length_error": 0.3535818109680529
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.646464511091242,
+            "fde": 2.3688851533796518,
+            "future_change_error": 1.4696244706831727,
+            "relative_vector_error": 0.8412721448235834,
+            "pair_length_error": 0.3953757670876369
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.758017206642589,
+            "fde": 10.625562485175141,
+            "future_change_error": 3.296060617077563,
+            "relative_vector_error": 0.8627165322901554,
+            "pair_length_error": 0.5528936053121056
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 0.2395596550932948,
+            "fde": 0.2647814833646332,
+            "future_change_error": 0.17145968336470613,
+            "relative_vector_error": 0.3059533202760852,
+            "pair_length_error": 0.13308297163045468
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 2.7641065315108073,
+            "fde": 2.870327026993157,
+            "future_change_error": 0.6454696546688045,
+            "relative_vector_error": 0.9345290541964074,
+            "pair_length_error": 0.6220682133515208
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 0.6967426478525857,
+            "fde": 0.6983708741394049,
+            "future_change_error": 0.3497806089050254,
+            "relative_vector_error": 0.7186252981272051,
+            "pair_length_error": 0.5036023606086676
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.106572976322246,
+            "fde": 5.094224383534873,
+            "future_change_error": 4.584068392243946,
+            "relative_vector_error": 1.339464867498282,
+            "pair_length_error": 0.6247088727946183
+          },
+          {
+            "scene": "scene_335",
+            "ade": 0.4618058337673175,
+            "fde": 0.46954512309965385,
+            "future_change_error": 0.26658189524818976,
+            "relative_vector_error": 0.5167899937851256,
+            "pair_length_error": 0.19463011745417985
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 2.325254900046118,
+            "fde": 2.8866631114399803,
+            "future_change_error": 2.0887493054220543,
+            "relative_vector_error": 1.1592848586198508,
+            "pair_length_error": 0.5122351835647927
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 5.310290284597978,
+            "fde": 6.4408236254158595,
+            "future_change_error": 2.279753265839344,
+            "relative_vector_error": 0.7080324772970137,
+            "pair_length_error": 0.2599307706302551
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.110572258362767,
+            "fde": 1.4503485847781667,
+            "future_change_error": 1.0867503364810407,
+            "relative_vector_error": 1.3033061657294103,
+            "pair_length_error": 0.5621250728545364
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 2.71991897838508,
+            "fde": 2.7349680915565577,
+            "future_change_error": 0.9938930033718675,
+            "relative_vector_error": 0.6028160013355727,
+            "pair_length_error": 0.3629865110195459
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 0.650189289413936,
+            "fde": 0.5998758198195282,
+            "future_change_error": 0.3992421919320065,
+            "relative_vector_error": 0.4310154801166492,
+            "pair_length_error": 0.20809094157238425
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4072778314468764,
+            "fde": 0.5374205903460033,
+            "future_change_error": 0.27333666161978704,
+            "relative_vector_error": 0.26887629921012607,
+            "pair_length_error": 0.13103726081773673
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.6152334824715502,
+            "fde": 2.180171408551737,
+            "future_change_error": 1.464692912388832,
+            "relative_vector_error": 0.9293033819408373,
+            "pair_length_error": 0.2761188857476864
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 3.805328005229777,
+            "fde": 4.694408779487135,
+            "future_change_error": 2.7853280950454775,
+            "relative_vector_error": 1.653708982183943,
+            "pair_length_error": 0.9232273405032644
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.380988757468943,
+            "fde": 3.8937987486277574,
+            "future_change_error": 1.437561755321178,
+            "relative_vector_error": 0.7250208712264048,
+            "pair_length_error": 0.501034351764943
+          },
+          {
+            "scene": "scene_351",
+            "ade": 5.300959411415827,
+            "fde": 5.5132350844137035,
+            "future_change_error": 1.7336657259544186,
+            "relative_vector_error": 1.7781196413629143,
+            "pair_length_error": 0.597677057861269
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.458816360402955,
+            "fde": 1.5688057134517026,
+            "future_change_error": 0.9809767772104173,
+            "relative_vector_error": 1.173059792689169,
+            "pair_length_error": 0.49529963190827425
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 4.007968804724122,
+            "fde": 4.80520595216959,
+            "future_change_error": 2.2148904454161644,
+            "relative_vector_error": 1.3573975012799084,
+            "pair_length_error": 0.863263780547244
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.46938027483328,
+            "fde": 6.921118719210125,
+            "future_change_error": 3.2380953727438726,
+            "relative_vector_error": 1.1877189213614108,
+            "pair_length_error": 0.40729678902908
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.982399047896667,
+            "fde": 4.693563026588825,
+            "future_change_error": 2.290953152675596,
+            "relative_vector_error": 1.4401617035285375,
+            "pair_length_error": 0.5353592575008514
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 4.574332133539905,
+            "fde": 5.241354487943215,
+            "future_change_error": 2.8467636023113996,
+            "relative_vector_error": 1.2499848781557739,
+            "pair_length_error": 0.5626625818755117
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 4.624305049545739,
+            "fde": 4.379616027414329,
+            "future_change_error": 2.573461162327794,
+            "relative_vector_error": 1.5487210325988996,
+            "pair_length_error": 0.6362524572288065
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.346337012107964,
+            "fde": 2.450408946805233,
+            "future_change_error": 0.8288604937020022,
+            "relative_vector_error": 0.9811738001398201,
+            "pair_length_error": 0.7849376874013225
+          },
+          {
+            "scene": "scene_179",
+            "ade": 4.094495221612587,
+            "fde": 4.402857125481223,
+            "future_change_error": 1.732952057810993,
+            "relative_vector_error": 1.113263733593539,
+            "pair_length_error": 0.7665940854673357
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.3779170152501989,
+            "fde": 0.29303431213505726,
+            "future_change_error": 0.20888211007356958,
+            "relative_vector_error": 0.33746970276337634,
+            "pair_length_error": 0.2083906658035627
+          }
+        ]
+      }
+    },
+    {
+      "condition": "self_shared_true_neighbors",
+      "reader": "mlp_128_128",
+      "seed": 1,
+      "parameter_count": 122413,
+      "history": [
+        {
+          "epoch": -1,
+          "training_mse": null,
+          "validation_ade": 3.3239701273948787
+        },
+        {
+          "epoch": 0,
+          "training_mse": 10.176705335315905,
+          "validation_ade": 3.836130238284273
+        },
+        {
+          "epoch": 1,
+          "training_mse": 7.758427544644005,
+          "validation_ade": 3.740071890570978
+        },
+        {
+          "epoch": 2,
+          "training_mse": 5.952743680853593,
+          "validation_ade": 4.375475012186179
+        },
+        {
+          "epoch": 3,
+          "training_mse": 4.672926087128489,
+          "validation_ade": 4.659767923377239
+        },
+        {
+          "epoch": 4,
+          "training_mse": 3.68815373119555,
+          "validation_ade": 5.300445960199114
+        },
+        {
+          "epoch": 5,
+          "training_mse": 2.7823804428702905,
+          "validation_ade": 5.780269674874818
+        },
+        {
+          "epoch": 6,
+          "training_mse": 2.0218945804395174,
+          "validation_ade": 6.087776190910743
+        },
+        {
+          "epoch": 7,
+          "training_mse": 1.4846557943444503,
+          "validation_ade": 6.194610996154589
+        },
+        {
+          "epoch": 8,
+          "training_mse": 1.1542260803674396,
+          "validation_ade": 6.005791252536481
+        },
+        {
+          "epoch": 9,
+          "training_mse": 0.9129467888882286,
+          "validation_ade": 6.46347955759944
+        },
+        {
+          "epoch": 10,
+          "training_mse": 0.7170168945663854,
+          "validation_ade": 6.628943785271905
+        },
+        {
+          "epoch": 11,
+          "training_mse": 0.5982286036014557,
+          "validation_ade": 6.517842937610676
+        },
+        {
+          "epoch": 12,
+          "training_mse": 0.5269280985782021,
+          "validation_ade": 6.541335521851539
+        },
+        {
+          "epoch": 13,
+          "training_mse": 0.46688440755793925,
+          "validation_ade": 6.5907014607889565
+        },
+        {
+          "epoch": 14,
+          "training_mse": 0.43361681856607137,
+          "validation_ade": 6.65792742053466
+        },
+        {
+          "epoch": 15,
+          "training_mse": 0.4121224393970088,
+          "validation_ade": 6.50204458471962
+        },
+        {
+          "epoch": 16,
+          "training_mse": 0.39152372040246664,
+          "validation_ade": 6.582108561835566
+        },
+        {
+          "epoch": 17,
+          "training_mse": 0.3573556479654814,
+          "validation_ade": 6.6022253754877225
+        },
+        {
+          "epoch": 18,
+          "training_mse": 0.33511191606521606,
+          "validation_ade": 6.586450423532916
+        },
+        {
+          "epoch": 19,
+          "training_mse": 0.3211225522191901,
+          "validation_ade": 6.48817551296207
+        }
+      ],
+      "selected_epoch": -1,
+      "test": {
+        "scene_macro": {
+          "ade": 3.548819891080103,
+          "fde": 3.9913797152229775,
+          "relative_vector_error": 1.1775111248961339,
+          "pair_length_error": 0.6283031194055653,
+          "future_change_error": 1.8178265581453417
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.71894867914809,
+            "fde": 6.433877516849364,
+            "future_change_error": 2.2948341172378743,
+            "relative_vector_error": 0.5940414609743908,
+            "pair_length_error": 0.2847154166221918
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 20.623642961266224,
+            "fde": 16.399673970033625,
+            "future_change_error": 6.215795344372242,
+            "relative_vector_error": 3.4587807767598004,
+            "pair_length_error": 2.382902150872401
+          },
+          {
+            "scene": "scene_706",
+            "ade": 7.360539005680153,
+            "fde": 6.376993493493024,
+            "future_change_error": 2.9986723555930412,
+            "relative_vector_error": 2.9783476153012947,
+            "pair_length_error": 2.259930615907637
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.0356454210306008,
+            "fde": 3.5419521252740664,
+            "future_change_error": 1.43049704342896,
+            "relative_vector_error": 3.3182319652299452,
+            "pair_length_error": 1.9783882463906215
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 3.9676743308307536,
+            "fde": 4.9343674221769005,
+            "future_change_error": 1.715632484383425,
+            "relative_vector_error": 1.158597785681142,
+            "pair_length_error": 0.7833642580452641
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.9402177431898116,
+            "fde": 6.076477728273942,
+            "future_change_error": 3.0946209823641344,
+            "relative_vector_error": 1.7667412739307353,
+            "pair_length_error": 0.6225449268093255
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 0.7537893840039838,
+            "fde": 0.9537925096994361,
+            "future_change_error": 0.3830271051130895,
+            "relative_vector_error": 0.895647841364259,
+            "pair_length_error": 0.5542798031134444
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.6345243383094243,
+            "fde": 5.663123627653162,
+            "future_change_error": 2.656154871154212,
+            "relative_vector_error": 1.6481810147163074,
+            "pair_length_error": 0.6143206099824473
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 3.781610912809503,
+            "fde": 6.835087970930878,
+            "future_change_error": 2.909804568432112,
+            "relative_vector_error": 1.1245797446035306,
+            "pair_length_error": 0.48523589763211317
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 2.6600805176848272,
+            "fde": 3.3228412734167074,
+            "future_change_error": 1.2542256744215765,
+            "relative_vector_error": 0.6496621515699491,
+            "pair_length_error": 0.17715456116140899
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.4294642673111504,
+            "fde": 3.6003239765783825,
+            "future_change_error": 2.137644401679727,
+            "relative_vector_error": 0.8426290436013943,
+            "pair_length_error": 0.36213595887003885
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.3682659389951484,
+            "fde": 2.490688711769896,
+            "future_change_error": 0.40792385911531276,
+            "relative_vector_error": 0.9966310299386917,
+            "pair_length_error": 0.8462232211472243
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 2.1729496098934367,
+            "fde": 1.7150045098654216,
+            "future_change_error": 1.4202562852055096,
+            "relative_vector_error": 1.4792008419902896,
+            "pair_length_error": 0.8064650773628516
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 2.2702090520186693,
+            "fde": 3.2316090875820764,
+            "future_change_error": 1.552119483473222,
+            "relative_vector_error": 0.7213860140536269,
+            "pair_length_error": 0.3535818109680529
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.646464511091242,
+            "fde": 2.3688851533796518,
+            "future_change_error": 1.4696244706831727,
+            "relative_vector_error": 0.8412721448235834,
+            "pair_length_error": 0.3953757670876369
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.758017206642589,
+            "fde": 10.625562485175141,
+            "future_change_error": 3.296060617077563,
+            "relative_vector_error": 0.8627165322901554,
+            "pair_length_error": 0.5528936053121056
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 0.2395596550932948,
+            "fde": 0.2647814833646332,
+            "future_change_error": 0.17145968336470613,
+            "relative_vector_error": 0.3059533202760852,
+            "pair_length_error": 0.13308297163045468
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 2.7641065315108073,
+            "fde": 2.870327026993157,
+            "future_change_error": 0.6454696546688045,
+            "relative_vector_error": 0.9345290541964074,
+            "pair_length_error": 0.6220682133515208
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 0.6967426478525857,
+            "fde": 0.6983708741394049,
+            "future_change_error": 0.3497806089050254,
+            "relative_vector_error": 0.7186252981272051,
+            "pair_length_error": 0.5036023606086676
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.106572976322246,
+            "fde": 5.094224383534873,
+            "future_change_error": 4.584068392243946,
+            "relative_vector_error": 1.339464867498282,
+            "pair_length_error": 0.6247088727946183
+          },
+          {
+            "scene": "scene_335",
+            "ade": 0.4618058337673175,
+            "fde": 0.46954512309965385,
+            "future_change_error": 0.26658189524818976,
+            "relative_vector_error": 0.5167899937851256,
+            "pair_length_error": 0.19463011745417985
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 2.325254900046118,
+            "fde": 2.8866631114399803,
+            "future_change_error": 2.0887493054220543,
+            "relative_vector_error": 1.1592848586198508,
+            "pair_length_error": 0.5122351835647927
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 5.310290284597978,
+            "fde": 6.4408236254158595,
+            "future_change_error": 2.279753265839344,
+            "relative_vector_error": 0.7080324772970137,
+            "pair_length_error": 0.2599307706302551
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.110572258362767,
+            "fde": 1.4503485847781667,
+            "future_change_error": 1.0867503364810407,
+            "relative_vector_error": 1.3033061657294103,
+            "pair_length_error": 0.5621250728545364
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 2.71991897838508,
+            "fde": 2.7349680915565577,
+            "future_change_error": 0.9938930033718675,
+            "relative_vector_error": 0.6028160013355727,
+            "pair_length_error": 0.3629865110195459
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 0.650189289413936,
+            "fde": 0.5998758198195282,
+            "future_change_error": 0.3992421919320065,
+            "relative_vector_error": 0.4310154801166492,
+            "pair_length_error": 0.20809094157238425
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4072778314468764,
+            "fde": 0.5374205903460033,
+            "future_change_error": 0.27333666161978704,
+            "relative_vector_error": 0.26887629921012607,
+            "pair_length_error": 0.13103726081773673
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.6152334824715502,
+            "fde": 2.180171408551737,
+            "future_change_error": 1.464692912388832,
+            "relative_vector_error": 0.9293033819408373,
+            "pair_length_error": 0.2761188857476864
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 3.805328005229777,
+            "fde": 4.694408779487135,
+            "future_change_error": 2.7853280950454775,
+            "relative_vector_error": 1.653708982183943,
+            "pair_length_error": 0.9232273405032644
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.380988757468943,
+            "fde": 3.8937987486277574,
+            "future_change_error": 1.437561755321178,
+            "relative_vector_error": 0.7250208712264048,
+            "pair_length_error": 0.501034351764943
+          },
+          {
+            "scene": "scene_351",
+            "ade": 5.300959411415827,
+            "fde": 5.5132350844137035,
+            "future_change_error": 1.7336657259544186,
+            "relative_vector_error": 1.7781196413629143,
+            "pair_length_error": 0.597677057861269
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.458816360402955,
+            "fde": 1.5688057134517026,
+            "future_change_error": 0.9809767772104173,
+            "relative_vector_error": 1.173059792689169,
+            "pair_length_error": 0.49529963190827425
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 4.007968804724122,
+            "fde": 4.80520595216959,
+            "future_change_error": 2.2148904454161644,
+            "relative_vector_error": 1.3573975012799084,
+            "pair_length_error": 0.863263780547244
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.46938027483328,
+            "fde": 6.921118719210125,
+            "future_change_error": 3.2380953727438726,
+            "relative_vector_error": 1.1877189213614108,
+            "pair_length_error": 0.40729678902908
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.982399047896667,
+            "fde": 4.693563026588825,
+            "future_change_error": 2.290953152675596,
+            "relative_vector_error": 1.4401617035285375,
+            "pair_length_error": 0.5353592575008514
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 4.574332133539905,
+            "fde": 5.241354487943215,
+            "future_change_error": 2.8467636023113996,
+            "relative_vector_error": 1.2499848781557739,
+            "pair_length_error": 0.5626625818755117
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 4.624305049545739,
+            "fde": 4.379616027414329,
+            "future_change_error": 2.573461162327794,
+            "relative_vector_error": 1.5487210325988996,
+            "pair_length_error": 0.6362524572288065
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.346337012107964,
+            "fde": 2.450408946805233,
+            "future_change_error": 0.8288604937020022,
+            "relative_vector_error": 0.9811738001398201,
+            "pair_length_error": 0.7849376874013225
+          },
+          {
+            "scene": "scene_179",
+            "ade": 4.094495221612587,
+            "fde": 4.402857125481223,
+            "future_change_error": 1.732952057810993,
+            "relative_vector_error": 1.113263733593539,
+            "pair_length_error": 0.7665940854673357
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.3779170152501989,
+            "fde": 0.29303431213505726,
+            "future_change_error": 0.20888211007356958,
+            "relative_vector_error": 0.33746970276337634,
+            "pair_length_error": 0.2083906658035627
+          }
+        ]
+      }
+    },
+    {
+      "condition": "self_shared_true_neighbors",
+      "reader": "mlp_128_128",
+      "seed": 2,
+      "parameter_count": 122413,
+      "history": [
+        {
+          "epoch": -1,
+          "training_mse": null,
+          "validation_ade": 3.3239701273948787
+        },
+        {
+          "epoch": 0,
+          "training_mse": 10.160157580124704,
+          "validation_ade": 3.799447022339783
+        },
+        {
+          "epoch": 1,
+          "training_mse": 7.725263796354595,
+          "validation_ade": 4.127878278632497
+        },
+        {
+          "epoch": 2,
+          "training_mse": 6.09788673802426,
+          "validation_ade": 4.40272246509414
+        },
+        {
+          "epoch": 3,
+          "training_mse": 4.775469252937718,
+          "validation_ade": 4.7746866644177555
+        },
+        {
+          "epoch": 4,
+          "training_mse": 3.6301801957582174,
+          "validation_ade": 5.326429668694272
+        },
+        {
+          "epoch": 5,
+          "training_mse": 2.725427828337017,
+          "validation_ade": 4.921693054457604
+        },
+        {
+          "epoch": 6,
+          "training_mse": 1.988423504327473,
+          "validation_ade": 5.347084913448627
+        },
+        {
+          "epoch": 7,
+          "training_mse": 1.5007094709496749,
+          "validation_ade": 5.554231716559125
+        },
+        {
+          "epoch": 8,
+          "training_mse": 1.1557839293228953,
+          "validation_ade": 5.732497145351092
+        },
+        {
+          "epoch": 9,
+          "training_mse": 0.8964940654604059,
+          "validation_ade": 6.0637289198445
+        },
+        {
+          "epoch": 10,
+          "training_mse": 0.75770734485827,
+          "validation_ade": 5.824294580955278
+        },
+        {
+          "epoch": 11,
+          "training_mse": 0.6170187278797752,
+          "validation_ade": 5.971775148005628
+        },
+        {
+          "epoch": 12,
+          "training_mse": 0.5479151386963693,
+          "validation_ade": 5.861603945525305
+        },
+        {
+          "epoch": 13,
+          "training_mse": 0.48542079800053645,
+          "validation_ade": 5.880133489555047
+        },
+        {
+          "epoch": 14,
+          "training_mse": 0.45251860430366114,
+          "validation_ade": 5.983655512201354
+        },
+        {
+          "epoch": 15,
+          "training_mse": 0.3988962581283168,
+          "validation_ade": 6.022308665995935
+        },
+        {
+          "epoch": 16,
+          "training_mse": 0.38492889467038605,
+          "validation_ade": 5.870117898851303
+        },
+        {
+          "epoch": 17,
+          "training_mse": 0.3745761403911992,
+          "validation_ade": 6.084432282228493
+        },
+        {
+          "epoch": 18,
+          "training_mse": 0.35056168468374954,
+          "validation_ade": 5.923156574879277
+        },
+        {
+          "epoch": 19,
+          "training_mse": 0.33429629238028274,
+          "validation_ade": 6.133089790244788
+        }
+      ],
+      "selected_epoch": -1,
+      "test": {
+        "scene_macro": {
+          "ade": 3.548819891080103,
+          "fde": 3.9913797152229775,
+          "relative_vector_error": 1.1775111248961339,
+          "pair_length_error": 0.6283031194055653,
+          "future_change_error": 1.8178265581453417
+        },
+        "scenes": [
+          {
+            "scene": "scene_428",
+            "ade": 4.71894867914809,
+            "fde": 6.433877516849364,
+            "future_change_error": 2.2948341172378743,
+            "relative_vector_error": 0.5940414609743908,
+            "pair_length_error": 0.2847154166221918
+          },
+          {
+            "scene": "scene_5398",
+            "ade": 20.623642961266224,
+            "fde": 16.399673970033625,
+            "future_change_error": 6.215795344372242,
+            "relative_vector_error": 3.4587807767598004,
+            "pair_length_error": 2.382902150872401
+          },
+          {
+            "scene": "scene_706",
+            "ade": 7.360539005680153,
+            "fde": 6.376993493493024,
+            "future_change_error": 2.9986723555930412,
+            "relative_vector_error": 2.9783476153012947,
+            "pair_length_error": 2.259930615907637
+          },
+          {
+            "scene": "scene_5748",
+            "ade": 3.0356454210306008,
+            "fde": 3.5419521252740664,
+            "future_change_error": 1.43049704342896,
+            "relative_vector_error": 3.3182319652299452,
+            "pair_length_error": 1.9783882463906215
+          },
+          {
+            "scene": "scene_2580",
+            "ade": 3.9676743308307536,
+            "fde": 4.9343674221769005,
+            "future_change_error": 1.715632484383425,
+            "relative_vector_error": 1.158597785681142,
+            "pair_length_error": 0.7833642580452641
+          },
+          {
+            "scene": "scene_1301",
+            "ade": 5.9402177431898116,
+            "fde": 6.076477728273942,
+            "future_change_error": 3.0946209823641344,
+            "relative_vector_error": 1.7667412739307353,
+            "pair_length_error": 0.6225449268093255
+          },
+          {
+            "scene": "scene_1215",
+            "ade": 0.7537893840039838,
+            "fde": 0.9537925096994361,
+            "future_change_error": 0.3830271051130895,
+            "relative_vector_error": 0.895647841364259,
+            "pair_length_error": 0.5542798031134444
+          },
+          {
+            "scene": "scene_1776",
+            "ade": 3.6345243383094243,
+            "fde": 5.663123627653162,
+            "future_change_error": 2.656154871154212,
+            "relative_vector_error": 1.6481810147163074,
+            "pair_length_error": 0.6143206099824473
+          },
+          {
+            "scene": "scene_1450",
+            "ade": 3.781610912809503,
+            "fde": 6.835087970930878,
+            "future_change_error": 2.909804568432112,
+            "relative_vector_error": 1.1245797446035306,
+            "pair_length_error": 0.48523589763211317
+          },
+          {
+            "scene": "scene_5099",
+            "ade": 2.6600805176848272,
+            "fde": 3.3228412734167074,
+            "future_change_error": 1.2542256744215765,
+            "relative_vector_error": 0.6496621515699491,
+            "pair_length_error": 0.17715456116140899
+          },
+          {
+            "scene": "scene_3350",
+            "ade": 2.4294642673111504,
+            "fde": 3.6003239765783825,
+            "future_change_error": 2.137644401679727,
+            "relative_vector_error": 0.8426290436013943,
+            "pair_length_error": 0.36213595887003885
+          },
+          {
+            "scene": "scene_1691",
+            "ade": 2.3682659389951484,
+            "fde": 2.490688711769896,
+            "future_change_error": 0.40792385911531276,
+            "relative_vector_error": 0.9966310299386917,
+            "pair_length_error": 0.8462232211472243
+          },
+          {
+            "scene": "scene_3917",
+            "ade": 2.1729496098934367,
+            "fde": 1.7150045098654216,
+            "future_change_error": 1.4202562852055096,
+            "relative_vector_error": 1.4792008419902896,
+            "pair_length_error": 0.8064650773628516
+          },
+          {
+            "scene": "scene_1056",
+            "ade": 2.2702090520186693,
+            "fde": 3.2316090875820764,
+            "future_change_error": 1.552119483473222,
+            "relative_vector_error": 0.7213860140536269,
+            "pair_length_error": 0.3535818109680529
+          },
+          {
+            "scene": "scene_1895",
+            "ade": 1.646464511091242,
+            "fde": 2.3688851533796518,
+            "future_change_error": 1.4696244706831727,
+            "relative_vector_error": 0.8412721448235834,
+            "pair_length_error": 0.3953757670876369
+          },
+          {
+            "scene": "scene_5419",
+            "ade": 7.758017206642589,
+            "fde": 10.625562485175141,
+            "future_change_error": 3.296060617077563,
+            "relative_vector_error": 0.8627165322901554,
+            "pair_length_error": 0.5528936053121056
+          },
+          {
+            "scene": "scene_1441",
+            "ade": 0.2395596550932948,
+            "fde": 0.2647814833646332,
+            "future_change_error": 0.17145968336470613,
+            "relative_vector_error": 0.3059533202760852,
+            "pair_length_error": 0.13308297163045468
+          },
+          {
+            "scene": "scene_2064",
+            "ade": 2.7641065315108073,
+            "fde": 2.870327026993157,
+            "future_change_error": 0.6454696546688045,
+            "relative_vector_error": 0.9345290541964074,
+            "pair_length_error": 0.6220682133515208
+          },
+          {
+            "scene": "scene_2549",
+            "ade": 0.6967426478525857,
+            "fde": 0.6983708741394049,
+            "future_change_error": 0.3497806089050254,
+            "relative_vector_error": 0.7186252981272051,
+            "pair_length_error": 0.5036023606086676
+          },
+          {
+            "scene": "scene_4417",
+            "ade": 4.106572976322246,
+            "fde": 5.094224383534873,
+            "future_change_error": 4.584068392243946,
+            "relative_vector_error": 1.339464867498282,
+            "pair_length_error": 0.6247088727946183
+          },
+          {
+            "scene": "scene_335",
+            "ade": 0.4618058337673175,
+            "fde": 0.46954512309965385,
+            "future_change_error": 0.26658189524818976,
+            "relative_vector_error": 0.5167899937851256,
+            "pair_length_error": 0.19463011745417985
+          },
+          {
+            "scene": "scene_2836",
+            "ade": 2.325254900046118,
+            "fde": 2.8866631114399803,
+            "future_change_error": 2.0887493054220543,
+            "relative_vector_error": 1.1592848586198508,
+            "pair_length_error": 0.5122351835647927
+          },
+          {
+            "scene": "scene_3703",
+            "ade": 5.310290284597978,
+            "fde": 6.4408236254158595,
+            "future_change_error": 2.279753265839344,
+            "relative_vector_error": 0.7080324772970137,
+            "pair_length_error": 0.2599307706302551
+          },
+          {
+            "scene": "scene_5545",
+            "ade": 2.110572258362767,
+            "fde": 1.4503485847781667,
+            "future_change_error": 1.0867503364810407,
+            "relative_vector_error": 1.3033061657294103,
+            "pair_length_error": 0.5621250728545364
+          },
+          {
+            "scene": "scene_2509",
+            "ade": 2.71991897838508,
+            "fde": 2.7349680915565577,
+            "future_change_error": 0.9938930033718675,
+            "relative_vector_error": 0.6028160013355727,
+            "pair_length_error": 0.3629865110195459
+          },
+          {
+            "scene": "scene_2759",
+            "ade": 0.650189289413936,
+            "fde": 0.5998758198195282,
+            "future_change_error": 0.3992421919320065,
+            "relative_vector_error": 0.4310154801166492,
+            "pair_length_error": 0.20809094157238425
+          },
+          {
+            "scene": "scene_2515",
+            "ade": 0.4072778314468764,
+            "fde": 0.5374205903460033,
+            "future_change_error": 0.27333666161978704,
+            "relative_vector_error": 0.26887629921012607,
+            "pair_length_error": 0.13103726081773673
+          },
+          {
+            "scene": "scene_4704",
+            "ade": 1.6152334824715502,
+            "fde": 2.180171408551737,
+            "future_change_error": 1.464692912388832,
+            "relative_vector_error": 0.9293033819408373,
+            "pair_length_error": 0.2761188857476864
+          },
+          {
+            "scene": "scene_2624",
+            "ade": 3.805328005229777,
+            "fde": 4.694408779487135,
+            "future_change_error": 2.7853280950454775,
+            "relative_vector_error": 1.653708982183943,
+            "pair_length_error": 0.9232273405032644
+          },
+          {
+            "scene": "scene_3207",
+            "ade": 3.380988757468943,
+            "fde": 3.8937987486277574,
+            "future_change_error": 1.437561755321178,
+            "relative_vector_error": 0.7250208712264048,
+            "pair_length_error": 0.501034351764943
+          },
+          {
+            "scene": "scene_351",
+            "ade": 5.300959411415827,
+            "fde": 5.5132350844137035,
+            "future_change_error": 1.7336657259544186,
+            "relative_vector_error": 1.7781196413629143,
+            "pair_length_error": 0.597677057861269
+          },
+          {
+            "scene": "scene_4593",
+            "ade": 1.458816360402955,
+            "fde": 1.5688057134517026,
+            "future_change_error": 0.9809767772104173,
+            "relative_vector_error": 1.173059792689169,
+            "pair_length_error": 0.49529963190827425
+          },
+          {
+            "scene": "scene_1697",
+            "ade": 4.007968804724122,
+            "fde": 4.80520595216959,
+            "future_change_error": 2.2148904454161644,
+            "relative_vector_error": 1.3573975012799084,
+            "pair_length_error": 0.863263780547244
+          },
+          {
+            "scene": "scene_3471",
+            "ade": 5.46938027483328,
+            "fde": 6.921118719210125,
+            "future_change_error": 3.2380953727438726,
+            "relative_vector_error": 1.1877189213614108,
+            "pair_length_error": 0.40729678902908
+          },
+          {
+            "scene": "scene_5850",
+            "ade": 3.982399047896667,
+            "fde": 4.693563026588825,
+            "future_change_error": 2.290953152675596,
+            "relative_vector_error": 1.4401617035285375,
+            "pair_length_error": 0.5353592575008514
+          },
+          {
+            "scene": "scene_3540",
+            "ade": 4.574332133539905,
+            "fde": 5.241354487943215,
+            "future_change_error": 2.8467636023113996,
+            "relative_vector_error": 1.2499848781557739,
+            "pair_length_error": 0.5626625818755117
+          },
+          {
+            "scene": "scene_1773",
+            "ade": 4.624305049545739,
+            "fde": 4.379616027414329,
+            "future_change_error": 2.573461162327794,
+            "relative_vector_error": 1.5487210325988996,
+            "pair_length_error": 0.6362524572288065
+          },
+          {
+            "scene": "scene_1539",
+            "ade": 2.346337012107964,
+            "fde": 2.450408946805233,
+            "future_change_error": 0.8288604937020022,
+            "relative_vector_error": 0.9811738001398201,
+            "pair_length_error": 0.7849376874013225
+          },
+          {
+            "scene": "scene_179",
+            "ade": 4.094495221612587,
+            "fde": 4.402857125481223,
+            "future_change_error": 1.732952057810993,
+            "relative_vector_error": 1.113263733593539,
+            "pair_length_error": 0.7665940854673357
+          },
+          {
+            "scene": "scene_5042",
+            "ade": 0.3779170152501989,
+            "fde": 0.29303431213505726,
+            "future_change_error": 0.20888211007356958,
+            "relative_vector_error": 0.33746970276337634,
+            "pair_length_error": 0.2083906658035627
+          }
+        ]
+      }
+    }
+  ],
+  "training_data": "simulator GT",
+  "frozen_model_modified": false,
+  "teacher_used": false,
+  "conditions": [
+    "self_shared_no_neighbors",
+    "self_shared_true_neighbors"
+  ],
+  "test_reused_for_tuning": false,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "coordinate_protocol": "user-approved observed-frame0 similarity; fixed for future labels and all groups",
+  "GT_assisted_label_evaluation_calibration": true
+}

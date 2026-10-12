@@ -1,0 +1,31 @@
+{
+  "protocol": "query-only 12/16/22 smoke",
+  "stages": [
+    {
+      "stage": "smoke12",
+      "returncode": 0,
+      "log": "/root/autodl-tmp/projects/motionforesight/outputs/query_only_protocol_2026-09-24/9069bd26-0139-4e88-9957-9f9489b35a91/smoke12.log",
+      "output_exists": true,
+      "shape": [
+        12,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "shape_ok": true
+    },
+    {
+      "stage": "smoke16",
+      "returncode": 0,
+      "log": "/root/autodl-tmp/projects/motionforesight/outputs/query_only_protocol_2026-09-24/9069bd26-0139-4e88-9957-9f9489b35a91/smoke16.log",
+      "output_exists": true,
+      "shape": [
+        16,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "shape_ok": true
+    }
+  ]
+}

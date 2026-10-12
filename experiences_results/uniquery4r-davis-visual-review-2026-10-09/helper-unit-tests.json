@@ -1,0 +1,25 @@
+{
+  "helper_unit_tests_passed": true,
+  "base_class": "explicit object stub, not model",
+  "pair_selection_7_and_22": true,
+  "model_loaded": false,
+  "model_forward_called": false,
+  "videos": [
+    {
+      "video": "car-turn",
+      "pixel_roundtrip_max_error": 5.684341886080802e-14
+    },
+    {
+      "video": "drift-turn",
+      "pixel_roundtrip_max_error": 5.684341886080802e-14
+    },
+    {
+      "video": "boat",
+      "pixel_roundtrip_max_error": 5.684341886080802e-14
+    },
+    {
+      "video": "soccerball",
+      "pixel_roundtrip_max_error": 5.684341886080802e-14
+    }
+  ]
+}

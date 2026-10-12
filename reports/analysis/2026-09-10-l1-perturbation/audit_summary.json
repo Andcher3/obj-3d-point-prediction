@@ -1,0 +1,359 @@
+{
+  "status": "ANALYZED_NOT_MODEL_RERUN",
+  "source_files": 115,
+  "source_files_unchanged": true,
+  "samples": {
+    "flower": {
+      "reported_aggregate": {
+        "zero_noise_deterministic": true,
+        "runs_total": 11,
+        "nonzero_runs": 10,
+        "valid_format_runs": 11,
+        "nonzero_latent_changed_runs": 10,
+        "nonzero_raw_changed_runs": 0,
+        "nonzero_answer_changed_runs": 0,
+        "unique_nonzero_answers": 1,
+        "all_runs_finite": true
+      },
+      "recomputed": {
+        "runs": 11,
+        "baseline_count": 1,
+        "nonzero_runs": 10,
+        "nonzero_raw_changed": 0,
+        "nonzero_complete_answer_changed": 0,
+        "nonzero_incomplete_answers": 0,
+        "unique_complete_answers_all_runs": 1,
+        "unique_raw_strings_all_runs": 1,
+        "all_finite": true,
+        "video_hash_matches_metadata": true
+      },
+      "unique_outputs": [
+        {
+          "runs": [
+            "baseline_0",
+            "sigma_0.005_seed_11",
+            "sigma_0.005_seed_22",
+            "sigma_0.01_seed_11",
+            "sigma_0.01_seed_22",
+            "sigma_0.03_seed_11",
+            "sigma_0.03_seed_22",
+            "sigma_0.1_seed_11",
+            "sigma_0.1_seed_22",
+            "sigma_0.2_seed_11",
+            "sigma_0.2_seed_22"
+          ],
+          "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>"
+        }
+      ]
+    },
+    "bunny": {
+      "reported_aggregate": {
+        "zero_noise_deterministic": true,
+        "runs_total": 11,
+        "nonzero_runs": 10,
+        "valid_format_runs": 10,
+        "nonzero_latent_changed_runs": 10,
+        "nonzero_raw_changed_runs": 4,
+        "nonzero_answer_changed_runs": 4,
+        "unique_nonzero_answers": 5,
+        "all_runs_finite": true
+      },
+      "recomputed": {
+        "runs": 11,
+        "baseline_count": 1,
+        "nonzero_runs": 10,
+        "nonzero_raw_changed": 4,
+        "nonzero_complete_answer_changed": 3,
+        "nonzero_incomplete_answers": 1,
+        "unique_complete_answers_all_runs": 4,
+        "unique_raw_strings_all_runs": 5,
+        "all_finite": true,
+        "video_hash_matches_metadata": true
+      },
+      "unique_outputs": [
+        {
+          "runs": [
+            "baseline_0",
+            "sigma_0.01_seed_22",
+            "sigma_0.03_seed_11",
+            "sigma_0.03_seed_22",
+            "sigma_0.1_seed_22",
+            "sigma_0.2_seed_11",
+            "sigma_0.2_seed_22"
+          ],
+          "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason>\n<answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer><|im_end|>"
+        },
+        {
+          "runs": [
+            "sigma_0.005_seed_11"
+          ],
+          "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the three rodents standing together, ready to interact with the rabbit (0:08-0:09).</reason>\n<answer>The three rodents will likely interact with the big rabbit, setting up a potential conflict or collaboration in the story.</answer><|im_end|>"
+        },
+        {
+          "runs": [
+            "sigma_0.005_seed_22"
+          ],
+          "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the large rabbit looking surprised, with the text 'THREE RODENTS' still visible, implying an interaction or confrontation between the rabbit and the rodents (0:08-0:09).</reason>\n<answer>The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or significant event in the story"
+        },
+        {
+          "runs": [
+            "sigma_0.01_seed_11"
+          ],
+          "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the large rabbit looking surprised, with the text 'THREE RODENTS' still visible, implying an interaction or confrontation between the rabbit and the rodents (0:08-0:09).</reason>\n<answer>The large rabbit will likely encounter or interact with the three rodents, leading to a potential confrontation or surprise.</answer><|im_end|>"
+        },
+        {
+          "runs": [
+            "sigma_0.1_seed_11"
+          ],
+          "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears, indicating the introduction of a main character (0:02-0:03).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>The next frame shows the text 'THREE RODENTS' (0:04-0:05), suggesting the presence of additional characters. The final frame reveals a large rabbit standing in a grassy field, looking surprised (0:06-0:07). This sequence of events suggests that the large rabbit will encounter the three rodents, leading to a potential interaction or conflict.</reason>\n<answer>The large rabbit will encounter the three rodents, leading to a potential interaction or conflict.</answer><|im_end|>"
+        }
+      ]
+    },
+    "sintel": {
+      "reported_aggregate": {
+        "zero_noise_deterministic": true,
+        "runs_total": 11,
+        "nonzero_runs": 10,
+        "valid_format_runs": 11,
+        "nonzero_latent_changed_runs": 10,
+        "nonzero_raw_changed_runs": 3,
+        "nonzero_answer_changed_runs": 3,
+        "unique_nonzero_answers": 3,
+        "all_runs_finite": true
+      },
+      "recomputed": {
+        "runs": 11,
+        "baseline_count": 1,
+        "nonzero_runs": 10,
+        "nonzero_raw_changed": 3,
+        "nonzero_complete_answer_changed": 3,
+        "nonzero_incomplete_answers": 0,
+        "unique_complete_answers_all_runs": 3,
+        "unique_raw_strings_all_runs": 3,
+        "all_finite": true,
+        "video_hash_matches_metadata": true
+      },
+      "unique_outputs": [
+        {
+          "runs": [
+            "baseline_0",
+            "sigma_0.005_seed_11",
+            "sigma_0.005_seed_22",
+            "sigma_0.01_seed_11",
+            "sigma_0.03_seed_11",
+            "sigma_0.1_seed_11",
+            "sigma_0.1_seed_22",
+            "sigma_0.2_seed_11"
+          ],
+          "raw": "<reason>The video begins with a wide shot of a snowy mountain landscape, setting a serene and isolated scene. As the camera pans, it reveals a character standing on a snowy ledge, holding a weapon, suggesting a sense of readiness or anticipation. This character is then shown in a close-up, emphasizing their focused expression and the weapon they are holding, indicating a potential confrontation or significant event.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>The scene then transitions to a dimly lit room where a woman with red hair is seen, her expression serious and contemplative. This shift in setting and character suggests a change in the narrative focus, possibly indicating a new phase or a different perspective on the unfolding events. The woman's serious expression and the dim lighting create a sense of tension or impending action.</reason>\n<answer>The next event in the video is likely to involve the woman with red hair taking some significant action or decision, possibly related to the character on the snowy ledge or the broader narrative context.</answer><|im_end|>"
+        },
+        {
+          "runs": [
+            "sigma_0.01_seed_22",
+            "sigma_0.03_seed_22"
+          ],
+          "raw": "<reason>The video begins with a wide shot of a snowy mountain landscape, setting a serene and isolated scene. As the camera pans, it reveals a character standing on a snowy ledge, holding a weapon, suggesting a sense of readiness or anticipation. This character is then shown in a close-up, emphasizing their focused expression and the weapon they are holding, indicating a potential confrontation or significant event.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>The scene then transitions to a dimly lit room where a woman with red hair is seen, her expression serious and contemplative. This shift in setting and character suggests a change in the narrative focus, possibly indicating a new phase or a different perspective on the unfolding events. The woman's serious expression and the dim lighting create a sense of tension and mystery, hinting at a significant development or revelation that is about to occur.</reason>\n<answer>The woman in the dimly lit room is likely to reveal important information or face a significant challenge related to the events unfolding in the snowy mountain landscape.</answer><|im_end|>"
+        },
+        {
+          "runs": [
+            "sigma_0.2_seed_22"
+          ],
+          "raw": "<reason>The video begins with a wide shot of a snowy mountain landscape, setting a serene and isolated scene. As the camera pans, it reveals a character standing on a snowy ledge, holding a weapon, suggesting a sense of readiness or anticipation. This character is then shown in a close-up, emphasizing their focused expression and the weapon they are holding, indicating a potential confrontation or significant event.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>The scene then transitions to a dimly lit room where a woman with red hair is seen, her expression serious and contemplative. This shift in setting and character suggests a change in the narrative focus, possibly indicating a new phase or a different perspective on the unfolding events. The woman's serious expression and the dim lighting create a sense of tension and mystery, hinting at a significant development or revelation that is about to occur.</reason>\n<answer>The woman with red hair is likely to play a crucial role in the unfolding events, possibly revealing important information or initiating a significant action.</answer><|im_end|>"
+        }
+      ]
+    }
+  },
+  "consistency_issues": [],
+  "videos": {
+    "bunny_observation.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 852,
+          "height": 480,
+          "r_frame_rate": "25/1",
+          "duration": "15.000000",
+          "nb_frames": "375"
+        }
+      ],
+      "format": {
+        "duration": "15.000000"
+      }
+    },
+    "bunny_trailer.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 853,
+          "height": 480,
+          "r_frame_rate": "25/1",
+          "duration": "32.440000",
+          "nb_frames": "812"
+        }
+      ],
+      "format": {
+        "duration": "33.002667"
+      }
+    },
+    "flower.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 960,
+          "height": 540,
+          "r_frame_rate": "30000/1001",
+          "duration": "5.005000",
+          "nb_frames": "150"
+        }
+      ],
+      "format": {
+        "duration": "5.055000"
+      }
+    },
+    "flower_observation.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 960,
+          "height": 540,
+          "r_frame_rate": "30000/1001",
+          "duration": "2.002000",
+          "nb_frames": "60"
+        }
+      ],
+      "format": {
+        "duration": "2.002000"
+      }
+    },
+    "sintel_observation.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 854,
+          "height": 480,
+          "r_frame_rate": "24/1",
+          "duration": "25.000000",
+          "nb_frames": "600"
+        }
+      ],
+      "format": {
+        "duration": "25.002667"
+      }
+    },
+    "sintel_trailer.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 854,
+          "height": 480,
+          "r_frame_rate": "24/1",
+          "duration": "52.208333",
+          "nb_frames": "1253"
+        }
+      ],
+      "format": {
+        "duration": "52.208333"
+      }
+    }
+  },
+  "review_sheets": [
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\reports\\analysis\\2026-09-10-l1-perturbation\\flower_observation.jpg",
+      "source": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation\\public-action-samples\\flower_observation.mp4",
+      "timestamps_seconds": [
+        0.0,
+        0.2745714285714285,
+        0.549142857142857,
+        0.8237142857142856,
+        1.098285714285714,
+        1.3728571428571426,
+        1.6474285714285712,
+        1.9219999999999997
+      ]
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\reports\\analysis\\2026-09-10-l1-perturbation\\flower_recorded_future.jpg",
+      "source": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation\\public-action-samples\\flower.mp4",
+      "timestamps_seconds": [
+        2.002,
+        2.4195714285714285,
+        2.837142857142857,
+        3.2547142857142854,
+        3.672285714285714,
+        4.089857142857143,
+        4.507428571428571,
+        4.925
+      ]
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\reports\\analysis\\2026-09-10-l1-perturbation\\bunny_observation.jpg",
+      "source": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation\\public-action-samples\\bunny_observation.mp4",
+      "timestamps_seconds": [
+        0.0,
+        2.1314285714285712,
+        4.2628571428571425,
+        6.394285714285713,
+        8.525714285714285,
+        10.657142857142857,
+        12.788571428571426,
+        14.92
+      ]
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\reports\\analysis\\2026-09-10-l1-perturbation\\bunny_recorded_future.jpg",
+      "source": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation\\public-action-samples\\bunny_trailer.mp4",
+      "timestamps_seconds": [
+        15.0,
+        16.142857142857142,
+        17.285714285714285,
+        18.428571428571427,
+        19.57142857142857,
+        20.714285714285715,
+        21.857142857142858,
+        23.0
+      ]
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\reports\\analysis\\2026-09-10-l1-perturbation\\sintel_observation.jpg",
+      "source": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation\\public-action-samples\\sintel_observation.mp4",
+      "timestamps_seconds": [
+        0.0,
+        3.56,
+        7.12,
+        10.68,
+        14.24,
+        17.8,
+        21.36,
+        24.92
+      ]
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\reports\\analysis\\2026-09-10-l1-perturbation\\sintel_recorded_future.jpg",
+      "source": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation\\public-action-samples\\sintel_trailer.mp4",
+      "timestamps_seconds": [
+        25.0,
+        26.142857142857142,
+        27.285714285714285,
+        28.428571428571427,
+        29.57142857142857,
+        30.714285714285715,
+        31.857142857142858,
+        33.0
+      ]
+    }
+  ],
+  "limits": [
+    "One baseline per video; repeated zero-noise determinism not established.",
+    "29 recorded latent SHA256 values match float32 round-trips of saved float16 arrays; 4 do not. Original pre-save precision is unavailable.",
+    "Float16 NPZ distances are recomputed from saved arrays; original logs may use different precision.",
+    "Review contact sheets are not verified exact qwen_vl_utils selected frames.",
+    "No experiment source or model-forward logs are included in supplied bundle.",
+    "Text event judgments require manual review; no statistical population inference."
+  ]
+}

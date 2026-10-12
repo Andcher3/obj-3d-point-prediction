@@ -1,0 +1,22 @@
+{
+  "mode": "sampler_only",
+  "results": {
+    "16": {
+      "available": true,
+      "selected_count": 16
+    },
+    "48": {
+      "available": true,
+      "selected_count": 48
+    },
+    "64": {
+      "available": true,
+      "selected_count": 64
+    }
+  },
+  "processor": {
+    "mode": "processor",
+    "status": "not_run",
+    "reason": "checkpoint_and_repo_not_provided"
+  }
+}

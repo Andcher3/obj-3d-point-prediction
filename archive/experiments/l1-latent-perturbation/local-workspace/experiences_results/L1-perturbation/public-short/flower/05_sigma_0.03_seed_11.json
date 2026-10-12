@@ -1,0 +1,59 @@
+{
+  "run_index": 5,
+  "name": "sigma_0.03_seed_11",
+  "sigma": 0.03,
+  "seed": 11,
+  "elapsed_seconds": 42.33419519662857,
+  "peak_gpu_memory_gib": 17.068215370178223,
+  "generated_tokens": 136,
+  "latent_vector_count": 4,
+  "latent_dim": 4096,
+  "latent_finite": true,
+  "latent_sha256": "dfe79d1a11d51ff61934ae37b10596aa008dd11565f9685170e0b4843822e9da",
+  "raw_sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+  "raw": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason>\n<answer>The flower will fully open, revealing its bright red petals and yellow center.</answer><|im_end|>",
+  "visible": "<reason>The video begins with a close-up of a flower bud, which is tightly closed and surrounded by green leaves with purple edges. As the video progresses, the flower bud starts to open, revealing its vibrant red petals. This indicates that the flower is in the process of blooming.</reason> <reason>By the end of the video, the flower fully opens, displaying its bright red petals and yellow center. This sequence shows the natural process of a flower blooming, transitioning from a closed bud to a fully open flower.</reason> <answer>The flower will fully open, revealing its bright red petals and yellow center.</answer>",
+  "answer": "The flower will fully open, revealing its bright red petals and yellow center.",
+  "has_answer_tag": true,
+  "has_latent_tags": true,
+  "noise_stats": {
+    "noise_std": 0.03,
+    "noise_seed": 11,
+    "scale_mode": "rms",
+    "perturbed_step_count": 4,
+    "steps": [
+      {
+        "active_vectors": 1,
+        "before_rms": 0.1664603352546692,
+        "noise_rms": 0.0050160582177340984,
+        "after_rms": 0.1664808988571167,
+        "relative_noise_rms": 0.030133655294775963,
+        "generation_step": 1643
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.17163704335689545,
+        "noise_rms": 0.005067868623882532,
+        "after_rms": 0.17169012129306793,
+        "relative_noise_rms": 0.029526660218834877,
+        "generation_step": 1644
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.17086735367774963,
+        "noise_rms": 0.005251547787338495,
+        "after_rms": 0.17101997137069702,
+        "relative_noise_rms": 0.030734647065401077,
+        "generation_step": 1645
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.22835783660411835,
+        "noise_rms": 0.006923287641257048,
+        "after_rms": 0.22843319177627563,
+        "relative_noise_rms": 0.03031771443784237,
+        "generation_step": 1646
+      }
+    ]
+  }
+}

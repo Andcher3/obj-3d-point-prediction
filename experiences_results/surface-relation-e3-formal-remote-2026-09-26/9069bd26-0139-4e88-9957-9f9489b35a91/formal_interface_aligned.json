@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "scope": "formal-video observed-only E3 interface preflight; Relation Head not trained",
+  "video_id": "9069bd26-0139-4e88-9957-9f9489b35a91",
+  "checkpoint_config": {
+    "checkpoint_path": "/weka/scratch/hbharad2/users/yjangir1/future_flow_homaga/future-3d-scene-flow/models_pretrained/checkpoints/trackcraft3r/model.safetensors",
+    "model_id": "Wan-AI/Wan2.1-T2V-1.3B",
+    "lora_rank": 1024,
+    "lora_target_modules": "q,k,v,o,ffn.0,ffn.2",
+    "height": 320,
+    "width": 576,
+    "obs_frames": 7,
+    "total_frames": 22,
+    "regression_timestep": -1,
+    "trainable": [
+      "mask",
+      "io",
+      "head"
+    ],
+    "lora_scope": "attn",
+    "lora_last_n": 0,
+    "predict_vis": true,
+    "fresh_lora_rank": 32,
+    "fresh_lora_alpha": 32,
+    "fresh_lora_scope": "attn"
+  },
+  "input": {
+    "observed_rgb_shape": [
+      1,
+      7,
+      3,
+      320,
+      576
+    ],
+    "observed_pointmap_shape": [
+      1,
+      7,
+      3,
+      320,
+      576
+    ],
+    "observed_frame_indices": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    "observed_timestamps_s": [
+      5.4210286000000005,
+      5.487695266666667,
+      5.554361933333333,
+      5.6210286,
+      5.687695266666667,
+      5.754361933333334,
+      5.8210286
+    ],
+    "observed_tensor_sha256": "a8e3388145c7fe951f0c6a10554338d59eac7ed0d9b29a01969d59fa83c1dd98",
+    "future_frame_tensor_supplied_to_motionforesight": false,
+    "trackcraft_identity_mapping_scope": "seven observed frames only"
+  },
+  "outputs": {
+    "p0_future_shape": [
+      15,
+      48,
+      3
+    ],
+    "h_output_latent_shape": [
+      15,
+      48,
+      16
+    ],
+    "h_last_dit_shape": [
+      15,
+      48,
+      1536
+    ],
+    "finite": true,
+    "cache_npz": "/root/autodl-tmp/projects/motionforesight/outputs/e3_formal/9069bd26-0139-4e88-9957-9f9489b35a91/p0_h_cache_aligned.npz"
+  },
+  "query_alignment": {
+    "count": 48,
+    "anchor": "first observed frame via observed-only TrackCraft3R",
+    "match_error_px_median": 0.40393295884132385,
+    "match_error_px_max": 4.70687198638916,
+    "permutation_sampling_max_abs_error": 0.0
+  },
+  "pseudo_gt_alignment": {
+    "method": "least-squares similarity estimated from shared t0 queries only",
+    "uses_future_points_for_alignment": false,
+    "scale": 0.8220149721447395,
+    "rotation_angle_deg": 101.49068668735848,
+    "translation_norm": 1.1546269655227661,
+    "raw_t0_error_median": 0.2630136013031006,
+    "raw_t0_error_max": 0.6260714530944824,
+    "aligned_t0_error_median": 0.2140284776687622,
+    "aligned_t0_error_max": 0.468143105506897,
+    "pseudo_gt_shape": [
+      9,
+      48,
+      3
+    ],
+    "valid_fraction": 1.0
+  },
+  "time_mapping": {
+    "model_future_slots": 15,
+    "prediction_timestamps_s": [
+      5.887695266666666,
+      5.954361933333334,
+      6.0210286,
+      6.087695266666667,
+      6.154361933333333,
+      6.2210286,
+      6.287695266666667,
+      6.354361933333333,
+      6.4210286,
+      6.487695266666667,
+      6.554361933333333,
+      6.6210286,
+      6.687695266666667,
+      6.754361933333334,
+      6.8210286
+    ],
+    "formal_future_slot_indices_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "formal_match_errors_s": [
+      0.029999600000000015,
+      0.029999600000000015,
+      0.029999600000000015,
+      0.029999600000000015,
+      0.029999600000000015,
+      0.029999600000000015,
+      0.029999600000000015,
+      0.029999600000000015,
+      0.029999600000000015
+    ],
+    "tolerance_s": 0.03333333333333333,
+    "unique_mapping": true,
+    "valid": true,
+    "basis": "consecutive stride-1 model slots on an explicitly resampled 15 fps input grid",
+    "remaining_limit": "checkpoint training-rate calibration on Ego4D is not established"
+  },
+  "coordinate_frame": "last_observed_camera",
+  "gpu_peak_allocated_bytes": 11198361088
+}

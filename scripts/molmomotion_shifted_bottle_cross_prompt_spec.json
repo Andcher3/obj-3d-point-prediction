@@ -1,0 +1,16 @@
+{
+  "samples": [
+    {
+      "id": "drink_bottle_start12_cross_prompt",
+      "source_video": "/root/autodl-tmp/projects/molmo-raw-test/test_video.mp4",
+      "source_fps": 30.0,
+      "camera_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_camera_start12_stride2.npz",
+      "dense_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_dense_start12_stride2.npz",
+      "query_json": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_queries_start12.json",
+      "prompts": [
+        {"name": "scissors_exact", "text": "Pick up the blue-handled scissors."},
+        {"name": "watering_exact", "text": "Carry the gray watering can forward while walking."}
+      ]
+    }
+  ]
+}

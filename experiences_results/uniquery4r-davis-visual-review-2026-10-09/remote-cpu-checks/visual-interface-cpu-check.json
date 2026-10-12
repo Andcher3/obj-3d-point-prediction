@@ -1,0 +1,48 @@
+{
+  "cpu_interface_checks_passed": true,
+  "model_forward_called": false,
+  "pair_selection_7_and_22": true,
+  "pixel_roundtrip_and_projection_unit_test": true,
+  "videos": [
+    {
+      "video": "car-turn",
+      "image_shape": [
+        22,
+        3,
+        280,
+        504
+      ],
+      "source_frame": 20
+    },
+    {
+      "video": "drift-turn",
+      "image_shape": [
+        22,
+        3,
+        280,
+        504
+      ],
+      "source_frame": 20
+    },
+    {
+      "video": "boat",
+      "image_shape": [
+        22,
+        3,
+        280,
+        504
+      ],
+      "source_frame": 20
+    },
+    {
+      "video": "soccerball",
+      "image_shape": [
+        22,
+        3,
+        280,
+        504
+      ],
+      "source_frame": 14
+    }
+  ]
+}

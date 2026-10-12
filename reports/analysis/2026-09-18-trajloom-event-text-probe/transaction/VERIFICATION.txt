@@ -1,0 +1,23 @@
+CHANGED_BRANCH=trajloom_event_text_probe
+CHANGED_FIELD=status: planned -> completed
+ORIGINAL_SHA256=bc05b8ddfca1de2abebf028fb727ac3951aff1957c6a3b466649ecc38189738a
+MODIFIED_SHA256=ff32152b83c8b012e1f691f93966621c6ef23b000c8a176d327fa129684ded9b
+
+BASELINE
+command: python -c 'import hashlib,json; s=json.dumps({"experiment":"trajloom_event_text_probe","status":"planned","decision":"pending"},sort_keys=True,separators=(",",":"))+"\n"; h=hashlib.sha256(s.encode()).hexdigest(); print("status=planned sha256={} result={}".format(h,"PASS" if h=="bc05b8ddfca1de2abebf028fb727ac3951aff1957c6a3b466649ecc38189738a" else "FAIL"))'
+input: {"decision":"pending","experiment":"trajloom_event_text_probe","status":"planned"}
+literal_output: status=planned sha256=bc05b8ddfca1de2abebf028fb727ac3951aff1957c6a3b466649ecc38189738a result=PASS
+exit_status: 0
+
+MODIFIED
+command: python -c 'import hashlib,json,pathlib; b=pathlib.Path("analysis/transaction/MODIFIED_FILE.json").read_bytes(); d=json.loads(b); h=hashlib.sha256(b).hexdigest(); ok=d["status"]=="completed" and h=="ff32152b83c8b012e1f691f93966621c6ef23b000c8a176d327fa129684ded9b"; print("status={} decision={} sha256={} result={}".format(d["status"],d["decision"],h,"PASS" if ok else "FAIL"))'
+input: analysis/transaction/MODIFIED_FILE.json
+literal_output: status=completed decision=retain_as_2d_baseline_not_stage2_backbone sha256=ff32152b83c8b012e1f691f93966621c6ef23b000c8a176d327fa129684ded9b result=PASS
+exit_status: 0
+
+ROLLBACK
+command: cp analysis/transaction/MODIFIED_FILE.json /tmp/trajloom_rollback_copy.json; analysis/transaction/ROLLBACK.sh /tmp/trajloom_rollback_copy.json; python -c 'import hashlib,json,pathlib; b=pathlib.Path("/tmp/trajloom_rollback_copy.json").read_bytes(); d=json.loads(b); h=hashlib.sha256(b).hexdigest(); ok=d["status"]=="planned" and h=="bc05b8ddfca1de2abebf028fb727ac3951aff1957c6a3b466649ecc38189738a"; print("status={} decision={} sha256={} restored_behavior=pending result={}".format(d["status"],d["decision"],h,"PASS" if ok else "FAIL"))'
+input: copy of analysis/transaction/MODIFIED_FILE.json
+literal_output: status=planned decision=pending sha256=bc05b8ddfca1de2abebf028fb727ac3951aff1957c6a3b466649ecc38189738a restored_behavior=pending result=PASS
+exit_status: 0
+restored_behavior: status=planned; decision=pending

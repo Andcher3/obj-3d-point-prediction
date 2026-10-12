@@ -1,0 +1,2761 @@
+{
+  "cpu_environment_pass": true,
+  "native_preprocessing_all_160_pass": true,
+  "models_imported_without_construction": [
+    "MotionForesight loader",
+    "DA3 API"
+  ],
+  "torch": "2.8.0+cu128",
+  "torch_cuda_build": "12.8",
+  "compiled_sm_120": true,
+  "compiled_architectures": [
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "versions": {
+    "torch": "2.8.0",
+    "torchvision": "0.23.0",
+    "numpy": "1.26.4",
+    "transformers": "4.51.3",
+    "peft": "0.15.2",
+    "safetensors": "0.8.0",
+    "depth-anything-3": "0.0.0"
+  },
+  "offline_asset_paths": {
+    "diffusion_pytorch_model*.safetensors": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/Wan-AI/Wan2.1-T2V-1.3B/diffusion_pytorch_model.safetensors",
+    "Wan2*_VAE.pth": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+    "models_t5_umt5-xxl-enc-bf16.pth": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/trackcraft3r/model.safetensors::embedded_text_encoder",
+    "google/*": "/root/autodl-tmp/cross-point-probe-2026-10-10/weights/Wan-AI/Wan2.1-T2V-1.3B/google/umt5-xxl"
+  },
+  "embedded_t5": {
+    "tensor_count": 242,
+    "bytes": 11361820672,
+    "dtypes": [
+      "BF16"
+    ],
+    "shapes": {
+      "blocks.0.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.0.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.0.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.0.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.0.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.0.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.0.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.0.norm1.weight": [
+        4096
+      ],
+      "blocks.0.norm2.weight": [
+        4096
+      ],
+      "blocks.0.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.1.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.1.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.1.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.1.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.1.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.1.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.1.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.1.norm1.weight": [
+        4096
+      ],
+      "blocks.1.norm2.weight": [
+        4096
+      ],
+      "blocks.1.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.10.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.10.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.10.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.10.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.10.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.10.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.10.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.10.norm1.weight": [
+        4096
+      ],
+      "blocks.10.norm2.weight": [
+        4096
+      ],
+      "blocks.10.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.11.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.11.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.11.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.11.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.11.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.11.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.11.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.11.norm1.weight": [
+        4096
+      ],
+      "blocks.11.norm2.weight": [
+        4096
+      ],
+      "blocks.11.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.12.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.12.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.12.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.12.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.12.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.12.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.12.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.12.norm1.weight": [
+        4096
+      ],
+      "blocks.12.norm2.weight": [
+        4096
+      ],
+      "blocks.12.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.13.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.13.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.13.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.13.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.13.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.13.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.13.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.13.norm1.weight": [
+        4096
+      ],
+      "blocks.13.norm2.weight": [
+        4096
+      ],
+      "blocks.13.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.14.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.14.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.14.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.14.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.14.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.14.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.14.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.14.norm1.weight": [
+        4096
+      ],
+      "blocks.14.norm2.weight": [
+        4096
+      ],
+      "blocks.14.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.15.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.15.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.15.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.15.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.15.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.15.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.15.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.15.norm1.weight": [
+        4096
+      ],
+      "blocks.15.norm2.weight": [
+        4096
+      ],
+      "blocks.15.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.16.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.16.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.16.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.16.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.16.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.16.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.16.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.16.norm1.weight": [
+        4096
+      ],
+      "blocks.16.norm2.weight": [
+        4096
+      ],
+      "blocks.16.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.17.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.17.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.17.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.17.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.17.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.17.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.17.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.17.norm1.weight": [
+        4096
+      ],
+      "blocks.17.norm2.weight": [
+        4096
+      ],
+      "blocks.17.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.18.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.18.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.18.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.18.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.18.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.18.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.18.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.18.norm1.weight": [
+        4096
+      ],
+      "blocks.18.norm2.weight": [
+        4096
+      ],
+      "blocks.18.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.19.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.19.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.19.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.19.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.19.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.19.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.19.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.19.norm1.weight": [
+        4096
+      ],
+      "blocks.19.norm2.weight": [
+        4096
+      ],
+      "blocks.19.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.2.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.2.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.2.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.2.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.2.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.2.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.2.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.2.norm1.weight": [
+        4096
+      ],
+      "blocks.2.norm2.weight": [
+        4096
+      ],
+      "blocks.2.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.20.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.20.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.20.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.20.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.20.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.20.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.20.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.20.norm1.weight": [
+        4096
+      ],
+      "blocks.20.norm2.weight": [
+        4096
+      ],
+      "blocks.20.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.21.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.21.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.21.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.21.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.21.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.21.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.21.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.21.norm1.weight": [
+        4096
+      ],
+      "blocks.21.norm2.weight": [
+        4096
+      ],
+      "blocks.21.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.22.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.22.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.22.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.22.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.22.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.22.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.22.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.22.norm1.weight": [
+        4096
+      ],
+      "blocks.22.norm2.weight": [
+        4096
+      ],
+      "blocks.22.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.23.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.23.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.23.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.23.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.23.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.23.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.23.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.23.norm1.weight": [
+        4096
+      ],
+      "blocks.23.norm2.weight": [
+        4096
+      ],
+      "blocks.23.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.3.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.3.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.3.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.3.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.3.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.3.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.3.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.3.norm1.weight": [
+        4096
+      ],
+      "blocks.3.norm2.weight": [
+        4096
+      ],
+      "blocks.3.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.4.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.4.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.4.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.4.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.4.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.4.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.4.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.4.norm1.weight": [
+        4096
+      ],
+      "blocks.4.norm2.weight": [
+        4096
+      ],
+      "blocks.4.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.5.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.5.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.5.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.5.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.5.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.5.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.5.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.5.norm1.weight": [
+        4096
+      ],
+      "blocks.5.norm2.weight": [
+        4096
+      ],
+      "blocks.5.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.6.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.6.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.6.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.6.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.6.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.6.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.6.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.6.norm1.weight": [
+        4096
+      ],
+      "blocks.6.norm2.weight": [
+        4096
+      ],
+      "blocks.6.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.7.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.7.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.7.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.7.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.7.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.7.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.7.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.7.norm1.weight": [
+        4096
+      ],
+      "blocks.7.norm2.weight": [
+        4096
+      ],
+      "blocks.7.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.8.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.8.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.8.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.8.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.8.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.8.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.8.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.8.norm1.weight": [
+        4096
+      ],
+      "blocks.8.norm2.weight": [
+        4096
+      ],
+      "blocks.8.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "blocks.9.attn.k.weight": [
+        4096,
+        4096
+      ],
+      "blocks.9.attn.o.weight": [
+        4096,
+        4096
+      ],
+      "blocks.9.attn.q.weight": [
+        4096,
+        4096
+      ],
+      "blocks.9.attn.v.weight": [
+        4096,
+        4096
+      ],
+      "blocks.9.ffn.fc1.weight": [
+        10240,
+        4096
+      ],
+      "blocks.9.ffn.fc2.weight": [
+        4096,
+        10240
+      ],
+      "blocks.9.ffn.gate.0.weight": [
+        10240,
+        4096
+      ],
+      "blocks.9.norm1.weight": [
+        4096
+      ],
+      "blocks.9.norm2.weight": [
+        4096
+      ],
+      "blocks.9.pos_embedding.embedding.weight": [
+        32,
+        64
+      ],
+      "norm.weight": [
+        4096
+      ],
+      "token_embedding.weight": [
+        256384,
+        4096
+      ]
+    }
+  },
+  "loading_guard_pass": true,
+  "native_geometry_synthetic_checks_pass": true,
+  "native_da3_inference_arguments": [
+    "self",
+    "image",
+    "extrinsics",
+    "intrinsics",
+    "align_to_input_ext_scale",
+    "infer_gs",
+    "use_ray_pose",
+    "ref_view_strategy",
+    "render_exts",
+    "render_ixts",
+    "render_hw",
+    "process_res",
+    "process_res_method",
+    "export_dir",
+    "export_format",
+    "export_feat_layers",
+    "conf_thresh_percentile",
+    "num_max_points",
+    "show_cameras",
+    "feat_vis_fps",
+    "export_kwargs"
+  ],
+  "scene_preprocessing": [
+    {
+      "scene": "scene_1680",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1456",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_4223",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_4093",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3017",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_2896",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_5242",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_4352",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2784",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_499",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_837",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3475",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1647",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4397",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_546",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3365",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4679",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_386",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5781",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_1494",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_816",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1822",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_266",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4483",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_4145",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5409",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2355",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_5355",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1636",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4947",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2420",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5795",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_497",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2238",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5163",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2527",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_4042",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2185",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_851",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_2920",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_684",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_230",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_718",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4592",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_307",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3790",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3076",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_444",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2951",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_485",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5120",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2985",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 3.552713678800501e-15
+    },
+    {
+      "scene": "scene_5381",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3918",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5530",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_354",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1591",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1716",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_4935",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_922",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4039",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_4955",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_4443",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2789",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2313",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_5390",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5642",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_247",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_243",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1284",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4106",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_2208",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_511",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_5934",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4696",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1577",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3124",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3114",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_2877",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_5245",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1941",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_2581",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_4399",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3714",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3653",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_39",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2047",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_1030",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 3.552713678800501e-15
+    },
+    {
+      "scene": "scene_4727",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_4272",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_2725",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_5794",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5998",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2153",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1711",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 3.552713678800501e-15
+    },
+    {
+      "scene": "scene_1545",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3824",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3608",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2347",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_1540",
+      "split": "train",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3101",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 3.552713678800501e-15
+    },
+    {
+      "scene": "scene_5746",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_542",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_3831",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1478",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2248",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4312",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_4181",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3930",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1346",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4523",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_636",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3280",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4555",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_895",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_1404",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_446",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_3967",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1668",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3934",
+      "split": "validation",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_428",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_5398",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_706",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_5748",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2580",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_1301",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_1215",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1776",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 3.552713678800501e-15
+    },
+    {
+      "scene": "scene_1450",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5099",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_3350",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_1691",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3917",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_1056",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_1895",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5419",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_1441",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_2064",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_2549",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4417",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_335",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2836",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3703",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5545",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2509",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2759",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_2515",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_4704",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_2624",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_3207",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_351",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_4593",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_1697",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3471",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_5850",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    },
+    {
+      "scene": "scene_3540",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_1773",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 7.105427357601002e-15
+    },
+    {
+      "scene": "scene_1539",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_179",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 1.4210854715202004e-14
+    },
+    {
+      "scene": "scene_5042",
+      "split": "test",
+      "observed_preprocess_shape": [
+        7,
+        3,
+        392,
+        392
+      ],
+      "query_mapping_roundtrip_max_px": 2.842170943040401e-14
+    }
+  ],
+  "model_loaded": false,
+  "forward_called": false,
+  "gpu_used": false,
+  "real_prediction_coordinate_scale_validated": false,
+  "limited_inference_dependencies": true,
+  "excluded_optional_features": [
+    "DA3 GUI",
+    "Open3D benchmarks",
+    "xformers acceleration",
+    "GS rendering"
+  ]
+}

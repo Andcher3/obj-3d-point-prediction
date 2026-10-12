@@ -1,0 +1,18 @@
+{
+  "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62",
+  "source_directory": "/root/autodl-tmp/uniquery4r-visual-review/source/UniQuery4R-95119742e61c64c27b09349035019c8cd7b41e62",
+  "source_zip_sha256": "26fbf07700564b832228f2f8ad7318867b6666e97ec35cbc755a7f12e8b105fc",
+  "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a",
+  "checkpoint_bytes": 6601806018,
+  "checkpoint_sha256": "cd71b27bbb0c7a22de36d1eacebea84d93196a4da6296c550b1ea27f3a1c5539",
+  "official_sha256": "cd71b27bbb0c7a22de36d1eacebea84d93196a4da6296c550b1ea27f3a1c5539",
+  "download_tool": "aria2c",
+  "academic_acceleration": true,
+  "checkpoint_endpoint": "hf-mirror.com",
+  "weight_download_routing": "user_authorized_local_download_then_verified_sftp_upload",
+  "remote_partial_backups": [
+    "/root/autodl-tmp/uniquery4r-visual-review/weights/uniquery4r.pth.partial-preserved-after-local-upload-20261009",
+    "/root/autodl-tmp/uniquery4r-visual-review/weights/uniquery4r.pth.aria2.partial-preserved-after-local-upload-20261009"
+  ],
+  "gpu_inference_started": false
+}

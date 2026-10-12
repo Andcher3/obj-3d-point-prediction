@@ -1,0 +1,281 @@
+{
+  "status": "QUALITY_GATE_FAIL_NO_TRAINING",
+  "protocol": "2026-09-27 joint relational decoder four-video DAVIS leave-one-video-out probe",
+  "date": "2026-09-28",
+  "video_ids": [
+    "car-turn",
+    "drift-turn",
+    "boat",
+    "soccerball"
+  ],
+  "quality_gate": "all four videos must pass; delegated continuation permits training only when at least 3 videos pass",
+  "pass_count": 0,
+  "fail_count": 4,
+  "training_started": false,
+  "training_block_reason": "0/4 videos passed the fixed identity, anchor, validity, registration, finite-output, and connected-graph gates",
+  "time_protocol": {
+    "observed_source_frames": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "offline_teacher_source_frames": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "evaluated_future_source_frames": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "preview_mp4_fps_used": false,
+    "basis": "consecutive DAVIS source frame indices"
+  },
+  "videos": {
+    "car-turn": {
+      "status": "FAIL",
+      "valid_query_count": 48,
+      "gates": {
+        "query_count_48": true,
+        "valid_queries_at_least_44": true,
+        "observed_mapping_p90_le_5pct": true,
+        "observed_mapping_max_le_10pct": true,
+        "teacher_anchor_p90_le_5pct": false,
+        "teacher_anchor_max_le_10pct": false,
+        "registration_p90_le_10pct": true,
+        "registration_90pct_below_10pct": true,
+        "registration_max_le_20pct": true,
+        "valid_graph_connected": true,
+        "finite_baseline_and_teacher": true
+      },
+      "anchor_p90_bbox_fraction": 0.3037799025523367,
+      "anchor_max_bbox_fraction": 0.3752231038729866,
+      "registration_p90_3d_bbox_fraction": 0.03398493099601522,
+      "registration_max_3d_bbox_fraction": 0.09436838374603025,
+      "registration_fraction_below_10pct": 1.0,
+      "graph": {
+        "edge_count": 84,
+        "component_count": 1,
+        "component_sizes": [
+          48
+        ],
+        "bridge_edges": [],
+        "connected": true
+      },
+      "shapes": {
+        "p0": [
+          9,
+          48,
+          3
+        ],
+        "h_output": [
+          9,
+          48,
+          16
+        ],
+        "teacher_future": [
+          9,
+          48,
+          3
+        ]
+      },
+      "sources": {
+        "baseline": "MotionForesight prediction from seven observed frames only",
+        "pseudo_gt": "offline full-22-frame TrackCraft3R query-only trajectory"
+      }
+    },
+    "drift-turn": {
+      "status": "FAIL",
+      "valid_query_count": 48,
+      "gates": {
+        "query_count_48": true,
+        "valid_queries_at_least_44": true,
+        "observed_mapping_p90_le_5pct": true,
+        "observed_mapping_max_le_10pct": true,
+        "teacher_anchor_p90_le_5pct": false,
+        "teacher_anchor_max_le_10pct": false,
+        "registration_p90_le_10pct": false,
+        "registration_90pct_below_10pct": false,
+        "registration_max_le_20pct": false,
+        "valid_graph_connected": true,
+        "finite_baseline_and_teacher": true
+      },
+      "anchor_p90_bbox_fraction": 0.5537159310307903,
+      "anchor_max_bbox_fraction": 0.6217025847620431,
+      "registration_p90_3d_bbox_fraction": 0.2526529847334194,
+      "registration_max_3d_bbox_fraction": 0.29423982676756816,
+      "registration_fraction_below_10pct": 0.3125,
+      "graph": {
+        "edge_count": 90,
+        "component_count": 1,
+        "component_sizes": [
+          48
+        ],
+        "bridge_edges": [],
+        "connected": true
+      },
+      "shapes": {
+        "p0": [
+          9,
+          48,
+          3
+        ],
+        "h_output": [
+          9,
+          48,
+          16
+        ],
+        "teacher_future": [
+          9,
+          48,
+          3
+        ]
+      },
+      "sources": {
+        "baseline": "MotionForesight prediction from seven observed frames only",
+        "pseudo_gt": "offline full-22-frame TrackCraft3R query-only trajectory"
+      }
+    },
+    "boat": {
+      "status": "FAIL",
+      "valid_query_count": 48,
+      "gates": {
+        "query_count_48": true,
+        "valid_queries_at_least_44": true,
+        "observed_mapping_p90_le_5pct": true,
+        "observed_mapping_max_le_10pct": true,
+        "teacher_anchor_p90_le_5pct": true,
+        "teacher_anchor_max_le_10pct": true,
+        "registration_p90_le_10pct": true,
+        "registration_90pct_below_10pct": true,
+        "registration_max_le_20pct": false,
+        "valid_graph_connected": true,
+        "finite_baseline_and_teacher": true
+      },
+      "anchor_p90_bbox_fraction": 0.02342528509805846,
+      "anchor_max_bbox_fraction": 0.04370021214791392,
+      "registration_p90_3d_bbox_fraction": 0.08439612504946963,
+      "registration_max_3d_bbox_fraction": 0.41634010601391563,
+      "registration_fraction_below_10pct": 0.9375,
+      "graph": {
+        "edge_count": 91,
+        "component_count": 1,
+        "component_sizes": [
+          48
+        ],
+        "bridge_edges": [
+          [
+            12,
+            33
+          ]
+        ],
+        "connected": true
+      },
+      "shapes": {
+        "p0": [
+          9,
+          48,
+          3
+        ],
+        "h_output": [
+          9,
+          48,
+          16
+        ],
+        "teacher_future": [
+          9,
+          48,
+          3
+        ]
+      },
+      "sources": {
+        "baseline": "MotionForesight prediction from seven observed frames only",
+        "pseudo_gt": "offline full-22-frame TrackCraft3R query-only trajectory"
+      }
+    },
+    "soccerball": {
+      "status": "FAIL",
+      "valid_query_count": 48,
+      "gates": {
+        "query_count_48": true,
+        "valid_queries_at_least_44": true,
+        "observed_mapping_p90_le_5pct": true,
+        "observed_mapping_max_le_10pct": true,
+        "teacher_anchor_p90_le_5pct": false,
+        "teacher_anchor_max_le_10pct": false,
+        "registration_p90_le_10pct": false,
+        "registration_90pct_below_10pct": false,
+        "registration_max_le_20pct": false,
+        "valid_graph_connected": false,
+        "finite_baseline_and_teacher": true
+      },
+      "anchor_p90_bbox_fraction": 0.33561740688819036,
+      "anchor_max_bbox_fraction": 0.4380793324247749,
+      "registration_p90_3d_bbox_fraction": 0.1581177441956491,
+      "registration_max_3d_bbox_fraction": 0.22666379442770346,
+      "registration_fraction_below_10pct": 0.7916666666666666,
+      "graph": {
+        "edge_count": 85,
+        "component_count": 3,
+        "component_sizes": [
+          24,
+          15,
+          9
+        ],
+        "bridge_edges": [],
+        "connected": false
+      },
+      "shapes": {
+        "p0": [
+          9,
+          48,
+          3
+        ],
+        "h_output": [
+          9,
+          48,
+          16
+        ],
+        "teacher_future": [
+          9,
+          48,
+          3
+        ]
+      },
+      "sources": {
+        "baseline": "MotionForesight prediction from seven observed frames only",
+        "pseudo_gt": "offline full-22-frame TrackCraft3R query-only trajectory"
+      }
+    }
+  }
+}

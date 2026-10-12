@@ -1,0 +1,296 @@
+{
+  "render_completed": true,
+  "scene_count": 18,
+  "scenes": [
+    {
+      "scene_id": "scene_3626",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "eed75668f178ddc78b88e3cb214cdae70afacc7a84c259c855740947dbeb5957",
+      "review_video_sha256": "295dc372968e98f8d1b6da0c50238e16553b6869be79c24f1647868c67d08c82",
+      "gt_source_sha256": "d6503035be6853b96d2625eb6f459136785c962233da0d2c015ff83143ec66be",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_1782",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "a329f469107ed89e2b4344648f8d84741908ecd8687d8be0844fb3a3b6b714c0",
+      "review_video_sha256": "4050c603f2e133136c8fb37a454a10f6e15905def992674776e44362634bfc42",
+      "gt_source_sha256": "49caf3136b1df018ddb7916325cb67745e8f65ee5fdedf245583345674cd6f41",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_3881",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "24e65488706c87744c4c65e9716a6ec2ee381b8eb7a3dd6257380f83d7c69e31",
+      "review_video_sha256": "38d0b2fc9f01324925fe71c656e0a4fb224876cf83e46fc48c22828fa945af3d",
+      "gt_source_sha256": "1c46e8a33b12fc3fa8f79a74034bfe0dd0ef3d74de4d510d5918edb110144e41",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_2344",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "759e80a1da5f096a4dcbcb3e2a5599b5b5d051518c43db140d8305500e5b907d",
+      "review_video_sha256": "1dedd4784106b43f5aab3385f928bfbcec886c49da25b7e16b4fff3dc81a9db4",
+      "gt_source_sha256": "08f120438026f9ba5f8041d57b83bac96c185aedd680d029200afdd8b5201a6d",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_3782",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "1cdfa9c7c85acdeaaf5cb2fd5a0dba32896b57b41eed7abf0136a265c7829ddb",
+      "review_video_sha256": "eefb227bd2bbedcae97b89138bb0e73f314979a0a90271cc19117d0e1e8787d7",
+      "gt_source_sha256": "7ca8da4aaac623074dd10f2267b642c8cf17150dd0574e66a4a145a074b6bada",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_5916",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "a20cd562f5d5534bbf02c46c733621bba0ac164a2c9657045aec91e0ae9effde",
+      "review_video_sha256": "aa4293aaf6fa1d6a4dae547e551d7958943d7433056fbc2e12cffbdc06fd27a8",
+      "gt_source_sha256": "2de5d93a3152307834694b60924d8f2f954c72ac6ab3c3d7416beadcee58ff04",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_1924",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "a52a8934af1c92dcfa10c1a07b92bc5335de519b09604c551740b50f0ced2116",
+      "review_video_sha256": "a7610900d0eeaa18b0db7e166d0f48f73ea88523c01e72dad83e828057926bac",
+      "gt_source_sha256": "7b213475c8f581941266e4437544da9aefc7ad5092135678da04c04f1c1313ae",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_5025",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "74554bbfad8160e26c8bf61529f961a2e284b1b5a3cb700cc3577f789100d820",
+      "review_video_sha256": "d4dac7859a1fa4759dc828067c723b881cf1ae6c4a7200ecb160b87f4e4edc76",
+      "gt_source_sha256": "7b3207c30738bb2128d334c95085f866782444a652cf4432fdcc9bb5f464375c",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_1143",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "4f6c7b0c794dc3c442a6e75388af509504b3d79a7c70bcfc1f26f42eea4241ee",
+      "review_video_sha256": "b3a91f404261061a2e7b02bcbba3c68435f561a454cbb7a51da42577b40d06a5",
+      "gt_source_sha256": "876eba0dfebe86cd6cc1a34f6cacadfb81799d099e8103ce17cba4487aa8569e",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_4203",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "d047a41839c1cae2f6ce1f602f568f524ecc5c89eab7c1c225ddc5ab07c54b6f",
+      "review_video_sha256": "3d0160d130e3e2f7b94c0827fb935e2e41a3a214c2f7f781fd214759a753d3bd",
+      "gt_source_sha256": "d72bc1cf00ce4048c5dd1cdaf92260bdf1a3abe5c77ac5852e90b2458fcec3b7",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_2854",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "26c26d8357f9012e936fc93a5f6727a73be6790f3a61012d12876f430da1cad6",
+      "review_video_sha256": "27985e266403dac1dd8c08de73d7c5f556fdba323fc3f7c0e79438e56a781198",
+      "gt_source_sha256": "1a602d405bdbdc7a9d027e90cb4e60e3e6c1ee5d1ce11697569be97d0263c037",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_1179",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "15b18076fe3945d4fe5b94e8dd56b4d5b70a4e18f7ae3ff2cef170e04efdd63c",
+      "review_video_sha256": "05b013c9863c3a73e91f99e291ed64651f2734e664c5043759cea00b8d57bea3",
+      "gt_source_sha256": "42b9b2b04277187fcca383c34779a9491fd29f6ebd8e95c0341309ef36c06068",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_813",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "bfd7bac2ed2e69a7e8679efae6cd395902254c9f991512870e360a7d5e1839a9",
+      "review_video_sha256": "cae9074c8e9881f8bd3b6b296d68a9a3cdf982350738dba523e52b23841bb151",
+      "gt_source_sha256": "a7359c42c94f67668a0a07b7a5ae7bc3d7ad99f57f98087a84a6c4923182a2ca",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_346",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "74ce9015953e762aae3e15ac6d6967e9385e6f7928200b3463097eccdf111ed2",
+      "review_video_sha256": "154eeaecc50d4dfdf57a3645733994339dfc909c8a15338ee6c7ad813d15466e",
+      "gt_source_sha256": "8dea47d516ceb1eff9dc5dc4dba6cb05a36112baacb86fc2c03ea55dccfce090",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_5702",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "34fd63c20db04c7a0acf68f7b1f8d06ae189ab46a819bc060376ee490796f604",
+      "review_video_sha256": "7038c191e9a12c81e9e6917719637b3b124205a43fa9d5b61d678ca2e0687507",
+      "gt_source_sha256": "768755ef6e65f698dffa5d26fb824cfe0da882c6a89a94ada0a26b3689878bc2",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_2329",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "30e3da7f6fd1f7e9196d51fbf58d6f3da7b7b2e08764e99945d4c08e601c2679",
+      "review_video_sha256": "d34554609c8fdc97391c69ffeaa1a3560fed122ca286461b5d896ac7cd212345",
+      "gt_source_sha256": "a1f02708a832b713ef822d83e1576409a1ea1f2579ddde02d776e947d7caab57",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_3457",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "24721fec2d1835730eeb9fa894986c934a72b971575fe263b6a24b7064c623be",
+      "review_video_sha256": "b4efb8937deaabc7973f1033ec217deeab0c30c1c45cdfca3b33b22a669cbcdf",
+      "gt_source_sha256": "501ffccd637cde8823837e11e1b2a0c9afd6a2ff5b34d3b1432ceaf3b4e8f38d",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    },
+    {
+      "scene_id": "scene_1580",
+      "frames": 22,
+      "panels": [
+        "raw_2d",
+        "raw_3d_projection",
+        "simulator_gt"
+      ],
+      "raw_sha256": "4bd03e8e6a05a74f48fc1e54503a44843fd331e68604f9e92fb4b27207c9bc55",
+      "review_video_sha256": "cc7784d46c75267ddf881409842df319304bf492b85aa7d7f73a5eb7372111ed",
+      "gt_source_sha256": "77af5b6e704b70ea0fd8f1269591ed810231cd8ad198fe4f96bc880ab05501d6",
+      "gt_visibility": "approximate instance+depth test; all finite GT retained",
+      "native_fps": 12,
+      "playback_fps": 8,
+      "pointwise_alignment": false
+    }
+  ],
+  "raw_outputs_unchanged": true,
+  "model_forward_called": false
+}

@@ -1,0 +1,1265 @@
+
+
+===== PAGE 1 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 1
+P2LHAP:Wearable sensor-based human activity
+recognition, segmentation and forecast through
+Patch-to-Label Seq2Seq Transformer
+Shuangjian Li, Tao Zhu, Member, IEEE, Mingxing Nie, Huansheng Ning, Senior Member, IEEE, Zhenyu Liu and
+Liming Chen Senior Member, IEEE
+Abstract—Traditional deep learning methods struggle to simul-
+taneously segment, recognize, and forecast human activities from
+sensor data. This limits their usefulness in many fields such as
+healthcare and assisted living, where real-time understanding of
+ongoing and upcoming activities is crucial. This paper introduces
+P2LHAP, a novel Patch-to-Label Seq2Seq framework that tackles
+all three tasks in a efficient single-task model. P2LHAP divides
+sensor data streams into a sequence of "patches", served as
+input tokens, and outputs a sequence of patch-level activity labels
+including the predicted future activities. A unique smoothing
+technique based on surrounding patch labels, is proposed to iden-
+tify activity boundaries accurately. Additionally, P2LHAP learns
+patch-level representation by sensor signal channel-independent
+Transformer encoders and decoders. All channels share embed-
+ding and Transformer weights across all sequences. Evaluated
+on three public datasets, P2LHAP significantly outperforms the
+state-of-the-art in all three tasks, demonstrating its effectiveness
+and potential for real-world applications.
+Index Terms—sensor-based human activity recognition, activ-
+ity segmentation, activity forecast, deep learning, Patch-to-Label
+Seq2Seq framework.
+I. I NTRODUCTION
+T
+HE intersection of deep learning and wearable sensor
+technology for real-time human activity recognition has
+emerged as a prominent research focus in recent years. This
+area holds significant promise for applications in medical
+health, assisted living, smart homes, and other domains. In
+various practical scenarios, there is a need for perceptual
+techniques to delineate activity boundaries, identify activity
+categories, and predict forthcoming activities from the contin-
+uous stream of sensor data. As a result, the field of human
+activity perception encompasses three pivotal tasks: human
+activity segmentation (HAS) [1], activity recognition (HAR)
+[2], and activity forecast (HAF) [3]. While extensive research
+[4], [5] has addressed each of these tasks individually, limited
+attention has been devoted to simultaneously addressing all
+three tasks in a cohesive framework.
+This work was supported in part by the National Natural Science Foundation
+of China (62402209, 62006110), the Natural Science Foundation of Hunan
+Province (2024JJ7428, 2023JJ30518). (Corresponding author: Tao Zhu.)
+Shuangjian Li, Tao Zhu, Mingxing Nie and Zhenyu Liu are with the School
+of Computer Science, University of South China, 421001 China (e-mail:
+sjli@stu.usc.edu.cn, tzhu@usc.edu.cn, niemx@usc.edu.cn, lzy@usc.edu.cn).
+Liming Chen was with School of Computer Science and Technology,
+Dalian University of Technology, China. Huansheng Ning was Department
+of Computer & Communication Engineering, University of Science and
+Technology Beijing, 100083 China (email: l.chen@ulster.ac.uk, ninghuan-
+sheng@ustb.edu.cn).
+Several approaches exist for concurrently achieving activity
+segmentation, recognition, and forecast, as illustrated in Fig.
+1. The first approach, shown in Fig. 1(a), employs three inde-
+pendent single-task learning models in parallel. These models
+output the category of the current activity, the boundary of the
+current activity, and the category of the next activity. However,
+this method has drawbacks, including disparate data annotation
+requirements for different models, the need for additional
+policies to ensure compatibility among model outputs, and
+a lack of information sharing between models, leading to
+inefficient use of computing resources.
+A second approach involves multi-task learning in Fig. 1(b),
+recent advancements in multi-task Human Activity Recog-
+nition learning frameworks [6]–[8] leverage the interdepen-
+dencies among tasks to facilitate data sharing and encoder
+learning, enabling the extraction of common data representa-
+tions. Following this, multiple lightweight single-task models
+are employed. While this approach often enhances multitask-
+ing effectiveness, it introduces increased model complexity
+compared to single-task models. Managing this complexity
+may require additional computational resources and careful
+architectural design. Simultaneously, it is crucial to ensure
+consistency in the model output representation across different
+tasks. Our objective is to standardize the output representation
+for improved task-specific adaptability. Furthermore, these
+multitask models can be more sensitive to hyperparameter
+choices, requiring meticulous tuning to achieve optimal per-
+formance across all tasks.
+Different from the first two methods, as shown in Fig.
+1(c), this paper proposes a novel Patch-to-Label Seq2Seq
+framework that tackles all the three human activity percep-
+tion tasks in a single-task model, named P2LHAP. P2LHAP
+adopts the encoder-decoder framework, the input is a patch
+sequence of sensor data, and the output is a sequence of
+patch-level activity label, where a patch is a short segment
+of sensor data points. With patch-level labels, it can simply
+Merge adjacent identical labels to determine the category of
+the active boundary. In addition, using the encoder-decoder
+architecture of seq2seq, it can easily output future activity
+token sequences, making it simple to predict activity label.
+The architecture handling capability of variable-length sensor
+activity sequences is excellent, and it exhibits high adaptability
+to sequences of indefinite length, comprehensively considering
+all information within the input sensor signal sequence and
+effectively retaining the contextual information of the sensor
+arXiv:2403.08214v3  [cs.CV]  21 Sep 2024
+
+
+===== PAGE 2 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 2
+Fig. 1. There are different architectures for multitasking approaches as follows: (a) The data is partitioned using sliding windows, followed by separate
+training of the respective models. These trained models are subsequently utilized for recognition, segmentation, and forecast. (b) Multi-task methods learn
+models for multiple tasks through a shared encoder and generate separate results for each task. (c) We propose a multi-task P2L Seq2Seq model specifically
+designed to generate patch-level active label sequences.
+data stream.
+Using patches offers several advantages over individual
+data points and sliding windows. Compared to using sin-
+gle data points [7], [10], patch-based methods help mitigate
+the effects of noise by enabling feature extraction within
+localized intervals [11]. Most existing activity recognition
+research employs one or more fixed-length sliding Windows
+to segment the data stream, under the assumption that each
+window captures a complete activity [6]. However, because
+activities have varying durations, it is very difficult to set
+an appropriate window length. If it is too short, the window
+may not capture sufficient information; if it is too large, may
+encompass multiple activities of different categories, both of
+which will reduce the recognition accuracy [9]. The patching
+strategy can circumvent this problem well, because we assume
+that an activity can contain any number of patches, and
+encoder-decoder architectures such as Tranfomer are good
+at handling variable-length sequences, making it feasible to
+identify activities of arbitrary duration.
+Although Transformers have achieved great results in the
+fields of NLP [13] and CV [14], recent research shows that
+classic Transformers do not work well on multi-variable long
+sequence time series prediction problems [15]. This may be
+because multi-variable features will interfere Extraction of
+long-term sequence features [11]. Limited training data is also
+a issue, in contrast to image and text data, the scarcity of ac-
+tivity recognition datasets can impact the Transformer model’s
+performance. Despite their modeling flexibility surpassing
+that of convolutional neural networks (CNNs) or recurrent
+neural networks (RNNs), Transformers can pinpoint relevant
+information at any position. Consequently, substantial datasets
+are typically necessary to realize their full potential. Human
+activity perception based on wearable devices is essentially
+a long-sequence multi-variable time series analysis problem.
+Sensor data includes signals from accelerometers, gyroscopes,
+magnetometers, etc. Inspired by [11], instead of using the
+classic Transformer architecture, we introduce a channel-
+independent Transformer architecture as the encoder-decoder
+of P2LHAP, each patch only contains data from a single wear-
+able sensor channel information, each sensor signal sequences
+within the dataset undergoes processing independently within
+the Transformer model, allowing for the learning of diverse
+attention patterns tailored to each sequence. In contrast to the
+conventional architecture where all sequences are subject to
+the same attention mechanism, this individualized approach
+prevents potential interference caused by disparate behaviors
+within multi-channel sensor data. Moreover, by adopting a
+channel-independent strategy, the adverse impact of noise
+prevalent in certain sensor signal sequences can be mitigated
+as it no longer gets projected onto other sequences within the
+embedding space.
+we utilize the original sensor data sequence along with the
+patch features obtained from the encoder to compute patch-
+level representations through an attention network, which are
+then used to predict activity labels for each patch. However,
+due to the variable size of the patch, the ultimate active
+label sequence may suffer from over-segmentation. To address
+this issue, we devised a smoothing algorithm for the final
+Patch-level activity label sequence, aimed at mitigating the
+over-segmentation phenomenon. This algorithm considers the
+number of activity categories surrounding the patch to adjust
+the current patch-level activity label. It then establishes activity
+boundaries based on the label range, significantly reducing
+boundary ambiguity in the activity signal.
+The main contributions of this paper can be summarized as
+follows:
+• We proposes a novel Patch-to-Label Seq2Seq framework
+that tackles all the three human activity perception tasks
+in a single-task model, named P2LHAP. To the best of our
+knowledge, our work constitutes the pioneering effort in
+unifying activity segmentation, recognition, and forecast
+within a single framework.
+• We employ patches to address the challenge of insuf-
+ficient information from large sliding windows or indi-
+vidual data points, and our method, utilizing a seq2seq
+encoder-decoder architecture, readily generates future
+
+
+===== PAGE 3 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 3
+activity token sequences, making it straightforward to
+forecast activity labels.
+• Each patch of our approach only contains data from a
+single wearable sensor channel information, each sensor
+signal sequences within the dataset undergoes processing
+independently within the Transformer model, allowing for
+the learning of diverse attention patterns tailored to each
+sequence.
+• Designed a smoothing method to analyze the number
+distribution of category labels surrounding each active
+label. This information is used to update the current
+active label, effectively reducing the occurrence of over-
+segmentation errors and providing smoother predictions
+within the same activity category.
+• The proposed P2LHAP method has been evaluated
+through experiments conducted on three widely used
+benchmark datasets for activity recognition, segmentation
+and forecast. The experimental results demonstrate that
+our approach surpasses existing methods in terms of
+performance.
+II. R ELATED WORKS
+This section provides a comprehensive review of the
+progress made in related research on multi-task activity recog-
+nition, segmentation, and forecast utilizing sensor signals.
+A. Sensor-based activity recognition and segmentation tasks
+Sensor-based human activity recognition primarily relies on
+IMU sensors in wearable devices like smartwatches, smart
+insoles, and exercise bands. Traditional approaches, such as
+fixed-size sliding windows and dense labeling, have demon-
+strated strong performance [16]. Recent studies have employed
+diverse techniques. [17] distinguished static and dynamic
+activities using statistical techniques, then classified specific
+activities with random forests (RF) and CNNs. In [18], NAS
+was used to investigate effective deep learning (DL) architec-
+tures for smartphone inference. [19] introduced a lightweight
+CNN-BiGRU model, leveraging inertial sensor data from
+smartwatches and smartphones, achieving satisfactory results.
+However, the inherent uncertainty in activity duration, these
+methods will lead to multi-class window problems, where mul-
+tiple activities may coexist within a window, introducing noise
+and negatively impacting model recognition performance. [20]
+employed an LSTM-based method to identify fine-grained
+patterns using high-level features from sequential motion data,
+[21] introduced a deformable convolutional network for activ-
+ity recognition from complex sensory data, and [22] presented
+a GRU-INC model that initializes attention-based GRUs to
+effectively leverage spatiotemporal information in time series.
+Additionally, [23] proposed a multi-branch CNN-BiLSTM
+network that extracts features from raw sensor data with
+minimal preprocessing. [24] further developed Conditional-
+UNet, which models conditional dependencies between dense
+labels for coherent HAR. Current advancements in activity
+segmentation and recognition, such as [1], [7], leverage dense
+labeling methods. However, these methods rely solely on
+individual sensor samples as neural network inputs, and will
+obtain different representations depending on the task. Our
+proposed approach employing a patch block, situated between
+the scales of a large sliding window and a single sample point,
+for data segmentation. We then utilize a Seq2Seq architecture
+to unify activity segmentation and recognition tasks, obtaining
+a unified activity label sequence representation to perform
+different tasks while mitigating the challenges associated with
+multi-class windows and over segmentation.
+B. forecast of activities using wearable sensors
+Sensor-based human activity recognition systems have
+gained popularity with the widespread use of wearable devices
+in daily life. However, there remains a significant gap in
+research focusing on sensor-based activity forecasting. Recent
+studies have introduced attention models to predict multi-
+variate motion signals from IMU sensors, thereby preserving
+pattern and feature information across multiple channels. Pre-
+dictive models for these time series data can be utilized for
+human activity forecast by generating and classifying future
+activity signals. In [25], a combination of a neural network and
+Fourier transform was employed to convert the sensor activity
+data into an image format for predicting future signals. In [26]
+introduced the SynSigGAN model, which utilizes bidirectional
+grid long short-term memory as the generator network of
+the GAN model, and a convolutional neural network as the
+discriminator network to generate future signals. Furthermore,
+recent work [27] proposes a Transformer-based GAN that
+can successfully generate real synthetic time series data se-
+quences of arbitrary length, similar to real data sequences.
+The GAN model’s generator and discriminator are built using
+a pure Transformer encoder architecture, which outperforms
+traditional GAN structures based on RNN or CNN models.
+Despite these advancements, existing methods predominantly
+rely on training models to forecast and emulate future sensor
+activity signals, subsequently employing classification algo-
+rithms to derive activity categories from the forecasted signal
+sequences. Any inaccuracies in the forecasted sensor signals
+inevitably impact the final classification outcome. In contrast,
+our proposed P2LHAP architecture bypasses this intermediate
+step by directly forecasting future activity category token
+sequences, thereby enhancing forecast accuracy. An additional
+study [11] presented the PatchTST time series forecast model,
+which is based on channel independence and patching, and
+demonstrated promising results. While there has been progress
+in forecasting multivariate sensor time series data, research on
+multi-category forecast of human activities based on multi-
+sensor signal channels remains limited.
+C. Sensor-based multi-task learning framework
+Sensor-based multi-task activity recognition presents a sig-
+nificant challenge in the field. [28] employs recurrent neu-
+ral networks to segment and identify activities and cycles
+using inertial sensor data. [8] proposes an efficient multi-
+task learning framework that utilizes commercial smart in-
+soles. This framework addresses three health management-
+related problems by converting smart insole sensor data into
+recursive graphs and employing an improved MobileNetV2
+
+
+===== PAGE 4 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 4
+Fig. 2. Overview of the Proposed P2LHAP framework
+as the backbone network. Experimental results demonstrate
+that this multi-task learning framework outperforms single-
+task models in tasks such as activity classification, speed
+estimation, and weight estimation. [29] introduces a multi-
+task model based on LSTM for predicting each activity and
+estimating activity intensity using wearable sensor signals.
+[7] combines the segmentation and classification tasks by
+passing the sensor signal through the MS-TCN module to
+predict sample-level labels and activity boundaries. This joint
+segmentation and classification approach calculates sample-
+level loss and boundary consistency loss to achieve improved
+performance. [6] proposes a novel multi-task framework called
+MTHARS, which leverages the dynamic characteristics of
+activity length to segment activities of varying durations
+through multi-scale window splicing. This approach effec-
+tively combines activity segmentation and recognition, leading
+to improved performance in both tasks. However, prior studies
+employed distinct backbone networks for various tasks or
+failed to achieve unified task representations, our proposed
+architecture integrates these tasks within a single model for
+simultaneous learning and representation. By doing so, we
+obtain a unified label sequence representation.
+III. M ETHOD
+In this section, we introduce our proposed method, which is
+a multi-task model for human activity recognition utilizing the
+Patch-to-Label Seq2Seq approach. Fig. 2 provides an overview
+of the model’s architecture. This model enables activity
+recognition, segmentation, and forecast tasks on continuous
+sensor data streams collected from wearable devices. Our
+approach consists of three primary components: 1) Patch-to-
+Label Seq2Seq framework, 2) Patching and channel indepen-
+dent Transformer architecture, and 3) Activity classification,
+segmentation, and forecasting module.
+A. Patch-to-Label Seq2Seq framework
+The Patch-to-Label Seq2Seq framework we propose is
+shown in Fig. 2. We define the M-dimensional input wearable
+sensor sequence as X1:L = [ x1, · · · , xL], xt ∈ R1×M ,
+where xt represents the sensor signals collected at times-
+tamp t. The activity label for each sample is denoted as
+y1:L = [ y1, · · · , yL], y t ∈ RC, where C represents the
+number of activity categories, t is the time step, L is the
+length of the wearable sensor sequence, and the length of
+the patch block is defined as P. In this study, we do not
+employ a fixed-length sliding window to segment the sensor
+data. The number of patches is denoted as L/P. Our approach
+utilizes a Transformer encoder and decoder as the underlying
+framework. To simultaneously process the sensor patch of
+each channel in parallel within the Transformer backbone, it
+is crucial to duplicate the Transformer weights multiple times
+and employ the patching operator to create a sensor sequence
+sample of a size B ×M ×L. The patch-level sequence extends
+to M × P × N. Reshaping the dimension sequence into a
+3D tensor of size (B · M) × P × N, the batch of samples
+serves as the input for the encoder. The purpose of the encoder
+is to map multiple sequences of single-channel sensor data
+patches into a latent representation. Following this, the decoder
+is used to derive the representation of the activity sequence,
+denoted as Z
+′(i). The ultimate output signifies the active label
+result obtained through the classification head, the active label
+sequence and the forecast of future activity label sequence of
+length Tpre, denoted as ˆypre =
+
+ˆy1, · · · , ˆyL+Tpre
+	
+.
+B. Patching and channel independent Transformer architec-
+ture
+1) Patching and channel independent method: We pro-
+cess each sensor signal channel independently, specifically,
+we segment the input sensor signal sequence X1:L into M
+channel sensor signal sequences x(i) based on its dimension
+M, x(i) represents the sensor sequence of the i-th channel, i ∈
+{1, 2, · · · , M}. We normalize each x(i) before patching and
+the mean and deviation. Next, we divide x(i) into overlapping
+or non-overlapping Patches and the length of the Patch block
+is P . The overlapping part is its step size, represented by S.
+By segmentation, a patch-level sensor sequence x(i)
+p ∈ R1×N
+is obtained, where N =
+j
+(L−P )
+S
+k
++ 2. x(N )
+p is the last patch
+of the segmented patch sequence, this patch is learned through
+
+
+===== PAGE 5 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 5
+the previous N −1 patches, a sequence representation into the
+future is obtained, with its initial value filled by repeatedly
+replicating the last number of the original sequence. Finally,
+we add the corresponding position coding to x(i)
+p to obtain
+x(i)
+d , and then transmit the time series of each channel to the
+Transformer backbone respectively.
+2) Encoder: We use the native Transformer encoder [14]
+to model the features of patch-level sensor sequences, similar
+to the method used in [11]. The Encoder module utilizes
+trainable linear projections to map continuous Patch blocks
+to a D-dimensional Transformer latent space Wp ∈ RD×P . It
+incorporates a learnable additive positional encoding Wpos ∈
+RD×N to capture the temporal order of the patches, repre-
+sented by x(i)
+d = Wpx(i)
+p + Wpos, where x(i)
+d ∈ RD×N repre-
+sents the input fed into the Transformer encoder. For each head
+h = 1 , · · · , H in the multi-head attention, the Patch blocks
+are transformed into query matrices Q(i)
+h = (x(i)
+d )T WQ
+h , key
+matrices K(i)
+h = ( x(i)
+d )T WK
+h , and value matrices V(i)
+h =
+(x(i)
+d )T WV
+h , where WQ
+h , WK
+h ∈ RD×dk , WV
+h ∈ RD×D.
+Subsequently, the attention outputs are normalized to obtain
+the final attention output Q(i)
+h ∈ RD×N :
+(Q(i)
+h )T = Attention(Q(i)
+h , K(i)
+h , V(i)
+h ) (1)
+Attention(Q, K, V) = sof tmax( QKT
+√dk
+)V (2)
+The multi-head attention module also includes a BatchNorm
+layer and a feed-forward network with residual connections.
+3) Decoder: The Decoder module combines the represen-
+tation Z(i) = {z1, · · · , zp}, derived from the encoder output,
+with the corresponding Patch-level wearable sensor data X
+′
+=n
+x
+′
+1, · · · , x
+′
+p
+o
+to generate the activity label sequence using
+a key-query-value attention mechanism. By multiplying the
+weight matrices Wk and Wv with the Patch-level wearable
+sensor data, we obtain representations of the key and value,
+denoted as K = WkX
+′
+and V = WvX
+′
+, respectively. At the
+same time, the query vector Q is obtained by multiplying the
+feature representation z(i) from the encoder with the weight
+matrix Wq, expressed as Q = WqZ(i). Subsequently, the
+inner product of Q and K is passed through a temperature
+softmax layer to obtain attention scores, which are then used
+to weigh the summation of the value vector V, resulting in
+the representation of z
+′(i) :
+z
+′(i) = sof tmax(QT K/σ)V = fθ(X
+′
+, Z(i)) (3)
+Here σ is the temperature parameter, and fθ(·) represents
+the attention mechanism network.
+C. Activity classification
+we employ a Flatten layer with a linear head and a Softmax
+layer to generate the final human activity label sequence ˆy. The
+representation of ˆy is summarized as follows:
+sof tmax(x) = exi
+Pn
+j=1 exj
+(4)
+ˆy = argmaxi(sof tmax(Linear(z
+′
+)) (5)
+During the training phase, we utilize patch-level label pre-
+dictions and true labels to construct a patch-level classification
+loss, aiming to effectively optimize the model parameters. This
+loss is defined as follows:
+Lcls = lp(ˆy, y) (6)
+Among them, ˆy and y represent the patch-level predicted
+label and the real label, respectively. Given the imbalance
+of human activity classes under unconstrained conditions, we
+employ the Softmax CrossEntropy loss function lp(·) and take
+into account the number of effective samples for classification.
+The calculation formula is as follows:
+lp(ˆy, y) = − 1
+L
+LX
+l=1
+CX
+c=1
+ylog(ˆy) (7)
+Where L signifies the length of input sequence, and C
+represents the activity class number of dataset. In sensor-
+based HAR tasks, we leverage this loss function and take into
+account the number of effective samples to amplify the weight
+assigned to minority classes. This approach aims to yield fairer
+and more robust results for each individual class.
+D. Activity segmentation and smoothing strategy
+Given that the classification loss treats each patch inde-
+pendently, it may result in unwarranted over-segmentation
+errors. To achieve smoother transitions between patches and
+minimize over-segmentation errors, we employ the truncated
+mean square error as our chosen smoothing loss function. The
+formulation of the smoothing loss is as follows:
+Lseg = LT −M SE = 1
+TcC
+X
+t,c
+e∆2
+t,c (8)
+e∆2
+t,c =
+ ∆t,c , ∆t,c ≤ τ
+τ , otherwise (9)
+∆t,c = |logeyt,c − logeyt−1,c| (10)
+C represents the activity category, Tc denotes the number
+of samples belonging to the c-th category, and eyt,c signifies
+the probability of the activity category c being represented by
+the patch at time t and τ is the smoothing threshold( τ = 2).
+For the activity label sequence ˆy output by the model, in
+order to reduce the impact of over-segmentation on subsequent
+activity merging, we set each activity label as the center, set a
+smoothing window with a size of smooth_size, and set the
+starting position to the Half of the activity label sequence
+within the window. Within the window, we count and sort
+the activities of each category, and select the activity category
+with the most surrounding distribution as the current activity
+label according to the sorting result. After updating the activity
+label sequence, the performance of activity recognition and
+segmentation. Finally, it is enhanced by linking Patches of
+the same activity class to determine the start and end position
+of each activity in the data flow. We set the boundary set of
+each activity B = {(si, ei)}N
+i=1, where si represents the start
+subscript of the i-th activity, ei represents the end subscript
+
+
+===== PAGE 6 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 6
+of the i-th activity, and N is the number of activities in the
+activity label sequence. The activity set corresponding to each
+boundary is represented by ˆa = {ai}N
+i=1, where ai is the
+activity corresponding to the i-th boundary. The Process of
+Algorithm is described in the Algorithm 1.
+E. Activity forecasting
+Within the activity forecast module, the continuous input
+Patch blocks retain one Patch block at the end. This involves
+filling P repeated values of the last xi ∈ R value at the
+end of the original sequence. The resulting sequence of
+generated Patches, x(i)
+p , is then represented as z
+′(i) ∈ RD×N
+through the Transformer backbone. By utilizing a linear layer
+and a fully connected layer with Softmax as the activation
+function, we obtain the predicted activity sequence, ˆypre =
+ˆyL+1, · · · , ˆyL+TP ∈ R1×TP , using the representation of the
+last patch. It is important to note that TP , the length of the
+future segment, is determined by the number of Patch blocks
+within the time Tpre, specifically Tp = Tpre
+P .
+Algorithm 1 Segmentation Algorithm
+Input: Sensor dataset: X
+Output: Activity label sequence segmentation result: ˆy
+Activity boundaries: B = {(si, ei)}N
+i=1
+Activity class: ˆa = {ai}N
+i=1
+1: ˆy ← M odel(X) by Eq.(1), (2), (3), (4) and Eq(5)
+2: smooth_size ← smoothing window size
+3: set a smooth sequence of active label: smooth_data ← []
+4: half _size ← smooth_size//2
+5: for i = 0 to len(ˆy) do
+6: start ← max(0, i − half _size)
+7: end ← min(len(ˆy, i + half _size + 1))
+8: new_activity_label ← cal_max(sort(ˆy[start : end]))
+9: add new_activity_label to smooth_data
+10: end for
+11: ˆy ← smooth_data
+12: current activity type a ← ˆy[0]
+13: initial activity set index j
+14: activity start and end index s, e ← 0
+15: for i = 1 to len(ˆy) do
+16: if ˆyi ̸= a then
+17: Add a to ˆaj
+18: a ← ˆyi
+19: e ← i
+20: Add ( s, e) to B
+21: s ← e + 1
+22: j ← j + 1
+23: end if
+24: end for
+In the training stage, based on the predicted activity label
+sequence ˆypre and the ground-truth activity sequence ygt, all
+patch-level prediction losses can be expressed as:
+Lpre = lp(ˆypre, ygt) (11)
+Finally, the previously mentioned loss functions from Equa-
+tions (6), (8), and (11) are incorporated into the equation,
+resulting in the final loss function:
+L = Lcls + Lseg + Lpre (12)
+We have introduced the main structure of P2LHAP. Algorithm
+2 summarizes the training process of P2LHAP.
+Algorithm 2 The training process of P2LHAP
+Input: Training dataset: {Xtrain, ytrain}
+Validation dataset: {Xval, yval}
+Test dataset: {Xtest, ytest}
+Output: Patch-level activity label predictions: ˆy
+1: Initialize training epoch e, optimizer ← Adam
+2: while e ≤ Epochmax and Convergent do
+3: Get a mini-batch data Xbatch in Xtrain
+4: ˆy ← M odel(Xbatch) by Eq.(1), (2), (3), (4) and Eq.(5)
+5: ygt ← ytrain
+6: ˆypre ← ˆy[−Tp : −1]
+7: Calculate Lcls with eq.(6), (7)
+8: Calculate Lpre with eq.(11)
+9: Get ˆyseg through algorithm 1
+10: ˆy ← ˆyseg
+11: Calculate Lseg(ˆy, ygt) with eq.(8)
+12: e ← e + 1
+13: Update model parameters based on eq.(12)
+14: ad just_learning_rate(optimizer, e, args)
+15: Calculate ˆyval with Eq.(6), (8) and check convergence
+16: end while
+17: Update ˆy from test sequence Xtest based on the model
+IV. EXPERIMENTS AND RESULTS
+In this section, we provide a comprehensive overview of our
+experiments and utilize cutting-edge research to evaluate our
+proposed multi-task framework. Firstly, we present the exper-
+imental settings, datasets, and evaluation metrics employed in
+our study. Subsequently, we perform a series of experiments
+to assess the effectiveness of our method, including qualita-
+tive and quantitative overall performance analysis as well as
+ablation experiments conducted using the Patch strategy.
+A. Experimental setup
+Our method was implemented using PyTorch and trained
+on an RTX 3090 GPU. The batch size was set to 64, and we
+utilized the Adam optimizer with a learning rate of 0.0001.
+The fully connected dropout rate is set at 20% (0.2), head
+dropout is fixed at 5% (0.05), the default patch length is 10,
+with a step size of 10. The model employs 8 heads by default,
+consists of 6 encoder-decoder layers, and undergoes training
+for 100 epochs.
+For classification, segmentation, and forecast tasks, we
+employed the entire continuous dataset as input and divided
+it into training, validation, and test sets with a ratio of 0.7,
+0.1, and 0.2 respectively. To evaluate the classification and
+segmentation performance of the model, we compared the
+forecast output with the real label. In the forecast task, the
+forecast patch length was set to 8, and performance assessment
+was based on a comparison between the forecast output patch
+label and the real label.
+
+
+===== PAGE 7 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 7
+The choice of several parameters values for the models is
+shown in the table I:
+TABLE I
+THE DEFAULT CHOICE OF SEVERAL PARAMETERS VALUES FOR THE
+MODELS
+Model Parameters Parameters Values Parameter Introduction
+seq_len 200/151/512 input sensor sequence length200(WISDM)/151(UnimibSHAR)/512(PAMAP2)
+pred_len 8 prediction label sequence length
+fc_dropout 0.2 fully connected dropout
+attn_dropout 0.05 attention dropout
+head_dropout 0.00 transformer head dropout
+patch_len 10 patch length
+stride 10 stride
+revin 1 RevIN True: 1 False: 0
+enc_in 3/3/9
+encoder input size(the number ofsensor channels)3(WISDM)/3(UnimibSHAR)/9(PAMAP2)
+dec_in 3/3/9
+decoder input size(the number ofsensor channels)3(WISDM)/3(UnimibSHAR)/9(PAMAP2)
+n_heads 8 number of transformer heads
+e_layers 6 number of encoder layers
+d_layers 6 number of decoder layers
+d_ff 256 dimension of FCN
+class_num 6/17/12 number of activities
+d_model 256 dimension of transformer model
+s_t 2 smoothing threshold
+d_k d_model//n_heads dimension of the query/key vectors per attention head
+d_v d_model//n_heads dimension of the value vectors per attention head
+1) Evaluation metrics: For the evaluation of the obtained
+Patch-level label sequences, we use the following metrics:
+1. Activity classification
+Accuracy: Accuracy is the overall measure of correctness
+across all classes and is calculated as follows:
+Accuracy =
+PC
+c=1 T Pc +PC
+c=1 T Nc
+PC
+c=1(T Pc + T Nc + F Pc + F Nc)
+(13)
+Weighted F1 score: The weighted F1 score is calculated
+based on the proportion of Patch samples:
+Fw =
+CX
+c=1
+2 ∗ wc
+precc · recallc
+precc + recallc
+(14)
+Where precc = T Pc
+T Pc+F Pc
+and recallc = T Pc
+T Pc+F Nc
+rep-
+resent precision and recall, respectively. The weight wc is
+calculated as the ratio of nc to N, where nc is the number of
+Patch samples per class, and N is the total number of Patch
+samples.
+2. Activity segmentation
+Jaccard Index: The proposed metric assesses the degree of
+overlap between actual activity segments and predicted activity
+segments, specifically focusing on the sensitivity towards over-
+segmentation errors. For the purpose of representation, Gi and
+Pi are introduced as respective variables denoting the actual
+and predicted activity ranges. In this context, the subscript i
+signifies the ith segment within class C. The calculation of this
+metric can be determined utilizing the prescribed formula:
+J I = 1
+C
+CX
+c=1
+Gi ∩ Pi
+Gi ∪ Pi
+(15)
+3. Activity forecast
+Mean Square Error(MSE): MSE serves as a prevalent
+metric to evaluate the performance of forecast models. It com-
+putes the average of the squared differences between predicted
+values and actual values, thereby providing a quantification
+of the degree of deviation between the predicted and actual
+values. A lower MSE signifies a more precise alignment be-
+tween the model’s predictions and the actual values, indicating
+superior performance. The formula for calculating MSE can
+be represented as follows:
+M SE = 1
+n
+nX
+i=1
+(yi − ˆyi)2 (16)
+B. Datasets
+To evaluate our proposed method, we adopt three chal-
+lenging public HAR datasets: WISDM, PAMAP2, UNIMIB
+SHAR. A brief introduction to the dataset follows.
+WISDM Dataset [30]: The data were obtained by 29
+participants using phones with triaxial acceleration sensors
+placed in their trouser pockets with a sampling frequency of
+20 Hz. Walking, strolling, walking up stairs, walking down
+stairs, standing motionless, and standing up were among the
+six daily activities undertaken by each participant. Fill missing
+values in a dataset using linear interpolation.
+PAMAP2 Dataset [31]: This dataset comprises data col-
+lected from nine participants wearing IMUs on their chest,
+hands, and ankles with a sampling frequency of 100 Hz. These
+IMUs gather information on acceleration, angular velocity, and
+magnetic sensors. Each participant completed 12 mandatory
+activities, including lying down, standing, and going up and
+down stairs, as well as 6 optional activities, such as watching
+TV , driving a car, and playing ball.
+UNIMIB SHAR Dataset [32]: The dataset was collected
+from the University of Milano-Bicocca. Thirty volunteers,
+aged 18 to 60, had their Samsung phones equipped with
+Bosch BMA 220 sensors with a sampling frequency of 50
+Hz. The study recorded 11,771 activities by placing phones in
+the participants’ left and right pockets. The dataset comprises
+17 categories of activities, divided into two groups: 9 activities
+of daily living (ADL) and 8 falling behaviors. Each activity
+was repeated 3 to 6 times.
+C. Comparisons with activity recognition algorithm
+In this section, we compare our method with other com-
+peting methods that have been evaluated on three publicly
+available datasets for wearable-based Human Activity Recog-
+nition. To conduct a thorough performance analysis, we use
+non-overlapping patches of size 10 to compare the overall
+recognition performance.
+We compared the recognition performance of our pro-
+posed method with other similar algorithms as mentioned
+earlier. The results of various competing methods are sum-
+marized in Table II. Our method demonstrated improvements
+in recognition accuracy across three publicly available HAR
+datasets. Specifically, on the Unimib and PAMAP2 datasets,
+our method achieved the highest recognition performance,
+obtaining weighted average F1 scores of 82.04% and 98.92%
+
+
+===== PAGE 8 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 8
+TABLE II
+THE COMPARISON OF THE ACCURACY AND F1 PERFORMANCE OF OUR WORK WITH OTHER WORKS ON THREE DATASETS .
+PAMAP2 WISDM UNIMIB SHAR
+methods Acc F1 methods Acc F1 methods Acc F1
+ours 98.71% 98.92% ours 97.51% 97.52% ours 81.51% 82.04%
+Y Li et al. (2023) [33] 98.04% - K. Xia et al. (2020) [34] 92.71% 92.63% Y . Tang et al. (2022) [35] 76.30% 75.38%
+W. Gao et al. (2021) [36] 93.80% 93.38% S Kobayashi et al. (2023) [37] 90.62% - W. Gao et al. (2021) [36] 75.89% 74.63%
+SK. Challa et al. (2022) [23] 94.27% 94.25% Z. N. Khan et al. (2021) [38] 96.85% 97.20% F. Duan et al. (2023) [6] 76.48% 75.71%
+Al-Qaness et al. (2022) [39] 93.19% 92.96% W. Gao et al. (2021) [36] 97.51% 97.25% Al-Qaness et al. (2022) [39] 77.29% 76.83%
+F. Duan et al. (2023) [6] 94.50% 94.80% W. Huang et al. (2023) [40] 99.04% 99.18% W. Huang et al. (2023) [40] 78.65% 78.78%
+W. Huang et al. (2023) [40] 92.14% 92.18% J. Li et al. (2023) [41] 97.11% 98.64% Y . Tang et al. (2022) [42] 79.02% 79.19%
+S. Xia et al. (2022) [7] 94.59% 94.47% SK. Challa et al. (2022) [23] 96.04% 96.05%
+J. Li et al. (2023) [41] 97.39% 98.12% MK Yi et al.(2023) [17] 96.07% 96.14%
+Y . Wang et al. (2023) [43] - 98.33%
+respectively. Remarkably, our method surpassed the perfor-
+mance of the leading competing method by 3.26% in terms of
+weighted average F1 score on the Unimib dataset.
+In Fig. 3, we present the confusion matrix of our method for
+activity classification on the PAMAP2 dataset using patch sizes
+of 200 and 10, respectively. The confusion matrix provides
+insight into the accuracy of our method for various activity
+categories. It is evident that, despite the different patch sizes,
+there is minimal variation in overall accuracy. However, when
+the patch size is small, over-segmentation occurs, necessitating
+active segmentation through dividing the patch blocks. This
+approach enhances the recognition performance for most ac-
+tivity categories.
+D. Qualitative segmentation results
+To demonstrate our proposed method’s segmentation per-
+formance, this section presents a visualization of patch-level
+activity predictions in Fig. 4, with each color representing
+a different activity category. We compare sequence frag-
+ments obtained through model segmentation with selected
+sequence fragments from the PAMAP2 and WISDM datasets.
+In practical application scenarios, excessive segmentation can
+adversely affect prediction accuracy. Nonetheless, as depicted
+in the figure, our method successfully reduces most over-
+segmentation errors, leading to more precise and consistent
+patch-level predicted segments within each active segment.
+Table III displays the segmentation performance of our
+proposed method in comparison with competing algorithms.
+Our method excels in both segmentation and recognition
+tasks, consistently outperforming the comparison algorithms.
+Notably, our Jaccard Index scores on the Pamap2 dataset
+surpassed those of A&D and JSR by 9.82% and 3.47%
+respectively, where (w/o) represents the segmentation Jaccard
+Index scores obtained without using the smoothing strategy.
+This justifies our employment of a smoothing algorithm, which
+effectively mitigates the boundary irregularities resulting from
+excessive segmentation. The algorithm serves to enhance clar-
+(a)
+(b)
+Fig. 3. The confusion matrices on the PAMAP2 dataset for patch sizes of 10
+and 200 (a) P atch_size=10, (b) P atch_size=200
+
+
+===== PAGE 9 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 9
+Fig. 4. Segment visualization results on PAMAP2 and WISDM datasets
+ity by refining the boundaries and ensures clearer and more
+distinct segmentation for each individual activity.
+Sensor-recorded human activity data forms a continuous
+data stream, encompassing diverse actions like standing, sit-
+ting, walking, and transitions such as stand-to-sit and sit-
+to-lying. These activities are classified into two categories:
+basic and transition, based on their duration. Basic activities,
+characterized by longer periods, can be either dynamic (e.g.,
+walking) or static (e.g., sitting), whereas transitional activities
+involve brief actions (seconds), like posture shifts (e.g., sit-to-
+stand). Despite the prevalence of research on basic activities,
+transition events are frequently overlooked due to their lower
+frequency and shorter duration compared to basic activities.
+When considering the short-lived activities that intervene be-
+tween consecutive basic activities, two distinct scenarios may
+arise:
+• When two consecutive basic activities differ, the activity
+segments in between are classified as transition activities.
+• If adjacent basic activities are identical, the segments in
+between are designated as the disturbance process of the
+activity. This occurs due to external influences or human
+factors disrupting the sensor data, causing irregular fluc-
+tuations over time. Consequently, the activities preceding
+and following the disturbance are considered of the same
+type.
+Given the brief nature of transition activities, our frame-
+work efficiently divides the original sensor data into multiple
+patches, ensuring that the information of these short events can
+be effectively captured and learned. As demonstrated in Fig.
+4(c), the short duration of the Jogging activity does not hinder
+our framework’s ability to accurately segment it, showcasing
+its effectiveness.
+E. Patch forecast analysis
+In this section, we assess the performance of the activity
+forecast module using our model to forecast the duration
+TABLE III
+RESULTS OF SEGMENTATION METRICS ON PAMAP2 DATASET
+Seg Metric PAMAP2 DATASET
+Attn A&D JSR ours(w/o) Ours
+Jaccard Index 0.7908 0.8312 0.8947 0.8445 0.9294
+of activity categories in the next 8 patch blocks. Fig. 5
+displays the confusion matrix for the future activity forecast
+in the pamap2 dataset. Fig. 5 (a),(b),(c) present the prediction
+confusion matrices of Conv2LSTM [44], Seq2Seq-LSTM [45],
+and Seq2Seq-LSTM-PE-MA [46] predictors for five activity
+categories in the dataset, while Fig. (d) illustrates the pre-
+dictions of our proposed model. The confusion matrix results
+for all campaigns indicate an average accuracy of 96.59%.
+Additionally, we compare the predicted outputs of future
+sensor signals with the ground truth signals by evaluating their
+mean squared error (MSE). To enable the model to predict
+future sensor signals, we exclude the last classification header
+and utilize the first half of the input sensor sequence for
+model input, reserving the second half to match the size of
+the predicted output data. Table IV presents the performance
+comparison of our model with five forecasters for sensor
+sequence signal prediction.
+TABLE IV
+EVALUATION RESULTS OF THE FORECAST ON PAMAP2 DATASET
+Metric Models
+SynSigGAN Conv2LSTM Seq2Seq-LSTM TTS-GAN Ours
+MSE 0.355 0.302 0.240 0.163 0.126
+
+
+===== PAGE 10 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 10
+Fig. 5. Confusion matrix of our model and three other models in predicting activity classification results on the PAMAP2 dataset
+F . Ablation experiments
+In this section, we conduct two ablation experiments to
+investigate the influence of varying patch block sizes on
+model performance and the efficacy of patching operations
+in generating label sequences.
+Impact of Patch Size: various sizes and quantities of
+patches can yield different outcomes. Hence, we employ
+a scaling approach with multiple patches to analyze their
+performance. We provide the comprehensive results in Table
+V. We observed a decrease in accuracy when the Patch size
+is reduced significantly. This decline can be attributed to the
+issue of excessive segmentation. However, when the Patch size
+is set to 10, it consistently exhibits exceptional recognition
+performance across all three datasets.
+The impact of Patching modules: we examined the effects
+on the results by not patching the sensor data stream, but
+instead using the Transformer backbone directly. The F1 score
+obtained on the benchmark dataset is presented in Table VI. It
+was observed that when the data was not patched during pro-
+cessing, the accuracy of the experimental results deteriorated.
+Hence, applying data patching enhanced the performance of
+activity recognition.
+The impact of the number of multiple heads and the
+number of encoder-decoder layers:this study investigates the
+influence of model components on classification outcomes by
+varying the number of multi-heads and encoder-decoder layers.
+Table VII presents the activity recognition accuracy of our
+proposed framework on the PAMAP2 dataset, showcasing the
+performance changes with different configurations. The results
+indicate that an increase in both multi-heads count and model
+layer depth facilitates better learning of activity sequence
+representations, leading to enhanced recognition accuracy. The
+optimal configuration is achieved when the model has 6 layers
+and 8 multi-heads, achieving the highest accuracy.
+G. Further Analysis
+To thoroughly assess the practicality of our proposed
+methodology, we will examine its computational complexity
+and parameter count, aiming to determine its feasibility for
+real-time deployment on mobile or embedded devices. The
+computational analysis was conducted on a Linux platform
+TABLE V
+F1 VALUES WITH DIFFERENT PATCH SIZES ON BENCHMARK DATASETS
+Datasets
+Patch Size P=1 P=2 P=5 P=10 P=20
+WISDM 0.8544 0.9056 0.8819 0.9751 0.9568
+PAMAP2 0.9151 0.9406 0.9610 0.9892 0.9667
+UNIMIB 0.6719 0.6950 0.7566 0.8204 0.7876
+TABLE VI
+ACTIVITY CLASSIFICATION F1 VALUE WITHOUT PATCHING MODULE ON
+BENCHMARK DATASETS
+Model WISDM PAMAP2 UNIMIB
+only transformer backbone 0.9090 0.8783 0.7533
+P2LHAP 0.9752 0.9892 0.8204
+equipped with an RTX 3090 GPU and an Intel Core i9-
+13900K. The experiments employed a batch size of 32 for
+both training and testing, with 3 encoder and decoder layers,
+and 4 multi-heads. Utilizing the PAMAP2 dataset, we set the
+input sequence length to 512, patch size to 24, and step size
+to 12.
+The computational complexity comparison, as presented
+in the table VIII, reveals that our method exhibits superior
+parameter efficiency and lower inference time compared to
+TABLE VII
+ACTIVITY RECOGNITION ACCURACY WITH DIFFERENT NUMBERS OF
+MULTI -HEADS AND DIFFERENT NUMBERS OF ENCODER -DECODER LAYERS
+ON THE PAMAP2 DATASET
+Layer
+Mutil-heads 1 2 4 8 16
+1 0.8964 0.9259 0.9372 0.9447 0.9485
+2 0.9406 0.9556 0.9560 0.9654 0.9581
+3 0.9693 0.9702 0.9633 0.9750 0.9719
+6 0.9658 0.9741 0.9793 0.9871 0.9788
+8 0.9710 0.9793 0.9790 0.9802 0.9812
+
+
+===== PAGE 11 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 11
+the benchmarked techniques.
+TABLE VIII
+COMPLEXITY COMPARISON OF SEVERAL COMPETING METHODS ON THE
+PAMAP2 DATASET
+Methods Param FLOPs Inference time(s/epoch)
+Attn. [47] 1.983M 20.058M 8.22
+A&D [48] 1.503M 25.612M 11.88
+JSR [7] 2.799M 12.105M 0.78
+Ours 1.449M 20.014M 0.08
+V. D ISCUSSION AND FUTURE WORK
+This section delves into the merits and drawbacks of our
+proposed framework, with a focus on addressing the chal-
+lenges posed by the inherent uncertainty in natural human
+activity durations and the complexities of IMU signal analysis
+for activity segmentation, recognition, and forecast. To tackle
+these issues, we introduce a novel multi-task deep learning
+framework that employs the transformer’s Patch Sequence to
+Label Sequence architecture. The transformer network cap-
+tures inter-patch relationships, enabling it to predict future
+activity sequences based on past representations. However, our
+framework’s reliance on a closed space assumption in tradi-
+tional machine learning restricts its ability to handle unknown
+activities, as the softmax classification layer misclassifies them
+as known categories. Future work will concentrate on en-
+hancing the architecture to accommodate activity recognition
+in novel environments, by addressing the issue of unknown
+activity recognition. Below we will discuss the points planned
+for improvement in subsequent research:
+1) Given that our model employs a Softmax function for
+classification, its output space is confined, precluding the abil-
+ity to reject unknown classes, as the predicted probabilities are
+normalized among all known training classes. Consequently,
+the model struggles to accurately identify novel activities.
+To address this limitation, we intend to adopt Deep Open
+Classification (DOC) [49] in our future work. Unlike softmax,
+DOC employs a "1-vs-Rest" layer with N Sigmoid functions
+for N known classes, which serves as a basis for represent-
+ing both known and unknown classes. By transferring the
+learned similarity knowledge from known classes to potential
+unknowns, we can leverage hierarchical clustering algorithms
+to cluster rejected instances based on the transferred similarity,
+thus revealing potential activity classes within the rejected
+samples.
+2) Our model currently adopts a supervised training ap-
+proach. Future iterations will incorporate self-supervision for
+retraining, as it eliminates the need for costly labeled datasets
+in real-world activity recognition scenarios. Self-supervised
+learning generates training targets autonomously and exploits
+unlabeled data to learn representations, addressing the chal-
+lenge of limited labeled data or high annotation costs. This
+adaptation enhances the model’s applicability to practical
+tasks. Moreover, by facilitating the learning of more universal
+and general feature representations for unseen activities, self-
+supervision contributes to improving the model’s generaliza-
+tion across diverse activity recognition tasks.
+VI. CONCLUSION
+In this paper, we propose P2LHAP, an activity-perception
+model that offers a patch sequence to label sequence model
+design solution tailored to identify, segment, and forecast
+human activities through sensor data analysis. Unlike conven-
+tional Transformer-based models, P2LHAP partitions the na-
+tive sensor data stream into multiple patch blocks and utilizes
+a channel-independent approach to mitigate noise interference
+among sensor channels. The forecast of forthcoming activity
+sequences is achieved through reasoning with a Transformer
+encoder-decoder. To address the issue of over-segmentation,
+we refine labels based on the nearby distribution of labels
+close to the active label, thus reducing clutter in the distri-
+bution of active labels. Leveraging the P2LHAP framework,
+we effectively tackle activity segmentation, recognition, and
+forecast within the realm of activity perception tasks. Our ex-
+perimental evaluation on three standard datasets demonstrates
+that our method surpasses existing approaches in classification,
+segmentation, and forecast tasks.
+REFERENCES
+[1] T. Meena and K. Sarawadekar, “Seq2dense u-net: Analyzing sequential
+inertial sensor data for human activity recognition using dense segmen-
+tation model,” IEEE Sensors Journal, vol. 23, no. 18, pp. 21 544–21 552,
+2023.
+[2] L. Chen, R. Hu, M. Wu, and X. Zhou, “Hmgan: A hierarchical multi-
+modal generative adversarial network model for wearable human activity
+recognition,” Proceedings of the ACM on Interactive, Mobile, Wearable
+and Ubiquitous Technologies, vol. 7, no. 3, pp. 1–27, 2023.
+[3] S. Park, H. O. Lee, Y . M. Hwang, S.-K. Ko, and B.-T. Lee, “Enhanced
+prediction model for human activity using an end-to-end approach,”
+IEEE Internet of Things Journal, vol. 10, no. 7, pp. 6031–6041, 2022.
+[4] G. Saleem, U. I. Bajwa, and R. H. Raza, “Toward human activity
+recognition: a survey,” Neural Computing and Applications, vol. 35,
+no. 5, pp. 4145–4182, 2023.
+[5] V . Bianchi, M. Bassoli, G. Lombardo, P. Fornacciari, M. Mordonini, and
+I. De Munari, “Iot wearable sensor and deep learning: An integrated
+approach for personalized human activity recognition in a smart home
+environment,” IEEE Internet of Things Journal, vol. 6, no. 5, pp. 8553–
+8562, 2019.
+[6] F. Duan, T. Zhu, J. Wang, L. Chen, H. Ning, and Y . Wan, “A multi-task
+deep learning approach for sensor-based human activity recognition and
+segmentation,”IEEE Transactions on Instrumentation and Measurement,
+2023.
+[7] S. Xia, L. Chu, L. Pei, W. Yu, and R. C. Qiu, “A boundary consistency-
+aware multitask learning framework for joint activity segmentation and
+recognition with wearable sensors,” IEEE Transactions on Industrial
+Informatics, vol. 19, no. 3, pp. 2984–2996, 2022.
+[8] J. Kim, H. Kang, J. Yang, H. Jung, S. Lee, and J. Lee, “Multi-task deep
+learning for human activity, speed, and body weight estimation using
+commercial smart insoles,” IEEE Internet of Things Journal, 2023.
+[9] H. Qian, S. J. Pan, and C. Miao, “Weakly-supervised sensor-based
+activity segmentation and recognition via learning from distributions,”
+Artificial Intelligence, vol. 292, p. 103429, 2021.
+[10] R. Yao, G. Lin, Q. Shi, and D. C. Ranasinghe, “Efficient dense labelling
+of human activity sequences from wearables using fully convolutional
+networks,” Pattern Recognition, vol. 78, pp. 252–266, 2018.
+[11] Y . Nie, N. H. Nguyen, P. Sinthong, and J. Kalagnanam, “A time
+series is worth 64 words: Long-term forecasting with transformers,” in
+International Conference on Learning Representations, 2023.
+[12] H. Qian, S. J. Pan, and C. Miao, “Weakly-supervised sensor-based
+activity segmentation and recognition via learning from distributions,”
+Artificial Intelligence, vol. 292, p. 103429, 2021.
+[13] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez,
+Ł. Kaiser, and I. Polosukhin, “Attention is all you need,” Advances in
+neural information processing systems, vol. 30, 2017.
+[14] A. Dosovitskiy, L. Beyer, A. Kolesnikov, D. Weissenborn, X. Zhai,
+T. Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly,
+J. Uszkoreit, and N. Houlsby, “An image is worth 16x16 words:
+Transformers for image recognition at scale,” ICLR, 2021.
+
+
+===== PAGE 12 =====
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021 12
+[15] A. Zeng, M. Chen, L. Zhang, and Q. Xu, “Are transformers effective
+for time series forecasting?” in Proceedings of the AAAI conference on
+artificial intelligence, vol. 37, no. 9, 2023, pp. 11 121–11 128.
+[16] K. Chen, D. Zhang, L. Yao, B. Guo, Z. Yu, and Y . Liu, “Deep learning
+for sensor-based human activity recognition: Overview, challenges, and
+opportunities,” ACM Computing Surveys (CSUR), vol. 54, no. 4, pp.
+1–40, 2021.
+[17] M.-K. Yi, W.-K. Lee, and S. O. Hwang, “A human activity recognition
+method based on lightweight feature extraction combined with pruned
+and quantized cnn for wearable device,”IEEE Transactions on Consumer
+Electronics, 2023.
+[18] S. Kobayashi, T. Hasegawa, T. Miyoshi, and M. Koshino, “Marnasnets:
+Toward cnn model architectures specific to sensor-based human activity
+recognition,” IEEE Sensors Journal, vol. 23, no. 16, pp. 18 708–18 717,
+2023.
+[19] H. A. Imran, Q. Riaz, M. Hussain, H. Tahir, and R. Arshad, “Smart-
+wearable sensors and cnn-bigru model: A powerful combination for
+human activity recognition,” IEEE Sensors Journal, vol. 24, no. 2, pp.
+1963–1974, 2024.
+[20] X. Zhou, W. Liang, K. I.-K. Wang, H. Wang, L. T. Yang, and Q. Jin,
+“Deep-learning-enhanced human activity recognition for internet of
+healthcare things,” IEEE Internet of Things Journal, vol. 7, no. 7, pp.
+6429–6438, 2020.
+[21] S. Xu, L. Zhang, W. Huang, H. Wu, and A. Song, “Deformable convolu-
+tional networks for multimodal human activity recognition using wear-
+able sensors,” IEEE Transactions on Instrumentation and Measurement,
+vol. 71, pp. 1–14, 2022.
+[22] T. R. Mim, M. Amatullah, S. Afreen, M. A. Yousuf, S. Uddin, S. A.
+Alyami, K. F. Hasan, and M. A. Moni, “Gru-inc: An inception-attention
+based approach using gru for human activity recognition,” Expert
+Systems with Applications, vol. 216, p. 119419, 2023.
+[23] S. K. Challa, A. Kumar, and V . B. Semwal, “A multibranch cnn-bilstm
+model for human activity recognition using wearable sensor data,” The
+Visual Computer, vol. 38, no. 12, pp. 4095–4109, 2022.
+[24] L. Zhang, W. Zhang, and N. Japkowicz, “Conditional-unet: A condition-
+aware deep model for coherent human activity recognition from wear-
+ables,” in 2020 25th International Conference on Pattern Recognition
+(ICPR). IEEE, 2021, pp. 5889–5896.
+[25] T. Kim, J. Park, J. Lee, and J. Park, “Predicting human motion
+signals using modern deep learning techniques and smartphone sensors,”
+Sensors, vol. 21, no. 24, 2021.
+[26] D. Hazra and Y .-C. Byun, “Synsiggan: Generative adversarial networks
+for synthetic biomedical signal generation,” Biology, vol. 9, no. 12,
+2020.
+[27] X. Li, V . Metsis, H. Wang, and A. H. H. Ngu, “Tts-gan:
+A transformer-based time-series generative adversarial network,” in
+Artificial Intelligence in Medicine, M. Michalowski, S. S. R. Abidi,
+and S. Abidi, Eds. Cham: Springer International Publishing, 2022, pp.
+133–143.
+[28] C. F. Martindale, V . Christlein, P. Klumpp, and B. M. Eskofier,
+“Wearables-based multi-task gait and activity segmentation using recur-
+rent neural networks,” Neurocomputing, vol. 432, pp. 250–261, 2021.
+[29] O. Barut, L. Zhou, and Y . Luo, “Multitask lstm model for human activity
+recognition and intensity estimation using wearable sensor data,” IEEE
+Internet of Things Journal, vol. 7, no. 9, pp. 8760–8768, 2020.
+[30] J. R. Kwapisz, G. M. Weiss, and S. A. Moore, “Activity recognition us-
+ing cell phone accelerometers,” ACM SigKDD Explorations Newsletter,
+vol. 12, no. 2, pp. 74–82, 2011.
+[31] A. Reiss and D. Stricker, “Introducing a new benchmarked dataset for
+activity monitoring,” in 2012 16th international symposium on wearable
+computers. IEEE, 2012, pp. 108–109.
+[32] D. Micucci, M. Mobilio, and P. Napoletano, “Unimib shar: A dataset for
+human activity recognition using acceleration data from smartphones,”
+Applied Sciences, vol. 7, no. 10, p. 1101, 2017.
+[33] Y . Li, J. Wu, W. Li, A. Fang, and W. Dong, “Temporal-spatial dynamic
+convolutional neural network for human activity recognition using wear-
+able sensors,” IEEE Transactions on Instrumentation and Measurement,
+2023.
+[34] K. Xia, J. Huang, and H. Wang, “Lstm-cnn architecture for human
+activity recognition,” IEEE Access, vol. 8, pp. 56 855–56 866, 2020.
+[35] Y . Tang, L. Zhang, Q. Teng, F. Min, and A. Song, “Triple cross-domain
+attention on human activity recognition using wearable sensors,” IEEE
+Transactions on Emerging Topics in Computational Intelligence, vol. 6,
+no. 5, pp. 1167–1176, 2022.
+[36] W. Gao, L. Zhang, W. Huang, F. Min, J. He, and A. Song, “Deep
+neural networks for sensor-based human activity recognition using
+selective kernel convolution,”IEEE Transactions on Instrumentation and
+Measurement, vol. 70, pp. 1–13, 2021.
+[37] S. Kobayashi, T. Hasegawa, T. Miyoshi, and M. Koshino, “Marnasnets:
+Towards cnn model architectures specific to sensor-based human activity
+recognition,” IEEE Sensors Journal, 2023.
+[38] Z. N. Khan and J. Ahmad, “Attention induced multi-head convolutional
+neural network for human activity recognition,” Applied soft computing,
+vol. 110, p. 107671, 2021.
+[39] M. A. Al-Qaness, A. Dahou, M. Abd Elaziz, and A. Helmi, “Multi-
+resatt: Multilevel residual network with attention for human activity
+recognition using wearable sensors,” IEEE Transactions on Industrial
+Informatics, vol. 19, no. 1, pp. 144–152, 2022.
+[40] W. Huang, L. Zhang, H. Wu, F. Min, and A. Song, “Channel-
+equalization-har: A light-weight convolutional neural network for wear-
+able sensor based human activity recognition,” IEEE Transactions on
+Mobile Computing, vol. 22, no. 9, pp. 5064–5077, 2023.
+[41] J. Li, H. Xu, and Y . Wang, “Multiresolution fusion convolutional
+network for open set human activity recognition,” IEEE Internet of
+Things Journal, vol. 10, no. 13, pp. 11 369–11 382, 2023.
+[42] Y . Tang, L. Zhang, F. Min, and J. He, “Multiscale deep feature
+learning for human activity recognition using wearable sensors,” IEEE
+Transactions on Industrial Electronics, vol. 70, no. 2, pp. 2106–2116,
+2022.
+[43] Y . Wang, H. Xu, L. Zheng, G. Zhao, Z. Liu, S. Zhou, M. Wang, and
+J. Xu, “A multidimensional parallel convolutional connected network
+based on multisource and multimodal sensor data for human activity
+recognition,” IEEE Internet of Things Journal, vol. 10, no. 16, pp.
+14 873–14 885, 2023.
+[44] M. Canizo, I. Triguero, A. Conde, and E. Onieva, “Multi-head cnn–rnn
+for multi-time series anomaly detection: An industrial case study,”
+Neurocomputing, vol. 363, pp. 246–260, 2019.
+[45] L. Y . e. a. Wang X., Cai Z., “Long time series deep forecasting with
+multiscale feature extraction and seq2seq attention mechanism,” Neural
+Process Lett, vol. 54, pp. 3443–3466, 2022.
+[46] I. E. Jaramillo, C. Chola, J.-G. Jeong, J.-H. Oh, H. Jung, J.-H. Lee, W. H.
+Lee, and T.-S. Kim, “Human activity prediction based on forecasted imu
+activity signals by sequence-to-sequence deep neural networks,”Sensors,
+vol. 23, no. 14, p. 6491, 2023.
+[47] V . S. Murahari and T. Plötz, “On attention models for human activity
+recognition,” in Proceedings of the 2018 ACM international symposium
+on wearable computers, 2018, pp. 100–103.
+[48] A. Abedin, M. Ehsanpour, Q. Shi, H. Rezatofighi, and D. C. Ranas-
+inghe, “Attend and discriminate: Beyond the state-of-the-art for human
+activity recognition using wearable sensors,” Proceedings of the ACM
+on Interactive, Mobile, Wearable and Ubiquitous Technologies, vol. 5,
+no. 1, pp. 1–22, 2021.
+[49] L. Shu, H. Xu, and B. Liu, “Doc: Deep open classification of text
+documents,” in Proceedings of the 2017 Conference on Empirical
+Methods in Natural Language Processing, 2017, pp. 2911–2916.

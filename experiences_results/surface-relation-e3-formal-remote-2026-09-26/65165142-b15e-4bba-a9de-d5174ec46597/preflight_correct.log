@@ -1,0 +1,191 @@
+/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/peft/tuners/tuners_utils.py:331: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+  [skip download] 1 file(s) found in /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B
+Loading models from: /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/diffusion_pytorch_model.safetensors
+    model_name: wan_video_dit model_class: WanModel
+        This model is initialized with extra kwargs: {'has_image_input': False, 'patch_size': [1, 2, 2], 'in_dim': 16, 'dim': 1536, 'ffn_dim': 8960, 'freq_dim': 256, 'text_dim': 4096, 'out_dim': 16, 'num_heads': 12, 'num_layers': 30, 'eps': 1e-06}
+    The following models are loaded: ['wan_video_dit'].
+  [skip download] 1 file(s) found in /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B
+Loading models from: /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth
+    model_name: wan_video_text_encoder model_class: WanTextEncoder
+    The following models are loaded: ['wan_video_text_encoder'].
+  [skip download] 1 file(s) found in /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B
+Loading models from: /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth
+    model_name: wan_video_vae model_class: WanVideoVAE
+    The following models are loaded: ['wan_video_vae'].
+Using wan_video_text_encoder from /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth.
+Using wan_video_dit from /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/diffusion_pytorch_model.safetensors.
+Using wan_video_vae from /root/autodl-tmp/projects/motionforesight/assets/models_pretrained/wan_models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth.
+No wan_video_image_encoder models available.
+No wan_video_motion_controller models available.
+No wan_video_vace models available.
+No wans2v_audio_encoder models available.
+  LoRA injected: rank=1024, targets=q,k,v,o,ffn.0,ffn.2
+  patch_embedding expanded: 16->32 channels
+  DiT head expanded to 2x output (xyz | vis)
+  DiT loaded: 1425 keys (unexpected=0, missing=0)
+  VAE loaded: 194 keys
+  VAE_vis loaded: 194 keys
+  VAE_pj loaded: 194 keys
+WanSceneFlowPredictor loaded from /root/trackcraft-assets/checkpoints/trackcraft3r/model.safetensors
+  fresh LoRA injected: rank=32, scope=attn, layers=300
+loaded 247 fine-tuned tensors (variant=fresh, unexpected=0, epoch=68)
+  missing keys: 4249
+{
+  "status": "PASS",
+  "scope": "formal-video observed-only E3 interface preflight; Relation Head not trained",
+  "video_id": "65165142-b15e-4bba-a9de-d5174ec46597",
+  "checkpoint_config": {
+    "checkpoint_path": "/weka/scratch/hbharad2/users/yjangir1/future_flow_homaga/future-3d-scene-flow/models_pretrained/checkpoints/trackcraft3r/model.safetensors",
+    "model_id": "Wan-AI/Wan2.1-T2V-1.3B",
+    "lora_rank": 1024,
+    "lora_target_modules": "q,k,v,o,ffn.0,ffn.2",
+    "height": 320,
+    "width": 576,
+    "obs_frames": 7,
+    "total_frames": 22,
+    "regression_timestep": -1,
+    "trainable": [
+      "mask",
+      "io",
+      "head"
+    ],
+    "lora_scope": "attn",
+    "lora_last_n": 0,
+    "predict_vis": true,
+    "fresh_lora_rank": 32,
+    "fresh_lora_alpha": 32,
+    "fresh_lora_scope": "attn"
+  },
+  "input": {
+    "observed_rgb_shape": [
+      1,
+      7,
+      3,
+      320,
+      576
+    ],
+    "observed_pointmap_shape": [
+      1,
+      7,
+      3,
+      320,
+      576
+    ],
+    "observed_frame_indices": [
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102
+    ],
+    "observed_timestamps_s": [
+      1498.4,
+      1498.4666666666667,
+      1498.5333333333333,
+      1498.6,
+      1498.6666666666667,
+      1498.7333333333333,
+      1498.8
+    ],
+    "observed_tensor_sha256": "ea20f7a7924d7ad434d70133630d653f83a59ac60186a1ad0a2296e51a6c4236",
+    "future_frame_tensor_supplied_to_motionforesight": false,
+    "trackcraft_identity_mapping_scope": "seven observed frames only"
+  },
+  "outputs": {
+    "p0_future_shape": [
+      15,
+      48,
+      3
+    ],
+    "h_output_latent_shape": [
+      15,
+      48,
+      16
+    ],
+    "h_last_dit_shape": [
+      15,
+      48,
+      1536
+    ],
+    "finite": true,
+    "cache_npz": "/root/autodl-tmp/projects/motionforesight/outputs/e3_formal/65165142-b15e-4bba-a9de-d5174ec46597/p0_h_cache_aligned.npz"
+  },
+  "query_alignment": {
+    "count": 48,
+    "anchor": "first observed frame via observed-only TrackCraft3R",
+    "match_error_px_median": 0.3399983048439026,
+    "match_error_px_max": 0.8487169146537781,
+    "permutation_sampling_max_abs_error": 0.0
+  },
+  "pseudo_gt_alignment": {
+    "method": "least-squares similarity estimated from shared t0 queries only",
+    "uses_future_points_for_alignment": false,
+    "scale": 0.8560480714152553,
+    "rotation_angle_deg": 33.12299270557486,
+    "translation_norm": 0.6905516386032104,
+    "raw_t0_error_median": 0.47907525300979614,
+    "raw_t0_error_max": 0.5549469590187073,
+    "aligned_t0_error_median": 0.0754958987236023,
+    "aligned_t0_error_max": 0.38830310106277466,
+    "pseudo_gt_shape": [
+      9,
+      48,
+      3
+    ],
+    "valid_fraction": 1.0
+  },
+  "time_mapping": {
+    "model_future_slots": 15,
+    "prediction_timestamps_s": [
+      1498.8666666666666,
+      1498.9333333333334,
+      1499.0,
+      1499.0666666666666,
+      1499.1333333333332,
+      1499.2,
+      1499.2666666666667,
+      1499.3333333333333,
+      1499.3999999999999,
+      1499.4666666666667,
+      1499.5333333333333,
+      1499.6,
+      1499.6666666666665,
+      1499.7333333333333,
+      1499.8
+    ],
+    "formal_future_slot_indices_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "formal_match_errors_s": [
+      0.010514000000057422,
+      0.010514000000057422,
+      0.010514000000057422,
+      0.010514000000057422,
+      0.010514000000057422,
+      0.010514000000057422,
+      0.010514000000057422,
+      0.010514000000057422,
+      0.010514000000057422
+    ],
+    "tolerance_s": 0.03333333333333333,
+    "unique_mapping": true,
+    "valid": true,
+    "basis": "consecutive stride-1 model slots on an explicitly resampled 15 fps input grid",
+    "remaining_limit": "checkpoint training-rate calibration on Ego4D is not established"
+  },
+  "coordinate_frame": "last_observed_camera",
+  "gpu_peak_allocated_bytes": 11198361088
+}

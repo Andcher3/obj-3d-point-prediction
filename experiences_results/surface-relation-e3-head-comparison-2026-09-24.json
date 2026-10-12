@@ -1,0 +1,130 @@
+{
+  "scope": "synthetic/oracle matched-parameter Relation Head comparison; no real-video training",
+  "edge_parameters": 1155,
+  "node_parameters": 1163,
+  "runs": [
+    {
+      "seed": 1000,
+      "edge_initial": 0.08373068178897507,
+      "edge_final": 0.001321795043617473,
+      "edge_ratio": 0.01578626872940996,
+      "node_initial": 0.086123721459445,
+      "node_final": 0.0013218928915013728,
+      "node_ratio": 0.015348766508235969,
+      "edge_count": 91
+    },
+    {
+      "seed": 1001,
+      "edge_initial": 0.06903836734908655,
+      "edge_final": 0.001240517903574388,
+      "edge_ratio": 0.017968528967404692,
+      "node_initial": 0.08499367832916725,
+      "node_final": 0.0012394053746029457,
+      "node_ratio": 0.014582324226549204,
+      "edge_count": 94
+    },
+    {
+      "seed": 1002,
+      "edge_initial": 0.09630605441919073,
+      "edge_final": 0.00366334697237303,
+      "edge_ratio": 0.03803859471209986,
+      "node_initial": 0.08261610210444656,
+      "node_final": 0.00421815990559254,
+      "node_ratio": 0.051057358046979445,
+      "edge_count": 90
+    },
+    {
+      "seed": 1003,
+      "edge_initial": 0.20292277276289156,
+      "edge_final": 0.0035217196302651343,
+      "edge_ratio": 0.017354974911466172,
+      "node_initial": 0.10811092093109366,
+      "node_final": 0.003281969532036634,
+      "node_ratio": 0.030357428313171553,
+      "edge_count": 90
+    },
+    {
+      "seed": 1004,
+      "edge_initial": 0.12732518500834433,
+      "edge_final": 0.0018212896037136993,
+      "edge_ratio": 0.014304236853018041,
+      "node_initial": 0.10150727181649263,
+      "node_final": 0.0016555583940819996,
+      "node_ratio": 0.01630975165084684,
+      "edge_count": 91
+    },
+    {
+      "seed": 1005,
+      "edge_initial": 0.043973799055066216,
+      "edge_final": 0.0016985588326107436,
+      "edge_ratio": 0.038626611052725336,
+      "node_initial": 0.07046950688145379,
+      "node_final": 0.0016951259078475667,
+      "node_ratio": 0.02405474343249152,
+      "edge_count": 87
+    },
+    {
+      "seed": 1006,
+      "edge_initial": 0.06555271568738723,
+      "edge_final": 0.001289308837288671,
+      "edge_ratio": 0.019668274971813907,
+      "node_initial": 0.07536582665827701,
+      "node_final": 0.0012889475508345819,
+      "node_ratio": 0.017102546445604785,
+      "edge_count": 93
+    },
+    {
+      "seed": 1007,
+      "edge_initial": 0.14580500765593055,
+      "edge_final": 0.0031639451637197574,
+      "edge_ratio": 0.021699838809281564,
+      "node_initial": 0.0790102044991441,
+      "node_final": 0.0032191009705894477,
+      "node_ratio": 0.04074285076207238,
+      "edge_count": 92
+    },
+    {
+      "seed": 1008,
+      "edge_initial": 0.08905139909531869,
+      "edge_final": 0.0025534949634614178,
+      "edge_ratio": 0.028674394668726226,
+      "node_initial": 0.10150568895617844,
+      "node_final": 0.0025413590067831105,
+      "node_ratio": 0.02503661649821671,
+      "edge_count": 91
+    },
+    {
+      "seed": 1009,
+      "edge_initial": 0.21112163519697122,
+      "edge_final": 0.0023650372558278875,
+      "edge_ratio": 0.011202249611326508,
+      "node_initial": 0.07873963598577514,
+      "node_final": 0.002355559835562107,
+      "node_ratio": 0.02991580804345673,
+      "edge_count": 91
+    }
+  ],
+  "aggregate": {
+    "edge_ratio": {
+      "median": 0.0188184019696093,
+      "p90": 0.03809739634616241,
+      "max": 0.038626611052725336
+    },
+    "node_ratio": {
+      "median": 0.024545679965354117,
+      "p90": 0.04177430149056308,
+      "max": 0.051057358046979445
+    },
+    "edge_final": {
+      "median": 0.0020931634297707935,
+      "p90": 0.003535882364475924,
+      "max": 0.00366334697237303
+    },
+    "node_final": {
+      "median": 0.002025342871704837,
+      "p90": 0.0033755885693922245,
+      "max": 0.00421815990559254
+    }
+  },
+  "interpretation": "Engineering fit comparison only; does not establish real-video learnability or superiority."
+}

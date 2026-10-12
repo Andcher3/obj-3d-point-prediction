@@ -1,0 +1,11 @@
+[2026-09-28T08:03:40Z] START boat prepare_inputs
+[2026-09-28T08:03:50Z] END boat prepare_inputs rc=0
+[2026-09-28T08:03:50Z] START boat observed_dense
+[2026-09-28T08:06:54Z] END boat observed_dense rc=0
+[2026-09-28T08:06:54Z] START boat query_mapping
+[2026-09-28T08:06:54Z] END boat query_mapping rc=0
+[2026-09-28T08:06:54Z] START boat full22_trackcraft+motionforesight
+[2026-09-28T08:09:59Z] END boat full22_trackcraft rc=0 motionforesight rc=0
+[2026-09-28T08:09:59Z] START boat build_bundle
+[2026-09-28T08:10:00Z] END boat build_bundle rc=0
+[2026-09-28T08:10:00Z] COMPLETED selected preprocessing: boat

@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "name": "movi_f-validation.tfrecord-00000-of-00032",
+      "bytes": 145203460,
+      "md5_base64": "XvV3BQc4Hj3fSgBkHFknpQ==",
+      "generation": "1648486527338866",
+      "scene_count": 5,
+      "publisher_md5_matches": true,
+      "sha256": "ee9b6b7a92ca0a54bf8759217355f8b51c149b1d1c683ae85d918a8917fa9323"
+    },
+    {
+      "name": "movi_f-validation.tfrecord-00001-of-00032",
+      "bytes": 112273256,
+      "md5_base64": "mYsx/WH3ExZy+Rbf4Hw+uQ==",
+      "generation": "1648486528740452",
+      "scene_count": 4,
+      "publisher_md5_matches": true,
+      "sha256": "fc8798e03c3d63468f7ca5691838fcd4a864f14a2f3580216c5cb4c27df66df7"
+    },
+    {
+      "name": "movi_f-validation.tfrecord-00002-of-00032",
+      "bytes": 142193986,
+      "md5_base64": "W5KWw6hCWMOFXARHWD+CfA==",
+      "generation": "1648486520577254",
+      "scene_count": 5,
+      "publisher_md5_matches": true,
+      "sha256": "3f9d7570deb22b27755c59d66edae5ee0e68d55a51389f4d1d13e06f9844114a"
+    },
+    {
+      "name": "movi_f-validation.tfrecord-00003-of-00032",
+      "bytes": 111248711,
+      "md5_base64": "umeRjYHuMDoQLcXaZ+R1ZA==",
+      "generation": "1648486529983988",
+      "scene_count": 4,
+      "publisher_md5_matches": true,
+      "sha256": "9982e292cb8a8d3db26b4d699fedd18ccc14e1cc9d2e1969e8acbdcd0d2e2ac2"
+    }
+  ],
+  "publisher_checksums_match": true
+}

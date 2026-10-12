@@ -1,0 +1,73 @@
+{
+  "archive_member_files_verified": 58,
+  "videos": {
+    "car-turn": {
+      "quality_status": "FAIL",
+      "valid_query_count": 48,
+      "component_count": 1,
+      "teacher_anchor_p90_pct": 44.04804319318049,
+      "registration_p90_pct": 13.227227778657982,
+      "registration_max_pct": 21.94915740726045,
+      "failed_gates": [
+        "observed_frame0_anchor_p90_le_5pct",
+        "observed_frame0_anchor_max_le_10pct",
+        "teacher_frame0_anchor_p90_le_5pct",
+        "teacher_frame0_anchor_max_le_10pct",
+        "cross_context_t0_uv_p90_le_5pct",
+        "cross_context_t0_uv_max_le_10pct",
+        "registration_p90_le_10pct",
+        "registration_90pct_below_10pct",
+        "registration_max_le_20pct"
+      ]
+    },
+    "drift-turn": {
+      "quality_status": "FAIL",
+      "valid_query_count": 48,
+      "component_count": 1,
+      "teacher_anchor_p90_pct": 9.709662055207744,
+      "registration_p90_pct": 10.476687981902115,
+      "registration_max_pct": 15.7335538423927,
+      "failed_gates": [
+        "teacher_frame0_anchor_p90_le_5pct",
+        "teacher_frame0_anchor_max_le_10pct",
+        "cross_context_t0_uv_p90_le_5pct",
+        "cross_context_t0_uv_max_le_10pct",
+        "registration_p90_le_10pct",
+        "registration_90pct_below_10pct"
+      ]
+    },
+    "boat": {
+      "quality_status": "FAIL",
+      "valid_query_count": 48,
+      "component_count": 2,
+      "teacher_anchor_p90_pct": 2.6019700948669597,
+      "registration_p90_pct": 5.955118295392476,
+      "registration_max_pct": 46.618835627418704,
+      "failed_gates": [
+        "registration_max_le_20pct",
+        "valid_graph_connected"
+      ]
+    },
+    "soccerball": {
+      "quality_status": "FAIL",
+      "valid_query_count": 48,
+      "component_count": 1,
+      "teacher_anchor_p90_pct": 14.720295710600645,
+      "registration_p90_pct": 34.58880927833785,
+      "registration_max_pct": 50.00516314899546,
+      "failed_gates": [
+        "observed_frame0_anchor_p90_le_5pct",
+        "teacher_frame0_anchor_p90_le_5pct",
+        "teacher_frame0_anchor_max_le_10pct",
+        "cross_context_t0_uv_p90_le_5pct",
+        "cross_context_t0_uv_max_le_10pct",
+        "registration_p90_le_10pct",
+        "registration_90pct_below_10pct",
+        "registration_max_le_20pct"
+      ]
+    }
+  },
+  "all_four_quality_pass": false,
+  "training_started": false,
+  "remote_archive_sha256": "9e7ea6deb0d0a27e0efd2ad3b9886f1470eee2fe698980a041ddfc57fbbb6e89"
+}

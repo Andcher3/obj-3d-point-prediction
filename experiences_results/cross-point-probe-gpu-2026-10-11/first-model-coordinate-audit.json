@@ -1,0 +1,119 @@
+{
+  "scenes": [
+    {
+      "scene": "scene_1680",
+      "raw_cache_units": "DA3_estimated_units",
+      "estimated_camera_vs_GT_not_preapproved": true,
+      "GT_observed_radius": 0.6796993112161942,
+      "diagnostics": {
+        "DA3_query_frame0": {
+          "raw_error": {
+            "median": 6.449442274196667,
+            "p90": 7.672181180224515,
+            "maximum": 7.8623481941632605,
+            "p90_object_radius_fraction": 11.287610644325339
+          },
+          "raw_object_radius": 0.018673759717531723,
+          "all_query_similarity_diagnostic": {
+            "scale": 23.69977017295319,
+            "rotation_angle_deg": 24.732905716143875,
+            "translation": [
+              -2.244515701203048,
+              1.722519744084313,
+              0.3463102772837603
+            ],
+            "error": {
+              "median": 0.4415711029603574,
+              "p90": 0.8412168996025009,
+              "maximum": 1.0864718868370893,
+              "p90_object_radius_fraction": 1.237630943155292
+            }
+          },
+          "heldout_similarity_error": {
+            "median": 0.47008590245604887,
+            "p90": 0.8615941476601184,
+            "maximum": 1.13220595990483,
+            "p90_object_radius_fraction": 1.2676107411650273
+          }
+        },
+        "MF_observed_frame0": {
+          "raw_error": {
+            "median": 6.493521614043329,
+            "p90": 7.703081880905961,
+            "maximum": 7.826431860749328,
+            "p90_object_radius_fraction": 11.333072954160778
+          },
+          "raw_object_radius": 0.0763173184179818,
+          "all_query_similarity_diagnostic": {
+            "scale": 3.1042459276844427,
+            "rotation_angle_deg": 9.313434369731786,
+            "translation": [
+              -0.46370066203797144,
+              -2.186018672404356,
+              5.691551731217756
+            ],
+            "error": {
+              "median": 0.5277446617713111,
+              "p90": 1.0996012738440328,
+              "maximum": 1.2559361289356457,
+              "p90_object_radius_fraction": 1.6177760602353752
+            }
+          },
+          "heldout_similarity_error": {
+            "median": 0.5588505494763532,
+            "p90": 1.1888537181285095,
+            "maximum": 1.417496889655402,
+            "p90_object_radius_fraction": 1.749087719393564
+          }
+        },
+        "MF_observed_last": {
+          "raw_error": {
+            "median": 8.764883277654544,
+            "p90": 9.995390149065758,
+            "maximum": 10.220647612861299,
+            "p90_object_radius_fraction": 14.705605823229224
+          },
+          "raw_object_radius": 0.06355507796588596,
+          "all_query_similarity_diagnostic": {
+            "scale": 2.626067505129984,
+            "rotation_angle_deg": 58.75633697087095,
+            "translation": [
+              -0.04511700885918156,
+              -2.3818963670231845,
+              8.6477216192244
+            ],
+            "error": {
+              "median": 0.5209948752680851,
+              "p90": 1.0810778819652662,
+              "maximum": 1.3604800945331135,
+              "p90_object_radius_fraction": 1.5905237273683277
+            }
+          },
+          "heldout_similarity_error": {
+            "median": 0.557600924895601,
+            "p90": 1.1363871424727219,
+            "maximum": 1.3504246239438817,
+            "p90_object_radius_fraction": 1.6718968575080215
+          }
+        },
+        "fixed_frame0_mapping_past": {
+          "median": 1.1882040597706025,
+          "p90": 2.412465538382383,
+          "maximum": 3.600605446938083,
+          "p90_object_radius_fraction": 3.5493129072997434
+        }
+      },
+      "first_frame_fx_ratio": 1.1999267578125,
+      "first_frame_fy_ratio": 1.292665754045759,
+      "camera_relative_rotation_difference_deg": 0.2449745552276768,
+      "camera_relative_translation_difference_after_query_scale": 0.03528908328574456,
+      "training_coordinate_audit_pass": false,
+      "future_GT_used_to_fit": false,
+      "GT_provided_to_forecaster": false,
+      "cache_rewritten": false
+    }
+  ],
+  "audit_only": true,
+  "performance_evaluation": false,
+  "training_authorized_by_audit": false
+}

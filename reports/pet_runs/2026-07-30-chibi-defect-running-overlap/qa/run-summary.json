@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "repair_state": "running",
+  "spritesheet": "../final/spritesheet-extended.webp",
+  "validation": "../final/validation-extended.json",
+  "running_frame_review": "review.json",
+  "running_chroma_despill": "chroma-despill-running.json",
+  "contact_sheet": "contact-sheet-extended.png",
+  "running_preview": "previews/running.gif",
+  "visual_qa": "final-visual-qa.json",
+  "row_preservation": "row-preservation.json"
+}

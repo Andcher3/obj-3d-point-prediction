@@ -1,0 +1,137 @@
+{
+  "cut_0": [
+    {
+      "answer": "The person in green gloves will pick up the blue cutting board and move it to a different location on the countertop.",
+      "count": 12,
+      "ids": [
+        "r0_00_sigma_0_seed_0",
+        "r0_01_sigma_0_seed_0",
+        "r0_02_sigma_0.005_seed_11",
+        "r0_03_sigma_0.005_seed_22",
+        "r0_04_sigma_0.01_seed_11",
+        "r0_05_sigma_0.01_seed_22",
+        "r0_06_sigma_0.03_seed_11",
+        "r0_07_sigma_0.03_seed_22",
+        "r0_08_sigma_0.1_seed_11",
+        "r0_09_sigma_0.1_seed_22",
+        "r0_10_sigma_0.2_seed_11",
+        "r0_11_sigma_0.2_seed_22"
+      ],
+      "selected_ids": []
+    },
+    {
+      "answer": "The person in red gloves will pick up the pink rectangular cutting board and move it to a different location on the countertop.",
+      "count": 6,
+      "ids": [
+        "r1_00_sigma_0.005_seed_11",
+        "r1_03_sigma_0.01_seed_22",
+        "r1_04_sigma_0.03_seed_11",
+        "r1_05_sigma_0.03_seed_22",
+        "r1_08_sigma_0.2_seed_11",
+        "r1_09_sigma_0.2_seed_22"
+      ],
+      "selected_ids": [
+        "r1_09_sigma_0.2_seed_22"
+      ]
+    },
+    {
+      "answer": "The person in red gloves will move the pink rectangular cutting board to a different location on the countertop.",
+      "count": 1,
+      "ids": [
+        "r1_01_sigma_0.005_seed_22"
+      ],
+      "selected_ids": [
+        "r1_01_sigma_0.005_seed_22"
+      ]
+    },
+    {
+      "answer": "The person in red gloves will place the pink rectangular cutting board on the countertop.",
+      "count": 3,
+      "ids": [
+        "r1_02_sigma_0.01_seed_11",
+        "r1_06_sigma_0.1_seed_11",
+        "r1_07_sigma_0.1_seed_22"
+      ],
+      "selected_ids": [
+        "r1_07_sigma_0.1_seed_22"
+      ]
+    }
+  ],
+  "cut_1": [
+    {
+      "answer": "The next step is to continue cleaning the inside of the orange bowl with the purple object to ensure it is thoroughly cleaned.",
+      "count": 22,
+      "ids": [
+        "r0_00_sigma_0_seed_0",
+        "r0_01_sigma_0_seed_0",
+        "r0_02_sigma_0.005_seed_11",
+        "r0_03_sigma_0.005_seed_22",
+        "r0_04_sigma_0.01_seed_11",
+        "r0_05_sigma_0.01_seed_22",
+        "r0_06_sigma_0.03_seed_11",
+        "r0_07_sigma_0.03_seed_22",
+        "r0_08_sigma_0.1_seed_11",
+        "r0_09_sigma_0.1_seed_22",
+        "r0_10_sigma_0.2_seed_11",
+        "r0_11_sigma_0.2_seed_22",
+        "r1_00_sigma_0.005_seed_11",
+        "r1_01_sigma_0.005_seed_22",
+        "r1_02_sigma_0.01_seed_11",
+        "r1_03_sigma_0.01_seed_22",
+        "r1_04_sigma_0.03_seed_11",
+        "r1_05_sigma_0.03_seed_22",
+        "r1_06_sigma_0.1_seed_11",
+        "r1_07_sigma_0.1_seed_22",
+        "r1_08_sigma_0.2_seed_11",
+        "r1_09_sigma_0.2_seed_22"
+      ],
+      "selected_ids": [
+        "r1_07_sigma_0.1_seed_22",
+        "r1_08_sigma_0.2_seed_11",
+        "r1_09_sigma_0.2_seed_22"
+      ]
+    }
+  ],
+  "cut_2": [
+    {
+      "answer": "The person will start cutting the food on the cutting board.",
+      "count": 21,
+      "ids": [
+        "r0_00_sigma_0_seed_0",
+        "r0_01_sigma_0_seed_0",
+        "r0_02_sigma_0.005_seed_11",
+        "r0_03_sigma_0.005_seed_22",
+        "r0_04_sigma_0.01_seed_11",
+        "r0_06_sigma_0.03_seed_11",
+        "r0_07_sigma_0.03_seed_22",
+        "r0_08_sigma_0.1_seed_11",
+        "r0_09_sigma_0.1_seed_22",
+        "r0_10_sigma_0.2_seed_11",
+        "r0_11_sigma_0.2_seed_22",
+        "r1_00_sigma_0.005_seed_11",
+        "r1_01_sigma_0.005_seed_22",
+        "r1_02_sigma_0.01_seed_11",
+        "r1_03_sigma_0.01_seed_22",
+        "r1_04_sigma_0.03_seed_11",
+        "r1_05_sigma_0.03_seed_22",
+        "r1_06_sigma_0.1_seed_11",
+        "r1_07_sigma_0.1_seed_22",
+        "r1_08_sigma_0.2_seed_11",
+        "r1_09_sigma_0.2_seed_22"
+      ],
+      "selected_ids": [
+        "r1_07_sigma_0.1_seed_22",
+        "r1_08_sigma_0.2_seed_11",
+        "r1_09_sigma_0.2_seed_22"
+      ]
+    },
+    {
+      "answer": "The person will start cutting the food on the cutting board with the knife.",
+      "count": 1,
+      "ids": [
+        "r0_05_sigma_0.01_seed_22"
+      ],
+      "selected_ids": []
+    }
+  ]
+}

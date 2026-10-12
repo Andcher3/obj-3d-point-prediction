@@ -1,0 +1,18 @@
+{
+  "video_id": "4d053322-1eef-4a69-8201-932c7b82fb03",
+  "history_frame_indices": [
+    93,
+    94,
+    95
+  ],
+  "t0_seconds": 898.360514,
+  "frame_shape_hw": [
+    392,
+    518
+  ],
+  "source_image_shape_hw": [
+    1440,
+    1920
+  ],
+  "pointmap_coordinate_frame": "DA3_world_from_w2c_extrinsics"
+}

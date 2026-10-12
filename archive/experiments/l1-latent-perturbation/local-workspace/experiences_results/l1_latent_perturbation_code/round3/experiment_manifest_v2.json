@@ -1,0 +1,21 @@
+{
+  "videos": [
+    {"id": "cut_0", "video": "/root/autodl-tmp/datasets/cut_0.mp4", "target_object": "the pink rectangular cutting board", "target_aliases": "pink rectangular cutting board|pink cutting board"},
+    {"id": "cut_1", "video": "/root/autodl-tmp/datasets/cut_1.mp4", "target_object": "the orange bowl", "target_aliases": "orange bowl"},
+    {"id": "cut_2", "video": "/root/autodl-tmp/datasets/cut_2.mp4", "target_object": "the food item held between the hands", "target_aliases": "food item held between the hands|food item"}
+  ],
+  "shared": {
+    "model": "/root/autodl-tmp/models/future-l1",
+    "nli_model": "/root/autodl-tmp/models/nli-deberta-v3-xsmall",
+    "sigmas": "0.01,0.03,0.1,0.2",
+    "seeds": "11,22,33",
+    "branch_count": 5,
+    "feedback_rounds": 2,
+    "nli_threshold": 0.70,
+    "min_quality": 0.75,
+    "min_target_coverage": 0.75,
+    "max_new_tokens": 320,
+    "nframes": 8,
+    "scale_mode": "rms"
+  }
+}

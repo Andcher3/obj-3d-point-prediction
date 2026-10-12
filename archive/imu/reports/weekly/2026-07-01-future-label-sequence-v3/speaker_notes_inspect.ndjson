@@ -1,0 +1,27 @@
+{"kind":"slide","id":"sl/4zwlm2","slide":1,"title":"Slide 1","textShapes":0}
+{"kind":"image","id":"im/l87ed8ba","slide":1,"name":"","alt":"weekly research report slide 1","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/4zwlm2","slide":1,"text":"这页交代本周工作主线：前半部分补充 HAR/HAS/HAP 背景和论文调研，后半部分把切换预测转成 future patch label sequence，并形成 Transformer 方案雏形。"}
+{"kind":"slide","id":"sl/0w4thd","slide":2,"title":"Slide 2","textShapes":0}
+{"kind":"image","id":"im/4nap4r65","slide":2,"name":"","alt":"weekly research report slide 2","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/0w4thd","slide":2,"text":"这页给听众建立三个任务的基本区别。HAR 看当前窗口分类，HAS 看连续流中的活动段与边界，HAP/HAF 从过去观测推未来标签或未来信号。方向一同时包含识别和预测需求。"}
+{"kind":"slide","id":"sl/4s47ma","slide":3,"title":"Slide 3","textShapes":0}
+{"kind":"image","id":"im/1032lszq","slide":3,"name":"","alt":"weekly research report slide 3","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/4s47ma","slide":3,"text":"这一页说明模型输入是六轴 IMU 时间序列。实际研究会把连续流切成 patch，标签可能是 window-level、patch-level、segment-level 或 future horizon。本课题还需要人体动作和手机运动两个标签对齐。"}
+{"kind":"slide","id":"sl/oypgs2","slide":4,"title":"Slide 4","textShapes":0}
+{"kind":"image","id":"im/7mp0bi9s","slide":4,"name":"","alt":"weekly research report slide 4","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/oypgs2","slide":4,"text":"这里概括方法演化。传统方法偏特征工程，深度模型直接学习波形；近期更关注连续序列、Transformer 和自监督预训练。对方向一，关键是从单窗口分类扩展到连续双标签和未来预测。"}
+{"kind":"slide","id":"sl/ev23ee","slide":5,"title":"Slide 5","textShapes":0}
+{"kind":"image","id":"im/hcrmhk3q","slide":5,"name":"","alt":"weekly research report slide 5","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/ev23ee","slide":5,"text":"这页只保留论文中可迁移的设计。SensorLM 和 SensorLLM 给出传感器语义对齐思路，EVI-MAE 提示无标签重构预训练，P2LHAP 直接影响我们对输出形式和 smoothing 的选择。"}
+{"kind":"slide","id":"sl/5oo36p","slide":6,"title":"Slide 6","textShapes":0}
+{"kind":"image","id":"im/v6psfil0","slide":6,"name":"","alt":"weekly research report slide 6","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/5oo36p","slide":6,"text":"P2LHAP 的关键是把连续传感器流转成 patch 标签序列。识别、分割和 forecast 都从这个序列读出。Smoothing 能去掉短时孤立错误，例如 stand 中间偶然出现一个 sit，从而减少过分割。"}
+{"kind":"slide","id":"sl/rvel4g","slide":7,"title":"Slide 7","textShapes":0}
+{"kind":"image","id":"im/fyxobm58","slide":7,"name":"","alt":"weekly research report slide 7","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/rvel4g","slide":7,"text":"方向一可以写成双标签未来序列预测。输入是过去 K 个 IMU patch，输出是人体动作和手机运动在当前到未来 H 个 patch 的概率。延续概率、切换时机和下一状态都从输出序列派生。"}
+{"kind":"slide","id":"sl/23wp6j","slide":8,"title":"Slide 8","textShapes":0}
+{"kind":"image","id":"im/r2p8nqxs","slide":8,"name":"","alt":"weekly research report slide 8","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/23wp6j","slide":8,"text":"结构上用 Transformer encoder 建模历史 IMU 上下文，用 parallel query decoder 一次性读取当前和未来多个位置。q0 对应当前，q1 到 qH 对应未来。decoder 不使用 causal mask，便于 future queries 之间相互建模。"}
+{"kind":"slide","id":"sl/zfzh17","slide":9,"title":"Slide 9","textShapes":0}
+{"kind":"image","id":"im/1orytsvu","slide":9,"name":"","alt":"weekly research report slide 9","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/zfzh17","slide":9,"text":"训练策略分两步。第一步用大量无标签 IMU 做 masked reconstruction 或 next patch prediction，学习时序结构。第二步用少量连续标注微调双标签输出。推理时对概率序列做平滑、去除短时孤立段，再读取切换点。"}

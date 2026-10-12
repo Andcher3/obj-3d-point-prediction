@@ -1,0 +1,30 @@
+[START] smoke12 input=/root/autodl-tmp/ego4d-formal-e2/trackcraft_inputs/9069bd26-0139-4e88-9957-9f9489b35a91/input.npz frames=12
+/root/autodl-tmp/conda_envs/trackcraft-e2/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loaded 12 frames from /tmp/tmp2rc0ui6r.npz, subsampled to 12 (stride=1)
+  LoRA injected: rank=1024, targets=q,k,v,o,ffn.0,ffn.2
+  patch_embedding expanded: 16->32 channels
+  DiT head expanded to 2x output (xyz | vis)
+  release dit: loaded 1425 tensors
+  release vae: loaded 194 tensors
+  release vae_vis: loaded 194 tensors
+  release vae_pj: loaded 194 tensors
+  release text_encoder: loaded 242 tensors
+WanSceneFlowPredictor loaded from /root/trackcraft-assets/checkpoints/trackcraft3r/model.safetensors
+{
+  "output": "/root/autodl-tmp/projects/motionforesight/outputs/query_only_protocol_2026-09-24/9069bd26-0139-4e88-9957-9f9489b35a91/smoke12.npz",
+  "track_shape": [
+    12,
+    48,
+    3
+  ],
+  "finite_fraction": 1.0,
+  "nonzero_motion_fraction": 1.0,
+  "oob_count": 0,
+  "model_resolution_hw": [
+    240,
+    416
+  ],
+  "trajectory_source": "trackcraft3r_pseudo_gt"
+}
+[END] smoke12 rc=0

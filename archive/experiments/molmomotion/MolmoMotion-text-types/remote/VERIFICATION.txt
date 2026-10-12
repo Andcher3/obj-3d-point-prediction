@@ -1,0 +1,34 @@
+STATUS=VERIFIED
+CHANGED_BRANCH_OR_FIELD=The upstream single action loaded from each bundled example was replaced on the modified copy by `for variant in args.variants`, `action = TEXT_VARIANTS[example][variant]`, and `processor(..., action=action, ...)`; every example now runs official, compact, free_sentence, multi_step, and contradictory text branches while keeping its video, 2D query points, 3D point history, checkpoint, and 30-frame horizon fixed.
+ORIGINAL_SHA256=32f7159be902e896f07659bb428f7d346febc754bf5bfbb6334ffaca0dc19bf0
+MODIFIED_SHA256=f1ce26b89ee329558df6046f6d1bce0585c027728512a65f033b6c6df205cde8
+
+MODIFIED_FILE=/root/autodl-tmp/projects/molmo-motion-text-test/run_text_type_probe.py
+DIFF_FILE=/root/autodl-tmp/projects/molmo-motion-text-test/DIFF_FILE.patch
+VERIFICATION_FILE=/root/autodl-tmp/projects/molmo-motion-text-test/VERIFICATION.txt
+ROLLBACK_FILE=/root/autodl-tmp/projects/molmo-motion-text-test/ROLLBACK.sh
+
+BASELINE_COMMAND=cd /root/autodl-tmp/projects/molmo-motion && /root/autodl-tmp/conda_envs/molmo-motion/bin/python examples/01_quickstart.py --model /root/autodl-tmp/models/MolmoMotion-4B-H3-F30 --example egodex_clean_surface --output /root/autodl-tmp/projects/molmo-motion-text-test/results/baseline_egodex_clean_surface.mp4
+BASELINE_INPUT=egodex_clean_surface; action=`Roll a lint roller on a blue cloth`; official bundled RGB history, 2D query points, 3D point history; future_horizon=30
+BASELINE_LITERAL_RESULT=Predicted future_3d (8, 30, 3)  (expect (8, 30, 3)); Wrote /root/autodl-tmp/projects/molmo-motion-text-test/results/baseline_egodex_clean_surface.mp4; BASELINE_EXIT=0; WALL_SECONDS=104
+BASELINE_EXIT_STATUS=0
+
+MODIFIED_COMMAND=cd /root/autodl-tmp/projects/molmo-motion-text-test && /root/autodl-tmp/conda_envs/molmo-motion/bin/python run_text_type_probe.py --model /root/autodl-tmp/models/MolmoMotion-4B-H3-F30 --repo /root/autodl-tmp/projects/molmo-motion --output-dir /root/autodl-tmp/projects/molmo-motion-text-test/results/text-type-probe
+MODIFIED_INPUT=3 bundled complete examples x 5 action texts. egodex_clean_surface: `Roll a lint roller on a blue cloth`; `rolling a lint roller`; `The person rolls the lint roller back and forth across the blue cloth to clean its surface.`; `First roll the lint roller across the blue cloth, then lift it, reposition it, and roll over another area of the cloth.`; `Lift the lint roller straight up and hold it still without touching the blue cloth.`. egodex_ball_base: `Put white ball on white 3D printed base`; `placing a ball`; `The person places the white ball onto the top of the white 3D-printed base.`; `Pick up the white ball, move it above the white 3D-printed base, place it on the base, and then release it.`; `Move the white ball away from the base and place it to the side.`. davis_car_turn: `A silver car follows the road and slowly turns to the right`; `turning the car right`; `The silver car continues forward along the road and gradually steers around the right-hand bend.`; `Continue forward, enter the curve, turn right along the road, and then straighten the car after the bend.`; `The silver car stops immediately and reverses to the left.`. future_horizon=30.
+MODIFIED_LITERAL_RESULT=All 15 records returned shape=[8,30,3] and finite_fraction=1.0; METRICS=/root/autodl-tmp/projects/molmo-motion-text-test/results/text-type-probe/metrics.json; TOTAL_RESULTS=15; MODIFIED_EXIT=0; WALL_SECONDS=1098
+MODIFIED_EXIT_STATUS=0
+
+ROLLBACK_COMMAND=cd /root/autodl-tmp/projects/molmo-motion-text-test && cp run_text_type_probe.py rollback-test/run_text_type_probe.py && env -u LD_LIBRARY_PATH ./ROLLBACK.sh /root/autodl-tmp/projects/molmo-motion-text-test/rollback-test/run_text_type_probe.py
+ROLLBACK_INPUT=/root/autodl-tmp/projects/molmo-motion-text-test/rollback-test/run_text_type_probe.py (a separate copy; protected MODIFIED_FILE is not overwritten)
+ROLLBACK_LITERAL_RESULT=ROLLBACK_RESULT=restored; RESTORED_SHA256=32f7159be902e896f07659bb428f7d346febc754bf5bfbb6334ffaca0dc19bf0; ROLLBACK_EXIT=0; ROLLBACK_SCRIPT_EXIT=0; RESTORED_HELP_EXIT=0
+ROLLBACK_EXIT_STATUS=0
+RESTORED_BEHAVIOR_STATUS=The rollback-test copy matches the original upstream SHA256 and its `--help` command exits 0. MODIFIED_FILE remains changed with SHA256 f1ce26b89ee329558df6046f6d1bce0585c027728512a65f033b6c6df205cde8.
+
+EGO4D_DOWNLOAD_COMMAND=ego4d -o /root/autodl-tmp/datasets/ego4d-molmomotion-probe --datasets clips --no-metadata --video_uids cb78dba8-6647-4ec7-875c-6ba1548f8312 c0e127bc-ff39-4a34-b4c5-0fd8cfbfa732 356ed369-7023-4660-904b-be73823a21d3 -y
+EGO4D_LITERAL_RESULT=Downloading 3 files; total 4.42 MiB; integrity check completed; EGO4D_DOWNLOAD_EXIT=0
+EGO4D_USE_BOUNDARY=The raw clips were downloaded as licensed future dataset samples. They were not passed to MolmoMotion because a valid MolmoMotion sample also needs target query pixels and 3D point-history inputs; the controlled text probe used the official bundled complete examples.
+
+REPRO_COMMAND=/root/autodl-tmp/conda_envs/molmo-motion/bin/python run_text_type_probe.py --model /root/autodl-tmp/models/MolmoMotion-4B-H3-F30 --repo /root/autodl-tmp/projects/molmo-motion --output-dir /root/autodl-tmp/projects/molmo-motion-text-test/results/repro-official --examples egodex_clean_surface --variants official
+REPRO_INPUT=Same bundled egodex_clean_surface input, same official action, same checkpoint, same 30-frame horizon.
+REPRO_LITERAL_RESULT=REPRO_RUN_EXIT=0; REPRO_SHAPE_1=(8, 30, 3); REPRO_SHAPE_2=(8, 30, 3); REPRO_EXACT_MATCH=True; REPRO_MAX_ABS_DIFF=0.0
+REPRO_EXIT_STATUS=0

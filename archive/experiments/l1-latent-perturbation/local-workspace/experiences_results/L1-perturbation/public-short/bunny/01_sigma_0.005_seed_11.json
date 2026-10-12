@@ -1,0 +1,91 @@
+{
+  "run_index": 1,
+  "name": "sigma_0.005_seed_11",
+  "sigma": 0.005,
+  "seed": 11,
+  "elapsed_seconds": 44.07566543482244,
+  "peak_gpu_memory_gib": 17.089838981628418,
+  "generated_tokens": 239,
+  "latent_vector_count": 8,
+  "latent_dim": 4096,
+  "latent_finite": true,
+  "latent_sha256": "edcef56d4850df123a38de82e96e2926d4cdf413c47e2ffc06420f53ae00649f",
+  "raw_sha256": "41df429fcd2b72f6dce8ccd62ea5ed44ed1325a4a5fe0b2c0c8567c0521735a4",
+  "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the three rodents standing together, ready to interact with the rabbit (0:08-0:09).</reason>\n<answer>The three rodents will likely interact with the big rabbit, setting up a potential conflict or collaboration in the story.</answer><|im_end|>",
+  "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The final frame shows the three rodents standing together, ready to interact with the rabbit (0:08-0:09).</reason> <answer>The three rodents will likely interact with the big rabbit, setting up a potential conflict or collaboration in the story.</answer>",
+  "answer": "The three rodents will likely interact with the big rabbit, setting up a potential conflict or collaboration in the story.",
+  "has_answer_tag": true,
+  "has_latent_tags": true,
+  "noise_stats": {
+    "noise_std": 0.005,
+    "noise_seed": 11,
+    "scale_mode": "rms",
+    "perturbed_step_count": 8,
+    "steps": [
+      {
+        "active_vectors": 1,
+        "before_rms": 0.1666274517774582,
+        "noise_rms": 0.0008368720882572234,
+        "after_rms": 0.16662068665027618,
+        "relative_noise_rms": 0.005022414028644562,
+        "generation_step": 1628
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.17218482494354248,
+        "noise_rms": 0.0008473194320686162,
+        "after_rms": 0.17217612266540527,
+        "relative_noise_rms": 0.004920987877994776,
+        "generation_step": 1629
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.17494484782218933,
+        "noise_rms": 0.0008960628765635192,
+        "after_rms": 0.17495079338550568,
+        "relative_noise_rms": 0.005121973343193531,
+        "generation_step": 1630
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.21066859364509583,
+        "noise_rms": 0.0010645610745996237,
+        "after_rms": 0.2106463462114334,
+        "relative_noise_rms": 0.00505325011909008,
+        "generation_step": 1631
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.17538462579250336,
+        "noise_rms": 0.0008836026536300778,
+        "after_rms": 0.17538012564182281,
+        "relative_noise_rms": 0.005038084927946329,
+        "generation_step": 1724
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.1758517473936081,
+        "noise_rms": 0.0008793646702542901,
+        "after_rms": 0.1758688986301422,
+        "relative_noise_rms": 0.005000602453947067,
+        "generation_step": 1725
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.18192073702812195,
+        "noise_rms": 0.0009220771607942879,
+        "after_rms": 0.18192389607429504,
+        "relative_noise_rms": 0.0050685652531683445,
+        "generation_step": 1726
+      },
+      {
+        "active_vectors": 1,
+        "before_rms": 0.4243796467781067,
+        "noise_rms": 0.002106736646965146,
+        "after_rms": 0.424389123916626,
+        "relative_noise_rms": 0.004964273422956467,
+        "generation_step": 1727
+      }
+    ]
+  }
+}

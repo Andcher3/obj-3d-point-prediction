@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "source_atlas": "../2026-07-30-chibi-defect-body-only-movement/final/spritesheet-extended.webp",
+  "changed_rows": [7],
+  "unchanged_rows": [0, 1, 2, 3, 4, 5, 6, 8, 9, 10],
+  "method": "SHA-256 over decoded RGBA bytes for each complete 1536x208 row",
+  "note": "Only the running row differs; all other row hashes match the approved source atlas."
+}

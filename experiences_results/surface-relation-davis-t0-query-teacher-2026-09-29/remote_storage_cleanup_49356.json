@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-29",
+  "host": "region-9.autodl.pro",
+  "port": 49356,
+  "scope": "regenerable conda package cache only",
+  "before": [
+    "Filesystem       1B-blocks        Used      Avail Use% Mounted on",
+    "overlay        32212254720 29784928256 2427326464  93% /",
+    "/dev/sdb       53687091200 50410827776 3276263424  94% /root/autodl-tmp",
+    "209299641\t/root/miniconda3/pkgs"
+  ],
+  "after": [
+    "Filesystem       1B-blocks        Used      Avail Use% Mounted on",
+    "overlay        32212254720 29784928256 2427326464  93% /",
+    "/dev/sdb       53687091200 50410827776 3276263424  94% /root/autodl-tmp",
+    "209299641\t/root/miniconda3/pkgs"
+  ],
+  "clean_stdout_tail": [
+    "There are no unused tarball(s) to remove.",
+    "There are no index cache(s) to remove.",
+    "There are no unused package(s) to remove.",
+    "There are no tempfile(s) to remove.",
+    "There are no logfile(s) to remove."
+  ],
+  "clean_stderr_tail": [],
+  "project_assets_deleted": false
+}

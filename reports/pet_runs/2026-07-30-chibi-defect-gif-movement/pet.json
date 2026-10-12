@@ -1,0 +1,7 @@
+{
+  "id": "chibi-defect",
+  "displayName": "Chibi Defect",
+  "description": "简洁平滑色块风格的Q版故障机器人，包含九个标准状态与16方向视线动画。",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}

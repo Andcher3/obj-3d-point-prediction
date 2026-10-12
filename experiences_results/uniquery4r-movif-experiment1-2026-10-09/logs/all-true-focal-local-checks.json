@@ -1,0 +1,13 @@
+{
+  "videos_full_decode": true,
+  "files_sha256_passed": true,
+  "scenes": 18,
+  "scene_5702_original_verified_and_reused": true,
+  "frames_each": 22,
+  "resolution": [
+    2560,
+    560
+  ],
+  "new_local_images_from_h264": true,
+  "model_forward_called": false
+}

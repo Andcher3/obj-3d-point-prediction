@@ -1,0 +1,36 @@
+TRANSACTION=2026-09-09-current-state-test-readiness-audit
+OBJECT=D:\Pycharm\post_graduate_project\reports\progress_log.md
+CHANGED_BRANCH_FIELD=PROJECT_STATE_REVIEW: UNRECORDED -> RECORDED; TEST_READINESS: UNCHECKED -> AUDITED
+ORIGINAL_SHA256=017E05783CC44D562BB8931A2B945F9F2458EF775EBD45BCFAAE9BE5EFB98162
+MODIFIED_SHA256=090AB3478D0F1D8471EAF9CA267C9FD748F97C8B017070FB1AA54DB820850F0E
+
+ARTIFACTS
+MODIFIED_FILE=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\MODIFIED_FILE
+DIFF_FILE=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\DIFF_FILE
+VERIFICATION.txt=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\VERIFICATION.txt
+ROLLBACK.sh=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\ROLLBACK.sh
+
+BASELINE
+COMMAND=pwsh -NoProfile -ExecutionPolicy Bypass -File "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\VERIFY_BASELINE.ps1" -FixtureRoot "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\backup\files"
+INPUT=preserved original copy of reports\progress_log.md with the new progress note absent
+LITERAL_OUTPUT=BASELINE_NOTE_EXISTS=False; BASELINE_LOG_LINK=False; STATUS=PASS
+EXIT_STATUS=0
+
+MODIFIED
+COMMAND=pwsh -NoProfile -ExecutionPolicy Bypass -File "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\VERIFY_MODIFIED.ps1" -ProjectRoot "D:\Pycharm\post_graduate_project" -TransactionRoot "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit"
+INPUT=D:\Pycharm\post_graduate_project\reports\progress_log.md; D:\Pycharm\post_graduate_project\reports\progress\2026-09-09-current-state-and-test-readiness-audit.md; D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\MODIFIED_FILE
+LITERAL_OUTPUT=MODIFIED_NOTE_EXISTS=True; LOG_LINK=True; SCOPE_RECORDED=True; ROUTE_RECORDED=True; RUNTIME_RECORDED=True; MODIFIED_COPY_MATCH=True; STATUS=PASS
+EXIT_STATUS=0
+
+ROLLBACK
+COMMAND=pwsh -NoProfile -Command "$script=[scriptblock]::Create((Get-Content -LiteralPath 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\ROLLBACK.sh' -Raw -Encoding UTF8)); & $script -ProjectRoot 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\rollback_test\project' -TransactionRoot 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-09-current-state-test-readiness-audit\rollback_test\transaction'"
+INPUT=another-copy fixture containing the modified progress_log.md, the new progress note, the preserved original, and rollback manifests
+LITERAL_OUTPUT=ROLLBACK_APPLIED=PASS
+RESULT=ROLLBACK_TEST=PASS; RESTORED_LOG_HASH=True; RESTORED_LINK=False; NEW_NOTE_REMOVED=True; EXIT=0
+EXIT_STATUS=0
+RESTORED_BEHAVIOR_STATUS=The another-copy fixture restored the original progress-log SHA256, removed the new audit entry and progress note, and returned PROJECT_STATE_REVIEW to UNRECORDED. The live workspace remains changed with PROJECT_STATE_REVIEW=RECORDED and TEST_READINESS=AUDITED.
+
+LIVE_RESULT
+PROJECT_STATE_REVIEW=RECORDED
+TEST_READINESS=AUDITED
+LIVE_MODIFIED_FILE_LEFT_CHANGED=True

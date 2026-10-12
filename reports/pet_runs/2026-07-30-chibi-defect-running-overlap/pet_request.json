@@ -1,0 +1,9 @@
+{
+  "pet_id": "chibi-defect",
+  "display_name": "Chibi Defect",
+  "description": "Repair running state by overlapping the full-size thought bubble in front of the upper head while preserving character scale.",
+  "sprite_version_number": 2,
+  "chroma_key": "#FF00FF",
+  "repair_state": "running",
+  "source_run": "../2026-07-30-chibi-defect-body-only-movement"
+}

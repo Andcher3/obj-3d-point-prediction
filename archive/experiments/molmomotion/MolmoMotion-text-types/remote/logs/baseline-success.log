@@ -1,0 +1,7 @@
+/root/autodl-tmp/projects/molmo-motion/src/molmo_motion/data/dataset.py:17: UserWarning: MOLMO_DATA_DIR is not set, data loading might fail
+  warnings.warn("MOLMO_DATA_DIR is not set, data loading might fail")
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Predicted future_3d (8, 30, 3)  (expect (8, 30, 3))
+Wrote /root/autodl-tmp/projects/molmo-motion-text-test/results/baseline_egodex_clean_surface.mp4
+BASELINE_EXIT=0
+WALL_SECONDS=104

@@ -1,0 +1,114 @@
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/vae.py:651: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+[run] inputs/videos/10790317943435558913.mp4
+[done] 10790317943435558913 | pred_len=81 hist_len=81 future_len=81 | gt_coord_mode=pixel swap=False gt_time0=0
+{
+  "num_done": 1,
+  "results": [
+    {
+      "vid": "10790317943435558913",
+      "out_dir": "outputs/matrix/10790317943435558913/seed_42/10790317943435558913"
+    }
+  ]
+}
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/vae.py:651: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+[run] inputs/videos/10790317943435558913.mp4
+[done] 10790317943435558913 | pred_len=81 hist_len=81 future_len=81 | gt_coord_mode=pixel swap=False gt_time0=0
+{
+  "num_done": 1,
+  "results": [
+    {
+      "vid": "10790317943435558913",
+      "out_dir": "outputs/matrix/10790317943435558913/seed_43/10790317943435558913"
+    }
+  ]
+}
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/vae.py:651: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+[run] inputs/videos/10790317943435558913.mp4
+[done] 10790317943435558913 | pred_len=81 hist_len=81 future_len=81 | gt_coord_mode=pixel swap=False gt_time0=0
+{
+  "num_done": 1,
+  "results": [
+    {
+      "vid": "10790317943435558913",
+      "out_dir": "outputs/matrix/10790317943435558913/seed_44/10790317943435558913"
+    }
+  ]
+}
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/vae.py:651: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+[run] inputs/videos/gear_v2_9-wrist_front_rgb_img-0.mp4
+[done] gear_v2_9-wrist_front_rgb_img-0 | pred_len=81 hist_len=81 future_len=81 | gt_coord_mode=pixel swap=False gt_time0=0
+{
+  "num_done": 1,
+  "results": [
+    {
+      "vid": "gear_v2_9-wrist_front_rgb_img-0",
+      "out_dir": "outputs/matrix/gear_v2_9-wrist_front_rgb_img-0/seed_42/gear_v2_9-wrist_front_rgb_img-0"
+    }
+  ]
+}
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/vae.py:651: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+[run] inputs/videos/gear_v2_9-wrist_front_rgb_img-0.mp4
+[done] gear_v2_9-wrist_front_rgb_img-0 | pred_len=81 hist_len=81 future_len=81 | gt_coord_mode=pixel swap=False gt_time0=0
+{
+  "num_done": 1,
+  "results": [
+    {
+      "vid": "gear_v2_9-wrist_front_rgb_img-0",
+      "out_dir": "outputs/matrix/gear_v2_9-wrist_front_rgb_img-0/seed_43/gear_v2_9-wrist_front_rgb_img-0"
+    }
+  ]
+}
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/root/autodl-tmp/projects/TrajLoom-probe/Wan2.1/wan/modules/vae.py:651: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+[run] inputs/videos/gear_v2_9-wrist_front_rgb_img-0.mp4
+[done] gear_v2_9-wrist_front_rgb_img-0 | pred_len=81 hist_len=81 future_len=81 | gt_coord_mode=pixel swap=False gt_time0=0
+{
+  "num_done": 1,
+  "results": [
+    {
+      "vid": "gear_v2_9-wrist_front_rgb_img-0",
+      "out_dir": "outputs/matrix/gear_v2_9-wrist_front_rgb_img-0/seed_44/gear_v2_9-wrist_front_rgb_img-0"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "base_seed": 20260922,
+  "num_noise_seeds": 20,
+  "source_file_count": 21,
+  "source_video_count": 3,
+  "graph_config_count": 5,
+  "supervision_config_count": 5,
+  "trajectory_config_count": 12,
+  "graph_types": [
+    "knn_2d",
+    "knn_3d",
+    "hybrid_lite"
+  ],
+  "k_values": [
+    2,
+    3,
+    4
+  ],
+  "conditions": [
+    "oracle",
+    "gaussian_0.01",
+    "gaussian_0.05",
+    "gaussian_0.10",
+    "gaussian_0.20",
+    "outlier_0.05",
+    "outlier_0.10",
+    "outlier_0.20"
+  ],
+  "temporal_auc_definition": "trapezoidal integral of per-horizon mean edge RVE over normalized horizon [0,1]",
+  "hybrid_definition": "2D kNN candidates filtered by observed depth jump and observed 3D distance; no pixel-mask boundary map is available",
+  "time_alignment": "future_3d[:9] matched to pseudo_gt; timestamp correspondence remains unverified",
+  "variant_members": {
+    "0c88d332a9c31c6c": [
+      "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/sewing_scissors/arrays/multistep__greedy.npz"
+    ],
+    "1f7e5c4043ce4d6a": [
+      "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/watering_can/arrays/counterfactual_setdown__greedy.npz"
+    ],
+    "2b040f836b06ac46": [
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12/drink_bottle_start12/arrays/set_down__greedy.npz"
+    ],
+    "46e43744a8a4433e": [
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12/drink_bottle_start12/arrays/keep_holding__greedy.npz"
+    ],
+    "4fbd6fc37e18b12d": [
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/black_cup__greedy.npz",
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/keep_holding__greedy.npz",
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/laptop__greedy.npz",
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2/drink_bottle_stride2/arrays/mouse__greedy.npz",
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2-simple-actions/drink_bottle_stride2_simple_actions/arrays/carry_right__greedy.npz",
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2-simple-actions/drink_bottle_stride2_simple_actions/arrays/pickup__greedy.npz",
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-stride2-simple-actions/drink_bottle_stride2_simple_actions/arrays/set_down__greedy.npz"
+    ],
+    "72b605042cc3d44d": [
+      "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/watering_can/arrays/observed_carry__greedy.npz"
+    ],
+    "8d030d5c54f68ba5": [
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12-cross-prompt/drink_bottle_start12_cross_prompt/arrays/scissors_exact__greedy.npz"
+    ],
+    "902c9d5e35071e9a": [
+      "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/sewing_scissors/arrays/counterfactual_static__greedy.npz"
+    ],
+    "ad780b5cb7fd1196": [
+      "MolmoMotion-static-diagnosis-2026-09-21/trackcraft-greedy-start12/drink_bottle_start12/arrays/carry_right__greedy.npz"
+    ],
+    "ba307c5729cc0008": [
+      "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/watering_can/arrays/multistep__greedy.npz"
+    ],
+    "bd94f0bfdb40bd1c": [
+      "MolmoMotion-static-diagnosis-2026-09-21/retest-current-server/sewing_scissors/arrays/observed_pickup__greedy.npz"
+    ],
+    "de46857282a7ade2": [
+      "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/black_cup__greedy.npz",
+      "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/keep_holding__greedy.npz",
+      "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/laptop__greedy.npz",
+      "MolmoMotion-raw-video-trackcraft-2026-09-21/drink_bottle_ambiguous_future/arrays/mouse__greedy.npz"
+    ]
+  },
+  "run_count": 15228
+}

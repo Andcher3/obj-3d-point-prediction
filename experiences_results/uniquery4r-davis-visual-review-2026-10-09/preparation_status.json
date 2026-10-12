@@ -1,0 +1,28 @@
+{
+  "status": "QUERY_APPROVED_AWAITING_GPU_ENABLE",
+  "query_approved": true,
+  "inference_started": false,
+  "numerical_quality_evaluation_started": false,
+  "videos": [
+    {
+      "video_id": "car-turn",
+      "manifest": "experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\inputs\\car-turn\\queries.json",
+      "preview": "experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\previews\\car-turn_query_t0.png"
+    },
+    {
+      "video_id": "drift-turn",
+      "manifest": "experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\inputs\\drift-turn\\queries.json",
+      "preview": "experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\previews\\drift-turn_query_t0.png"
+    },
+    {
+      "video_id": "boat",
+      "manifest": "experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\inputs\\boat\\queries.json",
+      "preview": "experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\previews\\boat_query_t0.png"
+    },
+    {
+      "video_id": "soccerball",
+      "manifest": "experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\inputs\\soccerball\\queries.json",
+      "preview": "experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\previews\\soccerball_query_t0.png"
+    }
+  ]
+}

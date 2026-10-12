@@ -1,0 +1,20 @@
+{
+  "video_id": "car-turn",
+  "output": "/root/autodl-tmp/projects/motionforesight/outputs/davis_joint_probe_2026-09-28/car-turn/visualization_projection.npz",
+  "teacher_shape": [
+    22,
+    48,
+    3
+  ],
+  "observed_shape": [
+    7,
+    48,
+    3
+  ],
+  "teacher_finite_fraction": 1.0,
+  "observed_finite_fraction": 1.0,
+  "processed_resolution_hw": [
+    224,
+    392
+  ]
+}

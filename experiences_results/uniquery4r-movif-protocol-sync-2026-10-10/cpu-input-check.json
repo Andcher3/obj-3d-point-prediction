@@ -1,0 +1,118 @@
+{
+  "cpu_audit_passed": true,
+  "samples": [
+    {
+      "sequence": "scene_3626",
+      "subset": "movif_object_diagnostic",
+      "queries": 1624,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_1782",
+      "subset": "movif_object_diagnostic",
+      "queries": 4848,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_3881",
+      "subset": "movif_object_diagnostic",
+      "queries": 1316,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_2344",
+      "subset": "movif_object_diagnostic",
+      "queries": 6764,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_3782",
+      "subset": "movif_object_diagnostic",
+      "queries": 860,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_5916",
+      "subset": "movif_object_diagnostic",
+      "queries": 7697,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_1924",
+      "subset": "movif_object_diagnostic",
+      "queries": 4000,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_5025",
+      "subset": "movif_object_diagnostic",
+      "queries": 5442,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_1143",
+      "subset": "movif_object_diagnostic",
+      "queries": 4953,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_4203",
+      "subset": "movif_object_diagnostic",
+      "queries": 6102,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_2854",
+      "subset": "movif_object_diagnostic",
+      "queries": 3493,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_1179",
+      "subset": "movif_object_diagnostic",
+      "queries": 2588,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_813",
+      "subset": "movif_object_diagnostic",
+      "queries": 4862,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_346",
+      "subset": "movif_object_diagnostic",
+      "queries": 2798,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_5702",
+      "subset": "movif_object_diagnostic",
+      "queries": 3303,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_2329",
+      "subset": "movif_object_diagnostic",
+      "queries": 5315,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_3457",
+      "subset": "movif_object_diagnostic",
+      "queries": 1411,
+      "input_hashes_passed": true
+    },
+    {
+      "sequence": "scene_1580",
+      "subset": "movif_object_diagnostic",
+      "queries": 3735,
+      "input_hashes_passed": true
+    }
+  ],
+  "preprocess_checked": true,
+  "model_loaded": false,
+  "model_forward_called": false,
+  "native_movif_data_tested": true,
+  "worldtrack_benchmark": false
+}

@@ -1,0 +1,2 @@
+Archived Future-L1 latent perturbation experiment after method direction changed.
+Weights and Conda environment are excluded; code, inputs, logs, reports, raw outputs, and rollback evidence are included.

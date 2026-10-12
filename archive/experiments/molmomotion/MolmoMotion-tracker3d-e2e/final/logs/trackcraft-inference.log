@@ -1,0 +1,17 @@
+/root/autodl-tmp/conda_envs/molmo-motion/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+  using 12 frames at stride=1 (indices [0, 1, ..., 11])
+Loaded 12 frames from /tmp/tmpu31k0uk4.npz, subsampled to 12 (stride=1)
+  LoRA injected: rank=1024, targets=q,k,v,o,ffn.0,ffn.2
+  patch_embedding expanded: 16->32 channels
+  DiT head expanded to 2x output (xyz | vis)
+  release dit: loaded 1425 tensors
+  release vae: loaded 194 tensors
+  release vae_vis: loaded 194 tensors
+  release vae_pj: loaded 194 tensors
+  release text_encoder: loaded 242 tensors
+WanSceneFlowPredictor loaded from /root/trackcraft-assets/checkpoints/trackcraft3r/model.safetensors
+saved /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/results/sewing_dense.npz
+  track_map: shape=(12, 480, 832, 3) dtype=float32
+  recon_map: shape=(12, 480, 832, 3) dtype=float32
+  rgb: shape=(12, 480, 832, 3) dtype=uint8

@@ -1,0 +1,26 @@
+{
+  "run_index": 0,
+  "name": "baseline_0",
+  "sigma": 0.0,
+  "seed": 0,
+  "elapsed_seconds": 45.171652575954795,
+  "peak_gpu_memory_gib": 16.82832908630371,
+  "generated_tokens": 254,
+  "latent_vector_count": 8,
+  "latent_dim": 4096,
+  "latent_finite": true,
+  "latent_sha256": "a6555dce3025849bd7d4ccdf4a48320e9ee8b108f0c2d41042ee191a163b0041",
+  "raw_sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+  "raw": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason>\n<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>\n<reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason>\n<answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer><|im_end|>",
+  "visible": "<reason>The video begins with a title card introducing 'THE PEACH OPEN MOVIE PROJECT PRESENTS' (0:00-0:01). This sets the stage for an animated story.</reason> <reason>As the scene transitions to a tree with a hole in the ground, the text 'ONE BIG RABBIT' appears (0:02-0:03), indicating the introduction of a main character. The camera then shifts to a wide shot of a grassy field with a large rabbit standing in the center, suggesting the rabbit's significance in the story (0:04-0:05).</reason> <reason>Shortly after, the text 'THREE RODENTS' appears (0:06-0:07), hinting at the introduction of additional characters. The camera then focuses on a close-up of a small rodent, emphasizing its presence and possibly its role in the narrative (0:08-0:09).</reason> <answer>The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.</answer>",
+  "answer": "The video will likely continue to introduce the three rodents and their interactions with the big rabbit, setting up a potential conflict or adventure involving these characters.",
+  "has_answer_tag": true,
+  "has_latent_tags": true,
+  "noise_stats": {
+    "noise_std": 0.0,
+    "noise_seed": 0,
+    "scale_mode": "rms",
+    "perturbed_step_count": 0,
+    "steps": []
+  }
+}

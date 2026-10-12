@@ -1,0 +1,41 @@
+{
+  "experiment": "G0 / experiment1: UniQuery4R teacher versus simulated object-point GT",
+  "dataset": "official Kubric MOVi-F 256x256 v1.0.0 validation",
+  "download_scope": "first four validation shards, containing 18 independent scenes; no full dataset download",
+  "shards": [
+    {"name": "movi_f-validation.tfrecord-00000-of-00032", "bytes": 145203460, "md5_base64": "XvV3BQc4Hj3fSgBkHFknpQ==", "generation": "1648486527338866", "scene_count": 5},
+    {"name": "movi_f-validation.tfrecord-00001-of-00032", "bytes": 112273256, "md5_base64": "mYsx/WH3ExZy+Rbf4Hw+uQ==", "generation": "1648486528740452", "scene_count": 4},
+    {"name": "movi_f-validation.tfrecord-00002-of-00032", "bytes": 142193986, "md5_base64": "W5KWw6hCWMOFXARHWD+CfA==", "generation": "1648486520577254", "scene_count": 5},
+    {"name": "movi_f-validation.tfrecord-00003-of-00032", "bytes": 111248711, "md5_base64": "umeRjYHuMDoQLcXaZ+R1ZA==", "generation": "1648486529983988", "scene_count": 4}
+  ],
+  "source_base": "https://storage.googleapis.com/kubric-public/tfds/movi_f/256x256/1.0.0",
+  "frame_protocol": {"frames": 22, "observed_frames": 7, "query_frame": 6, "stride": 1, "dataset_native_fps": 12},
+  "query_count": 48,
+  "inference_rgb": {"source_resolution_hw": [256,256], "processed_resolution_hw": [252,252], "max_size": 504, "official_preprocessing_mode": "keep_ratio; no upscaling"},
+  "selection": {
+    "one_target_per_scene": true,
+    "target_rule": "largest t0 interior among instances with observed world translation >0.01 or observed rotation >0.05 rad; no future-based or teacher-based selection",
+    "minimum_interior_pixels": 200,
+    "mask_erosion_pixels": 2,
+    "query_rule": "deterministic farthest-point sampling on t0 instance interior, minimum 2 pixels; no repeated points",
+    "minimum_query_separation_pixels": 2
+  },
+  "cpu_audit": {"gt_t0_projection_max_pixels": 1.5, "gt_t0_depth_relative_p90": 0.03, "future_labels_never_model_inputs": true},
+  "evaluation": {
+    "primary": ["3D relative vector error normalized by t0 target 3D bbox diagonal", "relative pair-length error on all 1128 point pairs"],
+    "secondary": ["3D absolute point error in GT first-camera frame", "direct 2D track error", "estimated-camera 3D reprojection error"],
+    "scale": "report raw plus one scene-global scale estimated only from t0 pair lengths, fixed for every time slot",
+    "coordinate_frame": "GT world to known first-camera frame; no future-dependent rotation, translation, or scale fit; absolute error includes camera-pose errors",
+    "query_identity": "fixed simulated material surface point from t0 object_coordinates and per-frame same-instance bboxes_3d",
+    "visibility": "separate visible and occluded using per-frame GT depth and instance mask; retain valid hidden 3D labels",
+    "aggregation": "per independent scene before scene-macro averages; all attempted scenes and exclusions retained",
+    "model_training_overlap": "must check UniQuery4R training provenance; this small set is teacher calibration, not an unseen-data generalization claim"
+  },
+  "gpu_forward_authorized": false,
+  "sources": [
+    "https://github.com/google-research/kubric/blob/main/challenges/movi/README.md",
+    "https://github.com/google-research/kubric/blob/main/challenges/movi/movi_f.py",
+    "https://github.com/google-research/kubric/blob/main/challenges/point_tracking/dataset.py",
+    "https://storage.googleapis.com/kubric-public/tfds/movi_f/256x256/1.0.0/dataset_info.json"
+  ]
+}

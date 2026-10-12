@@ -1,0 +1,72 @@
+--- baseline_manifest.json
++++ MODIFIED_FILE.json
+@@ -1,18 +1,18 @@
+ {
+   "schema": "molmomotion-archive-v1",
+   "created": "2026-09-15",
+-  "decision": "active_base_candidate",
++  "decision": "archived_historical_evidence",
+   "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results",
+   "archive_root": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\molmomotion",
+   "source_exists": {
++    "MolmoMotion-tracker3d-e2e": false,
++    "MolmoMotion-text-types": false,
++    "MolmoMotion-tracker3d-retest": false
++  },
++  "archive_exists": {
+     "MolmoMotion-tracker3d-e2e": true,
+     "MolmoMotion-text-types": true,
+     "MolmoMotion-tracker3d-retest": true
+-  },
+-  "archive_exists": {
+-    "MolmoMotion-tracker3d-e2e": false,
+-    "MolmoMotion-text-types": false,
+-    "MolmoMotion-tracker3d-retest": false
+   },
+   "files": [
+     {
+@@ -1113,31 +1113,31 @@
+   ],
+   "references": {
+     "reports\\progress\\2026-09-15-molmomotion-tracker3d-e2e.md": {
+-      "sha256": "5e4116eb8bbe1dcce5e00451f42ade7b990b47128b190d900c642179224a8125",
+-      "old_refs": 1
++      "sha256": "15aa615a9cee9d847ffa9ce479b621beabf0a363e4d61a3be875250f620fa0ce",
++      "old_refs": 0
+     },
+     "reports\\analysis\\2026-09-15-molmomotion-tracker3d-e2e\\report.md": {
+-      "sha256": "a4cac22a4a46d6c0d87a2f73c367fdb4e43bb05191d449a3952cd08637a7f9c0",
+-      "old_refs": 6
++      "sha256": "5dfc71fe7ad6a820fce1ff16166109f406f51482470d18a7f11604330879e928",
++      "old_refs": 0
+     },
+     "reports\\progress\\2026-09-15-molmomotion-aligned-multivideo-retest.md": {
+-      "sha256": "9116797be4209fbeb58bfedc3c0a57498ee7aea0bb1dca0b1d07f4b34cee6595",
+-      "old_refs": 1
++      "sha256": "d86da465ebff2713816389a1963c8eb9b1ecfdfd8f47124d3382459ca01d457d",
++      "old_refs": 0
+     },
+     "reports\\progress\\2026-09-14-molmomotion-text-type-probe.md": {
+-      "sha256": "f60d7e8847e4270cabf1d01c54459bc3ee67ed80b68ba09264d0cfee7e42d67a",
+-      "old_refs": 5
++      "sha256": "102b6f71b33dd7bec0a177fab6bf4f5f7c9c1b5ea7b98ec1f927f6989ad29c09",
++      "old_refs": 0
+     },
+     "reports\\analysis\\2026-09-14-molmomotion-text-type-probe\\report.md": {
+-      "sha256": "a0c404e5e553783fa090f513197240b5146b7983754b657b2b2dcfe9ba9cdbf7",
+-      "old_refs": 5
++      "sha256": "5d8f0710388e7b6805c09a9efd3e9d5e594e7e6924d0046ea37f5ff638c2398b",
++      "old_refs": 0
+     },
+     "reports\\analysis\\2026-09-15-molmomotion-tracker3d-retest\\report.md": {
+-      "sha256": "1e998356288721478c1d5d645d4e1fbfa36e60e61cd93e268462f0b06aef172f",
+-      "old_refs": 6
++      "sha256": "0fe8c3da4a7d930a0b49f53e26f95e072e5d6607e569c35ab7d7bf8fe8714f1b",
++      "old_refs": 0
+     },
+     "research_roadmap.md": {
+-      "sha256": "d06bf8871178c135d49c11f4a70b2a612bda186c57bfa4b9601258e867610cbb",
++      "sha256": "53a0b0c06bd9890d16fc344ffde92e1b0f2acd1857dfe4cc48544f6afe7cee7e",
+       "old_refs": 0
+     }
+   }

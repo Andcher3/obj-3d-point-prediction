@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "repair_scope": [
+    "running-right",
+    "running-left"
+  ],
+  "source_gif": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-body-only-movement/references/movement-source.gif",
+  "source_frame_selection": [0, 2, 5, 7, 9, 11, 14, 16],
+  "removed_elements": [
+    "five pale-blue shield/wing panels"
+  ],
+  "scaled_union_size": [188, 142],
+  "character_area_ratio_vs_prior_version": 5.0,
+  "direction_mapping": {
+    "running-right": "framewise mirror; head at screen-right",
+    "running-left": "original GIF orientation; head at screen-left"
+  },
+  "spritesheet": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-body-only-movement/final/spritesheet-extended.webp",
+  "validation": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-body-only-movement/final/validation-extended.json",
+  "chroma_despill": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-body-only-movement/qa/chroma-despill-extended.json",
+  "contact_sheet": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-body-only-movement/qa/contact-sheet-extended.png",
+  "review": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-body-only-movement/qa/review.json",
+  "final_visual_qa": "D:/Pycharm/post_graduate_project/reports/pet_runs/2026-07-30-chibi-defect-body-only-movement/qa/final-visual-qa.json",
+  "package": "C:/Users/Andcher/.codex/pets/chibi-defect",
+  "installed_validation_ok": true
+}

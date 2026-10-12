@@ -1,0 +1,11 @@
+[2026-09-28T08:13:36Z] START soccerball prepare_inputs
+[2026-09-28T08:13:45Z] END soccerball prepare_inputs rc=0
+[2026-09-28T08:13:45Z] START soccerball observed_dense
+[2026-09-28T08:16:50Z] END soccerball observed_dense rc=0
+[2026-09-28T08:16:50Z] START soccerball query_mapping
+[2026-09-28T08:16:51Z] END soccerball query_mapping rc=0
+[2026-09-28T08:16:51Z] START soccerball full22_trackcraft+motionforesight
+[2026-09-28T08:19:57Z] END soccerball full22_trackcraft rc=0 motionforesight rc=0
+[2026-09-28T08:19:57Z] START soccerball build_bundle
+[2026-09-28T08:19:58Z] END soccerball build_bundle rc=0
+[2026-09-28T08:19:58Z] COMPLETED selected preprocessing: soccerball

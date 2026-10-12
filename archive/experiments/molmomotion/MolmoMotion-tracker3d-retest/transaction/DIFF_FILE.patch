@@ -1,0 +1,444 @@
+diff --git "a/D:\\Pycharm\\post_graduate_project\\experiences_results\\MolmoMotion-tracker3d-retest\\transaction\\baseline_run_tracker3d_molmo_probe.py" "b/D:\\Pycharm\\post_graduate_project\\experiences_results\\MolmoMotion-tracker3d-retest\\transaction\\run_tracker3d_molmo_retest.py"
+index a415ace..480e683 100644
+--- "a/D:\\Pycharm\\post_graduate_project\\experiences_results\\MolmoMotion-tracker3d-retest\\transaction\\baseline_run_tracker3d_molmo_probe.py"
++++ "b/D:\\Pycharm\\post_graduate_project\\experiences_results\\MolmoMotion-tracker3d-retest\\transaction\\run_tracker3d_molmo_retest.py"
+@@ -1,11 +1,10 @@
+ #!/usr/bin/env python3
+-"""Convert TrackCraft3R dense tracks into MolmoMotion inputs and probe text control."""
++"""Aligned multi-video MolmoMotion text-control retest with offline TrackCraft pseudo-GT."""
+ 
+ from __future__ import annotations
+ 
+ import argparse
+ import hashlib
+-import importlib.util
+ import json
+ import math
+ import sys
+@@ -21,45 +20,22 @@ import torch
+ from PIL import Image
+ 
+ 
+-TEXT_VARIANTS = {
+-    "compact_right": "Pick up the blue-handled scissors and move them to the right.",
+-    "free_right": (
+-        "The person grasps the blue-handled scissors from the table and carries them "
+-        "steadily toward the right side of the sewing machine."
+-    ),
+-    "multi_step": (
+-        "First pick up the blue-handled scissors, move them to the right side of the "
+-        "sewing machine, and then bring them slightly toward the camera."
+-    ),
+-    "contradictory_left": (
+-        "Leave the blue-handled scissors on the table and slide them to the left."
+-    ),
+-}
+-
+-
+ def parse_args() -> argparse.Namespace:
+     p = argparse.ArgumentParser(description=__doc__)
+     p.add_argument("--model", required=True)
+     p.add_argument("--repo", required=True)
+-    p.add_argument("--camera-npz", required=True)
+-    p.add_argument("--dense-npz", required=True)
+-    p.add_argument("--query-json", required=True)
++    p.add_argument("--spec-json", required=True)
+     p.add_argument("--output-dir", required=True)
+     p.add_argument("--future-horizon", type=int, default=30)
+     p.add_argument("--history-size", type=int, default=3)
+-    p.add_argument("--variants", nargs="+", default=list(TEXT_VARIANTS))
++    p.add_argument("--stochastic-samples", type=int, default=2)
++    p.add_argument("--temperature", type=float, default=0.8)
++    p.add_argument("--top-p", type=float, default=0.95)
++    p.add_argument("--top-k", type=int, default=50)
++    p.add_argument("--sample-seed", type=int, default=20260915)
+     return p.parse_args()
+ 
+ 
+-def import_quickstart(repo: Path):
+-    path = repo / "examples" / "01_quickstart.py"
+-    spec = importlib.util.spec_from_file_location("molmo_motion_quickstart", path)
+-    module = importlib.util.module_from_spec(spec)
+-    assert spec.loader is not None
+-    spec.loader.exec_module(module)
+-    return module
+-
+-
+ def transform_points(matrix: np.ndarray, xyz: np.ndarray) -> np.ndarray:
+     homogeneous = np.concatenate([xyz, np.ones((*xyz.shape[:-1], 1), np.float32)], axis=-1)
+     return np.einsum("ij,...j->...i", matrix.astype(np.float32), homogeneous)[..., :3]
+@@ -72,25 +48,8 @@ def project(xyz: np.ndarray, k: np.ndarray) -> np.ndarray:
+     return np.stack([u, v], axis=-1).astype(np.float32)
+ 
+ 
+-def trajectory_metrics(future: torch.Tensor, t0_xyz: torch.Tensor) -> dict:
+-    future = future.detach().float().cpu()
+-    t0_xyz = t0_xyz.detach().float().cpu()
+-    full = torch.cat([t0_xyz[:, None, :], future], dim=1)
+-    steps = torch.linalg.vector_norm(full[:, 1:] - full[:, :-1], dim=-1)
+-    centroid_delta = future[:, -1].mean(0) - t0_xyz.mean(0)
+-    generated_steps = torch.linalg.vector_norm(future[:, 1:] - future[:, :-1], dim=-1)
+-    return {
+-        "finite_fraction": float(torch.isfinite(future).float().mean()),
+-        "mean_path_length_m": float(steps.sum(dim=1).mean()),
+-        "centroid_final_delta_m": centroid_delta.tolist(),
+-        "centroid_final_dx_m": float(centroid_delta[0]),
+-        "generated_temporal_path_length_m": float(generated_steps.sum(dim=1).mean()),
+-    }
+-
+-
+-def tensor_sha256(value: torch.Tensor) -> str:
+-    contiguous = value.detach().cpu().contiguous().numpy()
+-    return hashlib.sha256(contiguous.tobytes()).hexdigest()
++def sha_tensor(value: torch.Tensor) -> str:
++    return hashlib.sha256(value.detach().cpu().contiguous().numpy().tobytes()).hexdigest()
+ 
+ 
+ def compare(a: torch.Tensor, b: torch.Tensor) -> dict:
+@@ -102,164 +61,211 @@ def compare(a: torch.Tensor, b: torch.Tensor) -> dict:
+     return {"ade_m": float(delta.mean()), "fde_m": float(delta[:, -1].mean()), "direction_cosine": cosine}
+ 
+ 
+-def save_input_overlay(path: Path, image: Image.Image, uv: np.ndarray) -> None:
+-    fig, ax = plt.subplots(figsize=(9, 5), dpi=140)
+-    ax.imshow(image)
+-    ax.scatter(uv[:, 0], uv[:, 1], c=np.arange(len(uv)), cmap="tab10", s=36, edgecolors="white")
+-    for i, (u, v) in enumerate(uv):
+-        ax.text(float(u) + 4, float(v) - 4, str(i), color="white", fontsize=7)
+-    ax.set_xlim(0, image.width)
+-    ax.set_ylim(image.height, 0)
+-    ax.axis("off")
+-    fig.tight_layout(pad=0)
+-    fig.savefig(path, bbox_inches="tight", pad_inches=0)
+-    plt.close(fig)
++def motion_metrics(future: torch.Tensor, anchor: torch.Tensor) -> dict:
++    future = future.detach().float().cpu()
++    anchor = anchor.detach().float().cpu()
++    full = torch.cat([anchor[:, None], future], 1)
++    step = torch.linalg.vector_norm(full[:, 1:] - full[:, :-1], dim=-1)
++    delta = future[:, -1].mean(0) - anchor.mean(0)
++    return {
++        "mean_path_length_m": float(step.sum(1).mean()),
++        "centroid_final_delta_m": delta.tolist(),
++        "finite_fraction": float(torch.isfinite(future).float().mean()),
++    }
+ 
+ 
+-def save_prediction_overlay(path: Path, image: Image.Image, k: np.ndarray, preds: dict[str, torch.Tensor]) -> None:
+-    fig, ax = plt.subplots(figsize=(9, 5), dpi=140)
++def save_overlay(path: Path, image: Image.Image, k: np.ndarray, anchor_uv: np.ndarray,
++                 pseudo_gt: torch.Tensor, predictions: dict[str, torch.Tensor]) -> None:
++    fig, ax = plt.subplots(figsize=(9, 5.2), dpi=150)
+     ax.imshow(image)
+-    for color, (name, future) in zip(plt.cm.tab10(np.linspace(0, 1, len(preds))), preds.items()):
+-        pixels = project(future.detach().float().cpu().numpy(), k)
+-        centroid = pixels.mean(axis=0)
+-        ax.plot(centroid[:, 0], centroid[:, 1], color=color, linewidth=2, label=name)
+-        ax.scatter(centroid[-1, 0], centroid[-1, 1], color=color, s=22)
++    gt_px = project(pseudo_gt.numpy(), k).mean(0)
++    gt_full = np.concatenate([anchor_uv.mean(0, keepdims=True), gt_px], 0)
++    ax.plot(gt_full[:, 0], gt_full[:, 1], "w--", linewidth=2.5, label="offline TrackCraft pseudo-GT")
++    colors = plt.cm.tab10(np.linspace(0, 1, max(1, len(predictions))))
++    for color, (name, pred) in zip(colors, predictions.items()):
++        px = project(pred.numpy(), k).mean(0)
++        full = np.concatenate([anchor_uv.mean(0, keepdims=True), px], 0)
++        ax.plot(full[:, 0], full[:, 1], color=color, linewidth=1.8, label=name)
++    ax.scatter(anchor_uv[:, 0], anchor_uv[:, 1], s=20, c="yellow", edgecolors="black")
+     ax.set_xlim(0, image.width)
+     ax.set_ylim(image.height, 0)
+     ax.axis("off")
+-    ax.legend(loc="best", fontsize=7)
++    ax.legend(loc="best", fontsize=6)
+     fig.tight_layout(pad=0)
+     fig.savefig(path, bbox_inches="tight", pad_inches=0)
+     plt.close(fig)
+ 
+ 
++def decode_generation(model, inputs: dict, future_horizon: int, sampler=None):
++    from molmo_motion.eval.egodex_3d_evaluator import parse_tracks_text, tracks_to_array
++
++    batch = {"input_ids": inputs["input_ids"], "attention_mask": inputs.get("attention_mask")}
++    for key in ("images", "image_masks"):
++        if inputs.get(key) is not None:
++            batch[key] = inputs[key]
++    for key, value in inputs.items():
++        if key in batch or key in ("target_tokens", "loss_masks", "future_horizon", "history_size", "anchor_3d"):
++            continue
++        batch[key] = value
++    with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
++        out = model._internal.generate(
++            batch=batch,
++            max_steps=160 * future_horizon,
++            sampler=sampler,
++            is_distributed=False,
++        )
++    token_ids = out.token_ids[:, 0].detach().cpu().numpy()[0]
++    tokenizer = model._internal.config.llm.build_tokenizer()
++    text = tokenizer.decode(token_ids[token_ids >= 0])
++    parsed = parse_tracks_text(text)
++    parse_success = parsed is not None
++    if parsed is None:
++        future = torch.zeros((model.config.num_points, future_horizon, 3), dtype=torch.float32)
++    else:
++        history_size = inputs.get("history_size", model.config.history_size)
++        delta, _ = tracks_to_array(parsed, num_points=model.config.num_points,
++                                   num_frames=future_horizon, start_timestamp=float(history_size))
++        future = torch.from_numpy(np.asarray(delta, dtype=np.float32))
++        anchor = inputs.get("anchor_3d")
++        if anchor is not None:
++            future = future + anchor.detach().cpu().squeeze(0)
++    return future, text, parse_success, float(out.scores[0, 0].detach().float().cpu())
++
++
+ def main() -> None:
+     args = parse_args()
+     repo = Path(args.repo).resolve()
+     output = Path(args.output_dir).resolve()
+     output.mkdir(parents=True, exist_ok=True)
+-    (output / "arrays").mkdir(exist_ok=True)
+-    (output / "future_text").mkdir(exist_ok=True)
+     sys.path.insert(0, str(repo / "src"))
+-    quickstart = import_quickstart(repo)
+     from molmo_motion import MolmoMotion, MolmoMotionProcessor
++    from molmo_motion.nn.beam_search import TopKTopPSampler
+ 
+-    camera = np.load(args.camera_npz, allow_pickle=True)
+-    dense = np.load(args.dense_npz)
+-    track_map = np.asarray(dense["track_map"], np.float32)
+-    rgb = np.asarray(dense["rgb"], np.uint8)
+-    extrinsics = np.asarray(camera["extrinsics_w2c"], np.float32)
+-    fx, fy, cx, cy = np.asarray(camera["fx_fy_cx_cy"], np.float32)
+-    k = np.array([[fx, 0, cx], [0, fy, cy], [0, 0, 1]], np.float32)
+-    query_spec = json.loads(Path(args.query_json).read_text(encoding="utf-8"))
+-    query_uv0 = np.asarray(query_spec["frame0_query_pixels"], np.int64)
+-
+-    if track_map.shape[:3] != rgb.shape[:3]:
+-        raise ValueError(f"track/rgb mismatch: {track_map.shape} vs {rgb.shape}")
+-    if len(track_map) < args.history_size:
+-        raise ValueError("Tracker output is shorter than MolmoMotion history")
+-    t0 = len(track_map) - 1
+-    history_indices = np.arange(t0 - args.history_size + 1, t0 + 1)
+-    u0 = query_uv0[:, 0]
+-    v0 = query_uv0[:, 1]
+-    if np.any(u0 < 0) or np.any(u0 >= track_map.shape[2]) or np.any(v0 < 0) or np.any(v0 >= track_map.shape[1]):
+-        raise ValueError("frame-0 query lies outside TrackCraft3R output")
+-
+-    xyz_frame0 = np.stack([track_map[t, v0, u0] for t in history_indices], axis=0)
+-    xyz_t0 = transform_points(extrinsics[t0], xyz_frame0)
+-    uv_t0 = project(xyz_t0[-1], k)
+-    finite = np.isfinite(xyz_t0).all(axis=(0, 2)) & np.isfinite(uv_t0).all(axis=1)
+-    inside = (uv_t0[:, 0] >= 0) & (uv_t0[:, 0] < rgb.shape[2]) & (uv_t0[:, 1] >= 0) & (uv_t0[:, 1] < rgb.shape[1])
+-    positive_depth = (xyz_t0[..., 2] > 1e-4).all(axis=0)
+-    keep = finite & inside & positive_depth
+-    if keep.sum() < 4:
+-        raise RuntimeError(f"Only {int(keep.sum())} valid target tracks remain; need at least 4")
+-    query_uv0 = query_uv0[keep]
+-    uv_t0 = uv_t0[keep]
+-    xyz_t0 = xyz_t0[:, keep]
+-
+-    history_frames = [Image.fromarray(rgb[t]) for t in history_indices]
+-    points_2d_at_t0 = torch.from_numpy(uv_t0).float()
+-    points_3d_history = torch.from_numpy(xyz_t0).float()
+-    intrinsics = torch.from_numpy(k).float()
+-    save_input_overlay(output / "input_query_points.png", history_frames[-1], uv_t0)
+-
++    specs = json.loads(Path(args.spec_json).read_text(encoding="utf-8"))["samples"]
+     processor = MolmoMotionProcessor.from_pretrained(args.model)
+-    if processor.config.history_size != args.history_size:
+-        raise ValueError(f"Checkpoint history={processor.config.history_size}, requested={args.history_size}")
+     model = MolmoMotion.from_pretrained(args.model)
+     model._internal = model._internal.to(torch.bfloat16).cuda()
+-
+-    records = []
+-    predictions: dict[str, torch.Tensor] = {}
+-    for name in args.variants:
+-        action = TEXT_VARIANTS[name]
+-        inputs = processor(
+-            history_frames=history_frames,
+-            points_2d_at_t0=points_2d_at_t0,
+-            points_3d_history=points_3d_history,
+-            action=action,
+-            future_horizon=args.future_horizon,
+-        )
+-        input_ids = inputs["input_ids"]
+-        input_ids_sha256 = tensor_sha256(input_ids)
+-        input_token_count = int(input_ids.numel())
+-        inputs = {key: value.cuda() if torch.is_tensor(value) else value for key, value in inputs.items()}
+-        torch.cuda.reset_peak_memory_stats()
+-        started = time.perf_counter()
+-        with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
+-            result = model.predict_trajectory(**inputs)
+-        future = result.future_3d.detach().float().cpu()
+-        future_text = result.future_text
+-        elapsed = time.perf_counter() - started
+-        expected = (len(uv_t0), args.future_horizon, 3)
+-        if tuple(future.shape) != expected:
+-            raise RuntimeError(f"Unexpected output for {name}: {tuple(future.shape)} != {expected}")
+-        predictions[name] = future
+-        row = {
+-            "variant": name,
+-            "action": action,
+-            "shape": list(future.shape),
+-            "seconds": elapsed,
+-            "peak_cuda_allocated_gib": torch.cuda.max_memory_allocated() / 2**30,
+-            "input_token_count": input_token_count,
+-            "input_ids_sha256": input_ids_sha256,
+-            "future_text_chars": len(future_text),
+-            "future_text_sha256": hashlib.sha256(future_text.encode("utf-8")).hexdigest(),
+-            **trajectory_metrics(future, points_3d_history[-1]),
++    if processor.config.history_size != args.history_size:
++        raise ValueError(f"checkpoint history={processor.config.history_size}, requested={args.history_size}")
++
++    all_records = []
++    sample_summaries = []
++    for sample_i, spec in enumerate(specs):
++        sample_id = spec["id"]
++        sample_out = output / sample_id
++        (sample_out / "arrays").mkdir(parents=True, exist_ok=True)
++        (sample_out / "future_text").mkdir(exist_ok=True)
++        camera = np.load(spec["camera_npz"], allow_pickle=True)
++        dense = np.load(spec["dense_npz"])
++        track_map = np.asarray(dense["track_map"], np.float32)
++        rgb = np.asarray(dense["rgb"], np.uint8)
++        extrinsics = np.asarray(camera["extrinsics_w2c"], np.float32)
++        raw_frame_indices = np.asarray(camera["frame_indices"], np.int32)
++        fx, fy, cx, cy = np.asarray(camera["fx_fy_cx_cy"], np.float32)
++        k = np.array([[fx, 0, cx], [0, fy, cy], [0, 0, 1]], np.float32)
++        query_uv0 = np.asarray(json.loads(Path(spec["query_json"]).read_text())["frame0_query_pixels"], np.int64)
++        t0 = args.history_size - 1
++        if track_map.shape[0] <= t0:
++            raise ValueError(f"{sample_id}: tracker output shorter than history")
++        u0, v0 = query_uv0[:, 0], query_uv0[:, 1]
++        xyz_frame0 = np.stack([track_map[t, v0, u0] for t in range(track_map.shape[0])], 0)
++        xyz_t0_all = transform_points(extrinsics[t0], xyz_frame0)
++        uv_t0 = project(xyz_t0_all[t0], k)
++        keep = (np.isfinite(xyz_t0_all).all(axis=(0, 2)) & np.isfinite(uv_t0).all(1)
++                & (xyz_t0_all[:args.history_size, :, 2] > 1e-4).all(0)
++                & (uv_t0[:, 0] >= 0) & (uv_t0[:, 0] < rgb.shape[2])
++                & (uv_t0[:, 1] >= 0) & (uv_t0[:, 1] < rgb.shape[1]))
++        if keep.sum() < 4:
++            raise RuntimeError(f"{sample_id}: only {int(keep.sum())} valid tracks")
++        query_uv0, uv_t0, xyz_t0_all = query_uv0[keep], uv_t0[keep], xyz_t0_all[:, keep]
++        history_xyz = xyz_t0_all[:args.history_size]
++        pseudo_gt = torch.from_numpy(xyz_t0_all[args.history_size:]).float().permute(1, 0, 2)
++        history_frames = [Image.fromarray(rgb[t]) for t in range(args.history_size)]
++        points_2d = torch.from_numpy(uv_t0).float()
++        points_3d = torch.from_numpy(history_xyz).float()
++        pseudo_metrics = motion_metrics(pseudo_gt, points_3d[-1])
++        predictions = {}
++        sample_records = []
++        for prompt_i, prompt in enumerate(spec["prompts"]):
++            inputs_cpu = processor(history_frames=history_frames, points_2d_at_t0=points_2d,
++                                   points_3d_history=points_3d, action=prompt["text"],
++                                   future_horizon=args.future_horizon)
++            input_sha = sha_tensor(inputs_cpu["input_ids"])
++            inputs = {k0: (v.cuda() if torch.is_tensor(v) else v) for k0, v in inputs_cpu.items()}
++            modes = [("greedy", None, None)]
++            for draw in range(args.stochastic_samples):
++                seed = args.sample_seed + sample_i * 1000 + prompt_i * 100 + draw
++                sampler = TopKTopPSampler(p=args.top_p, k=args.top_k, temperature=args.temperature)
++                modes.append((f"sample{draw + 1}", sampler, seed))
++            for draw_name, sampler, seed in modes:
++                if seed is not None:
++                    torch.manual_seed(seed)
++                    torch.cuda.manual_seed_all(seed)
++                torch.cuda.reset_peak_memory_stats()
++                started = time.perf_counter()
++                future, future_text, parse_success, sequence_score = decode_generation(
++                    model, inputs, args.future_horizon, sampler=sampler)
++                elapsed = time.perf_counter() - started
++                key = f"{prompt['name']}__{draw_name}"
++                predictions[key] = future
++                eval_h = min(pseudo_gt.shape[1], future.shape[1])
++                gt_cmp = compare(future[:, :eval_h], pseudo_gt[:, :eval_h])
++                row = {
++                    "sample_id": sample_id,
++                    "prompt": prompt["name"],
++                    "prompt_text": prompt["text"],
++                    "draw": draw_name,
++                    "seed": seed,
++                    "parse_success": parse_success,
++                    "seconds": elapsed,
++                    "sequence_score": sequence_score,
++                    "input_ids_sha256": input_sha,
++                    "future_array_sha256": sha_tensor(future),
++                    "future_text_sha256": hashlib.sha256(future_text.encode()).hexdigest(),
++                    "eval_horizon_frames": eval_h,
++                    "pseudo_gt_ade_m": gt_cmp["ade_m"],
++                    "pseudo_gt_fde_m": gt_cmp["fde_m"],
++                    **motion_metrics(future, points_3d[-1]),
++                }
++                sample_records.append(row)
++                all_records.append(row)
++                np.savez_compressed(sample_out / "arrays" / f"{key}.npz", future_3d=future.numpy(),
++                                    pseudo_gt=pseudo_gt.numpy(), points_3d_history=history_xyz,
++                                    points_2d_at_t0=uv_t0, intrinsics=k, raw_frame_indices=raw_frame_indices,
++                                    action=np.asarray(prompt["text"]))
++                (sample_out / "future_text" / f"{key}.txt").write_text(future_text, encoding="utf-8")
++                print("RESULT " + json.dumps(row, ensure_ascii=False), flush=True)
++        pairwise = {}
++        keys = list(predictions)
++        for i, a in enumerate(keys):
++            for b in keys[i + 1:]:
++                pairwise[f"{a}__vs__{b}"] = compare(predictions[a], predictions[b])
++        save_overlay(sample_out / "prediction_vs_pseudogt.png", history_frames[-1], k, uv_t0,
++                     pseudo_gt, {k0: v for k0, v in predictions.items() if k0.endswith("__greedy")})
++        summary = {
++            "sample_id": sample_id,
++            "source_video": spec["source_video"],
++            "source_fps": spec["source_fps"],
++            "raw_frame_indices": raw_frame_indices.tolist(),
++            "history_raw_frames": raw_frame_indices[:args.history_size].tolist(),
++            "offline_pseudo_gt_raw_frames": raw_frame_indices[args.history_size:].tolist(),
++            "valid_query_count": int(keep.sum()),
++            "pseudo_gt_motion": pseudo_metrics,
++            "records": sample_records,
++            "pairwise": pairwise,
+         }
+-        records.append(row)
+-        np.savez_compressed(
+-            output / "arrays" / f"{name}.npz",
+-            future_3d=future.numpy(),
+-            points_3d_history=xyz_t0,
+-            points_2d_at_t0=uv_t0,
+-            frame0_query_pixels=query_uv0,
+-            intrinsics=k,
+-            history_indices=history_indices,
+-            action=np.asarray(action),
+-        )
+-        (output / "future_text" / f"{name}.txt").write_text(future_text, encoding="utf-8")
+-        print("RESULT " + json.dumps(row, ensure_ascii=False), flush=True)
+-
+-    pairs = {}
+-    names = list(predictions)
+-    for i, a in enumerate(names):
+-        for b in names[i + 1 :]:
+-            pairs[f"{a}__vs__{b}"] = compare(predictions[a], predictions[b])
+-    save_prediction_overlay(output / "prediction_centroids.png", history_frames[-1], k, predictions)
+-    payload = {
+-        "trackcraft_dense": str(Path(args.dense_npz).resolve()),
+-        "camera_npz": str(Path(args.camera_npz).resolve()),
+-        "query_spec": query_spec,
+-        "history_indices": history_indices.tolist(),
+-        "valid_query_count": int(len(uv_t0)),
+-        "records": records,
+-        "pairwise": pairs,
+-    }
+-    (output / "metrics.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+-    print(f"VALID_QUERY_COUNT={len(uv_t0)}")
+-    print(f"METRICS={output / 'metrics.json'}")
++        (sample_out / "metrics.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
++        sample_summaries.append(summary)
++    aggregate = {"protocol": {
++        "history_size": args.history_size,
++        "future_horizon": args.future_horizon,
++        "source_sampling_fps": 15,
++        "offline_pseudo_gt_note": "TrackCraft sees future frames only for offline evaluation; MolmoMotion receives frames 0..2 only.",
++        "stochastic_samples_per_prompt": args.stochastic_samples,
++        "temperature": args.temperature, "top_p": args.top_p, "top_k": args.top_k,
++    }, "samples": sample_summaries, "records": all_records}
++    (output / "aggregate_metrics.json").write_text(json.dumps(aggregate, indent=2, ensure_ascii=False), encoding="utf-8")
++    print(f"AGGREGATE={output / 'aggregate_metrics.json'}")
+ 
+ 
+ if __name__ == "__main__":

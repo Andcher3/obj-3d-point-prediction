@@ -1,0 +1,13 @@
+{
+  "dataset": "trackcraft3r/trackcraft3r-eval",
+  "revision": "df2fc292f46c4afbfbe3459de91bac755dacda97",
+  "remote_base": "/root/autodl-tmp/uniquery4r-long-kubric-2026-10-10",
+  "gpu_authorized": false,
+  "query_approved": false,
+  "purpose": "CPU-only preparation for subsequent object tracking tests with 22/64-frame inputs",
+  "files": [
+    {"path": "kubric_da3/00001.npz", "size": 215953991, "sha256": "e1aa341bd2ab49ac3cd1a646c6e376186a2e9e9b59505625f5486b6f6bf30408"},
+    {"path": "kubric_da3/00002.npz", "size": 119899165, "sha256": "b654a00220f949bb719cc92aa3b0d2d751c1bfdd46ff1b9cb6b89cf628df6142"},
+    {"path": "kubric_da3/00003.npz", "size": 225420176, "sha256": "c74d20aca0f4f286b28627768106508bb96ada576da75d80930a859ccda6f62b"}
+  ]
+}

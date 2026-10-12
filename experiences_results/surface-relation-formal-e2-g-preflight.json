@@ -1,0 +1,31 @@
+{
+  "protocol": {
+    "gate": "e2-g",
+    "trajectory_source": "controlled_perturbation_baseline",
+    "interpretation_boundary": "graph/integrator auxiliary experiment; does not validate MolmoMotion or Relation Head dense prediction",
+    "target_fps": 15.0,
+    "query_counts": [
+      32,
+      48,
+      64
+    ],
+    "main_graph": "knn_2d_k3",
+    "comparison_graph": "knn_3d_k3",
+    "timestamp_tolerance_s": 0.03333333333333333,
+    "conditions": [
+      "oracle",
+      "gaussian_0.01",
+      "gaussian_0.05",
+      "gaussian_0.10",
+      "gaussian_0.20",
+      "outlier_0.05",
+      "outlier_0.10",
+      "outlier_0.20"
+    ],
+    "non_oracle_seeds": 20
+  },
+  "bundle_count": 0,
+  "ready_bundle_count": 0,
+  "formal_data_gate_passed": false,
+  "results": []
+}

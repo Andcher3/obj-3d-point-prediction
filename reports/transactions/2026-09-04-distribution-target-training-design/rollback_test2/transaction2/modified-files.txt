@@ -1,0 +1,3 @@
+research_roadmap.md
+reports\ideas\2026-09-04-motionmap-foundation-prior-redesign.md
+reports\progress_log.md

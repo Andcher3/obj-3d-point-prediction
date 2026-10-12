@@ -1,0 +1,27 @@
+{
+  "status": "DERIVED_NOT_QUALITY_APPROVED",
+  "video_id": "boat",
+  "source_raw_directory": "/root/autodl-tmp/projects/motionforesight/outputs/davis_frame0_direct_2026-09-28/boat",
+  "method": "same-run integer-query Pj0 per-query constant 3D translation",
+  "contexts_requested": [
+    "observed7"
+  ],
+  "contexts": {
+    "observed7": {
+      "raw_source": "/root/autodl-tmp/projects/motionforesight/outputs/davis_frame0_direct_2026-09-28/boat/observed7_query_tracks.npz",
+      "output": "/root/autodl-tmp/projects/motionforesight/outputs/davis_official_interleaved_pj0_2026-09-28/boat/observed7_query_tracks.npz",
+      "shape": [
+        7,
+        48,
+        3
+      ],
+      "frame0_anchor_max_abs_xyz": 4.336808689942018e-19,
+      "temporal_displacement_max_abs_change": 6.938893903907228e-18,
+      "anchor_delta_norm": {
+        "p50": 0.008001042762200282,
+        "p90": 0.010752504098123896,
+        "max": 0.012742083241942901
+      }
+    }
+  }
+}

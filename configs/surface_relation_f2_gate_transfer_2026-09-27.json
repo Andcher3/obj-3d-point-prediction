@@ -1,0 +1,36 @@
+{
+  "status": "FROZEN_BEFORE_NEW_GATE_EVALUATION",
+  "date": "2026-09-27",
+  "scope": "Exploratory frozen-output relation-head transfer and abstention probe",
+  "development_video_ids": [
+    "65165142-b15e-4bba-a9de-d5174ec46597",
+    "4d053322-1eef-4a69-8201-932c7b82fb03",
+    "9069bd26-0139-4e88-9957-9f9489b35a91",
+    "cb78dba8-6647-4ec7-875c-6ba1548f8312"
+  ],
+  "transfer_video_ids": ["r4_new_f", "scene_d78_0318_3rd"],
+  "development_resolution": 518,
+  "transfer_resolution": 392,
+  "target": "observed-only TrackCraft t0 plus same-query full-video TrackCraft future displacement",
+  "no_future_features": true,
+  "train_slots": [0, 1, 2, 3, 4, 5, 6],
+  "validation_slots": [7, 8],
+  "test_slots": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  "training_steps": 400,
+  "learning_rate": 0.01,
+  "seeds": [9000, 9001, 9002, 9003, 9004],
+  "primary_model": "history odd edge MLP and component-zero-mean graph integration",
+  "control_model": "parameter-matched node residual MLP with zero-mean correction",
+  "fixed_gate": 0.25,
+  "abstention_gate": "0.25 if mean edge-vector distance between baseline future and observed t0 is >= median of four development videos; else 0",
+  "gates_for_both_models": ["0.25", "abstention"],
+  "primary_metrics": ["centered_error_normalized", "edge_vector_error_normalized"],
+  "safety_metric": "raw_ade_m",
+  "descriptive_transfer_criterion": "On both videos, edge-abstention must improve both structural metrics relative to g=0 baseline and raw ADE may not rise >5%; compare paired node residual by video. Two-video outcome does not establish generalization.",
+  "known_limits": [
+    "Transfer data use a different DA3 spatial resolution and domain",
+    "PointOdyssey pseudo-labels and DA3 inputs previously investigated; not a pristine test set",
+    "Existing PointOdyssey DA3 was reconstructed from 22 frames; future-context contamination prevents an RGB observed-only claim",
+    "TrackCraft3R full-video future displacements are proxy labels, not true trajectory ground truth"
+  ]
+}

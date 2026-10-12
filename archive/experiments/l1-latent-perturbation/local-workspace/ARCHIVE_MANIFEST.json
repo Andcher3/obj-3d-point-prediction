@@ -1,0 +1,2053 @@
+[
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0.mp4",
+    "length": 569095,
+    "sha256": "3a19e1596686eafb10ea5aa3d304abcc24d464d6f3a2ceb2a7ce544b23363e62",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1.mp4",
+    "length": 605351,
+    "sha256": "974a3e8b4cdf0b8ec94a2437534ad1d15751a549ab749b47cf2c0c7fbd95bcfb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2.mp4",
+    "length": 446129,
+    "sha256": "f07b76161cf5cf2edc7fdfdcf027ec1822caddc34152ba522449297926a53a80",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\complete_search_report.json",
+    "length": 46447,
+    "sha256": "52e6ad6aecca6c0ace25e733eb2cb689b8d1e7616afa9b098f7990772589f50f",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\complete_search_report.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_00_sigma_0_seed_0_latents.npz",
+    "length": 25546,
+    "sha256": "ff8a0ea42f4c30dcbfb2e3bceebb68bee950af951a72d64bc52eed3db70d574a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_00_sigma_0_seed_0_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_00_sigma_0_seed_0_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_00_sigma_0_seed_0_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_01_sigma_0_seed_0_latents.npz",
+    "length": 25546,
+    "sha256": "ff8a0ea42f4c30dcbfb2e3bceebb68bee950af951a72d64bc52eed3db70d574a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_01_sigma_0_seed_0_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_01_sigma_0_seed_0_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_01_sigma_0_seed_0_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_02_sigma_0.005_seed_11_latents.npz",
+    "length": 25570,
+    "sha256": "93c8bfa8febb19fbb9c7a82be7806408b57b08fc8f23e67fa52997cd3765fc3d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_02_sigma_0.005_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_02_sigma_0.005_seed_11_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_02_sigma_0.005_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_03_sigma_0.005_seed_22_latents.npz",
+    "length": 25599,
+    "sha256": "7c10c907765b5e6733b39504e4859d39455f639e5a8778c83fccd590a6bd4a79",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_03_sigma_0.005_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_03_sigma_0.005_seed_22_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_03_sigma_0.005_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_04_sigma_0.01_seed_11_latents.npz",
+    "length": 25576,
+    "sha256": "02d6421cd1cbb7e538e46da725f89c81a71a767f48c75a88c5f569293df1416f",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_04_sigma_0.01_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_04_sigma_0.01_seed_11_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_04_sigma_0.01_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_05_sigma_0.01_seed_22_latents.npz",
+    "length": 25564,
+    "sha256": "b71fbbcc0fd4bfbce82eed626699b9f24e2b70aa6281757b839a7a34101f5312",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_05_sigma_0.01_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_05_sigma_0.01_seed_22_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_05_sigma_0.01_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_06_sigma_0.03_seed_11_latents.npz",
+    "length": 25563,
+    "sha256": "0b88817581ad154356a127331aef0f8fed4a57806ddd159a16e17bf15a42bf5c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_06_sigma_0.03_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_06_sigma_0.03_seed_11_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_06_sigma_0.03_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_07_sigma_0.03_seed_22_latents.npz",
+    "length": 25569,
+    "sha256": "bb1dc65d590eb928ed25c9828f022bc9d780b838fa2f1d772de8e119509d2ea7",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_07_sigma_0.03_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_07_sigma_0.03_seed_22_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_07_sigma_0.03_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_08_sigma_0.1_seed_11_latents.npz",
+    "length": 25534,
+    "sha256": "791f0021e9be95094ec008efa18e586184ed93c4234025cda2ad939ae94de1a3",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_08_sigma_0.1_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_08_sigma_0.1_seed_11_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_08_sigma_0.1_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_09_sigma_0.1_seed_22_latents.npz",
+    "length": 25556,
+    "sha256": "49dc406724d8f628cf1e1a71c42de61f39068250499fb73c94bb7646bc5ddaea",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_09_sigma_0.1_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_09_sigma_0.1_seed_22_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_09_sigma_0.1_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_10_sigma_0.2_seed_11_latents.npz",
+    "length": 25486,
+    "sha256": "c1a01094e807adf2ccc2f044ac9c999eda823f29bca6c623a5640ac9ea7ae8e6",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_10_sigma_0.2_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_10_sigma_0.2_seed_11_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_10_sigma_0.2_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_11_sigma_0.2_seed_22_latents.npz",
+    "length": 25497,
+    "sha256": "b125343fb4a7bf029aa7ad4eb4b4dfc36d080a8ab88381b000713da7b6710fe7",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_11_sigma_0.2_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r0_11_sigma_0.2_seed_22_raw.txt",
+    "length": 896,
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_11_sigma_0.2_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_00_sigma_0.005_seed_11_latents.npz",
+    "length": 25577,
+    "sha256": "be1fe439046351df43b55b264b45dd72911bba669f34a9cd0dbb958e45de238d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_00_sigma_0.005_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_00_sigma_0.005_seed_11_raw.txt",
+    "length": 763,
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_00_sigma_0.005_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_01_sigma_0.005_seed_22_latents.npz",
+    "length": 25597,
+    "sha256": "e57f54a011c85030546d2b2f345be1b3cb0fba5a12b747cf8de3975698e64790",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_01_sigma_0.005_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_01_sigma_0.005_seed_22_raw.txt",
+    "length": 770,
+    "sha256": "1c4f9c6511ee3ee08d09cdc4db96aecbd5e9b2b03ed8a3857630606e232ad74c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_01_sigma_0.005_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_02_sigma_0.01_seed_11_latents.npz",
+    "length": 25578,
+    "sha256": "7506dae5f6ebeda0e4971ff5ba517c2de9bf355d89cc094d5f2fabf794fa92be",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_02_sigma_0.01_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_02_sigma_0.01_seed_11_raw.txt",
+    "length": 728,
+    "sha256": "cb318e1dd8d07751497e0e60fba966bad97b5060fdb2834a685b70d6528b3602",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_02_sigma_0.01_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_03_sigma_0.01_seed_22_latents.npz",
+    "length": 25568,
+    "sha256": "bdee519d9fbc946b6d1ad7d7a7b040935c0ae166a893e3d27dd54cc20697d3d0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_03_sigma_0.01_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_03_sigma_0.01_seed_22_raw.txt",
+    "length": 763,
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_03_sigma_0.01_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_04_sigma_0.03_seed_11_latents.npz",
+    "length": 25560,
+    "sha256": "057c57974ac480d6d21f7406e2d83eb05447d4c11260bb5254345c8fe81328e9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_04_sigma_0.03_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_04_sigma_0.03_seed_11_raw.txt",
+    "length": 763,
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_04_sigma_0.03_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_05_sigma_0.03_seed_22_latents.npz",
+    "length": 25574,
+    "sha256": "e715848e0d50238045213880980b4ecc77a6d3114cb02d1d482a7ae77739c184",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_05_sigma_0.03_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_05_sigma_0.03_seed_22_raw.txt",
+    "length": 763,
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_05_sigma_0.03_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_06_sigma_0.1_seed_11_latents.npz",
+    "length": 25552,
+    "sha256": "19e48066acc2ca089110e8f19e086926114c792d34317e37e8304d13bf29e285",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_06_sigma_0.1_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_06_sigma_0.1_seed_11_raw.txt",
+    "length": 728,
+    "sha256": "cb318e1dd8d07751497e0e60fba966bad97b5060fdb2834a685b70d6528b3602",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_06_sigma_0.1_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_07_sigma_0.1_seed_22_latents.npz",
+    "length": 25547,
+    "sha256": "7981c0ac115f5887960716ec8293cb006b22c6214936b1fe6beaa883758920dc",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_07_sigma_0.1_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_07_sigma_0.1_seed_22_raw.txt",
+    "length": 728,
+    "sha256": "cb318e1dd8d07751497e0e60fba966bad97b5060fdb2834a685b70d6528b3602",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_07_sigma_0.1_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_08_sigma_0.2_seed_11_latents.npz",
+    "length": 25495,
+    "sha256": "0ee0e15256eaffbfeae78f6008d12172291a99b3495e849a281b6caca3bc61b1",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_08_sigma_0.2_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_08_sigma_0.2_seed_11_raw.txt",
+    "length": 763,
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_08_sigma_0.2_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_09_sigma_0.2_seed_22_latents.npz",
+    "length": 25471,
+    "sha256": "863c269b8c0e9782bb4d0987ed7669ed97c82d4e7245735a8359dc5c21bb51b2",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_09_sigma_0.2_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\r1_09_sigma_0.2_seed_22_raw.txt",
+    "length": 763,
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_09_sigma_0.2_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_0\\run.log",
+    "length": 47145,
+    "sha256": "f2d1b3fe53172481f54e4749e4e416fe178ce55581891ce53ef1297d298d064d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_0\\run.log"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\complete_search_report.json",
+    "length": 42430,
+    "sha256": "15358f4aea3256699a3b735fbb93b6afabd9e119206239cc2b4cd385b918574e",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\complete_search_report.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_00_sigma_0_seed_0_latents.npz",
+    "length": 25547,
+    "sha256": "41e1d9ec5cdf354ea73cfcaa0b858c505602207c12a491590c40695029e991ff",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_00_sigma_0_seed_0_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_00_sigma_0_seed_0_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_00_sigma_0_seed_0_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_01_sigma_0_seed_0_latents.npz",
+    "length": 25547,
+    "sha256": "41e1d9ec5cdf354ea73cfcaa0b858c505602207c12a491590c40695029e991ff",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_01_sigma_0_seed_0_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_01_sigma_0_seed_0_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_01_sigma_0_seed_0_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_02_sigma_0.005_seed_11_latents.npz",
+    "length": 25575,
+    "sha256": "99c1fb05052da759a15fc55c10f8fa2d86331fea8620d2208a903661996421c7",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_02_sigma_0.005_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_02_sigma_0.005_seed_11_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_02_sigma_0.005_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_03_sigma_0.005_seed_22_latents.npz",
+    "length": 25542,
+    "sha256": "72d15f81623bde37c9aa90dc9d67661d07ea0846181b311475ef8c80772c3e5f",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_03_sigma_0.005_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_03_sigma_0.005_seed_22_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_03_sigma_0.005_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_04_sigma_0.01_seed_11_latents.npz",
+    "length": 25564,
+    "sha256": "d31d3258bca580c20ac684b5507f433ec80362bccd46b12c9c61b263aeb9b0d8",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_04_sigma_0.01_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_04_sigma_0.01_seed_11_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_04_sigma_0.01_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_05_sigma_0.01_seed_22_latents.npz",
+    "length": 25550,
+    "sha256": "74008dab03c4b9f2198b592f44a7a60f226714b53419ade910891aa0979da8e0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_05_sigma_0.01_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_05_sigma_0.01_seed_22_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_05_sigma_0.01_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_06_sigma_0.03_seed_11_latents.npz",
+    "length": 25561,
+    "sha256": "ed3f0205ebd8f7b89fa2ac2477381745efae036ff491cf6ecfa398d536fad5eb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_06_sigma_0.03_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_06_sigma_0.03_seed_11_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_06_sigma_0.03_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_07_sigma_0.03_seed_22_latents.npz",
+    "length": 25569,
+    "sha256": "3d3fc401dffbb7d0908ffa5fd032c4afb430486d85854979328ff99e391ef83b",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_07_sigma_0.03_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_07_sigma_0.03_seed_22_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_07_sigma_0.03_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_08_sigma_0.1_seed_11_latents.npz",
+    "length": 25569,
+    "sha256": "2805291ee47fb0294118c4cab5ce3f9ef195969accb401008b42beba936fb401",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_08_sigma_0.1_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_08_sigma_0.1_seed_11_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_08_sigma_0.1_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_09_sigma_0.1_seed_22_latents.npz",
+    "length": 25542,
+    "sha256": "35efac0856270d4ff5bdf927edd8fec57d37893ffc1b32290b09ab48c2553e14",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_09_sigma_0.1_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_09_sigma_0.1_seed_22_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_09_sigma_0.1_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_10_sigma_0.2_seed_11_latents.npz",
+    "length": 25486,
+    "sha256": "bcb53cb0d80608eda4346464f58f51a732d2458d780b0a98d87fc893cefd5756",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_10_sigma_0.2_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_10_sigma_0.2_seed_11_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_10_sigma_0.2_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_11_sigma_0.2_seed_22_latents.npz",
+    "length": 25484,
+    "sha256": "33183b7e83afcffcacdd94621bfe27122820cdba9449c81b80617c75a9229b40",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_11_sigma_0.2_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r0_11_sigma_0.2_seed_22_raw.txt",
+    "length": 760,
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_11_sigma_0.2_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_00_sigma_0.005_seed_11_latents.npz",
+    "length": 25591,
+    "sha256": "3b6bc6c76d468a2a92e441eb3b9b08cb12f0b0ab99efad4ec3f1ee76fb19c005",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_00_sigma_0.005_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_00_sigma_0.005_seed_11_raw.txt",
+    "length": 793,
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_00_sigma_0.005_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_01_sigma_0.005_seed_22_latents.npz",
+    "length": 25586,
+    "sha256": "477248533fe7dada548129b8f8bd3b667814aa3b73356f723de10d5e08da3afd",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_01_sigma_0.005_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_01_sigma_0.005_seed_22_raw.txt",
+    "length": 793,
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_01_sigma_0.005_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_02_sigma_0.01_seed_11_latents.npz",
+    "length": 25576,
+    "sha256": "459a0c84b4de432d7c7917b8deab9c03f995435178211b60f5a1938fb28d6ac5",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_02_sigma_0.01_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_02_sigma_0.01_seed_11_raw.txt",
+    "length": 793,
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_02_sigma_0.01_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_03_sigma_0.01_seed_22_latents.npz",
+    "length": 25605,
+    "sha256": "9f5a956625fc1012f1d7de888223ff52a24ca9cddbf2036bef30610515ee4f7d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_03_sigma_0.01_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_03_sigma_0.01_seed_22_raw.txt",
+    "length": 798,
+    "sha256": "42fbe145f95f193441d8332e4e51a7348ce6134caf6d025f94a1a068f511ed30",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_03_sigma_0.01_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_04_sigma_0.03_seed_11_latents.npz",
+    "length": 25580,
+    "sha256": "30b65c842732e2d4e3717cdbef7e37a5030d92cd3dd55d60281bb11f3c95870a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_04_sigma_0.03_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_04_sigma_0.03_seed_11_raw.txt",
+    "length": 794,
+    "sha256": "bff55f1fc3af03dffa500fceed5158b6a80c6c09712aad21df7359178a5b5ed2",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_04_sigma_0.03_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_05_sigma_0.03_seed_22_latents.npz",
+    "length": 25573,
+    "sha256": "bb88939d945700877c7af956a45bee30b0a89a541ea5e9b9fb899ca0bfe3f63c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_05_sigma_0.03_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_05_sigma_0.03_seed_22_raw.txt",
+    "length": 793,
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_05_sigma_0.03_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_06_sigma_0.1_seed_11_latents.npz",
+    "length": 25568,
+    "sha256": "bb8ea1963c6842405eeb8a922ba3fc9a953cff989e6dace96d6bb4772111613a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_06_sigma_0.1_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_06_sigma_0.1_seed_11_raw.txt",
+    "length": 793,
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_06_sigma_0.1_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_07_sigma_0.1_seed_22_latents.npz",
+    "length": 25531,
+    "sha256": "29e156fd1dc842d8b8813558354a4dba60cffc556da71654ea09a0ec1f9e748c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_07_sigma_0.1_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_07_sigma_0.1_seed_22_raw.txt",
+    "length": 793,
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_07_sigma_0.1_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_08_sigma_0.2_seed_11_latents.npz",
+    "length": 25494,
+    "sha256": "13feb1faf54dae5e902e6ad39543ef3ec1d081ff8615f07f262839fa0480deaa",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_08_sigma_0.2_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_08_sigma_0.2_seed_11_raw.txt",
+    "length": 793,
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_08_sigma_0.2_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_09_sigma_0.2_seed_22_latents.npz",
+    "length": 25499,
+    "sha256": "a86c9f4e9c0afc21408805afef7ca1c36b59d71e99c107451d401c0210da152c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_09_sigma_0.2_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\r1_09_sigma_0.2_seed_22_raw.txt",
+    "length": 798,
+    "sha256": "42fbe145f95f193441d8332e4e51a7348ce6134caf6d025f94a1a068f511ed30",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_09_sigma_0.2_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_1\\run.log",
+    "length": 43128,
+    "sha256": "fc338f37bca43377fe201189ebcfd4fc9ba262325fb808c383e640724d22d566",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_1\\run.log"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\complete_search_report.json",
+    "length": 42280,
+    "sha256": "33eab27e33ed59b3c0962c6d7764514c6951d75550d9b3a13dd0dd4ab0d928f8",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\complete_search_report.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_00_sigma_0_seed_0_latents.npz",
+    "length": 25507,
+    "sha256": "858c795845bee967921b9ab94d08ad1042fe2c5b9913e7b6f44e4d99efeec2c6",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_00_sigma_0_seed_0_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_00_sigma_0_seed_0_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_00_sigma_0_seed_0_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_01_sigma_0_seed_0_latents.npz",
+    "length": 25507,
+    "sha256": "858c795845bee967921b9ab94d08ad1042fe2c5b9913e7b6f44e4d99efeec2c6",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_01_sigma_0_seed_0_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_01_sigma_0_seed_0_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_01_sigma_0_seed_0_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_02_sigma_0.005_seed_11_latents.npz",
+    "length": 25578,
+    "sha256": "634b304f40713d211177982cfdd205483b2a0ac2bf935a065f32ad61fea7576d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_02_sigma_0.005_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_02_sigma_0.005_seed_11_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_02_sigma_0.005_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_03_sigma_0.005_seed_22_latents.npz",
+    "length": 25587,
+    "sha256": "eb5650a1349a8befd0d22aa0ca5ad90e7715204f57aad842ad682108ccaa4e6a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_03_sigma_0.005_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_03_sigma_0.005_seed_22_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_03_sigma_0.005_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_04_sigma_0.01_seed_11_latents.npz",
+    "length": 25578,
+    "sha256": "99c2bf158425ba9a91653b6d9175863255027c059ac60242c84d3fe19143cc9a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_04_sigma_0.01_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_04_sigma_0.01_seed_11_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_04_sigma_0.01_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_05_sigma_0.01_seed_22_latents.npz",
+    "length": 25582,
+    "sha256": "cb218563bf2ab4bf9909b6c5442725661bbc6dbf209c9d1e2115063f1f8ecea1",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_05_sigma_0.01_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_05_sigma_0.01_seed_22_raw.txt",
+    "length": 853,
+    "sha256": "2bce95e8ef472a55543fd388b8d3b8d715506b478a472496c7626661c1a37758",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_05_sigma_0.01_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_06_sigma_0.03_seed_11_latents.npz",
+    "length": 25570,
+    "sha256": "69d1debca85a03c70e4a18e7d0cf0833c0f274ea552693bfb18883cad0e94914",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_06_sigma_0.03_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_06_sigma_0.03_seed_11_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_06_sigma_0.03_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_07_sigma_0.03_seed_22_latents.npz",
+    "length": 25559,
+    "sha256": "52948efc33acc6c3ed8e5050de585815ba7d134be03cb258fa23ec53e74de428",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_07_sigma_0.03_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_07_sigma_0.03_seed_22_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_07_sigma_0.03_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_08_sigma_0.1_seed_11_latents.npz",
+    "length": 25544,
+    "sha256": "1a7a9ca063fbc6e2796974bbcd153d126de5ae71aa0d22607b655fd6e95f1e5c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_08_sigma_0.1_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_08_sigma_0.1_seed_11_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_08_sigma_0.1_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_09_sigma_0.1_seed_22_latents.npz",
+    "length": 25541,
+    "sha256": "8e8f36137a0e4d83bfbf2d828ef3fb7aa95741eb331b0442e03f711f6cc9c246",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_09_sigma_0.1_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_09_sigma_0.1_seed_22_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_09_sigma_0.1_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_10_sigma_0.2_seed_11_latents.npz",
+    "length": 25487,
+    "sha256": "f9d09046340760c8705b9b4471de41ea53dba1d736da7fe4cbb5933d8e44bfd6",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_10_sigma_0.2_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_10_sigma_0.2_seed_11_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_10_sigma_0.2_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_11_sigma_0.2_seed_22_latents.npz",
+    "length": 25490,
+    "sha256": "92264eb82b3a85fbf412932abf7ec0ac1cd9c420c55c58b2aa602377849614ba",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_11_sigma_0.2_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r0_11_sigma_0.2_seed_22_raw.txt",
+    "length": 768,
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_11_sigma_0.2_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_00_sigma_0.005_seed_11_latents.npz",
+    "length": 25570,
+    "sha256": "14b1810270e71ed526846ce5bced6da395b60fc71db1a76335f046c3ec5edfa3",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_00_sigma_0.005_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_00_sigma_0.005_seed_11_raw.txt",
+    "length": 778,
+    "sha256": "84817b934ebeb09bdd58593f1568a208d4b97536ff523578105ea51e2df85a9a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_00_sigma_0.005_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_01_sigma_0.005_seed_22_latents.npz",
+    "length": 25575,
+    "sha256": "d4232d4edd33133d4a71c277e0eeeb85f6155609add5fe32dbcb6918054a2412",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_01_sigma_0.005_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_01_sigma_0.005_seed_22_raw.txt",
+    "length": 772,
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_01_sigma_0.005_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_02_sigma_0.01_seed_11_latents.npz",
+    "length": 25570,
+    "sha256": "96cbbdd673738e88d84517740c49bbae66e183003e60a74d3c8ff5d1be0e735e",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_02_sigma_0.01_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_02_sigma_0.01_seed_11_raw.txt",
+    "length": 772,
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_02_sigma_0.01_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_03_sigma_0.01_seed_22_latents.npz",
+    "length": 25576,
+    "sha256": "45e8324b47d1c68caa25398184a6c406c96f7ac4d0c00d39abd58bccb427fc8a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_03_sigma_0.01_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_03_sigma_0.01_seed_22_raw.txt",
+    "length": 772,
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_03_sigma_0.01_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_04_sigma_0.03_seed_11_latents.npz",
+    "length": 25597,
+    "sha256": "c18fe3919e865744ddcb14a9c84efd8ccd91808ee0a4d45589d502752e9ed109",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_04_sigma_0.03_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_04_sigma_0.03_seed_11_raw.txt",
+    "length": 772,
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_04_sigma_0.03_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_05_sigma_0.03_seed_22_latents.npz",
+    "length": 25550,
+    "sha256": "460c2d7b5765491de125acf53c84ddc7fadbfd127d73abd01ec268bc5f8665b4",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_05_sigma_0.03_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_05_sigma_0.03_seed_22_raw.txt",
+    "length": 772,
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_05_sigma_0.03_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_06_sigma_0.1_seed_11_latents.npz",
+    "length": 25541,
+    "sha256": "4f0682e1a1641aa5075d8fd310be5c16e6032162b33c86b180a7b1ee4987af4f",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_06_sigma_0.1_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_06_sigma_0.1_seed_11_raw.txt",
+    "length": 772,
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_06_sigma_0.1_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_07_sigma_0.1_seed_22_latents.npz",
+    "length": 25529,
+    "sha256": "f406d1fad9931213b3ac36d6047e4463a03b581238fc511e527c7d2e7b098755",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_07_sigma_0.1_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_07_sigma_0.1_seed_22_raw.txt",
+    "length": 772,
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_07_sigma_0.1_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_08_sigma_0.2_seed_11_latents.npz",
+    "length": 25536,
+    "sha256": "9b721dccdba33cbb94c7df685627c8d10c3d5b9433a227da0253f11aed6855e4",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_08_sigma_0.2_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_08_sigma_0.2_seed_11_raw.txt",
+    "length": 772,
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_08_sigma_0.2_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_09_sigma_0.2_seed_22_latents.npz",
+    "length": 25498,
+    "sha256": "a40d37830ed6e37143ec04570aea94c07eee8e046d1db6acb2f129810ba5601a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_09_sigma_0.2_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\r1_09_sigma_0.2_seed_22_raw.txt",
+    "length": 772,
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_09_sigma_0.2_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "complete-search\\cut_2\\run.log",
+    "length": 42978,
+    "sha256": "3daa2e4f7e86d0d5c071e581f149a1535e9d5b7002776b48a0fcb4f2c4a485e6",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\complete-search\\cut_2\\run.log"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-action-samples\\bunny_observation.mp4",
+    "length": 1610136,
+    "sha256": "76ab9486d8cc7eccad469f565bd324361c94beef2de0055307726750fdba172a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-action-samples\\bunny_observation.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-action-samples\\bunny_trailer.mp4",
+    "length": 11053871,
+    "sha256": "b2ded9ae5a20fa36ca8cec49ef923bffb5e1a51d9e8c1f8336273d2fa9d35ff0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-action-samples\\bunny_trailer.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-action-samples\\cut_0.mp4",
+    "length": 569095,
+    "sha256": "3a19e1596686eafb10ea5aa3d304abcc24d464d6f3a2ceb2a7ce544b23363e62",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-action-samples\\cut_0.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-action-samples\\cut_1.mp4",
+    "length": 605351,
+    "sha256": "974a3e8b4cdf0b8ec94a2437534ad1d15751a549ab749b47cf2c0c7fbd95bcfb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-action-samples\\cut_1.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-action-samples\\cut_2.mp4",
+    "length": 446129,
+    "sha256": "f07b76161cf5cf2edc7fdfdcf027ec1822caddc34152ba522449297926a53a80",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-action-samples\\cut_2.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-action-samples\\flower_observation.mp4",
+    "length": 173653,
+    "sha256": "208152c5fab6cd96f5b053d0667c1143c032523cd7f8a6020bdd3544d640f587",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-action-samples\\flower_observation.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-action-samples\\flower.mp4",
+    "length": 1128375,
+    "sha256": "0cd83d944a6ca7822b4a8306cecc60a36e859b041f6702c6a1ad9ead78924451",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-action-samples\\flower.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-action-samples\\sintel_observation.mp4",
+    "length": 2044002,
+    "sha256": "2bbdd39008edbbb01184516d59eda19bf92ffa475b1babed6dd02f688831eb04",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-action-samples\\sintel_observation.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-action-samples\\sintel_trailer.mp4",
+    "length": 4372373,
+    "sha256": "b670602fa00934ca27c4351bb0efe7ea7a07fae57284e44226025eeed7c51254",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-action-samples\\sintel_trailer.mp4"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\00_baseline_0_latents.npz",
+    "length": 50876,
+    "sha256": "a9c28b69a11d281c688373fb11e357d7480bcbb1c803ca180ab5c8c1435f9fcf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\00_baseline_0_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\00_baseline_0_raw.txt",
+    "length": 1111,
+    "sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\00_baseline_0_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\00_baseline_0.json",
+    "length": 2922,
+    "sha256": "1309d315c19d82ea869a1a55c57f1147d29e39eb1036dd7d05cad342686ef33b",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\00_baseline_0.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\01_sigma_0.005_seed_11_latents.npz",
+    "length": 50960,
+    "sha256": "36b089577c3640696d6c4bc7c8d1a53675eae3c130ff3bd6369a7488cf259afd",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\01_sigma_0.005_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\01_sigma_0.005_seed_11_raw.txt",
+    "length": 1027,
+    "sha256": "41df429fcd2b72f6dce8ccd62ea5ed44ed1325a4a5fe0b2c0c8567c0521735a4",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\01_sigma_0.005_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\01_sigma_0.005_seed_11.json",
+    "length": 4781,
+    "sha256": "faea7a57af815853beb0b9cd1b1cf9cd15eb4de4f1a51d3afc0a8ddab601f77c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\01_sigma_0.005_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\02_sigma_0.005_seed_22_latents.npz",
+    "length": 50956,
+    "sha256": "5193f58f26821e8db671022bf0b1904145ae761b5ee95de44f0299b3d9e953f4",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\02_sigma_0.005_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\02_sigma_0.005_seed_22_raw.txt",
+    "length": 1117,
+    "sha256": "551b893aaeed5c36237ed2f9b8779f420b0bb3cd204194cec9bc26040fc89b1e",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\02_sigma_0.005_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\02_sigma_0.005_seed_22.json",
+    "length": 4849,
+    "sha256": "fc91b7c3b7840cc972ee5a233db6ca70c94129d4d632bc1fa07889a4cd60f2c6",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\02_sigma_0.005_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\03_sigma_0.01_seed_11_latents.npz",
+    "length": 50986,
+    "sha256": "a4f78611cafaeec35c0693865fb9812ae710bbfe360e4b53177443ae87ac61cb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\03_sigma_0.01_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\03_sigma_0.01_seed_11_raw.txt",
+    "length": 1115,
+    "sha256": "803f853380573560c6950b653694ccbd4aa86df694b19550ab97733e5a491349",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\03_sigma_0.01_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\03_sigma_0.01_seed_11.json",
+    "length": 4955,
+    "sha256": "8e8e90e777b11f18732b05edfd77ef963ade09b296833dfa279329ba3264577c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\03_sigma_0.01_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\04_sigma_0.01_seed_22_latents.npz",
+    "length": 50934,
+    "sha256": "ccaf42bb85a66c7b83fd1bbdded6f3bc264acbf53249a566f120af66144d93d2",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\04_sigma_0.01_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\04_sigma_0.01_seed_22_raw.txt",
+    "length": 1111,
+    "sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\04_sigma_0.01_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\04_sigma_0.01_seed_22.json",
+    "length": 5001,
+    "sha256": "840c9f363a5464aeba86db9692f4857b09d2e580793fc8582c8004797866b231",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\04_sigma_0.01_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\05_sigma_0.03_seed_11_latents.npz",
+    "length": 50930,
+    "sha256": "22531b36efd172aedbb885693d30e3d634fe553ad99a4e0dea5af7b8935d8b32",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\05_sigma_0.03_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\05_sigma_0.03_seed_11_raw.txt",
+    "length": 1111,
+    "sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\05_sigma_0.03_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\05_sigma_0.03_seed_11.json",
+    "length": 4988,
+    "sha256": "fa4ef8dd58e204893914b951ad043dd7b7421b2da2a2aa6f29ca16d4e381600f",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\05_sigma_0.03_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\06_sigma_0.03_seed_22_latents.npz",
+    "length": 50944,
+    "sha256": "2ee883120e6c91457658787f72aa4fbfcb0db2616ab78889b40cfecc189aadd7",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\06_sigma_0.03_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\06_sigma_0.03_seed_22_raw.txt",
+    "length": 1111,
+    "sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\06_sigma_0.03_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\06_sigma_0.03_seed_22.json",
+    "length": 4994,
+    "sha256": "cc87c6d1ecf6650abda3988d6f2c97d0794b9de4d0f2295c85acc2b389601761",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\06_sigma_0.03_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\07_sigma_0.1_seed_11_latents.npz",
+    "length": 50847,
+    "sha256": "8b6f2ad74bb9f697db9c7091e44d65487c60311172eb2f0920bed5466ac0f5f9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\07_sigma_0.1_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\07_sigma_0.1_seed_11_raw.txt",
+    "length": 963,
+    "sha256": "c684c762d1af4955b6a2fded5d31c0f9acc18a5d7c8ff9b36e68ee60116ca946",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\07_sigma_0.1_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\07_sigma_0.1_seed_11.json",
+    "length": 4604,
+    "sha256": "2b125a1b1228d304f406dee12224eaa1a614ca502e12c3f714b68293414d1dbb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\07_sigma_0.1_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\08_sigma_0.1_seed_22_latents.npz",
+    "length": 50909,
+    "sha256": "da30dbe674ddb043652f8c68a98c3f4122d6e4b55f87051033fa22aa2816bda3",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\08_sigma_0.1_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\08_sigma_0.1_seed_22_raw.txt",
+    "length": 1111,
+    "sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\08_sigma_0.1_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\08_sigma_0.1_seed_22.json",
+    "length": 4982,
+    "sha256": "c2d7fa75f73dd0711becbfaddffc51d9d9efbd1077ee1b84471d7b424413f925",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\08_sigma_0.1_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\09_sigma_0.2_seed_11_latents.npz",
+    "length": 50846,
+    "sha256": "311ec080dc166460227c9bb7cb241e099baae7703c06765591d88a5c20574823",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\09_sigma_0.2_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\09_sigma_0.2_seed_11_raw.txt",
+    "length": 1111,
+    "sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\09_sigma_0.2_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\09_sigma_0.2_seed_11.json",
+    "length": 4977,
+    "sha256": "cd46b176890bbd9a430a8a2cdfa462e9f9b352ff640c58e9bc109c456bc218c9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\09_sigma_0.2_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\10_sigma_0.2_seed_22_latents.npz",
+    "length": 50751,
+    "sha256": "93c446ca04da103537f162d8237495cb89c2260a34f5dcc97ace67edf77bbb38",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\10_sigma_0.2_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\10_sigma_0.2_seed_22_raw.txt",
+    "length": 1111,
+    "sha256": "e170b888c0bd8e03951b65969bee16d94fd2d79259a82110e1182bdb5dd06038",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\10_sigma_0.2_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\10_sigma_0.2_seed_22.json",
+    "length": 4978,
+    "sha256": "5fe2f213a135101143f4e9acb2bc5996ce584453337bb62e5dbeb437f9e5bd39",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\10_sigma_0.2_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\metadata.json",
+    "length": 1846,
+    "sha256": "f40dc26777ce30c8dafe2db532e4992fe8016e987871c6ca84acd9134702f4aa",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\metadata.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\results.partial.json",
+    "length": 53927,
+    "sha256": "8dd723fd0110661fd7068b290e6c5d927fe61c7b2f5b6bdff6f04dd33bda58db",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\results.partial.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\bunny\\summary.json",
+    "length": 61373,
+    "sha256": "de3612ce06bc916b3b747cb491c834d6dcf08dc2afd9631d409b51cd213900bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\bunny\\summary.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\00_baseline_0_latents.npz",
+    "length": 25535,
+    "sha256": "f8e8bd825ff411feb7e1346cc5fea91c9ac6c206fe3bbe5eda2e30c8b07ad362",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\00_baseline_0_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\00_baseline_0_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\00_baseline_0_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\00_baseline_0.json",
+    "length": 2079,
+    "sha256": "33c7f4cdea716dae9274b0fc3205a3ba8edbeb9955e488407e26f58f1aa0a3e3",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\00_baseline_0.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\01_sigma_0.005_seed_11_latents.npz",
+    "length": 25576,
+    "sha256": "ba80ca5ac3d0de148df65a5d92cbfdecee8d79a84c788ced620642c7c21b55e6",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\01_sigma_0.005_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\01_sigma_0.005_seed_11_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\01_sigma_0.005_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\01_sigma_0.005_seed_11.json",
+    "length": 3133,
+    "sha256": "eeb3a73a93035434c39191eecc0369aa606b97564faa6b300c228d1de9bed7ee",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\01_sigma_0.005_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\02_sigma_0.005_seed_22_latents.npz",
+    "length": 25563,
+    "sha256": "5e87dd82619d77f209add729a53c85b0179cdb9e05edd8db0b7eb1948080920d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\02_sigma_0.005_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\02_sigma_0.005_seed_22_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\02_sigma_0.005_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\02_sigma_0.005_seed_22.json",
+    "length": 3131,
+    "sha256": "9c266182fac8b3c5dbc20a4bdf5203710c6e2c6931f1d0423c6b4e0cf55fd5da",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\02_sigma_0.005_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\03_sigma_0.01_seed_11_latents.npz",
+    "length": 25565,
+    "sha256": "c69117e0fe834c57b711f1a9bfdc59757b81887793efcd0caf3882b3fed85988",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\03_sigma_0.01_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\03_sigma_0.01_seed_11_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\03_sigma_0.01_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\03_sigma_0.01_seed_11.json",
+    "length": 3130,
+    "sha256": "3323e18df2d1d55a315db40d8f2d54d2e4d7e4539aad179aef6d6b7f93051cf6",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\03_sigma_0.01_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\04_sigma_0.01_seed_22_latents.npz",
+    "length": 25557,
+    "sha256": "2c90c24e66c70cdec4a504999a0618676d4c4adb88164bc3e4abe6fa34ba3c2a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\04_sigma_0.01_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\04_sigma_0.01_seed_22_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\04_sigma_0.01_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\04_sigma_0.01_seed_22.json",
+    "length": 3126,
+    "sha256": "4c4f8f8fb43b40e068988d30800b7d18eefcceff007dc9c77a2540641ec8bde5",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\04_sigma_0.01_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\05_sigma_0.03_seed_11_latents.npz",
+    "length": 25538,
+    "sha256": "dcbeae9c1f7c8f072c8a526e66fb735e1e0ad1b949e2516703a9d09b424e1133",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\05_sigma_0.03_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\05_sigma_0.03_seed_11_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\05_sigma_0.03_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\05_sigma_0.03_seed_11.json",
+    "length": 3125,
+    "sha256": "35b22de79bea22560d47a771ebbf4f5afc8c140ee8bf8dace205390fd6ff80cc",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\05_sigma_0.03_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\06_sigma_0.03_seed_22_latents.npz",
+    "length": 25566,
+    "sha256": "bc1c9fbea7aeff0c0a06b0cc7727a82bfb6b238b02a6351cbdfa72e94d3f4233",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\06_sigma_0.03_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\06_sigma_0.03_seed_22_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\06_sigma_0.03_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\06_sigma_0.03_seed_22.json",
+    "length": 3119,
+    "sha256": "dd14d55903b006ceb9804a6ff1c0d71ccffadcf2288f5f14b9199e8040771861",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\06_sigma_0.03_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\07_sigma_0.1_seed_11_latents.npz",
+    "length": 25574,
+    "sha256": "d947465cb36d209e86b8bcd1a7bb36492ba0c84e3567770fa9a7bff181af7c2d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\07_sigma_0.1_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\07_sigma_0.1_seed_11_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\07_sigma_0.1_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\07_sigma_0.1_seed_11.json",
+    "length": 3117,
+    "sha256": "ed749ad35296b5a0c0c1c7e7c50bc992b5085da23b4e397fdd00ebcf492007ad",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\07_sigma_0.1_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\08_sigma_0.1_seed_22_latents.npz",
+    "length": 25541,
+    "sha256": "2d55884a96242f140fa03d54cf318eceda7891529d3d1d3f218cf739bb506226",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\08_sigma_0.1_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\08_sigma_0.1_seed_22_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\08_sigma_0.1_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\08_sigma_0.1_seed_22.json",
+    "length": 3110,
+    "sha256": "82454c41b0c40b8c65e4be971b3c4197a71052d95949ee4c58838b77784e6abd",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\08_sigma_0.1_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\09_sigma_0.2_seed_11_latents.npz",
+    "length": 25494,
+    "sha256": "9813caaec1978c35789be60fd60a333be389a1cc411e650c0013dbcc92cbcac6",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\09_sigma_0.2_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\09_sigma_0.2_seed_11_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\09_sigma_0.2_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\09_sigma_0.2_seed_11.json",
+    "length": 3111,
+    "sha256": "0d1cbd796ed5b787ea4bc4516d36664c15cce3482db66b2e0667beceea124312",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\09_sigma_0.2_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\10_sigma_0.2_seed_22_latents.npz",
+    "length": 25491,
+    "sha256": "56d8e31214c9558d18f9845c2e4a62591c79fa07c7f895a796bc32a23863756c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\10_sigma_0.2_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\10_sigma_0.2_seed_22_raw.txt",
+    "length": 705,
+    "sha256": "d817c60b7ae2a9f2d7f8363671b4bffbf6364cbeb434308b9ed27046f97af7b0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\10_sigma_0.2_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\10_sigma_0.2_seed_22.json",
+    "length": 3111,
+    "sha256": "99a5b06dbe59dbdf6393f13bc9b40fe9a00f6645bfa85948e239d82b197f6188",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\10_sigma_0.2_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\metadata.json",
+    "length": 1847,
+    "sha256": "8bfc39f877309831fd38a7944357b43c5d7762fbcb8e8c2017216ce916b1d9bb",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\metadata.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\results.partial.json",
+    "length": 34548,
+    "sha256": "683866d2889c413291084141c051196f0848bcbd5400de1061fa0fd6531b9ae9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\results.partial.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\flower\\summary.json",
+    "length": 41318,
+    "sha256": "0d4312f69bc2dd6c90efbbd92aa4832b30aa40022677efd9930e43ffaab649c8",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\flower\\summary.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\00_baseline_0_latents.npz",
+    "length": 25542,
+    "sha256": "13ac1e06ef617827d19a44b8590395ba050f09d330b270c03b323231ed5982de",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\00_baseline_0_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\00_baseline_0_raw.txt",
+    "length": 1134,
+    "sha256": "d96d69a68836182ce5ed13a1503e0992416f405877261ec7f1f4b21b78abd9bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\00_baseline_0_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\00_baseline_0.json",
+    "length": 3061,
+    "sha256": "ec4f7264cc6e207011c46d33b731209bdc03523aecec1e2a521591dcfafc5627",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\00_baseline_0.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\01_sigma_0.005_seed_11_latents.npz",
+    "length": 25600,
+    "sha256": "d739b7570e45c68c393ad428bcafff27f47c8b98c2fa1858f9e1da0db414ee73",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\01_sigma_0.005_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\01_sigma_0.005_seed_11_raw.txt",
+    "length": 1134,
+    "sha256": "d96d69a68836182ce5ed13a1503e0992416f405877261ec7f1f4b21b78abd9bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\01_sigma_0.005_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\01_sigma_0.005_seed_11.json",
+    "length": 4113,
+    "sha256": "7bb4bb23d5097526e2e66863560b49775c4d5828ef1cec4fe869d60cc1dddf2e",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\01_sigma_0.005_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\02_sigma_0.005_seed_22_latents.npz",
+    "length": 25584,
+    "sha256": "6d408bd77edcf8b6ced2f76a336cace6a688b5adfa2a40cec8d53854abb7de3a",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\02_sigma_0.005_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\02_sigma_0.005_seed_22_raw.txt",
+    "length": 1134,
+    "sha256": "d96d69a68836182ce5ed13a1503e0992416f405877261ec7f1f4b21b78abd9bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\02_sigma_0.005_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\02_sigma_0.005_seed_22.json",
+    "length": 4113,
+    "sha256": "b06e2b3fd0101bee9392da2a46c9820e805e4e3534aaee4db9c2aadd2bc00961",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\02_sigma_0.005_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\03_sigma_0.01_seed_11_latents.npz",
+    "length": 25584,
+    "sha256": "c96bfb0b33c761eb8d9ca0e29547be1ed0589650089e0aaa020b0687760689b2",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\03_sigma_0.01_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\03_sigma_0.01_seed_11_raw.txt",
+    "length": 1134,
+    "sha256": "d96d69a68836182ce5ed13a1503e0992416f405877261ec7f1f4b21b78abd9bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\03_sigma_0.01_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\03_sigma_0.01_seed_11.json",
+    "length": 4107,
+    "sha256": "cf65ba3f7616adfb22f63c300c0bb19a61c0db2fddbcc65e666a4798dc92f04e",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\03_sigma_0.01_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\04_sigma_0.01_seed_22_latents.npz",
+    "length": 25593,
+    "sha256": "a190abb22821a815c7bc946c63504440bb4549c72856304028ed441adda57219",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\04_sigma_0.01_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\04_sigma_0.01_seed_22_raw.txt",
+    "length": 1168,
+    "sha256": "6edde78950dfd4f4a4a78700d1d5daa17710f8286bd732e33bb8b9fd9a1dc0bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\04_sigma_0.01_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\04_sigma_0.01_seed_22.json",
+    "length": 4146,
+    "sha256": "a40def4c347b9cfb8b90bbf59b2cdbd51a21855f9b4a34cde6abeded91cba215",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\04_sigma_0.01_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\05_sigma_0.03_seed_11_latents.npz",
+    "length": 25596,
+    "sha256": "63bd0c34084a51cfc39510d9be3366493edc0375d68e9237e57a8828cf8ad580",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\05_sigma_0.03_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\05_sigma_0.03_seed_11_raw.txt",
+    "length": 1134,
+    "sha256": "d96d69a68836182ce5ed13a1503e0992416f405877261ec7f1f4b21b78abd9bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\05_sigma_0.03_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\05_sigma_0.03_seed_11.json",
+    "length": 4109,
+    "sha256": "b15708503bbf0ae2c20915e6e3fe647e8e7d3a6decf8b4605ffcd31d8f83e935",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\05_sigma_0.03_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\06_sigma_0.03_seed_22_latents.npz",
+    "length": 25587,
+    "sha256": "c677f4f3ab0e8497e17395d85c7e9cd840a6f3a53d6b68099ea689130816b5ff",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\06_sigma_0.03_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\06_sigma_0.03_seed_22_raw.txt",
+    "length": 1168,
+    "sha256": "6edde78950dfd4f4a4a78700d1d5daa17710f8286bd732e33bb8b9fd9a1dc0bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\06_sigma_0.03_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\06_sigma_0.03_seed_22.json",
+    "length": 4142,
+    "sha256": "8f33dc0e5338d5779e0ec4bc9d6693c8013e694915eb4af0fd03d9090c6abf63",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\06_sigma_0.03_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\07_sigma_0.1_seed_11_latents.npz",
+    "length": 25568,
+    "sha256": "0e818bc330db0616becf5c73c69d5cb7ce446059db6d676da25afc3283339636",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\07_sigma_0.1_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\07_sigma_0.1_seed_11_raw.txt",
+    "length": 1134,
+    "sha256": "d96d69a68836182ce5ed13a1503e0992416f405877261ec7f1f4b21b78abd9bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\07_sigma_0.1_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\07_sigma_0.1_seed_11.json",
+    "length": 4098,
+    "sha256": "dd46ad5dd03f69afc3a24d958b29a02eeea5f59f43d66b465ec6cc9613f35931",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\07_sigma_0.1_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\08_sigma_0.1_seed_22_latents.npz",
+    "length": 25557,
+    "sha256": "b6d0165cc33b356cfe3eea3d41fe96148461f153a043d5e8d725b9bf72794e40",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\08_sigma_0.1_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\08_sigma_0.1_seed_22_raw.txt",
+    "length": 1134,
+    "sha256": "d96d69a68836182ce5ed13a1503e0992416f405877261ec7f1f4b21b78abd9bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\08_sigma_0.1_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\08_sigma_0.1_seed_22.json",
+    "length": 4099,
+    "sha256": "9c21c790ca08e07edbe1077b41576d8dd3f2d2fcc9c6b2af2ec55a658b78a240",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\08_sigma_0.1_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\09_sigma_0.2_seed_11_latents.npz",
+    "length": 25497,
+    "sha256": "c0339dfaa1b523f121727c5e01bb6e80a697c35cedf3f83195ceb029a00e18f0",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\09_sigma_0.2_seed_11_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\09_sigma_0.2_seed_11_raw.txt",
+    "length": 1134,
+    "sha256": "d96d69a68836182ce5ed13a1503e0992416f405877261ec7f1f4b21b78abd9bf",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\09_sigma_0.2_seed_11_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\09_sigma_0.2_seed_11.json",
+    "length": 4095,
+    "sha256": "cd8a3bc7c9aa22deedf791268b797bd9ac1429cf50df568e92bb434048c32518",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\09_sigma_0.2_seed_11.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\10_sigma_0.2_seed_22_latents.npz",
+    "length": 25498,
+    "sha256": "e06ec799fe690c71d24dc8cc280eb32bc62c520b26fb3ea4e7a7be07128150ba",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\10_sigma_0.2_seed_22_latents.npz"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\10_sigma_0.2_seed_22_raw.txt",
+    "length": 1156,
+    "sha256": "2a1ee0c160bd32d71d32a0e2a42a06db1dabd17680227ee743302e99c56d55c5",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\10_sigma_0.2_seed_22_raw.txt"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\10_sigma_0.2_seed_22.json",
+    "length": 4097,
+    "sha256": "7eabcc2f62c8467abeca6e2b923abf4794eb180e058b9384817808c7e64bae25",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\10_sigma_0.2_seed_22.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\metadata.json",
+    "length": 1847,
+    "sha256": "d20707e016c0a37d14b703d45937fdb80b298f5dba3097ab7eb6254c34ca7874",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\metadata.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\results.partial.json",
+    "length": 45436,
+    "sha256": "7818a4f3f0aafa098d2dc90ac332f79e5612bfe569f8d8f636cb0d4c262788c9",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\results.partial.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\L1-perturbation",
+    "relative_path": "public-short\\sintel\\summary.json",
+    "length": 52249,
+    "sha256": "2f4bedd5184857c0fa3012f388e1c5345b4f4373a0239a4f0db3087982dbfe32",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\L1-perturbation\\public-short\\sintel\\summary.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "complete_scheme.py",
+    "length": 9058,
+    "sha256": "8f922523810a41c74b85082be0176eaef396744f3453a368b53857a7cc34dc8e",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\complete_scheme.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "EXPERIMENT_RECORD_2026-09-09.md",
+    "length": 14361,
+    "sha256": "2e859a2b030fc27aa0ffd834910f2e0c809d20cd63d3138041a35e79af06cb0e",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\EXPERIMENT_RECORD_2026-09-09.md"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "run_complete_search.py",
+    "length": 8241,
+    "sha256": "18ff5739f96ebae94a96cf2de438d7a75c3b0a129103848af207153aeaaf420c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\run_complete_search.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "run_l1_latent_perturbation.py",
+    "length": 13200,
+    "sha256": "a00841840d1aab35fd3ff02fbe1c4f67566b36581498a3856d3f2429c0395f75",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\run_l1_latent_perturbation.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "short_video_manifest.json",
+    "length": 1080,
+    "sha256": "9916792f1ea744b337d093e609cad16e8765d2403f0d1658728995060ab2bb1d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\short_video_manifest.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "test_complete_scheme.py",
+    "length": 1998,
+    "sha256": "d2432ac2ba3d262f4c25c33c36f3c3442cec2cc5dde5dcb2d8dccd2e9106515d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\test_complete_scheme.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "test_latent_noise_unit.py",
+    "length": 1813,
+    "sha256": "9c2965187a16842ba379e37ee231c6f3629fed848bb3a77c58f6133fefb4715c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\test_latent_noise_unit.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\complete_scheme_v2.py",
+    "length": 11810,
+    "sha256": "7f7426dde2a59eb05441ddaae7fa1b24295ac86834ddb002e588cb3415ab44af",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\complete_scheme_v2.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\DIFF_FILE.patch",
+    "length": 56607,
+    "sha256": "974d470327ee682ca7ad886ea3390e675f1dd847da8df14653232fac455d0220",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\DIFF_FILE.patch"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\experiment_manifest_v2.json",
+    "length": 942,
+    "sha256": "215a06ecc7da39b4f8287bc0db4c1b4a1e44ef1d8409467c2fea7d82dd27b307",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\experiment_manifest_v2.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\make_diff.py",
+    "length": 876,
+    "sha256": "dc02ec5261ff37723e48c37a8974ac29bb831c5c32e55dbbd1bce931a7c17412",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\make_diff.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\ROLLBACK.sh",
+    "length": 528,
+    "sha256": "16e854ebddac70406b9702782f0a81623bb1f2b0424ff9b981c90be266dcf226",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\ROLLBACK.sh"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\run_complete_search_v2.py",
+    "length": 13102,
+    "sha256": "555c74ab7eaa974d67cc90e065eaf3d7c29d32e9b0913dc08bc0c806b3ef1020",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\run_complete_search_v2.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\test_complete_scheme_v2.py",
+    "length": 2791,
+    "sha256": "bd0290d1e2fccbd9884e6e534d25645fcc36c203ad5f6fd79fb6cfef11a01694",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\test_complete_scheme_v2.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\test_multibranch_generation.py",
+    "length": 1881,
+    "sha256": "c13f5fe3fa3c1896e396fc2fbf41b908c5787e699d102b01f73f5ea73e8c44ed",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\test_multibranch_generation.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\.baseline\\complete_scheme_v2.py",
+    "length": 9058,
+    "sha256": "8f922523810a41c74b85082be0176eaef396744f3453a368b53857a7cc34dc8e",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\.baseline\\complete_scheme_v2.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\.baseline\\future_l1.py",
+    "length": 22871,
+    "sha256": "4d2a1a74e21292edd6c7b5340fcb3e2cf300ec0daa007d9801f59fe5b2b1d674",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\.baseline\\future_l1.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\.baseline\\run_complete_search_v2.py",
+    "length": 8241,
+    "sha256": "18ff5739f96ebae94a96cf2de438d7a75c3b0a129103848af207153aeaaf420c",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\.baseline\\run_complete_search_v2.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\remote_src\\future_l1.py",
+    "length": 32671,
+    "sha256": "26bf28276d8218f70609fe0913d821648ab0777320172e21922037d6eca50dae",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\remote_src\\future_l1.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\__pycache__\\complete_scheme_v2.cpython-312.pyc",
+    "length": 20419,
+    "sha256": "4e2d8a505a73ce888ba4cf5a5084f914e20cd5016c2d3a8b804939abf34d4a6e",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\__pycache__\\complete_scheme_v2.cpython-312.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3\\__pycache__\\run_complete_search_v2.cpython-312.pyc",
+    "length": 22605,
+    "sha256": "30b497dd943bfe358c341d6c03568747876acdae2913bb8dad3bc8e3b24d8e0d",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3\\__pycache__\\run_complete_search_v2.cpython-312.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3_remote\\complete_scheme_v2.py",
+    "length": 10745,
+    "sha256": "f8b33daeb657b98b107398a4882b79f00c1047c2193b0176affdca6efd4a5b07",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3_remote\\complete_scheme_v2.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3_remote\\experiment_manifest_v2.json",
+    "length": 964,
+    "sha256": "030b3b39e8a90b493704fc5aec113e8520d388a3b130488dfbe5f2f71a93d0e4",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3_remote\\experiment_manifest_v2.json"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3_remote\\run_complete_search_v2.py",
+    "length": 12859,
+    "sha256": "8bc9d02b7c02f124123022173f20898b227daa00f1de43430bf4b7ce9ca5d6a8",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3_remote\\run_complete_search_v2.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3_remote\\test_complete_scheme_v2.py",
+    "length": 2472,
+    "sha256": "b21ff47f33b918b7640c1aa7ecfd67160efe95542c5c4df53ed31c6497dcab7f",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3_remote\\test_complete_scheme_v2.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3_remote\\test_multibranch_generation.py",
+    "length": 1881,
+    "sha256": "c13f5fe3fa3c1896e396fc2fbf41b908c5787e699d102b01f73f5ea73e8c44ed",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3_remote\\test_multibranch_generation.py"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3_remote\\__pycache__\\complete_scheme_v2.cpython-310.pyc",
+    "length": 13792,
+    "sha256": "f9e54d9451e0992295fbbdc9394afd0f9317288615dfac04b6edbf85af726894",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3_remote\\__pycache__\\complete_scheme_v2.cpython-310.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3_remote\\__pycache__\\run_complete_search_v2.cpython-310.pyc",
+    "length": 13038,
+    "sha256": "b35871250012f1ea008ba02d56e88d3a1b2001ffd6c974c6ff8180ba47177359",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3_remote\\__pycache__\\run_complete_search_v2.cpython-310.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3_remote\\__pycache__\\test_complete_scheme_v2.cpython-310.pyc",
+    "length": 3060,
+    "sha256": "44afdeb31754084c2fa0e66aecc9854e361a11488c49bd04277b325facae7b0f",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3_remote\\__pycache__\\test_complete_scheme_v2.cpython-310.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "round3_remote\\__pycache__\\test_multibranch_generation.cpython-310.pyc",
+    "length": 2178,
+    "sha256": "89bef9556a13f83c3597a1b38f23595e1a1017ba8f4a5a15ea3d6b3c7879a0ee",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\round3_remote\\__pycache__\\test_multibranch_generation.cpython-310.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "__pycache__\\complete_scheme.cpython-310.pyc",
+    "length": 9095,
+    "sha256": "c3e5637ff57f0121fc3a10ccd907186c2852f713f0fabe6ebe1a9a3c26b81402",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\__pycache__\\complete_scheme.cpython-310.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "__pycache__\\run_complete_search.cpython-310.pyc",
+    "length": 7219,
+    "sha256": "6cc8f78f9f99a18a70c1cbc7c0fc4527d41849b85fb6d7529c6a800927191f8b",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\__pycache__\\run_complete_search.cpython-310.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "__pycache__\\run_l1_latent_perturbation.cpython-310.pyc",
+    "length": 11431,
+    "sha256": "db4aeb21e6407b223f688702fcce1aed4bf268c4c6884bba6fcdd7782cb19524",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\__pycache__\\run_l1_latent_perturbation.cpython-310.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "__pycache__\\test_complete_scheme.cpython-310.pyc",
+    "length": 2349,
+    "sha256": "38b98f2bb00ea8c4300884f3708491a8195a76bb190ce528b9407e04d468ce89",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\__pycache__\\test_complete_scheme.cpython-310.pyc"
+  },
+  {
+    "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results\\l1_latent_perturbation_code",
+    "relative_path": "__pycache__\\test_latent_noise_unit.cpython-310.pyc",
+    "length": 1839,
+    "sha256": "375080d6c51b4b053eb0f269a6236399722cb09b910544f314ae115d19802464",
+    "archived_path": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\l1-latent-perturbation\\local-workspace\\experiences_results\\l1_latent_perturbation_code\\__pycache__\\test_latent_noise_unit.cpython-310.pyc"
+  }
+]

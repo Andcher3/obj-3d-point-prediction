@@ -1,0 +1,236 @@
+{
+  "protocol": "formal_e2_2026-09-22",
+  "source": "Ego4D",
+  "review_date": "2026-09-23",
+  "selection_rule": "fixed metadata order; manual t0 polygon review; one candidate excluded for insufficient thin-object area",
+  "excluded_video": {
+    "video_id": "8de01b2c-0fc8-478e-a54d-24bee1cfde49",
+    "reason": "thin blue pole/object boundary cropped; not stable for 48-query sampling"
+  },
+  "videos": [
+    {
+      "video_id": "cb78dba8-6647-4ec7-875c-6ba1548f8312",
+      "source_video_uid": "25d0feb6-f66f-499f-a6b0-0ceb9df56896",
+      "motion_category": "articulated",
+      "target_object": "sewing scissors",
+      "clip_start_s": 1492.0,
+      "t0_seconds": 1496.5,
+      "polygon_xy": [
+        [
+          402,
+          245
+        ],
+        [
+          433,
+          236
+        ],
+        [
+          473,
+          258
+        ],
+        [
+          501,
+          310
+        ],
+        [
+          493,
+          360
+        ],
+        [
+          470,
+          388
+        ],
+        [
+          438,
+          365
+        ],
+        [
+          414,
+          330
+        ]
+      ],
+      "source_status": "reviewed_keep",
+      "clip_end_s": 1498.6666666666667,
+      "clip_path": "clips/cb78dba8-6647-4ec7-875c-6ba1548f8312.mp4",
+      "pointmap_history_npy": "D:\\Pycharm\\post_graduate_project\\experiences_results\\remote-pointmaps-history\\cb78dba8-6647-4ec7-875c-6ba1548f8312_pointmap_history.npy",
+      "timestamps_json": "D:\\Pycharm\\post_graduate_project\\experiences_results\\formal_e2_absolute_timestamps\\cb78dba8-6647-4ec7-875c-6ba1548f8312.json",
+      "erosion_pixels": 2
+    },
+    {
+      "video_id": "356ed369-7023-4660-904b-be73823a21d3",
+      "source_video_uid": "5944e682-eb74-4068-8c1f-b33a32a773c2",
+      "motion_category": "rigid",
+      "target_object": "watering can",
+      "clip_start_s": 1492.0,
+      "t0_seconds": 1496.5,
+      "polygon_xy": [
+        [
+          82,
+          322
+        ],
+        [
+          125,
+          316
+        ],
+        [
+          164,
+          345
+        ],
+        [
+          178,
+          408
+        ],
+        [
+          166,
+          492
+        ],
+        [
+          133,
+          516
+        ],
+        [
+          95,
+          502
+        ],
+        [
+          72,
+          438
+        ]
+      ],
+      "source_status": "reviewed_keep",
+      "clip_end_s": 1500.9333333333334,
+      "clip_path": "clips/356ed369-7023-4660-904b-be73823a21d3.mp4",
+      "pointmap_history_npy": "D:\\Pycharm\\post_graduate_project\\experiences_results\\remote-pointmaps-history\\356ed369-7023-4660-904b-be73823a21d3_pointmap_history.npy",
+      "timestamps_json": "D:\\Pycharm\\post_graduate_project\\experiences_results\\formal_e2_absolute_timestamps\\356ed369-7023-4660-904b-be73823a21d3.json",
+      "erosion_pixels": 2
+    },
+    {
+      "video_id": "65165142-b15e-4bba-a9de-d5174ec46597",
+      "source_video_uid": "374832bf-f977-4e8b-b0e0-2f2ea1e38b5d",
+      "motion_category": "articulated",
+      "target_object": "blue woodworking tool",
+      "clip_start_s": 1492.0,
+      "t0_seconds": 1498.810514,
+      "polygon_xy": [
+        [
+          296,
+          54
+        ],
+        [
+          350,
+          52
+        ],
+        [
+          374,
+          90
+        ],
+        [
+          365,
+          160
+        ],
+        [
+          331,
+          177
+        ],
+        [
+          300,
+          145
+        ]
+      ],
+      "source_status": "reviewed_keep",
+      "clip_end_s": 1505.6,
+      "clip_path": "clips/65165142-b15e-4bba-a9de-d5174ec46597.mp4",
+      "pointmap_history_npy": "D:\\Pycharm\\post_graduate_project\\experiences_results\\remote-pointmaps-history\\65165142-b15e-4bba-a9de-d5174ec46597_pointmap_history.npy",
+      "timestamps_json": "D:\\Pycharm\\post_graduate_project\\experiences_results\\formal_e2_absolute_timestamps\\65165142-b15e-4bba-a9de-d5174ec46597.json",
+      "erosion_pixels": 2
+    },
+    {
+      "video_id": "9069bd26-0139-4e88-9957-9f9489b35a91",
+      "source_video_uid": "60b0ccb6-49f7-4a44-a70d-bf319217af50",
+      "motion_category": "rigid",
+      "target_object": "orange cooking pot",
+      "clip_start_s": 0.0210286,
+      "t0_seconds": 5.791029,
+      "polygon_xy": [
+        [
+          78,
+          171
+        ],
+        [
+          156,
+          160
+        ],
+        [
+          225,
+          181
+        ],
+        [
+          245,
+          245
+        ],
+        [
+          215,
+          302
+        ],
+        [
+          133,
+          316
+        ],
+        [
+          76,
+          275
+        ]
+      ],
+      "source_status": "reviewed_keep",
+      "clip_end_s": 11.487695266666666,
+      "clip_path": "clips/9069bd26-0139-4e88-9957-9f9489b35a91.mp4",
+      "pointmap_history_npy": "D:\\Pycharm\\post_graduate_project\\experiences_results\\remote-pointmaps-history\\9069bd26-0139-4e88-9957-9f9489b35a91_pointmap_history.npy",
+      "timestamps_json": "D:\\Pycharm\\post_graduate_project\\experiences_results\\formal_e2_absolute_timestamps\\9069bd26-0139-4e88-9957-9f9489b35a91.json",
+      "erosion_pixels": 2
+    },
+    {
+      "video_id": "4d053322-1eef-4a69-8201-932c7b82fb03",
+      "source_video_uid": "8762cf76-5526-43a2-b825-a0c396494c87",
+      "motion_category": "rigid",
+      "target_object": "clothes iron",
+      "clip_start_s": 892.0,
+      "t0_seconds": 898.360514,
+      "polygon_xy": [
+        [
+          295,
+          174
+        ],
+        [
+          382,
+          161
+        ],
+        [
+          454,
+          194
+        ],
+        [
+          474,
+          247
+        ],
+        [
+          436,
+          286
+        ],
+        [
+          353,
+          278
+        ],
+        [
+          311,
+          239
+        ]
+      ],
+      "source_status": "reviewed_keep",
+      "clip_end_s": 904.6666666666666,
+      "clip_path": "clips/4d053322-1eef-4a69-8201-932c7b82fb03.mp4",
+      "pointmap_history_npy": "D:\\Pycharm\\post_graduate_project\\experiences_results\\remote-pointmaps-history\\4d053322-1eef-4a69-8201-932c7b82fb03_pointmap_history.npy",
+      "timestamps_json": "D:\\Pycharm\\post_graduate_project\\experiences_results\\formal_e2_absolute_timestamps\\4d053322-1eef-4a69-8201-932c7b82fb03.json",
+      "erosion_pixels": 2
+    }
+  ]
+}

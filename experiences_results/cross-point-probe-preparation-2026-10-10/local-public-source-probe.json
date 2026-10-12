@@ -1,0 +1,107 @@
+{
+  "max_sample_bytes_per_download": 65536,
+  "model_loaded": false,
+  "weight_downloaded": false,
+  "checks": [
+    {
+      "label": "hf_models",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": "2",
+      "sample_bytes": 2,
+      "seconds": 1.73,
+      "models": []
+    },
+    {
+      "label": "hf_spaces",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": "2",
+      "sample_bytes": 2,
+      "seconds": 1.7,
+      "models": []
+    },
+    {
+      "label": "github_releases",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": "2",
+      "sample_bytes": 2,
+      "seconds": 1.78,
+      "releases": []
+    },
+    {
+      "label": "github_forks",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": "2057",
+      "sample_bytes": 16112,
+      "seconds": 1.94,
+      "forks": [
+        "flyingGH/motionforesight",
+        "ggred0123/motionforesight",
+        "CloudEngineHub/motionforesight"
+      ]
+    },
+    {
+      "label": "drive_accelerated",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": "2473",
+      "sample_bytes": 2473,
+      "seconds": 3.3,
+      "download_form_present": true,
+      "zip_signature": false,
+      "permission_notice": false
+    },
+    {
+      "label": "drive_direct",
+      "status": 200,
+      "content_type": "application/octet-stream",
+      "content_length": "293148992",
+      "sample_bytes": 65536,
+      "seconds": 3.17,
+      "download_form_present": false,
+      "zip_signature": true,
+      "permission_notice": false
+    },
+    {
+      "label": "drive_docs_direct",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": "2473",
+      "sample_bytes": 2473,
+      "seconds": 3.12,
+      "download_form_present": true,
+      "zip_signature": false,
+      "permission_notice": false
+    },
+    {
+      "label": "flyingGH_releases",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": "2",
+      "sample_bytes": 2,
+      "seconds": 1.8,
+      "releases": []
+    },
+    {
+      "label": "ggred0123_releases",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": "2",
+      "sample_bytes": 2,
+      "seconds": 1.76,
+      "releases": []
+    },
+    {
+      "label": "CloudEngineHub_releases",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": "2",
+      "sample_bytes": 2,
+      "seconds": 1.78,
+      "releases": []
+    }
+  ]
+}

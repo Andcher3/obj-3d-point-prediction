@@ -1,0 +1,246 @@
+{
+  "date": "2026-09-29",
+  "server_gpu": "NVIDIA RTX 6000D",
+  "rows": [
+    {
+      "video": "car-turn",
+      "route": "route_a",
+      "status": "FAIL",
+      "valid_queries": 48,
+      "connected": true,
+      "bridge_count": 0,
+      "registration_p90": 0.2855189455701956,
+      "registration_max": 0.7511373705719657,
+      "anchor_or_identity_p90": 0.01008456704683479,
+      "anchor_or_identity_max": 0.012965663805305878,
+      "future_mask_mean_fraction": 0.0,
+      "future_mask_max_fraction": 0.0,
+      "target_mask_pixel_min_20_29": 15891,
+      "output_shape": [
+        22,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "gpu_peak_allocated_gib": 27.420074462890625,
+      "failed_gates": [
+        "common_t0_registration_p90_le_10pct",
+        "common_t0_registration_90pct_below_10pct",
+        "common_t0_registration_max_le_20pct"
+      ]
+    },
+    {
+      "video": "car-turn",
+      "route": "route_b",
+      "status": "FAIL",
+      "valid_queries": 48,
+      "connected": true,
+      "bridge_count": 0,
+      "registration_p90": 0.2855189455701956,
+      "registration_max": 0.7511373705719657,
+      "anchor_or_identity_p90": 0.4098799580447265,
+      "anchor_or_identity_max": 0.6203005795093596,
+      "future_mask_mean_fraction": 0.0,
+      "future_mask_max_fraction": 0.0,
+      "target_mask_pixel_min_20_29": 15891,
+      "output_shape": [
+        22,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "gpu_peak_allocated_gib": 27.420074462890625,
+      "failed_gates": [
+        "common_t0_registration_p90_le_10pct",
+        "common_t0_registration_90pct_below_10pct",
+        "common_t0_registration_max_le_20pct",
+        "identity_match_p90_le_5pct",
+        "identity_match_max_le_10pct"
+      ]
+    },
+    {
+      "video": "drift-turn",
+      "route": "route_a",
+      "status": "FAIL",
+      "valid_queries": 48,
+      "connected": true,
+      "bridge_count": 0,
+      "registration_p90": 0.34518554827119935,
+      "registration_max": 0.40828036426907743,
+      "anchor_or_identity_p90": 0.009042248941106995,
+      "anchor_or_identity_max": 0.010758917910904893,
+      "future_mask_mean_fraction": 0.009259259259259259,
+      "future_mask_max_fraction": 0.041666666666666664,
+      "target_mask_pixel_min_20_29": 22510,
+      "output_shape": [
+        22,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "gpu_peak_allocated_gib": 27.420074462890625,
+      "failed_gates": [
+        "common_t0_registration_p90_le_10pct",
+        "common_t0_registration_90pct_below_10pct",
+        "common_t0_registration_max_le_20pct"
+      ]
+    },
+    {
+      "video": "drift-turn",
+      "route": "route_b",
+      "status": "FAIL",
+      "valid_queries": 48,
+      "connected": true,
+      "bridge_count": 0,
+      "registration_p90": 0.34518554827119935,
+      "registration_max": 0.40828036426907743,
+      "anchor_or_identity_p90": 1.061930312359492,
+      "anchor_or_identity_max": 1.1966061235876264,
+      "future_mask_mean_fraction": 0.0,
+      "future_mask_max_fraction": 0.0,
+      "target_mask_pixel_min_20_29": 22510,
+      "output_shape": [
+        22,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "gpu_peak_allocated_gib": 27.420074462890625,
+      "failed_gates": [
+        "common_t0_registration_p90_le_10pct",
+        "common_t0_registration_90pct_below_10pct",
+        "common_t0_registration_max_le_20pct",
+        "identity_match_p90_le_5pct",
+        "identity_match_max_le_10pct"
+      ]
+    },
+    {
+      "video": "boat",
+      "route": "route_a",
+      "status": "FAIL",
+      "valid_queries": 48,
+      "connected": true,
+      "bridge_count": 1,
+      "registration_p90": 0.10680650359243334,
+      "registration_max": 0.5168494670531099,
+      "anchor_or_identity_p90": 0.0059533279976616785,
+      "anchor_or_identity_max": 0.0063440328628726695,
+      "future_mask_mean_fraction": 0.0,
+      "future_mask_max_fraction": 0.0,
+      "target_mask_pixel_min_20_29": 23511,
+      "output_shape": [
+        22,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "gpu_peak_allocated_gib": 27.420074462890625,
+      "failed_gates": [
+        "common_t0_registration_p90_le_10pct",
+        "common_t0_registration_90pct_below_10pct",
+        "common_t0_registration_max_le_20pct"
+      ]
+    },
+    {
+      "video": "boat",
+      "route": "route_b",
+      "status": "FAIL",
+      "valid_queries": 48,
+      "connected": true,
+      "bridge_count": 1,
+      "registration_p90": 0.10680650359243334,
+      "registration_max": 0.5168494670531099,
+      "anchor_or_identity_p90": 0.06402912679570688,
+      "anchor_or_identity_max": 0.19131367666338064,
+      "future_mask_mean_fraction": 0.0,
+      "future_mask_max_fraction": 0.0,
+      "target_mask_pixel_min_20_29": 23511,
+      "output_shape": [
+        22,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "gpu_peak_allocated_gib": 27.420074462890625,
+      "failed_gates": [
+        "common_t0_registration_p90_le_10pct",
+        "common_t0_registration_90pct_below_10pct",
+        "common_t0_registration_max_le_20pct",
+        "identity_match_p90_le_5pct",
+        "identity_match_max_le_10pct"
+      ]
+    },
+    {
+      "video": "soccerball",
+      "route": "route_a",
+      "status": "FAIL",
+      "valid_queries": 48,
+      "connected": false,
+      "bridge_count": 0,
+      "registration_p90": 0.3063460272673785,
+      "registration_max": 0.5328103963535368,
+      "anchor_or_identity_p90": 0.020175022778951657,
+      "anchor_or_identity_max": 0.02247737527992945,
+      "future_mask_mean_fraction": 0.0,
+      "future_mask_max_fraction": 0.0,
+      "target_mask_pixel_min_20_29": 2547,
+      "output_shape": [
+        22,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "gpu_peak_allocated_gib": 27.420074462890625,
+      "failed_gates": [
+        "common_t0_registration_p90_le_10pct",
+        "common_t0_registration_90pct_below_10pct",
+        "common_t0_registration_max_le_20pct",
+        "valid_graph_connected"
+      ]
+    },
+    {
+      "video": "soccerball",
+      "route": "route_b",
+      "status": "FAIL",
+      "valid_queries": 48,
+      "connected": false,
+      "bridge_count": 0,
+      "registration_p90": 0.3063460272673785,
+      "registration_max": 0.5328103963535368,
+      "anchor_or_identity_p90": 0.5778118586636349,
+      "anchor_or_identity_max": 0.6548536065577583,
+      "future_mask_mean_fraction": 0.0,
+      "future_mask_max_fraction": 0.0,
+      "target_mask_pixel_min_20_29": 2547,
+      "output_shape": [
+        22,
+        48,
+        3
+      ],
+      "finite_fraction": 1.0,
+      "gpu_peak_allocated_gib": 27.420074462890625,
+      "failed_gates": [
+        "common_t0_registration_p90_le_10pct",
+        "common_t0_registration_90pct_below_10pct",
+        "common_t0_registration_max_le_20pct",
+        "identity_match_p90_le_5pct",
+        "identity_match_max_le_10pct",
+        "valid_graph_connected"
+      ]
+    }
+  ],
+  "route_a_pass_count": 0,
+  "route_b_pass_count": 0,
+  "training_started": false,
+  "training_returncodes": {
+    "route_a": 0,
+    "route_b": 0
+  },
+  "disk_after": "12G available / 50G",
+  "cache_cleanup": {
+    "removed": "/root/autodl-tmp/wheelhouse-cu128",
+    "size_gib": 2.7,
+    "before_available": "9.9G",
+    "after_cleanup_available": "13G"
+  }
+}

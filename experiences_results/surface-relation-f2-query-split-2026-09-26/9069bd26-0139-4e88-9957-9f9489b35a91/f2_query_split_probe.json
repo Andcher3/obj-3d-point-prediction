@@ -1,0 +1,685 @@
+{
+  "status": "PASS",
+  "scope": "F2 query-held-out all-horizon probe",
+  "video_id": "9069bd26-0139-4e88-9957-9f9489b35a91",
+  "protocol": {
+    "future_slots": 15,
+    "train_query_count": 32,
+    "held_query_count": 16,
+    "graph": "2D symmetric kNN k=3",
+    "seeds": 5,
+    "all_horizons_used_for_training": true,
+    "loss": {
+      "node_centered": "centered-coordinate MSE on train queries",
+      "h_edge_dynamic": "edge correction MSE on train-train edges"
+    }
+  },
+  "rows": [
+    {
+      "method": "baseline",
+      "seed": 0,
+      "train_query_count": 32,
+      "held_queries": [
+        0,
+        2,
+        3,
+        8,
+        9,
+        11,
+        13,
+        14,
+        16,
+        19,
+        20,
+        25,
+        42,
+        44,
+        46,
+        47
+      ],
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 55,
+        "raw_ade_m": 0.020377429602936332,
+        "raw_fde_m": 0.028184378320669685,
+        "centered_error_normalized": 0.02056338233931788,
+        "edge_relative_error": 0.17634778289665912,
+        "edge_relative_error_median": 0.13540884700669154,
+        "edge_shape_relative_error": 0.09435582515741493
+      }
+    },
+    {
+      "method": "node_centered",
+      "seed": 0,
+      "train_query_count": 32,
+      "held_queries": [
+        0,
+        2,
+        3,
+        8,
+        9,
+        11,
+        13,
+        14,
+        16,
+        19,
+        20,
+        25,
+        42,
+        44,
+        46,
+        47
+      ],
+      "parameter_count": 772,
+      "learned_gate": 0.7974865342063359,
+      "best_training_loss": 4.956205004387774e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 55,
+        "raw_ade_m": 0.02423749663874298,
+        "raw_fde_m": 0.022805615821640805,
+        "centered_error_normalized": 0.023683124331001622,
+        "edge_relative_error": 0.2285320374663557,
+        "edge_relative_error_median": 0.17570900409982396,
+        "edge_shape_relative_error": 0.11438066233566381
+      }
+    },
+    {
+      "method": "h_edge_dynamic",
+      "seed": 0,
+      "train_query_count": 32,
+      "held_queries": [
+        0,
+        2,
+        3,
+        8,
+        9,
+        11,
+        13,
+        14,
+        16,
+        19,
+        20,
+        25,
+        42,
+        44,
+        46,
+        47
+      ],
+      "parameter_count": 1476,
+      "learned_gate": 0.5836210300278578,
+      "best_training_loss": 3.0612503903019436e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 55,
+        "raw_ade_m": 0.023089445634170622,
+        "raw_fde_m": 0.027966606999484805,
+        "centered_error_normalized": 0.022509472717153305,
+        "edge_relative_error": 0.21902500180658577,
+        "edge_relative_error_median": 0.18109050233322435,
+        "edge_shape_relative_error": 0.10890750191435597
+      }
+    },
+    {
+      "method": "baseline",
+      "seed": 1,
+      "train_query_count": 32,
+      "held_queries": [
+        7,
+        8,
+        12,
+        16,
+        22,
+        23,
+        24,
+        27,
+        28,
+        29,
+        33,
+        37,
+        38,
+        41,
+        42,
+        47
+      ],
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 47,
+        "raw_ade_m": 0.017534181629096743,
+        "raw_fde_m": 0.024530026243413453,
+        "centered_error_normalized": 0.018002733978050134,
+        "edge_relative_error": 0.17199704752350048,
+        "edge_relative_error_median": 0.13655821029745485,
+        "edge_shape_relative_error": 0.10231988233993845
+      }
+    },
+    {
+      "method": "node_centered",
+      "seed": 1,
+      "train_query_count": 32,
+      "held_queries": [
+        7,
+        8,
+        12,
+        16,
+        22,
+        23,
+        24,
+        27,
+        28,
+        29,
+        33,
+        37,
+        38,
+        41,
+        42,
+        47
+      ],
+      "parameter_count": 772,
+      "learned_gate": 0.8518647547256614,
+      "best_training_loss": 6.057084376319798e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 47,
+        "raw_ade_m": 0.01896471386071414,
+        "raw_fde_m": 0.024269487065328027,
+        "centered_error_normalized": 0.018876754540900393,
+        "edge_relative_error": 0.21847190486402865,
+        "edge_relative_error_median": 0.17729062177460564,
+        "edge_shape_relative_error": 0.11387566345639072
+      }
+    },
+    {
+      "method": "h_edge_dynamic",
+      "seed": 1,
+      "train_query_count": 32,
+      "held_queries": [
+        7,
+        8,
+        12,
+        16,
+        22,
+        23,
+        24,
+        27,
+        28,
+        29,
+        33,
+        37,
+        38,
+        41,
+        42,
+        47
+      ],
+      "parameter_count": 1476,
+      "learned_gate": 0.6200829720364587,
+      "best_training_loss": 3.774217505221017e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 47,
+        "raw_ade_m": 0.022721964216696786,
+        "raw_fde_m": 0.02716817770858242,
+        "centered_error_normalized": 0.021952422395123843,
+        "edge_relative_error": 0.2286075769292317,
+        "edge_relative_error_median": 0.17425206328895548,
+        "edge_shape_relative_error": 0.12656919001083147
+      }
+    },
+    {
+      "method": "baseline",
+      "seed": 2,
+      "train_query_count": 32,
+      "held_queries": [
+        4,
+        7,
+        9,
+        15,
+        16,
+        20,
+        21,
+        23,
+        24,
+        25,
+        34,
+        35,
+        38,
+        42,
+        45,
+        46
+      ],
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 45,
+        "raw_ade_m": 0.019515937724645837,
+        "raw_fde_m": 0.02776466777827148,
+        "centered_error_normalized": 0.020899762494932854,
+        "edge_relative_error": 0.17773199985122,
+        "edge_relative_error_median": 0.13505409404182364,
+        "edge_shape_relative_error": 0.10084313351229715
+      }
+    },
+    {
+      "method": "node_centered",
+      "seed": 2,
+      "train_query_count": 32,
+      "held_queries": [
+        4,
+        7,
+        9,
+        15,
+        16,
+        20,
+        21,
+        23,
+        24,
+        25,
+        34,
+        35,
+        38,
+        42,
+        45,
+        46
+      ],
+      "parameter_count": 772,
+      "learned_gate": 0.8038008252116362,
+      "best_training_loss": 4.618695875220897e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 45,
+        "raw_ade_m": 0.019396877815175982,
+        "raw_fde_m": 0.023994790108355715,
+        "centered_error_normalized": 0.018853659862673785,
+        "edge_relative_error": 0.20292573217651425,
+        "edge_relative_error_median": 0.15951896147311145,
+        "edge_shape_relative_error": 0.09644033416120856
+      }
+    },
+    {
+      "method": "h_edge_dynamic",
+      "seed": 2,
+      "train_query_count": 32,
+      "held_queries": [
+        4,
+        7,
+        9,
+        15,
+        16,
+        20,
+        21,
+        23,
+        24,
+        25,
+        34,
+        35,
+        38,
+        42,
+        45,
+        46
+      ],
+      "parameter_count": 1476,
+      "learned_gate": 0.7038597913558866,
+      "best_training_loss": 4.832862221073951e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 45,
+        "raw_ade_m": 0.02516976682903786,
+        "raw_fde_m": 0.03164475543351314,
+        "centered_error_normalized": 0.02398966092965471,
+        "edge_relative_error": 0.24241456346912257,
+        "edge_relative_error_median": 0.1862472723994105,
+        "edge_shape_relative_error": 0.1367931727157718
+      }
+    },
+    {
+      "method": "baseline",
+      "seed": 3,
+      "train_query_count": 32,
+      "held_queries": [
+        0,
+        4,
+        8,
+        11,
+        18,
+        19,
+        20,
+        22,
+        24,
+        27,
+        28,
+        34,
+        35,
+        40,
+        41,
+        43
+      ],
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 45,
+        "raw_ade_m": 0.01583491381078434,
+        "raw_fde_m": 0.024029950908851138,
+        "centered_error_normalized": 0.016315055450449444,
+        "edge_relative_error": 0.1428278684060324,
+        "edge_relative_error_median": 0.11355632871382396,
+        "edge_shape_relative_error": 0.07925285458099143
+      }
+    },
+    {
+      "method": "node_centered",
+      "seed": 3,
+      "train_query_count": 32,
+      "held_queries": [
+        0,
+        4,
+        8,
+        11,
+        18,
+        19,
+        20,
+        22,
+        24,
+        27,
+        28,
+        34,
+        35,
+        40,
+        41,
+        43
+      ],
+      "parameter_count": 772,
+      "learned_gate": 0.8029252471151935,
+      "best_training_loss": 4.350524840439643e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 45,
+        "raw_ade_m": 0.017697867297252888,
+        "raw_fde_m": 0.022238944621531274,
+        "centered_error_normalized": 0.016896112129638974,
+        "edge_relative_error": 0.19187635868248065,
+        "edge_relative_error_median": 0.16776866601595675,
+        "edge_shape_relative_error": 0.10618779911496368
+      }
+    },
+    {
+      "method": "h_edge_dynamic",
+      "seed": 3,
+      "train_query_count": 32,
+      "held_queries": [
+        0,
+        4,
+        8,
+        11,
+        18,
+        19,
+        20,
+        22,
+        24,
+        27,
+        28,
+        34,
+        35,
+        40,
+        41,
+        43
+      ],
+      "parameter_count": 1476,
+      "learned_gate": 0.6203827410157802,
+      "best_training_loss": 4.529587756004309e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 45,
+        "raw_ade_m": 0.02234994622272366,
+        "raw_fde_m": 0.027448490561197723,
+        "centered_error_normalized": 0.023121640856407506,
+        "edge_relative_error": 0.19470099579859784,
+        "edge_relative_error_median": 0.15782543210801608,
+        "edge_shape_relative_error": 0.10734980432053692
+      }
+    },
+    {
+      "method": "baseline",
+      "seed": 4,
+      "train_query_count": 32,
+      "held_queries": [
+        0,
+        3,
+        10,
+        11,
+        12,
+        17,
+        19,
+        22,
+        25,
+        26,
+        27,
+        31,
+        32,
+        38,
+        46,
+        47
+      ],
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 49,
+        "raw_ade_m": 0.01949906003393541,
+        "raw_fde_m": 0.03099029617459894,
+        "centered_error_normalized": 0.017983959445649032,
+        "edge_relative_error": 0.17994082933808847,
+        "edge_relative_error_median": 0.13878930247107896,
+        "edge_shape_relative_error": 0.10016606814607901
+      }
+    },
+    {
+      "method": "node_centered",
+      "seed": 4,
+      "train_query_count": 32,
+      "held_queries": [
+        0,
+        3,
+        10,
+        11,
+        12,
+        17,
+        19,
+        22,
+        25,
+        26,
+        27,
+        31,
+        32,
+        38,
+        46,
+        47
+      ],
+      "parameter_count": 772,
+      "learned_gate": 0.8353252098644678,
+      "best_training_loss": 5.951488868546127e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 49,
+        "raw_ade_m": 0.021027925394469252,
+        "raw_fde_m": 0.025915409480457716,
+        "centered_error_normalized": 0.020548813154030433,
+        "edge_relative_error": 0.20780944597716863,
+        "edge_relative_error_median": 0.1654085823494352,
+        "edge_shape_relative_error": 0.11243464259789546
+      }
+    },
+    {
+      "method": "h_edge_dynamic",
+      "seed": 4,
+      "train_query_count": 32,
+      "held_queries": [
+        0,
+        3,
+        10,
+        11,
+        12,
+        17,
+        19,
+        22,
+        25,
+        26,
+        27,
+        31,
+        32,
+        38,
+        46,
+        47
+      ],
+      "parameter_count": 1476,
+      "learned_gate": 0.7027000755284671,
+      "best_training_loss": 3.907481402858833e-06,
+      "metrics": {
+        "held_query_count": 16,
+        "held_edge_count": 49,
+        "raw_ade_m": 0.02170628874740843,
+        "raw_fde_m": 0.028441667800099952,
+        "centered_error_normalized": 0.020471615085159503,
+        "edge_relative_error": 0.22949541729256148,
+        "edge_relative_error_median": 0.17608596608513324,
+        "edge_shape_relative_error": 0.12146044652472347
+      }
+    }
+  ],
+  "aggregate": {
+    "baseline": {
+      "held_query_count": {
+        "median": 16.0,
+        "p10": 16.0,
+        "p90": 16.0
+      },
+      "held_edge_count": {
+        "median": 47.0,
+        "p10": 45.0,
+        "p90": 52.6
+      },
+      "raw_ade_m": {
+        "median": 0.01949906003393541,
+        "p10": 0.016514620938109303,
+        "p90": 0.020032832851620132
+      },
+      "raw_fde_m": {
+        "median": 0.02776466777827148,
+        "p10": 0.024229981042676065,
+        "p90": 0.02986792903302724
+      },
+      "centered_error_normalized": {
+        "median": 0.018002733978050134,
+        "p10": 0.01698261704852928,
+        "p90": 0.020765210432686865
+      },
+      "edge_relative_error": {
+        "median": 0.17634778289665912,
+        "p10": 0.15449554005301963,
+        "p90": 0.1790572975433411
+      },
+      "edge_relative_error_median": {
+        "median": 0.13540884700669154,
+        "p10": 0.12215543484502384,
+        "p90": 0.1378968656016293
+      },
+      "edge_shape_relative_error": {
+        "median": 0.10016606814607901,
+        "p10": 0.08529404281156083,
+        "p90": 0.10172918280888193
+      }
+    },
+    "node_centered": {
+      "held_query_count": {
+        "median": 16.0,
+        "p10": 16.0,
+        "p90": 16.0
+      },
+      "held_edge_count": {
+        "median": 47.0,
+        "p10": 45.0,
+        "p90": 52.6
+      },
+      "raw_ade_m": {
+        "median": 0.019396877815175982,
+        "p10": 0.01820460592263739,
+        "p90": 0.022953668141033487
+      },
+      "raw_fde_m": {
+        "median": 0.023994790108355715,
+        "p10": 0.022465613101575087,
+        "p90": 0.02525704051440584
+      },
+      "centered_error_normalized": {
+        "median": 0.018876754540900393,
+        "p10": 0.0176791312228529,
+        "p90": 0.022429399860213146
+      },
+      "edge_relative_error": {
+        "median": 0.20780944597716863,
+        "p10": 0.1962961080800941,
+        "p90": 0.22450798442542488
+      },
+      "edge_relative_error_median": {
+        "median": 0.16776866601595675,
+        "p10": 0.16187480982364094,
+        "p90": 0.17665797470469297
+      },
+      "edge_shape_relative_error": {
+        "median": 0.11243464259789546,
+        "p10": 0.1003393201427106,
+        "p90": 0.11417866278395457
+      }
+    },
+    "h_edge_dynamic": {
+      "held_query_count": {
+        "median": 16.0,
+        "p10": 16.0,
+        "p90": 16.0
+      },
+      "held_edge_count": {
+        "median": 47.0,
+        "p10": 45.0,
+        "p90": 52.6
+      },
+      "raw_ade_m": {
+        "median": 0.022721964216696786,
+        "p10": 0.021963751737534523,
+        "p90": 0.024337638351090964
+      },
+      "raw_fde_m": {
+        "median": 0.027966606999484805,
+        "p10": 0.02728030284962854,
+        "p90": 0.030363520380147863
+      },
+      "centered_error_normalized": {
+        "median": 0.022509472717153305,
+        "p10": 0.021063938009145237,
+        "p90": 0.02364245290035583
+      },
+      "edge_relative_error": {
+        "median": 0.2286075769292317,
+        "p10": 0.20443059820179302,
+        "p90": 0.23724690499849813
+      },
+      "edge_relative_error_median": {
+        "median": 0.17608596608513324,
+        "p10": 0.16439608458039184,
+        "p90": 0.18418456437293604
+      },
+      "edge_shape_relative_error": {
+        "median": 0.12146044652472347,
+        "p10": 0.10797288335806454,
+        "p90": 0.13270357963379567
+      }
+    }
+  },
+  "decision": {
+    "wins_vs_baseline": {
+      "node_centered": 0,
+      "h_edge_dynamic": 0
+    },
+    "required_wins": 3,
+    "interpretation": "No query-held-out relation correction advantage."
+  },
+  "limitations": [
+    "One video only; this is not video-level generalization.",
+    "TrackCraft3R remains pseudo-GT.",
+    "The query split uses all future horizons for training and tests spatial query transfer."
+  ]
+}

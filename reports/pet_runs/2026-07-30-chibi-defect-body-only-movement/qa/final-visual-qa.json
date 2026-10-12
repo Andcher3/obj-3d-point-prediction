@@ -1,0 +1,12 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "Both directional rows face the correct way, preserve a continuous eight-frame source action, and contain the complete enlarged character without shield panels.",
+  "directional_rows": {
+    "running-right": "The yellow head is on screen-right and the segmented tail extends toward screen-left.",
+    "running-left": "The yellow head is on screen-left and the segmented tail extends toward screen-right."
+  },
+  "review_warnings": [],
+  "repair_rows": [],
+  "repair_notes": null,
+  "reviewed_by": "independent visual QA worker"
+}

@@ -1,0 +1,30 @@
+{"kind":"deck","id":"pr/yh4kqd","name":"Deck"}
+{"kind":"layout","layoutId":"a71702c9-4417-40d4-91e1-75c2f978064c","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"b328e4e5-71ab-42b6-90e0-2de62d67d13f","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/85jk5c","slide":1,"title":"Slide 1","textShapes":0}
+{"kind":"image","id":"im/val87ed8","slide":1,"name":"","alt":"weekly report slide 1","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/85jk5c","slide":1,"text":""}
+{"kind":"slide","id":"sl/0dex4r","slide":2,"title":"Slide 2","textShapes":0}
+{"kind":"image","id":"im/u9knih4b","slide":2,"name":"","alt":"weekly report slide 2","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/0dex4r","slide":2,"text":""}
+{"kind":"slide","id":"sl/2vex0s","slide":3,"title":"Slide 3","textShapes":0}
+{"kind":"image","id":"im/nqxs72x4","slide":3,"name":"","alt":"weekly report slide 3","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/2vex0s","slide":3,"text":""}
+{"kind":"slide","id":"sl/fybk4l","slide":4,"title":"Slide 4","textShapes":0}
+{"kind":"image","id":"im/xc3ylc7u","slide":4,"name":"","alt":"weekly report slide 4","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/fybk4l","slide":4,"text":""}
+{"kind":"slide","id":"sl/tbqevw","slide":5,"title":"Slide 5","textShapes":0}
+{"kind":"image","id":"im/adsji5sn","slide":5,"name":"","alt":"weekly report slide 5","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/tbqevw","slide":5,"text":""}
+{"kind":"slide","id":"sl/ng1u4v","slide":6,"title":"Slide 6","textShapes":0}
+{"kind":"image","id":"im/ylc7u54z","slide":6,"name":"","alt":"weekly report slide 6","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/ng1u4v","slide":6,"text":""}
+{"kind":"slide","id":"sl/5hj7dx","slide":7,"title":"Slide 7","textShapes":0}
+{"kind":"image","id":"im/1032lszq","slide":7,"name":"","alt":"weekly report slide 7","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/5hj7dx","slide":7,"text":""}
+{"kind":"slide","id":"sl/dpq14p","slide":8,"title":"Slide 8","textShapes":0}
+{"kind":"image","id":"im/t83itgfm","slide":8,"name":"","alt":"weekly report slide 8","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/dpq14p","slide":8,"text":""}
+{"kind":"slide","id":"sl/jg8xug","slide":9,"title":"Slide 9","textShapes":0}
+{"kind":"image","id":"im/ahoza1gv","slide":9,"name":"","alt":"weekly report slide 9","bbox":[0,0,1600,900]}
+{"kind":"notes","id":"nt/jg8xug","slide":9,"text":""}

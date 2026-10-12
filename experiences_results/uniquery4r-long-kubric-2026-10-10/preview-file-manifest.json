@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "name": "00001-rgb-81frames.mp4",
+      "bytes": 223458,
+      "sha256": "40f0072afdb736cb0cd6610eae1f362bc8f90a2f37b25e3b3363ce831c4362b8"
+    },
+    {
+      "name": "00001-contact-sheet.jpg",
+      "bytes": 87989,
+      "sha256": "1122cab0fca7d0a123ceb6d335adbce6fae768934f19b2d342d113fdf8772c38"
+    },
+    {
+      "name": "00002-rgb-81frames.mp4",
+      "bytes": 81520,
+      "sha256": "da7a22c08faa3656399462f88cbc782aead6f5f00f79cf4cd12f0fbc024fd54b"
+    },
+    {
+      "name": "00002-contact-sheet.jpg",
+      "bytes": 41689,
+      "sha256": "ad7f21ba7c79c4dc47a26c6805ceaf9df48c962c31a66b0be38c3cf2c1a67046"
+    },
+    {
+      "name": "00003-rgb-81frames.mp4",
+      "bytes": 168313,
+      "sha256": "7ac4b9a41fe4c723c50b7315c7e2574aeac2852a2f5b80e3e9e2305fb3e313fa"
+    },
+    {
+      "name": "00003-contact-sheet.jpg",
+      "bytes": 70925,
+      "sha256": "f3a37d36ae8f6368e95140206f0f6ac1f742b960311f883dc896133b5a1978e4"
+    },
+    {
+      "name": "status.json",
+      "bytes": 3821,
+      "sha256": "43cda9119fe075514e171530a44f3f72de475a25de7ef58539095679d9ede766"
+    },
+    {
+      "name": "gt-coordinate-audit.json",
+      "bytes": 7791,
+      "sha256": "7183c1220688b468cd6e712c0c6166c45ba9d7408216c404da01284d6154748a"
+    }
+  ]
+}

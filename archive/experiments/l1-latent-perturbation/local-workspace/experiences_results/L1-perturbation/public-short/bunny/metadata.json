@@ -1,0 +1,77 @@
+{
+  "model": "/root/autodl-tmp/models/future-l1",
+  "video": "/root/autodl-tmp/datasets/future-l1-latent-test/public-action-samples/bunny_observation.mp4",
+  "video_sha256": "76ab9486d8cc7eccad469f565bd324361c94beef2de0055307726750fdba172a",
+  "question": "What will happen next in the video?",
+  "rendered_prompt": "<|im_start|>system\nYou are a multimodal reasoning assistant capable of thinking in textual and visual modes.\n\nUse the following tags to switch your thinking mode:\n\n1. Textual Mode: <reason>Your textual reasoning process</reason>\n2. Visual Mode: <|latent_start|>Your visual reasoning process<|latent_end|>\n\nAfter all thinking is complete, place the final answer inside <answer>Your Final Answer</answer>.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|video_pad|><|vision_end|>What will happen next in the video?<|im_end|>\n<|im_start|>assistant\n",
+  "torch": "2.9.1+cu128",
+  "cuda_build": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_capability": [
+    12,
+    0
+  ],
+  "load_seconds": 5.131286077201366,
+  "force_initial_latent": false,
+  "nframes": 8,
+  "max_pixels": 401408,
+  "max_new_tokens": 256,
+  "scale_mode": "rms",
+  "specs": [
+    [
+      "baseline_0",
+      0.0,
+      0
+    ],
+    [
+      "sigma_0.005_seed_11",
+      0.005,
+      11
+    ],
+    [
+      "sigma_0.005_seed_22",
+      0.005,
+      22
+    ],
+    [
+      "sigma_0.01_seed_11",
+      0.01,
+      11
+    ],
+    [
+      "sigma_0.01_seed_22",
+      0.01,
+      22
+    ],
+    [
+      "sigma_0.03_seed_11",
+      0.03,
+      11
+    ],
+    [
+      "sigma_0.03_seed_22",
+      0.03,
+      22
+    ],
+    [
+      "sigma_0.1_seed_11",
+      0.1,
+      11
+    ],
+    [
+      "sigma_0.1_seed_22",
+      0.1,
+      22
+    ],
+    [
+      "sigma_0.2_seed_11",
+      0.2,
+      11
+    ],
+    [
+      "sigma_0.2_seed_22",
+      0.2,
+      22
+    ]
+  ]
+}

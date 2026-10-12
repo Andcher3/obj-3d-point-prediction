@@ -1,0 +1,420 @@
+{
+  "protocol": {
+    "history_size": 3,
+    "future_horizon": 30,
+    "source_sampling_fps": 15,
+    "offline_pseudo_gt_note": "TrackCraft sees future frames only for offline evaluation; MolmoMotion receives frames 0..2 only.",
+    "stochastic_samples_per_prompt": 0,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "top_k": 50
+  },
+  "samples": [
+    {
+      "sample_id": "sewing_scissors",
+      "source_video": "cb78dba8-6647-4ec7-875c-6ba1548f8312.mp4",
+      "source_fps": 30,
+      "raw_frame_indices": [
+        171,
+        173,
+        175,
+        177,
+        179,
+        181,
+        183,
+        185,
+        187,
+        189,
+        191,
+        193
+      ],
+      "history_raw_frames": [
+        171,
+        173,
+        175
+      ],
+      "offline_pseudo_gt_raw_frames": [
+        177,
+        179,
+        181,
+        183,
+        185,
+        187,
+        189,
+        191,
+        193
+      ],
+      "valid_query_count": 8,
+      "pseudo_gt_motion": {
+        "mean_path_length_m": 0.21228453516960144,
+        "centroid_final_delta_m": [
+          -0.11940547823905945,
+          -0.006704270839691162,
+          0.0572284460067749
+        ],
+        "finite_fraction": 1.0
+      },
+      "records": [
+        {
+          "sample_id": "sewing_scissors",
+          "prompt": "observed_pickup",
+          "prompt_text": "Pick up the blue-handled scissors.",
+          "draw": "greedy",
+          "seed": null,
+          "parse_success": true,
+          "seconds": 136.3238260867074,
+          "sequence_score": -316.7008056640625,
+          "input_ids_sha256": "6d4b229b109fbe054f23a9a6bf38d1b1aed11acd40c4674a0c9f8be49cbe4268",
+          "future_array_sha256": "3094bd55636deae1ffeee92adc00b2316195344543623c11177cf73e5c55cb45",
+          "future_text_sha256": "f995cb4db72e2e163e29de17cfcae5c6a23ab14e778b49a04a907ef26b5847ea",
+          "eval_horizon_frames": 9,
+          "pseudo_gt_ade_m": 0.0838024839758873,
+          "pseudo_gt_fde_m": 0.17303431034088135,
+          "mean_path_length_m": 0.2977885603904724,
+          "centroid_final_delta_m": [
+            0.29086533188819885,
+            0.0168038010597229,
+            0.05367279052734375
+          ],
+          "finite_fraction": 1.0
+        },
+        {
+          "sample_id": "sewing_scissors",
+          "prompt": "counterfactual_static",
+          "prompt_text": "Leave the blue-handled scissors on the table without moving them.",
+          "draw": "greedy",
+          "seed": null,
+          "parse_success": true,
+          "seconds": 136.0599816776812,
+          "sequence_score": -110.03606414794922,
+          "input_ids_sha256": "6abc228c6dca017aa6dec4451285d00d6dca92d69a253d9618ead6cbb53f1e1a",
+          "future_array_sha256": "edd822f0810e7f0be40cd0d0e29220819bea092bc90ca37eaf6104c32a08de0a",
+          "future_text_sha256": "d2ad517ae0b7fe6ea016e1f4ef40cc53b0092cf2c092f7b0735b1fadf05a02d4",
+          "eval_horizon_frames": 9,
+          "pseudo_gt_ade_m": 0.0723550096154213,
+          "pseudo_gt_fde_m": 0.13948586583137512,
+          "mean_path_length_m": 0.0033294442109763622,
+          "centroid_final_delta_m": [
+            0.0024903714656829834,
+            -0.0006962120532989502,
+            0.0006728172302246094
+          ],
+          "finite_fraction": 1.0
+        },
+        {
+          "sample_id": "sewing_scissors",
+          "prompt": "multistep",
+          "prompt_text": "Pick up the blue-handled scissors, move them to the left of the sewing machine, and set them down.",
+          "draw": "greedy",
+          "seed": null,
+          "parse_success": true,
+          "seconds": 133.7652737898752,
+          "sequence_score": -307.6404113769531,
+          "input_ids_sha256": "daced5ae63ce90c52eb49b103b3b5a10ab60204599f31ca94b4f5713cdb21818",
+          "future_array_sha256": "9b8d98c37081e9c21b68e080e1014f354f934e3289a6e77ec57ae252bd8e8e42",
+          "future_text_sha256": "74e6ab9e7260caf5e7037e4aebe773c9e81222483cf2c45ce41b33995da2c421",
+          "eval_horizon_frames": 9,
+          "pseudo_gt_ade_m": 0.08582214266061783,
+          "pseudo_gt_fde_m": 0.17582936584949493,
+          "mean_path_length_m": 0.23687510192394257,
+          "centroid_final_delta_m": [
+            0.22986534237861633,
+            -0.03757121413946152,
+            0.03129780292510986
+          ],
+          "finite_fraction": 1.0
+        }
+      ],
+      "pairwise": {
+        "observed_pickup__greedy__vs__counterfactual_static__greedy": {
+          "ade_m": 0.12425791472196579,
+          "fde_m": 0.29383206367492676,
+          "direction_cosine": 0.8224407434463501
+        },
+        "observed_pickup__greedy__vs__multistep__greedy": {
+          "ade_m": 0.037162695080041885,
+          "fde_m": 0.08481842279434204,
+          "direction_cosine": 0.9759252667427063
+        },
+        "counterfactual_static__greedy__vs__multistep__greedy": {
+          "ade_m": 0.10459049791097641,
+          "fde_m": 0.23237501084804535,
+          "direction_cosine": 0.7898733019828796
+        }
+      }
+    },
+    {
+      "sample_id": "watering_can",
+      "source_video": "356ed369-7023-4660-904b-be73823a21d3.mp4 (left-eye crop, rotated)",
+      "source_fps": 30,
+      "raw_frame_indices": [
+        131,
+        133,
+        135,
+        137,
+        139,
+        141,
+        143,
+        145,
+        147,
+        149,
+        151,
+        153
+      ],
+      "history_raw_frames": [
+        131,
+        133,
+        135
+      ],
+      "offline_pseudo_gt_raw_frames": [
+        137,
+        139,
+        141,
+        143,
+        145,
+        147,
+        149,
+        151,
+        153
+      ],
+      "valid_query_count": 8,
+      "pseudo_gt_motion": {
+        "mean_path_length_m": 0.08397991955280304,
+        "centroid_final_delta_m": [
+          0.014943845570087433,
+          -0.014113131910562515,
+          -0.009901046752929688
+        ],
+        "finite_fraction": 1.0
+      },
+      "records": [
+        {
+          "sample_id": "watering_can",
+          "prompt": "observed_carry",
+          "prompt_text": "Carry the gray watering can forward while walking.",
+          "draw": "greedy",
+          "seed": null,
+          "parse_success": true,
+          "seconds": 156.61671501025558,
+          "sequence_score": -495.01715087890625,
+          "input_ids_sha256": "8ca703595d7521af26d6a01e58a77ecc709f47caf1dec02f9762e4fee486cc64",
+          "future_array_sha256": "1887fa06a7fd575dceb2583906c81b8312f3084af73df73ca0f5e05bbf255795",
+          "future_text_sha256": "cf535cae8c00fc415c64f4690c76afdac051d627a5ee297e1c48d0b9e398cb68",
+          "eval_horizon_frames": 9,
+          "pseudo_gt_ade_m": 0.11828871816396713,
+          "pseudo_gt_fde_m": 0.2687172293663025,
+          "mean_path_length_m": 1.324963092803955,
+          "centroid_final_delta_m": [
+            1.2641682624816895,
+            0.06393024325370789,
+            -0.34622347354888916
+          ],
+          "finite_fraction": 1.0
+        },
+        {
+          "sample_id": "watering_can",
+          "prompt": "counterfactual_setdown",
+          "prompt_text": "Set the gray watering can down on the ground.",
+          "draw": "greedy",
+          "seed": null,
+          "parse_success": true,
+          "seconds": 155.90807824861258,
+          "sequence_score": -538.88330078125,
+          "input_ids_sha256": "9aa4b9ba8a45c2e25314a6ad0ca764fd07333f494cfb23d38d9c4cf96bad4037",
+          "future_array_sha256": "f2b0a732256629970888a599a12cbc1d7ebc09fb90b97fb2d3d50f0bf5236577",
+          "future_text_sha256": "9ec5bad06460a427ebbcce9449667dc7580e4ec33762d616cf0989f06e00b785",
+          "eval_horizon_frames": 9,
+          "pseudo_gt_ade_m": 0.12614430487155914,
+          "pseudo_gt_fde_m": 0.29338687658309937,
+          "mean_path_length_m": 0.7157098054885864,
+          "centroid_final_delta_m": [
+            0.21966812014579773,
+            0.03718024119734764,
+            -0.04047346115112305
+          ],
+          "finite_fraction": 1.0
+        },
+        {
+          "sample_id": "watering_can",
+          "prompt": "multistep",
+          "prompt_text": "Stop walking, lower the gray watering can to the ground, and release the handle.",
+          "draw": "greedy",
+          "seed": null,
+          "parse_success": true,
+          "seconds": 149.9304406158626,
+          "sequence_score": -396.0824890136719,
+          "input_ids_sha256": "665c83f83df86a9760cd86bc69643185fe20c58a49cec6ca2cbcf622c985ea72",
+          "future_array_sha256": "87200f3235c5de80d3e46bb1ab3b0a91df728b6872eb3595776df4dbbfe9710f",
+          "future_text_sha256": "56e98af22fe2404b93c07e6eb9af5da048bc37458b478b078409ebf9f318ca67",
+          "eval_horizon_frames": 9,
+          "pseudo_gt_ade_m": 0.0972806066274643,
+          "pseudo_gt_fde_m": 0.1923534870147705,
+          "mean_path_length_m": 0.3211769461631775,
+          "centroid_final_delta_m": [
+            0.16329310834407806,
+            0.032430242747068405,
+            -0.00872349739074707
+          ],
+          "finite_fraction": 1.0
+        }
+      ],
+      "pairwise": {
+        "observed_carry__greedy__vs__counterfactual_setdown__greedy": {
+          "ade_m": 0.33647018671035767,
+          "fde_m": 1.0906529426574707,
+          "direction_cosine": 0.9885163903236389
+        },
+        "observed_carry__greedy__vs__multistep__greedy": {
+          "ade_m": 0.46081480383872986,
+          "fde_m": 1.1556226015090942,
+          "direction_cosine": 0.9664744734764099
+        },
+        "counterfactual_setdown__greedy__vs__multistep__greedy": {
+          "ade_m": 0.14215178787708282,
+          "fde_m": 0.0706743448972702,
+          "direction_cosine": 0.991919219493866
+        }
+      }
+    }
+  ],
+  "records": [
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "observed_pickup",
+      "prompt_text": "Pick up the blue-handled scissors.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 136.3238260867074,
+      "sequence_score": -316.7008056640625,
+      "input_ids_sha256": "6d4b229b109fbe054f23a9a6bf38d1b1aed11acd40c4674a0c9f8be49cbe4268",
+      "future_array_sha256": "3094bd55636deae1ffeee92adc00b2316195344543623c11177cf73e5c55cb45",
+      "future_text_sha256": "f995cb4db72e2e163e29de17cfcae5c6a23ab14e778b49a04a907ef26b5847ea",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.0838024839758873,
+      "pseudo_gt_fde_m": 0.17303431034088135,
+      "mean_path_length_m": 0.2977885603904724,
+      "centroid_final_delta_m": [
+        0.29086533188819885,
+        0.0168038010597229,
+        0.05367279052734375
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "counterfactual_static",
+      "prompt_text": "Leave the blue-handled scissors on the table without moving them.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 136.0599816776812,
+      "sequence_score": -110.03606414794922,
+      "input_ids_sha256": "6abc228c6dca017aa6dec4451285d00d6dca92d69a253d9618ead6cbb53f1e1a",
+      "future_array_sha256": "edd822f0810e7f0be40cd0d0e29220819bea092bc90ca37eaf6104c32a08de0a",
+      "future_text_sha256": "d2ad517ae0b7fe6ea016e1f4ef40cc53b0092cf2c092f7b0735b1fadf05a02d4",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.0723550096154213,
+      "pseudo_gt_fde_m": 0.13948586583137512,
+      "mean_path_length_m": 0.0033294442109763622,
+      "centroid_final_delta_m": [
+        0.0024903714656829834,
+        -0.0006962120532989502,
+        0.0006728172302246094
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "multistep",
+      "prompt_text": "Pick up the blue-handled scissors, move them to the left of the sewing machine, and set them down.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 133.7652737898752,
+      "sequence_score": -307.6404113769531,
+      "input_ids_sha256": "daced5ae63ce90c52eb49b103b3b5a10ab60204599f31ca94b4f5713cdb21818",
+      "future_array_sha256": "9b8d98c37081e9c21b68e080e1014f354f934e3289a6e77ec57ae252bd8e8e42",
+      "future_text_sha256": "74e6ab9e7260caf5e7037e4aebe773c9e81222483cf2c45ce41b33995da2c421",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.08582214266061783,
+      "pseudo_gt_fde_m": 0.17582936584949493,
+      "mean_path_length_m": 0.23687510192394257,
+      "centroid_final_delta_m": [
+        0.22986534237861633,
+        -0.03757121413946152,
+        0.03129780292510986
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "observed_carry",
+      "prompt_text": "Carry the gray watering can forward while walking.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 156.61671501025558,
+      "sequence_score": -495.01715087890625,
+      "input_ids_sha256": "8ca703595d7521af26d6a01e58a77ecc709f47caf1dec02f9762e4fee486cc64",
+      "future_array_sha256": "1887fa06a7fd575dceb2583906c81b8312f3084af73df73ca0f5e05bbf255795",
+      "future_text_sha256": "cf535cae8c00fc415c64f4690c76afdac051d627a5ee297e1c48d0b9e398cb68",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.11828871816396713,
+      "pseudo_gt_fde_m": 0.2687172293663025,
+      "mean_path_length_m": 1.324963092803955,
+      "centroid_final_delta_m": [
+        1.2641682624816895,
+        0.06393024325370789,
+        -0.34622347354888916
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "counterfactual_setdown",
+      "prompt_text": "Set the gray watering can down on the ground.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 155.90807824861258,
+      "sequence_score": -538.88330078125,
+      "input_ids_sha256": "9aa4b9ba8a45c2e25314a6ad0ca764fd07333f494cfb23d38d9c4cf96bad4037",
+      "future_array_sha256": "f2b0a732256629970888a599a12cbc1d7ebc09fb90b97fb2d3d50f0bf5236577",
+      "future_text_sha256": "9ec5bad06460a427ebbcce9449667dc7580e4ec33762d616cf0989f06e00b785",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.12614430487155914,
+      "pseudo_gt_fde_m": 0.29338687658309937,
+      "mean_path_length_m": 0.7157098054885864,
+      "centroid_final_delta_m": [
+        0.21966812014579773,
+        0.03718024119734764,
+        -0.04047346115112305
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "watering_can",
+      "prompt": "multistep",
+      "prompt_text": "Stop walking, lower the gray watering can to the ground, and release the handle.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 149.9304406158626,
+      "sequence_score": -396.0824890136719,
+      "input_ids_sha256": "665c83f83df86a9760cd86bc69643185fe20c58a49cec6ca2cbcf622c985ea72",
+      "future_array_sha256": "87200f3235c5de80d3e46bb1ab3b0a91df728b6872eb3595776df4dbbfe9710f",
+      "future_text_sha256": "56e98af22fe2404b93c07e6eb9af5da048bc37458b478b078409ebf9f318ca67",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.0972806066274643,
+      "pseudo_gt_fde_m": 0.1923534870147705,
+      "mean_path_length_m": 0.3211769461631775,
+      "centroid_final_delta_m": [
+        0.16329310834407806,
+        0.032430242747068405,
+        -0.00872349739074707
+      ],
+      "finite_fraction": 1.0
+    }
+  ]
+}

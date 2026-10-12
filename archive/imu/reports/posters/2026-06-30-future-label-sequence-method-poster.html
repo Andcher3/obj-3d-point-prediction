@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Future Patch Label Sequence Method Poster</title>
+  <style>
+    :root {
+      --ink: #142033;
+      --muted: #526173;
+      --paper: #fbfcfd;
+      --line: #d7dee8;
+      --blue: #1d4ed8;
+      --blue-soft: #dbeafe;
+      --teal: #0f766e;
+      --teal-soft: #ccfbf1;
+      --green: #15803d;
+      --green-soft: #dcfce7;
+      --amber: #b45309;
+      --amber-soft: #fef3c7;
+      --rose: #be123c;
+      --rose-soft: #ffe4e6;
+      --slate-soft: #f1f5f9;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #e8edf4;
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+    }
+
+    body { padding: 22px; }
+
+    .poster {
+      width: 3600px;
+      height: 2400px;
+      margin: 0 auto;
+      background: var(--paper);
+      box-shadow: 0 24px 80px rgba(15, 23, 42, 0.22);
+      padding: 44px 52px 34px;
+      display: grid;
+      grid-template-rows: 190px 1fr 36px;
+      gap: 22px;
+      overflow: hidden;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr 820px;
+      gap: 30px;
+      border-bottom: 5px solid var(--ink);
+      padding-bottom: 18px;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 62px;
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 25px;
+      line-height: 1.35;
+      font-weight: 700;
+      max-width: 2050px;
+    }
+
+    .header-note {
+      border-left: 7px solid var(--teal);
+      background: linear-gradient(90deg, var(--teal-soft), rgba(255,255,255,0));
+      padding: 18px 22px;
+      font-size: 24px;
+      line-height: 1.36;
+      font-weight: 850;
+      align-self: stretch;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 830px 1600px 1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+
+    .col {
+      display: grid;
+      gap: 18px;
+      min-height: 0;
+    }
+
+    .left { grid-template-rows: 345px 475px 1fr; }
+    .middle { grid-template-rows: 870px 1fr; }
+    .right { grid-template-rows: 690px 530px 1fr; }
+
+    section {
+      background: #fff;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px;
+      overflow: hidden;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 31px;
+      line-height: 1.12;
+    }
+
+    h3 {
+      margin: 0 0 9px;
+      font-size: 24px;
+      line-height: 1.14;
+    }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.38;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 25px;
+    }
+
+    li {
+      font-size: 21px;
+      line-height: 1.32;
+      margin: 0 0 9px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: 900;
+      margin-right: 8px;
+      border: 2px solid transparent;
+    }
+
+    .tag.blue { color: var(--blue); background: var(--blue-soft); border-color: #bfdbfe; }
+    .tag.teal { color: var(--teal); background: var(--teal-soft); border-color: #99f6e4; }
+    .tag.green { color: var(--green); background: var(--green-soft); border-color: #bbf7d0; }
+    .tag.amber { color: var(--amber); background: var(--amber-soft); border-color: #fde68a; }
+    .tag.rose { color: var(--rose); background: var(--rose-soft); border-color: #fecdd3; }
+
+    .formula {
+      background: #f8fafc;
+      border: 2px solid #d9e1ec;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-family: Consolas, "Cascadia Mono", monospace;
+      font-size: 22px;
+      line-height: 1.34;
+      white-space: pre-wrap;
+      margin: 10px 0 12px;
+    }
+
+    .figure-box {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .figure-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 6px;
+    }
+
+    .figure-title h2 { margin: 0; }
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: contain;
+      background: #fff;
+      border: 2px solid #d9e1ec;
+      border-radius: 8px;
+    }
+
+    .arch-img { height: 690px; }
+    .train-img { height: 650px; }
+    .switch-img { height: 475px; }
+
+    .note {
+      background: var(--amber-soft);
+      border: 2px solid #f4c66b;
+      border-radius: 8px;
+      padding: 12px 14px;
+      color: #6b3b00;
+      font-size: 19px;
+      line-height: 1.34;
+      font-weight: 800;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .mini {
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: #fcfdff;
+    }
+
+    .mini h3 {
+      color: var(--blue);
+      font-size: 23px;
+    }
+
+    .status {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .status div {
+      background: var(--slate-soft);
+      border: 2px solid #d7dee8;
+      border-radius: 8px;
+      padding: 12px 14px;
+      min-height: 116px;
+    }
+
+    .status b {
+      display: block;
+      color: var(--blue);
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .status span {
+      display: block;
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.28;
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 3px solid var(--ink);
+      padding-top: 7px;
+      color: var(--muted);
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <main class="poster" aria-label="Future patch label sequence academic poster">
+    <header>
+      <div>
+        <div class="eyebrow">方向一方法设想 | Smartphone IMU Activity Forecasting</div>
+        <h1>基于 Future Patch Label Sequence 的动作延续与切换预测</h1>
+        <p class="subtitle">核心思想：不把每种动作切换都做成独立 transition 类别，而是预测当前与未来 patch 的标签序列，再由序列变化和分类置信度推导延续概率、切换时机和下一动作。</p>
+      </div>
+      <div class="header-note">
+        当前定位：周三组会可汇报的研究方案草案。已完成相关论文范式梳理、模型结构选择、训练策略设计与可视化材料准备；尚未宣称完成实验。
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="col left">
+        <section>
+          <h2>1. 问题重述</h2>
+          <p><span class="tag blue">输入</span>手机 IMU：acc x/y/z + gyro x/y/z 连续序列。</p>
+          <p><span class="tag teal">输出</span>当前动作、未来动作序列、延续概率、切换时机、下一动作。</p>
+          <p><span class="tag amber">关键转变</span>从单窗口 HAR 分类，转向连续流上的 label sequence forecasting。</p>
+          <div class="formula">past IMU patches
+-> p(y_t), p(y_{t+1}), ..., p(y_{t+H})</div>
+        </section>
+
+        <section>
+          <h2>2. 为什么不主用 transition class</h2>
+          <ul>
+            <li>`&lt;sit-2-stand&gt;` 有直觉价值，但作为主标签会带来类别膨胀和样本稀疏。</li>
+            <li>较新的相近任务更常预测未来标签序列或未来动作段，而非枚举所有 A-to-B 切换。</li>
+            <li>未来序列中第一次 label 变化即可给出切换时机；变化后的 label 即下一动作。</li>
+          </ul>
+          <div class="formula">current: sit
+future:  sit, sit, stand, stand
+=> switch at first stand
+=> next action = stand</div>
+          <p><span class="tag green">保留空间</span>transition type 可作为后续辅助头或分析标签，不作为第一版主任务。</p>
+        </section>
+
+        <section>
+          <h2>3. 相关范式依据</h2>
+          <div class="grid2">
+            <div class="mini">
+              <h3>P2LHAP</h3>
+              <p>sensor patches -> patch-level activity label sequence；forecast 直接输出未来活动标签。</p>
+            </div>
+            <div class="mini">
+              <h3>FUTR</h3>
+              <p>learnable action queries 并行预测未来动作与 duration，避免自回归错误累积。</p>
+            </div>
+            <div class="mini">
+              <h3>ActFusion</h3>
+              <p>把未来不可见部分视作 mask tokens，通过补全动作序列完成 anticipation。</p>
+            </div>
+            <div class="mini">
+              <h3>本方法</h3>
+              <p>采用 parallel query decoder 作为主方案，自回归 decoder 仅作为后续消融。</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col middle">
+        <section class="figure-box">
+          <div class="figure-title">
+            <h2>4. 模型结构：Transformer Encoder + Parallel Query Decoder</h2>
+            <span class="tag blue">主方法图</span>
+          </div>
+          <img class="arch-img" src="assets/future-label-sequence-transformer-architecture.png" alt="Parallel query transformer architecture generated by imagegen">
+          <p>历史 IMU patch tokens 进入 Transformer Encoder；`q_0...q_H` 表示当前与未来 horizon queries；decoder 并行输出 `o_0...o_H`，共享 MLP classifier 对每个输出 token 分类。</p>
+        </section>
+
+        <section class="figure-box">
+          <div class="figure-title">
+            <h2>5. 训练策略：无标签预训练 + 有标签微调</h2>
+            <span class="tag teal">数据管线</span>
+          </div>
+          <img class="train-img" src="assets/future-label-sequence-training-pipeline.png" alt="Training pipeline generated by imagegen">
+          <div class="note">图中 Stage 2 的 query decoder 文字应理解为 parallel query decoder；label prediction 阶段不使用 causal mask。Mask 只用于 Stage 1 的 masked IMU reconstruction 预训练。</div>
+        </section>
+      </div>
+
+      <div class="col right">
+        <section class="figure-box">
+          <div class="figure-title">
+            <h2>6. 如何推导切换输出</h2>
+            <span class="tag green">无需 transition 主类</span>
+          </div>
+          <img class="switch-img" src="assets/future-label-sequence-switch-inference.png" alt="Switch timing inference generated by imagegen">
+          <div class="formula">continue_prob(k) = p(y_{t+k}=y_now)
+switch_within(k) = 1 - Π p(y_{t+i}=y_now)
+time_to_switch = first k where argmax p(y_{t+k}) != y_now
+next_action = first changed label</div>
+        </section>
+
+        <section>
+          <h2>7. 损失函数与样本构造</h2>
+          <p><span class="tag blue">样本</span>从连续流中取过去 L 个 patch 作为输入，未来 H 个 patch label 作为 target。</p>
+          <div class="formula">input  = X[t-L+1 : t]
+target = y[t : t+H]</div>
+          <p><span class="tag teal">监督目标</span>当前标签 + 未来标签序列交叉熵，可对远期 horizon 降权。</p>
+          <div class="formula">L = CE(y_t) + λ Σ CE(y_{t+k}), k=1..H</div>
+        </section>
+
+        <section>
+          <h2>8. 后续实验计划</h2>
+          <div class="status">
+            <div>
+              <b>数据</b>
+              <span>先找连续 HAR 数据验证 future label sequence；UCI HAR 只做 encoder sanity check。</span>
+            </div>
+            <div>
+              <b>结构消融</b>
+              <span>early fusion、P2LHAP-style channel independent、hybrid cross-channel fusion。</span>
+            </div>
+            <div>
+              <b>训练消融</b>
+              <span>from scratch、masked reconstruction pretraining、future IMU regression。</span>
+            </div>
+            <div>
+              <b>评价</b>
+              <span>future accuracy、next-action accuracy、time-to-switch error、calibration。</span>
+            </div>
+          </div>
+          <p style="margin-top:14px;"><span class="tag rose">方向一扩展</span>从 single human label sequence 升级到 `human_action_sequence + phone_motion_sequence`，面向人体动作与手机/相机运动联合预测。</p>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <span>Group meeting material for 2026-07-01 | Future Patch Label Sequence method proposal</span>
+      <span>Generated figures: imagegen | Poster: local HTML render</span>
+    </footer>
+  </main>
+</body>
+</html>

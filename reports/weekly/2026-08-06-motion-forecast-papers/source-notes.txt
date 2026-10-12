@@ -1,0 +1,14 @@
+MotionForesight
+- Paper: https://arxiv.org/html/2607.16192v1
+- Figure 1: paper-figures/motionforesight/figure-1-teaser.png
+- Figure 2: paper-figures/motionforesight/figure-2-task.png
+- Figure 3: paper-figures/motionforesight/figure-3-architecture.png
+- Figure 4: paper-figures/motionforesight/figure-4-qualitative.png
+
+Generative Point Tracking and Forecasting
+- Paper: https://openaccess.thecvf.com/content/CVPR2026/papers/Lu_Generative_Point_Tracking_and_Forecasting_CVPR_2026_paper.pdf
+- Local paper: source-papers/gptf-cvpr2026.pdf
+- Figure/table crops: paper-figures/gptf/
+
+All paper figures are used as cited source material. Slide prompts require preserving them rather than redrawing them.
+

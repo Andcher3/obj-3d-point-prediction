@@ -1,0 +1,94 @@
+{
+  "files": [
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-future-aux-run-2026-10-11/status.json",
+      "name": "status.json",
+      "bytes": 353,
+      "sha256": "df11653cef51a929d0b352000d3323dc6cb87315f4e0c2b4b8ddaa7abe8651f4"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-future-aux-run-2026-10-11/training.log",
+      "name": "training.log",
+      "bytes": 4610,
+      "sha256": "d0797430d736b279339bbc85d21123d1914082dd9167d78819d0250f3eb81d7c"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/logs/surface-future-aux-controller.log",
+      "name": "surface-future-aux-controller.log",
+      "bytes": 39,
+      "sha256": "8534f39d1b6e6e24c0eaa720339be3fee719bfa1a804e1ac40cee45370f9b9fa"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/logs/surface-future-aux-protocol.json",
+      "name": "surface-future-aux-protocol.json",
+      "bytes": 2099,
+      "sha256": "108c652f1ea2d3765f8374d4b31c3fa686094a7f5ca5301ff7c77de5b203cb6d"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-future-aux-run-2026-10-11/results/progress.json",
+      "name": "progress.json",
+      "bytes": 112,
+      "sha256": "c188d87601e7b9dd842b82e15531dac78b0cdf7dcf08b857d287a251b94182f4"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-future-aux-run-2026-10-11/results/results.json",
+      "name": "results.json",
+      "bytes": 258463,
+      "sha256": "9496dbf191afeb8b689508112a320dc7caf6fea4c7174982ca5fc04a6c2e35aa"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-future-aux-run-2026-10-11/results/label-audit.json",
+      "name": "label-audit.json",
+      "bytes": 54054,
+      "sha256": "38c9b96c9548146ed83541611426166586057a3084101b3c937c3bfab37b5c93"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-future-aux-run-2026-10-11/results/paired-summary.json",
+      "name": "paired-summary.json",
+      "bytes": 6329,
+      "sha256": "d816df8e3f68b9b691563e8c7e9d63e537b64bf714aa5d9551ead2a49622a039"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-future-aux-run-2026-10-11/results/complete.json",
+      "name": "complete.json",
+      "bytes": 325,
+      "sha256": "408a9567bbedd0b0f42f7ec030f5ecfef46f0317cea3a215997cb090cc66ed8d"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/surface-future-aux-run-2026-10-11/results/target-diagnostics.json",
+      "name": "target-diagnostics.json",
+      "bytes": 51701,
+      "sha256": "ed5a65442abb053471ad9f4076fefca5d78025e760410a14ae839ce206fe2ba8"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/code/future_surface_aux_model.py",
+      "name": "future_surface_aux_model.py",
+      "bytes": 1580,
+      "sha256": "dad60744c8e54951732096235ac51d784bc7e68a8eed21f27aba3653678676a7"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/code/test_future_surface_aux_model.py",
+      "name": "test_future_surface_aux_model.py",
+      "bytes": 2138,
+      "sha256": "55cdecc33625c379a4204ac6b8ceb6aa2891fb9420763afdf40f0901475e4c09"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/code/run_future_surface_aux.py",
+      "name": "run_future_surface_aux.py",
+      "bytes": 13828,
+      "sha256": "a1bc1e0d8d1a0a7460e6a46ac8f34ba5604089a0c0527456f9f660c385e0df25"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/code/execute_future_surface_aux.py",
+      "name": "execute_future_surface_aux.py",
+      "bytes": 2855,
+      "sha256": "6b974352948bbc91125f66691b612ad8a39cf7d5f149af05c35b418b998308be"
+    },
+    {
+      "remote": "/root/autodl-tmp/cross-point-probe-2026-10-10/code/collect_future_surface_aux_evidence.py",
+      "name": "collect_future_surface_aux_evidence.py",
+      "bytes": 3057,
+      "sha256": "d0369b4a1abd2ffd5a539f22b94b3039a6651099197eae36ea70bbbeba6a6384"
+    }
+  ]
+}

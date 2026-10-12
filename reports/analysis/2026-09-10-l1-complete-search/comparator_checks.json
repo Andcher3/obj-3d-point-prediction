@@ -1,0 +1,31 @@
+[
+  {
+    "case": "paraphrase",
+    "a": "The hand lifts the cup.",
+    "b": "The person picks up the mug.",
+    "similarity": 0.25,
+    "same_event": false
+  },
+  {
+    "case": "order-reversal",
+    "a": "The hand lifts the cup then places it on the table.",
+    "b": "The hand places the cup on the table then lifts it.",
+    "similarity": 1.0,
+    "same_event": true
+  },
+  {
+    "case": "negation",
+    "a": "The hand moves the cup.",
+    "b": "The hand does not move the cup.",
+    "similarity": 0.5,
+    "same_event": true
+  },
+  {
+    "case": "identical_answer_retention",
+    "selected": [
+      "b3",
+      "b2",
+      "b1"
+    ]
+  }
+]

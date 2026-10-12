@@ -1,0 +1,463 @@
+{
+  "scope": "MotionForesight same-coordinate P0/H and decoded-coordinate relation audit",
+  "source_chain": "SparseTrackDataset uses last-observed-camera transform and shared observed-Pj normalization; cache files are derived audit artifacts",
+  "relation_target": "2D symmetric kNN k=3 edge vectors in decoded aligned coordinates",
+  "relation_loss_ready": false,
+  "videos": [
+    {
+      "file": "experiences_results\\motionforesight-e3-source-cache-2026-09-24\\356ed369-7023-4660-904b-be73823a21d3.npz",
+      "status": "PASS",
+      "coordinate_frame": "last_observed_camera",
+      "prediction_source": "motionforesight_observed_only",
+      "pseudo_gt_source": "trackcraft3r_offline_future",
+      "shape_check": {
+        "ok": true,
+        "p0_formal9": [
+          9,
+          48,
+          3
+        ],
+        "pseudo_gt_aligned": [
+          9,
+          48,
+          3
+        ],
+        "validity": [
+          9,
+          48
+        ]
+      },
+      "finite_check": true,
+      "time_check": {
+        "slot_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "slot_ok": true,
+        "max_match_error_s": 0.03333333333330302,
+        "timestamp_ok": true,
+        "observed_frame_count": 7
+      },
+      "query_check": {
+        "count": 48,
+        "edge_count_2d_knn3": 92,
+        "valid_per_horizon": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      "decoded_coordinate_relation": {
+        "node_error_m": {
+          "count": 432,
+          "p50": 0.207048944729855,
+          "p90": 0.38121438135852515,
+          "max": 0.5716143091350043,
+          "mean": 0.2298856500988473
+        },
+        "edge_vector_error_m": {
+          "count": 828,
+          "p50": 0.1656210810784032,
+          "p90": 0.40876654745162,
+          "max": 0.6385853882577389,
+          "mean": 0.19808758147208638
+        },
+        "edge_vector_gt_norm_m": {
+          "count": 828,
+          "p50": 0.04736370085490429,
+          "p90": 0.18817715152969391,
+          "max": 0.35056140750412995,
+          "mean": 0.07861781561968532
+        },
+        "edge_relative_error": {
+          "count": 828,
+          "p50": 2.323793734854644,
+          "p90": 10.032491750852707,
+          "max": 19.989337931625506,
+          "mean": 4.005197635258327
+        },
+        "gt_temporal_displacement_scale_m": 0.033338589943846905,
+        "pred_temporal_displacement_scale_m": 0.07696102226016452
+      },
+      "supervision_ready": false,
+      "supervision_note": "Cache-level decoded-coordinate audit only; no training release."
+    },
+    {
+      "file": "experiences_results\\motionforesight-e3-source-cache-2026-09-24\\4d053322-1eef-4a69-8201-932c7b82fb03.npz",
+      "status": "PASS",
+      "coordinate_frame": "last_observed_camera",
+      "prediction_source": "motionforesight_observed_only",
+      "pseudo_gt_source": "trackcraft3r_offline_future",
+      "shape_check": {
+        "ok": true,
+        "p0_formal9": [
+          9,
+          48,
+          3
+        ],
+        "pseudo_gt_aligned": [
+          9,
+          48,
+          3
+        ],
+        "validity": [
+          9,
+          48
+        ]
+      },
+      "finite_check": true,
+      "time_check": {
+        "slot_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "slot_ok": true,
+        "max_match_error_s": 0.027180666666595243,
+        "timestamp_ok": true,
+        "observed_frame_count": 7
+      },
+      "query_check": {
+        "count": 48,
+        "edge_count_2d_knn3": 88,
+        "valid_per_horizon": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      "decoded_coordinate_relation": {
+        "node_error_m": {
+          "count": 432,
+          "p50": 0.07676824952225672,
+          "p90": 0.18430206665629403,
+          "max": 0.22666164846290976,
+          "mean": 0.09348496228631696
+        },
+        "edge_vector_error_m": {
+          "count": 792,
+          "p50": 0.048023844711108925,
+          "p90": 0.18634627098076717,
+          "max": 0.3058280726837953,
+          "mean": 0.07622188307695561
+        },
+        "edge_vector_gt_norm_m": {
+          "count": 792,
+          "p50": 0.029373245429329443,
+          "p90": 0.17867865332869856,
+          "max": 0.23326798106460242,
+          "mean": 0.0614941561587586
+        },
+        "edge_relative_error": {
+          "count": 792,
+          "p50": 0.9772437575787039,
+          "p90": 5.680524849103509,
+          "max": 15.806048733474444,
+          "mean": 2.08352822615825
+        },
+        "gt_temporal_displacement_scale_m": 0.004799291510191987,
+        "pred_temporal_displacement_scale_m": 0.012054989101601288
+      },
+      "supervision_ready": false,
+      "supervision_note": "Cache-level decoded-coordinate audit only; no training release."
+    },
+    {
+      "file": "experiences_results\\motionforesight-e3-source-cache-2026-09-24\\65165142-b15e-4bba-a9de-d5174ec46597.npz",
+      "status": "PASS",
+      "coordinate_frame": "last_observed_camera",
+      "prediction_source": "motionforesight_observed_only",
+      "pseudo_gt_source": "trackcraft3r_offline_future",
+      "shape_check": {
+        "ok": true,
+        "p0_formal9": [
+          9,
+          48,
+          3
+        ],
+        "pseudo_gt_aligned": [
+          9,
+          48,
+          3
+        ],
+        "validity": [
+          9,
+          48
+        ]
+      },
+      "finite_check": true,
+      "time_check": {
+        "slot_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "slot_ok": true,
+        "max_match_error_s": 0.010514000000057422,
+        "timestamp_ok": true,
+        "observed_frame_count": 7
+      },
+      "query_check": {
+        "count": 48,
+        "edge_count_2d_knn3": 85,
+        "valid_per_horizon": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      "decoded_coordinate_relation": {
+        "node_error_m": {
+          "count": 432,
+          "p50": 0.09066003126728268,
+          "p90": 0.29502256509903996,
+          "max": 0.4793470956851703,
+          "mean": 0.13559395731597487
+        },
+        "edge_vector_error_m": {
+          "count": 765,
+          "p50": 0.07012009690839129,
+          "p90": 0.24358278077872375,
+          "max": 0.3683040617301321,
+          "mean": 0.10372216143340512
+        },
+        "edge_vector_gt_norm_m": {
+          "count": 765,
+          "p50": 0.045754882085292534,
+          "p90": 0.24526426745656846,
+          "max": 0.3747415201252862,
+          "mean": 0.08523784473785943
+        },
+        "edge_relative_error": {
+          "count": 765,
+          "p50": 0.889293910280908,
+          "p90": 3.5878212315485505,
+          "max": 14.727378173357073,
+          "mean": 1.6138329122071606
+        },
+        "gt_temporal_displacement_scale_m": 0.009037079513383112,
+        "pred_temporal_displacement_scale_m": 0.008371402686651097
+      },
+      "supervision_ready": false,
+      "supervision_note": "Cache-level decoded-coordinate audit only; no training release."
+    },
+    {
+      "file": "experiences_results\\motionforesight-e3-source-cache-2026-09-24\\9069bd26-0139-4e88-9957-9f9489b35a91.npz",
+      "status": "PASS",
+      "coordinate_frame": "last_observed_camera",
+      "prediction_source": "motionforesight_observed_only",
+      "pseudo_gt_source": "trackcraft3r_offline_future",
+      "shape_check": {
+        "ok": true,
+        "p0_formal9": [
+          9,
+          48,
+          3
+        ],
+        "pseudo_gt_aligned": [
+          9,
+          48,
+          3
+        ],
+        "validity": [
+          9,
+          48
+        ]
+      },
+      "finite_check": true,
+      "time_check": {
+        "slot_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "slot_ok": true,
+        "max_match_error_s": 0.029999600000000015,
+        "timestamp_ok": true,
+        "observed_frame_count": 7
+      },
+      "query_check": {
+        "count": 48,
+        "edge_count_2d_knn3": 86,
+        "valid_per_horizon": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      "decoded_coordinate_relation": {
+        "node_error_m": {
+          "count": 432,
+          "p50": 0.033542902443449346,
+          "p90": 0.09113791539169713,
+          "max": 0.36068674087738894,
+          "mean": 0.054065362317758374
+        },
+        "edge_vector_error_m": {
+          "count": 774,
+          "p50": 0.032506355993757105,
+          "p90": 0.15858052977421408,
+          "max": 0.585208006204158,
+          "mean": 0.06312683012372053
+        },
+        "edge_vector_gt_norm_m": {
+          "count": 774,
+          "p50": 0.07618705200849307,
+          "p90": 0.2764019483705803,
+          "max": 0.3717634033062452,
+          "mean": 0.11022053682568124
+        },
+        "edge_relative_error": {
+          "count": 774,
+          "p50": 0.41799376817098793,
+          "p90": 0.8621676657795525,
+          "max": 6.630905223492289,
+          "mean": 0.5152628242160087
+        },
+        "gt_temporal_displacement_scale_m": 0.0039725042323588925,
+        "pred_temporal_displacement_scale_m": 0.004661991654233075
+      },
+      "supervision_ready": false,
+      "supervision_note": "Cache-level decoded-coordinate audit only; no training release."
+    },
+    {
+      "file": "experiences_results\\motionforesight-e3-source-cache-2026-09-24\\cb78dba8-6647-4ec7-875c-6ba1548f8312.npz",
+      "status": "PASS",
+      "coordinate_frame": "last_observed_camera",
+      "prediction_source": "motionforesight_observed_only",
+      "pseudo_gt_source": "trackcraft3r_offline_future",
+      "shape_check": {
+        "ok": true,
+        "p0_formal9": [
+          9,
+          48,
+          3
+        ],
+        "pseudo_gt_aligned": [
+          9,
+          48,
+          3
+        ],
+        "validity": [
+          9,
+          48
+        ]
+      },
+      "finite_check": true,
+      "time_check": {
+        "slot_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "slot_ok": true,
+        "max_match_error_s": 0.03333333333330302,
+        "timestamp_ok": true,
+        "observed_frame_count": 7
+      },
+      "query_check": {
+        "count": 48,
+        "edge_count_2d_knn3": 87,
+        "valid_per_horizon": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      "decoded_coordinate_relation": {
+        "node_error_m": {
+          "count": 432,
+          "p50": 0.01918387234965864,
+          "p90": 0.067840791743601,
+          "max": 0.1864444628205886,
+          "mean": 0.033392140623200825
+        },
+        "edge_vector_error_m": {
+          "count": 783,
+          "p50": 0.009977165453209617,
+          "p90": 0.11935622585354644,
+          "max": 0.2634175681480065,
+          "mean": 0.03369139868838578
+        },
+        "edge_vector_gt_norm_m": {
+          "count": 783,
+          "p50": 0.026656695683022865,
+          "p90": 0.05774610413470545,
+          "max": 0.20547436846802272,
+          "mean": 0.038695084200498005
+        },
+        "edge_relative_error": {
+          "count": 783,
+          "p50": 0.375280517882093,
+          "p90": 1.3038541421515686,
+          "max": 13.41224648780744,
+          "mean": 0.8237863348114742
+        },
+        "gt_temporal_displacement_scale_m": 0.002303412158936253,
+        "pred_temporal_displacement_scale_m": 0.003612570407054186
+      },
+      "supervision_ready": false,
+      "supervision_note": "Cache-level decoded-coordinate audit only; no training release."
+    }
+  ]
+}

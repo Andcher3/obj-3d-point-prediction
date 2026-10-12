@@ -1,0 +1,262 @@
+{
+  "sample_id": "sewing_scissors",
+  "source_video": "cb78dba8-6647-4ec7-875c-6ba1548f8312.mp4",
+  "source_fps": 30,
+  "raw_frame_indices": [
+    171,
+    173,
+    175,
+    177,
+    179,
+    181,
+    183,
+    185,
+    187,
+    189,
+    191,
+    193
+  ],
+  "history_raw_frames": [
+    171,
+    173,
+    175
+  ],
+  "offline_pseudo_gt_raw_frames": [
+    177,
+    179,
+    181,
+    183,
+    185,
+    187,
+    189,
+    191,
+    193
+  ],
+  "valid_query_count": 8,
+  "pseudo_gt_motion": {
+    "mean_path_length_m": 0.21228453516960144,
+    "centroid_final_delta_m": [
+      -0.11940547823905945,
+      -0.006704270839691162,
+      0.0572284460067749
+    ],
+    "finite_fraction": 1.0
+  },
+  "records": [
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "observed_pickup",
+      "prompt_text": "Pick up the blue-handled scissors.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 61.501785807311535,
+      "sequence_score": -241.0894775390625,
+      "input_ids_sha256": "6d4b229b109fbe054f23a9a6bf38d1b1aed11acd40c4674a0c9f8be49cbe4268",
+      "future_array_sha256": "aad4ad73ce5aa3fcd8ccfea5aeaf8c8637b0cbe8cd89a1d29f2657b728d3aa5f",
+      "future_text_sha256": "95ec16762da7612d06690a26fa8cdb8d3a026ac082f05cc2c256eddb9182c4c0",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.07751170545816422,
+      "pseudo_gt_fde_m": 0.15175467729568481,
+      "mean_path_length_m": 0.0592699870467186,
+      "centroid_final_delta_m": [
+        0.05511537194252014,
+        -0.01907120645046234,
+        -0.000702202320098877
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "observed_pickup",
+      "prompt_text": "Pick up the blue-handled scissors.",
+      "draw": "sample1",
+      "seed": 20260915,
+      "parse_success": true,
+      "seconds": 67.20050645619631,
+      "sequence_score": -1495.093505859375,
+      "input_ids_sha256": "6d4b229b109fbe054f23a9a6bf38d1b1aed11acd40c4674a0c9f8be49cbe4268",
+      "future_array_sha256": "be42b69cadfb3fe366217213337b012cfaaa98597da99d2260762f8843e79647",
+      "future_text_sha256": "cd67007e0ffd4ee83997566591904b513ca96f6dcc7dd089fae4e2b9e67b7eec",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.07420909404754639,
+      "pseudo_gt_fde_m": 0.15084174275398254,
+      "mean_path_length_m": 0.48160600662231445,
+      "centroid_final_delta_m": [
+        -0.2543846368789673,
+        -0.18544620275497437,
+        -0.038327157497406006
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "counterfactual_static",
+      "prompt_text": "Leave the blue-handled scissors on the table without moving them.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 60.28271098062396,
+      "sequence_score": -96.3609390258789,
+      "input_ids_sha256": "6abc228c6dca017aa6dec4451285d00d6dca92d69a253d9618ead6cbb53f1e1a",
+      "future_array_sha256": "445cdc50d5e1df47e58da69b3521ba19d66cd5b3d47e680cb800c85164a4ea86",
+      "future_text_sha256": "61226f608594eab029c75dbfc69f010667f3264c8ea4ddb4b7880008cbc1bd07",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.07221570611000061,
+      "pseudo_gt_fde_m": 0.138845294713974,
+      "mean_path_length_m": 0.0021593566052615643,
+      "centroid_final_delta_m": [
+        0.000990360975265503,
+        -0.0006962120532989502,
+        -0.0007021427154541016
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "counterfactual_static",
+      "prompt_text": "Leave the blue-handled scissors on the table without moving them.",
+      "draw": "sample1",
+      "seed": 20261015,
+      "parse_success": true,
+      "seconds": 64.82753459736705,
+      "sequence_score": -1303.8009033203125,
+      "input_ids_sha256": "6abc228c6dca017aa6dec4451285d00d6dca92d69a253d9618ead6cbb53f1e1a",
+      "future_array_sha256": "38144107e4e4c7caa3f15558989ab168d2cdc715dbd5893c61c9995e3fab3f6d",
+      "future_text_sha256": "888f45e6db0832268111a8a77e543dbbfce60ca3c769cd4d215a8f357c901c67",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.10428601503372192,
+      "pseudo_gt_fde_m": 0.20080265402793884,
+      "mean_path_length_m": 0.4395495653152466,
+      "centroid_final_delta_m": [
+        0.021115392446517944,
+        -0.002446204423904419,
+        0.032047808170318604
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "multistep",
+      "prompt_text": "Pick up the blue-handled scissors, move them to the left of the sewing machine, and set them down.",
+      "draw": "greedy",
+      "seed": null,
+      "parse_success": true,
+      "seconds": 63.07121388241649,
+      "sequence_score": -290.17181396484375,
+      "input_ids_sha256": "daced5ae63ce90c52eb49b103b3b5a10ab60204599f31ca94b4f5713cdb21818",
+      "future_array_sha256": "a47f3e1eddfc56ce0b1b33c84da32e0be447923480af1672a62de21966107b78",
+      "future_text_sha256": "9beef05e4e6ad32409b40a98c3c75c918fe14f7d2f728695e6c101694a86f8e7",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.08383556455373764,
+      "pseudo_gt_fde_m": 0.1733929067850113,
+      "mean_path_length_m": 0.29757925868034363,
+      "centroid_final_delta_m": [
+        0.2914903461933136,
+        -0.0006962120532989502,
+        0.05342286825180054
+      ],
+      "finite_fraction": 1.0
+    },
+    {
+      "sample_id": "sewing_scissors",
+      "prompt": "multistep",
+      "prompt_text": "Pick up the blue-handled scissors, move them to the left of the sewing machine, and set them down.",
+      "draw": "sample1",
+      "seed": 20261115,
+      "parse_success": true,
+      "seconds": 64.47324888780713,
+      "sequence_score": -1372.4803466796875,
+      "input_ids_sha256": "daced5ae63ce90c52eb49b103b3b5a10ab60204599f31ca94b4f5713cdb21818",
+      "future_array_sha256": "74720158e36fad8da169a302ca92bcfaa8e88e70ad4b9bd5dead19d17e6011bd",
+      "future_text_sha256": "70d8345c3981f34ca73d5866149fecc88157105729409633058341c9c806a746",
+      "eval_horizon_frames": 9,
+      "pseudo_gt_ade_m": 0.09884949028491974,
+      "pseudo_gt_fde_m": 0.20561985671520233,
+      "mean_path_length_m": 0.5306738018989563,
+      "centroid_final_delta_m": [
+        0.32849040627479553,
+        0.01005379855632782,
+        0.05667281150817871
+      ],
+      "finite_fraction": 1.0
+    }
+  ],
+  "pairwise": {
+    "observed_pickup__greedy__vs__observed_pickup__sample1": {
+      "ade_m": 0.1170206367969513,
+      "fde_m": 0.36168742179870605,
+      "direction_cosine": -0.5739531517028809
+    },
+    "observed_pickup__greedy__vs__counterfactual_static__greedy": {
+      "ade_m": 0.02871113270521164,
+      "fde_m": 0.057292740792036057,
+      "direction_cosine": NaN
+    },
+    "observed_pickup__greedy__vs__counterfactual_static__sample1": {
+      "ade_m": 0.0896226093173027,
+      "fde_m": 0.0642910897731781,
+      "direction_cosine": 0.5396538376808167
+    },
+    "observed_pickup__greedy__vs__multistep__greedy": {
+      "ade_m": 0.100487120449543,
+      "fde_m": 0.24334242939949036,
+      "direction_cosine": 0.9301917552947998
+    },
+    "observed_pickup__greedy__vs__multistep__sample1": {
+      "ade_m": 0.13663166761398315,
+      "fde_m": 0.2859589457511902,
+      "direction_cosine": 0.9268589615821838
+    },
+    "observed_pickup__sample1__vs__counterfactual_static__greedy": {
+      "ade_m": 0.10473281890153885,
+      "fde_m": 0.32374852895736694,
+      "direction_cosine": NaN
+    },
+    "observed_pickup__sample1__vs__counterfactual_static__sample1": {
+      "ade_m": 0.13108699023723602,
+      "fde_m": 0.35091692209243774,
+      "direction_cosine": -0.49011123180389404
+    },
+    "observed_pickup__sample1__vs__multistep__greedy": {
+      "ade_m": 0.20709475874900818,
+      "fde_m": 0.6005859375,
+      "direction_cosine": -0.8158586025238037
+    },
+    "observed_pickup__sample1__vs__multistep__sample1": {
+      "ade_m": 0.2307940125465393,
+      "fde_m": 0.6377419233322144,
+      "direction_cosine": -0.8321110606193542
+    },
+    "counterfactual_static__greedy__vs__counterfactual_static__sample1": {
+      "ade_m": 0.08169242739677429,
+      "fde_m": 0.0494946725666523,
+      "direction_cosine": NaN
+    },
+    "counterfactual_static__greedy__vs__multistep__greedy": {
+      "ade_m": 0.1257854551076889,
+      "fde_m": 0.29550039768218994,
+      "direction_cosine": NaN
+    },
+    "counterfactual_static__greedy__vs__multistep__sample1": {
+      "ade_m": 0.15852928161621094,
+      "fde_m": 0.33778929710388184,
+      "direction_cosine": NaN
+    },
+    "counterfactual_static__sample1__vs__multistep__greedy": {
+      "ade_m": 0.17538300156593323,
+      "fde_m": 0.2790575623512268,
+      "direction_cosine": 0.6811744570732117
+    },
+    "counterfactual_static__sample1__vs__multistep__sample1": {
+      "ade_m": 0.1932527869939804,
+      "fde_m": 0.3123452067375183,
+      "direction_cosine": 0.6469131708145142
+    },
+    "multistep__greedy__vs__multistep__sample1": {
+      "ade_m": 0.0650910958647728,
+      "fde_m": 0.05251370370388031,
+      "direction_cosine": 0.9986920356750488
+    }
+  }
+}

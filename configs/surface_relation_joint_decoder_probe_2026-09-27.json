@@ -1,0 +1,37 @@
+{
+  "protocol_status": "FROZEN_BEFORE_JOINT_DECODER_TRAINING",
+  "date": "2026-09-27",
+  "scope": "exploratory same-resolution four-video leave-one-video-out architecture probe",
+  "data_root": "experiences_results/surface-relation-e3-formal-res518-2026-09-26",
+  "video_ids": [
+    "65165142-b15e-4bba-a9de-d5174ec46597",
+    "4d053322-1eef-4a69-8201-932c7b82fb03",
+    "9069bd26-0139-4e88-9957-9f9489b35a91",
+    "cb78dba8-6647-4ec7-875c-6ba1548f8312"
+  ],
+  "target": "observed_t0 + (aligned_full_video_teacher_future - aligned_full_video_teacher_t0)",
+  "graph": "observed t0 query UV, symmetric 2D kNN k=3; all 48 query nodes; no future-validity pruning",
+  "models": ["joint_relational", "joint_node_control"],
+  "global_object_state": "mean of 48 query embeddings at each future prediction slot",
+  "temporal_receptive_field": "3 predicted slots via shared Conv1d, no future labels",
+  "loss": "0.5 centered point MSE + 0.5 valid-edge-vector MSE; no rigid-length restriction",
+  "baseline": "frozen MotionForesight P0; no trainable scalar gate; zero-initialized decoder output",
+  "train_slots": [0, 1, 2, 3, 4, 5, 6],
+  "validation_slots": [7, 8],
+  "held_out_test_slots": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  "learning_rate": 0.001,
+  "training_steps": 400,
+  "checkpoint_every_steps": 10,
+  "seeds": [9000, 9001, 9002, 9003, 9004],
+  "hidden_width": 16,
+  "anchor_threshold_px_for_loss_only": 5.0,
+  "primary_metrics": ["centered_error_normalized", "edge_vector_error_normalized"],
+  "safety_metric": "raw_ade_m",
+  "exploratory_signal": "joint_relational improves both primary metrics against P0 and joint_node_control on at least 3 of 4 held-out videos by five-seed medians; raw ADE does not rise more than 5% on those videos",
+  "known_limits": [
+    "all four videos already studied in prior F2 experiments; not independent confirmatory evaluation",
+    "TrackCraft3R future displacement is pseudo-GT rather than true motion",
+    "MotionForesight backbone frozen; this does not test a trainable generation-time adapter",
+    "only four independent videos; five initialization seeds do not increase independent video count"
+  ]
+}

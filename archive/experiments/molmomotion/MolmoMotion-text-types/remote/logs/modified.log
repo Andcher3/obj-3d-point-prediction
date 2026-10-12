@@ -1,0 +1,21 @@
+/root/autodl-tmp/projects/molmo-motion/src/molmo_motion/data/dataset.py:17: UserWarning: MOLMO_DATA_DIR is not set, data loading might fail
+  warnings.warn("MOLMO_DATA_DIR is not set, data loading might fail")
+RESULT {"example": "egodex_clean_surface", "variant": "official", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 66.329}
+RESULT {"example": "egodex_clean_surface", "variant": "compact", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 65.494}
+RESULT {"example": "egodex_clean_surface", "variant": "free_sentence", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 66.212}
+RESULT {"example": "egodex_clean_surface", "variant": "multi_step", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 65.683}
+RESULT {"example": "egodex_clean_surface", "variant": "contradictory", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 66.002}
+RESULT {"example": "egodex_ball_base", "variant": "official", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 60.756}
+RESULT {"example": "egodex_ball_base", "variant": "compact", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 62.997}
+RESULT {"example": "egodex_ball_base", "variant": "free_sentence", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 62.505}
+RESULT {"example": "egodex_ball_base", "variant": "multi_step", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 63.919}
+RESULT {"example": "egodex_ball_base", "variant": "contradictory", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 65.243}
+RESULT {"example": "davis_car_turn", "variant": "official", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 83.059}
+RESULT {"example": "davis_car_turn", "variant": "compact", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 83.808}
+RESULT {"example": "davis_car_turn", "variant": "free_sentence", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 82.136}
+RESULT {"example": "davis_car_turn", "variant": "multi_step", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 83.35}
+RESULT {"example": "davis_car_turn", "variant": "contradictory", "shape": [8, 30, 3], "finite_fraction": 1.0, "seconds": 84.567}
+METRICS=/root/autodl-tmp/projects/molmo-motion-text-test/results/text-type-probe/metrics.json
+TOTAL_RESULTS=15
+MODIFIED_EXIT=0
+WALL_SECONDS=1098

@@ -1,0 +1,44 @@
+[2026-09-28T07:35:58Z] START car-turn prepare_inputs
+[2026-09-28T07:36:07Z] END car-turn prepare_inputs rc=0
+[2026-09-28T07:36:07Z] START car-turn observed_dense
+[2026-09-28T07:39:13Z] END car-turn observed_dense rc=0
+[2026-09-28T07:39:13Z] START car-turn query_mapping
+[2026-09-28T07:39:14Z] END car-turn query_mapping rc=0
+[2026-09-28T07:39:14Z] START car-turn full22_trackcraft+motionforesight
+[2026-09-28T07:42:13Z] END car-turn full22_trackcraft rc=0 motionforesight rc=1
+/root/autodl-tmp/conda_envs/trackcraft-e2/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loaded 22 frames from /tmp/tmpyo8619ud.npz, subsampled to 22 (stride=1)
+  LoRA injected: rank=1024, targets=q,k,v,o,ffn.0,ffn.2
+  patch_embedding expanded: 16->32 channels
+  DiT head expanded to 2x output (xyz | vis)
+  release dit: loaded 1425 tensors
+  release vae: loaded 194 tensors
+  release vae_vis: loaded 194 tensors
+  release vae_pj: loaded 194 tensors
+  release text_encoder: loaded 242 tensors
+WanSceneFlowPredictor loaded from /root/trackcraft-assets/checkpoints/trackcraft3r/model.safetensors
+{
+  "output": "/root/autodl-tmp/projects/motionforesight/outputs/davis_joint_probe_2026-09-28/car-turn/full22_query_tracks.npz",
+  "track_shape": [
+    22,
+    48,
+    3
+  ],
+  "finite_fraction": 1.0,
+  "nonzero_motion_fraction": 1.0,
+  "oob_count": 0,
+  "model_resolution_hw": [
+    240,
+    416
+  ],
+  "trajectory_source": "trackcraft3r_pseudo_gt"
+}
+/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/root/autodl-tmp/projects/motionforesight/surface_relation_e3_motionforesight_preflight.py", line 225, in <module>
+    main()
+  File "/root/autodl-tmp/projects/motionforesight/surface_relation_e3_motionforesight_preflight.py", line 62, in main
+    from scripts.inference_model import build_model_from_ckpt
+ModuleNotFoundError: No module named 'scripts.inference_model'

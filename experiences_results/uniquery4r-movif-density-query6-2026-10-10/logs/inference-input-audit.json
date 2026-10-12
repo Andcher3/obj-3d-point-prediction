@@ -1,0 +1,134 @@
+{
+  "cpu_input_audit_passed": true,
+  "scene_count": 18,
+  "scenes": [
+    {
+      "scene_id": "scene_3626",
+      "query_count": 48,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_1782",
+      "query_count": 93,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_3881",
+      "query_count": 77,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_2344",
+      "query_count": 72,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_3782",
+      "query_count": 48,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_5916",
+      "query_count": 134,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_1924",
+      "query_count": 60,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_5025",
+      "query_count": 68,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_1143",
+      "query_count": 68,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_4203",
+      "query_count": 68,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_2854",
+      "query_count": 48,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_1179",
+      "query_count": 48,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_813",
+      "query_count": 77,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_346",
+      "query_count": 71,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_5702",
+      "query_count": 50,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_2329",
+      "query_count": 87,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_3457",
+      "query_count": 48,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    },
+    {
+      "scene_id": "scene_1580",
+      "query_count": 115,
+      "input_sha256_passed": true,
+      "uv_pixel_roundtrip_passed": true,
+      "gt_identity_correspondence_passed": true
+    }
+  ],
+  "model_forward_called": false,
+  "gt_not_model_input": true
+}

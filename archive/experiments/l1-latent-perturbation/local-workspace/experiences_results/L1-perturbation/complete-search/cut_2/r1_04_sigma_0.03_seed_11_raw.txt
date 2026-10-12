@@ -1,0 +1,4 @@
+<reason>In the video, the person is seen holding a knife and a piece of food, indicating the intention to cut the food. The person's hands are positioned to begin the cutting process, with the knife held firmly and the food placed on the cutting board. This setup suggests that the next step involves the person starting to cut the food.</reason>
+<|latent_start|><|latent|><|latent|><|latent|><|latent|><|latent_end|>
+<reason>By frame 0:02, the person's hands are in a position to begin the cutting motion, and the knife is aligned with the food, ready to make the first cut. This visual setup confirms that the person is about to start cutting the food on the cutting board.</reason>
+<answer>The person will start cutting the food on the cutting board.</answer><|im_end|>

@@ -1,0 +1,55 @@
+{
+  "matches": true,
+  "local": {
+    "car-turn": {
+      "quality_audit.json": "ce492ef2bb403722ae6e22bfc681845b40ee8cdafa16c9603b03e6c5c9c0b25e",
+      "motionforesight_observed_only.json": "f1d2a6d73ba63ded0bd0f82f20bc245104794dfc5d5424009a36e8fd0a05ede5",
+      "query_t0_manifest.json": "1f20f52b52d2ea34aac905362697868064c72f2283e03f75bb5577e45f50fd9c",
+      "query_frame0_mapping.json": "d87ba3c21d1fe81945fa282a73ec8ea5d84a5e42e8f3be1a4bfbd199181b6f9a"
+    },
+    "drift-turn": {
+      "quality_audit.json": "b4c9fe8f70522623b6ec61acd7b101219616e4112627ebe1c2e3594f4171c50e",
+      "motionforesight_observed_only.json": "6414e48e835375c23db850ed335e60f4c9571835ce583888f57e132ccfd58a92",
+      "query_t0_manifest.json": "a8293e51dfeaf533abaaa365ebbe49a408e90bed183d955beba7ba4e4f0661b9",
+      "query_frame0_mapping.json": "f27d4778874dafce0e87aa8ef710119bc4fc3550ca16966360c6d286177a44ab"
+    },
+    "boat": {
+      "quality_audit.json": "c2d54d02462db8e14e2a2b5aac98c074f5e1df16ec094cc4898d7341bc774527",
+      "motionforesight_observed_only.json": "c6eb9abfaa38c0317983b507586e4209931b903fb442c86c163e78b979b3cbd4",
+      "query_t0_manifest.json": "4ad6f69abcadcec442c3d590984cf81816c1ef7ee25bc5787f4c8f8c77234aed",
+      "query_frame0_mapping.json": "1583ff6f2890e01021b3afe1be9d71455d6ef47d9608901187ffe797d94318f6"
+    },
+    "soccerball": {
+      "quality_audit.json": "fb2eb3d3acc1f5b29ecb505bc7be5245e70f68aaae63a97e0fff4363d9d32f61",
+      "motionforesight_observed_only.json": "5aa814fbc9dd0f8296f813c3d021b29369e44075fe28843a2d7a187aebb700cb",
+      "query_t0_manifest.json": "b47d5e88bba66bc061cc2028afab75667e1d63a80934e77cb4e38e6d6ce8ab7c",
+      "query_frame0_mapping.json": "974f1f591bde2e93974543eba6a8b7d826f187ec3ae7a070f58a97d6f1a738d6"
+    }
+  },
+  "remote": {
+    "car-turn": {
+      "quality_audit.json": "ce492ef2bb403722ae6e22bfc681845b40ee8cdafa16c9603b03e6c5c9c0b25e",
+      "motionforesight_observed_only.json": "f1d2a6d73ba63ded0bd0f82f20bc245104794dfc5d5424009a36e8fd0a05ede5",
+      "query_t0_manifest.json": "1f20f52b52d2ea34aac905362697868064c72f2283e03f75bb5577e45f50fd9c",
+      "query_frame0_mapping.json": "d87ba3c21d1fe81945fa282a73ec8ea5d84a5e42e8f3be1a4bfbd199181b6f9a"
+    },
+    "drift-turn": {
+      "quality_audit.json": "b4c9fe8f70522623b6ec61acd7b101219616e4112627ebe1c2e3594f4171c50e",
+      "motionforesight_observed_only.json": "6414e48e835375c23db850ed335e60f4c9571835ce583888f57e132ccfd58a92",
+      "query_t0_manifest.json": "a8293e51dfeaf533abaaa365ebbe49a408e90bed183d955beba7ba4e4f0661b9",
+      "query_frame0_mapping.json": "f27d4778874dafce0e87aa8ef710119bc4fc3550ca16966360c6d286177a44ab"
+    },
+    "boat": {
+      "quality_audit.json": "c2d54d02462db8e14e2a2b5aac98c074f5e1df16ec094cc4898d7341bc774527",
+      "motionforesight_observed_only.json": "c6eb9abfaa38c0317983b507586e4209931b903fb442c86c163e78b979b3cbd4",
+      "query_t0_manifest.json": "4ad6f69abcadcec442c3d590984cf81816c1ef7ee25bc5787f4c8f8c77234aed",
+      "query_frame0_mapping.json": "1583ff6f2890e01021b3afe1be9d71455d6ef47d9608901187ffe797d94318f6"
+    },
+    "soccerball": {
+      "quality_audit.json": "fb2eb3d3acc1f5b29ecb505bc7be5245e70f68aaae63a97e0fff4363d9d32f61",
+      "motionforesight_observed_only.json": "5aa814fbc9dd0f8296f813c3d021b29369e44075fe28843a2d7a187aebb700cb",
+      "query_t0_manifest.json": "b47d5e88bba66bc061cc2028afab75667e1d63a80934e77cb4e38e6d6ce8ab7c",
+      "query_frame0_mapping.json": "974f1f591bde2e93974543eba6a8b7d826f187ec3ae7a070f58a97d6f1a738d6"
+    }
+  }
+}

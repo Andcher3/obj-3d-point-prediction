@@ -1,0 +1,20 @@
+{
+  "sampler": {
+    "counts": [16, 48, 64],
+    "status": "pass",
+    "selected_counts": [16, 48, 64]
+  },
+  "processor": {
+    "model": "allenai/MolmoMotion-4B-H3-F30",
+    "checkpoint": "/root/autodl-tmp/projects/molmo-motion/checkpoints/MolmoMotion-4B-H3-F30",
+    "repo": "/root/autodl-tmp/projects/molmo-motion",
+    "status": "blocked_by_fixed_query_interface",
+    "observed": {
+      "processor_load": "pass",
+      "16": "rejected: ValueError: points_3d_history must be (3, 8, 3); got (3, 16, 3)",
+      "48": "not_run_after_first_rejection",
+      "64": "not_run_after_first_rejection"
+    },
+    "interpretation": "The released AR processor exposes a fixed eight-query input contract in this environment. Formal E2 48-point and 64-point model inference cannot proceed without an adapter or a model/checkpoint that supports variable P. Eight points are not substituted for the frozen protocol."
+  }
+}

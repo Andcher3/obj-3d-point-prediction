@@ -1,0 +1,275 @@
+{
+  "status": "COMPLETE",
+  "date": "2026-09-28",
+  "protocol": "2026-09-27 joint relational decoder four-video DAVIS probe visualization",
+  "videos": {
+    "car-turn": {
+      "visualization_status": "COMPLETE",
+      "trajectory_projection_status": "COMPLETE",
+      "quality_gate_status": "FAIL",
+      "directory": "D:\\Pycharm\\post_graduate_project\\experiences_results\\surface-relation-davis-joint-decoder-probe-2026-09-28\\visualizations\\car-turn",
+      "teacher_video": {
+        "file": "teacher_full22_trackcraft_query_overlay.mp4",
+        "frame_count": 22,
+        "rendered_valid_points_per_frame": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ],
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "encode_fps": 8.0
+      },
+      "observed_video": {
+        "file": "observed7_trackcraft_query_overlay.mp4",
+        "frame_count": 7,
+        "rendered_valid_points_per_frame": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ],
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "encode_fps": 8.0
+      },
+      "t0_comparison": {
+        "file": "t0_teacher_observed_query_comparison.png",
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "teacher_rendered_count": 48,
+        "observed_rendered_count": 48
+      },
+      "sha256_manifest": "sha256_manifest.json"
+    },
+    "drift-turn": {
+      "visualization_status": "COMPLETE_PARTIAL_FAIL",
+      "trajectory_projection_status": "PARTIAL_FAIL_OUT_OF_FRAME_PROJECTIONS",
+      "quality_gate_status": "FAIL",
+      "directory": "D:\\Pycharm\\post_graduate_project\\experiences_results\\surface-relation-davis-joint-decoder-probe-2026-09-28\\visualizations\\drift-turn",
+      "teacher_video": {
+        "file": "teacher_full22_trackcraft_query_overlay.mp4",
+        "frame_count": 22,
+        "rendered_valid_points_per_frame": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          47,
+          45,
+          38,
+          37,
+          34,
+          26,
+          22,
+          19,
+          15,
+          10,
+          9,
+          9,
+          9,
+          9,
+          15,
+          18,
+          19
+        ],
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "encode_fps": 8.0
+      },
+      "observed_video": {
+        "file": "observed7_trackcraft_query_overlay.mp4",
+        "frame_count": 7,
+        "rendered_valid_points_per_frame": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ],
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "encode_fps": 8.0
+      },
+      "t0_comparison": {
+        "file": "t0_teacher_observed_query_comparison.png",
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "teacher_rendered_count": 45,
+        "observed_rendered_count": 48
+      },
+      "sha256_manifest": "sha256_manifest.json"
+    },
+    "boat": {
+      "visualization_status": "COMPLETE",
+      "trajectory_projection_status": "COMPLETE",
+      "quality_gate_status": "FAIL",
+      "directory": "D:\\Pycharm\\post_graduate_project\\experiences_results\\surface-relation-davis-joint-decoder-probe-2026-09-28\\visualizations\\boat",
+      "teacher_video": {
+        "file": "teacher_full22_trackcraft_query_overlay.mp4",
+        "frame_count": 22,
+        "rendered_valid_points_per_frame": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ],
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "encode_fps": 8.0
+      },
+      "observed_video": {
+        "file": "observed7_trackcraft_query_overlay.mp4",
+        "frame_count": 7,
+        "rendered_valid_points_per_frame": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ],
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "encode_fps": 8.0
+      },
+      "t0_comparison": {
+        "file": "t0_teacher_observed_query_comparison.png",
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "teacher_rendered_count": 48,
+        "observed_rendered_count": 48
+      },
+      "sha256_manifest": "sha256_manifest.json"
+    },
+    "soccerball": {
+      "visualization_status": "COMPLETE",
+      "trajectory_projection_status": "COMPLETE",
+      "quality_gate_status": "FAIL",
+      "directory": "D:\\Pycharm\\post_graduate_project\\experiences_results\\surface-relation-davis-joint-decoder-probe-2026-09-28\\visualizations\\soccerball",
+      "teacher_video": {
+        "file": "teacher_full22_trackcraft_query_overlay.mp4",
+        "frame_count": 22,
+        "rendered_valid_points_per_frame": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ],
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "encode_fps": 8.0
+      },
+      "observed_video": {
+        "file": "observed7_trackcraft_query_overlay.mp4",
+        "frame_count": 7,
+        "rendered_valid_points_per_frame": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ],
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "encode_fps": 8.0
+      },
+      "t0_comparison": {
+        "file": "t0_teacher_observed_query_comparison.png",
+        "resolution_hw": [
+          480,
+          854
+        ],
+        "teacher_rendered_count": 48,
+        "observed_rendered_count": 48
+      },
+      "sha256_manifest": "sha256_manifest.json"
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-09",
+  "applied": true,
+  "removed": [
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\.cache\\motionforesight\\best.pt",
+      "bytes": 293148992,
+      "reason": "Release ZIP; all 3 entries SHA256-identical to retained extracted files",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_boat_22frames_t0_raw.png",
+      "bytes": 1130907,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_boat_22frames.mp4",
+      "bytes": 1688281,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_boat_7frames_t0_raw.png",
+      "bytes": 1130880,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_boat_7frames.mp4",
+      "bytes": 546064,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_car-turn_22frames_t0_raw.png",
+      "bytes": 1531213,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_car-turn_22frames.mp4",
+      "bytes": 1998464,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_car-turn_7frames_t0_raw.png",
+      "bytes": 1531205,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_car-turn_7frames.mp4",
+      "bytes": 622895,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_drift-turn_22frames_t0_raw.png",
+      "bytes": 1094313,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_drift-turn_22frames.mp4",
+      "bytes": 2102623,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_drift-turn_7frames_t0_raw.png",
+      "bytes": 1094260,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_drift-turn_7frames.mp4",
+      "bytes": 564432,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_soccerball_22frames_t0_raw.png",
+      "bytes": 1901553,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_soccerball_22frames.mp4",
+      "bytes": 3167159,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_soccerball_7frames_t0_raw.png",
+      "bytes": 1901551,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\render-smoke-synthetic-NOT-MODEL\\SYNTHETIC-NOT-MODEL_soccerball_7frames.mp4",
+      "bytes": 1042252,
+      "reason": "Reconstructible synthetic rendering test; summary JSON and code retained",
+      "deleted": true
+    },
+    {
+      "path": "D:\\Pycharm\\post_graduate_project\\experiences_results\\uniquery4r-davis-visual-review-2026-10-09\\input_bundle.tar.gz",
+      "bytes": 12156883,
+      "reason": "Temporary SSH input bundle; approved local inputs and all validated remote inputs retained",
+      "deleted": true
+    }
+  ],
+  "verified_archive_entries": [
+    {
+      "archive_entry": "trainedon_ss100k/best.pt",
+      "retained_file": "D:\\Pycharm\\post_graduate_project\\.cache\\motionforesight\\extracted\\trainedon_ss100k\\best.pt",
+      "sha256": "18E7EE3A003C5E097F5263B6BB5E1A367AE37B8C4CC84EE56A7B1DE41641CC8B"
+    },
+    {
+      "archive_entry": "trainedon_ss100k/config.json",
+      "retained_file": "D:\\Pycharm\\post_graduate_project\\.cache\\motionforesight\\extracted\\trainedon_ss100k\\config.json",
+      "sha256": "49EB632D9896E24F26751EF1B5576EF62BCA88E974BE466F1E74E83D0C8E5B9C"
+    },
+    {
+      "archive_entry": "trainedon_ss100k/last.pt",
+      "retained_file": "D:\\Pycharm\\post_graduate_project\\.cache\\motionforesight\\extracted\\trainedon_ss100k\\last.pt",
+      "sha256": "6B612B1170ED7A47488040F0CB878826768BE2103645C47338D1E34B0EF394DD"
+    }
+  ],
+  "removed_bytes": 328353927.0,
+  "free_bytes_before": 8588787712,
+  "free_bytes_after": 8917184512,
+  "protected": "Original RGB/masks, queries, real experimental arrays, extracted model checkpoints, source code and reports",
+  "davis_original_zip_retained": true
+}

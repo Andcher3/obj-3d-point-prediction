@@ -1,0 +1,134 @@
+{
+  "local_transfer_sha256_passed": true,
+  "all_browser_videos_decoded": true,
+  "scene_count": 18,
+  "scenes": [
+    {
+      "scene_id": "scene_3626",
+      "frames": 22,
+      "browser_video_sha256": "e700f841a443c029ce3bc2065ecf545046436afbf45cbb16d8fffe583da8025b",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_1782",
+      "frames": 22,
+      "browser_video_sha256": "3d1abcced12648720215760774ea43fd559ca2dfef1927818c5b5ad84ffaadad",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_3881",
+      "frames": 22,
+      "browser_video_sha256": "89cb5ae2ce1e65022ac18514407cd418d8e92767f42cde2fba388287bca47690",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_2344",
+      "frames": 22,
+      "browser_video_sha256": "81e18855bbe6d4dfb0033818e2204eb7cf018d76a7c0b6ad2e80d1b0f9281908",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_3782",
+      "frames": 22,
+      "browser_video_sha256": "b1c1429416287750cca31527f65a24465a4746e3828ff5bfb1a9851bd2eb06f3",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_5916",
+      "frames": 22,
+      "browser_video_sha256": "6c22be4c5cca0dea9d2e12d8a8755f47d8ba804c7825a93a1d0b02dca65d487f",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_1924",
+      "frames": 22,
+      "browser_video_sha256": "bb8f373b38b297b355d4b94a80b33dbeffd81d934bf481beda55518815e3032a",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_5025",
+      "frames": 22,
+      "browser_video_sha256": "356ad5efeae970f9376f2add62eaa395db7fedc622cc918237322bca3ed3b0db",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_1143",
+      "frames": 22,
+      "browser_video_sha256": "a74672eaf52234864cfd330529d1da68135ab2610b44e69da25cf28689cd1522",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_4203",
+      "frames": 22,
+      "browser_video_sha256": "85ebbb53b72c3237a5f5b5521b8512da624b5cf97adae4e360739cdd75a1aee3",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_2854",
+      "frames": 22,
+      "browser_video_sha256": "8286ccda5014710a79f20ec0c00649b4e42b3541c91adbb463267f8aa1f1ec64",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_1179",
+      "frames": 22,
+      "browser_video_sha256": "635309b662d378aeb1e992f384b646a5e7f178992e37a0714aeecabb75354ff9",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_813",
+      "frames": 22,
+      "browser_video_sha256": "3145c74647293658f04d90e161e01e604b91da9a5e0a1f267acbf31036cc9426",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_346",
+      "frames": 22,
+      "browser_video_sha256": "7fc29f26e0d33446d7073f1bdc86a06b992f290611a9bdc93f46e7511061abae",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_5702",
+      "frames": 22,
+      "browser_video_sha256": "f60923b493a7852bf348113bdc38a3107598fca38ddeff0eca4e26add60f9a37",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_2329",
+      "frames": 22,
+      "browser_video_sha256": "baf7c289c2e66b7344204754dc595c2989f5e5351059660b274ee150dcba38bc",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_3457",
+      "frames": 22,
+      "browser_video_sha256": "5a1c213685d36279e4db391a94b57c6cd85ec69e0de5af7c17565e66ab8df189",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    },
+    {
+      "scene_id": "scene_1580",
+      "frames": 22,
+      "browser_video_sha256": "7729a5ecf5417ea35386fd8afef4d9927182549e6fa49842e46a4c637993e18b",
+      "raw_prediction_sha256_unchanged": null,
+      "raw_prediction_location": "remote only"
+    }
+  ],
+  "model_forward_called": false
+}

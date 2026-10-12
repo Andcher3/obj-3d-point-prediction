@@ -1,0 +1,57 @@
+{
+  "cpu_interface_checks_passed": true,
+  "model_forward_called": false,
+  "pair_selection_7_and_22": true,
+  "pixel_roundtrip_and_projection_unit_test": true,
+  "videos": [
+    {
+      "video": "car-turn",
+      "image_shape": [
+        22,
+        3,
+        280,
+        504
+      ],
+      "source_frame": 20
+    },
+    {
+      "video": "drift-turn",
+      "image_shape": [
+        22,
+        3,
+        280,
+        504
+      ],
+      "source_frame": 20
+    },
+    {
+      "video": "boat",
+      "image_shape": [
+        22,
+        3,
+        280,
+        504
+      ],
+      "source_frame": 20
+    },
+    {
+      "video": "soccerball",
+      "image_shape": [
+        22,
+        3,
+        280,
+        504
+      ],
+      "source_frame": 14
+    }
+  ]
+}
+{"stage": "GPU_VISUAL_INFERENCE", "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "compiled_architectures": ["sm_70", "sm_75", "sm_80", "sm_86", "sm_90", "sm_100", "sm_120"]}
+{"name": "car-turn_22frames", "frame_count": 22, "query_source_model_index": 6, "query_source_video_index": 20, "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62", "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a", "seconds": 1.4707093015313148, "peak_allocated_bytes": 11782798336, "raw_output": true, "t0_posthoc_alignment": false, "scale": "global ambiguous model scale; not meters", "coordinate_frame": "context view0 camera", "video_fps": 8, "video_fps_meaning": "playback only", "numerical_quality_evaluation_started": false}
+{"name": "car-turn_7frames", "frame_count": 7, "query_source_model_index": 6, "query_source_video_index": 20, "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62", "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a", "seconds": 0.13254552334547043, "peak_allocated_bytes": 10517212160, "raw_output": true, "t0_posthoc_alignment": false, "scale": "global ambiguous model scale; not meters", "coordinate_frame": "context view0 camera", "video_fps": 8, "video_fps_meaning": "playback only", "numerical_quality_evaluation_started": false}
+{"name": "drift-turn_22frames", "frame_count": 22, "query_source_model_index": 6, "query_source_video_index": 20, "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62", "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a", "seconds": 0.3505711816251278, "peak_allocated_bytes": 11781508096, "raw_output": true, "t0_posthoc_alignment": false, "scale": "global ambiguous model scale; not meters", "coordinate_frame": "context view0 camera", "video_fps": 8, "video_fps_meaning": "playback only", "numerical_quality_evaluation_started": false}
+{"name": "drift-turn_7frames", "frame_count": 7, "query_source_model_index": 6, "query_source_video_index": 20, "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62", "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a", "seconds": 0.11283713206648827, "peak_allocated_bytes": 10517212160, "raw_output": true, "t0_posthoc_alignment": false, "scale": "global ambiguous model scale; not meters", "coordinate_frame": "context view0 camera", "video_fps": 8, "video_fps_meaning": "playback only", "numerical_quality_evaluation_started": false}
+{"name": "boat_22frames", "frame_count": 22, "query_source_model_index": 6, "query_source_video_index": 20, "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62", "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a", "seconds": 0.34846246242523193, "peak_allocated_bytes": 11781508096, "raw_output": true, "t0_posthoc_alignment": false, "scale": "global ambiguous model scale; not meters", "coordinate_frame": "context view0 camera", "video_fps": 8, "video_fps_meaning": "playback only", "numerical_quality_evaluation_started": false}
+{"name": "boat_7frames", "frame_count": 7, "query_source_model_index": 6, "query_source_video_index": 20, "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62", "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a", "seconds": 0.11209569498896599, "peak_allocated_bytes": 10517212160, "raw_output": true, "t0_posthoc_alignment": false, "scale": "global ambiguous model scale; not meters", "coordinate_frame": "context view0 camera", "video_fps": 8, "video_fps_meaning": "playback only", "numerical_quality_evaluation_started": false}
+{"name": "soccerball_22frames", "frame_count": 22, "query_source_model_index": 6, "query_source_video_index": 14, "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62", "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a", "seconds": 0.3478057496249676, "peak_allocated_bytes": 11781508096, "raw_output": true, "t0_posthoc_alignment": false, "scale": "global ambiguous model scale; not meters", "coordinate_frame": "context view0 camera", "video_fps": 8, "video_fps_meaning": "playback only", "numerical_quality_evaluation_started": false}
+{"name": "soccerball_7frames", "frame_count": 7, "query_source_model_index": 6, "query_source_video_index": 14, "git_commit": "95119742e61c64c27b09349035019c8cd7b41e62", "hf_revision": "f1143e4cc35eec118e46bc4a47a680d09125573a", "seconds": 0.11177706718444824, "peak_allocated_bytes": 10517212160, "raw_output": true, "t0_posthoc_alignment": false, "scale": "global ambiguous model scale; not meters", "coordinate_frame": "context view0 camera", "video_fps": 8, "video_fps_meaning": "playback only", "numerical_quality_evaluation_started": false}

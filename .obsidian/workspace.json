@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "0a8a606b148ab6fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "f35b6ede205cf322",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e15f7684cc85dfe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TrajLoom.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TrajLoom"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6f07daddd09b6375",
+    "type": "split",
+    "children": [
+      {
+        "id": "37935ed1526c975e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80ee5e248402e2d1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "8e4e85dd3ad002a6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "2e455ca07535e13f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "00694379bc61a8e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb73fbb315881b68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2fa374725a7efe25",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "idea.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "0ca73f72b420dd11",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "experiences_results/L1-perturbation/complete-search/cut_0.mp4",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "9a2809ceed9625a6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "ff87340a183de197",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "3f416759e2bc1920",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "experiences_results/L1-perturbation/complete-search/cut_0.mp4",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "0e15f7684cc85dfe",
+  "lastOpenFiles": [
+    "reports/progress/2026-10-08-reference-point-constraint-literature.md",
+    "reports/progress/2026-10-08-object-anchor-relation-hypothesis.md",
+    "reports/progress/2026-10-08-teacher-local-error-source-audit.md",
+    "experiences_results/teacher-local-error-audit-2026-10-08/audit.json",
+    "experiences_results/teacher-local-error-audit-2026-10-08",
+    "scripts/__pycache__/audit_davis_ab_teacher_bundle.cpython-39.pyc",
+    "scripts/audit_teacher_local_error_sources.py",
+    "reports/progress/2026-10-08-teacher-error-attribution-review.md",
+    "MotionForesight.md",
+    "example.pptx",
+    "reports/progress/2026-09-29-davis-ab-teacher-experiment.md",
+    "experiences_results/surface-relation-davis-ab-teacher-2026-09-29/remote-files-sha256.txt",
+    "experiences_results/surface-relation-davis-ab-teacher-2026-09-29/local-files-sha256.txt",
+    "experiences_results/surface-relation-davis-ab-teacher-2026-09-29/files/route_a/soccerball/quality_audit.json",
+    "experiences_results/surface-relation-davis-ab-teacher-2026-09-29/files/route_a/drift-turn/quality_audit.json",
+    "experiences_results/surface-relation-davis-ab-teacher-2026-09-29/files/route_a/car-turn/quality_audit.json",
+    "reports/progress/2026-09-28-davis-official-interleaved-pj0-audit.md",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/README.md",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/soccerball/qa_teacher_keyframes.png",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/boat/qa_teacher_keyframes.png",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/drift-turn/qa_teacher_keyframes.png",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/car-turn/qa_teacher_keyframes.png",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/soccerball/frame0_source14_48_queries.png",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/boat/frame0_source14_48_queries.png",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/drift-turn/frame0_source14_48_queries.png",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/car-turn/frame0_source14_48_queries.png",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/soccerball/t0_teacher_observed_query_comparison.png",
+    "experiences_results/surface-relation-davis-official-interleaved-pj0-2026-09-28/visualizations/car-turn/t0_teacher_observed_query_comparison.png",
+    "reports/progress/2026-09-28-davis-trackcraft-frame0-coordinate-diagnosis.md",
+    "reports/progress/2026-09-28-davis-frame0-overlay-offset-diagnosis.md",
+    "reports/progress/2026-09-28-davis-frame0-direct-four-video-audit.md",
+    "experiences_results/surface-relation-davis-frame0-direct-2026-09-28/README.md",
+    "reports/progress/2026-09-28-davis-corrected-frame0-query-previews.md",
+    "insight.md",
+    "TrajLoom.md",
+    "idea.md",
+    "reports/progress/2026-09-20-independent-method-review.md",
+    "reports/progress/2026-09-20-current-method-academic-risk-review.md",
+    "reports/progress/2026-09-18-motionforesight-demo-failure-analysis.md",
+    "reports/progress/2026-09-18-trajloom-event-text-probe.md",
+    "reports/analysis/2026-09-18-trajloom-event-text-probe/report.md",
+    "reports/progress/2026-09-18-token-memory-modality-balancing-and-cascade-training.md",
+    "teacher 是否真的能严格遵守时间边界.md",
+    "reports/progress/2026-09-18-current-method-academic-audit-and-fast-tests.md",
+    "reports/progress/2026-09-16-modeseq-text-transfer-clarification.md",
+    "reports/progress/2026-09-16-two-stage-feasibility-tests.md"
+  ]
+}

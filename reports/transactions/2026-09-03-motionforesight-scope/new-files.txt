@@ -1,0 +1,7 @@
+reports\ideas\2026-09-03-motionforesight-probabilistic-semantic-design.md
+reports\progress\2026-09-03-motionforesight-scope-reset.md
+archive\imu\README.md
+archive\imu\AGENTS.pre-2026-09-03.md
+archive\imu\AGENTS_zh.pre-2026-09-03.md
+archive\imu\research_roadmap.pre-2026-09-03.md
+archive\imu\progress_log.pre-2026-09-03.md

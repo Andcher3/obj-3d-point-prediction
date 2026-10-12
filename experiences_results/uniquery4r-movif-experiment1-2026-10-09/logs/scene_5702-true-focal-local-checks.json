@@ -1,0 +1,11 @@
+{
+  "all_file_sha256_passed": true,
+  "video_decode_passed": true,
+  "frames": 22,
+  "resolution": [
+    2560,
+    560
+  ],
+  "raw_arrays_preserved_and_audited_on_remote": true,
+  "model_forward_called": false
+}

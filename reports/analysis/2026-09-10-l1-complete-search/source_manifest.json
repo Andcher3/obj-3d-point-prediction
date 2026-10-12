@@ -1,0 +1,614 @@
+{
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\complete_search_report.json": {
+    "sha256": "52e6ad6aecca6c0ace25e733eb2cb689b8d1e7616afa9b098f7990772589f50f",
+    "bytes": 46447
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_00_sigma_0_seed_0_latents.npz": {
+    "sha256": "ff8a0ea42f4c30dcbfb2e3bceebb68bee950af951a72d64bc52eed3db70d574a",
+    "bytes": 25546
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_00_sigma_0_seed_0_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_01_sigma_0_seed_0_latents.npz": {
+    "sha256": "ff8a0ea42f4c30dcbfb2e3bceebb68bee950af951a72d64bc52eed3db70d574a",
+    "bytes": 25546
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_01_sigma_0_seed_0_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_02_sigma_0.005_seed_11_latents.npz": {
+    "sha256": "93c8bfa8febb19fbb9c7a82be7806408b57b08fc8f23e67fa52997cd3765fc3d",
+    "bytes": 25570
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_02_sigma_0.005_seed_11_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_03_sigma_0.005_seed_22_latents.npz": {
+    "sha256": "7c10c907765b5e6733b39504e4859d39455f639e5a8778c83fccd590a6bd4a79",
+    "bytes": 25599
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_03_sigma_0.005_seed_22_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_04_sigma_0.01_seed_11_latents.npz": {
+    "sha256": "02d6421cd1cbb7e538e46da725f89c81a71a767f48c75a88c5f569293df1416f",
+    "bytes": 25576
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_04_sigma_0.01_seed_11_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_05_sigma_0.01_seed_22_latents.npz": {
+    "sha256": "b71fbbcc0fd4bfbce82eed626699b9f24e2b70aa6281757b839a7a34101f5312",
+    "bytes": 25564
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_05_sigma_0.01_seed_22_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_06_sigma_0.03_seed_11_latents.npz": {
+    "sha256": "0b88817581ad154356a127331aef0f8fed4a57806ddd159a16e17bf15a42bf5c",
+    "bytes": 25563
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_06_sigma_0.03_seed_11_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_07_sigma_0.03_seed_22_latents.npz": {
+    "sha256": "bb1dc65d590eb928ed25c9828f022bc9d780b838fa2f1d772de8e119509d2ea7",
+    "bytes": 25569
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_07_sigma_0.03_seed_22_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_08_sigma_0.1_seed_11_latents.npz": {
+    "sha256": "791f0021e9be95094ec008efa18e586184ed93c4234025cda2ad939ae94de1a3",
+    "bytes": 25534
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_08_sigma_0.1_seed_11_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_09_sigma_0.1_seed_22_latents.npz": {
+    "sha256": "49dc406724d8f628cf1e1a71c42de61f39068250499fb73c94bb7646bc5ddaea",
+    "bytes": 25556
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_09_sigma_0.1_seed_22_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_10_sigma_0.2_seed_11_latents.npz": {
+    "sha256": "c1a01094e807adf2ccc2f044ac9c999eda823f29bca6c623a5640ac9ea7ae8e6",
+    "bytes": 25486
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_10_sigma_0.2_seed_11_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_11_sigma_0.2_seed_22_latents.npz": {
+    "sha256": "b125343fb4a7bf029aa7ad4eb4b4dfc36d080a8ab88381b000713da7b6710fe7",
+    "bytes": 25497
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r0_11_sigma_0.2_seed_22_raw.txt": {
+    "sha256": "d962de4f51ce0c1a78c85b272b428fb4beeb8f032539c0125b756de2d5939315",
+    "bytes": 896
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_00_sigma_0.005_seed_11_latents.npz": {
+    "sha256": "be1fe439046351df43b55b264b45dd72911bba669f34a9cd0dbb958e45de238d",
+    "bytes": 25577
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_00_sigma_0.005_seed_11_raw.txt": {
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "bytes": 763
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_01_sigma_0.005_seed_22_latents.npz": {
+    "sha256": "e57f54a011c85030546d2b2f345be1b3cb0fba5a12b747cf8de3975698e64790",
+    "bytes": 25597
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_01_sigma_0.005_seed_22_raw.txt": {
+    "sha256": "1c4f9c6511ee3ee08d09cdc4db96aecbd5e9b2b03ed8a3857630606e232ad74c",
+    "bytes": 770
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_02_sigma_0.01_seed_11_latents.npz": {
+    "sha256": "7506dae5f6ebeda0e4971ff5ba517c2de9bf355d89cc094d5f2fabf794fa92be",
+    "bytes": 25578
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_02_sigma_0.01_seed_11_raw.txt": {
+    "sha256": "cb318e1dd8d07751497e0e60fba966bad97b5060fdb2834a685b70d6528b3602",
+    "bytes": 728
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_03_sigma_0.01_seed_22_latents.npz": {
+    "sha256": "bdee519d9fbc946b6d1ad7d7a7b040935c0ae166a893e3d27dd54cc20697d3d0",
+    "bytes": 25568
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_03_sigma_0.01_seed_22_raw.txt": {
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "bytes": 763
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_04_sigma_0.03_seed_11_latents.npz": {
+    "sha256": "057c57974ac480d6d21f7406e2d83eb05447d4c11260bb5254345c8fe81328e9",
+    "bytes": 25560
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_04_sigma_0.03_seed_11_raw.txt": {
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "bytes": 763
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_05_sigma_0.03_seed_22_latents.npz": {
+    "sha256": "e715848e0d50238045213880980b4ecc77a6d3114cb02d1d482a7ae77739c184",
+    "bytes": 25574
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_05_sigma_0.03_seed_22_raw.txt": {
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "bytes": 763
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_06_sigma_0.1_seed_11_latents.npz": {
+    "sha256": "19e48066acc2ca089110e8f19e086926114c792d34317e37e8304d13bf29e285",
+    "bytes": 25552
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_06_sigma_0.1_seed_11_raw.txt": {
+    "sha256": "cb318e1dd8d07751497e0e60fba966bad97b5060fdb2834a685b70d6528b3602",
+    "bytes": 728
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_07_sigma_0.1_seed_22_latents.npz": {
+    "sha256": "7981c0ac115f5887960716ec8293cb006b22c6214936b1fe6beaa883758920dc",
+    "bytes": 25547
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_07_sigma_0.1_seed_22_raw.txt": {
+    "sha256": "cb318e1dd8d07751497e0e60fba966bad97b5060fdb2834a685b70d6528b3602",
+    "bytes": 728
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_08_sigma_0.2_seed_11_latents.npz": {
+    "sha256": "0ee0e15256eaffbfeae78f6008d12172291a99b3495e849a281b6caca3bc61b1",
+    "bytes": 25495
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_08_sigma_0.2_seed_11_raw.txt": {
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "bytes": 763
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_09_sigma_0.2_seed_22_latents.npz": {
+    "sha256": "863c269b8c0e9782bb4d0987ed7669ed97c82d4e7245735a8359dc5c21bb51b2",
+    "bytes": 25471
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\r1_09_sigma_0.2_seed_22_raw.txt": {
+    "sha256": "36dafb78038b985d4bed628a6e96dc4ada0931e4938d992874a2dc12fa522988",
+    "bytes": 763
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0\\run.log": {
+    "sha256": "f2d1b3fe53172481f54e4749e4e416fe178ce55581891ce53ef1297d298d064d",
+    "bytes": 47145
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_0.mp4": {
+    "sha256": "3a19e1596686eafb10ea5aa3d304abcc24d464d6f3a2ceb2a7ce544b23363e62",
+    "bytes": 569095
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\complete_search_report.json": {
+    "sha256": "15358f4aea3256699a3b735fbb93b6afabd9e119206239cc2b4cd385b918574e",
+    "bytes": 42430
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_00_sigma_0_seed_0_latents.npz": {
+    "sha256": "41e1d9ec5cdf354ea73cfcaa0b858c505602207c12a491590c40695029e991ff",
+    "bytes": 25547
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_00_sigma_0_seed_0_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_01_sigma_0_seed_0_latents.npz": {
+    "sha256": "41e1d9ec5cdf354ea73cfcaa0b858c505602207c12a491590c40695029e991ff",
+    "bytes": 25547
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_01_sigma_0_seed_0_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_02_sigma_0.005_seed_11_latents.npz": {
+    "sha256": "99c1fb05052da759a15fc55c10f8fa2d86331fea8620d2208a903661996421c7",
+    "bytes": 25575
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_02_sigma_0.005_seed_11_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_03_sigma_0.005_seed_22_latents.npz": {
+    "sha256": "72d15f81623bde37c9aa90dc9d67661d07ea0846181b311475ef8c80772c3e5f",
+    "bytes": 25542
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_03_sigma_0.005_seed_22_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_04_sigma_0.01_seed_11_latents.npz": {
+    "sha256": "d31d3258bca580c20ac684b5507f433ec80362bccd46b12c9c61b263aeb9b0d8",
+    "bytes": 25564
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_04_sigma_0.01_seed_11_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_05_sigma_0.01_seed_22_latents.npz": {
+    "sha256": "74008dab03c4b9f2198b592f44a7a60f226714b53419ade910891aa0979da8e0",
+    "bytes": 25550
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_05_sigma_0.01_seed_22_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_06_sigma_0.03_seed_11_latents.npz": {
+    "sha256": "ed3f0205ebd8f7b89fa2ac2477381745efae036ff491cf6ecfa398d536fad5eb",
+    "bytes": 25561
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_06_sigma_0.03_seed_11_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_07_sigma_0.03_seed_22_latents.npz": {
+    "sha256": "3d3fc401dffbb7d0908ffa5fd032c4afb430486d85854979328ff99e391ef83b",
+    "bytes": 25569
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_07_sigma_0.03_seed_22_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_08_sigma_0.1_seed_11_latents.npz": {
+    "sha256": "2805291ee47fb0294118c4cab5ce3f9ef195969accb401008b42beba936fb401",
+    "bytes": 25569
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_08_sigma_0.1_seed_11_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_09_sigma_0.1_seed_22_latents.npz": {
+    "sha256": "35efac0856270d4ff5bdf927edd8fec57d37893ffc1b32290b09ab48c2553e14",
+    "bytes": 25542
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_09_sigma_0.1_seed_22_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_10_sigma_0.2_seed_11_latents.npz": {
+    "sha256": "bcb53cb0d80608eda4346464f58f51a732d2458d780b0a98d87fc893cefd5756",
+    "bytes": 25486
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_10_sigma_0.2_seed_11_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_11_sigma_0.2_seed_22_latents.npz": {
+    "sha256": "33183b7e83afcffcacdd94621bfe27122820cdba9449c81b80617c75a9229b40",
+    "bytes": 25484
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r0_11_sigma_0.2_seed_22_raw.txt": {
+    "sha256": "4f4236eef74a38dce83d5316369f407443858a313cbf28b6074fc9f8946739cb",
+    "bytes": 760
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_00_sigma_0.005_seed_11_latents.npz": {
+    "sha256": "3b6bc6c76d468a2a92e441eb3b9b08cb12f0b0ab99efad4ec3f1ee76fb19c005",
+    "bytes": 25591
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_00_sigma_0.005_seed_11_raw.txt": {
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "bytes": 793
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_01_sigma_0.005_seed_22_latents.npz": {
+    "sha256": "477248533fe7dada548129b8f8bd3b667814aa3b73356f723de10d5e08da3afd",
+    "bytes": 25586
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_01_sigma_0.005_seed_22_raw.txt": {
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "bytes": 793
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_02_sigma_0.01_seed_11_latents.npz": {
+    "sha256": "459a0c84b4de432d7c7917b8deab9c03f995435178211b60f5a1938fb28d6ac5",
+    "bytes": 25576
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_02_sigma_0.01_seed_11_raw.txt": {
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "bytes": 793
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_03_sigma_0.01_seed_22_latents.npz": {
+    "sha256": "9f5a956625fc1012f1d7de888223ff52a24ca9cddbf2036bef30610515ee4f7d",
+    "bytes": 25605
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_03_sigma_0.01_seed_22_raw.txt": {
+    "sha256": "42fbe145f95f193441d8332e4e51a7348ce6134caf6d025f94a1a068f511ed30",
+    "bytes": 798
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_04_sigma_0.03_seed_11_latents.npz": {
+    "sha256": "30b65c842732e2d4e3717cdbef7e37a5030d92cd3dd55d60281bb11f3c95870a",
+    "bytes": 25580
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_04_sigma_0.03_seed_11_raw.txt": {
+    "sha256": "bff55f1fc3af03dffa500fceed5158b6a80c6c09712aad21df7359178a5b5ed2",
+    "bytes": 794
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_05_sigma_0.03_seed_22_latents.npz": {
+    "sha256": "bb88939d945700877c7af956a45bee30b0a89a541ea5e9b9fb899ca0bfe3f63c",
+    "bytes": 25573
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_05_sigma_0.03_seed_22_raw.txt": {
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "bytes": 793
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_06_sigma_0.1_seed_11_latents.npz": {
+    "sha256": "bb8ea1963c6842405eeb8a922ba3fc9a953cff989e6dace96d6bb4772111613a",
+    "bytes": 25568
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_06_sigma_0.1_seed_11_raw.txt": {
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "bytes": 793
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_07_sigma_0.1_seed_22_latents.npz": {
+    "sha256": "29e156fd1dc842d8b8813558354a4dba60cffc556da71654ea09a0ec1f9e748c",
+    "bytes": 25531
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_07_sigma_0.1_seed_22_raw.txt": {
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "bytes": 793
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_08_sigma_0.2_seed_11_latents.npz": {
+    "sha256": "13feb1faf54dae5e902e6ad39543ef3ec1d081ff8615f07f262839fa0480deaa",
+    "bytes": 25494
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_08_sigma_0.2_seed_11_raw.txt": {
+    "sha256": "5bdcdcf5fdb219855c6fd92505fcb3783b8622aa6eb65340f8816a995054a9ad",
+    "bytes": 793
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_09_sigma_0.2_seed_22_latents.npz": {
+    "sha256": "a86c9f4e9c0afc21408805afef7ca1c36b59d71e99c107451d401c0210da152c",
+    "bytes": 25499
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\r1_09_sigma_0.2_seed_22_raw.txt": {
+    "sha256": "42fbe145f95f193441d8332e4e51a7348ce6134caf6d025f94a1a068f511ed30",
+    "bytes": 798
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1\\run.log": {
+    "sha256": "fc338f37bca43377fe201189ebcfd4fc9ba262325fb808c383e640724d22d566",
+    "bytes": 43128
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_1.mp4": {
+    "sha256": "974a3e8b4cdf0b8ec94a2437534ad1d15751a549ab749b47cf2c0c7fbd95bcfb",
+    "bytes": 605351
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\complete_search_report.json": {
+    "sha256": "33eab27e33ed59b3c0962c6d7764514c6951d75550d9b3a13dd0dd4ab0d928f8",
+    "bytes": 42280
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_00_sigma_0_seed_0_latents.npz": {
+    "sha256": "858c795845bee967921b9ab94d08ad1042fe2c5b9913e7b6f44e4d99efeec2c6",
+    "bytes": 25507
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_00_sigma_0_seed_0_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_01_sigma_0_seed_0_latents.npz": {
+    "sha256": "858c795845bee967921b9ab94d08ad1042fe2c5b9913e7b6f44e4d99efeec2c6",
+    "bytes": 25507
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_01_sigma_0_seed_0_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_02_sigma_0.005_seed_11_latents.npz": {
+    "sha256": "634b304f40713d211177982cfdd205483b2a0ac2bf935a065f32ad61fea7576d",
+    "bytes": 25578
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_02_sigma_0.005_seed_11_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_03_sigma_0.005_seed_22_latents.npz": {
+    "sha256": "eb5650a1349a8befd0d22aa0ca5ad90e7715204f57aad842ad682108ccaa4e6a",
+    "bytes": 25587
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_03_sigma_0.005_seed_22_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_04_sigma_0.01_seed_11_latents.npz": {
+    "sha256": "99c2bf158425ba9a91653b6d9175863255027c059ac60242c84d3fe19143cc9a",
+    "bytes": 25578
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_04_sigma_0.01_seed_11_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_05_sigma_0.01_seed_22_latents.npz": {
+    "sha256": "cb218563bf2ab4bf9909b6c5442725661bbc6dbf209c9d1e2115063f1f8ecea1",
+    "bytes": 25582
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_05_sigma_0.01_seed_22_raw.txt": {
+    "sha256": "2bce95e8ef472a55543fd388b8d3b8d715506b478a472496c7626661c1a37758",
+    "bytes": 853
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_06_sigma_0.03_seed_11_latents.npz": {
+    "sha256": "69d1debca85a03c70e4a18e7d0cf0833c0f274ea552693bfb18883cad0e94914",
+    "bytes": 25570
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_06_sigma_0.03_seed_11_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_07_sigma_0.03_seed_22_latents.npz": {
+    "sha256": "52948efc33acc6c3ed8e5050de585815ba7d134be03cb258fa23ec53e74de428",
+    "bytes": 25559
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_07_sigma_0.03_seed_22_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_08_sigma_0.1_seed_11_latents.npz": {
+    "sha256": "1a7a9ca063fbc6e2796974bbcd153d126de5ae71aa0d22607b655fd6e95f1e5c",
+    "bytes": 25544
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_08_sigma_0.1_seed_11_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_09_sigma_0.1_seed_22_latents.npz": {
+    "sha256": "8e8f36137a0e4d83bfbf2d828ef3fb7aa95741eb331b0442e03f711f6cc9c246",
+    "bytes": 25541
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_09_sigma_0.1_seed_22_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_10_sigma_0.2_seed_11_latents.npz": {
+    "sha256": "f9d09046340760c8705b9b4471de41ea53dba1d736da7fe4cbb5933d8e44bfd6",
+    "bytes": 25487
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_10_sigma_0.2_seed_11_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_11_sigma_0.2_seed_22_latents.npz": {
+    "sha256": "92264eb82b3a85fbf412932abf7ec0ac1cd9c420c55c58b2aa602377849614ba",
+    "bytes": 25490
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r0_11_sigma_0.2_seed_22_raw.txt": {
+    "sha256": "45e5f98809cae72417eb39b69088f0ce49b295b28a00fae0c1598af52c22bdf9",
+    "bytes": 768
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_00_sigma_0.005_seed_11_latents.npz": {
+    "sha256": "14b1810270e71ed526846ce5bced6da395b60fc71db1a76335f046c3ec5edfa3",
+    "bytes": 25570
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_00_sigma_0.005_seed_11_raw.txt": {
+    "sha256": "84817b934ebeb09bdd58593f1568a208d4b97536ff523578105ea51e2df85a9a",
+    "bytes": 778
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_01_sigma_0.005_seed_22_latents.npz": {
+    "sha256": "d4232d4edd33133d4a71c277e0eeeb85f6155609add5fe32dbcb6918054a2412",
+    "bytes": 25575
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_01_sigma_0.005_seed_22_raw.txt": {
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "bytes": 772
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_02_sigma_0.01_seed_11_latents.npz": {
+    "sha256": "96cbbdd673738e88d84517740c49bbae66e183003e60a74d3c8ff5d1be0e735e",
+    "bytes": 25570
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_02_sigma_0.01_seed_11_raw.txt": {
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "bytes": 772
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_03_sigma_0.01_seed_22_latents.npz": {
+    "sha256": "45e8324b47d1c68caa25398184a6c406c96f7ac4d0c00d39abd58bccb427fc8a",
+    "bytes": 25576
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_03_sigma_0.01_seed_22_raw.txt": {
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "bytes": 772
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_04_sigma_0.03_seed_11_latents.npz": {
+    "sha256": "c18fe3919e865744ddcb14a9c84efd8ccd91808ee0a4d45589d502752e9ed109",
+    "bytes": 25597
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_04_sigma_0.03_seed_11_raw.txt": {
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "bytes": 772
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_05_sigma_0.03_seed_22_latents.npz": {
+    "sha256": "460c2d7b5765491de125acf53c84ddc7fadbfd127d73abd01ec268bc5f8665b4",
+    "bytes": 25550
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_05_sigma_0.03_seed_22_raw.txt": {
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "bytes": 772
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_06_sigma_0.1_seed_11_latents.npz": {
+    "sha256": "4f0682e1a1641aa5075d8fd310be5c16e6032162b33c86b180a7b1ee4987af4f",
+    "bytes": 25541
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_06_sigma_0.1_seed_11_raw.txt": {
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "bytes": 772
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_07_sigma_0.1_seed_22_latents.npz": {
+    "sha256": "f406d1fad9931213b3ac36d6047e4463a03b581238fc511e527c7d2e7b098755",
+    "bytes": 25529
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_07_sigma_0.1_seed_22_raw.txt": {
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "bytes": 772
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_08_sigma_0.2_seed_11_latents.npz": {
+    "sha256": "9b721dccdba33cbb94c7df685627c8d10c3d5b9433a227da0253f11aed6855e4",
+    "bytes": 25536
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_08_sigma_0.2_seed_11_raw.txt": {
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "bytes": 772
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_09_sigma_0.2_seed_22_latents.npz": {
+    "sha256": "a40d37830ed6e37143ec04570aea94c07eee8e046d1db6acb2f129810ba5601a",
+    "bytes": 25498
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\r1_09_sigma_0.2_seed_22_raw.txt": {
+    "sha256": "4d6beafc9c7a1950e50a32a7d1802df882d5d75a174654a7aa8406deb853407a",
+    "bytes": 772
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2\\run.log": {
+    "sha256": "3daa2e4f7e86d0d5c071e581f149a1535e9d5b7002776b48a0fcb4f2c4a485e6",
+    "bytes": 42978
+  },
+  "experiences_results\\L1-perturbation\\complete-search\\cut_2.mp4": {
+    "sha256": "f07b76161cf5cf2edc7fdfdcf027ec1822caddc34152ba522449297926a53a80",
+    "bytes": 446129
+  },
+  "experiences_results\\l1_latent_perturbation_code\\__pycache__\\complete_scheme.cpython-310.pyc": {
+    "sha256": "c3e5637ff57f0121fc3a10ccd907186c2852f713f0fabe6ebe1a9a3c26b81402",
+    "bytes": 9095
+  },
+  "experiences_results\\l1_latent_perturbation_code\\__pycache__\\run_complete_search.cpython-310.pyc": {
+    "sha256": "6cc8f78f9f99a18a70c1cbc7c0fc4527d41849b85fb6d7529c6a800927191f8b",
+    "bytes": 7219
+  },
+  "experiences_results\\l1_latent_perturbation_code\\__pycache__\\run_l1_latent_perturbation.cpython-310.pyc": {
+    "sha256": "db4aeb21e6407b223f688702fcce1aed4bf268c4c6884bba6fcdd7782cb19524",
+    "bytes": 11431
+  },
+  "experiences_results\\l1_latent_perturbation_code\\__pycache__\\test_complete_scheme.cpython-310.pyc": {
+    "sha256": "38b98f2bb00ea8c4300884f3708491a8195a76bb190ce528b9407e04d468ce89",
+    "bytes": 2349
+  },
+  "experiences_results\\l1_latent_perturbation_code\\__pycache__\\test_latent_noise_unit.cpython-310.pyc": {
+    "sha256": "375080d6c51b4b053eb0f269a6236399722cb09b910544f314ae115d19802464",
+    "bytes": 1839
+  },
+  "experiences_results\\l1_latent_perturbation_code\\complete_scheme.py": {
+    "sha256": "8f922523810a41c74b85082be0176eaef396744f3453a368b53857a7cc34dc8e",
+    "bytes": 9058
+  },
+  "experiences_results\\l1_latent_perturbation_code\\EXPERIMENT_RECORD_2026-09-09.md": {
+    "sha256": "2e859a2b030fc27aa0ffd834910f2e0c809d20cd63d3138041a35e79af06cb0e",
+    "bytes": 14361
+  },
+  "experiences_results\\l1_latent_perturbation_code\\run_complete_search.py": {
+    "sha256": "18ff5739f96ebae94a96cf2de438d7a75c3b0a129103848af207153aeaaf420c",
+    "bytes": 8241
+  },
+  "experiences_results\\l1_latent_perturbation_code\\run_l1_latent_perturbation.py": {
+    "sha256": "a00841840d1aab35fd3ff02fbe1c4f67566b36581498a3856d3f2429c0395f75",
+    "bytes": 13200
+  },
+  "experiences_results\\l1_latent_perturbation_code\\short_video_manifest.json": {
+    "sha256": "9916792f1ea744b337d093e609cad16e8765d2403f0d1658728995060ab2bb1d",
+    "bytes": 1080
+  },
+  "experiences_results\\l1_latent_perturbation_code\\test_complete_scheme.py": {
+    "sha256": "d2432ac2ba3d262f4c25c33c36f3c3442cec2cc5dde5dcb2d8dccd2e9106515d",
+    "bytes": 1998
+  },
+  "experiences_results\\l1_latent_perturbation_code\\test_latent_noise_unit.py": {
+    "sha256": "9c2965187a16842ba379e37ee231c6f3629fed848bb3a77c58f6133fefb4715c",
+    "bytes": 1813
+  }
+}

@@ -1,0 +1,11 @@
+# 本地文件占位说明
+
+原文件保留在本地，未上传至 GitHub。此文件不包含数据或权重。
+
+详细清单见仓库根目录 `github_upload_manifest.json`。
+
+| 原路径（相对仓库根目录） | 字节数 | 原因 |
+|---|---:|---|
+| `experiences_results/surface-relation-e3-formal-remote-2026-09-26/4d053322-1eef-4a69-8201-932c7b82fb03/observed7_trackcraft_dense.npz` | 64258669 | dataset_array_or_model_weight |
+| `experiences_results/surface-relation-e3-formal-remote-2026-09-26/4d053322-1eef-4a69-8201-932c7b82fb03/observed7_user.npz` | 4964949 | dataset_array_or_model_weight |
+| `experiences_results/surface-relation-e3-formal-remote-2026-09-26/4d053322-1eef-4a69-8201-932c7b82fb03/p0_h_cache_aligned.npz` | 6652431 | dataset_array_or_model_weight |

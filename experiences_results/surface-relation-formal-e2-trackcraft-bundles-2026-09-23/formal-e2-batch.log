@@ -1,0 +1,68 @@
+{
+  "output": "/root/autodl-tmp/ego4d-formal-e2/formal_bundles/356ed369-7023-4660-904b-be73823a21d3.npz",
+  "history_shape": [
+    3,
+    64,
+    3
+  ],
+  "pseudo_gt_shape": [
+    9,
+    64,
+    3
+  ],
+  "finite_fraction": 1.0,
+  "valid_fraction": 1.0,
+  "t0_match_error_px_max": 2.1798318098178857,
+  "t0_match_error_px_median": 0.5867989326790662
+}
+{
+  "output": "/root/autodl-tmp/ego4d-formal-e2/formal_bundles/65165142-b15e-4bba-a9de-d5174ec46597.npz",
+  "history_shape": [
+    3,
+    64,
+    3
+  ],
+  "pseudo_gt_shape": [
+    9,
+    64,
+    3
+  ],
+  "finite_fraction": 1.0,
+  "valid_fraction": 1.0,
+  "t0_match_error_px_max": 2.294065633284044,
+  "t0_match_error_px_median": 0.5363237499633258
+}
+{
+  "output": "/root/autodl-tmp/ego4d-formal-e2/formal_bundles/9069bd26-0139-4e88-9957-9f9489b35a91.npz",
+  "history_shape": [
+    3,
+    64,
+    3
+  ],
+  "pseudo_gt_shape": [
+    9,
+    64,
+    3
+  ],
+  "finite_fraction": 1.0,
+  "valid_fraction": 1.0,
+  "t0_match_error_px_max": 1.0257247766353383,
+  "t0_match_error_px_median": 0.49262149279242884
+}
+{
+  "output": "/root/autodl-tmp/ego4d-formal-e2/formal_bundles/4d053322-1eef-4a69-8201-932c7b82fb03.npz",
+  "history_shape": [
+    3,
+    64,
+    3
+  ],
+  "pseudo_gt_shape": [
+    9,
+    64,
+    3
+  ],
+  "finite_fraction": 1.0,
+  "valid_fraction": 1.0,
+  "t0_match_error_px_max": 1.4014312795942376,
+  "t0_match_error_px_median": 0.4224630611995767
+}

@@ -1,0 +1,1 @@
+{"complete": true, "fits": 21, "selected_models": 9, "counts": {"train": 100, "validation": 20, "test": 40}, "device": "cuda", "future_GT_input": false, "label_domain": "same material patch visible in frame0, transported with the rigid simulated object; discrete pixel-surface path approximation, not complete mesh geodesic"}

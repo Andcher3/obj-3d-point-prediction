@@ -1,0 +1,73 @@
+{
+  "protocol": "formal_e2_2026-09-22",
+  "source": "Ego4D",
+  "target_source_video_count": 6,
+  "minimum_source_video_count": 5,
+  "selection_rule": "fixed metadata order within motion-category quota; never select using E2 errors",
+  "exclude": [
+    "night_low_light_car",
+    "local_1.64s_bottle_test"
+  ],
+  "videos": [
+    {
+      "video_id": "cb78dba8-6647-4ec7-875c-6ba1548f8312",
+      "motion_category": "articulated",
+      "status": "existing_reusable",
+      "source_video": null,
+      "t0_seconds": null,
+      "timestamps_json": null,
+      "pointmap_history_npy": null,
+      "polygon_xy": null
+    },
+    {
+      "video_id": "356ed369-7023-4660-904b-be73823a21d3",
+      "motion_category": "rigid",
+      "status": "existing_reusable",
+      "source_video": null,
+      "t0_seconds": null,
+      "timestamps_json": null,
+      "pointmap_history_npy": null,
+      "polygon_xy": null
+    },
+    {
+      "video_id": "NEW_EGO4D_VIDEO_01",
+      "motion_category": "rigid",
+      "status": "待固定元数据选择",
+      "source_video": null,
+      "t0_seconds": null,
+      "timestamps_json": null,
+      "pointmap_history_npy": null,
+      "polygon_xy": null
+    },
+    {
+      "video_id": "NEW_EGO4D_VIDEO_02",
+      "motion_category": "articulated",
+      "status": "待固定元数据选择",
+      "source_video": null,
+      "t0_seconds": null,
+      "timestamps_json": null,
+      "pointmap_history_npy": null,
+      "polygon_xy": null
+    },
+    {
+      "video_id": "NEW_EGO4D_VIDEO_03",
+      "motion_category": "non_rigid_deformable",
+      "status": "待固定元数据选择",
+      "source_video": null,
+      "t0_seconds": null,
+      "timestamps_json": null,
+      "pointmap_history_npy": null,
+      "polygon_xy": null
+    },
+    {
+      "video_id": "NEW_EGO4D_VIDEO_04",
+      "motion_category": "non_rigid_deformable",
+      "status": "待固定元数据选择",
+      "source_video": null,
+      "t0_seconds": null,
+      "timestamps_json": null,
+      "pointmap_history_npy": null,
+      "polygon_xy": null
+    }
+  ]
+}

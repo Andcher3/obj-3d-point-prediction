@@ -1,0 +1,24 @@
+{
+  "file": "X_train_raw_float32.bin",
+  "dtype": "float32",
+  "endianness": "little",
+  "shape": [
+    7352,
+    128,
+    9
+  ],
+  "layout": "sample, time_step, channel",
+  "sampling_rate_hz": 50,
+  "window_seconds": 2.56,
+  "channels": [
+    "total_acc_x",
+    "total_acc_y",
+    "total_acc_z",
+    "body_acc_x",
+    "body_acc_y",
+    "body_acc_z",
+    "body_gyro_x",
+    "body_gyro_y",
+    "body_gyro_z"
+  ]
+}

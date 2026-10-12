@@ -1,0 +1,27 @@
+{
+  "started_at_utc": "2026-10-11T02:27:32.926423+00:00",
+  "state": "completed",
+  "controller_pid": 2765,
+  "hard_timeout_seconds": 1800,
+  "training_started": true,
+  "command": [
+    "/root/autodl-tmp/uniquery4r-visual-review/venv/bin/python",
+    "-u",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10/code/run_cross_point_probe.py",
+    "--base",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10",
+    "--cache-dir",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10/model_cache_audited",
+    "--config",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10/logs/calibrated-protocol.json",
+    "--output",
+    "/root/autodl-tmp/cross-point-probe-2026-10-10/reader-results-g1.1",
+    "--device",
+    "cuda",
+    "--allow-training"
+  ],
+  "child_pid": 2993,
+  "returncode": 0,
+  "elapsed_seconds": 228.0948931016028,
+  "updated_at_utc": "2026-10-11T02:31:21.022168+00:00"
+}

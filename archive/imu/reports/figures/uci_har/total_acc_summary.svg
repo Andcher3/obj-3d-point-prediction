@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="650" viewBox="0 0 1120 650">
+<rect width="100%" height="100%" fill="#fbfbf8"/>
+<text x="28" y="36" font-size="24" font-family="Arial" font-weight="700">total_acc class summary</text>
+<text x="28" y="60" font-size="13" font-family="Arial" fill="#555">Left: class-level mean of total_acc x/y/z. Right: average within-window temporal std, a rough motion-strength measure.</text>
+<line x1="482.0" y1="78" x2="482.0" y2="600" stroke="#777" stroke-dasharray="4 4"/>
+<text x="230" y="82" font-size="12" font-family="Arial" fill="#555">axis mean in g (-0.9 to 1.1)</text>
+<text x="870" y="82" font-size="12" font-family="Arial" fill="#555">avg window std</text>
+<text x="28" y="114" font-size="14" font-family="Arial" font-weight="700">WALKING</text>
+<rect x="482.0" y="92" width="278.7" height="13" fill="#2f6fbb"/>
+<text x="765.7" y="103" font-size="11" font-family="Arial" fill="#333">x:1.00</text>
+<rect x="431.2" y="110" width="50.8" height="13" fill="#c4494d"/>
+<text x="389.2" y="121" font-size="11" font-family="Arial" fill="#333">y:-0.18</text>
+<rect x="462.5" y="128" width="19.5" height="13" fill="#4c8f4f"/>
+<text x="420.5" y="139" font-size="11" font-family="Arial" fill="#333">z:-0.07</text>
+<rect x="870" y="103" width="119.6" height="20" fill="#7768ae"/>
+<text x="995.6" y="118" font-size="12" font-family="Arial" fill="#333">0.176</text>
+<text x="28" y="192" font-size="14" font-family="Arial" font-weight="700">WALKING_UPSTAIRS</text>
+<rect x="482.0" y="170" width="265.8" height="13" fill="#2f6fbb"/>
+<text x="752.8" y="181" font-size="11" font-family="Arial" fill="#333">x:0.95</text>
+<rect x="405.4" y="188" width="76.6" height="13" fill="#c4494d"/>
+<text x="363.4" y="199" font-size="11" font-family="Arial" fill="#333">y:-0.27</text>
+<rect x="438.5" y="206" width="43.5" height="13" fill="#4c8f4f"/>
+<text x="396.5" y="217" font-size="11" font-family="Arial" fill="#333">z:-0.16</text>
+<rect x="870" y="181" width="130.1" height="20" fill="#7768ae"/>
+<text x="1006.1" y="196" font-size="12" font-family="Arial" fill="#333">0.191</text>
+<text x="28" y="270" font-size="14" font-family="Arial" font-weight="700">WALKING_DOWNSTAIRS</text>
+<rect x="482.0" y="248" width="277.6" height="13" fill="#2f6fbb"/>
+<text x="764.6" y="259" font-size="11" font-family="Arial" fill="#333">x:0.99</text>
+<rect x="440.4" y="266" width="41.6" height="13" fill="#c4494d"/>
+<text x="398.4" y="277" font-size="11" font-family="Arial" fill="#333">y:-0.15</text>
+<rect x="466.3" y="284" width="15.7" height="13" fill="#4c8f4f"/>
+<text x="424.3" y="295" font-size="11" font-family="Arial" fill="#333">z:-0.06</text>
+<rect x="870" y="259" width="159.3" height="20" fill="#7768ae"/>
+<text x="1035.3" y="274" font-size="12" font-family="Arial" fill="#333">0.234</text>
+<text x="28" y="348" font-size="14" font-family="Arial" font-weight="700">SITTING</text>
+<rect x="482.0" y="326" width="266.2" height="13" fill="#2f6fbb"/>
+<text x="753.2" y="337" font-size="11" font-family="Arial" fill="#333">x:0.95</text>
+<rect x="482.0" y="344" width="40.1" height="13" fill="#c4494d"/>
+<text x="527.1" y="355" font-size="11" font-family="Arial" fill="#333">y:0.14</text>
+<rect x="482.0" y="362" width="43.2" height="13" fill="#4c8f4f"/>
+<text x="530.2" y="373" font-size="11" font-family="Arial" fill="#333">z:0.15</text>
+<rect x="870" y="337" width="5.3" height="20" fill="#7768ae"/>
+<text x="881.3" y="352" font-size="12" font-family="Arial" fill="#333">0.008</text>
+<text x="28" y="426" font-size="14" font-family="Arial" font-weight="700">STANDING</text>
+<rect x="482.0" y="404" width="280.4" height="13" fill="#2f6fbb"/>
+<text x="767.4" y="415" font-size="11" font-family="Arial" fill="#333">x:1.00</text>
+<rect x="436.3" y="422" width="45.7" height="13" fill="#c4494d"/>
+<text x="394.3" y="433" font-size="11" font-family="Arial" fill="#333">y:-0.16</text>
+<rect x="473.0" y="440" width="9.0" height="13" fill="#4c8f4f"/>
+<text x="431.0" y="451" font-size="11" font-family="Arial" fill="#333">z:-0.03</text>
+<rect x="870" y="415" width="5.9" height="20" fill="#7768ae"/>
+<text x="881.9" y="430" font-size="12" font-family="Arial" fill="#333">0.009</text>
+<text x="28" y="504" font-size="14" font-family="Arial" font-weight="700">LAYING</text>
+<rect x="482.0" y="482" width="20.1" height="13" fill="#2f6fbb"/>
+<text x="507.1" y="493" font-size="11" font-family="Arial" fill="#333">x:0.07</text>
+<rect x="482.0" y="500" width="181.9" height="13" fill="#c4494d"/>
+<text x="668.9" y="511" font-size="11" font-family="Arial" fill="#333">y:0.65</text>
+<rect x="482.0" y="518" width="156.9" height="13" fill="#4c8f4f"/>
+<text x="643.9" y="529" font-size="11" font-family="Arial" fill="#333">z:0.56</text>
+<rect x="870" y="493" width="7.3" height="20" fill="#7768ae"/>
+<text x="883.3" y="508" font-size="12" font-family="Arial" fill="#333">0.011</text>
+<rect x="28" y="616" width="24" height="10" fill="#2f6fbb"/>
+<text x="59" y="626" font-size="12" font-family="Arial">x</text>
+<rect x="98" y="616" width="24" height="10" fill="#c4494d"/>
+<text x="129" y="626" font-size="12" font-family="Arial">y</text>
+<rect x="168" y="616" width="24" height="10" fill="#4c8f4f"/>
+<text x="199" y="626" font-size="12" font-family="Arial">z</text>
+</svg>

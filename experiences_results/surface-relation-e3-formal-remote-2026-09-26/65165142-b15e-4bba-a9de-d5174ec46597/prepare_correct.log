@@ -1,0 +1,49 @@
+/root/autodl-tmp/conda_envs/motionforesight-e3/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[93m[WARN ] Dependency `gsplat` is required for rendering 3DGS. Install via: pip install git+https://github.com/nerfstudio-project/gsplat.git@0b4dddf04cb687367602c01196913cde6a743d70[0m
+[97m[INFO ] using MLP layer as FFN[0m
+[97m[INFO ] Processed Images Done taking 0.0625607967376709 seconds. Shape:  torch.Size([7, 3, 224, 392])[0m
+[97m[INFO ] Selecting reference view using strategy: saddle_balanced[0m
+[97m[INFO ] Model Forward Pass Done. Time: 0.6690371036529541 seconds[0m
+[97m[INFO ] Conversion to Prediction Done. Time: 0.004458427429199219 seconds[0m
+{
+  "status": "PASS",
+  "scope": "observed-only formal E3 input",
+  "frame_indices": [
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102
+  ],
+  "timestamps_s": [
+    1498.4,
+    1498.4666666666667,
+    1498.5333333333333,
+    1498.6,
+    1498.6666666666667,
+    1498.7333333333333,
+    1498.8
+  ],
+  "fps": 15.0,
+  "rgb_shape": [
+    7,
+    224,
+    392,
+    3
+  ],
+  "depth_shape": [
+    7,
+    224,
+    392
+  ],
+  "extrinsics_shape": [
+    7,
+    4,
+    4
+  ],
+  "coordinate_origin": "first observed camera",
+  "future_frames_supplied": false
+}

@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "input": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-jumping-juggle-animation\\final\\jumping-row.png",
+  "output": "D:\\Pycharm\\post_graduate_project\\reports\\pet_runs\\2026-07-30-chibi-defect-jumping-juggle-animation\\final\\jumping-row-clean.png",
+  "chroma_key": "#FF00FF",
+  "algorithm": "edge-local-chroma-spill-suppression",
+  "strength": 1,
+  "edge_radius": 5,
+  "spill_tolerance": 0.15,
+  "minimum_saturation": 0.1,
+  "changed_pixels": 12436,
+  "decontaminated_pixels": 11386,
+  "spill_suppressed_pixels": 12436,
+  "rejected_pixels": 0,
+  "changed_by_cell": {
+    "r0c0": 2530,
+    "r0c4": 2512,
+    "r0c3": 2488,
+    "r0c2": 2472,
+    "r0c1": 2434
+  },
+  "alpha_preserved": true
+}

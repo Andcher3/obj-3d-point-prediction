@@ -1,0 +1,201 @@
+{
+  "date": "2026-09-23",
+  "scope": "MotionForesight observed-only formal E3 interface preflight",
+  "video_count": 5,
+  "interface_gate_pass": true,
+  "supervision_registration_gate_status": "BLOCKED",
+  "supervision_registration_blocker": "The existing E2 pseudo-GT was estimated in a different DA3 sequence context. Shared-t0 similarity registration leaves large video-dependent residuals.",
+  "relation_head_training_started": false,
+  "rows": [
+    {
+      "video_id": "356ed369-7023-4660-904b-be73823a21d3",
+      "status": "PASS",
+      "no_future_input": true,
+      "p0_shape": [
+        15,
+        48,
+        3
+      ],
+      "h_output_shape": [
+        15,
+        48,
+        16
+      ],
+      "h_dit_shape": [
+        15,
+        48,
+        1536
+      ],
+      "finite": true,
+      "permutation_error": 0.0,
+      "query_anchor_error_px_max": 56.131961822509766,
+      "time_mapping_valid": true,
+      "time_mapping_unique": true,
+      "time_match_error_s_max": 0.03333333333330302,
+      "alignment_scale": 0.6764286862208929,
+      "alignment_rotation_deg": 87.30894070136648,
+      "alignment_translation_norm": 0.959918737411499,
+      "alignment_error_median_m": 0.16099029779434204,
+      "alignment_error_p90_m": 0.2164742648601532,
+      "alignment_error_max_m": 0.23389595746994019,
+      "alignment_error_median_bbox_diag": 0.25215911865234375,
+      "alignment_error_p90_bbox_diag": 0.3390636742115021,
+      "alignment_error_max_bbox_diag": 0.36635127663612366,
+      "alignment_count_over_10pct_bbox_diag": 46,
+      "cache_sha256": "2dbb0be503b5be14ad072b2fe78f70d5d2d9305a2435ebf9873fd3cdeb651490"
+    },
+    {
+      "video_id": "4d053322-1eef-4a69-8201-932c7b82fb03",
+      "status": "PASS",
+      "no_future_input": true,
+      "p0_shape": [
+        15,
+        48,
+        3
+      ],
+      "h_output_shape": [
+        15,
+        48,
+        16
+      ],
+      "h_dit_shape": [
+        15,
+        48,
+        1536
+      ],
+      "finite": true,
+      "permutation_error": 0.0,
+      "query_anchor_error_px_max": 1.6369140148162842,
+      "time_mapping_valid": true,
+      "time_mapping_unique": true,
+      "time_match_error_s_max": 0.027180666666595243,
+      "alignment_scale": 0.43397093332104064,
+      "alignment_rotation_deg": 20.707713918373297,
+      "alignment_translation_norm": 0.39256566762924194,
+      "alignment_error_median_m": 0.08693668991327286,
+      "alignment_error_p90_m": 0.17853304743766785,
+      "alignment_error_max_m": 0.2133290022611618,
+      "alignment_error_median_bbox_diag": 0.16325849294662476,
+      "alignment_error_p90_bbox_diag": 0.3352673649787903,
+      "alignment_error_max_bbox_diag": 0.4006107449531555,
+      "alignment_count_over_10pct_bbox_diag": 33,
+      "cache_sha256": "92e73ca30ed281312c505200e5a241c1d7dda1920131ecc7c1412892a663af84"
+    },
+    {
+      "video_id": "65165142-b15e-4bba-a9de-d5174ec46597",
+      "status": "PASS",
+      "no_future_input": true,
+      "p0_shape": [
+        15,
+        48,
+        3
+      ],
+      "h_output_shape": [
+        15,
+        48,
+        16
+      ],
+      "h_dit_shape": [
+        15,
+        48,
+        1536
+      ],
+      "finite": true,
+      "permutation_error": 0.0,
+      "query_anchor_error_px_max": 5.229701995849609,
+      "time_mapping_valid": true,
+      "time_mapping_unique": true,
+      "time_match_error_s_max": 0.010514000000057422,
+      "alignment_scale": 0.6902861495015217,
+      "alignment_rotation_deg": 16.79959815862234,
+      "alignment_translation_norm": 0.4946276545524597,
+      "alignment_error_median_m": 0.052947431802749634,
+      "alignment_error_p90_m": 0.08417972177267075,
+      "alignment_error_max_m": 0.16781581938266754,
+      "alignment_error_median_bbox_diag": 0.10211341083049774,
+      "alignment_error_p90_bbox_diag": 0.16234742105007172,
+      "alignment_error_max_bbox_diag": 0.3236463963985443,
+      "alignment_count_over_10pct_bbox_diag": 25,
+      "cache_sha256": "84219f74f5bb7b13d8a72d50ec79afa24187358d2320012e08d6e0759415e9e4"
+    },
+    {
+      "video_id": "9069bd26-0139-4e88-9957-9f9489b35a91",
+      "status": "PASS",
+      "no_future_input": true,
+      "p0_shape": [
+        15,
+        48,
+        3
+      ],
+      "h_output_shape": [
+        15,
+        48,
+        16
+      ],
+      "h_dit_shape": [
+        15,
+        48,
+        1536
+      ],
+      "finite": true,
+      "permutation_error": 0.0,
+      "query_anchor_error_px_max": 1.4052969217300415,
+      "time_mapping_valid": true,
+      "time_mapping_unique": true,
+      "time_match_error_s_max": 0.029999600000000015,
+      "alignment_scale": 1.1402776071054705,
+      "alignment_rotation_deg": 5.042826311726138,
+      "alignment_translation_norm": 0.14547112584114075,
+      "alignment_error_median_m": 0.028533579781651497,
+      "alignment_error_p90_m": 0.08763349056243896,
+      "alignment_error_max_m": 0.34871065616607666,
+      "alignment_error_median_bbox_diag": 0.028316659852862358,
+      "alignment_error_p90_bbox_diag": 0.08696728199720383,
+      "alignment_error_max_bbox_diag": 0.346059650182724,
+      "alignment_count_over_10pct_bbox_diag": 3,
+      "cache_sha256": "d8f35cf6e63ddbd43b8dd05c769c40ab8f74bcd63cefd633f84db8663b7ceb53"
+    },
+    {
+      "video_id": "cb78dba8-6647-4ec7-875c-6ba1548f8312",
+      "status": "PASS",
+      "no_future_input": true,
+      "p0_shape": [
+        15,
+        48,
+        3
+      ],
+      "h_output_shape": [
+        15,
+        48,
+        16
+      ],
+      "h_dit_shape": [
+        15,
+        48,
+        1536
+      ],
+      "finite": true,
+      "permutation_error": 0.0,
+      "query_anchor_error_px_max": 1.2561659812927246,
+      "time_mapping_valid": true,
+      "time_mapping_unique": true,
+      "time_match_error_s_max": 0.03333333333330302,
+      "alignment_scale": 0.7941817972476204,
+      "alignment_rotation_deg": 12.03725526285162,
+      "alignment_translation_norm": 0.2082907110452652,
+      "alignment_error_median_m": 0.015477320179343224,
+      "alignment_error_p90_m": 0.0649959146976471,
+      "alignment_error_max_m": 0.18026433885097504,
+      "alignment_error_median_bbox_diag": 0.03580595180392265,
+      "alignment_error_p90_bbox_diag": 0.15036457777023315,
+      "alignment_error_max_bbox_diag": 0.4170319139957428,
+      "alignment_count_over_10pct_bbox_diag": 9,
+      "cache_sha256": "57ae9d1f5086065138fab6e6e188946a3d87d787c6cebcbacc1a3b7b897d745c"
+    }
+  ],
+  "limits": [
+    "The released checkpoint's physical time-rate calibration on Ego4D is not established.",
+    "Pseudo-GT registration is estimated from shared t0 queries only; per-query residuals remain a supervision-validity issue.",
+    "The current five videos cover rigid and articulated objects only."
+  ]
+}

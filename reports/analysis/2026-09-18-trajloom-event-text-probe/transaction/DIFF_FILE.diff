@@ -1,0 +1,5 @@
+--- BASELINE.json
++++ MODIFIED_FILE.json
+@@ -1 +1 @@
+-{"decision":"pending","experiment":"trajloom_event_text_probe","status":"planned"}
++{"decision":"retain_as_2d_baseline_not_stage2_backbone","experiment":"trajloom_event_text_probe","status":"completed"}

@@ -1,0 +1,361 @@
+{
+  "rows": [
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_3626",
+      "status": "CPU_PREPARED",
+      "query_count": 1624,
+      "dynamic_count": 1624,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_3626/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 1624,
+        "source_visible_count": 1624,
+        "source_anchor_p90_pixels": 0.3533562381398079,
+        "source_anchor_max_pixels": 0.3535980444458058,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_1782",
+      "status": "CPU_PREPARED",
+      "query_count": 4848,
+      "dynamic_count": 4848,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_1782/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 4848,
+        "source_visible_count": 4848,
+        "source_anchor_p90_pixels": 0.35484635269153364,
+        "source_anchor_max_pixels": 0.35591776096090233,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_3881",
+      "status": "CPU_PREPARED",
+      "query_count": 1316,
+      "dynamic_count": 1316,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_3881/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 1316,
+        "source_visible_count": 1316,
+        "source_anchor_p90_pixels": 0.3537738642836102,
+        "source_anchor_max_pixels": 0.3541595552821642,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_2344",
+      "status": "CPU_PREPARED",
+      "query_count": 6764,
+      "dynamic_count": 6764,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_2344/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 6764,
+        "source_visible_count": 6764,
+        "source_anchor_p90_pixels": 0.3534849529221502,
+        "source_anchor_max_pixels": 0.3540664746361721,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_3782",
+      "status": "CPU_PREPARED",
+      "query_count": 860,
+      "dynamic_count": 860,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_3782/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 860,
+        "source_visible_count": 860,
+        "source_anchor_p90_pixels": 0.3539013373793657,
+        "source_anchor_max_pixels": 0.3541246627637939,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_5916",
+      "status": "CPU_PREPARED",
+      "query_count": 7697,
+      "dynamic_count": 7697,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_5916/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 7697,
+        "source_visible_count": 7697,
+        "source_anchor_p90_pixels": 0.3566436405098952,
+        "source_anchor_max_pixels": 0.35851014169297457,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_1924",
+      "status": "CPU_PREPARED",
+      "query_count": 4000,
+      "dynamic_count": 4000,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_1924/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 4000,
+        "source_visible_count": 4000,
+        "source_anchor_p90_pixels": 0.35369514915909794,
+        "source_anchor_max_pixels": 0.35439188850967684,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_5025",
+      "status": "CPU_PREPARED",
+      "query_count": 5442,
+      "dynamic_count": 5442,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_5025/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 5442,
+        "source_visible_count": 5442,
+        "source_anchor_p90_pixels": 0.3547678252275352,
+        "source_anchor_max_pixels": 0.35522440497375457,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_1143",
+      "status": "CPU_PREPARED",
+      "query_count": 4953,
+      "dynamic_count": 4953,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_1143/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 4953,
+        "source_visible_count": 4953,
+        "source_anchor_p90_pixels": 0.35372875671296294,
+        "source_anchor_max_pixels": 0.354164619207065,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_4203",
+      "status": "CPU_PREPARED",
+      "query_count": 6102,
+      "dynamic_count": 6102,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_4203/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 6102,
+        "source_visible_count": 6102,
+        "source_anchor_p90_pixels": 0.35372593334257013,
+        "source_anchor_max_pixels": 0.3541833295568136,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_2854",
+      "status": "CPU_PREPARED",
+      "query_count": 3493,
+      "dynamic_count": 3493,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_2854/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 3493,
+        "source_visible_count": 3493,
+        "source_anchor_p90_pixels": 0.3536958957597488,
+        "source_anchor_max_pixels": 0.3540272447064529,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_1179",
+      "status": "CPU_PREPARED",
+      "query_count": 2588,
+      "dynamic_count": 2588,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_1179/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 2588,
+        "source_visible_count": 2588,
+        "source_anchor_p90_pixels": 0.35416155161247476,
+        "source_anchor_max_pixels": 0.35440562736943315,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_813",
+      "status": "CPU_PREPARED",
+      "query_count": 4862,
+      "dynamic_count": 4862,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_813/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 4862,
+        "source_visible_count": 4862,
+        "source_anchor_p90_pixels": 0.35536341069069566,
+        "source_anchor_max_pixels": 0.355778518658952,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_346",
+      "status": "CPU_PREPARED",
+      "query_count": 2798,
+      "dynamic_count": 2798,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_346/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 2798,
+        "source_visible_count": 2798,
+        "source_anchor_p90_pixels": 0.3551541567978203,
+        "source_anchor_max_pixels": 0.3554953466972587,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_5702",
+      "status": "CPU_PREPARED",
+      "query_count": 3303,
+      "dynamic_count": 3303,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_5702/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 3303,
+        "source_visible_count": 3303,
+        "source_anchor_p90_pixels": 0.35470665125777434,
+        "source_anchor_max_pixels": 0.35523190929080434,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_2329",
+      "status": "CPU_PREPARED",
+      "query_count": 5315,
+      "dynamic_count": 5315,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_2329/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 5315,
+        "source_visible_count": 5315,
+        "source_anchor_p90_pixels": 0.3534130750403679,
+        "source_anchor_max_pixels": 0.35383598106288594,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_3457",
+      "status": "CPU_PREPARED",
+      "query_count": 1411,
+      "dynamic_count": 1411,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_3457/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 1411,
+        "source_visible_count": 1411,
+        "source_anchor_p90_pixels": 0.35399167261071607,
+        "source_anchor_max_pixels": 0.3541845750030022,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    },
+    {
+      "subset": "movif_object_diagnostic",
+      "sequence": "scene_1580",
+      "status": "CPU_PREPARED",
+      "query_count": 3735,
+      "dynamic_count": 3735,
+      "manifest": "/root/autodl-tmp/uniquery4r-movif-protocol-sync-2026-10-10/inputs/movif_object_diagnostic/scene_1580/manifest.json",
+      "model_forward_called": false,
+      "material_audit": {
+        "source_mask_candidate_count": 3735,
+        "source_visible_count": 3735,
+        "source_anchor_p90_pixels": 0.3544686554301129,
+        "source_anchor_max_pixels": 0.35682782172925687,
+        "source_visibility_definition": "simulator same-instance mask, positive depth and 2% ray-depth consistency",
+        "erosion": false,
+        "subsampling": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "shard": "movi_f-validation.tfrecord-00000-of-00032",
+      "sha256": "ee9b6b7a92ca0a54bf8759217355f8b51c149b1d1c683ae85d918a8917fa9323",
+      "publisher_md5_passed": true,
+      "source_unchanged": true
+    },
+    {
+      "shard": "movi_f-validation.tfrecord-00001-of-00032",
+      "sha256": "fc8798e03c3d63468f7ca5691838fcd4a864f14a2f3580216c5cb4c27df66df7",
+      "publisher_md5_passed": true,
+      "source_unchanged": true
+    },
+    {
+      "shard": "movi_f-validation.tfrecord-00002-of-00032",
+      "sha256": "3f9d7570deb22b27755c59d66edae5ee0e68d55a51389f4d1d13e06f9844114a",
+      "publisher_md5_passed": true,
+      "source_unchanged": true
+    },
+    {
+      "shard": "movi_f-validation.tfrecord-00003-of-00032",
+      "sha256": "9982e292cb8a8d3db26b4d699fedd18ccc14e1cc9d2e1969e8acbdcd0d2e2ac2",
+      "publisher_md5_passed": true,
+      "source_unchanged": true
+    }
+  ],
+  "ready_count": 18,
+  "frames": 24,
+  "all_attempted_inputs_prepared": true,
+  "gpu_forward_authorized": false,
+  "model_forward_called": false,
+  "query_review_approved": false,
+  "worldtrack_benchmark": false
+}

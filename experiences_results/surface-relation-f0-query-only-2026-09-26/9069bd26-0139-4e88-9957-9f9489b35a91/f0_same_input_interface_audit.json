@@ -1,0 +1,86 @@
+{
+  "status": "PASS_INTERFACE_ONLY",
+  "video_id": "9069bd26-0139-4e88-9957-9f9489b35a91",
+  "protocol": {
+    "trackcraft": "22 frames, 7 observed + 15 future, 48 queries, process_res=392",
+    "motionforesight": "same 22-frame input, observed-only 7 frames, output 15 future slots, query-matched",
+    "future_frames_supplied_to_motionforesight": false
+  },
+  "coordinate_transform": "TrackCraft frame-0 camera -> last-observed camera using extrinsics_w2c[6] (frame 0 is identity)",
+  "shapes": {
+    "trackcraft": [
+      22,
+      48,
+      3
+    ],
+    "trackcraft_last_observed": [
+      22,
+      48,
+      3
+    ],
+    "motionforesight_p0": [
+      22,
+      48,
+      3
+    ],
+    "h_output": [
+      22,
+      48,
+      16
+    ],
+    "h_last_dit": [
+      22,
+      48,
+      1536
+    ]
+  },
+  "validity": {
+    "trackcraft_finite": true,
+    "trackcraft_oob_count": 0,
+    "motionforesight_finite": true,
+    "query_count": 48
+  },
+  "t0_raw_coordinate_difference_m": {
+    "p50": 0.010244804534084048,
+    "p90": 0.023714189416870667,
+    "max": 0.03810534296940297,
+    "mean": 0.012891582935249663
+  },
+  "t0_centered_shape_difference_m": {
+    "p50": 0.009571312058368338,
+    "p90": 0.02344959293078926,
+    "max": 0.03744378084468437,
+    "mean": 0.01204721598079408
+  },
+  "t0_reference_scale_m": 0.21481501054746613,
+  "t0_raw_normalized_by_median_radius": {
+    "p50": 0.04769128799693598,
+    "p90": 0.11039353980168305,
+    "max": 0.17738677977991257,
+    "mean": 0.06001248656876845
+  },
+  "edge_graph": {
+    "type": "2D symmetric kNN",
+    "k": 3,
+    "edge_count": 86
+  },
+  "edge_vector_difference_m": {
+    "p50": 0.011324180472805468,
+    "p90": 0.03446025896572905,
+    "max": 0.09582219733775398,
+    "mean": 0.015733286526514203
+  },
+  "edge_relative_error": {
+    "p50": 0.12154899687111939,
+    "p90": 0.2681075051487171,
+    "max": 1.4808415802249368,
+    "mean": 0.15150243344933462
+  },
+  "future_edge_length_ratio_difference": {
+    "p50": 0.04425170762686281,
+    "p90": 0.1484639466728531,
+    "max": 0.652638802385486,
+    "mean": 0.06654469763304703
+  },
+  "note": "No external ground truth is used. This is a same-input coordinate/interface audit, not evidence of Relation Head learnability or forecast accuracy."
+}

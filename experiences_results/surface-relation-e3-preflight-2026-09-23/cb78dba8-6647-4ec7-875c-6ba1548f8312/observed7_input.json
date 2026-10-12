@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scope": "observed-only formal E3 input",
+  "frame_indices": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67
+  ],
+  "timestamps_s": [
+    1496.0666666666666,
+    1496.1333333333334,
+    1496.2,
+    1496.2666666666667,
+    1496.3333333333333,
+    1496.4,
+    1496.4666666666667
+  ],
+  "fps": 15.0,
+  "rgb_shape": [
+    7,
+    392,
+    518,
+    3
+  ],
+  "depth_shape": [
+    7,
+    392,
+    518
+  ],
+  "extrinsics_shape": [
+    7,
+    4,
+    4
+  ],
+  "coordinate_origin": "first observed camera",
+  "future_frames_supplied": false
+}

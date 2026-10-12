@@ -1,0 +1,80 @@
+VERIFICATION_STATUS=VERIFIED
+CHANGED_BRANCH=TrackCraft3R-derived observed 3D history and query pixels -> MolmoMotion text-conditioned future trajectory inference
+CHANGED_FIELD=input construction, target-query projection, text-token audit, output-shape/finite/temporal-motion checks, visualization, reproducibility record
+
+ARTIFACTS:
+MODIFIED_FILE=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/run_tracker3d_molmo_probe.py
+DIFF_FILE=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/DIFF_FILE.patch
+VERIFICATION=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/VERIFICATION.txt
+ROLLBACK=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/ROLLBACK.sh
+
+HASHES:
+ORIGINAL_SHA256=f1ce26b89ee329558df6046f6d1bce0585c027728512a65f033b6c6df205cde8
+MODIFIED_SHA256=087db2299708752b916242b85538b7bde5b13567ea3a074a514be5397e7e65e1
+DIFF_SHA256=fe73d7b3f2b831cb8ff468aba43f55b40c4aaebc00baf3ae85366f1314228872
+ROLLBACK_SHA256=cfe4b0bea8212cf5eb8733ec67f5e939f1a9eab1891bc3cd8f010eabf2b57302
+
+INPUT:
+video=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/input_video/sewing.mp4
+video_sha256=1db22e17936bbaa91424ed06731bd806f2af0b5dc49e721ed3c0b5f40db31fae
+camera_npz=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/preprocessed/sewing_user.npz
+camera_npz_sha256=b81b8309a849def1576a00ab521838dc65e22b2567e1a4b21b8f06904cf69614
+dense_npz=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/results/sewing_dense.npz
+dense_npz_sha256=3684e9fe3d6ef87897899360c6a670045b7c3ca6a77dfb7b363b6ebbc08d4498
+query=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/query_pixels_sewing.json
+target=blue-handled scissors on the table
+query_pixels_frame0=[[580,270],[600,280],[620,295],[650,315],[680,325],[710,340],[690,355],[670,345]]
+observed_tracker_frames=12
+molmo_history_frames=[9,10,11]
+future_horizon=30
+prompts=compact_right|free_right|multi_step|contradictory_left
+
+BASELINE:
+command=/root/autodl-tmp/conda_envs/molmo-motion/bin/python /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/baseline/run_text_type_probe.py --help
+literal_output_tail:
+options:
+  -h, --help            show this help message and exit
+  --model MODEL         Local MolmoMotion checkpoint directory
+  --repo REPO           Official molmo-motion repository
+  --output-dir OUTPUT_DIR
+  --examples EXAMPLES [EXAMPLES ...]
+  --variants VARIANTS [VARIANTS ...]
+  --future-horizon FUTURE_HORIZON
+exit_status=0
+
+MODIFIED:
+command=HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 /root/autodl-tmp/conda_envs/molmo-motion/bin/python /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/run_tracker3d_molmo_probe.py --model /root/autodl-tmp/models/MolmoMotion-4B-H3-F30 --repo /root/autodl-tmp/projects/molmo-motion --camera-npz /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/preprocessed/sewing_user.npz --dense-npz /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/results/sewing_dense.npz --query-json /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/query_pixels_sewing.json --output-dir /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/results/molmo-text-control --future-horizon 30
+literal_result:
+VALID_QUERY_COUNT=8
+compact_right shape=[8,30,3] finite_fraction=1.0 input_token_count=606 input_ids_sha256=e8a5af60aed49c06a742cfa4ef1ac8bb72caba5861455629535a5115c75092bf output_sha256=e616e07965186393d1f0de94fc69c96648c2b978d0ba137c88bf82b1e9e2d769 future_text_chars=3131 future_text_sha256=774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98 generated_temporal_path_length_m=0.0
+free_right shape=[8,30,3] finite_fraction=1.0 input_token_count=617 input_ids_sha256=9919d49fc73349a109b1e7885a60b10c17681a2eb48fbc278c543cd274325c84 output_sha256=e616e07965186393d1f0de94fc69c96648c2b978d0ba137c88bf82b1e9e2d769 future_text_chars=3131 future_text_sha256=774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98 generated_temporal_path_length_m=0.0
+multi_step shape=[8,30,3] finite_fraction=1.0 input_token_count=621 input_ids_sha256=37d9f6050e96bb0b050afc78aac5c0c5eabfd3f3d8d248dca17c48dde4275023 output_sha256=e616e07965186393d1f0de94fc69c96648c2b978d0ba137c88bf82b1e9e2d769 future_text_chars=3131 future_text_sha256=774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98 generated_temporal_path_length_m=0.0
+contradictory_left shape=[8,30,3] finite_fraction=1.0 input_token_count=608 input_ids_sha256=caed35b5daea5587cd12b6c1a754a7a5ecbb09d0c6588929b32e5d884d4b63e2 output_sha256=e616e07965186393d1f0de94fc69c96648c2b978d0ba137c88bf82b1e9e2d769 future_text_chars=3131 future_text_sha256=774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98 generated_temporal_path_length_m=0.0
+all_pairwise_ADE_m=0.0
+all_pairwise_FDE_m=0.0
+centroid_final_delta_m=[0.0010088682174682617,0.00012642145156860352,-0.0018467903137207031]
+exit_status=0
+
+REPRODUCIBILITY:
+command=same MODIFIED command with --output-dir /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/results/molmo-text-control-rerun
+literal_result:
+REPRO compact_right max_abs_diff=0 sha256=e616e07965186393d1f0de94fc69c96648c2b978d0ba137c88bf82b1e9e2d769
+REPRO free_right max_abs_diff=0 sha256=e616e07965186393d1f0de94fc69c96648c2b978d0ba137c88bf82b1e9e2d769
+REPRO multi_step max_abs_diff=0 sha256=e616e07965186393d1f0de94fc69c96648c2b978d0ba137c88bf82b1e9e2d769
+REPRO contradictory_left max_abs_diff=0 sha256=e616e07965186393d1f0de94fc69c96648c2b978d0ba137c88bf82b1e9e2d769
+REPRO_MATCH=true
+exit_status=0
+
+ROLLBACK:
+command=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/ROLLBACK.sh /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/rollback-test/run_tracker3d_molmo_probe.py
+literal_output:
+RESTORED=/root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/rollback-test/run_tracker3d_molmo_probe.py
+f1ce26b89ee329558df6046f6d1bce0585c027728512a65f033b6c6df205cde8  /root/autodl-tmp/projects/MolmoMotion-tracker3d-e2e/rollback-test/run_tracker3d_molmo_probe.py
+exit_status=0
+restored_behavior_status=the rollback-test copy matches the original baseline SHA256 and its --help interface exits 0; MODIFIED_FILE remains changed
+
+OBSERVED_RESULT:
+The TrackCraft3R-to-MolmoMotion interface executed successfully and produced finite tensors with the requested shape.
+The four prompts reached the model as four distinct input token tensors.
+The four raw generated <tracks> texts are byte-identical; the four parsed trajectory tensors are byte-identical and every predicted future is temporally constant after its first output point.
+This sample therefore provides no observed text-conditioned trajectory control; technical execution passed, research-goal behavior failed.

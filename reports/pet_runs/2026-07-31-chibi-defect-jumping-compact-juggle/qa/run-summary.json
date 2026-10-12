@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "repair_state": "jumping",
+  "spritesheet": "../final/spritesheet-extended.webp",
+  "validation": "../final/validation-extended.json",
+  "frame_review": "review-clean.json",
+  "contact_sheet": "contact-sheet-extended.png",
+  "jumping_preview": "previews/jumping.gif",
+  "visual_qa": "final-visual-qa.json",
+  "row_preservation": "row-preservation.json",
+  "frame_count_note": "Current Codex v2 jumping uses five frames; atlas columns 5-7 are transparent.",
+  "direction_qa_note": "Look rows are pixel-identical to the approved source; prior semantic verdicts were carried forward and the visual sheets were regenerated."
+}

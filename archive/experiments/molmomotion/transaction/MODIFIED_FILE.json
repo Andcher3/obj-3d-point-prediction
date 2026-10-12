@@ -1,0 +1,1144 @@
+{
+  "schema": "molmomotion-archive-v1",
+  "created": "2026-09-15",
+  "decision": "archived_historical_evidence",
+  "source_root": "D:\\Pycharm\\post_graduate_project\\experiences_results",
+  "archive_root": "D:\\Pycharm\\post_graduate_project\\archive\\experiments\\molmomotion",
+  "source_exists": {
+    "MolmoMotion-tracker3d-e2e": false,
+    "MolmoMotion-text-types": false,
+    "MolmoMotion-tracker3d-retest": false
+  },
+  "archive_exists": {
+    "MolmoMotion-tracker3d-e2e": true,
+    "MolmoMotion-text-types": true,
+    "MolmoMotion-tracker3d-retest": true
+  },
+  "files": [
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\__pycache__\\run_text_type_probe.cpython-310.pyc",
+      "bytes": 8510,
+      "sha256": "9b0d3fbf715ab7dea67c160bf190363a9357b2f0f9ed9f0075097c63ab41e959"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\__pycache__\\run_text_type_probe.cpython-39.pyc",
+      "bytes": 8409,
+      "sha256": "584f84c6c9abbc8a9419e90210e96043d7702a6dd8426fd0b1c01a0558db3302"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\ego4d-samples\\356ed369-7023-4660-904b-be73823a21d3.mp4",
+      "bytes": 2691240,
+      "sha256": "0b394526d07358aaa42ffcd445ae1c861d6640aae8214ac5733973c0c25b875f"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\ego4d-samples\\c0e127bc-ff39-4a34-b4c5-0fd8cfbfa732_frame0.jpg",
+      "bytes": 138079,
+      "sha256": "146f37f1089a286edbbc6d357b74750ab1e6eab36cf11a687fc9fb97df51d45d"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\ego4d-samples\\c0e127bc-ff39-4a34-b4c5-0fd8cfbfa732.mp4",
+      "bytes": 980271,
+      "sha256": "a0014dd3d72d2e5adfc87be93a34886ecd39899861f4a75267164ab3ef4526e9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\ego4d-samples\\cb78dba8-6647-4ec7-875c-6ba1548f8312_frame0.jpg",
+      "bytes": 261833,
+      "sha256": "526ab7df95acab870dbf92adffe9870b99c573a513c284a9bd9e0e41d6160ce6"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\ego4d-samples\\cb78dba8-6647-4ec7-875c-6ba1548f8312.mp4",
+      "bytes": 965896,
+      "sha256": "1db22e17936bbaa91424ed06731bd806f2af0b5dc49e721ed3c0b5f40db31fae"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\ego4d-samples\\contact_sheets\\356ed369-7023-4660-904b-be73823a21d3.jpg",
+      "bytes": 468360,
+      "sha256": "df2ded02770756e7575e90542ad5aedaa4b15890b4c62591747e056ae0c95a1f"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\ego4d-samples\\contact_sheets\\c0e127bc-ff39-4a34-b4c5-0fd8cfbfa732.jpg",
+      "bytes": 191070,
+      "sha256": "34a4a2fc724002ef986be200291c503355f578baaa475195c59d64db25d04669"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\ego4d-samples\\contact_sheets\\cb78dba8-6647-4ec7-875c-6ba1548f8312.jpg",
+      "bytes": 338347,
+      "sha256": "f3ef10dde6548ececf27e301d4b1501ccacd44053f9a156ac6c7e457bd6c50e1"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\ego4d-samples\\watering_frame0_832x480.jpg",
+      "bytes": 151300,
+      "sha256": "3aa4ec9943c687cec2f447b87b972452dead9f2bb541b7edd032e7462edbf56c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\__pycache__\\run_text_type_probe.cpython-310.pyc",
+      "bytes": 8483,
+      "sha256": "9bd8d8608244a2f3d796f07171c18c8d0b7626040762b1a13bdae281ecd67772"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\artifacts\\checkpoint-model.pt.sha256",
+      "bytes": 121,
+      "sha256": "30450ca53ad0f8642ab6b4dee9d22c2e43fa400f23ab28c3ed9513f75722f21a"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\artifacts\\checkpoint-model.pt.size.txt",
+      "bytes": 29,
+      "sha256": "e444fdf576b2e0e3abc0823469fb6bea2856910fe3d50ebd07a3f47267f4c3a5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\artifacts\\ego4d-samples.ffprobe.txt",
+      "bytes": 229,
+      "sha256": "da5abd9b4f5f0f89875e90d2f6fc537e7e935847595221ff33384db360a02501"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\artifacts\\ego4d-samples.sha256",
+      "bytes": 498,
+      "sha256": "5a2b600be9c5a890545304f6234ad2aab27b104bb29439b36d16d9ee3c912b6c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\artifacts\\environment.txt",
+      "bytes": 139,
+      "sha256": "a6394084e9475d0311933f8bd0be836b00645b8b81ff4133dddfe2b4880ce214"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\artifacts\\reproducibility.txt",
+      "bytes": 96,
+      "sha256": "4aec8b59f95beb8a60e91531b79cd816fd9e075be1a76165d791ff8c4446fd24"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\artifacts\\upstream_quickstart.sha256",
+      "bytes": 131,
+      "sha256": "9199f89c8208ad20b4c3da1d2169134870e9b83f74ca181b3101c0f19cc5944a"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\baseline\\01_quickstart.py",
+      "bytes": 13484,
+      "sha256": "32f7159be902e896f07659bb428f7d346febc754bf5bfbb6334ffaca0dc19bf0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\DIFF_FILE.patch",
+      "bytes": 24734,
+      "sha256": "ba07d1d3a6205952439615686f91e97e2319c7c3f5139a56ac14204ebccd8938"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\baseline-success.log",
+      "bytes": 496,
+      "sha256": "2935cd7c30498b1e91ca7eee83680f8458c243992aa137461b1da11e8bafbd56"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\baseline.log",
+      "bytes": 66,
+      "sha256": "b9c6ac4608705f6551c69ce2fa709351bc4ed429834769860a68942d4153a450"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\ego4d-download.log",
+      "bytes": 2339,
+      "sha256": "a48115cab5ce9773954f2cb7f54911e90a4132ea5629ac877d22c175187bca22"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\ego4d-install.log",
+      "bytes": 5301,
+      "sha256": "a2204665cf93963ca24708df4dca1e857c2e762bc6e8c1b7b958ee59e5923486"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\ego4d-list-datasets-default.log",
+      "bytes": 2365,
+      "sha256": "8a1d2f151a8afc19270d82a760fd26044d387624a8156060df582500c99b0a3c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\ego4d-list-datasets.log",
+      "bytes": 2787,
+      "sha256": "9356dcf77f610158e5b09df6004011c180d4cebdaaf167c8ce51cfef873c096a"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\ego4d-manifest-probe.log",
+      "bytes": 5240,
+      "sha256": "ed2f44f4076aec9b409e369efa58e282153836bb0c530a5aa52ee4e88a5e60d7"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\modified.log",
+      "bytes": 2287,
+      "sha256": "74442a465888c859537d2e8e540e4e5a162cef4c870dad4a1ad326933981977c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\rollback-clean.log",
+      "bytes": 166,
+      "sha256": "2bfca8c83ef60738760ce27a983da68c8cb83534f0e5013fb0ecaee7b1aaf509"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\rollback-help.log",
+      "bytes": 797,
+      "sha256": "6a1e8b9079bc14e7d85565c32ca902b54d262990de86099ee532dad1f78db744"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\logs\\rollback.log",
+      "bytes": 166,
+      "sha256": "2bfca8c83ef60738760ce27a983da68c8cb83534f0e5013fb0ecaee7b1aaf509"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\baseline_egodex_clean_surface.mp4",
+      "bytes": 69341,
+      "sha256": "8bd67abcf7965db6385b251d79c371372446cdfb229bc406a99e31f7b5e9df6f"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\davis_car_turn__compact.npz",
+      "bytes": 3906,
+      "sha256": "f3e89d9dc8fe11a45488dc17b5bec0cce4e17962255f8cceaaf24fdf21d20650"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\davis_car_turn__contradictory.npz",
+      "bytes": 3958,
+      "sha256": "36aed4b15ee9a9efbee8f0b70d0051c46121a2c73d3b9d1880e64f287a1adbc9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\davis_car_turn__free_sentence.npz",
+      "bytes": 3910,
+      "sha256": "54aa85edb3f2b653a0a95602e825f4ac450ef18e3c03897218299c6f16186805"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\davis_car_turn__multi_step.npz",
+      "bytes": 3970,
+      "sha256": "83815dcb886f6c7a3d63469bb3d1e1e84581aa47b7966ceebbd8eae0a037e0fc"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\davis_car_turn__official.npz",
+      "bytes": 3959,
+      "sha256": "e9e3cdafdab30d4b03f7e6b485f952315ecd482ffb969811ee3568261db44da5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_ball_base__compact.npz",
+      "bytes": 2295,
+      "sha256": "bafdf816b376270be5fe8a6c4700ff1f620ddb36cfcf03f54ba2f8522aacff0a"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_ball_base__contradictory.npz",
+      "bytes": 3334,
+      "sha256": "d24076ce5989f099dd1d45d2345177b8a0631defb91b08975b30837a69e0f2ae"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_ball_base__free_sentence.npz",
+      "bytes": 2843,
+      "sha256": "9fcc8101c87142916af127102f0b15948e5b383ea7fd311ec41fd6f05ae29c78"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_ball_base__multi_step.npz",
+      "bytes": 3347,
+      "sha256": "8336c353543aa58f6ef313ec4055c78958c8113739b90094bc19fd42ceb943f4"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_ball_base__official.npz",
+      "bytes": 3202,
+      "sha256": "f0e9cdbe344bf2efab79dba9aaae8860d53f7b66b4b1cb94e9b86e3af829d642"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_clean_surface__compact.npz",
+      "bytes": 3563,
+      "sha256": "dff1253ddf9feeb7ad984657950424db2d168ccfb67435ec20493a5a9fa1fbe9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_clean_surface__contradictory.npz",
+      "bytes": 3630,
+      "sha256": "91be2825feb87dd3dfc0a5cb31ec07292ccf29a7ec7d8e4b67986bcd81a6e72d"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_clean_surface__free_sentence.npz",
+      "bytes": 3637,
+      "sha256": "f8ad3652656d9e794d2882079eed0a7a3267aaa4bca6a595c1d69fe00493e808"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_clean_surface__multi_step.npz",
+      "bytes": 3666,
+      "sha256": "f9b87368685526f018b8dfc0fb7abf7139a7630ffa9d9c402ce05f853f21ee71"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\arrays\\egodex_clean_surface__official.npz",
+      "bytes": 3617,
+      "sha256": "7d59e2dde28f44f8cff2357322ebe27171eea3980f76bfec47251a841f768064"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\davis_car_turn__text_comparison.png",
+      "bytes": 837421,
+      "sha256": "c218cf0baa569dbd5d55037b21b8af78c55241ec030f67793d4f3c29ca33aa23"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\egodex_ball_base__text_comparison.png",
+      "bytes": 360367,
+      "sha256": "3fa46debee05cb8c2cbe370b562cf475fa9ce32def5f9c4e4b93745567ab7947"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\egodex_clean_surface__text_comparison.png",
+      "bytes": 384025,
+      "sha256": "1e89dc442a01e3aa9e43436f97eb1d3a55b41d6b8fb5dfc3aaea9a560ff5e73f"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\metrics.csv",
+      "bytes": 3693,
+      "sha256": "72ad77fba92afbd567b7b2006b8e5af09048830c47b89cdf99b8cce95950015e"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\results\\text-type-probe\\metrics.json",
+      "bytes": 12828,
+      "sha256": "e0b444c847e87c525d37a2aaea79f52d67d8d050d14d03ce36db88acba7e6f4a"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\rollback-test\\run_text_type_probe.py",
+      "bytes": 13484,
+      "sha256": "32f7159be902e896f07659bb428f7d346febc754bf5bfbb6334ffaca0dc19bf0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\ROLLBACK.sh",
+      "bytes": 805,
+      "sha256": "ae35d2c27e5c4053281308301cca16019a6ac4768001923c8b8c14afee29d128"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\run_text_type_probe.py",
+      "bytes": 10736,
+      "sha256": "f1ce26b89ee329558df6046f6d1bce0585c027728512a65f033b6c6df205cde8"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\remote\\VERIFICATION.txt",
+      "bytes": 5541,
+      "sha256": "a3aea432eae068e405a8f12becee8803d30f496bf8d039b1c50ff4038b6ba46e"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-text-types\\run_text_type_probe.py",
+      "bytes": 10736,
+      "sha256": "f1ce26b89ee329558df6046f6d1bce0585c027728512a65f033b6c6df205cde8"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\__pycache__\\run_tracker3d_molmo_probe.cpython-39.pyc",
+      "bytes": 9810,
+      "sha256": "d064ae9696b884964da9542857d1c5fc99cf14ff8b87e7670f4cb75cc6007034"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\DIFF_FILE.patch",
+      "bytes": 20605,
+      "sha256": "fe73d7b3f2b831cb8ff468aba43f55b40c4aaebc00baf3ae85366f1314228872"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\logs\\baseline.log",
+      "bytes": 1026,
+      "sha256": "f38684da6536b770cb1851b07f10ca75bae4f85dc0481b4f9e19ab3da79b4053"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\logs\\da3-preprocess.log",
+      "bytes": 1296,
+      "sha256": "048b3d57d28dcdb4f7c20c7432dc5fac427789bd6251897293f4f0be6aaa3166"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\logs\\modified.log",
+      "bytes": 3624,
+      "sha256": "335f80104c2143b538ea07983c86f87a3fa28cda21812b489d4af01085f255f1"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\logs\\reproducibility.log",
+      "bytes": 3636,
+      "sha256": "09f0e6d9d1258890c58bc05d062d81c4f75503196be28e39fac3c6d70bef784b"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\logs\\rollback.log",
+      "bytes": 265,
+      "sha256": "e4328b17291a094eb5613f8274cceffbfdd46a75c99a6586af4a17716f823400"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\logs\\trackcraft-inference.log",
+      "bytes": 1136,
+      "sha256": "d2872c3ef337758acae76392964fdf4478b688ee0f4ef5477516508f14f82ff9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\query_pixels_sewing.json",
+      "bytes": 357,
+      "sha256": "f87340002bb10f7e57541ae3bf51cefcbde6418f25a4d608e0e0ca3c170c3d31"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\arrays\\compact_right.npz",
+      "bytes": 2086,
+      "sha256": "3b1412fc6fb40290fb9af4d16363df5b30a704c6ba4cb168113fb82db18f847c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\arrays\\contradictory_left.npz",
+      "bytes": 2089,
+      "sha256": "034b49e8ce5e577e2e76eb3e06c0b2194c7cbfd349a3e2c07b5ad6c2a3b99cf5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\arrays\\free_right.npz",
+      "bytes": 2146,
+      "sha256": "f4a07ede49a0d6ce36fa117907f2a4af6e681a2e6a30c7922a94a7c095ebce7c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\arrays\\multi_step.npz",
+      "bytes": 2151,
+      "sha256": "527f893d1cd681ec4fb22be6e511b439b24540b89bb0a4b7148f5faee4cec1cb"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\future_text\\compact_right.txt",
+      "bytes": 3131,
+      "sha256": "774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\future_text\\contradictory_left.txt",
+      "bytes": 3131,
+      "sha256": "774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\future_text\\free_right.txt",
+      "bytes": 3131,
+      "sha256": "774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\future_text\\multi_step.txt",
+      "bytes": 3131,
+      "sha256": "774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\input_query_points.png",
+      "bytes": 927168,
+      "sha256": "2dbeaedb17794cd358e060d719f80c7467bb76a6338d1f1eec7376e81520b543"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\metrics.json",
+      "bytes": 5162,
+      "sha256": "a5bb94ef82e58ece0e617e496c08008151f5d31535e0e37115abbad5d9c09a80"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control-rerun\\prediction_centroids.png",
+      "bytes": 929584,
+      "sha256": "3387cc0432a305417ae00f22c8c1eab6a1e1fb7d27253ef55a75f409767bb6b9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\arrays\\compact_right.npz",
+      "bytes": 2086,
+      "sha256": "3b1412fc6fb40290fb9af4d16363df5b30a704c6ba4cb168113fb82db18f847c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\arrays\\contradictory_left.npz",
+      "bytes": 2089,
+      "sha256": "034b49e8ce5e577e2e76eb3e06c0b2194c7cbfd349a3e2c07b5ad6c2a3b99cf5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\arrays\\free_right.npz",
+      "bytes": 2146,
+      "sha256": "f4a07ede49a0d6ce36fa117907f2a4af6e681a2e6a30c7922a94a7c095ebce7c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\arrays\\multi_step.npz",
+      "bytes": 2151,
+      "sha256": "527f893d1cd681ec4fb22be6e511b439b24540b89bb0a4b7148f5faee4cec1cb"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\future_text\\compact_right.txt",
+      "bytes": 3131,
+      "sha256": "774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\future_text\\contradictory_left.txt",
+      "bytes": 3131,
+      "sha256": "774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\future_text\\free_right.txt",
+      "bytes": 3131,
+      "sha256": "774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\future_text\\multi_step.txt",
+      "bytes": 3131,
+      "sha256": "774f009ce2807692f5fdad8c19769a0a208afa8c1125ce44c9e87557a5e53d98"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\input_query_points.png",
+      "bytes": 927168,
+      "sha256": "2dbeaedb17794cd358e060d719f80c7467bb76a6338d1f1eec7376e81520b543"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\metrics.json",
+      "bytes": 5163,
+      "sha256": "5391923e4953358396144c7cbc8611daa09737583fef6b767e271c7502176880"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\results\\molmo-text-control\\prediction_centroids.png",
+      "bytes": 929584,
+      "sha256": "3387cc0432a305417ae00f22c8c1eab6a1e1fb7d27253ef55a75f409767bb6b9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\ROLLBACK.sh",
+      "bytes": 223,
+      "sha256": "cfe4b0bea8212cf5eb8733ec67f5e939f1a9eab1891bc3cd8f010eabf2b57302"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\run_tracker3d_molmo_probe.py",
+      "bytes": 11275,
+      "sha256": "087db2299708752b916242b85538b7bde5b13567ea3a074a514be5397e7e65e1"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\trackcraft_release_adapter.py",
+      "bytes": 3350,
+      "sha256": "d193100eeb1ecc04abd874290f6c7ec1f5c0c17a29e77dab608e18b6ff87aacc"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\final\\VERIFICATION.txt",
+      "bytes": 6539,
+      "sha256": "9839996f67c5bdb70fd5d6e87c5aedd130c7a3f0e12a3f99e6cfc9bf1e8ba7fe"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\molmomotion-tracker3d-e2e-final.tar.gz",
+      "bytes": 3736097,
+      "sha256": "400259b15059ade86cedb541d664075053cd114d8acd195c45a904678573df70"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\query_pixels_sewing.json",
+      "bytes": 357,
+      "sha256": "f87340002bb10f7e57541ae3bf51cefcbde6418f25a4d608e0e0ca3c170c3d31"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\query_t0_preview.jpg",
+      "bytes": 113449,
+      "sha256": "3f6f441c6f281069c11f74e4bfcee876c7349dee0435286455b18a81ec6892bd"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\DIFF_FILE.patch",
+      "bytes": 20276,
+      "sha256": "eeb8798b38f989fd9d53e5908f453385560429979ef6dc41709851fd2212a37d"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\logs\\baseline.log",
+      "bytes": 1026,
+      "sha256": "f38684da6536b770cb1851b07f10ca75bae4f85dc0481b4f9e19ab3da79b4053"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\logs\\da3-preprocess.log",
+      "bytes": 1296,
+      "sha256": "048b3d57d28dcdb4f7c20c7432dc5fac427789bd6251897293f4f0be6aaa3166"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\logs\\modified.log",
+      "bytes": 3156,
+      "sha256": "70941bcbbb154b88ef156e3155baaad0819d04bcded61d2fe7d6fe38e1c6017d"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\logs\\reproducibility.log",
+      "bytes": 3169,
+      "sha256": "146800124452197959d619fa250284b01605e466e74262daae0c9fc329e270c3"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\logs\\rollback.log",
+      "bytes": 265,
+      "sha256": "e4328b17291a094eb5613f8274cceffbfdd46a75c99a6586af4a17716f823400"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\logs\\trackcraft-inference.log",
+      "bytes": 1136,
+      "sha256": "d2872c3ef337758acae76392964fdf4478b688ee0f4ef5477516508f14f82ff9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control-rerun\\arrays\\compact_right.npz",
+      "bytes": 2086,
+      "sha256": "3b1412fc6fb40290fb9af4d16363df5b30a704c6ba4cb168113fb82db18f847c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control-rerun\\arrays\\contradictory_left.npz",
+      "bytes": 2089,
+      "sha256": "034b49e8ce5e577e2e76eb3e06c0b2194c7cbfd349a3e2c07b5ad6c2a3b99cf5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control-rerun\\arrays\\free_right.npz",
+      "bytes": 2146,
+      "sha256": "f4a07ede49a0d6ce36fa117907f2a4af6e681a2e6a30c7922a94a7c095ebce7c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control-rerun\\arrays\\multi_step.npz",
+      "bytes": 2151,
+      "sha256": "527f893d1cd681ec4fb22be6e511b439b24540b89bb0a4b7148f5faee4cec1cb"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control-rerun\\input_query_points.png",
+      "bytes": 927168,
+      "sha256": "2dbeaedb17794cd358e060d719f80c7467bb76a6338d1f1eec7376e81520b543"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control-rerun\\metrics.json",
+      "bytes": 4647,
+      "sha256": "51ecc79d5724c8d603b5c935270107a3ec8dc110f665465ab9a8a441465c02bf"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control-rerun\\prediction_centroids.png",
+      "bytes": 929584,
+      "sha256": "3387cc0432a305417ae00f22c8c1eab6a1e1fb7d27253ef55a75f409767bb6b9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control\\arrays\\compact_right.npz",
+      "bytes": 2086,
+      "sha256": "3b1412fc6fb40290fb9af4d16363df5b30a704c6ba4cb168113fb82db18f847c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control\\arrays\\contradictory_left.npz",
+      "bytes": 2089,
+      "sha256": "034b49e8ce5e577e2e76eb3e06c0b2194c7cbfd349a3e2c07b5ad6c2a3b99cf5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control\\arrays\\free_right.npz",
+      "bytes": 2146,
+      "sha256": "f4a07ede49a0d6ce36fa117907f2a4af6e681a2e6a30c7922a94a7c095ebce7c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control\\arrays\\multi_step.npz",
+      "bytes": 2151,
+      "sha256": "527f893d1cd681ec4fb22be6e511b439b24540b89bb0a4b7148f5faee4cec1cb"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control\\input_query_points.png",
+      "bytes": 927168,
+      "sha256": "2dbeaedb17794cd358e060d719f80c7467bb76a6338d1f1eec7376e81520b543"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control\\metrics.json",
+      "bytes": 4647,
+      "sha256": "34aeb8e5b2c8ef49c776a9c97d5b80a94c7a12a489bfb4912a067aedc8c3cc2d"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\molmo-text-control\\prediction_centroids.png",
+      "bytes": 929584,
+      "sha256": "3387cc0432a305417ae00f22c8c1eab6a1e1fb7d27253ef55a75f409767bb6b9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\ROLLBACK.sh",
+      "bytes": 223,
+      "sha256": "cfe4b0bea8212cf5eb8733ec67f5e939f1a9eab1891bc3cd8f010eabf2b57302"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\remote\\VERIFICATION.txt",
+      "bytes": 6056,
+      "sha256": "9fdc6cfd9d499255e231e860eb966c25ee65165747f7f2e477e10874d5d0fe65"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\run_tracker3d_molmo_probe.py",
+      "bytes": 11275,
+      "sha256": "087db2299708752b916242b85538b7bde5b13567ea3a074a514be5397e7e65e1"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\sewing-full-video-contact-sheet.jpg",
+      "bytes": 91122,
+      "sha256": "9b81c35c188defeb71feb53792908435185e6d41ae08743a9d81365e0fd73dc6"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\sewing-timeline-labelled.jpg",
+      "bytes": 241141,
+      "sha256": "7e4cbea8768f1e874807b6b02738120f0bcffba41230151c206d615f8f35b0a4"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-e2e\\trackcraft_release_adapter.py",
+      "bytes": 3350,
+      "sha256": "d193100eeb1ecc04abd874290f6c7ec1f5c0c17a29e77dab608e18b6ff87aacc"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\artifacts\\sewing_frame0.png",
+      "bytes": 421878,
+      "sha256": "78eac73114995b5039376098137b31de6b4b53db5db68f00b97e116d2924f206"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\artifacts\\sewing_frame11.png",
+      "bytes": 406783,
+      "sha256": "12e97d130ebb6119072f747d04562225d7ef327622b7b8153de6cecc09c3a883"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\artifacts\\sewing_frame2.png",
+      "bytes": 415216,
+      "sha256": "bbf2569dc097cc46edad2dcce35e0f9679f1d0fb8cccb4a6bf5eb4ff15dd889c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\artifacts\\validation.json",
+      "bytes": 874,
+      "sha256": "afef180e15e4de155b66fc70b911ae4941306aaa0fdfa0ff15282f3287644d60"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\artifacts\\watering_frame0.png",
+      "bytes": 468328,
+      "sha256": "ae49894bb779f7c691167cd5f98c338e67fa63c1cc14ba4642b76bafb2461931"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\artifacts\\watering_frame11.png",
+      "bytes": 534859,
+      "sha256": "d1257702644e2e6bd622a99144f60b9dedee0b8687bd24e13953aea5ac1c39e4"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\artifacts\\watering_frame2.png",
+      "bytes": 528033,
+      "sha256": "7e7693ea2b9675c04c6834fbd81c235d219b8472b574b3383e30bd50180d3ef1"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\baseline\\run_tracker3d_molmo_probe.py",
+      "bytes": 11275,
+      "sha256": "087db2299708752b916242b85538b7bde5b13567ea3a074a514be5397e7e65e1"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\DIFF_FILE.patch",
+      "bytes": 22503,
+      "sha256": "5f83f0d20dd4c34881e38dc1c01442b9b52970f9a7099e8d1301c74f620ff343"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\logs\\da3-sewing.log",
+      "bytes": 1319,
+      "sha256": "8d70de08c4eee201baa15afb165abbb40303c61aa9e024ceff61db3781cedeee"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\logs\\da3-watering.log",
+      "bytes": 1325,
+      "sha256": "19ae73b427eede841a52499fd0e240a259a05fa4a981dfd9d50fe77b0f818919"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\logs\\modified-exit.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\logs\\modified-retest.log",
+      "bytes": 10374,
+      "sha256": "df3ca6e4dc74f60b630054e87a711c194e2c40ef166985a61e9311a944375218"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\logs\\repro-exit.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\logs\\repro-greedy.log",
+      "bytes": 5514,
+      "sha256": "c40ea27ee4ebcd1ef3ebd8141d294dd49757c6bc8a832247284fce3989404ba9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\logs\\rollback.log",
+      "bytes": 118,
+      "sha256": "03c92442480141efffc3068f977cb21000b658e9a08901a58e960845b48806eb"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\logs\\trackcraft-sewing.log",
+      "bytes": 1509,
+      "sha256": "bed85d09625661efe1131a39b45f11e002bf8edb0ae0da4a9a2b6fcdf90c5367"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\logs\\trackcraft-watering.log",
+      "bytes": 1511,
+      "sha256": "754d89644849c4bff944ff290b4aa67c786655283b5cfd89b3b20c557873a363"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\queries\\sewing_queries.json",
+      "bytes": 107,
+      "sha256": "30fdf775f7091bb91775318a3a49909c84fa6e32ef1b851df9d68e57b78a602a"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\queries\\watering_queries.json",
+      "bytes": 107,
+      "sha256": "d3c70451c8226cec6180dd00225a91e8d2ca0c965d0d59643a198a31f3a71a74"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\aggregate_metrics.json",
+      "bytes": 15297,
+      "sha256": "35713aeb450a5a0b496b5be76062794ef3c77e2c2e87ddfd9a98f0c6d9df03fc"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\sewing_scissors\\arrays\\counterfactual_static__greedy.npz",
+      "bytes": 2890,
+      "sha256": "c31fa3fca425128785dd8ca1e95507fcb5b1bfc290e29dedd0edb9ff6ca2c1c0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\sewing_scissors\\arrays\\multistep__greedy.npz",
+      "bytes": 3976,
+      "sha256": "559c3a5addab83a66228ef88a41a57d7a7bc14398514c0d87433851e7d72078d"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\sewing_scissors\\arrays\\observed_pickup__greedy.npz",
+      "bytes": 3806,
+      "sha256": "414a07feefacfff2d69faa3465e442f01d7e22095da61b06dd95a24de91c91f5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\sewing_scissors\\future_text\\counterfactual_static__greedy.txt",
+      "bytes": 3161,
+      "sha256": "61226f608594eab029c75dbfc69f010667f3264c8ea4ddb4b7880008cbc1bd07"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\sewing_scissors\\future_text\\multistep__greedy.txt",
+      "bytes": 3208,
+      "sha256": "9beef05e4e6ad32409b40a98c3c75c918fe14f7d2f728695e6c101694a86f8e7"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\sewing_scissors\\future_text\\observed_pickup__greedy.txt",
+      "bytes": 3190,
+      "sha256": "95ec16762da7612d06690a26fa8cdb8d3a026ac082f05cc2c256eddb9182c4c0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\sewing_scissors\\metrics.json",
+      "bytes": 4101,
+      "sha256": "e17518022f26fcf2b4ea54396192649eed53cacc473d530089d120f6cf18df5a"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\sewing_scissors\\prediction_vs_pseudogt.png",
+      "bytes": 1005541,
+      "sha256": "dea175f174436bf2178782340669c03ccd5df0577e07403bf7ead5a0ef84db55"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\watering_can\\arrays\\counterfactual_setdown__greedy.npz",
+      "bytes": 4793,
+      "sha256": "6f084b9e7bc694eee9e02bd88cc482d0f28555f5916d0fe2637a78ab3c1c0ab0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\watering_can\\arrays\\multistep__greedy.npz",
+      "bytes": 4786,
+      "sha256": "1ea2325850dcfe4d2edfbe5ed4310d54876a4394173ed2a320fc9c31e9a77d5a"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\watering_can\\arrays\\observed_carry__greedy.npz",
+      "bytes": 5007,
+      "sha256": "f6534d0c5053d1f7e94638064da73592a19b32e11facd7011f64c3a9cc36accb"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\watering_can\\future_text\\counterfactual_setdown__greedy.txt",
+      "bytes": 3554,
+      "sha256": "af41f3847901254db578f4af3cfb6474b64cb48a52e6a76b6c53389ad3da41d0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\watering_can\\future_text\\multistep__greedy.txt",
+      "bytes": 3493,
+      "sha256": "46e8d56e20e6ae6771cd0a2ddb2b41192110e1708a74b0cf016397dd4bd6d001"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\watering_can\\future_text\\observed_carry__greedy.txt",
+      "bytes": 3584,
+      "sha256": "206f4b3c848189e36d68d9cffcd170f7b2f3c243bc67828ef4538c0e0a0f5432"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\watering_can\\metrics.json",
+      "bytes": 4101,
+      "sha256": "594e69f9dd994042ae6e84b9bd851c8a46c83f00688cfc4faeaea15c55479b63"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-rerun-greedy\\watering_can\\prediction_vs_pseudogt.png",
+      "bytes": 1214377,
+      "sha256": "f88fa5418e83373504d2464c02c98cd536cad3566495da040767fb641286de73"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\aggregate_metrics.json",
+      "bytes": 32141,
+      "sha256": "02b73b7c47045e8e72319999a174668c34857e0dc74280102894586a85813056"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\arrays\\counterfactual_static__greedy.npz",
+      "bytes": 2890,
+      "sha256": "c31fa3fca425128785dd8ca1e95507fcb5b1bfc290e29dedd0edb9ff6ca2c1c0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\arrays\\counterfactual_static__sample1.npz",
+      "bytes": 4762,
+      "sha256": "b7c1fa52e2dc650e4f5e275cd4d6869f9ff1a0b1471c895ecbbca0d54173ce75"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\arrays\\multistep__greedy.npz",
+      "bytes": 3976,
+      "sha256": "559c3a5addab83a66228ef88a41a57d7a7bc14398514c0d87433851e7d72078d"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\arrays\\multistep__sample1.npz",
+      "bytes": 4757,
+      "sha256": "dc0dd3ab18dcac3e165b1f76704057cae17aef242ba272371ce0e92e47595e8e"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\arrays\\observed_pickup__greedy.npz",
+      "bytes": 3806,
+      "sha256": "414a07feefacfff2d69faa3465e442f01d7e22095da61b06dd95a24de91c91f5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\arrays\\observed_pickup__sample1.npz",
+      "bytes": 4895,
+      "sha256": "8f1a13a39a962e85de62cb5d585edc3abfcb77cb0b2db6283ba8ac577125d16c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\future_text\\counterfactual_static__greedy.txt",
+      "bytes": 3161,
+      "sha256": "61226f608594eab029c75dbfc69f010667f3264c8ea4ddb4b7880008cbc1bd07"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\future_text\\counterfactual_static__sample1.txt",
+      "bytes": 3406,
+      "sha256": "888f45e6db0832268111a8a77e543dbbfce60ca3c769cd4d215a8f357c901c67"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\future_text\\multistep__greedy.txt",
+      "bytes": 3208,
+      "sha256": "9beef05e4e6ad32409b40a98c3c75c918fe14f7d2f728695e6c101694a86f8e7"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\future_text\\multistep__sample1.txt",
+      "bytes": 3311,
+      "sha256": "70d8345c3981f34ca73d5866149fecc88157105729409633058341c9c806a746"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\future_text\\observed_pickup__greedy.txt",
+      "bytes": 3190,
+      "sha256": "95ec16762da7612d06690a26fa8cdb8d3a026ac082f05cc2c256eddb9182c4c0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\future_text\\observed_pickup__sample1.txt",
+      "bytes": 3600,
+      "sha256": "cd67007e0ffd4ee83997566591904b513ca96f6dcc7dd089fae4e2b9e67b7eec"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\metrics.json",
+      "bytes": 9156,
+      "sha256": "496cb82c5a5f1a97dbfd83631cfa76435041bafd1fe10bd73ce35e5812a11182"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\sewing_scissors\\prediction_vs_pseudogt.png",
+      "bytes": 1005541,
+      "sha256": "dea175f174436bf2178782340669c03ccd5df0577e07403bf7ead5a0ef84db55"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\arrays\\counterfactual_setdown__greedy.npz",
+      "bytes": 4793,
+      "sha256": "6f084b9e7bc694eee9e02bd88cc482d0f28555f5916d0fe2637a78ab3c1c0ab0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\arrays\\counterfactual_setdown__sample1.npz",
+      "bytes": 4923,
+      "sha256": "785ad9848deffcd747c41d677ae0388e070ed8d7f14627db400999e012216276"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\arrays\\multistep__greedy.npz",
+      "bytes": 4786,
+      "sha256": "1ea2325850dcfe4d2edfbe5ed4310d54876a4394173ed2a320fc9c31e9a77d5a"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\arrays\\multistep__sample1.npz",
+      "bytes": 5029,
+      "sha256": "b4c54c4a6765bdad9de8fc4e3f67aecc35fde0ec39fae40cec8a0b7155c5ae8e"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\arrays\\observed_carry__greedy.npz",
+      "bytes": 5007,
+      "sha256": "f6534d0c5053d1f7e94638064da73592a19b32e11facd7011f64c3a9cc36accb"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\arrays\\observed_carry__sample1.npz",
+      "bytes": 4969,
+      "sha256": "88f80ecdbb75157c6727f2ec7e6140c43fc42a10dfacbe4e0087724ac9e7a1ea"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\future_text\\counterfactual_setdown__greedy.txt",
+      "bytes": 3554,
+      "sha256": "af41f3847901254db578f4af3cfb6474b64cb48a52e6a76b6c53389ad3da41d0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\future_text\\counterfactual_setdown__sample1.txt",
+      "bytes": 3730,
+      "sha256": "6fd417889dd9c027bb53fce80a007c683811e3839d6ac62e023e7002d0fdeef6"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\future_text\\multistep__greedy.txt",
+      "bytes": 3493,
+      "sha256": "46e8d56e20e6ae6771cd0a2ddb2b41192110e1708a74b0cf016397dd4bd6d001"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\future_text\\multistep__sample1.txt",
+      "bytes": 3515,
+      "sha256": "3be714377dbef80718a22e66e1be9685cd96d065faa5162cc927df2d10bf8d11"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\future_text\\observed_carry__greedy.txt",
+      "bytes": 3584,
+      "sha256": "206f4b3c848189e36d68d9cffcd170f7b2f3c243bc67828ef4538c0e0a0f5432"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\future_text\\observed_carry__sample1.txt",
+      "bytes": 3688,
+      "sha256": "b3725e4d4d26fad5fc00c270d61a18d5c22dddb2ef6140ea7090036f4f316aec"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\metrics.json",
+      "bytes": 9163,
+      "sha256": "153545626a88784d21445998795fce3a2f034ca2dbc431561fc96b5ffda1bc14"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\results\\retest-v1\\watering_can\\prediction_vs_pseudogt.png",
+      "bytes": 1214377,
+      "sha256": "f88fa5418e83373504d2464c02c98cd536cad3566495da040767fb641286de73"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\retest_spec.json",
+      "bytes": 1679,
+      "sha256": "31ebc468b3bde25c193c0bc48b64db79c170082109b2b02781bb36dbc88eec38"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\ROLLBACK.sh",
+      "bytes": 245,
+      "sha256": "f447949d2dc7adc221d000acaaa360b2ba311aaeff936e903f6024315c74aa42"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\run_tracker3d_molmo_retest.py",
+      "bytes": 13594,
+      "sha256": "1775c99ff6476fe3b8601d3256ec03e7ac108e52c94b4e4a53ce67045b43e33b"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\final\\VERIFICATION.txt",
+      "bytes": 4243,
+      "sha256": "424c15c7336a1b1f2ea61b0262232bdfb2dc0af1321b4160f5ac6b56cbb20206"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\MolmoMotion-tracker3d-retest-export.tgz",
+      "bytes": 7319708,
+      "sha256": "f7e3c976c98bf2babfc4bf4acd268a1df549009f282ffb5705e791f884e0a0b0"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\356ed369_f131.png",
+      "bytes": 6353809,
+      "sha256": "f573d111842069743474758168ea47c9d08ad58f3371a96429769cb0d5a694ab"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\356ed369_f133.png",
+      "bytes": 6684065,
+      "sha256": "38dc49cb778ecb7f192361a669281719e58df6f9b21b399d3029d5989e5f15d5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\356ed369_f135_rotcw.png",
+      "bytes": 3099891,
+      "sha256": "b0ce6da2b2feccb291a88a0b00a70a119275ecf9c15c79ed07102701c4fd1cd1"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\356ed369_f135.png",
+      "bytes": 6769912,
+      "sha256": "eaf30d68c77baa53ce6b34cd0dfc12f28f5b89f11cc6798f4de6103fd3b2b481"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\cb78dba8_f161.png",
+      "bytes": 1427276,
+      "sha256": "5f6095bc764dda034d92d689118e38129b8b136ade427f1c6543c04adba20d9f"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\cb78dba8_f163.png",
+      "bytes": 1444448,
+      "sha256": "2c9fddbd1817ce60127386c3d51ecdfaf62ce7409f3803777b88a3db63658da5"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\cb78dba8_f165.png",
+      "bytes": 1480475,
+      "sha256": "83636255ce187ce69465d2f441234235cc681883bb774a137e786371ef228a04"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\sewing_frame0.png",
+      "bytes": 421878,
+      "sha256": "78eac73114995b5039376098137b31de6b4b53db5db68f00b97e116d2924f206"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\sewing_frame11.png",
+      "bytes": 406783,
+      "sha256": "12e97d130ebb6119072f747d04562225d7ef327622b7b8153de6cecc09c3a883"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\sewing_frame2.png",
+      "bytes": 415216,
+      "sha256": "bbf2569dc097cc46edad2dcce35e0f9679f1d0fb8cccb4a6bf5eb4ff15dd889c"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\sewing_queries.json",
+      "bytes": 340,
+      "sha256": "7df85ee29214f9790a2a52777ac0f5897f259041ce4733c7f112aac3d7e44a77"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\sewing_query_overlay.png",
+      "bytes": 422827,
+      "sha256": "b0b76e8261ea001741a574461a7a9304de67e80fb4f5ec47194381b3b0242b5d"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\watering_frame0.png",
+      "bytes": 468328,
+      "sha256": "ae49894bb779f7c691167cd5f98c338e67fa63c1cc14ba4642b76bafb2461931"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\watering_frame11.png",
+      "bytes": 534859,
+      "sha256": "d1257702644e2e6bd622a99144f60b9dedee0b8687bd24e13953aea5ac1c39e4"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\watering_frame2.png",
+      "bytes": 528033,
+      "sha256": "7e7693ea2b9675c04c6834fbd81c235d219b8472b574b3383e30bd50180d3ef1"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\watering_queries.json",
+      "bytes": 340,
+      "sha256": "576a44b972aaf851359d2a92a001cd1f9ab92d6cc5d217bfc24e07bcde5f2911"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\query-frames\\watering_query_overlay.png",
+      "bytes": 470432,
+      "sha256": "5b11dc302bb57c3734b463f76dd4889c2c1b1cff64814aa3fcbca76bd9b990c3"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\timeline\\356ed369-7023-4660-904b-be73823a21d3.jpg",
+      "bytes": 452800,
+      "sha256": "afdc0b8ac5b161b9fe6c3d62e6df5f338e3728dd8935d6b9084fb286e8da13e6"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\timeline\\c0e127bc-ff39-4a34-b4c5-0fd8cfbfa732.jpg",
+      "bytes": 163249,
+      "sha256": "e20400031421fd851fb391e4eedccb5985cb5bd2638b240a895a6c3e6350ce38"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\timeline\\cb78dba8-6647-4ec7-875c-6ba1548f8312.jpg",
+      "bytes": 311357,
+      "sha256": "7dd7da2d1229065e36bf50b76cbe3fbfae5a980ef3836fabbd316914d03226a7"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\transaction\\__pycache__\\run_tracker3d_molmo_retest.cpython-39.pyc",
+      "bytes": 11240,
+      "sha256": "8f7ebeb37316238a52528d6881169983674aa3850f554c1eafcd80b0082889a9"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\transaction\\baseline_run_tracker3d_molmo_probe.py",
+      "bytes": 11275,
+      "sha256": "087db2299708752b916242b85538b7bde5b13567ea3a074a514be5397e7e65e1"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\transaction\\DIFF_FILE.patch",
+      "bytes": 23085,
+      "sha256": "429364664e2f622f656a337bcb75ba933dab48f6e511de9fb6372522a30a8d12"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\transaction\\retest_spec.json",
+      "bytes": 1679,
+      "sha256": "31ebc468b3bde25c193c0bc48b64db79c170082109b2b02781bb36dbc88eec38"
+    },
+    {
+      "path": "experiences_results\\MolmoMotion-tracker3d-retest\\transaction\\run_tracker3d_molmo_retest.py",
+      "bytes": 13594,
+      "sha256": "1775c99ff6476fe3b8601d3256ec03e7ac108e52c94b4e4a53ce67045b43e33b"
+    }
+  ],
+  "references": {
+    "reports\\progress\\2026-09-15-molmomotion-tracker3d-e2e.md": {
+      "sha256": "15aa615a9cee9d847ffa9ce479b621beabf0a363e4d61a3be875250f620fa0ce",
+      "old_refs": 0
+    },
+    "reports\\analysis\\2026-09-15-molmomotion-tracker3d-e2e\\report.md": {
+      "sha256": "5dfc71fe7ad6a820fce1ff16166109f406f51482470d18a7f11604330879e928",
+      "old_refs": 0
+    },
+    "reports\\progress\\2026-09-15-molmomotion-aligned-multivideo-retest.md": {
+      "sha256": "d86da465ebff2713816389a1963c8eb9b1ecfdfd8f47124d3382459ca01d457d",
+      "old_refs": 0
+    },
+    "reports\\progress\\2026-09-14-molmomotion-text-type-probe.md": {
+      "sha256": "102b6f71b33dd7bec0a177fab6bf4f5f7c9c1b5ea7b98ec1f927f6989ad29c09",
+      "old_refs": 0
+    },
+    "reports\\analysis\\2026-09-14-molmomotion-text-type-probe\\report.md": {
+      "sha256": "5d8f0710388e7b6805c09a9efd3e9d5e594e7e6924d0046ea37f5ff638c2398b",
+      "old_refs": 0
+    },
+    "reports\\analysis\\2026-09-15-molmomotion-tracker3d-retest\\report.md": {
+      "sha256": "0fe8c3da4a7d930a0b49f53e26f95e072e5d6607e569c35ab7d7bf8fe8714f1b",
+      "old_refs": 0
+    },
+    "research_roadmap.md": {
+      "sha256": "53a0b0c06bd9890d16fc344ffde92e1b0f2acd1857dfe4cc48544f6afe7cee7e",
+      "old_refs": 0
+    }
+  }
+}

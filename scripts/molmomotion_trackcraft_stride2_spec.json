@@ -1,0 +1,18 @@
+{
+  "samples": [
+    {
+      "id": "drink_bottle_stride2",
+      "source_video": "/root/autodl-tmp/projects/molmo-raw-test/test_video.mp4",
+      "source_fps": 30.0,
+      "camera_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_camera_stride2.npz",
+      "dense_npz": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_dense_stride2.npz",
+      "query_json": "/root/autodl-tmp/projects/molmo-raw-test/preprocessed/test_video_queries.json",
+      "prompts": [
+        {"name": "mouse", "text": "Move the drink bottle to the right and place it next to the computer mouse."},
+        {"name": "black_cup", "text": "Move the drink bottle to the right and place it next to the black water cup."},
+        {"name": "laptop", "text": "Move the drink bottle toward the laptop and place it next to the laptop computer."},
+        {"name": "keep_holding", "text": "Keep holding the drink bottle and do not put it down."}
+      ]
+    }
+  ]
+}

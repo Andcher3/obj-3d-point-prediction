@@ -1,0 +1,36 @@
+TRANSACTION=2026-09-04-motionmap-foundation-prior
+OBJECT=D:\Pycharm\post_graduate_project\research_roadmap.md
+CHANGED_BRANCH_FIELD=METHOD_STATUS: temporary group-meeting draft -> GROUP_MEETING_DRAFT_NONBINDING; CANDIDATE_ROUTE: dataset-built MotionMap codebook -> CONTINUOUS_FOUNDATION_PRIOR
+ORIGINAL_SHA256=BBB05472030C73BB0A80218D0C4A53AC19234D168E527CF34F0AC4A406FE5E46
+MODIFIED_SHA256=1200C5CABF06CA69EBFD5CB3D33B45CC2AE5827F9CB61ECE57A1B5AAE4C33EB5
+
+ARTIFACTS
+MODIFIED_FILE=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\MODIFIED_FILE
+DIFF_FILE=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\DIFF_FILE
+VERIFICATION.txt=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\VERIFICATION.txt
+ROLLBACK.sh=D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\ROLLBACK.sh
+
+BASELINE
+COMMAND=pwsh -NoProfile -ExecutionPolicy Bypass -File "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\VERIFY_BASELINE.ps1" -FixtureRoot "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\backup\files"
+INPUT=preserved original copies of AGENTS.md, research_roadmap.md, and reports\ideas\2026-09-02-project-status-flowforesight.md
+LITERAL_OUTPUT=BASELINE_GROUP_MEETING_DRAFT_MARKER=False; CONTINUOUS_FOUNDATION_PRIOR=False; OLD_SNAPSHOT_NOTICE=False; STATUS=PASS
+EXIT_STATUS=0
+
+MODIFIED
+COMMAND=pwsh -NoProfile -ExecutionPolicy Bypass -File "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\VERIFY_MODIFIED.ps1" -ProjectRoot "D:\Pycharm\post_graduate_project" -TransactionRoot "D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior"
+INPUT=D:\Pycharm\post_graduate_project\AGENTS.md; D:\Pycharm\post_graduate_project\AGENTS_zh.md; D:\Pycharm\post_graduate_project\research_roadmap.md; D:\Pycharm\post_graduate_project\reports\ideas\2026-09-04-motionmap-foundation-prior-redesign.md; D:\Pycharm\post_graduate_project\reports\progress\2026-09-04-motionmap-foundation-prior-review.md; D:\Pycharm\post_graduate_project\reports\progress_log.md; D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\MODIFIED_FILE
+LITERAL_OUTPUT=MODIFIED_DRAFT_NONBINDING=True; CONTINUOUS_FOUNDATION_PRIOR=True; SPEAKER_NOTES_SOURCE=False; NEW_IDEA=True; NEW_PROGRESS=True; PROGRESS_LINK=True; SOURCES=5; MODIFIED_COPY_MATCH=True; STATUS=PASS
+EXIT_STATUS=0
+
+ROLLBACK
+COMMAND=pwsh -NoProfile -Command "$script=[scriptblock]::Create((Get-Content -LiteralPath 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\ROLLBACK.sh' -Raw -Encoding UTF8)); & $script -ProjectRoot 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\rollback_test\project2' -TransactionRoot 'D:\Pycharm\post_graduate_project\reports\transactions\2026-09-04-motionmap-foundation-prior\rollback_test\transaction2'"
+INPUT=another-copy fixture containing the six modified files, two new files, preserved originals, and rollback manifests
+LITERAL_OUTPUT=ROLLBACK_APPLIED=PASS
+RESULT=ROLLBACK_TEST=PASS; RESTORED_DRAFT_MARKER=False; RESTORED_PRIOR_MARKER=False; NEW_IDEA_REMOVED=True; PROGRESS_NOTE_REMOVED=True; HASH_MATCHES=6; EXIT=0
+EXIT_STATUS=0
+RESTORED_BEHAVIOR_STATUS=The another-copy fixture restored all six original SHA256 values, removed both newly introduced notes, and restored the pre-redesign method-status behavior. The live workspace remains changed with GROUP_MEETING_DRAFT_NONBINDING=true and CONTINUOUS_FOUNDATION_PRIOR=true.
+
+LIVE_RESULT
+METHOD_STATUS=GROUP_MEETING_DRAFT_NONBINDING
+CANDIDATE_ROUTE=CONTINUOUS_FOUNDATION_PRIOR
+LIVE_MODIFIED_FILE_LEFT_CHANGED=True

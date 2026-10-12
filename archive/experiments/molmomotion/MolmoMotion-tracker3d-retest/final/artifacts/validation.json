@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "two_video_samples": true,
+    "twelve_predictions": true,
+    "all_parse_success": true,
+    "all_finite": true,
+    "history_is_first_three": true,
+    "future_not_in_molmo_history": true,
+    "source_sampling_15fps": true,
+    "pseudo_gt_motion_nonzero": true,
+    "greedy_text_condition_changes_outputs": true,
+    "stochastic_draw_changes_output": true,
+    "greedy_exact_rerun": true
+  },
+  "passed": 11,
+  "total": 11,
+  "greedy_exact_match_count": 6,
+  "greedy_total": 6,
+  "method_result": "TEXT_SENSITIVE_BUT_NOT_RELIABLY_ACCURATE",
+  "key_metrics": {
+    "sewing_gt_path_m": 0.21228453516960144,
+    "sewing_pickup_path_m": 0.0592699870467186,
+    "sewing_static_path_m": 0.0021593566052615643,
+    "watering_gt_path_m": 0.08397991955280304,
+    "watering_carry_path_m": 1.2007572650909424,
+    "watering_carry_fde_m": 0.2667921781539917
+  }
+}

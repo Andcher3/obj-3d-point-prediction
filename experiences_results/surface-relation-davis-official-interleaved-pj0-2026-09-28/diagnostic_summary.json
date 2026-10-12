@@ -1,0 +1,294 @@
+{
+  "status": "QUALITY_FAIL_NO_TRAINING",
+  "training_started": false,
+  "passed_video_ids": [],
+  "protocol": "official two-run 12-frame interleaving over source14..36; evaluate source14..35",
+  "observed7_limit": "nonofficial 7-frame diagnostic without future padding",
+  "legacy_direct22_valid_protocol": false,
+  "coordinate_semantics": "predictor outputs frame0-camera coordinates; frame-j projection uses w2c_j @ c2w_0",
+  "videos": {
+    "car-turn": {
+      "status": "FAIL",
+      "failed_gates": [
+        "cross_context_t0_uv_p90_le_5pct",
+        "cross_context_t0_uv_max_le_10pct",
+        "registration_p90_le_10pct",
+        "registration_90pct_below_10pct",
+        "registration_max_le_20pct"
+      ],
+      "valid_query_count": 48,
+      "graph": {
+        "edge_count": 96,
+        "component_count": 1,
+        "component_sizes": [
+          48
+        ],
+        "bridge_edges": [
+          [
+            4,
+            37
+          ],
+          [
+            29,
+            34
+          ]
+        ],
+        "connected": true
+      },
+      "observed_anchor": {
+        "p50": 0.009258858303089475,
+        "p90": 0.013640928420879163,
+        "mean": 0.009082241589505435,
+        "max": 0.015551437412272336
+      },
+      "teacher_anchor": {
+        "p50": 0.009258880031691074,
+        "p90": 0.013640942942160126,
+        "mean": 0.009082252692972914,
+        "max": 0.015551398752287266
+      },
+      "t0_uv": {
+        "p50": 0.13313748673248457,
+        "p90": 0.32720641716487886,
+        "mean": 0.16183175206628508,
+        "max": 0.4855079792767739
+      },
+      "registration": {
+        "p50": 0.1044937737894876,
+        "p90": 0.18838969122714982,
+        "mean": 0.10958681538805344,
+        "max": 0.253701495715371
+      },
+      "official_future_mask_hits_21_29": [
+        31,
+        40,
+        32,
+        36,
+        30,
+        32,
+        22,
+        22,
+        22
+      ],
+      "per_run_displacement_change": [
+        6.938893903907228e-18,
+        2.7755575615628914e-17
+      ],
+      "coordinate_roundtrip_max_px": 1.2710574864626038e-13,
+      "load_npz_w2c_difference": 1.138383577942524e-17
+    },
+    "drift-turn": {
+      "status": "FAIL",
+      "failed_gates": [
+        "cross_context_t0_uv_p90_le_5pct",
+        "cross_context_t0_uv_max_le_10pct",
+        "registration_p90_le_10pct",
+        "registration_90pct_below_10pct"
+      ],
+      "valid_query_count": 48,
+      "graph": {
+        "edge_count": 88,
+        "component_count": 1,
+        "component_sizes": [
+          48
+        ],
+        "bridge_edges": [],
+        "connected": true
+      },
+      "observed_anchor": {
+        "p50": 0.008583098496478102,
+        "p90": 0.01127593002889002,
+        "mean": 0.008014847394976462,
+        "max": 0.013672526192173119
+      },
+      "teacher_anchor": {
+        "p50": 0.008583126583771247,
+        "p90": 0.011275918834028637,
+        "mean": 0.0080148533697319,
+        "max": 0.013672501891181781
+      },
+      "t0_uv": {
+        "p50": 0.39363041140644045,
+        "p90": 0.4357064627493452,
+        "mean": 0.36720909348291797,
+        "max": 0.4729465897214847
+      },
+      "registration": {
+        "p50": 0.07187326944609318,
+        "p90": 0.11710372776730293,
+        "mean": 0.07411865070791751,
+        "max": 0.1820624508320289
+      },
+      "official_future_mask_hits_21_29": [
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "per_run_displacement_change": [
+        1.3877787807814457e-17,
+        6.938893903907228e-18
+      ],
+      "coordinate_roundtrip_max_px": 1.7112135109858138e-13,
+      "load_npz_w2c_difference": 3.62069527259771e-17
+    },
+    "boat": {
+      "status": "FAIL",
+      "failed_gates": [
+        "registration_max_le_20pct",
+        "valid_graph_connected"
+      ],
+      "valid_query_count": 48,
+      "graph": {
+        "edge_count": 90,
+        "component_count": 2,
+        "component_sizes": [
+          35,
+          13
+        ],
+        "bridge_edges": [
+          [
+            4,
+            25
+          ],
+          [
+            18,
+            41
+          ]
+        ],
+        "connected": false
+      },
+      "observed_anchor": {
+        "p50": 0.0038611833071187252,
+        "p90": 0.005690487307265718,
+        "mean": 0.003757314312670437,
+        "max": 0.006747389433779791
+      },
+      "teacher_anchor": {
+        "p50": 0.0038611756657807262,
+        "p90": 0.005690487485587426,
+        "mean": 0.003757315287811985,
+        "max": 0.006747389496815388
+      },
+      "t0_uv": {
+        "p50": 0.024626844747970958,
+        "p90": 0.030463839877875164,
+        "mean": 0.024615409132835765,
+        "max": 0.040225463609653074
+      },
+      "registration": {
+        "p50": 0.03296733936190503,
+        "p90": 0.06705569307213112,
+        "mean": 0.04606026817916289,
+        "max": 0.47208866799110816
+      },
+      "official_future_mask_hits_21_29": [
+        45,
+        40,
+        43,
+        41,
+        42,
+        39,
+        37,
+        39,
+        40
+      ],
+      "per_run_displacement_change": [
+        1.3877787807814457e-17,
+        6.938893903907228e-18
+      ],
+      "coordinate_roundtrip_max_px": 1.4210854715202004e-13,
+      "load_npz_w2c_difference": 2.001305796224325e-18
+    },
+    "soccerball": {
+      "status": "FAIL",
+      "failed_gates": [
+        "cross_context_t0_uv_p90_le_5pct",
+        "cross_context_t0_uv_max_le_10pct",
+        "registration_p90_le_10pct",
+        "registration_90pct_below_10pct",
+        "registration_max_le_20pct",
+        "valid_graph_connected"
+      ],
+      "valid_query_count": 48,
+      "graph": {
+        "edge_count": 89,
+        "component_count": 2,
+        "component_sizes": [
+          39,
+          9
+        ],
+        "bridge_edges": [
+          [
+            22,
+            40
+          ],
+          [
+            36,
+            39
+          ]
+        ],
+        "connected": false
+      },
+      "observed_anchor": {
+        "p50": 0.010829299202595455,
+        "p90": 0.016138207984344736,
+        "mean": 0.010841552403342227,
+        "max": 0.02017904598254818
+      },
+      "teacher_anchor": {
+        "p50": 0.010829305118229032,
+        "p90": 0.01613820698565895,
+        "mean": 0.010841555214882026,
+        "max": 0.020179046827003826
+      },
+      "t0_uv": {
+        "p50": 0.26614827309652966,
+        "p90": 0.32223189880085085,
+        "mean": 0.24105118899637687,
+        "max": 0.36261610063932204
+      },
+      "registration": {
+        "p50": 0.17606041543542897,
+        "p90": 0.3123720856804772,
+        "mean": 0.190978160868867,
+        "max": 0.39565372005663746
+      },
+      "official_future_mask_hits_21_29": [
+        3,
+        27,
+        21,
+        37,
+        36,
+        43,
+        38,
+        44,
+        42
+      ],
+      "per_run_displacement_change": [
+        5.551115123125783e-17,
+        5.551115123125783e-17
+      ],
+      "coordinate_roundtrip_max_px": 1.4836567898030567e-13,
+      "load_npz_w2c_difference": 4.65874635037189e-19
+    }
+  },
+  "disk_after_experiment": {
+    "root": {
+      "total": 32212254720,
+      "used": 29784891392,
+      "free": 2427363328
+    },
+    "data": {
+      "total": 53687091200,
+      "used": 50410819584,
+      "free": 3276271616
+    }
+  },
+  "timestamp_utc": "2026-09-28T12:45:17Z"
+}

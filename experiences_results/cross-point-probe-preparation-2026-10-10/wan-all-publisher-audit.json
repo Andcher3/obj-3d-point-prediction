@@ -1,0 +1,50 @@
+{
+  "revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+  "endpoint": "https://huggingface.co/api/models/Wan-AI/Wan2.1-T2V-1.3B/revision/37ec512624d61f7aa208f7ea8140a131f93afc9a?blobs=true",
+  "files": [
+    {
+      "filename": "Wan2.1_VAE.pth",
+      "publisher_size_match": true,
+      "publisher_sha256_available": true,
+      "publisher_sha256_match": true,
+      "computed_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    },
+    {
+      "filename": "diffusion_pytorch_model.safetensors",
+      "publisher_size_match": true,
+      "publisher_sha256_available": true,
+      "publisher_sha256_match": true,
+      "computed_sha256": "96b6b242ca1c2f24e9d02cd6596066fab6d310e2d7538f33ae267cb18d957e8f"
+    },
+    {
+      "filename": "google/umt5-xxl/special_tokens_map.json",
+      "publisher_size_match": true,
+      "publisher_sha256_available": false,
+      "publisher_sha256_match": null,
+      "computed_sha256": "7b8a9f5040adb67b5805abdfd42c1f8d0f3d0e711f10726580eb3789cd0ad61d"
+    },
+    {
+      "filename": "google/umt5-xxl/spiece.model",
+      "publisher_size_match": true,
+      "publisher_sha256_available": true,
+      "publisher_sha256_match": true,
+      "computed_sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458"
+    },
+    {
+      "filename": "google/umt5-xxl/tokenizer.json",
+      "publisher_size_match": true,
+      "publisher_sha256_available": true,
+      "publisher_sha256_match": true,
+      "computed_sha256": "6e197b4d3dbd71da14b4eb255f4fa91c9c1f2068b20a2de2472967ca3d22602b"
+    },
+    {
+      "filename": "google/umt5-xxl/tokenizer_config.json",
+      "publisher_size_match": true,
+      "publisher_sha256_available": false,
+      "publisher_sha256_match": null,
+      "computed_sha256": "ed9a3a8b0faa71a70a32847e0435fe036e6e112d4df4edb7bb48a921e344dc05"
+    }
+  ],
+  "model_loaded": false,
+  "forward_called": false
+}

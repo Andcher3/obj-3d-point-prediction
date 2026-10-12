@@ -1,0 +1,1 @@
+{"completed": true, "conditions": 5, "counts": {"train": 100, "validation": 20, "test": 40}, "GPU_used": false, "future_geometry_used": false}
